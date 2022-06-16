@@ -28,4 +28,3 @@ Ein Skript zur Einführung des Arduino im Wahlpflichtfach "Informatik/Physik" im
     </div>
 </div>
 
-Test
