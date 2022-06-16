@@ -1,0 +1,76 @@
+/* CSS für das Einbetten von Youtube Videos nach DSGVO */
+/*ACHTUNG: Im Original fehlten die runden Klammern des :not() Selektors und deshalb klappte dieser Teil nicht...  */
+.video__iframe:not([src]) {
+  display: none;
+}
+
+.video__iframe[src] + .video__notice {
+  display: none;
+}
+
+.video__iframe[src] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video {
+  display: flex;
+/*  flex-direction: column;*/
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+  min-width: 392px;
+  /*padding-top: 56.25%;*/ /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  background-color: #42BB70;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video::before {
+  display: block;
+  content: '';
+  padding-bottom: 56.25%;
+  width: 0;
+  height: 0;
+}
+
+.video__notice {
+/*  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;*/
+  padding: 1.5rem;
+  width: 100%;
+/*  height: 100%;*/
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.video__notice > * {
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video__notice > button {
+  font: inherit;
+  padding: 0.5rem 1rem;
+  background-color: #42BB70;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.video__notice > button:hover,
+.video__notice > button:focus {
+  background-color: #000;
+}

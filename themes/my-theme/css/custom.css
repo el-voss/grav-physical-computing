@@ -1,0 +1,148 @@
+#body {
+  letter-spacing: 0;
+}
+
+#body img {
+  margin: 1rem auto;
+}
+
+#footer {
+  margin: 3em 3em 1em 1em;
+  padding: 1em;
+  font-size: 0.8rem;
+  background: #1d2e25;
+  box-shadow: 2px 2px #14291e;
+}
+
+/* adapt breadcrumbs to fit with toggle-sidebar icon */
+@media (max-width: 1100px) {
+	#body #breadcrumbs {
+	  display: inline-block;
+	  padding-left: 1rem;
+	  top: 0;
+	  transform: translateY(0);
+	}
+}
+
+figure.image-caption {
+  margin: 0rem;
+}
+
+h1, h4 {
+  word-break: break-word;
+}
+
+h2, h3 {
+  margin-top: 1.5em;
+  word-break: break-word;
+}
+
+/* customization of back-to-top-arrow */
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    /*right: 60px;*/
+    right: 5%;
+    /*background: rgb(0, 0, 0);*/
+    /*background: rgba(0, 0, 0, 0.7);*/
+    background: rgb(66, 187, 112);
+    background: rgba(66, 187, 112, 0.7);
+}
+#return-to-top:hover {
+    /*background: rgba(0, 0, 0, 0.9);*/
+    background: rgba(0, 127, 97, 0.9);
+}
+
+
+/* styling of flex-boxes */
+.flex-box {
+	display:flex; 
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.flex-box > div {
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	padding: 0.1em;
+	flex: 1;
+	min-width: 200px;
+}
+.flex-box > div.flexible {
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	padding: 0.1em;
+	flex: auto;
+	min-width: 200px;
+}
+.flex-box > div > p {
+        padding: 0.1em;
+        margin: 0.1em;
+}
+.flex-box > div.overview-card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	min-width: 200px;
+	max-width: 500px;
+	flex: 1;
+	background: #f8f8f8;
+	box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.4);
+	/*border-style:solid;
+	border-width: 10px;
+	border-image: linear-gradient(to bottom right, #42bb70, #007f61) 1;*/
+	padding: 2em 1.5em 2em 1.5em;
+	margin: 2em;
+	text-align: left;
+}
+.flex-box> div.overview-card strong {
+	font-size: 1.25em;
+}
+/*
+.flex-box > div.overview-card:hover {
+	border-image: linear-gradient(to bottom right, #007f61, #42bb70) 1;
+}
+.flex-box > div.overview-card a {
+	color: #fff;
+}
+.flex-box > div.overview-card a:hover {
+	color: #ddd;
+}*/
+.flex-box > div.overview-card ul {
+	margin: 1em;
+	padding-left: 20px;
+}
+
+
+
+/* Customization of padding of notices plugin */
+.notices {
+  padding: 1px 20px 1px 30px !important;
+}
+
+/* adapt border colour of green notices to theme green colour */
+.notices.green {
+  border-left: 10px solid #42bb70 !important;
+}
+
+/* prevent floating images from floating into the next element */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+/* CSS dafür, dass die Seite auf breiten Bildschirmen nicht so breit wird, dass es anstregend wird */
+#body-inner {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+

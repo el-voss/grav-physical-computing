@@ -1,0 +1,151 @@
+/* Colours of Learn2 or RTFM theme */
+a {
+  color: #42BB70; }
+
+a:hover {
+  color: #007F61; }
+
+
+textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, select[multiple=multiple]:focus {
+  border-color: #42bb70;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(19, 131, 179, 0.7); }
+
+#header {
+  background: #42bb70;
+  color: #fff;
+  text-align: center;
+  padding: 1rem; }
+
+.searchbox {
+  margin-top: 0.5rem;
+  position: relative;
+  border: 1px solid #17D05D;
+  background: #007F61;
+  border-radius: 4px; }
+
+#sidebar ul li.visited > a .read-icon {
+  color: #42bb70;
+  display: inline; }
+
+blockquote {
+  border-left: 10px solid #42bb70; }  /* formerly #F0F2F4 */
+
+pre code {
+    color: #007f61; /*formerly #237794*/
+    background: inherit;
+    font-size: 1rem; }
+
+.page-title {
+  margin-top: -25px;
+  padding: 25px;
+  float: left;
+  clear: both;
+  background: #42bb70;
+  color: #fff; }
+
+#body a.anchor-link:hover {
+  color: #42bb70; }
+
+.scrollbar-inner > .scroll-element .scroll-bar {
+  background-color: #B5EBCD; }  /* formerly #b5d1eb */ 
+
+.button {
+  background: #42bb70;
+  color: #fff;
+  box-shadow: 0 3px 0 #13AE62; }  /* formerly #1380ae */
+
+.button:hover {
+    background: #13ae62;		/* formerly #1380ae */
+    box-shadow: 0 3px 0 #109356;  /* formerly #106c93 */
+    color: #fff; }
+
+.button:active {
+    box-shadow: 0 1px 0 #109356; }  /* formerly #106c93 */
+
+.bullet-icon {
+  float: left;
+  background: #42bb70;
+  padding: 0.875rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.75rem;
+  text-align: center; }
+
+.bullet-icon-1 {
+  background: #42bb70; }
+
+.bullet-icon-2 {
+  background: #16CA86; }  /* formerly #16cac4 */
+
+.bullet-icon-3 {
+  background: #b2ca16; }  /* not changed */
+
+.lifecycle #body-inner h3[class*='level'] {
+  font-size: 20px;
+  position: absolute;
+  margin: 0;
+  padding: 4px 10px;
+  right: 0;
+  z-index: 1000;
+  color: #fff;
+  background: #1ABC9C; }	/* not changed, but maybe it should */
+
+.lifecycle #body-inner .level-1 + ol {
+  background: #f6fefc;
+  border: 4px solid #1ABC9C;   /* not changed, but maybe it should */
+  color: #16A085; }				/* not changed, but maybe it should */
+
+.lifecycle #body-inner .level-1 + ol h3 {
+    background: #2E97CC; }   /* formerly 2ecc71 */
+
+.lifecycle #body-inner .level-2 + ol {
+  background: #f7fdf9;       /* not changed, but maybe it should */
+  border: 4px solid #2E97CC;  /* formerly 2ecc71 */
+  color: #276AAE; }		/* formerly 27AE60 */
+
+.lifecycle #body-inner .level-2 + ol h3 {
+    background: #34DB77; }  /* formerly 3498db */
+
+.lifecycle #body-inner .level-3 + ol {
+  background: #f3f9fd;		/* not changed, but maybe it should */
+  border: 4px solid #34DB77; /* formerly 3498db */
+  color: #29B96D; }		/* formerly 2980b9 */
+
+.lifecycle #body-inner .level-3 + ol h3 {
+    background: #345E40; }   /* formerly 34495E */
+
+.lifecycle #body-inner .level-4 + ol {
+  background: #e4eaf0;    /* not changed, but maybe it should */
+  border: 4px solid #345E40;   /* formerly 34495E */
+  color: #2C503B; }  /* formerly 2c3e50 */
+
+.lifecycle #body-inner .level-4 + ol h3 {
+    background: #345E40; }   /* formerly #34495E */
+
+/* dark colours of sidebar */
+#sidebar {
+  background-color: #283D32;
+  position: fixed;
+  top: 0;
+  width: 300px;
+  bottom: 0;
+  left: 0;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+#sidebar hr {
+  border-bottom: 1px solid #22342a; }
+
+#sidebar h5.parent a {
+  background: #192820;
+  color: #c8c8c8 !important; }
+
+#sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
+background: #1d2e25;
+margin-left: -1rem;
+margin-right: -1rem;
+padding-left: 1rem;
+padding-right: 1rem; }

@@ -1,0 +1,42 @@
+/*
+  customize the width, which causes the sidebar to appear only, when
+  the menu button is clicked
+  this uses a media query of css3 (see Internet)
+*/
+
+@media (max-width: 1100px) {
+    #sidebar {
+        left: -300px;
+    }
+    #body {
+        margin-left: 0px;
+    }
+/*
+    #body .padding {
+        padding: 15px 1rem;
+    }
+*/
+    #sidebar-toggle {
+        display: inline-block;
+	top: 50%;
+	position: relative;
+	transform: translateY(-50%);
+    }
+    
+    .sidebar-hidden #sidebar {
+        left: 0;
+    }
+
+    .sidebar-hidden {
+        overflow: hidden;
+    }
+
+    .sidebar-hidden #body {
+        margin-left: 300px; /*230px*/
+        overflow: hidden;
+    }
+
+    .sidebar-hidden .nav-prev {
+        display: none !important;
+    }
+}

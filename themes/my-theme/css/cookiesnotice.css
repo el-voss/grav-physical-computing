@@ -1,0 +1,23 @@
+.cookienotice {
+	padding: 15px 0px 15px 0px;
+	font-size: 14px; 
+	line-height: 22px; 
+	border-bottom: 1px solid #ffffff; 
+	text-align: center; 
+	position: fixed; 
+	background-color: #eeeeee; 
+	width: 100%; 
+	z-index: 999;
+}
+.cookiewrap {
+	height: 10px;
+}
+.cookienotice > a {
+	background-color: #42bb70; 
+	padding: 5px 10px 5px 10px; 
+	color: #ffffff; 
+	border-radius: 5px;
+	display: inline-block; 
+	margin-left: 10px; 
+	text-decoration: none; 
+}
