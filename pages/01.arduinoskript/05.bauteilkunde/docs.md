@@ -658,7 +658,7 @@ Es gibt viele verschiedene Hall-Sensoren - in diesem Kurs wird das Hall-Sensor-M
 Sensor und Modul verfügen über drei Pins, die beim Arduino an 5V, GND und einen analogen Eingang (A0 bis A5) angeschlossen werden, wie der Schaltplan unten zeigt.
 
 <!-- Schaltplan -->
-![Schaltplan zum Anschluss des Hall-Sensor-Moduls an den Arduino.](/circuits/hall-ky-035-an-arduino.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum Anschluss des Hall-Sensor-Moduls KY-035 an den Arduino. Man beachte, dass die Reihenfolge von VCC und GND auf der Platine vertauscht wird. Beim AH49E ohne Platine ist der GND-Pin dementsprechend in der Mitte.")
+![Schaltplan zum Anschluss des Hall-Sensor-Moduls an den Arduino.](/circuits/hall-ky-035-an-arduino.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum Anschluss des Hall-Sensor-Moduls KY-035 an den Arduino. Falls der Hall-Sensor AH49E ohne das Modul angeschlossen werden soll, istzu beachten, dass die Reihenfolge von VCC und GND auf der Platine vertauscht wird. Beim AH49E ohne Platine ist der GND-Pin dementsprechend in der Mitte.")
 
 Die Verbindung mit 5V (Pluspol) und GND (Minuspol) sorgt für den Stromfluss durch den Hall-Sensor. Wenn sich der Hall-Sensor in einem Magnetfeld befindet, dann entsteht in ihm eine sogenannte *Hall-Spannung*, die im Hall-Sensor noch weiter verstärkt und stabilisiert wird. Am Signalpin S kann man diese Spannung (gegenüber GND) messen, indem man ihn an einen analogen Eingang am Arduino anschließt.
 
