@@ -629,7 +629,7 @@ Baue und programmiere einen Prototypen für eine Katzentür, die sich automatisc
 
 ### Analoger Hall-Sensor (Magnetfeldsensor)
 
-Im Gegensatz zu einem digitalen Hall-Sensor lässt sich mit einem analogen Hall-Sensor nicht nur die Anwesenheit eines Magnetfeldes bzw. eines Magneten, sondern auch dessen Stärke messen. Solche Messungen werden zum Beispiel bei der Pipeline-Inspektion genutzt, um Risse in einer Pipeline zu finden und ihre Größe abzuschätzen. Dabei wird die Pipeline durch sehr starke Magnete magnetisiert. Wenn Risse vorhanden sind, kommt es jedoch zu Änderungen bei der Magnetisierung. Diese können durch die Hall-Sensoren erfasst und gemessen werden.
+Mit einem analogen Hall-Sensor lässt sich die Stärke eines Magnetfeldes (verkürzt: eines Magneten) messen. Solche Messungen werden zum Beispiel bei der Pipeline-Inspektion genutzt, um Risse in einer Pipeline zu finden und ihre Größe abzuschätzen. Dabei wird die Pipeline durch sehr starke Magnete magnetisiert. Wenn Risse vorhanden sind, kommt es jedoch zu Änderungen bei der Magnetisierung. Diese können durch die Hall-Sensoren erfasst und gemessen werden.
 
 <div class="video">
   <iframe
