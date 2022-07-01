@@ -556,6 +556,7 @@ Laut [Datenblatt des Hall-Sensors A3144](https://pdf1.alldatasheet.com/datasheet
 Unterschrift: Schematische Darstellung der Hysterese des A3144 am Arduino. Der rote Graph stellt den Wechsel von HIGH zu LOW dar, wenn die magnetische Flussdichte zunimmt. Der blaue Graph stellt den Wechsel von LOW zu HIGH dar, wenn die magnetische Flussdichte wieder kleiner wird. Die Werte für $B_{OP}, B_{RP}, B_{hys}$ und $U_{HIGH}, U_{LOW}$ im Diagramm wurden vom Autor beim Anschluss an einen Arduino mit $VCC = 5V$ mit einfachen Mitteln gemessen und schwanken. Sie stellen daher nur einen ungefähren Anhaltspunkt dar.
 
 Die Begriffe werden im Datenblatt auf S. 2 folgendermaßen erklärt:
+
 | Größe | Erklärung |
 |---|---|
 | $B_{OP}$ | *operate point (ouput turns ON)* |
