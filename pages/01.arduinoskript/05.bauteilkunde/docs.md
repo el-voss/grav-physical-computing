@@ -752,10 +752,6 @@ Miss die Stärke eines Permanentmagneten mit einem professionellen Teslameter un
 ! <p> Animation von <a href="https://de.wikipedia.org/wiki/Datei:Hall_Sensor.webm#filelinks">Fraunhofer IIS</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a>, via Wikimedia Commons </p>
 ! </center>
 
-
-
-
-
 ## Projektarbeit
 
 <div markdown="1" class="projekt">
