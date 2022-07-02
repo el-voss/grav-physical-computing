@@ -18,7 +18,7 @@ Die folgenden Seiten bieten jeweils eine Einführung in neue Bauteile, für die 
 
 <div class="flex-box">
     <div class="overview-card">
-    <strong markdown="1">[Aktoren](./01.aktoren/)</strong>
+    <strong markdown="1">[Aktoren](./01.aktoren/docs.md)</strong>
     <ul>
         <li markdown="1">[Servo](./01.aktoren/#servo)</li>
     </ul>
