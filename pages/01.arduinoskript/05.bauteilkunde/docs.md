@@ -45,6 +45,6 @@ Die folgenden Seiten bieten jeweils eine Einführung in neue Bauteile, für die 
     </div>
     <div class="overview-card">
     <p markdown="1">[Projektarbeit](./projektarbeit/)</p>
-        <p>Werde kreativ und entwickle ein eigenes Projekt!</p>
+        <em>Werde kreativ und entwickle ein eigenes Projekt!</em>
     </div>
 </div>
