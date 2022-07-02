@@ -18,7 +18,7 @@ Die folgenden Seiten bieten jeweils eine Einführung in neue Bauteile, für die 
 
 <div class="flex-box">
     <div class="overview-card">
-    <p style="font-size:1.25em;" markdown="1">[Aktoren](./aktoren/)</p>
+    <p markdown="1">[Aktoren](./aktoren/)</p>
     <ul>
         <li markdown="1">[Servo](./aktoren/#servo)</li>
         <li markdown="1">[Schrittmotor](./aktoren/#schrittmotor)</li>
@@ -27,7 +27,7 @@ Die folgenden Seiten bieten jeweils eine Einführung in neue Bauteile, für die 
     </ul>
     </div>
     <div class="overview-card">
-    <p style="font-size:1.25em;" markdown="1">[Sensoren](./sensoren/)</p>
+    <p markdown="1">[Sensoren](./sensoren/)</p>
     <ul>
         <li markdown="1">[Neigungsschalter](./sensoren/#neigungsschalter)</li>
         <li markdown="1">[Bewegungsmelder](./sensoren/#bewegungsmelder)</li>
@@ -42,5 +42,9 @@ Die folgenden Seiten bieten jeweils eine Einführung in neue Bauteile, für die 
         <li markdown="1">[Analoger Hall-Sensor (Magnetfeldsensor)](./sensoren/#analoger-hall-sensor...)</li>
         <li markdown="1">[Digitaler Hall-Sensor (Magnetfeldsensor)](./sensoren/#digitaler-hall-sensor...)</li>
     </ul>
+    </div>
+    <div class="overview-card">
+    <p markdown="1">[Projektarbeit](./projektarbeit/)</p>
+        <p>Werde kreativ und entwickle ein eigenes Projekt!</p>
     </div>
 </div>
