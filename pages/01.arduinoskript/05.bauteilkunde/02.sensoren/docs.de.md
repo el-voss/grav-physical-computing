@@ -6,7 +6,7 @@ title: Sensoren
 
 <style>
     h1 {
-  		counter-set: h1 5.2 ;
+  		counter-set: h1 5 ;
 	}
 </style>
 
