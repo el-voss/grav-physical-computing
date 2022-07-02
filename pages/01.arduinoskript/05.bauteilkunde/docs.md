@@ -18,13 +18,13 @@ Die folgenden Seiten bieten jeweils eine Einführung in neue Bauteile, für die 
 
 <div class="flex-box">
     <div class="overview-card">
-    <em markdown="1">[Aktoren](./aktoren/)</em>
+    <p markdown="1">[Aktoren](./aktoren/)</p>
     <ul>
         <li markdown="1">[Servo](./aktoren/#servo)</li>
     </ul>
     </div>
     <div class="overview-card">
-    <strong markdown="1">[Sensoren](./sensoren/)</strong>
+    <p markdown="1">[Sensoren](./sensoren/)</p>
     <ul>
         <li markdown="1">[Neigungsschalter](./sensoren/#neigungsschalter)</li>
     </ul>
