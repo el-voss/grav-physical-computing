@@ -558,7 +558,10 @@ Der Hall-Sensor ist nicht im Open Roberta Lab vorkonfiguriert. Er lässt sich ab
 Laut [Datenblatt des Hall-Sensors A3144](https://pdf1.alldatasheet.com/datasheet-pdf/view/55092/ALLEGRO/A3144.html) verfügt dieser über eine sogenannte *Hysterese*. Das bedeutet, dass der Wechsel von `HIGH` zu `LOW` bei einer anderen Magnetfeldstärke passiert als der Wechsel von `LOW` zu `HIGH`. Unten wird dies graphisch dargestellt.
 
 <!-- Graph von Geogebra -->
-![Graph zur Hysterese des Hall-Sensors.](/images/hall-digital-hysterese.png?lightbox=1024&resize=500&classes=caption "Schematische Darstellung der Hysterese des A3144 am Arduino. Der rote Graph stellt den Wechsel von HIGH zu LOW dar, wenn die magnetische Flussdichte zunimmt. Der blaue Graph stellt den Wechsel von LOW zu HIGH dar, wenn die magnetische Flussdichte wieder kleiner wird. Die Werte für $B_{OP}, B_{RP}, B_{hys}$ und $U_{HIGH}, U_{LOW}$ im Diagramm wurden vom Autor beim Anschluss an einen Arduino mit $VCC = 5V$ mit einfachen Mitteln gemessen und schwanken. Sie stellen daher nur einen ungefähren Anhaltspunkt dar.")
+<figure class="image-caption">
+   <img title="Graph zur Hysterese des Hall-Sensors." alt="Graph zur Hysterese des Hall-Sensors." class="caption" src="/user/pages/images/hall-digital-hysterese.png">
+   <figcaption class="" markdown="1">Schematische Darstellung der Hysterese des A3144 am Arduino. Der rote Graph stellt den Wechsel von HIGH zu LOW dar, wenn die magnetische Flussdichte zunimmt. Der blaue Graph stellt den Wechsel von LOW zu HIGH dar, wenn die magnetische Flussdichte wieder kleiner wird. Die Werte für $B_{OP}, B_{RP}, B_{hys}$ und $U_{HIGH}, U_{LOW}$ im Diagramm wurden vom Autor beim Anschluss an einen Arduino mit $VCC = 5V$ mit einfachen Mitteln gemessen und schwanken. Sie stellen daher nur einen ungefähren Anhaltspunkt dar.</figcaption>
+</figure>
 
 Die Begriffe werden im Datenblatt auf S. 2 folgendermaßen erklärt:
 
