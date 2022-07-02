@@ -30,6 +30,17 @@ Die folgenden Seiten bieten jeweils eine Einführung in neue Bauteile, für die 
     <p style="font-size:1.25em;" markdown="1">[Sensoren](./sensoren/)</p>
     <ul>
         <li markdown="1">[Neigungsschalter](./sensoren/#neigungsschalter)</li>
+        <li markdown="1">[Bewegungsmelder](./sensoren/#bewegungsmelder)</li>
+        <li markdown="1">[Joystick](./sensoren/#joystick)</li>
+        <li markdown="1">[Infrarot-Sensor mit Fernbedienung](./sensoren/#infrarot-sensor-mit...)</li>
+        <li markdown="1">[Temperatur- und Luftfeuchtigkeitssensor DHT-11](./sensoren/#temperatur-und...)</li>
+        <li markdown="1">[Temperatursensor TMP36](./sensoren/#temperatursensor-tmp36)</li>
+        <li markdown="1">[Tropfensensor und Feuchtigkeitssensor](./sensoren/#tropfensensor-und...)</li>
+        <li markdown="1">[Pulssensor](./sensoren/#pulssensor)</li>
+        <li markdown="1">[Ultraschallsensor](./sensoren/#ultraschallsensor)</li>
+        <li markdown="1">[RFID](./sensoren/#rfid)</li>
+        <li markdown="1">[Analoger Hall-Sensor (Magnetfeldsensor)](./sensoren/#analoger-hall-sensor...)</li>
+        <li markdown="1">[Digitaler Hall-Sensor (Magnetfeldsensor)](./sensoren/#digitaler-hall-sensor...)</li>
     </ul>
     </div>
 </div>
