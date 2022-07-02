@@ -18,13 +18,16 @@ Die folgenden Seiten bieten jeweils eine Einführung in neue Bauteile, für die 
 
 <div class="flex-box">
     <div class="overview-card">
-    <p markdown="1">[Aktoren](./aktoren/)</p>
+    <p style="font-size:1.25em;" markdown="1">[Aktoren](./aktoren/)</p>
     <ul>
         <li markdown="1">[Servo](./aktoren/#servo)</li>
+        <li markdown="1">[Schrittmotor](./aktoren/#schrittmotor)</li>
+        <li markdown="1">[Liquid Crystal Display (LCD)](./aktoren/#liquid-crystal-display-lcd)</li>
+        <li markdown="1">[Oled-Display SSD1306](./aktoren/#oled-display-ssd1306)</li>
     </ul>
     </div>
     <div class="overview-card">
-    <p markdown="1">[Sensoren](./sensoren/)</p>
+    <p style="font-size:1.25em;" markdown="1">[Sensoren](./sensoren/)</p>
     <ul>
         <li markdown="1">[Neigungsschalter](./sensoren/#neigungsschalter)</li>
     </ul>
