@@ -532,7 +532,7 @@ Bei einem digitalen Hall-Sensor wird das analoge Signal eines Hall-Sensors durch
 
 <div class="flex-box">
 <div markdown="1">![Hall-Sensor am Fahrrad.](/images/hall-an-fahrrad.png?resize=150&classes=caption "Hall-Sensor am Fahrrad.")</div>
-<div markdown="1">![Hall-Sensor A3144 auf Platine.](/images/hall-ky-003.jpg?resize=150&classes=caption "Digitales Hall-Sensor-Modul KY-003 mit dem Hall-Sensor A3144.")</div>
+<div markdown="1">![Hall-Sensor A3144 auf Platine.](/images/hall-digital-ky-003.jpg?resize=150&classes=caption "Digitales Hall-Sensor-Modul KY-003 mit dem Hall-Sensor A3144.")</div>
 </div>
 
 Es gibt verschiedene Hall-Sensoren - in diesem Kurs verwenden wir das Hall-Sensor-Modul KY-003, auf dem der Hall-Sensor A3144 zusammen mit einer LED und einem zugehörigen Widerstand verbaut ist.
