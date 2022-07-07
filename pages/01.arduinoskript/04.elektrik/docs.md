@@ -47,7 +47,11 @@ In diesem Kapitel lernst du…
     </ul>
     </div>
     <div class="overview-card">
-    <p markdown="1">[Projektarbeit](./projektarbeit/)</p>
-        <em>Werde kreativ und entwickle ein eigenes Projekt!</em>
+    <p markdown="1">[Transistoren und Motoren](./transistoren-motoren/)</p>
+        <li markdown="1">[Schaltungen mit Transistoren steuern](./transistoren-motoren#schaltungen-mit-transistoren...)</li>
+        <li markdown="1">[Elektromotor und Diode](./transistoren-motoren#elektromotor-und-diode)</li>
+        <li markdown="1">[Elektromotor mit Transistor steuern](./transistoren-motoren#elektromotor-mit-transistor...)</li>
+        <li markdown="1">[Elektromotor mit Relais steuern](./transistoren-motoren#elektromotor-mit-relais-steuern)</li>
+        <li markdown="1">[Elektromotor mit Motortreiber steuern](./transistoren-motoren#elektromotoren-mit-dem...)</li>
     </div>
 </div>
