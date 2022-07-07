@@ -54,4 +54,10 @@ In diesem Kapitel lernst du…
         <li markdown="1">[Elektromotor mit Relais steuern](./transistoren-motoren#elektromotor-mit-relais-steuern)</li>
         <li markdown="1">[Elektromotor mit Motortreiber steuern](./transistoren-motoren#elektromotoren-mit-dem...)</li>
     </div>
+    <div class="overview-card">
+    <p markdown="1">[Vermischte Übungen und Ausblick](./uebungen-ausblick/)</p>
+        <li markdown="1">[Vermischte Übungen](./uebungen-ausblick#vermischte-bungen)</li>
+        <li markdown="1">[Ausblick](./uebungen-ausblick#ausblick)</li>
+        
+    </div>
 </div>
