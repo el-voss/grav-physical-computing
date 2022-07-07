@@ -4,6 +4,12 @@ title: 'Übungen und Ausblick'
 
 # Elektrische Grundlagen Teil 4: Vermischte Übungen und Ausblick
 
+<style>
+    h1 {
+  		counter-set: h1 4 ;
+	}
+</style>
+
 [TOC]
 
 ## Vermischte Übungen
