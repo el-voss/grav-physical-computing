@@ -26,7 +26,7 @@ Mit einer RGB-LED können die verschiedensten Farben erzeugt werden, die zum Bei
 RGB steht für Rot, Grün und Blau. In einer RGB-LED sind also drei LEDs gleichzeitig verbaut, die sich in unserem Fall eine gemeinsame Anode (Kontakt mit GND) teilen. Die Anode gehört zum längsten Beinchen. Die anderen Kontakte sollten an einen PWM-Pin (gekennzeichet durch eine Tilde) angeschlossen werden.
 
 <div markdown="1" class="aufgabe">
-#### Funktionstest einer RGB-LED
+#### Farbenexperimente
 
 Schließe die RGB-LED wie beschrieben an und experimentiere mit den Befehlen für die Farben. Vervollständige mit Hilfe deiner Experimente die unten stehende Tabelle.
 
