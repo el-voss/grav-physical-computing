@@ -39,12 +39,11 @@ In diesem Kapitel lernst du…
     </ul>
     </div>
     <div class="overview-card">
-    <p markdown="1">[Sensoren](./sensoren/)</p>
+    <p markdown="1">[Anwendungen der Spannungsmessung](./anwendungen-spannungsmessung)</p>
     <ul>
-        <li markdown="1">[](./digitale-analoge-pins#)</li>
-        <li markdown="1">[](./digitale-analoge-pins#)</li>
-        <li markdown="1">[](./digitale-analoge-pins#)</li>
-        <li markdown="1">[](./digitale-analoge-pins#)</li>
+        <li markdown="1">[Drehregler verwenden](./anwendungen-spannungsmessung#drehregler-verwenden)</li>
+        <li markdown="1">[Helligkeit messen](./anwendungen-spannungsmessung#helligkeit-messen)</li>
+        <li markdown="1">[Temperatur messen](./anwendungen-spannungsmessung#temperatur-messen)</li>
     </ul>
     </div>
     <div class="overview-card">
