@@ -32,7 +32,14 @@ Schließe die RGB-LED wie beschrieben an und experimentiere mit den Befehlen fü
 
 *Hinweis: Die Werte für die Farbanteile von rot, grün und blau reichen von 0 bis 255.*
 
-
+| Farbe | Farbanteile |
+|---|---|
+| ![RGB rot](/images/rgb-rot.png)  | ![RGB rot Code](/images/rgb-rot-code.png)  |
+| ![RGB grün](/images/rgb-gruen.png)  |   |
+| ![RGB lila](/images/rgb-lila.png)  |   |
+| ![RGB orange](/images/rgb-orange.png)  |   |
+| ![RGB blau](/images/rgb-blau.png)  |   |
+| ![RGB türkis](/images/rgb-tuerkis.png)  |   |
 </div>
 
 
