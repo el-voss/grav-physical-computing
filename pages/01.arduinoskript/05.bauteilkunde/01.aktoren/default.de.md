@@ -30,6 +30,8 @@ RGB steht für Rot, Grün und Blau. In einer RGB-LED sind also drei LEDs gleichz
 
 Schließe die RGB-LED wie beschrieben an und experimentiere mit den Befehlen für die Farben. Vervollständige mit Hilfe deiner Experimente die unten stehende Tabelle.
 
+*Hinweis: Die Werte für die Farbanteile von rot, grün und blau reichen von 0 bis 255.*
+
 | Farbe | Farbanteile |
 |---|---|
 | ![RGB rot](/images/rgb-rot.png)  | ![RGB rot Code](/images/rgb-rot-code.png)  |
