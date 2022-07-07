@@ -57,10 +57,10 @@ In diesem Kapitel lernst du…
     </ul>
     </div>
     <div class="overview-card">
-    <p markdown="1">[Vermischte Übungen und Ausblick](./uebungen-ausblick/)</p>
+    <p markdown="1">[Vermischte Übungen und Ausblick](./elektrik-uebungen-ausblick/)</p>
     <ul>
-        <li markdown="1">[Vermischte Übungen](./uebungen-ausblick#vermischte-bungen)</li>
-        <li markdown="1">[Ausblick](./uebungen-ausblick#ausblick)</li>
+        <li markdown="1">[Vermischte Übungen](./elektrik-uebungen-ausblick#vermischte-bungen)</li>
+        <li markdown="1">[Ausblick](./elektrik-uebungen-ausblick#ausblick)</li>
     </ul>    
     </div>
 </div>
