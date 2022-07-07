@@ -4,6 +4,12 @@ title: 'Variablen und Schleifen'
 
 # Bauteilkunde Teil 2: Variablen und Schleifen
 
+<style>
+    h1 {
+  		counter-set: h1 3 ;
+	}
+</style>
+
 [TOC]
 
 ## Programme mit Variablen und Schleifen effizient steuern
