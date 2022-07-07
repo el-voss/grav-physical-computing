@@ -46,7 +46,7 @@ Schließe die RGB-LED wie beschrieben an und experimentiere mit den Befehlen fü
 <div markdown="1" class="aufgabe">
 #### Colour-Fading
 
-test
+Wenn man die Farbanteile mit einer Zählschleife durchlaufen lässt, ergeben sich besonders schöne Farbeffekte. Probiere dies in verschiedenen Varianten aus. 
 </div>
 
 !!!! #### Hintergrund: Das RGB-Farbmodell
