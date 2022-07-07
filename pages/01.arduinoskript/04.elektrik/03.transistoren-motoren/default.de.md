@@ -116,7 +116,7 @@ Die Diode wird jedoch *Sperrrichtung* eingebaut, also so, dass der Ring mit 5V u
 ! **Recherche: Aufbau von Gleichstrom-Elektromotoren**
 ! Oben wurde die Funktionsweise von Gleichstrom-Elektromotoren bereits angedeutet. Recherchiere im Internet den genauen Aufbau und Ablauf der Drehbewegung.
 
-### Elektromotor mit Transistor steuern
+## Elektromotor mit Transistor steuern
 
 Der 5 V-Pin des Arduino liefert zwar in vielen Fällen genügend Strom für den Motor, jedoch lässt er sich nicht programmieren. Dazu lässt sich ein Transistor einbauen.
 
@@ -151,7 +151,7 @@ Der Arduino kann über USB oder eine zweite Batterie mit Strom versorgt werden.
 
 ![Anschluss eines Gleichstrom-Elektromotors am Arduino mit Steuerung über einen Transistor und mit externer Spannungsquelle für den Motor.](/circuits/Schaltplan-Motoranschluss-ext-Spannung.png?lightbox=1024&resize=500&classes=caption "Anschluss eines Gleichstrom-Elektromotors am Arduino mit Steuerung über einen Transistor und mit externer Spannungsquelle für den Motor.")
 
-### Elektromotor mit Relais steuern
+## Elektromotor mit Relais steuern
 
 Wie oben zu sehen, muss der Arbeitsstromkreis mit dem Motor und der Steuerstromkreis mit dem Arduino bei Verwendung eines Transistors immer miteinander verbunden bleiben - auch bei sehr großen Stromstärken. Damit verbleibt immer eine gewisse Gefahr, dass eine Spannungsspitze auf den Arduino durchschlägt und ihn zerstört. Mit einem Relais lässt sich dieses Risiko vermeiden. Ein weiterer Vorteil ist, dass der Arbeitsstromkreis auch mit Wechselstrom betrieben werden kann, wenn ein Relais als Schalter genutzt wird.
 
@@ -243,7 +243,7 @@ Vergleiche die Steuerung mit einem Transistor und mit einem Relais hinsichtlich 
 !!!! Die Anschlüsse der Spule werden in der Regel mit *A1* und *A2* bezeichnet; die Anschlüsse am Wechselschalter mit *NO* (*normally open*), *NC* (*normally closed*) und *C* (*common ground*) bezeichnet.
 
 
-### Elektromotoren mit dem Motortreiber-IC L293D steuern (inkl. Drehrichtung)
+## Elektromotoren mit dem Motortreiber-IC L293D steuern (inkl. Drehrichtung)
 
 Die Steuerung von Motoren erfordert in den oben beschriebenen Fällen stets mehrere Bauteile und einige Überlegungen zum Aufbau der Schaltung. Außerdem kann dabei nicht die Drehrichtung geändert werden. Der integrierte Schaltkreis L293D vereinfacht den Aufbau der Schaltung für gleich zwei Motoren und ermöglicht zusätzlich die flexible Steuerung der Drehrichtung.
 
