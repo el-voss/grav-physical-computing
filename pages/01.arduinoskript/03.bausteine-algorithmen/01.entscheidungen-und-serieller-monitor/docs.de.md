@@ -4,6 +4,12 @@ title: 'Entscheidungen und der serielle Monitor'
 
 # Bausteine von Algorithmen Teil 1: Entscheidungen und der serielle Monitor
 
+<style>
+    h1 {
+  		counter-set: h1 3 ;
+	}
+</style>
+
 [TOC]
 
 ## Entscheidungen programmieren
