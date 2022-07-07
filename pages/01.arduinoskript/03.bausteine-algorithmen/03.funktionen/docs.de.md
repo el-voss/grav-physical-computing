@@ -4,6 +4,12 @@ title: Funktionen
 
 # Bausteine von Algorithmen Teil 3: Funktionen
 
+<style>
+    h1 {
+  		counter-set: h1 3 ;
+	}
+</style>
+
 [TOC]
 
 ## Eigene Funktionen definieren
