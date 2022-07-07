@@ -19,6 +19,44 @@ Die folgende Seite bietet jeweils eine Einführung in neue Bauteile aus der Kate
 
 Im Folgenden werden Bauteile erklärt, die eine Ausgabe machen, also z. B. sich bewegen, etwas anzeigen, Licht aussenden oder Töne erzeugen. In der Roboterkonfiguration handelt es sich um die orangen Blöcke.
 
+### RGB-LED
+
+Mit einer RGB-LED können die verschiedensten Farben erzeugt werden, die zum Beispiel in Smartphones als Status-LED genutzt werden. Auch in Tastaturen im Gaming-Bereich werden gerne RGB-Farben zur Beleuchtung verwendet.
+
+RGB steht für Rot, Grün und Blau. In einer RGB-LED sind also drei LEDs gleichzeitig verbaut, die sich in unserem Fall eine gemeinsame Anode (Kontakt mit GND) teilen. Die Anode gehört zum längsten Beinchen. Die anderen Kontakte sollten an einen PWM-Pin (gekennzeichet durch eine Tilde) angeschlossen werden.
+
+<div markdown="1" class="aufgabe">
+#### Funktionstest einer RGB-LED
+
+Schließe die RGB-LED wie beschrieben an und experimentiere mit den Befehlen für die Farben. Vervollständige mit Hilfe deiner Experimente die unten stehende Tabelle.
+
+| Farbe | Farbanteile |
+|---|---|
+| ![RGB rot](/images/rgb-rot.png)  | ![RGB rot Code](/images/rgb-rot-code.png)  |
+| ![RGB grün](/images/rgb-gruen.png)  |   |
+| ![RGB lila](/images/rgb-lila.png)  |   |
+| ![RGB orange](/images/rgb-orange.png)  |   |
+| ![RGB blau](/images/rgb-blau.png)  |   |
+| ![RGB türkis](/images/rgb-tuerkis.png)  |   |
+</div>
+
+
+<div markdown="1" class="aufgabe">
+#### Colour-Fading
+
+test
+</div>
+
+!!!! #### Hintergrund: Das RGB-Farbmodell
+!!!! ds
+
+
+<div markdown="1" class="aufgabe">
+#### Konfiguration mit analogen bzw. PWM-Pins
+
+test
+</div>
+
 ### Servo
 
 <div markdown="1" class="clearfix">
