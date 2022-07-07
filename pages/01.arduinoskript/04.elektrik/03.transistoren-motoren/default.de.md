@@ -4,6 +4,12 @@ title: 'Transistoren und Motoren'
 
 # Elektrische Grundlagen Teil 3: Transistoren und Motoren
 
+<style>
+    h1 {
+  		counter-set: h1 4 ;
+	}
+</style>
+
 [TOC]
 
 ## Schaltungen mit Transistoren steuern
