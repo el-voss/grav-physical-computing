@@ -48,16 +48,19 @@ In diesem Kapitel lernst du…
     </div>
     <div class="overview-card">
     <p markdown="1">[Transistoren und Motoren](./transistoren-motoren/)</p>
+    <ul>
         <li markdown="1">[Schaltungen mit Transistoren steuern](./transistoren-motoren#schaltungen-mit-transistoren...)</li>
         <li markdown="1">[Elektromotor und Diode](./transistoren-motoren#elektromotor-und-diode)</li>
         <li markdown="1">[Elektromotor mit Transistor steuern](./transistoren-motoren#elektromotor-mit-transistor...)</li>
         <li markdown="1">[Elektromotor mit Relais steuern](./transistoren-motoren#elektromotor-mit-relais-steuern)</li>
         <li markdown="1">[Elektromotor mit Motortreiber steuern](./transistoren-motoren#elektromotoren-mit-dem...)</li>
+    </ul>
     </div>
     <div class="overview-card">
     <p markdown="1">[Vermischte Übungen und Ausblick](./uebungen-ausblick/)</p>
+    <ul>
         <li markdown="1">[Vermischte Übungen](./uebungen-ausblick#vermischte-bungen)</li>
         <li markdown="1">[Ausblick](./uebungen-ausblick#ausblick)</li>
-        
+    </ul>    
     </div>
 </div>
