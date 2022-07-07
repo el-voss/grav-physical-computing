@@ -1,12 +1,12 @@
 ---
-title: 'Steuerung komplexer Informatik-Systeme'
-menu: 'Komplexe Systeme'
+title: Automaten
+menu: Automaten
 taxonomy:
     category:
         - docs
 ---
 
-# Steuerung komplexer Informatik-Systeme
+# Automaten
 
 <style>
     h1 {
@@ -14,7 +14,7 @@ taxonomy:
 	}
 </style>
 
-Mit den vielen Bauteilen, die nun zur Verfügung stehen, lassen sich bereits große und komplexe Projekte realisieren. Um dabei nicht den Überblick zu verlieren, hilft es, sich mit einigen weiteren Konzepten aus der Informatik zu beschäftigen, die das Programm und die Vorgehensweise zur Erstellung des Programms besser strukturieren.
+Mit den vielen Bauteilen, die nun zur Verfügung stehen, lassen sich bereits große und komplexe Projekte realisieren. Um dabei nicht den Überblick zu verlieren, hilft es, sich mit zustandsbasierten Modellierung und Automaten zu beschäftigen, die das Programm und die Vorgehensweise zur Erstellung des Programms besser strukturieren.
 
 In diesem Kapitel lernst du...
   - …die Funktionsweise von Programmen mit einem Zustandsdiagramm zu planen und zu veranschaulichen,
