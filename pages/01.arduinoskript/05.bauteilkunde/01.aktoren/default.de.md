@@ -25,7 +25,7 @@ Im Folgenden werden Bauteile erklärt, die eine Ausgabe machen, also z. B. sich 
 ![RGB-LED](/images/rgb-led.jpg?resize=250&classes=caption,figure-right "RGB-LED.")
 Mit einer RGB-LED können die verschiedensten Farben erzeugt werden, die zum Beispiel in Smartphones als Status-LED genutzt werden. Auch in Tastaturen im Gaming-Bereich werden gerne RGB-Farben zur Beleuchtung verwendet.
 
-RGB steht für Rot, Grün und Blau. In einer RGB-LED sind also drei LEDs gleichzeitig verbaut, die sich in unserem Fall eine gemeinsame Anode (Kontakt mit GND) teilen. Die Anode gehört zum längsten Beinchen. Die anderen Kontakte sollten an einen PWM-Pin (gekennzeichet durch eine Tilde) angeschlossen werden.
+RGB steht für Rot, Grün und Blau. In einer RGB-LED sind also drei LEDs gleichzeitig verbaut, die sich in unserem Fall eine gemeinsame Anode (Kontakt mit GND) teilen. Die Anode gehört zum längsten Beinchen. Die anderen Kontakte sollten an einen PWM-Pin (gekennzeichet durch eine Tilde: ~) angeschlossen werden.
 </div>
 
 ![Verschaltung einer RGB-LED am Arduino.](/circuits/schaltplan-rgb-led-am-arduino.png?lightbox=1024&resize=500&classes=caption "Verschaltung einer RGB-LED am Arduino.")
