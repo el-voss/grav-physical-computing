@@ -54,7 +54,7 @@ Wenn man die Farbanteile mit einer Zählschleife durchlaufen lässt, ergeben sic
 !!!! #### Hintergrund: Das RGB-Farbmodell
 !!!! 
 !!!! Im RGB-Farbmodell werden alle Farben mit Hilfe von verschiedenen Anteilen von **R**ot, **G**rün und **B**lau zusammengesetzt. Dabei handelt es sich um ein [additives Farbmodell](https://de.wikipedia.org/wiki/Additive_Farbmischung), bei dem die Farbe umso heller wird, je größer der Anteil jeder Farbe ist. Werden rot, grün und blau in voller Stärke vermischt, ergibt sich weiß. Wenn ihr Anteil jeweils null beträgt, ergibt sich schwarz.
-!!!! Die Anteile werden durch eine Zahl zwischen 0 und 255 angegeben, welches sich jeweils durch acht Bit bzw. ein Byte speichern lassen. Statt der Dezimalzahlen von 0 bis 255 wird der Anteil auch häufig mit *Hexadezimalzahlen* von $00_{hex}$ bis $ff_{hex}$ angegeben. Der Code sieht dann zum Beispiel so aus: $#72b9fa$, wobei $72$ der Rotanteil, $b9$ der Grünanteil und $fa$ der Blauanteil ist.
+!!!! Die Anteile werden durch eine Zahl zwischen 0 und 255 angegeben, welches sich jeweils durch acht Bit bzw. ein Byte speichern lassen. Statt der Dezimalzahlen von 0 bis 255 wird der Anteil auch häufig mit *Hexadezimalzahlen* von $00_{hex}$ bis $ff_{hex}$ angegeben. Der Code sieht dann zum Beispiel so aus: $\#72b9fa$, wobei $72$ der Rotanteil, $b9$ der Grünanteil und $fa$ der Blauanteil ist.
 
 
 <div markdown="1" class="aufgabe">
