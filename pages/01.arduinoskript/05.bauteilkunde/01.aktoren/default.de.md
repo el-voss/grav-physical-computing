@@ -66,7 +66,9 @@ Wenn man die Farbanteile mit einer Zählschleife durchlaufen lässt, ergeben sic
 <div markdown="1" class="aufgabe">
 #### Konfiguration mit analogen bzw. PWM-Pins
 
-test
+Wie oben beschrieben handelt es sich bei der RGB-LED eigentlich um drei einzelne LEDs, die jeweils mit einem PWM-Pin verbunden werden müssen, damit die Farbanteile eingestellt werden können.
+
+Überprüfe dies, indem du jede LED einzeln als analogen Aktor konfigurierst und die Farben aus der ersten Aufgabe mit dem Befehl `schalte analogen Wert Aktor <LED Name> <Zahl von 0 bis 255>` erzeugst.
 </div>
 
 ### Servo
