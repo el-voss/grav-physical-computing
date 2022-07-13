@@ -20,6 +20,7 @@ Die folgenden Seiten bieten jeweils eine Einführung in neue Bauteile, für die 
     <div class="overview-card">
     <p markdown="1">[Aktoren](./aktoren/)</p>
     <ul>
+        <li markdown="1">[RGB-LED](./aktoren/#rgb-led)</li>
         <li markdown="1">[Servo](./aktoren/#servo)</li>
         <li markdown="1">[Schrittmotor](./aktoren/#schrittmotor)</li>
         <li markdown="1">[Liquid Crystal Display (LCD)](./aktoren/#liquid-crystal-display-lcd)</li>
@@ -31,6 +32,7 @@ Die folgenden Seiten bieten jeweils eine Einführung in neue Bauteile, für die 
     <ul>
         <li markdown="1">[Neigungsschalter](./sensoren/#neigungsschalter)</li>
         <li markdown="1">[Bewegungsmelder](./sensoren/#bewegungsmelder)</li>
+        <li markdown="1">[Drehregler / Potentiometer](./sensoren/#drehregler-potentiometer)</li>
         <li markdown="1">[Joystick](./sensoren/#joystick)</li>
         <li markdown="1">[Infrarot-Sensor mit Fernbedienung](./sensoren/#infrarot-sensor-mit...)</li>
         <li markdown="1">[Temperatur- und Luftfeuchtigkeitssensor DHT-11](./sensoren/#temperatur-und...)</li>
