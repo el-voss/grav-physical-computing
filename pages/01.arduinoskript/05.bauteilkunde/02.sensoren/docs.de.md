@@ -103,12 +103,12 @@ Die Grundlagen des Potentiometers werden auch [im Kapitel Elektrische Grundlagen
 Für das Potentiometer existiert ein vorkonfigurierter Block, über den man die Spannung am Teilwiderstand zwischen GND und dem analogen Eingang auslesen kann. Diese kann zwischen 0V (Teilwiderstand gleich null) oder 5V (Teilwiderstand gleich Gesamtwiderstand) bewegen. Alternativ kann das Potentiometer als analoger Sensor konfiguriert werden und der Analogwert im Programm abgefragt werden.
 
 <div class="flex-box">
-<div markdown="1" class="flexible">
+<div markdown="1">
 ![Konfiguration des Potentiometers](/images/poti-vorkonfiguriert.png)
 ![Konfiguration und Auslesen des Potentiometers mit vorkonfigurierten Blöcken.](/images/poti-befehl-vorkonfiguriert.png?classes=caption "Konfiguration und Auslesen des Potentiometers mit vorkonfigurierten Blöcken.")
 </div>
-<div markdown="1" class="flexible">
-![Konfiguration des Potentiometers als analoger Sensor.](/images/ptoi-analoger-sensor.png)
+<div markdown="1">
+![Konfiguration des Potentiometers als analoger Sensor.](/images/poti-analoger-sensor.png)
 ![Konfiguration und Auslesen des Potentiometers als analoger Sensor. Dabei werden die Analogwerte genauso wie bei den vorkonfigurierten Blöcken in eine Spannung umgerechnet.](/images/poti-befehl-analoger-sensor.png?classes=caption "Konfiguration und Auslesen des Potentiometers als analoger Sensor. Dabei werden die Analogwerte genauso wie bei den vorkonfigurierten Blöcken in eine Spannung umgerechnet.")
 </div>
 </div>
