@@ -94,8 +94,8 @@ Ein Drehregler oder Potentiometer ist ein Widerstand, der in zwei Teile aufgetei
 Zum Anschluss an den Arduino wird der mittlere Pin mit einem analogen Eingang verbunden, über den die Spannung am Teilwiderstand zwischen GND und dem analogen Eingang abgefragt werden kann. Die anderen beiden Pins müssen mit 5V und GND verbunden werden, wobei es egal ist, welcher Pin mit GND und welcher mit 5V verbunden wird.
 
 <div class="flex-box">
-<div markdown="1" class="flexible">![Anschluss des Potentiometers an den Arduino.](/circuits/potentiometer-schaltplan.png?lightbox=1024&resize=500&classes=caption "Anschluss des Potentiometers an den Arduino.")</div>
-<div markdown="1" class="flexible">![Ersatzschaltplan für das Potentiometer.](/circuits/potentiometer-ersatzschaltplan.png?lightbox=1024&resize=500&classes=caption "Ersatzschaltplan für das Potentiometer.")</div>
+<div markdown="1" class="flexible">![Anschluss des Potentiometers an den Arduino.](/circuits/potentiometer-schaltplan.png?lightbox=1024&resize=400&classes=caption "Anschluss des Potentiometers an den Arduino.")</div>
+<div markdown="1" class="flexible">![Ersatzschaltplan für das Potentiometer.](/circuits/potentiometer-ersatzschaltplan.png?lightbox=1024&resize=400&classes=caption "Ersatzschaltplan für das Potentiometer.")</div>
 </div>
 
 Die Grundlagen des Potentiometers werden auch [im Kapitel Elektrische Grundlagen behandelt](../../elektrik/anwendungen-spannungsmessung#drehregler-verwenden).
@@ -104,12 +104,12 @@ Für das Potentiometer existiert ein vorkonfigurierter Block, über den man die 
 
 <div class="flex-box">
 <div markdown="1" class="flexible">
-    ![Konfiguration des Potentiometers](/images/poti-vorkonfiguriert.png)
-    ![Konfiguration und Auslesen des Potentiometers mit vorkonfigurierten Blöcken.](/images/poti-befehl-vorkonfiguriert.png?classes=caption "Konfiguration und Auslesen des Potentiometers mit vorkonfigurierten Blöcken.")
+![Konfiguration des Potentiometers](/images/poti-vorkonfiguriert.png)
+![Konfiguration und Auslesen des Potentiometers mit vorkonfigurierten Blöcken.](/images/poti-befehl-vorkonfiguriert.png?classes=caption "Konfiguration und Auslesen des Potentiometers mit vorkonfigurierten Blöcken.")
 </div>
 <div markdown="1" class="flexible">
-    ![Konfiguration des Potentiometers als analoger Sensor.](/images/ptoi-analoger-sensor.png)
-    ![Konfiguration und Auslesen des Potentiometers als analoger Sensor. Dabei werden die Analogwerte genauso wie bei den vorkonfigurierten Blöcken in eine Spannung umgerechnet.](/images/poti-befehl-analoger-sensor.png?classes=caption "Konfiguration und Auslesen des Potentiometers als analoger Sensor. Dabei werden die Analogwerte genauso wie bei den vorkonfigurierten Blöcken in eine Spannung umgerechnet.")
+![Konfiguration des Potentiometers als analoger Sensor.](/images/ptoi-analoger-sensor.png)
+![Konfiguration und Auslesen des Potentiometers als analoger Sensor. Dabei werden die Analogwerte genauso wie bei den vorkonfigurierten Blöcken in eine Spannung umgerechnet.](/images/poti-befehl-analoger-sensor.png?classes=caption "Konfiguration und Auslesen des Potentiometers als analoger Sensor. Dabei werden die Analogwerte genauso wie bei den vorkonfigurierten Blöcken in eine Spannung umgerechnet.")
 </div>
 </div>
 
