@@ -84,6 +84,26 @@ Baue und programmiere eine automatische Tür, die sich öffnet, wenn eine Bewegu
 ! **Recherche: Wie funktioniert eigentlich ein Bewegungsmelder?**
 ! Das zentrale Bauteil eines Bewegungsmelders ist ein sogenannter *Passiver Infrarot Sensor (PIR)*, auch *Pyroelektrischer Sensor*. Recherchiere im Internet, wie solche Sensoren funktionieren und fasse zusammen, wie es zur Registrierung einer Bewegung kommt.
 
+### Drehregler / Potentiometer
+
+<div markdown="1" class="clearfix">
+![Potentiometer](/images/poti.jpg?resize=200&classes=caption "Potentiometer.")
+Ein Drehregler oder Potentiometer ist ein Widerstand, der in zwei Teile aufgeteilt wird. Durch Drehen am Griff kann man die Größe der Teile verändern, allerdings bleibt der Gesamtwiderstand immer gleich groß. Durch den einstellbaren Teilwiderstand lässt sich zum Beispiel eine Lampe dimmen oder die Lautstärke eines Lautsprechers regulieren.
+</div>
+
+Zum Anschluss an den Arduino wird der mittlere Pin mit einem analogen Eingang verbunden, über den die Spannung am Teilwiderstand zwischen GND und dem analogen Eingang abgefragt werden kann. Die anderen beiden Pins müssen mit 5V und GND verbunden werden, wobei es egal ist, welcher Pin mit GND und welcher mit 5V verbunden wird.
+
+
+Die Grundlagen des Potentiometers werden auch [im Kapitel Elektrische Grundlagen behandelt](../../elektrik/anwendungen-spannungsmessung#drehregler-verwenden) thematisiert.
+
+<div markdown="1" class="projekt clearfix">
+#### Dimmbare Lampe
+![PWM-Analog-Diagramm](/images/pwm-analog-diagramm.png?resize=300&classes=caption,figure-right "Diagramm zur Ermittlung einer Funktion.")
+Baue und programmiere eine Lampe, deren Helligkeit sich durch ein Potentiometer einstellen lässt.
+
+*Hinweis:* Du musst dafür sorgen, dass der eingelesene Analogwert zwischen 0 und 1023 in einen PWM-Wert zwischen 0 und 255 umgerechnet wird. Ermittle dazu eine passende Funktion.
+</div>
+
 ### Joystick
 
 Joysticks werden bekanntermaßen für Spielecontroller oder auch zur Steuerung von Maschinen genutzt. Mit dem Arduino lassen sich einfache Versionen davon nachbauen.
