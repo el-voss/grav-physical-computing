@@ -85,7 +85,13 @@ Miss mindestens zehn Mal deine Reaktionszeit und bestimme den Mittelwert. Bist d
 
 ### Wiederholungen mit Bedingungen steuern
 
-In vielen Fällen geht es bei Schleifen nicht um eine genau oder zufällig bestimmte Anzahl von Wiederholungen, sondern darum, einen Vorgang zu wiederholen, bis eine Bedingung wahr ergibt, bzw. solange, wie eine Bedingung wahr ergibt. Die Bedingung, die wahr oder falsch ergibt, kann auch Sensorwerte beinhalten. Dies wird auch im folgenden Spiel genutzt.
+In vielen Fällen geht es bei Schleifen nicht um eine genau oder zufällig bestimmte Anzahl von Wiederholungen, sondern darum, einen Vorgang zu wiederholen, bis eine Bedingung wahr ergibt, bzw. solange, wie eine Bedingung wahr ergibt. Die Bedingung, die wahr oder falsch ergibt, kann auch Sensorwerte beinhalten.
+
+<div class="projekt" markdown="1">
+#### Alarmanlage
+
+Baue und programiere eine Alarmanlage, die wie folgt funktioniert: Wenn über einen Bewegungsmelder eine Bewegung registriert wird, dann geht die Alarmanlage los (Blinken und / oder Piepsen). Die Alarmanlage bleibt so lange aktiv, bis ein Taster gedrückt wurde, um sie wieder auszustellen.
+</div>
 
 <div class="projekt clearfix" markdown="1">
 #### Konfigurierbares Reaktionsspiel
