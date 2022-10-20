@@ -477,7 +477,9 @@ Nach Abzug der Analogwerte, die für die Beschleunigung 0 stehen, erhält man dr
 
 Entwickle eine Musikbox für Kinder mit einem einfachen Bedienkonzept: Um das nächste Lied abspielen zu lassen, muss man sie schütteln.
 
-Mögliche große Erweiterung: Nutze eine RFID-Karte als CD. Je nachdem, welche RFID-Karte erkannt wird, werden andere Lieder abgespielt. *Diese Idee wird auch beim [Tonuino-Projekt](https://www.voss.earth/tonuino/) genutzt!*
+*Vorlage:* Du kannst das folgende Programm herunterladen und im Open Roberta Lab importieren, um es als Vorlage zu nutzen: <a href="/p-templates/beschleunigungssensor-vorlage.xml" download><i class="fa fa-download" aria-hidden="true"></i> beschleunigungssensor-vorlage.xml</a>. Du findest darin eine Funktion "gibBeschleunigung", die die Gesamtbeschleunigung (vgl. mathematischen Exkurs oben) für dich berechnet.
+
+*Mögliche große Erweiterung:* Nutze eine RFID-Karte als CD. Je nachdem, welche RFID-Karte erkannt wird, werden andere Lieder abgespielt. *Diese Idee wird auch beim [Tonuino-Projekt](https://www.voss.earth/tonuino/) genutzt!*
 </div>
 
 ### Analoger Hall-Sensor (Magnetfeldsensor)
