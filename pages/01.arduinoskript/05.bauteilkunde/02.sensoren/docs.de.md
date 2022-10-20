@@ -462,7 +462,23 @@ Der ADXL335 gibt für die Beschleunigungen $a_x$ in x-Richtung, $a_y$ in y-Richt
 3. Die drei Spannungen und damit die Analogwerte, die in A0, A1 und A2 gemessen werden, sind proportional zur Beschleunigung. Ermittle mit Hilfe der Beobachtung aus Schritt 2 einen funktionalen Zusammenhang $a_z(w)$ für die Berechnung der Beschleunigung $a_z$ in Abhängigkeit vom Analogwert $w$. Ermittle auch eine Formel für $a_x$ und $a_y$. 
 </div>
 
+<div markdown="1" class="aufgabe">
+#### Mathematischer Exkurs: Berechnung der Gesamtbeschleunigung
 
+Nach Abzug der Analogwerte, die für die Beschleunigung 0 stehen, erhält man drei Analogwerte für die Beschleunigung in x-Richtung, y- Richtung und z-Richtung. Diese lassen sich mathematisch als dreidimensionaler Vektor auffassen, dessen Betrag bzw. Länge berechnet werden kann, um (einen Analogwert für) die Gesamtbeschleunigung zu erhalten.
+
+1. Leite die Formel zur Berechnung der Länge eines dreidimensionalen Vektors anhand der folgenden Skizze her oder recherchiere sie. Ermittle damit eine Formel für einen Analogwert für die Gesamtbeschleunigung.
+![Skizze für die Herleitung der Formel für die Länge des Beschleunigungsvektors.](/images/beschleunigungsvektor.png?lightbox=1024&resize=500&classes=caption "Skizze für die Herleitung der Formel für die Länge des Beschleunigungsvektors. In blau sind die Komponenten ax, ay und az des Beschleunigungsvektors eingetragen. Die gesuchte Länge ist die rot markierte Diagonale. Die Bestimmung der Länge der orange markierten Diagonale wird hilfreich sein.")
+2. Ermittle mit den Formeln aus Schritt 3 der vorherigen Aufgabe für die Beschleunigungen $a_x$, $a_y$ und $a_z$ eine Formel für die Gesamtbeschleunigung.  
+</div>
+
+<div markdown="1" class="projekt">
+#### Musikbox für Kinder
+
+Entwickle eine Musikbox für Kinder mit einem einfachen Bedienkonzept: Um das nächste Lied abspielen zu lassen, muss man sie schütteln.
+
+Mögliche große Erweiterung: Nutze eine RFID-Karte als CD. Je nachdem, welche RFID-Karte erkannt wird, werden andere Lieder abgespielt. *Diese Idee wird auch beim [Tonuino-Projekt](https://www.voss.earth/tonuino/) genutzt!*
+</div>
 
 ### Analoger Hall-Sensor (Magnetfeldsensor)
 
