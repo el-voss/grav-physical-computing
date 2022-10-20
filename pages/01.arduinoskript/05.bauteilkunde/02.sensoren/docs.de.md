@@ -447,7 +447,7 @@ Verwendet wird hier das Modul GY-61, auf dem der Beschleunigungssensor ADXL335 v
 <div markdown="1">![Modul GY61 mit dem Beschleunigungssensor ADXL335 von unten.](/images/beschleunigungssensor-gy61-unten.jpg?resize=300&classes=caption "Modul GY61 mit dem Beschleunigungssensor ADXL335 von unten.")</div>
 </div>
 
-Der ADXL335 gibt für die Beschleunigungen $a_x$ in x-Richtung, $a_y$ in y-Richtung und $a_z$ in z-Richtung jeweils eine Spannung aus, die [laut Datenblatt des ADXL335]() proportional zur Beschleunigung ist. Am Arduino kann diese Spannung über die analogen Eingänge A0 bis A5 gemessen werden. Wenn die Schaltung wie im folgenden Schaltplan erfolgt, dann müssen im Open Roberta Lab drei analoge Sensoren für A0, A1 und A2 angelegt werden, deren Werte als Analogwerte ausgelesen werden.
+Der ADXL335 gibt für die Beschleunigungen $a_x$ in x-Richtung, $a_y$ in y-Richtung und $a_z$ in z-Richtung jeweils eine Spannung aus, die [laut Datenblatt des ADXL335 (S. 10)](https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL335.pdf) proportional zur Beschleunigung ist. Am Arduino kann diese Spannung über die analogen Eingänge A0 bis A5 gemessen werden. Wenn die Schaltung wie im folgenden Schaltplan erfolgt, dann müssen im Open Roberta Lab drei analoge Sensoren für A0, A1 und A2 angelegt werden, deren Werte als Analogwerte ausgelesen werden.
 
 ![Schaltplan zum Beschleunigungsmodul GY-61 am Arduino.](/circuits/beschleunigungssensor-am-arduino.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum Beschleunigungsmodul am Arduino.")
 
@@ -461,6 +461,8 @@ Der ADXL335 gibt für die Beschleunigungen $a_x$ in x-Richtung, $a_y$ in y-Richt
 
 3. Die drei Spannungen und damit die Analogwerte, die in A0, A1 und A2 gemessen werden, sind proportional zur Beschleunigung. Ermittle mit Hilfe der Beobachtung aus Schritt 2 einen funktionalen Zusammenhang $a_z(w)$ für die Berechnung der Beschleunigung $a_z$ in Abhängigkeit vom Analogwert $w$. Ermittle auch eine Formel für $a_x$ und $a_y$. 
 </div>
+
+
 
 ### Analoger Hall-Sensor (Magnetfeldsensor)
 
