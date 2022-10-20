@@ -433,8 +433,17 @@ Baue und programmiere einen Prototypen für eine Katzentür, die sich automatisc
 !!!! Da das RFID-Modul aus diesem Abschnitt auch über den I2C-Bus angesteuert werden kann, haben zwei Pins eine mehrfache Funktion. Insbesondere entspricht der SDA-Pin (im I2C-Bus die serielle Datenleitung) bei der Ansteuerung über den SPI-Bus dem SS-Pin (siehe [components101.com](https://components101.com/wireless/rc522-rfid-module)).
 !!!! <figure class="image-caption">
 !!!!    <img title="SPI-Verbindung mit einem Master und drei Slaves." alt="SPI-Verbindung mit einem Master und drei Slaves." class="caption" src="/user/pages/images/SPI-three-slaves.png">
-!!!!    <figcaption class="">SPI-Verbindung mit einem Master und drei Slaves. Quelle: <a href="https://de.wikipedia.org/wiki/Datei:SPI_three_slaves.svg" target=_"blank">Wikipedia</a>, Lizenz: <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de" target="_blank">CC-BY-SA 3.0</a>, <a href="https://en.wikipedia.org/wiki/User:Cburnett" target="_blank">Colin Burnett</a>.</figcaption>
+!!!!    <figcaption class="">SPI-Verbindung mit einem Master und drei Slaves. Quelle: <a href="https://de.wikipedia.org/wiki/Datei:SPI_three_slaves.svg" target="_blank">Wikipedia</a>, Lizenz: <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de" target="_blank">CC-BY-SA 3.0</a>, <a href="https://en.wikipedia.org/wiki/User:Cburnett" target="_blank">Colin Burnett</a>.</figcaption>
 !!!! </figure>
+
+### Beschleunigungssensor oder Lagesensor
+
+Beschleunigungssensoren oder Lagesensoren tauchen in zig verschiedenen Geräten auf. In Autos messen sie die Beschleunigung und regeln sie das Auslösen der AirBags, in Digitalkameras dienen sie zur Bildstabilisierung, in Tablets und Smartphones lösen sie das Drehen des Bildschirms aus, wenn das Gerät gedreht wurde, oder sie dienen zum Steuern eines Spiels auf dem Smartphone. Auch mit dem Arduino lassen sich interessante Dinge mit Beschleunigungssensoren bauen.
+
+Verwendet wird hier das Modul GY-61, auf dem der Beschleunigungssensor ADXL335 verbaut ist. Da der ADXL335 mit einem Pegel von 3V arbeitet, befindet sich auf der kleinen Platine zusätzlich ein Spannungsregler, der die 5V vom Arduino auf 3V für den ADXL335 herunterregelt. Zusätzlich ist ein kleines Koordinatensystem auf der Platine gezeichnet, das angibt, in welchen Richtungen die Beschleunigung gemessen wird. Die z-Achse verläuft dabei senkrecht zur Platine nach unten, wenn man auf das Koordinatensystem schaut. Dies erkennbar an dem Kreis mit einem Kreuz darin - als Eselsbrücke kann man sich einen Dartpfeil vorstellen, dessen gekreuzte Federn man von hinten sieht, wenn er wegfliegt.
+
+Der ADXL335 gibt für die Beschleunigungen $a_x$ in x-Richtung, $a_y$ in y-Richtung und $a_z$ in z-Richtung jeweils eine Spannung aus, die [laut Datenblatt des ADXL335]() proportional zur Beschleunigung ist. Am Arduino kann diese Spannung über die analogen Eingänge A0 bis A5 gemessen werden.
+
 
 ### Analoger Hall-Sensor (Magnetfeldsensor)
 
