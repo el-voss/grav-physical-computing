@@ -482,6 +482,23 @@ Entwickle eine Musikbox für Kinder mit einem einfachen Bedienkonzept: Um das n�
 *Mögliche große Erweiterung:* Nutze eine RFID-Karte als CD. Je nachdem, welche RFID-Karte erkannt wird, werden andere Lieder abgespielt. *Diese Idee wird auch beim [Tonuino-Projekt](https://www.voss.earth/tonuino/) genutzt!*
 </div>
 
+<div markdown="1" class="projekt">
+#### Schrittzähler
+
+Entwickle einen Schrittzähler!
+
+*Hinweise und Tipps:*
+- Wenn du an einem Laptop arbeitest, kannst du den Arduino und das Steckbrett auf dem Laptop platzieren, während du durch die Gegend läufst und auf dem seriellen Monitor Werte sammelst.
+- Überlege, welche der drei Beschleunigungen $a_x$, $a_y$ und $a_z$ am aussagekräftigsten ist. Konzentriere dich auf diese Beschleunigung.
+- Ein Kriterium für einen Schritt lässt sich am besten anhand eines grafischen Verlaufs der Werte finden. Um diesen zu erhalten, gehe folgendermaßen vor:
+   - Sende die Beschleunigungswerte an den seriellen Monitor.
+   - Um die Messung zu beenden, ziehe das USB-Kabel vom Arduino heraus.
+   - Kopiere die Werte aus dem seriellen Monitor in eine neue Textdatei, z. B. "schritte.csv".
+   - Ggf. müssen aus den Punkten noch Kommata gemacht werden. Nutze dafür die Funktion "Suchen und Ersetzen". Unter Windows und Linux lässt sich dies mit der Tastenkombination Strg + F starten.
+   - Öffne eine Tabellenkalkulation und darin den Reiter "Daten". Importiere die Textdatei.
+   - Erzeuge aus den Daten ein Diagramm, z. B. ein Liniendiagramm.
+</div>
+
 ### Analoger Hall-Sensor (Magnetfeldsensor)
 
 Mit einem analogen Hall-Sensor lässt sich die Stärke eines Magnetfeldes (verkürzt: eines Magneten) messen. Solche Messungen werden zum Beispiel bei der Pipeline-Inspektion genutzt, um Risse in einer Pipeline zu finden und ihre Größe abzuschätzen. Dabei wird die Pipeline durch sehr starke Magnete magnetisiert. Wenn Risse vorhanden sind, kommt es jedoch zu Änderungen bei der Magnetisierung. Diese können durch die Hall-Sensoren erfasst und gemessen werden.
