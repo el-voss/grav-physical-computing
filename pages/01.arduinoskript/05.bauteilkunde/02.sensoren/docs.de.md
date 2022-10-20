@@ -442,8 +442,25 @@ Beschleunigungssensoren oder Lagesensoren tauchen in zig verschiedenen Geräten 
 
 Verwendet wird hier das Modul GY-61, auf dem der Beschleunigungssensor ADXL335 verbaut ist. Da der ADXL335 mit einem Pegel von 3V arbeitet, befindet sich auf der kleinen Platine zusätzlich ein Spannungsregler, der die 5V vom Arduino auf 3V für den ADXL335 herunterregelt. Zusätzlich ist ein kleines Koordinatensystem auf der Platine gezeichnet, das angibt, in welchen Richtungen die Beschleunigung gemessen wird. Die z-Achse verläuft dabei senkrecht zur Platine nach unten, wenn man auf das Koordinatensystem schaut. Dies erkennbar an dem Kreis mit einem Kreuz darin - als Eselsbrücke kann man sich einen Dartpfeil vorstellen, dessen gekreuzte Federn man von hinten sieht, wenn er wegfliegt.
 
-Der ADXL335 gibt für die Beschleunigungen $a_x$ in x-Richtung, $a_y$ in y-Richtung und $a_z$ in z-Richtung jeweils eine Spannung aus, die [laut Datenblatt des ADXL335]() proportional zur Beschleunigung ist. Am Arduino kann diese Spannung über die analogen Eingänge A0 bis A5 gemessen werden.
+<div class="flex-box">
+<div markdown="1">![Modul GY61 mit dem Beschleunigungssensor ADXL335 von oben.](/images/beschleunigungssensor-gy61-oben.jpg?resize=150&classes=caption "Modul GY61 mit dem Beschleunigungssensor ADXL335 von oben.")</div>
+<div markdown="1">![Modul GY61 mit dem Beschleunigungssensor ADXL335 von unten.](/images/beschleunigungssensor-gy61-unten.jpg?resize=150&classes=caption "Modul GY61 mit dem Beschleunigungssensor ADXL335 von unten.")</div>
+</div>
 
+Der ADXL335 gibt für die Beschleunigungen $a_x$ in x-Richtung, $a_y$ in y-Richtung und $a_z$ in z-Richtung jeweils eine Spannung aus, die [laut Datenblatt des ADXL335]() proportional zur Beschleunigung ist. Am Arduino kann diese Spannung über die analogen Eingänge A0 bis A5 gemessen werden. Wenn die Schaltung wie im folgenden Schaltplan erfolgt, dann müssen im Open Roberta Lab drei analoge Sensoren für A0, A1 und A2 angelegt werden, deren Werte als Analogwerte ausgelesen werden.
+
+![Schaltplan zum Beschleunigungsmodul GY-61 am Arduino.](/circuits/beschleunigungssensor-am-arduino.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum Beschleunigungsmodul am Arduino.")
+
+<div markdown="1" class="aufgabe">
+#### Erste Experimente mit dem Beschleunigungssensor
+
+1. Schließe den Beschleunigungssensor wie oben beschrieben am Arduino an, konfiguriere drei analoge Sensoren im Open Roberta Lab für die drei Beschleunigungen und lasse deren analogen Werte auf dem seriellen Monitor ausgeben. Beobachte die Werte, während du die Platine auf unterschiedliche Arten beschleunigst (Anheben, Schütteln, Drehen, ...).
+2. Die Abbildung unten zeigt die Analogwerte, während sich der Beschleunigungssensor in Ruhe befindet. Begründe, warum der Analogwert für die Beschleunigung in z-Richtung größer als die anderen beiden ist.
+
+![Analogwerte für die Beschleunigung in x-, y- und z-Richtung bei ruhendem Beschleunigungssensor.](/images/analogwerte-ruhend.png?lightbox=1024&resize=500&classes=caption "Analogwerte für die Beschleunigung in x-, y- und z-Richtung bei ruhendem Beschleunigungssensor.")
+
+3. Die drei Spannungen und damit die Analogwerte, die in A0, A1 und A2 gemessen werden, sind proportional zur Beschleunigung. Ermittle mit Hilfe der Beobachtung aus Schritt 2 einen funktionalen Zusammenhang $a_z(w)$ für die Berechnung der Beschleunigung $a_z$ in Abhängigkeit vom Analogwert $w$. Ermittle auch eine Formel für $a_x$ und $a_y$. 
+</div>
 
 ### Analoger Hall-Sensor (Magnetfeldsensor)
 
