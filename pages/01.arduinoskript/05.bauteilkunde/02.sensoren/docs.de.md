@@ -468,8 +468,8 @@ Der ADXL335 gibt für die Beschleunigungen $a_x$ in x-Richtung, $a_y$ in y-Richt
 Nach Abzug der Analogwerte, die für die Beschleunigung 0 stehen, erhält man drei Analogwerte für die Beschleunigung in x-Richtung, y- Richtung und z-Richtung. Diese lassen sich mathematisch als dreidimensionaler Vektor auffassen, dessen Betrag bzw. Länge berechnet werden kann, um (einen Analogwert für) die Gesamtbeschleunigung zu erhalten.
 
 1. Leite die Formel zur Berechnung der Länge eines dreidimensionalen Vektors anhand der folgenden Skizze her oder recherchiere sie. Ermittle damit eine Formel für einen Analogwert für die Gesamtbeschleunigung.
-![Skizze für die Herleitung der Formel für die Länge des Beschleunigungsvektors.](/images/beschleunigungsvektor.png?lightbox=1024&resize=500&classes=caption "Skizze für die Herleitung der Formel für die Länge des Beschleunigungsvektors. In blau sind die Komponenten ax, ay und az des Beschleunigungsvektors eingetragen. Die gesuchte Länge ist die rot markierte Diagonale. Die Bestimmung der Länge der orange markierten Diagonale wird hilfreich sein.")
-2. Ermittle mit den Formeln aus Schritt 3 der vorherigen Aufgabe für die Beschleunigungen $a_x$, $a_y$ und $a_z$ eine Formel für die Gesamtbeschleunigung.  
+![Skizze für die Herleitung der Formel für die Länge des Beschleunigungsvektors.](/images/beschleunigungsvektor.png?lightbox=1024&resize=800&classes=caption "Skizze für die Herleitung der Formel für die Länge des Beschleunigungsvektors. In blau sind die Komponenten ax, ay und az des Beschleunigungsvektors eingetragen. Die gesuchte Länge ist die rot markierte Diagonale. Die Bestimmung der Länge der orange markierten Diagonale wird hilfreich sein.")
+2. Ermittle mit den Formeln für die Beschleunigungen $a_x$, $a_y$ und $a_z$ (aus Schritt 3 der vorherigen Aufgabe) eine Formel für die Gesamtbeschleunigung.  
 </div>
 
 <div markdown="1" class="projekt">
