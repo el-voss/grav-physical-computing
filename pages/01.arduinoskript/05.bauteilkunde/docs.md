@@ -41,6 +41,7 @@ Die folgenden Seiten bieten jeweils eine Einführung in neue Bauteile, für die 
         <li markdown="1">[Pulssensor](./sensoren/#pulssensor)</li>
         <li markdown="1">[Ultraschallsensor](./sensoren/#ultraschallsensor)</li>
         <li markdown="1">[RFID](./sensoren/#rfid)</li>
+        <li markdown="1">[Beschleunigungssensor](./sensoren#beschleunigungssensor-oder...)</li>
         <li markdown="1">[Analoger Hall-Sensor (Magnetfeldsensor)](./sensoren/#analoger-hall-sensor...)</li>
         <li markdown="1">[Digitaler Hall-Sensor (Magnetfeldsensor)](./sensoren/#digitaler-hall-sensor...)</li>
     </ul>
