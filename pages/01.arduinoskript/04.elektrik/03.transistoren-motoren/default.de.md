@@ -134,7 +134,7 @@ Es ist ratsam, die Basis mit einem PWM-Pin (gekennzeichnet durch $\sim$) zu verb
 
 <div class="flex-box">
 <div markdown="1" class="flexible">![Anschluss eines Gleichstrom-Elektromotors.](/circuits/motoranschluss-mit-steuerung.png?lightbox=1024&resize=500&classes=caption "Anschluss eines Gleichstrom-Elektromotors mit Hilfe eines Transistors.")</div>
-<div markdown="1" class="flexible">![npn-Transistor; Blick auf die flache Seite](/images/transistor-schematisch.png?resize=250&classes=caption "npn-Transistor; Blick auf die flache Seite.") </div>
+<div markdown="1" class="flexible">![npn-Transistor; Blick auf die flache Seite](/images/transistor-schematisch.png?resize=250&classes=caption "npn-Transistor Pn2222; Blick auf die flache Seite.") </div>
 </div>
 
 <div markdown="1" class="aufgabe">
@@ -207,7 +207,7 @@ Die Kontakte am Wechselschalter werden mit *NO* (*normally open*), *NC* (*normal
 
 <div class="flex-box">
 <div markdown="1" class="flexible">![Relais-Schaltung mit Arduino](/circuits/relais-schaltung-mit-arduino.png?lightbox=1024&resize=500&classes=caption "Relais-Schaltung am Arduino.")</div>
-<div markdown="1" class="flexible">![npn-Transistor; Blick auf die flache Seite](/images/transistor-schematisch.png?resize=250&classes=caption "npn-Transistor; Blick auf die flache Seite.") </div>
+<div markdown="1" class="flexible">![npn-Transistor; Blick auf die flache Seite](/images/transistor-schematisch.png?resize=250&classes=caption "npn-Transistor Pn2222; Blick auf die flache Seite.") </div>
 </div>
 
 Der Schaltplan oben zeigt, wie man ein Relais mit dem Arduino steuert.
