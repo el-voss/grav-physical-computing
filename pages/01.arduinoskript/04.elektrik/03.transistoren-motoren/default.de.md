@@ -133,7 +133,7 @@ Die unten abgebildete Schaltung zeigt, wie ein npn-Transistor eingebaut werden k
 Es ist ratsam, die Basis mit einem PWM-Pin (gekennzeichnet durch $\sim$) zu verbinden, da sich dadurch die Geschwindigkeit des Motors steuern lässt.
 
 <div class="flex-box">
-<div markdown="1" class="flexible">![Anschluss eines Gleichstrom-Elektromotors.](/circuits/motoranschluss-mit-steuerung.png?lightbox=1024&resize=500&classes=caption "Anschluss eines Gleichstrom-Elektromotors am Arduino mit Steuerung über einen Transistor an Digitalpin 9.")</div>
+<div markdown="1" class="flexible">![Anschluss eines Gleichstrom-Elektromotors.](/circuits/motoranschluss-mit-steuerung.png?lightbox=1024&resize=500&classes=caption "Anschluss eines Gleichstrom-Elektromotors")</div>
 <div markdown="1" class="flexible">![npn-Transistor; Blick auf die flache Seite](/images/transistor-schematisch.png?resize=250&classes=caption "npn-Transistor; Blick auf die flache Seite.") </div>
 </div>
 
