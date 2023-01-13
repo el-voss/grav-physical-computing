@@ -1,12 +1,9 @@
 #return-to-top {
     position: fixed;
     bottom: 20px;
-    /*right: 60px;*/
-    right: 5%;
-    /*background: rgb(0, 0, 0);*/
-    /*background: rgba(0, 0, 0, 0.7);*/
-    background: rgb(66, 187, 112);
-    background: rgba(66, 187, 112, 0.7);
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
     width: 50px;
     height: 50px;
     display: block;
@@ -35,8 +32,7 @@
     transition: all 0.3s ease;
 }
 #return-to-top:hover {
-    /*background: rgba(0, 0, 0, 0.9);*/
-    background: rgba(0, 127, 97, 0.9);
+    background: rgba(0, 0, 0, 0.9);
 }
 #return-to-top:hover i {
     color: #fff;
