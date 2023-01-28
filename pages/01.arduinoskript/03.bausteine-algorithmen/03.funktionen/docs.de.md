@@ -31,7 +31,7 @@ In der Funktion zum Ausschalten kann die Variable `pin` nicht genutzt werden (si
 <div markdown="1" class="aufgabe">
 #### Blöcke zum Warten und zum Blinken
 
-1. Implementiere einen Block `warteSekunden` mit dem Argument `pauseInSekunden, der den Arduino für die angegebene Anzahl an Sekunden warten lässt.
+1. Implementiere einen Block `warteSekunden` mit dem Argument `pauseInSekunden der den Arduino für die angegebene Anzahl an Sekunden warten lässt.
 
 2. Implementiere einen Block `blinke` mit den Argumenten `anzahl` und `pauseInMSek`, die die Board-LED für die angegebene Anzahl und mit der angegebenen Pause in Millisekunden zum Blinken bringt. Überprüfe deinen Block.
 
