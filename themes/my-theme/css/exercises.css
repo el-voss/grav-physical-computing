@@ -1,8 +1,11 @@
 /* Formatting exercises */
-body { counter-reset: h1 aufgabe; }
+body { 
+  counter-reset: h1 aufgabe; 
+  --abk: 'A';
+}
 h1   { counter-increment: h1; counter-reset: aufgabe;}
 .aufgabe { 
-  counter-increment: aufgabe; 
+  counter-increment: aufgabe;
   background: #f9f9f9;
   padding: 10px; 
   margin-top: 2em;
@@ -22,7 +25,7 @@ h1   { counter-increment: h1; counter-reset: aufgabe;}
 }
 
 .aufgabe::before {
-  content: 'Aufgabe ' counter(h1, decimal) '.' counter(aufgabe, decimal) ': ';
+  content: 'Aufgabe ' var(--abk) '.' counter(aufgabe, decimal) ': ';
   font-weight: bold;
 }
 
@@ -45,7 +48,7 @@ h1   { counter-increment: h1; counter-reset: aufgabe;}
 }
 
 .projekt::before {
-  content: 'Projekt ' counter(h1, decimal) '.' counter(aufgabe, decimal) ': ';
+  content: 'Projekt ' var(--abk) '.' counter(aufgabe, decimal) ': ';
   font-weight: bold;
 }
 

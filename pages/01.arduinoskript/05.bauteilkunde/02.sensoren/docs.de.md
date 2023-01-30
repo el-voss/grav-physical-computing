@@ -5,9 +5,9 @@ title: Sensoren
 # Baulteilkunde Teil 2: Sensoren
 
 <style>
-    h1 {
-  		counter-set: h1 5 ;
-	}
+    body {
+        --abk: 'BS';
+    }
 </style>
 
 
