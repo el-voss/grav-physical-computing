@@ -5,9 +5,9 @@ title: 'Übungen und Ausblick'
 # Bausteine von Algorithmen Teil 5: Vermischte Übungen und Ausblick
 
 <style>
-    h1 {
-  		counter-set: h1 3 ;
-	}
+    body {
+        --abk: 'BA-Ü';
+    }
 </style>
 
 [TOC]
