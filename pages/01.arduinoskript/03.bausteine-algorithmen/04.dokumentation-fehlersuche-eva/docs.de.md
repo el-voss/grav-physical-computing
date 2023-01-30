@@ -5,9 +5,9 @@ title: 'Dokumentation, Fehlersuche und das EVA-Prinzip'
 # Bausteine von Algorithmen Teil 4: Dokumentation, Fehlersuche und das EVA-Prinzip
 
 <style>
-    h1 {
-  		counter-set: h1 3 ;
-	}
+    body {
+        --abk: 'BA-D';
+    }
 </style>
 
 [TOC]
