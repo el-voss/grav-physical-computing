@@ -11,9 +11,9 @@ taxonomy:
 # Eine kurze Einführung zum Arduino und zu Nepo
 
 <style>
-    h1 {
-  		counter-set: h1 2 ;
-	}
+    body {
+        --abk: 'KE';
+    }
 </style>
 
 Der Arduino ist ein Mikrocontroller, der vom italienischen Professor Massimo Banzi entwickelt wurde, damit seine Studenten im Bereich *Design* eine einfach zugängliche Möglichkeit fanden, Elektronik für künstlerische Projekte zu nutzen. Die vorgenommenen Vereinfachungen in der Handhabung von Mikrocontrollern gefielen jedoch nicht nur den Studenten von Massimo Banzi, sondern auch zahlreichen Studenten anderer Fachrichtungen, Schülern, Hobby-Elektronikern und sogar Fachleuten in der Industrie, sodass der Arduino rasch eine weltweite Verbreitung fand.
