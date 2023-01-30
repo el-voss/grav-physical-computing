@@ -6,9 +6,9 @@ menu: 'Anwendungen der Spannungsmessung'
 # Elektrische Grundlagen Teil 2: Anwendungen der Spannungsmessung
 
 <style>
-    h1 {
-  		counter-set: h1 4 ;
-	}
+    body {
+        --abk: 'EG-AS';
+    }
 </style>
 
 [TOC]
