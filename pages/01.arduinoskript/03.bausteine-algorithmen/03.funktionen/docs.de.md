@@ -5,9 +5,9 @@ title: Funktionen
 # Bausteine von Algorithmen Teil 3: Funktionen
 
 <style>
-    h1 {
-  		counter-set: h1 3 ;
-	}
+    body {
+        --abk: 'BA-F';
+    }
 </style>
 
 [TOC]
