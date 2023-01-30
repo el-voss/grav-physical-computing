@@ -64,6 +64,16 @@ Stelle die unten abgebildeten Programme jeweils mithilfe eines Struktogramms dar
 !!!! Falls Bedingung 1 wahr ist, folgt eine weitere Bedingung 2.
 !!!! ![Verschachtelte Verzweigung](/images/VerschachtelteVerzweigung.png?Lightbox=512)
 !!!! </div>
+!!!! <div markdown="1">**Deklaration und Verwendung einer Variablen**
+!!!! 
+!!!! Variable x wird als Zahl deklariert und bekommt den Wert 4 zugewiesen. Danach wird sie um 1 erhöht.
+!!!! ![Variablenverwendung](/images/Struktogramm-Variablenverwendung.png?Lightbox=512)
+!!!! </div>
+!!!! <div markdown="1">**Aufruf einer Funktion**
+!!!! 
+!!!! Eine Funktion namens "meineFunktion()" mit zwei Argumenten a und b wird aufgerufen, wobei a=1 und b=2 sein soll.
+!!!! ![Aufruf einer Funktion](/images/StruktogrammFunktion.png?Lightbox=512)
+!!!! </div>
 !!!! </div>
 
 ! In diesem Abschnitt werden Struktogramme zwar eingeführt, um Programm übersichtlich auf Papier darstellen zu können, aber auch digital kann es Sinn ergeben, ein Programm in dieser Struktur (und ohne Ballast) darzustellen. In diesen Fällen kann dir der [Structorizer](https://structorizer.fisch.lu/) helfen.
