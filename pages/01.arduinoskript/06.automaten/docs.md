@@ -9,9 +9,9 @@ taxonomy:
 # Automaten
 
 <style>
-    h1 {
-  		counter-set: h1 6 ;
-	}
+    body {
+        --abk: 'AU';
+    }
 </style>
 
 Mit den vielen Bauteilen, die nun zur Verfügung stehen, lassen sich bereits große und komplexe Projekte realisieren. Um dabei nicht den Überblick zu verlieren, hilft es, sich mit zustandsbasierten Modellierung und Automaten zu beschäftigen, die das Programm und die Vorgehensweise zur Erstellung des Programms besser strukturieren.
