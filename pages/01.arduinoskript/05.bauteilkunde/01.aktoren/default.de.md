@@ -3,11 +3,10 @@ title: Aktoren
 ---
 
 # Baulteilkunde Teil 1: Aktoren
-
 <style>
-    h1 {
-  		counter-set: h1 5 ;
-	}
+    body {
+        --abk: 'BK-A';
+    }
 </style>
 
 
