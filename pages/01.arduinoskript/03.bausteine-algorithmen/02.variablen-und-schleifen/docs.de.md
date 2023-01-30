@@ -5,9 +5,9 @@ title: 'Variablen und Schleifen'
 # Bauteilkunde Teil 2: Variablen und Schleifen
 
 <style>
-    h1 {
-  		counter-set: h1 3 ;
-	}
+    body {
+        --abk: 'BA-V';
+    }
 </style>
 
 [TOC]
