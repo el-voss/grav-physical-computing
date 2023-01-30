@@ -6,7 +6,7 @@ title: Sensoren
 
 <style>
     body {
-        --abk: 'BS';
+        --abk: 'BK-S';
     }
 </style>
 
