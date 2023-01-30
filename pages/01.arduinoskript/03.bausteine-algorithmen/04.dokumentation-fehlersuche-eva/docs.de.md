@@ -123,7 +123,12 @@ Unsere Sinne (Augen zum Sehen, Ohren zum Hören, …) ermöglichen die Eingabe v
 !!!! 
 !!!! ![Visualisierung des EVA-Prinzips](/images/eva-visualisierung.png)
 !!!! 
-!!!! Mit dem EVA-Prinzip wird die grundlegende Reihenfolge der Verarbeitung von Daten charakterisiert. Die Einheiten bestehen dabei nicht nur aus den Bauteilen, sondern beinhalten auch die Art der Verarbeitung, also zum Beispiel das Programm auf dem Arduino.
+!!!! Mit dem EVA-Prinzip wird die grundlegende Reihenfolge der Verarbeitung von Daten charakterisiert. Dies kann sowohl auf Hardwareebene (Bauteile) als auch auf Softwareebene (Programm) geschehen.
+!!!!
+!!!! <div markdown="1" class="flex-box">
+!!!! <div markdown="1">![Bsp. Dämmerungsschaltung: EVA-Prinzip auf Hardwareebene.](/images/daemmerungsschaltung-eva.png?Lightbox=1024&resize=500&classes=caption "Bsp. Dämmerungsschaltung: EVA-Prinzip auf Hardwareebene.")</div>
+!!!! <div markdown="1">![Bsp. Dämmerungsschaltung: EVA-Prinzip auf Softwareebene.](/images/daemmerungsprogramm-eva.png?Lightbox=1024&resize=500&classes=caption "Bsp. Dämmerungsschaltung: EVA-Prinzip auf Softwareebene.")</div>
+!!!! </div>
 
 <div markdown="1" class="aufgabe">
 #### Kleines Begriffstraining
