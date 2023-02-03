@@ -6,7 +6,7 @@ title: 'Übungen und Ausblick'
 
 <style>
     body {
-        --abk: 'BA-Ü';
+        --abk: 'BA-U';
     }
 </style>
 
