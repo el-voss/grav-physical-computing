@@ -46,7 +46,7 @@ Die Abbildungen unten zeigen den Aufbau eines Neigungsschalters im geschlossenen
 
 Baue eine Alarmanlage, die auslöst, wenn das Steckbrett angehoben wird.
 
-*Hinweis:* Wenn der Neigungsschalter wie unten abgebildet am Arduino angeschlossen wird, kann sein Zustand in Digitalpin 3 ausgelesen werden (vgl. das [Auslesen von Tastern](https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen#taster)).
+*Hinweis:* Wenn der Neigungsschalter wie unten abgebildet am Arduino angeschlossen wird, kann sein Zustand in Digitalpin 3 ausgelesen werden (vgl. das [Auslesen von Tastern](https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen/entscheidungen-und-serieller-monitor#taster)).
 
 ![Neigungsschalter am Arduino.](/circuits/neigungsschalter-mit-arduino.png?lightbox=1024&resize=500&classes=caption "Neigungsschalter am Arduino.")
 
@@ -55,7 +55,7 @@ Baue eine Alarmanlage, die auslöst, wenn das Steckbrett angehoben wird.
 
 ### Bewegungsmelder
 
-*Bewegungsmelder wurden bereits im Abschnitt [Entscheidungen mit mehreren Kriterien treffen](https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen#entscheidungen-mit-mehreren...) erklärt und genutzt, um Wahrheitswerte einzuführen. In diesem Abschnitt steht das Bauteil im Vordergrund. Dazu werden noch einmal alle Informationen zusammengefasst und eine alternative Programmierung vorgestellt.*
+*Bewegungsmelder wurden bereits im Abschnitt [Entscheidungen mit mehreren Kriterien treffen](https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen/entscheidungen-und-serieller-monitor#entscheidungen-mit-mehreren...) erklärt und genutzt, um Wahrheitswerte einzuführen. In diesem Abschnitt steht das Bauteil im Vordergrund. Dazu werden noch einmal alle Informationen zusammengefasst und eine alternative Programmierung vorgestellt.*
 
 Bewegungsmelder verfügen über drei Pins, deren Beschriftung man lesen kann, wenn man die Kunststofflinse vorsichtig abzieht (*Vorsicht: Nach Abziehen der Linse nicht den Sensor berühren!*). `Vcc` und `GND` dienen der Stromversorgung der elektronischen Komponenten und müssen mit `5V` und `GND` am Arduino verbunden werden.
 
