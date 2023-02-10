@@ -52,7 +52,7 @@ Implementiere ein Programm mit den oben abgebildeten Funktionen, sodass diese ei
 <div markdown="1" class="aufgabe">
 #### Lesbarkeit und Rückgabewerte
 
-Die Logik für die [Straßenlaterne](https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen#straenlampe) lautete: Wenn es dunkel ist, schalte die Lampe an, sonst schalte die Lampe aus.
+Die Logik für die [Straßenlaterne](https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen/entscheidungen-und-serieller-monitor#straenlampe) lautete: Wenn es dunkel ist, schalte die Lampe an, sonst schalte die Lampe aus.
 
 ![Ansatz für die Funktion "istDunkel".](/images/istDunkel.png)
 Mit einem eigenen Block lässt sich diese Logik direkt im Programm umsetzen, sodass es noch besser lesbar wird. Implementiere einen Block `istDunkel`, der basierend auf den Werten eines angeschlossenen LDR an A0 einen Wahrheitswert zurückgibt.
