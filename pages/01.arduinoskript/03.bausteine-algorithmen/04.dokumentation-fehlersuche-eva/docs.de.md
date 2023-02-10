@@ -143,8 +143,8 @@ Unsere Sinne (Augen zum Sehen, Ohren zum Hören, …) ermöglichen die Eingabe v
 <div markdown="1" class="aufgabe">
 #### Kleines Begriffstraining
 
-1.  Kategorisiere die [Juke-Box](https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen#juke-box) nach dem EVA-Prinzip.
-2.  Kategorisiere den [Reaktionszeitmesser](https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen#reaktionszeitmesser) nach dem EVA-Prinzip.
+1.  Kategorisiere die [Juke-Box](https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen/entscheidungen-und-serieller-monitor#juke-box) nach dem EVA-Prinzip.
+2.  Kategorisiere den [Reaktionszeitmesser](https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen/variablen-und-schleifen#reaktionszeitmesser) nach dem EVA-Prinzip.
 </div>
 
 <div markdown="1" class="aufgabe">
@@ -176,7 +176,7 @@ Baue eine Alarmanlage, indem du mit einer LED (Vorwiderstand!) und einem LDR ein
 
 *Erweiterung:* Über einen zusätzlichen Taster (mit Widerstand!) soll die Alarmanlage “scharf” gestellt bzw. wieder ausgestellt werden können. Erstelle dazu eine Wahrheitswert-Variable `aktiv`, deren Wert über den Taster verändert wird. Das Auslösen der Alarmanlage wird nur ausgeführt, wenn `aktiv = wahr` ist.
 
-Rücklinks (öffnen in neuem Tab): <a href="https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen#fugngerampel" target="_blank">Taster anschließen</a>, <a href="https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen#erste-experimente-mit-dem-ldr" target="_blank">LDR anschließen</a>
+Rücklinks (öffnen in neuem Tab): <a href="https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen/entscheidungen-und-serieller-monitor#fugngerampel" target="_blank">Taster anschließen</a>, <a href="https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen/entscheidungen-und-serieller-monitor#kommunikation-mit-dem-arduino..." target="_blank">LDR anschließen</a>
 <div class="flex-box">
 <div markdown="1">![Befehl: Aktor ansteuern](/images/aktor-ansteuern.png)</div>
 <div markdown="1">![Befehl: Sensor auslesen](/images/sensor-auslesen.png)</div>
