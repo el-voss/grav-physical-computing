@@ -107,9 +107,9 @@ Ein LDR ist ein Widerstand, dessen Größe von der Lichtstärke abhängt, die au
 
 <div markdown="1" class="flex-box">
 <div markdown="1">![Ein LDR.](/images/ldr2.jpg?resize=200&classes=caption "Ein LDR")</div>
-<div markdown="1">![Konfiguration des LDR.](/images/ldr-konfiguration.png?classes=caption "Konfiguration des LDR")</div>
+<div markdown="1">![Konfiguration des LDR.](/images/ldr-konfiguration.png?resize=200&classes=caption "Konfiguration des LDR")</div>
 <div markdown="1">![Symbolischer Schaltplan: LDR am Arduino](/circuits/ldr-an-arduino2.png?lightbox=1024&resize=500&classes=caption "Symbolischer Schaltplan: LDR am Arduino")</div>
-<div markdown="1">![Ikonischer Schaltplan: LDR am Arduino](/images/ldr-an-arduino-steckbrett.png?lightbox=1024&resize=500&classes=caption "Ikonischer Schaltplan: LDR am Arduino")</div>
+<div markdown="1">![Ikonischer Schaltplan: LDR am Arduino](/images/ldr-an-arduino-steckplatine.png?lightbox=1024&resize=500&classes=caption "Ikonischer Schaltplan: LDR am Arduino")</div>
 </div>
 
 <div markdown="1" class="aufgabe">
