@@ -38,7 +38,7 @@ Baue und programmiere eine Fußgängerampel! Nutze dazu die Informationen aus de
 Im folgenden Schaltplan ist dargestellt, wie man einen Taster am Arduino so anschließt, dass man seinen Zustand im digitalen Pin 3 auslesen kann. Dazu ist die zugehörige Taster-Konfiguration in Nepo (im Open Roberta Lab) abgebildet.
 
 <div markdown="1" class="flex-box">
-<div markdown="1">![Konfiguration in Nepo.](/images/tasterkonfiguration.png?classes=caption "Konfiguration in Nepo.")</div>
+<div markdown="1">![Konfiguration in Nepo.](/images/tasterkonfiguration.png?resize=200&classes=caption "Konfiguration in Nepo.")</div>
 <div markdown="1">![Symbolischer Schaltplan: Taster am Arduino.](/circuits/taster-an-arduino.png?lightbox=1024&resize=500&classes=caption "Symbolischer Schaltplan: Taster am Arduino.")</div>
 <div markdown="1">![Ikonischer Schaltplan: Taster am Arduino.](/images/taster-an-arduino-steckplatine.png?lightbox=1024&resize=500&classes=caption "Ikonischer Schaltplan: Taster am Arduino.")</div>
 </div>
