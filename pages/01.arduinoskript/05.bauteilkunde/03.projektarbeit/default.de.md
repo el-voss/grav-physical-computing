@@ -32,6 +32,7 @@ Mögliche übergeordnete Themen für die Projekte im Kurs:
 
   - Smart Home
   - Smart Garden
+  - Escape Room
   - Verkehrsmanagement / E-Mobilität
   - Smart Classroom
   - …
