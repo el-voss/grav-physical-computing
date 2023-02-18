@@ -9,9 +9,9 @@ taxonomy:
 # Bausteine von Algorithmen
 
 <style>
-    h1 {
-  		counter-set: h1 3 ;
-	}
+    body {
+        --abk: 'BA';
+    }
 </style>
 
 Mit dem Arduino und einigen einfachen Bauteilen lassen sich bereits zahlreiche Projekte umsetzen. Allerdings wird die Programmierung schnell unübersichtlich oder unnötig aufwendig, wenn man sich nicht mit algorithmischen Strukturen auskennt. Daher geht es im folgenden Kapitel um die Einführung von grundlegenden algorithmischen Bausteinen.
