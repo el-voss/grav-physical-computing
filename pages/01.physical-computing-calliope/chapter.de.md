@@ -4,6 +4,7 @@ published: false
 taxonomy:
     category:
         - docs
+menu: 'Physical Computing (Calliope)'
 ---
 
 # Physical Computing mit dem Calliope
