@@ -1,6 +1,6 @@
 ---
 title: 'Physical Computing. Eine Einführung in Informatik und Physik des Arduino mit dem Open Roberta Lab.'
-menu: 'Physical Computing'
+menu: 'Physical Computing (Arduino)'
 taxonomy:
     category:
         - docs
