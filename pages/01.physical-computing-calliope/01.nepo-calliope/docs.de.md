@@ -47,4 +47,11 @@ Das Open Roberta Lab ist eine Programmierumgebung für verschiedene Roboter-Syst
 
 ![Übersicht über die Funktionen des Open Roberta Lab](openroberta-calliope-uebersicht-erklaert.png?lightbox=1024&classes=caption "Übersicht über die Funktionen des Open Roberta Lab.")
 
-Neben der graphischen Programmierung lässt sich die Wirkung des Programms auch simulieren und man kann sich den Programmcode in der Sprache C++ anzeigen lassen.
+Neben der graphischen Programmierung lässt sich die Wirkung des Programms auch simulieren und man kann sich den Programmcode in der Sprache C++ anzeigen lassen. Am besten lernt man alle diese Funktionen jedoch kennen, indem man sie ausprobiert. Lege am besten sofort los und öffne das Lab unter folgendem Link:
+
+<center>
+    <a href="https://lab.open-roberta.org" target="_blank">https://lab.open-roberta.org</a>.
+</center>
+
+## Dein erstes Programm
+
