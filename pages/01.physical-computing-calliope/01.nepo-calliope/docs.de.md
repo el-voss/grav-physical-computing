@@ -68,6 +68,7 @@ Neben der graphischen Programmierung lässt sich die Wirkung des Programms auch 
 
 </div>
 
+!!!! <div markdown="1" class="clearfix">
 !!!! #### Algorithmus, Anweisung und Argument
 !!!!
 !!!! ![calliope-anweisung-argument](calliope-anweisung-argument.png?classes=caption,figure-right "Anweisungen und Argumente in einem Algorithmus.")
@@ -75,3 +76,4 @@ Neben der graphischen Programmierung lässt sich die Wirkung des Programms auch 
 !!!! Ein Programm besteht aus einer Folge von Anweisungen. Man spricht auch von Algorithmen: Ein Algorithmus ist eine eindeutige Handlungsvorschrift zur Lösung eines Problems, die aus endlich vielen Anweisungen besteht (s. [Wikipedia](https://de.wikipedia.org/wiki/Algorithmus)).
 !!!!
 !!!! Eine Anweisung *kann* ein oder mehrere *Argumente* haben, die zum Beispiel festlegen, welche LED geschaltet oder wie lange gewartet werden soll. Je nach Anweisung ist das Argument eine Farbe, eine Zahl, ein Text oder Bild.
+!!!! </div>
