@@ -1,0 +1,305 @@
+enabled: true
+db: user/data/page-data.sqlite
+ignore_errors: true
+log_admin: true
+log_bot: true
+page_url_format: 'url'
+
+
+collector_ping_interval: 15
+log_time_on_page: true
+
+show_top_users_widget: true
+cols_top_users_widget: 'col-12 col-md-3'
+limit_top_users_widget: 10
+show_unique_users_widget: true
+cols_unique_users_widget: 'col-12 col-md-4'
+show_unique_visitors_widget: true
+cols_unique_visitors_widget: 'col-12 col-md-4'
+show_page_views_widget: true
+cols_page_views_widget: 'col-12 col-md-4'
+show_recently_viewed_pages: true
+cols_recently_viewed_pages: col-12
+limit_recently_viewed_pages: 15
+show_top_pages: true
+cols_top_pages: col-12
+limit_top_pages_pages: 15
+show_top_countries: true
+cols_top_countries: 'col-12 col-md-3'
+limit_top_countries: 5
+show_top_browsers: true
+cols_top_browsers: 'col-12 col-md-3'
+limit_top_browsers: 10
+show_top_platforms: true
+cols_top_platforms: 'col-12 col-md-3'
+limit_top_platforms: 10
+show_pagedetails_recent_views: true
+cols_pagedetails_recent_views: col-12
+limit_pagedetails_recent_views: 15
+style_top_browsers: chart
+style_top_platforms: chart
+style_top_countries: chart
+ignored_urls:
+  -
+    url: .*wp-includes.*
+  -
+    url: /wp-.*
+bot_regexp:
+    - abacho
+    - accona
+    - AddThis
+    - AdsBot
+    - ahoy
+    - AhrefsBot
+    - AISearchBot
+    - alexa
+    - altavista
+    - anthill
+    - appie
+    - applebot
+    - arale
+    - araneo
+    - AraybOt
+    - ariadne
+    - arks
+    - aspseek
+    - ATN_Worldwide
+    - Atomz
+    - baiduspider
+    - baidu
+    - bbot
+    - bingbot
+    - bing
+    - Bjaaland
+    - BlackWidow
+    - BotLink
+    - bot
+    - boxseabot
+    - bspider
+    - calif
+    - CCBot
+    - ChinaClaw
+    - christcrawler
+    - CMC\/0\.01
+    - combine
+    - confuzzledbot
+    - contaxe
+    - CoolBot
+    - cosmos
+    - crawler
+    - crawlpaper
+    - crawl
+    - curl
+    - cusco
+    - cyberspyder
+    - cydralspider
+    - dataprovider
+    - digger
+    - DIIbot
+    - DotBot
+    - downloadexpress
+    - DragonBot
+    - DuckDuckBot
+    - dwcp
+    - EasouSpider
+    - ebiness
+    - ecollector
+    - elfinbot
+    - esculapio
+    - ESI
+    - esther
+    - eStyle
+    - Ezooms
+    - facebookexternalhit
+    - facebook
+    - facebot
+    - fastcrawler
+    - FatBot
+    - FDSE
+    - FELIX IDE
+    - fetch
+    - fido
+    - find
+    - Firefly
+    - fouineur
+    - Freecrawl
+    - froogle
+    - gammaSpider
+    - gazz
+    - gcreep
+    - geona
+    - Getterrobo-Plus
+    - get
+    - girafabot
+    - golem
+    - googlebot
+    - \-google
+    - grabber
+    - GrabNet
+    - griffon
+    - Gromit
+    - gulliver
+    - gulper
+    - hambot
+    - havIndex
+    - hotwired
+    - htdig
+    - HTTrack
+    - ia_archiver
+    - iajabot
+    - IDBot
+    - Informant
+    - InfoSeek
+    - InfoSpiders
+    - INGRID\/0\.1
+    - inktomi
+    - inspectorwww
+    - Internet Cruiser Robot
+    - irobot
+    - Iron33
+    - JBot
+    - jcrawler
+    - Jeeves
+    - jobo
+    - KDD\-Explorer
+    - KIT\-Fireball
+    - ko_yappo_robot
+    - label\-grabber
+    - larbin
+    - legs
+    - libwww-perl
+    - linkedin
+    - Linkidator
+    - linkwalker
+    - Lockon
+    - logo_gif_crawler
+    - Lycos
+    - m2e
+    - majesticsEO
+    - marvin
+    - mattie
+    - mediafox
+    - mediapartners
+    - MerzScope
+    - MindCrawler
+    - MJ12bot
+    - mod_pagespeed
+    - moget
+    - Motor
+    - msnbot
+    - muncher
+    - muninn
+    - MuscatFerret
+    - MwdSearch
+    - NationalDirectory
+    - naverbot
+    - NEC\-MeshExplorer
+    - NetcraftSurveyAgent
+    - NetScoop
+    - NetSeer
+    - newscan\-online
+    - nil
+    - none
+    - Nutch
+    - ObjectsSearch
+    - Occam
+    - openstat.ru\/Bot
+    - packrat
+    - pageboy
+    - ParaSite
+    - patric
+    - pegasus
+    - perlcrawler
+    - phpdig
+    - piltdownman
+    - Pimptrain
+    - pingdom
+    - pinterest
+    - pjspider
+    - PlumtreeWebAccessor
+    - PortalBSpider
+    - psbot
+    - rambler
+    - Raven
+    - RHCS
+    - RixBot
+    - roadrunner
+    - Robbie
+    - robi
+    - RoboCrawl
+    - robofox
+    - Scooter
+    - Scrubby
+    - Search\-AU
+    - searchprocess
+    - search
+    - SemrushBot
+    - Senrigan
+    - seznambot
+    - Shagseeker
+    - sharp\-info\-agent
+    - sift
+    - SimBot
+    - Site Valet
+    - SiteSucker
+    - skymob
+    - SLCrawler\/2\.0
+    - slurp
+    - snooper
+    - solbot
+    - speedy
+    - spider_monkey
+    - SpiderBot\/1\.0
+    - spiderline
+    - spider
+    - suke
+    - tach_bw
+    - TechBOT
+    - TechnoratiSnoop
+    - templeton
+    - teoma
+    - titin
+    - topiclink
+    - twitterbot
+    - twitter
+    - UdmSearch
+    - Ukonline
+    - UnwindFetchor
+    - URL_Spider_SQL
+    - urlck
+    - urlresolver
+    - Valkyrie libwww\-perl
+    - verticrawl
+    - Victoria
+    - void\-bot
+    - Voyager
+    - VWbot_K
+    - wapspider
+    - WebBandit\/1\.0
+    - webcatcher
+    - WebCopier
+    - WebFindBot
+    - WebLeacher
+    - WebMechanic
+    - WebMoose
+    - webquest
+    - webreaper
+    - webspider
+    - webs
+    - WebWalker
+    - WebZip
+    - wget
+    - whowhere
+    - winona
+    - wlm
+    - WOLP
+    - woriobot
+    - WWWC
+    - XGET
+    - xing
+    - yahoo
+    - YandexBot
+    - YandexMobileBot
+    - yandex
+    - yeti
+    - Zeus

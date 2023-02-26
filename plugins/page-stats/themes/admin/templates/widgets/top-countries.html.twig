@@ -1,0 +1,16 @@
+<div class="mb-5 {{ conf.cols_top_countries }}">
+    <h5 class=" mb-2">
+         {% if hide_show_all is not defined %}
+            <a href="{{ pageStats.urls.topCountries }}" title="View All"><i class="fa fa-fw fa-line-chart"></i> Top Countries</a>
+        {% else %}
+            Top Countries
+        {% endif %}
+    </h5>
+
+    {% set conf = config.plugins['page-stats'] %}
+    {% if conf.style_top_countries == 'table' %}
+        {% include 'widgets/top-countries-table.html.twig' %}
+    {% else %}
+        {% include 'widgets/top-countries-pie.html.twig' %}
+    {% endif %}
+</div>

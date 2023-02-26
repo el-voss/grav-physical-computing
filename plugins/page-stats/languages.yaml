@@ -1,0 +1,90 @@
+en:
+  PLUGIN_PAGE_STATS:
+    PAGE_STATS: Page Stats
+    STATS_DB_LABEL: Page Stats DB path
+    STATS_DB_HELP: Path to db relative to Grav root
+
+
+    WIDGET:
+        ENABLED:
+            TEXT: Enabled
+            HELP: If Enabled the widget will be shown
+        SIZE:
+            TEXT: Size
+            HELP: The size of the widget on the dashboard
+        LIMIT:
+            TEXT: Limit
+            HELP: The number of records to fetch
+        STYLE:
+            TEXT: Style
+            HELP: The style used to present data (table or chart)
+
+
+    LOG_TIME_ON_PAGE_LABEL: Log time on page
+    LOG_TIME_ON_PAGE_HELP: If enabled Front End will trigger a ping event at regular intervals to mark the user as still on the page
+    # STATS_DB_CREATE_LABEL: Recreate Stats database
+    # STATS_DB_CREATE_HELP: This will create a db at the path specified and will overrite an existinf one without any questions
+    # STATS_DB_CREATE_BTN_TEXT: Create new Stats database
+
+    LOG_ADMIN_LABEL: Log Admin users Activity
+    LOG_ADMIN_HELP: Log admin user activity on site, they will never be logged whil using admin panel
+    LOG_BOT_LABEL: Log Bot Activity
+    LOG_BOT_HELP: By default we do not log activity of known BOTS, enable to log
+
+    TOP_USERS_WIDGET: Top Users
+
+    UNIQUE_USERS_WIDGET: Unique Users
+
+    UNIQUE_VISITORS_WIDGET: Unique Visitors
+
+    PAGE_VIEWS_WIDGET: Page Views
+
+    RECENTLY_VIEWED_PAGES: Recently Viewed Pages
+
+    TOP_PAGES: Top Pages
+
+    TOP_BROWSERS: Top Browsers
+
+    TOP_COUNTRIES: Top Countries
+
+    TOP_PLATFORMS: Top Platforms
+
+    IGNORED_IPS_LABEL: "IP's to ignore"
+    IGNORED_IPS_HELP: "IP's in this list will be ignored, you can use regular expressions or normal IP dotted notation (eg: 127.0.0.1 or 127.*)"
+    IP: "IP to ignore"
+
+    IGNORED_URLS:
+        TEXT: "Url to Ignore"
+        LABEL: "Urls to ignone"
+        HELP: "URL's in this list will be ignored, you can use regular expressions or a string"
+
+    SECTION_WIDGETS: Widgets Config
+    SECTION_WIDGETS_LABEL: Configure Page Stats widgets
+
+    SECTION_BEHAVIOUR: Behaviour
+    SECTION_BEHAVIOUR_LABEL: Control when the plugin collect stats
+
+    WIDGET_SIZE_LABEL: Widget Size
+    WIDGET_SIZE_HELP: The number of Columns the widget will use to wender itself
+
+    SQL_LIMIT_LABEL: Records to Show
+    SQL_LIMIT_HELP: The number of records to show dor this widget
+
+
+    IGNORE_ERRORS_LABEL: Ignore Errors
+    IGNORE_ERRORS_HELP: IF true, errors will be logged, otherwise an exception is thrown.
+
+
+    PAGE_DETAILS:
+      RECENT_VIEWS: Recent Views on Page Details
+
+    PAGE_URL:
+        TEXT: Show page as
+        HELP: Should a page be shown as an URL or the page Titlt
+
+    SECTION_BOTS: Bots
+    SECTION_BOTS_TEXT: Identify Crawlers
+    BOT_REGEXP:
+        TEXT: Bot User Agents
+        HELP: USer agents to classify as bots (can use regular expression)
+

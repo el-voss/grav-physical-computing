@@ -1,0 +1,22 @@
+<table class="table table-hover">
+    <tr>
+        <th>
+            Platform
+
+        </th>
+        <th>
+            % share
+        </th>
+    </tr>
+    {% for s in data %}
+        <tr>
+            <td>
+                {{ s.platform }}
+            </td>
+            <td>
+                <span title="{{s.hits}}">{{ s.share }}
+                    %</span>
+            </td>
+        </tr>
+    {% endfor %}
+</table>

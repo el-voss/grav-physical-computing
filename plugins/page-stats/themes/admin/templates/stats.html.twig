@@ -1,0 +1,69 @@
+{% extends 'partials/base.html.twig' %}
+{% block messages %}{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    {% do assets.addCss('https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css') %}
+    <style>
+        a {
+            text-decoration: none !important
+        };
+    </style>
+{% endblock %}
+
+{% block titlebar %}
+    <div class="button-bar">
+        <div class="button-group">
+            <p>
+                Using: {{ pageStats.db.dbStats.path }} ({{ pageStats.db.dbStats.mb }} MB)
+            </p>
+        </div>
+    </div>
+    {% block pageTitle %}
+        <h1>
+            <i class="fa fa-fw fa-line-chart"></i>
+            Page Stats
+
+
+        </h1>
+    {% endblock %}
+{% endblock %}
+{% block content %}
+    {% set conf = config.plugins['page-stats'] %}
+    {% set siteStats = pageStats.db.siteSummary %}
+    {% include 'partials/messages.html.twig' %}
+    <div class="container-fluid">
+        <div class="row">
+            {% if conf.show_page_views_widget %}
+                {% include 'widgets/page-views.html.twig' with {'data': siteStats.hits} %}
+            {% endif %}
+            {% if conf.show_unique_visitors_widget %}
+                {% include 'widgets/unique-visitors.html.twig'with {'data': siteStats.visitors} %}
+            {% endif %}
+            {% if conf.show_unique_users_widget %}
+                {% include 'widgets/unique-users.html.twig' with {'data': siteStats.users} %}
+            {% endif %}
+            {% if conf.show_top_users_widget %}
+                {% include 'widgets/top-users.html.twig' with {'hide_views': true, 'data': pageStats.db.topUsers(conf.limit_top_users_widget)} %}
+            {% endif %}
+            {% if conf.show_top_countries %}
+                {% include 'widgets/top-countries.html.twig' with {'data': pageStats.db.topCountries(conf.limit_top_countries)} %}
+            {% endif %}
+            {% if conf.show_top_browsers %}
+                {% include 'widgets/top-browsers.html.twig' with {'data': pageStats.db.topBrowsers(conf.limit_top_browsers)} %}
+            {% endif %}
+            {% if conf.show_top_platforms %}
+                {% include 'widgets/top-platforms.html.twig' with {'data': pageStats.db.topPlatforms(conf.limit_top_platforms)} %}
+            {% endif %}
+            {% if conf.show_recently_viewed_pages %}
+                {% set limit = conf.limit_recently_viewed_pages%}
+                {% if show_all_recent_views is defined %}
+                    {% set limit = 1000 %}
+                {% endif %}
+                {% include 'widgets/recently-viewed-pages.html.twig' with {'data': pageStats.db.recentPagesByDay(limit)}  %}
+            {% endif %}
+            {% if conf.show_top_pages and (hide_top_pages is not defined) %}
+                {% include 'widgets/top-pages.html.twig' with {'data': pageStats.db.pagesSummary(conf.limit_top_pages_pages) }  %}
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

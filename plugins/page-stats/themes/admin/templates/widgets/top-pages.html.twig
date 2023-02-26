@@ -1,0 +1,51 @@
+{% import 'macros/macros.html.twig' as macros %}
+
+<div class="col-{{ conf.cols_top_pages }}">
+    <h5 class="d-flex justify-content-between pe-2">
+        {{ title|default('Most Viewed Pages') }}
+        {% if hide_show_all is not defined %}<a href="{{ pageStats.urls.allPages }}"> <i class="fa fa-fw fa-line-chart"></i> View all</a>{% endif %}
+
+    </h5>
+    <table class="table">
+        <tr>
+            <th>
+                Page
+
+            </th>
+            <th>
+                Views
+
+            </th>
+            <th>
+                Unique visitors
+
+            </th>
+            <th>
+                Unique logged in Users
+
+            </th>
+        </tr>
+        {% for s in data %}
+            <tr>
+                <td>
+                    <a class="me-2" title="view page" target="blank" href="{{ s.route }}">
+                        <i class="fa fa-external-link"></i>
+                    </a>
+                    <a class="me-2" title="view page stats" href="{{ pageStats.urls.pageDetails}}?page={{ s.route }}" title="{{ s.route }}">
+                        <i class="fa fa-fw fa-line-chart"></i>
+                    </a>
+                    {{ macros.page_title(s, conf) }}
+                </td>
+                <td>
+                    {{ s.hits }}
+                </td>
+                <td>
+                    {{ s.visitors }}
+                </td>
+                <td>
+                    {{ s.users }}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
