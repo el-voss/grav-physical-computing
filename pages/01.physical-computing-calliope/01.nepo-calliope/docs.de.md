@@ -2,7 +2,7 @@
 title: 'Kurze Einführung zum Calliope und zum Open Roberta Lab'
 published: false
 menu: 'Kurze Einführung'
-media_order: 'calliope-bauteile.png,openroberta-calliope-uebersicht-erklaert.png,calliope-erstes-programm.png'
+media_order: 'calliope-bauteile.png,openroberta-calliope-uebersicht-erklaert.png,calliope-erstes-programm.png,calliope-anweisung-argument.png'
 ---
 
 # Eine kurze Einführung zum Calliope und zum Open Roberta Lab
@@ -70,8 +70,8 @@ Neben der graphischen Programmierung lässt sich die Wirkung des Programms auch 
 
 !!!! #### Algorithmus, Anweisung und Argument
 !!!!
-!!!! ![Anweisungen und Argumente in einem Algorithmus.](/images/anweisungen-bsp.png?classes=caption,figure-right "Anweisungen und Argumente in einem Algorithmus.")
+!!!! ![calliope-anweisung-argument](calliope-anweisung-argument.png?classes=caption,figure-right "Anweisungen und Argumente in einem Algorithmus.")
 !!!!
 !!!! Ein Programm besteht aus einer Folge von Anweisungen. Man spricht auch von Algorithmen: Ein Algorithmus ist eine eindeutige Handlungsvorschrift zur Lösung eines Problems, die aus endlich vielen Anweisungen besteht (s. [Wikipedia](https://de.wikipedia.org/wiki/Algorithmus)).
 !!!!
-!!!! Eine Anweisung *kann* ein oder mehrere *Argumente* haben, die zum Beispiel festlegen, welche LED geschaltet oder wie lange gewartet werden soll.
+!!!! Eine Anweisung *kann* ein oder mehrere *Argumente* haben, die zum Beispiel festlegen, welche LED geschaltet oder wie lange gewartet werden soll. Je nach Anweisung ist das Argument eine Farbe, eine Zahl, ein Text oder Bild.
