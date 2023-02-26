@@ -1,6 +1,6 @@
 ---
 title: 'Kurze Einführung zum Calliope und zum Open Roberta Lab'
-published: false
+published: true
 menu: 'Kurze Einführung'
 media_order: 'calliope-bauteile.png,openroberta-calliope-uebersicht-erklaert.png,calliope-erstes-programm.png,calliope-anweisung-argument.png'
 ---
