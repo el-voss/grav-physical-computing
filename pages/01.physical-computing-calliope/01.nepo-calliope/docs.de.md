@@ -43,3 +43,8 @@ Wer nun immer noch nicht genug Anschlüsse hat, kann an den zwei Pin-Reihen unte
 
 ## Der Calliope im Open Roberta Lab
 
+Das Open Roberta Lab ist eine Programmierumgebung für verschiedene Roboter-Systeme, die vom Fraunhofer Institut für intelligente Analyse- und Informationssysteme in Bonn entwickelt wird. Nach der Auswahl des eigenen Roboter-Systems, was in diesem Fall der Calliope mini ist, wird eine Reihe von Blöcken zur Verfügung gestellt, mit denen sich der Calliope sehr einfach auf graphische Art und Weise programmieren lässt. Die Blöcke greifen ineinander wie Puzzleteile! Die folgenden Abbildung gibt eine Übersicht über die Funktionen des Open Roberta Lab.
+
+![Übersicht über die Funktionen des Open Roberta Lab](openroberta-calliope-uebersicht-erklaert.png?lightbox=1024&classes=caption "Übersicht über die Funktionen des Open Roberta Lab.")
+
+Neben der graphischen Programmierung lässt sich die Wirkung des Programms auch simulieren und man kann sich den Programmcode in der Sprache C++ anzeigen lassen.
