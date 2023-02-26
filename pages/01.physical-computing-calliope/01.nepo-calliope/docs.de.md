@@ -2,7 +2,7 @@
 title: 'Kurze Einführung zum Calliope und zum Open Roberta Lab'
 published: false
 menu: 'Kurze Einführung'
-media_order: 'calliope-bauteile.png,openroberta-calliope-uebersicht-erklaert.png'
+media_order: 'calliope-bauteile.png,openroberta-calliope-uebersicht-erklaert.png,calliope-erstes-programm.png'
 ---
 
 # Eine kurze Einführung zum Calliope und zum Open Roberta Lab
@@ -55,3 +55,23 @@ Neben der graphischen Programmierung lässt sich die Wirkung des Programms auch 
 
 ## Dein erstes Programm
 
+<div markdown="1" class="aufgabe"> 
+####Test der Funktionsweise
+
+![calliope-erstes-programm](calliope-erstes-programm.png "Erstes Programm für den Calliope.")
+
+1. Erstelle dein erstes Programm für den Calliope. Du kannst das oben abgebildete Programm nachbauen oder selbst ein eigenes Programm entwerfen.
+2. Schließe den Calliope am Computer an und klicke auf das Play-Symbol unten rechts, um das Programm auf den Calliope zu übertragen.
+3. Schaue dir an, wie das Programm auf dem Calliope aussieht.
+4. Exportiere das Programm, um es auf deinem Computer zu speichern. Gehe dazu ins Menü oben links und auf *exportiere Programm*. Finde das Programm im Download-Ordner deines Computers und benenne es als `Startprogramm.xml`. Speichere es dann an einem sinnvollen Ort ab.
+*Hinweis:* Du kannst das Programm im gleichen Menü wieder importieren, um es zu einem späteren Zeitpunkt wieder aufzurufen.
+
+</div>
+
+!!!! #### Algorithmus, Anweisung und Argument
+!!!!
+!!!! ![Anweisungen und Argumente in einem Algorithmus.](/images/anweisungen-bsp.png?classes=caption,figure-right "Anweisungen und Argumente in einem Algorithmus.")
+!!!!
+!!!! Ein Programm besteht aus einer Folge von Anweisungen. Man spricht auch von Algorithmen: Ein Algorithmus ist eine eindeutige Handlungsvorschrift zur Lösung eines Problems, die aus endlich vielen Anweisungen besteht (s. [Wikipedia](https://de.wikipedia.org/wiki/Algorithmus)).
+!!!!
+!!!! Eine Anweisung *kann* ein oder mehrere *Argumente* haben, die zum Beispiel festlegen, welche LED geschaltet oder wie lange gewartet werden soll.
