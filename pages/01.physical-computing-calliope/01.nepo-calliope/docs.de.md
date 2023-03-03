@@ -53,7 +53,7 @@ Neben der graphischen Programmierung lässt sich die Wirkung des Programms auch 
     <a href="https://lab.open-roberta.org" target="_blank">https://lab.open-roberta.org</a>.
 </center>
 
-## Dein erstes Programm
+## Deine ersten Programme
 
 <div markdown="1" class="aufgabe"> 
 ####Test der Funktionsweise
@@ -76,3 +76,14 @@ Neben der graphischen Programmierung lässt sich die Wirkung des Programms auch 
 !!!!
 !!!! Eine Anweisung *kann* ein oder mehrere *Argumente* haben, die zum Beispiel festlegen, welche Farbe oder welcher Text angezeigt werden soll oder wie lange gewartet werden soll. Je nach Anweisung ist das Argument eine Farbe, eine Zahl, ein Text oder Bild.
 
+<div markdown="1" class="aufgabe">
+#### Ampel
+
+Programmiere eine einfache Ampel mit der RGB-LED.
+</div>
+
+<div markdown="1" class="aufgabe">
+#### Jukebox
+
+Programmiere ein Lied, das der Calliope abspielt. Recherchiere die Noten dazu im Internet.
+</div>
