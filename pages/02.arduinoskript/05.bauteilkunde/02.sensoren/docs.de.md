@@ -1,5 +1,6 @@
 ---
 title: Sensoren
+menu: '[S] Sensoren'
 ---
 
 # Baulteilkunde Teil 2: Sensoren
