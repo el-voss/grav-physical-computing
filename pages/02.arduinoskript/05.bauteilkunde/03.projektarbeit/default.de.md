@@ -1,5 +1,6 @@
 ---
 title: Projektarbeit
+menu: '[P] Projektarbeit'
 ---
 
 # Bauteilkunde Teil 3: Projektarbeit
