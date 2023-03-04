@@ -1,6 +1,6 @@
 ---
 title: Bauteilkunde
-menu: Bauteilkunde
+menu: '[BK] Bauteilkunde'
 taxonomy:
     category:
         - docs
