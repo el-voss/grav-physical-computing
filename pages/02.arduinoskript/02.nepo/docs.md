@@ -1,6 +1,6 @@
 ---
 title: 'Kurze Einführung zum Arduino und zum Open Roberta Lab'
-menu: 'Kurze Einführung'
+menu: '[KE] Kurze Einführung'
 page-toc:
     active: true
 taxonomy:
