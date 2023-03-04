@@ -1,5 +1,6 @@
 ---
 title: 'Entscheidungen und der serielle Monitor'
+menu: '[E] Entscheidungen und der serielle Monitor'
 ---
 
 # Bausteine von Algorithmen Teil 1: Entscheidungen und der serielle Monitor
