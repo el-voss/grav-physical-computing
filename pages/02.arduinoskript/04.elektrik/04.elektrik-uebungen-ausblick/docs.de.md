@@ -1,5 +1,6 @@
 ---
 title: 'Übungen und Ausblick'
+menu: '[U] Übungen und Ausblick'
 ---
 
 # Elektrische Grundlagen Teil 4: Vermischte Übungen und Ausblick
