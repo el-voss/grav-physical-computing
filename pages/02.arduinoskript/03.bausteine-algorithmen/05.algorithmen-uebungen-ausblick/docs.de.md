@@ -1,5 +1,6 @@
 ---
 title: 'Übungen und Ausblick'
+menu: '[U] Übungen und Ausblick'
 ---
 
 # Bausteine von Algorithmen Teil 5: Vermischte Übungen und Ausblick
