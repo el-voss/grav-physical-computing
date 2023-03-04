@@ -1,6 +1,6 @@
 ---
 title: Automaten
-menu: Automaten
+menu: '[A] Automaten'
 taxonomy:
     category:
         - docs
