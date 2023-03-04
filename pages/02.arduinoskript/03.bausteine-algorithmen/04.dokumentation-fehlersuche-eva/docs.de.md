@@ -1,5 +1,6 @@
 ---
 title: 'Dokumentation, Fehlersuche und das EVA-Prinzip'
+menu: '[D] Dokumentation, Fehlersuche und das EVA-Prinzip'
 ---
 
 # Bausteine von Algorithmen Teil 4: Dokumentation, Fehlersuche und das EVA-Prinzip
