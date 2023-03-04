@@ -1,6 +1,6 @@
 ---
 title: 'Bausteine von Algorithmen'
-menu: 'Bausteine von Algorithmen'
+menu: '[BA] Bausteine von Algorithmen'
 taxonomy:
     category:
         - docs
