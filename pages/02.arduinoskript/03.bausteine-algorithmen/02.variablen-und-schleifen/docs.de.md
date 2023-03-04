@@ -1,5 +1,6 @@
 ---
 title: 'Variablen und Schleifen'
+menu: '[V] Variablen und Schleifen'
 ---
 
 # Bauteilkunde Teil 2: Variablen und Schleifen
