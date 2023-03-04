@@ -1,7 +1,7 @@
 ---
 title: 'Sensoren und Aktoren am Calliope'
 published: false
-menu: 'Sensoren und Aktoren'
+menu: '[SA] Sensoren und Aktoren'
 ---
 
 # Sensoren und Aktoren am Calliope
