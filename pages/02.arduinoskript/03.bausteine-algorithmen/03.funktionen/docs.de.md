@@ -1,5 +1,6 @@
 ---
 title: Funktionen
+menu: '[F] Funktionen'
 ---
 
 # Bausteine von Algorithmen Teil 3: Funktionen
