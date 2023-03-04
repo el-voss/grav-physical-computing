@@ -1,5 +1,6 @@
 ---
 title: 'Entscheidungen programmieren'
+menu: '[E] Entscheidungen programmieren'
 ---
 
 ## Entscheidungen programmieren
