@@ -444,9 +444,8 @@ Beschleunigungssensoren oder Lagesensoren tauchen in zig verschiedenen Geräten 
 - in Digitalkameras dienen sie zur Bildstabilisierung, 
 - in Tablets und Smartphones lösen sie das Drehen des Bildschirms aus, wenn das Gerät gedreht wurde, 
 - oder sie dienen zum Steuern eines Spiels auf dem Smartphone. 
-Auch mit dem Arduino lassen sich interessante Dinge mit Beschleunigungssensoren bauen.
 
-Verwendet wird hier das Modul GY-61, auf dem der Beschleunigungssensor ADXL335 verbaut ist. Da der ADXL335 mit einem Pegel von 3V arbeitet, befindet sich auf der kleinen Platine zusätzlich ein Spannungsregler, der die 5V vom Arduino auf 3V für den ADXL335 herunterregelt. Zusätzlich ist ein kleines Koordinatensystem auf der Platine gezeichnet, das angibt, in welchen Richtungen die Beschleunigung gemessen wird. Die z-Achse verläuft dabei senkrecht zur Platine nach unten, wenn man auf das Koordinatensystem schaut. Dies ist erkennbar an dem Kreis mit einem Kreuz darin - als Eselsbrücke kann man sich einen Dartpfeil vorstellen, dessen gekreuzte Federn man von hinten sieht, wenn er von einem weg zeigt.
+Auch mit dem Arduino lassen sich interessante Dinge mit Beschleunigungssensoren bauen. Verwendet wird hier das Modul GY-61, auf dem der Beschleunigungssensor ADXL335 verbaut ist. Da der ADXL335 mit einem Pegel von 3V arbeitet, befindet sich auf der kleinen Platine zusätzlich ein Spannungsregler, der die 5V vom Arduino auf 3V für den ADXL335 herunterregelt. Zusätzlich ist ein kleines Koordinatensystem auf der Platine gezeichnet, das angibt, in welchen Richtungen die Beschleunigung gemessen wird. Die z-Achse verläuft dabei senkrecht zur Platine nach unten, wenn man auf das Koordinatensystem schaut. Dies ist erkennbar an dem Kreis mit einem Kreuz darin - als Eselsbrücke kann man sich einen Dartpfeil vorstellen, dessen gekreuzte Federn man von hinten sieht, wenn er von einem weg zeigt.
 
 <div class="flex-box">
 <div markdown="1">![Modul GY61 mit dem Beschleunigungssensor ADXL335 von oben.](/images/beschleunigungssensor-gy61-oben.jpg?resize=300&classes=caption "Modul GY61 mit dem Beschleunigungssensor ADXL335 von oben.")</div>
