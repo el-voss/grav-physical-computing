@@ -93,7 +93,7 @@ Max überlegt sich, dass er für eine Ampelschaltung am Arduino denselben Vorwid
 <div markdown="1" class="clearfix" style="background:#eef; padding:1em;">
 
 ![Schaltplan für Ampelschaltung](/circuits/schaltplan-rgb-led-berechnung.png?lightbox=1024&resize=300&classes=caption,figure-right "Schaltplan für Ampelschaltung.")
-$I_L =  20 \, mA =  0,02 \, A$ $\quad \Longrightarrow \quad$ $I_R =  0,06 \, mA$
+$I_L =  20 \, mA =  0,02 \, A$ $\quad \Longrightarrow \quad$ $I_R =  0,06 \, A$
 
 $U_L =  2,2 \, V$ (max. Spannung, die rote LEDs aushalten)
 
@@ -114,6 +114,7 @@ Begründe, warum der oben berechnete Vorwiderstand zu niedrig ist. Erkläre, wie
 
 1.  Zeichne einen vereinfachten Schaltplan einer 7-Segment-Anzeige, in dem die LEDs einzeln eingezeichnet sind (siehe Infokasten unten).
 2.  Es wäre sehr umständlich, für jede LED einen eigenen Vorwiderstand anzuschließen; praktischer ist es, einen einzigen Vorwiderstand zwischen GND-Anschluss der 7-Segment-Anzeige und GND-Anschluss des Arduino anzubringen. Die Größe des gemeinsamen Vorwiderstands der acht LEDs (Anzeige & Punkt) soll $ 330\, \Omega$ betragen. Berechne die Gesamtstromstärke und die Stromstärke in jeder LED bei Darstellung einer 1 und einer 8 (jeweils ohne Punkt).
+3.  Deute die unterschiedlichen Stromstärken in den LEDs.
 </div>
 
 !!!! #### 7-Segment-Anzeige
