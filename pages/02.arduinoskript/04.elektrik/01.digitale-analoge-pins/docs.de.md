@@ -207,6 +207,11 @@ Eine Alternative zu der bekannten oberen Schaltung ist die Schaltung mit einem s
 </div>
 
 <div markdown="1" class="projekt">
+#### Raketencountdown auf Knopfdruck
+Erweitere deinen Raketencountdown so, dass er mit einem Taster gestartet wird. Verwende für den Taster eine Pullup-Schaltung!
+</div>
+
+<div markdown="1" class="projekt">
 #### Fußgängerampel reloaded
 Baue und programmiere eine Fußgängerampel mit einer Pullup-Schaltung für den Taster!
 </div>
