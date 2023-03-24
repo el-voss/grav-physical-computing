@@ -193,7 +193,40 @@ $$
 </details>
 
 <details class="details">
-<summary class="details__trigger details__title">Regression mit Geogebra Rechner Suite / Grafikrechner</summary>
+<summary class="details__trigger details__title">Regression mit Geogebra Rechner Suite (einfache Variante mit Regressionsmenü)</summary>
+<div class="details__content" markdown="1">
+Auf dem Tablet empfiehlt sich der Einsatz der Geogebra Rechner Suite statt Geogebra Classic. Innerhalb der Rechner Suite sollte der **Grafikrechner** oder der **CAS-Rechner** verwendet werden.
+
+**1.** Öffne die Tabellenansicht. Gib die Widerstandswerte als x-Werte in die $x$-Spalte ein. Die Helligkeitswerte werden in die $y_1$-Spalte eingegeben.
+
+![Dateneingabe in der Tabellenansicht der Suite](/images/regression-geogebra-1.png)
+
+**2.** Öffne das Drei-Punkte-Menü neben $y_1$ und wähle die Option "Regression".
+
+![Öffnen des Regressionsmenüs](/images/regression-geogebra-2.png)
+
+**3.** Wähle ein passendes Regressionsmodell. Die Gleichung und die Werte der Parameter werden dann angezeigt. Durch einen Klick auf Zeichnen erhält man den Graphen und die Funktionsgleichung wird in der Algebra-Ansicht eingefügt.
+*Hinweis:* In der Algebra-Ansicht sieht man, dass automatisch der entsprechende Trend-Befehl von Geogebra genutzt wurde. Als Argument dient eine Liste von Punkten, die mit $(x_1, y_1)$ erzeugt wird. Dies kann man auch manuell eingeben - eine Anleitung dazu findet sich im nächsten ausklappbaren Abschnitt.
+
+![Regressionsmenü in der Suite](/images/regression-geogebra-3.png)
+![Regressionsgleichung in der Algebra-Ansicht](/images/regression-geogebra-4.png)
+
+**4.** In den Einstellungen (Zahnrad oben rechts) kann die Anzahl der Nachkommastellen angepasst werden, falls nötig. Übersetze dann die Funktionsgleichung in den physikalischen Zusammenhang. Für den Widerstand ist das Formelzeichen $R$ festgelegt. Für die Helligkeit wählen wir an dieser Stelle $H$.
+
+<center markdown="1">
+$$
+y = 66,78 \cdot x^{-0,66} \\
+\downarrow \hspace{2.2cm} \downarrow \hspace{1cm} \\
+H = 66,78 \cdot R^{-0,66} \\
+R \text{ in }  \,  k\Omega, ~ H \text{ in Lux} 
+$$
+</center>
+
+</div>
+</details>
+
+<details class="details">
+<summary class="details__trigger details__title">Regression mit Geogebra Rechner Suite / Grafikrechner (fortgeschrittene Variante mit Befehlen)</summary>
 <div class="details__content" markdown="1">
 Auf dem Tablet empfiehlt sich der Einsatz der Geogebra Rechner Suite statt Geogebra Classic, allerdings verfügt diese noch nicht über das Statistik-Modul von Classic, weshalb man hier mit ein paar Befehlen arbeiten muss (Stand: Januar 2021). Innerhalb der Rechner Suite sollte der Grafikrechner verwendet werden.
 

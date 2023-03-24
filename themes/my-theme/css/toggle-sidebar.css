@@ -17,7 +17,7 @@
     }
 */
     #sidebar-toggle {
-        display: inline-block;
+        display: inline;
 	top: 50%;
 	position: relative;
 	transform: translateY(-50%);

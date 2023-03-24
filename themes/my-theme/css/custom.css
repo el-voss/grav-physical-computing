@@ -14,13 +14,27 @@
   box-shadow: 2px 2px #14291e;
 }
 
+
+#breadcrumbs {
+  display: inline;
+}
+
+#top-bar {
+  height: auto;
+  padding: 1.5rem 1rem 0rem 1rem;
+}
+
 /* adapt breadcrumbs to fit with toggle-sidebar icon */
 @media (max-width: 1100px) {
 	#body #breadcrumbs {
-	  display: inline-block;
+	  display: inline;
 	  padding-left: 1rem;
 	  top: 0;
 	  transform: translateY(0);
+	}
+	#top-bar {
+	  height: auto;
+	  padding: 0.5rem 1rem 0.5rem 1rem;
 	}
 }
 

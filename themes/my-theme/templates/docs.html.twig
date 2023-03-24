@@ -6,6 +6,7 @@
     {% set progress = page.collection({'items':{'@taxonomy':{'category': 'docs'}},'order': {'by': 'default', 'dir': 'asc'}}) %}
 {% endif %}
 
+{# Pfeile an den Rändern werden auskommentiert
 {% block navigation %}
 	<div id="navigation">
 	{% if not progress.isFirst(page.path) %}
@@ -17,6 +18,7 @@
 	{% endif %}
 	</div>
 {% endblock %}
+#}
 
 {% block content %}
     {% include 'partials/page.html.twig' %}
