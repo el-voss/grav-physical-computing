@@ -199,16 +199,16 @@ Auf dem Tablet empfiehlt sich der Einsatz der Geogebra Rechner Suite statt Geoge
 
 **1.** Öffne die Tabellenansicht. Gib die Widerstandswerte als x-Werte in die $x$-Spalte ein. Die Helligkeitswerte werden in die $y_1$-Spalte eingegeben.
 
-![Dateneingabe in der Tabellenansicht der Suite](/images/regression-geogebra-1.png?resize=500)
+![Dateneingabe in der Tabellenansicht der Suite](/images/regression-geogebra-1.png?resize=750)
 
 **2.** Öffne das Drei-Punkte-Menü neben $y_1$ und wähle die Option "Regression".
 
-![Öffnen des Regressionsmenüs](/images/regression-geogebra-2.png?resize=500)
+![Öffnen des Regressionsmenüs](/images/regression-geogebra-2.png?resize=750)
 
 **3.** Wähle ein passendes Regressionsmodell. Die Gleichung und die Werte der Parameter werden dann angezeigt. Durch einen Klick auf Zeichnen erhält man den Graphen und die Funktionsgleichung wird in der Algebra-Ansicht eingefügt.
 *Hinweis:* In der Algebra-Ansicht sieht man, dass automatisch der entsprechende Trend-Befehl von Geogebra genutzt wurde. Als Argument dient eine Liste von Punkten, die mit $(x_1, y_1)$ erzeugt wird. Dies kann man auch manuell eingeben - eine Anleitung dazu findet sich im nächsten ausklappbaren Abschnitt.
 
-![Regressionsmenü in der Suite](/images/regression-geogebra-3.png?resize=500)
+![Regressionsmenü in der Suite](/images/regression-geogebra-3.png?resize=750)
 ![Regressionsgleichung in der Algebra-Ansicht](/images/regression-geogebra-4.png)
 
 **4.** In den Einstellungen (Zahnrad oben rechts) kann die Anzahl der Nachkommastellen angepasst werden, falls nötig. Übersetze dann die Funktionsgleichung in den physikalischen Zusammenhang. Für den Widerstand ist das Formelzeichen $R$ festgelegt. Für die Helligkeit wählen wir an dieser Stelle $H$.
