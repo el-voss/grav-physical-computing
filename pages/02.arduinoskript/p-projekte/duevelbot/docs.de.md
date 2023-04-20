@@ -1,5 +1,6 @@
 ---
 title: '[D] Düvelbot'
+media_order: 1_düvelbot.png
 ---
 
 # Düvelbot
@@ -12,13 +13,56 @@ Der Düvelbot geht zurück auf eine Idee von Marco Düvelmeyer, der auf seinem [
 
 [TOC]
 
+## Übersicht
+
+Dieser Abschnitt gibt eine Übersicht über die benötigten Bauteile und wie diese zu verkabeln sind. Dies dient der Kontrolle und kann auch zunächst übersprungen werden.
+
+### Bauteile
+
+**Kunststoffteile**
+
+| Bild | Bauteil | Anzahl | STL-Datei zum Drucken |
+|-------|----------|-----------|---------------------------------|
+|   | Chassis | 1 | |
+|   | Slider | 1 | |
+|   | Seitenhänger | 2 | |
+|   | Anhänger hinten | optional | |
+
+**Elektronikteile**
+
+| Bild | Bauteil | Anzahl | Hinweise |
+|-------|-----------|----------|--------------|
+|   | Arduino Uno | 1 | |
+|   | Expansion Shield mit kleinem Steckbrett und mehreren Pins für GND und 5V | 1 | |
+|   | Motortreiber L298N | 1 | [Informationen und Datenblatt zum L298N](https://components101.com/modules/l293n-motor-driver-module) |
+|   | N20 Getriebemotoren (100 RPM, 6V) | 2 | |
+|   | Räder mit Felgen | 2 | passend zum Aufsetzen auf die Motorschäfte |
+|   | Piezo-Summer | 1 | |
+|   | Ultraschallsensor | 1 | |
+|   | Infrarotsensoren TCRT5000 | 2 | [Datenblatt des Sensors TCRT5000](https://www.mouser.de/datasheet/2/427/tcrt5000-240273.pdf) |
+|   | OLED-Display SSD1306 0,96" | 1 | |
+|   | Kabel male - female | viele | |
+|   | 9V-Block | 2 | |
+|   | Clip zum Anschluss des 9V-Block mit Zylinderstecker für Arduino | 1 | |
+|   | Clip zum Anschluss des 9V-Block mit offenen Kontakten für Schraubklemme | 1 | |
+
+### Schaltplan
+
+Der folgende Schaltplan gibt einen Gesamtüberblick über die Schaltung aller Bauteile. Dies wird im folgenden Schritt für Schritt entwickelt.
+
+![Schaltplan des Düvelbot](1_d%C3%BCvelbot.png?lightbox=1024&resize=500&classes=caption "Vollständiger Schaltplan für den Düvelbot.")
+
 ## Basisversion mit Motoren und Piezo-Summer
 
 **Ziel:** Es soll eine fahrbare Basisversion des Düvelbot gebaut und programmiert werden, sodass der Düvelbot vorwärts und rückwärts fahren, stoppen und lenken kann. Zudem soll er Töne abspielen können.
 
-!!! #### Grundlagen
+!!! #### Wichtige Grundlagen
 !!! Für diesen Abschnitt werden folgende Grundlagen benötigt:
-!!! 
+!!! - [Piezo-Summer](../../bausteine-algorithmen/entscheidungen-und-serieller-monitor#piezo-summer)
+!!! - [Fallunterscheidungen](../../bausteine-algorithmen/entscheidungen-und-serieller-monitor#entscheidungen-programmieren)
+!!! - [Funktionen](../..//bausteine-algorithmen/funktionen)
+!!! - [Pulsweitenmodulation](../../elektrik/digitale-analoge-pins#pulsweitenmodulation)
+!!! - [Motoren mit Motortreiber steuern](../../elektrik/transistoren-motoren#elektromotoren-mit-dem...)
 
 ### Montage
 
