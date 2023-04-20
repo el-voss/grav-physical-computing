@@ -23,10 +23,10 @@ Dieser Abschnitt gibt eine Übersicht über die benötigten Bauteile und wie die
 
 | Bild | Bauteil | Anzahl | STL-Datei zum Drucken |
 |-------|----------|-----------|---------------------------------|
-|   | Chassis | 1 | <a href="./duevelbot/duevelbot-chassis.zip" download>duevelbot-chassis.zip</a>|
-|   | Slider | 1 | |
-|   | Seitenhänger | 2 | |
-|   | Anhänger hinten | optional | |
+|   | Chassis | 1 | <a href="./duevelbot/duevelbot-chassis.zip" download>duevelbot-chassis.zip</a> |
+|   | Slider | 1 | <a href="./duevelbot/duevelbot-slider.zip" download>duevelbot-slider.zip</a> |
+|   | Seitenhänger | 2 | <a href="./duevelbot/duevelbot-seitenhaenger.zip" download>duevelbot-seitenhaenger.zip</a> |
+|   | Anhänger hinten | optional | <a href="./duevelbot/duevelbot-batteriehaenger.zip" download>duevelbot-batteriehaenger.zip</a> |
 
 **Elektronikteile**
 
