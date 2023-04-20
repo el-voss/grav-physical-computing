@@ -16,9 +16,9 @@ Der Düvelbot geht zurück auf eine Idee von Marco Düvelmeyer, der auf seinem [
 
 **Ziel:** Es soll eine fahrbare Basisversion des Düvelbot gebaut und programmiert werden, sodass der Düvelbot vorwärts und rückwärts fahren, stoppen und lenken kann. Zudem soll er Töne abspielen können.
 
-! #### Grundlagen
-! Für diesen Abschnitt werden folgende Grundlagen benötigt:
-! 
+!!! #### Grundlagen
+!!! Für diesen Abschnitt werden folgende Grundlagen benötigt:
+!!! 
 
 ### Montage
 
@@ -37,9 +37,9 @@ Der Düvelbot geht zurück auf eine Idee von Marco Düvelmeyer, der auf seinem [
 
 **Ziel:** Der Düvelbot soll um einen Ultraschallsensor erweitert werden, sodass er Hindernisse erkennen und umfahren kann.
 
-! #### Grundlagen
-! Für diesen Abschnitt werden folgende Grundlagen benötigt:
-! 
+!!! #### Grundlagen
+!!! Für diesen Abschnitt werden folgende Grundlagen benötigt:
+!!! 
 
 ### Montage
 
@@ -58,9 +58,9 @@ Der Düvelbot geht zurück auf eine Idee von Marco Düvelmeyer, der auf seinem [
 
 **Ziel:** Der Düvelbot soll um zwei Infrarot-Sensoren erweitert werden, sodass er einer Linie folgen kann, um Parcours zu absolvieren. Für die Anzeige der Sensorwerte bei der Feinjustierung wird ein Display angebracht.
 
-! #### Grundlagen
-! Für diesen Abschnitt werden folgende Grundlagen benötigt:
-! 
+!!! #### Grundlagen
+!!! Für diesen Abschnitt werden folgende Grundlagen benötigt:
+!!! 
 
 ### Montage
 
