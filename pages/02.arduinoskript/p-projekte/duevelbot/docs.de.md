@@ -21,15 +21,18 @@ Dieser Abschnitt gibt eine Übersicht über die benötigten Bauteile und wie die
 
 **Kunststoffteile**
 
+<div markdown="1" style="overflow:auto;">
 | Bild | Bauteil | Anzahl | STL-Datei zum Drucken |
 |-------|----------|-----------|---------------------------------|
 |   | Chassis | 1 | <a href="./duevelbot/duevelbot-chassis.zip" download>duevelbot-chassis.zip</a> |
 |   | Slider | 1 | <a href="./duevelbot/duevelbot-slider.zip" download>duevelbot-slider.zip</a> |
 |   | Seitenhänger | 2 | <a href="./duevelbot/duevelbot-seitenhaenger.zip" download>duevelbot-seitenhaenger.zip</a> |
 |   | Anhänger hinten | optional | <a href="./duevelbot/duevelbot-batteriehaenger.zip" download>duevelbot-batteriehaenger.zip</a> |
+</div>
 
 **Elektronikteile**
 
+<div markdown="1" style="overflow:auto;">
 | Bild | Bauteil | Anzahl | Hinweise |
 |-------|-----------|----------|--------------|
 |   | Arduino Uno | 1 | |
@@ -45,6 +48,7 @@ Dieser Abschnitt gibt eine Übersicht über die benötigten Bauteile und wie die
 |   | 9V-Block | 2 | |
 |   | Clip zum Anschluss des 9V-Block mit Zylinderstecker für Arduino | 1 | |
 |   | Clip zum Anschluss des 9V-Block mit offenen Kontakten für Schraubklemme | 1 | |
+</div>
 
 ### Schaltplan
 
