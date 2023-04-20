@@ -1,6 +1,6 @@
 ---
 title: '[D] Düvelbot'
-media_order: 1_düvelbot.png
+media_order: '1_düvelbot.png,duevelbot-batteriehaenger.zip,duevelbot-chassis.zip,duevelbot-seitenhaenger.zip,duevelbot-slider.zip'
 ---
 
 # Düvelbot
@@ -23,7 +23,7 @@ Dieser Abschnitt gibt eine Übersicht über die benötigten Bauteile und wie die
 
 | Bild | Bauteil | Anzahl | STL-Datei zum Drucken |
 |-------|----------|-----------|---------------------------------|
-|   | Chassis | 1 | |
+|   | Chassis | 1 | <a href="/duevelbot-chassis.zip" download>duevelbot-chassis.zip</a>|
 |   | Slider | 1 | |
 |   | Seitenhänger | 2 | |
 |   | Anhänger hinten | optional | |
@@ -81,9 +81,10 @@ Der folgende Schaltplan gibt einen Gesamtüberblick über die Schaltung aller Ba
 
 **Ziel:** Der Düvelbot soll um einen Ultraschallsensor erweitert werden, sodass er Hindernisse erkennen und umfahren kann.
 
-!!! #### Grundlagen
+!!! #### Wichtige Grundlagen
 !!! Für diesen Abschnitt werden folgende Grundlagen benötigt:
-!!! 
+!!! - [Ultraschallsensor](../../bauteilkunde/sensoren#ultraschallsensor)
+!!! - [Variablen und Schleifen](../../bausteine-algorithmen/variablen-und-schleifen#programme-mit-variablen-und...)
 
 ### Montage
 
@@ -102,9 +103,11 @@ Der folgende Schaltplan gibt einen Gesamtüberblick über die Schaltung aller Ba
 
 **Ziel:** Der Düvelbot soll um zwei Infrarot-Sensoren erweitert werden, sodass er einer Linie folgen kann, um Parcours zu absolvieren. Für die Anzeige der Sensorwerte bei der Feinjustierung wird ein Display angebracht.
 
-!!! #### Grundlagen
+!!! #### Wichtige Grundlagen
 !!! Für diesen Abschnitt werden folgende Grundlagen benötigt:
-!!! 
+!!! - [OLED-Display SSD1306](../../bauteilkunde/aktoren#oled-display-ssd1306)
+!!! - [Infrarot-Sensor TCRT5000]()
+
 
 ### Montage
 
