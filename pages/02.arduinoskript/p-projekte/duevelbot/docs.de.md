@@ -23,7 +23,7 @@ Dieser Abschnitt gibt eine Übersicht über die benötigten Bauteile und wie die
 
 | Bild | Bauteil | Anzahl | STL-Datei zum Drucken |
 |-------|----------|-----------|---------------------------------|
-|   | Chassis | 1 | <a href="./duevelbot-chassis.zip" download>duevelbot-chassis.zip</a>|
+|   | Chassis | 1 | <a href="./duevelbot/duevelbot-chassis.zip" download>duevelbot-chassis.zip</a>|
 |   | Slider | 1 | |
 |   | Seitenhänger | 2 | |
 |   | Anhänger hinten | optional | |
