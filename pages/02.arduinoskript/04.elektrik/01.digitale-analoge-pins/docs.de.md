@@ -310,7 +310,7 @@ Für eine einfache Messung bei einer 1,5 V-Batterie wird der negative Pol der 
     - voll: $1,4 V \leq U $,
     - in Ordnung: $1,2V \leq U < 1,4V $,
     - leer: $U < 1,2 V $.
-
+fdg
 </div>
 
 <div markdown="1" class="projekt">
