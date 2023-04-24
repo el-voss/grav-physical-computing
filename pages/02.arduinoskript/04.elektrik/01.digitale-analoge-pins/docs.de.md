@@ -296,24 +296,19 @@ Wenn Batterien kaum noch Ladung gespeichert haben, lässt die Spannung an ihren 
 <div markdown="1" class="projekt">
 #### Batterietester (Voltmeter für Spannungen bis 5V)
 Für eine einfache Messung bei einer 1,5 V-Batterie wird der negative Pol der Batterie mit GND verbunden, sodass ein gemeinsames Nullpotential vorliegt. Der positive Pol der Batterie wird mit einem der analogen Eingänge A0 bis A5 verbunden. Über einen eingebauten Analog-Digital-Wandler (*engl. analog-to-digital converter, ADC*) wird der Spannungswert durch eine Zahl zwischen 0 und 1023 ausgedrückt.
-<div class="flex-box">
-<div markdown="1">
-1.  Schließe eine mit 1,5 V beschriftete Batterie an den Arduino an und miss die Spannung. Berechne aus dem Analogwert die Spannung und lass sie auf dem seriellen Monitor ausgeben.
-2.  Ergänze den Batterietester um eine Ampel, die anzeigt, ob die Batterie voll aufgeladen bzw. noch in Ordnung bzw. leer ist:
-    - voll: $1,4 V \leq U $,
-    - in Ordnung: $1,2V \leq U < 1,4V $,
-    - leer: $U < 1,2 V $.
 
-</div>
-<div markdown="1">
+1.  Schließe eine mit 1,5 V beschriftete Batterie an den Arduino an und miss die Spannung. Berechne aus dem Analogwert die Spannung und lass sie auf dem seriellen Monitor ausgeben.
 | **Analogwert** | **Spannung** |
 | :------------: | :----------: |
 |       0        |     0 V      |
 |       1        |              |
 |      100       |              |
 |      1023      |     5 V      |
-</div>
-</div>
+2.  Ergänze den Batterietester um eine Ampel, die anzeigt, ob die Batterie voll aufgeladen bzw. noch in Ordnung bzw. leer ist:
+    - voll: $1,4 V \leq U $,
+    - in Ordnung: $1,2V \leq U < 1,4V $,
+    - leer: $U < 1,2 V $.
+
 </div>
 
 <div markdown="1" class="projekt">
