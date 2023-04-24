@@ -308,8 +308,8 @@ Für eine einfache Messung bei einer 1,5 V-Batterie wird der negative Pol der 
 
 2.  Ergänze den Batterietester um eine Ampel, die anzeigt, ob die Batterie voll aufgeladen bzw. noch in Ordnung bzw. leer ist:
   - voll: $1,4 V \leq U $,
-  - in Ordnung: $1,2V \leq U < 1,4V $,
-  - leer: $U < 1,2 V $.
+  - in Ordnung: $1,2V \leq U \leq 1,4V $,
+  - leer: $U \leq 1,2 V $.
 
 </div>
 
