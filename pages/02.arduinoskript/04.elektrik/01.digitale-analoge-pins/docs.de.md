@@ -299,10 +299,10 @@ Für eine einfache Messung bei einer 1,5 V-Batterie wird der negative Pol der 
 <div class="flex-box">
 <div markdown="1">
 1.  Schließe eine mit 1,5 V beschriftete Batterie an den Arduino an und miss die Spannung. Berechne aus dem Analogwert die Spannung und lass sie auf dem seriellen Monitor ausgeben.
-2.  Ergänze den Batterietester um eine Ampel, die anzeigt, ob die Batterie voll aufgeladen bzw. noch in Ordnung bzw. leer ist.
-    - voll: $1,4 V \leq U $
-    - in Ordnung: $1,2V \leq U < 1,4V $
-    - leer: $U < 1,2 V $
+2.  Ergänze den Batterietester um eine Ampel, die anzeigt, ob die Batterie voll aufgeladen bzw. noch in Ordnung bzw. leer ist:
+    - voll: $1,4 V \leq U $,
+    - in Ordnung: $1,2V \leq U < 1,4V $,
+    - leer: $U < 1,2 V $.
 
 </div>
 <div markdown="1">
