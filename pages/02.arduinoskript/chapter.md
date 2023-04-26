@@ -16,14 +16,14 @@ Ein Skript zur Einführung des Arduino im Wahlpflichtfach "Informatik/Physik" im
 
 <div class="flex-box">
     <div class="overview-card">
-    <strong><a href="https://doku.el-voss.de/de/arduinoskript/">Physical Computing</a> </strong>
+    <strong><a href="./arduinoskript/">Physical Computing</a> </strong>
     <ul>
-        <li><a href="https://doku.el-voss.de/de/arduinoskript/einleitung">Einleitung </a></li>
-        <li><a href="https://doku.el-voss.de/de/arduinoskript/nepo">Kurze Einführung </a></li>
-        <li><a href="https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen">Bausteine von Algorithmen </a></li>
-        <li><a href="https://doku.el-voss.de/de/arduinoskript/elektrik">Elektrische Grundlagen </a></li>
-        <li><a href="https://doku.el-voss.de/de/arduinoskript/bauteilkunde">Bauteilkunde </a></li>
-        <li><a href="./automaten">Automaten</a></li>
+        <li><a href="./arduinoskript/einleitung">Einleitung </a></li>
+        <li><a href="./arduinoskript/nepo">Kurze Einführung </a></li>
+        <li><a href="./arduinoskript/bausteine-algorithmen">Bausteine von Algorithmen </a></li>
+        <li><a href="./arduinoskript/elektrik">Elektrische Grundlagen </a></li>
+        <li><a href="./arduinoskript/bauteilkunde">Bauteilkunde </a></li>
+        <li><a href="./arduinoskript/automaten">Automaten</a></li>
     </ul>
     </div>
 </div>
