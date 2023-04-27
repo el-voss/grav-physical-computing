@@ -78,7 +78,7 @@ Die Verkabelung erfolgt nach dem folgendem Schaltplan. Bitte scrolle an den ents
 
 ### Montage
 
-<div class="flex-box">
+<div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung01](Anleitung01.jpg?lightbox=1024&resize=400 "Anleitung01")  </div>
 <div markdown="1"> **Schritt 1:** Führe die Kabel eines Motors durch die Motorhalterung in der Gehäuse.</div>
 </div>
