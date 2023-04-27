@@ -1,6 +1,6 @@
 ---
 title: '[D] Düvelbot'
-media_order: '1_düvelbot.png,duevelbot-batteriehaenger.zip,duevelbot-chassis.zip,duevelbot-seitenhaenger.zip,duevelbot-slider.zip,9v-block.jpg,anhaenger.jpg,arduino-uno.jpg,chassis.jpg,clip-mit-offenen-kontakten.jpg,clip-mit-zylinderstecker.jpg,display-ssd1306.jpg,getriebemotor-n20.jpg,infrarot-sensoren.jpg,kabel.jpg,l298n-front.jpg,l298n-oben.jpg,raeder.jpg,seitenhaenger.jpg,slider.jpg,summer.jpg'
+media_order: 'seitenhaenger.jpg,slider.jpg,anhaenger.jpg,1_düvelbot.png,chassis.jpg,duevelbot-batteriehaenger.zip,duevelbot-chassis.zip,duevelbot-seitenhaenger.zip,duevelbot-slider.zip,9v-block.jpg,arduino-uno.jpg,clip-mit-offenen-kontakten.jpg,clip-mit-zylinderstecker.jpg,display-ssd1306.jpg,getriebemotor-n20.jpg,infrarot-sensoren.jpg,kabel.jpg,l298n-front.jpg,l298n-oben.jpg,raeder.jpg,summer.jpg,expansion-board.jpg,ultraschallsensor.jpg'
 ---
 
 # Düvelbot
@@ -26,10 +26,10 @@ Dieser Abschnitt gibt eine Übersicht über die benötigten Bauteile und wie die
 <div markdown="1" style="overflow:auto;">
 | Bild | Bauteil | Anzahl | STL-Datei zum Drucken |
 |-------|----------|-----------|---------------------------------|
-|   | Chassis | 1 | <a href="./duevelbot/duevelbot-chassis.zip" download>duevelbot-chassis.zip</a> |
-|   | Slider | 1 | <a href="./duevelbot/duevelbot-slider.zip" download>duevelbot-slider.zip</a> |
-|   | Seitenhänger | 2 | <a href="./duevelbot/duevelbot-seitenhaenger.zip" download>duevelbot-seitenhaenger.zip</a> |
-|   | Anhänger hinten | optional | <a href="./duevelbot/duevelbot-batteriehaenger.zip" download>duevelbot-batteriehaenger.zip</a> |
+| ![chassis](chassis.jpg?lightbox=1024&resize=200 "chassis") | Chassis | 1 | <a href="./duevelbot/duevelbot-chassis.zip" download>duevelbot-chassis.zip</a> |
+| ![slider](slider.jpg?lightbox=1024&resize=200 "slider")  | Slider | 1 | <a href="./duevelbot/duevelbot-slider.zip" download>duevelbot-slider.zip</a> |
+| ![seitenhaenger](seitenhaenger.jpg?lightbox=1024&resize=200 "seitenhaenger")  | Seitenhänger | 2 | <a href="./duevelbot/duevelbot-seitenhaenger.zip" download>duevelbot-seitenhaenger.zip</a> |
+|  ![anhaenger](anhaenger.jpg?lightbox=1024&resize=200 "anhaenger") | Anhänger hinten | optional | <a href="./duevelbot/duevelbot-batteriehaenger.zip" download>duevelbot-batteriehaenger.zip</a> |
 </div>
 
 **Elektronikteile**
