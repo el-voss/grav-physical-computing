@@ -26,10 +26,10 @@ Dieser Abschnitt gibt eine Übersicht über die benötigten Bauteile und wie die
 <div markdown="1" style="overflow:auto;">
 | Bild | Bauteil | Anzahl | STL-Datei zum Drucken |
 |-------|----------|-----------|---------------------------------|
-| ![chassis](chassis.jpg?lightbox=1024&resize=200 "chassis") | Chassis | 1 | <a href="./duevelbot/duevelbot-chassis.zip" download>duevelbot-chassis.zip</a> |
-| ![slider](slider.jpg?lightbox=1024&resize=200 "slider")  | Slider | 1 | <a href="./duevelbot/duevelbot-slider.zip" download>duevelbot-slider.zip</a> |
-| ![seitenhaenger](seitenhaenger.jpg?lightbox=1024&resize=200 "seitenhaenger")  | Seitenhänger | 2 | <a href="./duevelbot/duevelbot-seitenhaenger.zip" download>duevelbot-seitenhaenger.zip</a> |
-|  ![anhaenger](anhaenger.jpg?lightbox=1024&resize=200 "anhaenger") | Anhänger hinten | optional | <a href="./duevelbot/duevelbot-batteriehaenger.zip" download>duevelbot-batteriehaenger.zip</a> |
+| ![chassis](chassis.jpg?lightbox=512&resize=200 "chassis") | Chassis | 1 | <a href="./duevelbot/duevelbot-chassis.zip" download>duevelbot-chassis.zip</a> |
+| ![slider](slider.jpg?lightbox=512&resize=200 "slider")  | Slider | 1 | <a href="./duevelbot/duevelbot-slider.zip" download>duevelbot-slider.zip</a> |
+| ![seitenhaenger](seitenhaenger.jpg?lightbox=512&resize=200 "seitenhaenger")  | Seitenhänger | 2 | <a href="./duevelbot/duevelbot-seitenhaenger.zip" download>duevelbot-seitenhaenger.zip</a> |
+|  ![anhaenger](anhaenger.jpg?lightbox=512&resize=200 "anhaenger") | Anhänger hinten | optional | <a href="./duevelbot/duevelbot-batteriehaenger.zip" download>duevelbot-batteriehaenger.zip</a> |
 </div>
 
 **Elektronikteile**
