@@ -82,67 +82,67 @@ Die Verkabelung erfolgt nach dem folgendem Schaltplan. Bitte scrolle an den ents
 <div markdown="1"> ![Anleitung01](Anleitung01.jpg?lightbox=1024&resize=400 "Anleitung01")  </div>
 <div markdown="1"> **Schritt 1:** Führe die Kabel eines Motors durch die Motorhalterung in der Gehäuse.</div>
 </div>
-<div class="flex-box">
+<div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung02](Anleitung02.jpg?lightbox=1024&resize=400 "Anleitung02")  </div>
 <div markdown="1"> **Schritt 2:** Drücke den Motor in seine Halterung. Die Lasche kann vorsichtig nach unten gedrückt werden, bis die äußere goldene Platte des Getriebes fest in der Lasche sitzt.</div>
 </div>
-<div class="flex-box">
+<div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung03](Anleitung03.jpg?lightbox=1024&resize=400 "Anleitung03")  </div>
 <div markdown="1"> **Schritt 3:** Verfahre mit dem Motor auf der anderen Seite genauso.  </div>
 </div>
-<div class="flex-box">
+<div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung04](Anleitung04.jpg?lightbox=1024&resize=400 "Anleitung04")  </div>
 <div markdown="1"> **Schritt 4:** Stecke die Kabel des linken Motors in die linke Schraubklemme des Motortreibers L298N und schraube sie fest. Verfahre genauso auf der rechten Seite </div>
 </div>
-<div class="flex-box">
+<div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung05](Anleitung05.jpg?lightbox=1024&resize=400 "Anleitung05") </div>
 <div markdown="1"> **Schritt 5:** Stecke die Kabel des Clips mit offenen Kontakten in der Schraubklemme für die Spannungsversorgung am Motortreiber L298N. In der mittleren Schraubklemme muss ein zweites schwarzes Kabel (male-male) ergänzt werden, mit dem ein gemeinsames GND-Potential mit dem Arduino hergestellt wird. Teste durch vorsichtiges Ziehen an den Kabeln, ob sie fest verschraubt sind.</div>
 </div>
-<div class="flex-box">
+<div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung06](Anleitung06.jpg?lightbox=1024&resize=400 "Anleitung06")  </div>
 <div markdown="1"> **Schritt 6:** Platziere den Motortreiber im Gehäuse, ohne die Kabel zu stark zu knicken.  </div>
 </div>
-<div class="flex-box">
+<div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung07](Anleitung07.jpg?lightbox=1024&resize=400 "Anleitung07")  </div>
 <div markdown="1"> **Schritt 7:** Suche die Räder und den Slider heraus und schiebe sie an ihre Position. Beachte die Kerbe an den Radnabe, die genau auf die Kerbe am Motorschaft passt. </div>
 </div>
-<div class="flex-box">
+<div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung08](Anleitung08.jpg?lightbox=1024&resize=400 "Anleitung08")  </div>
 <div markdown="1"> **Schritt 8:** Achte darauf, dass beide Räder gleich weit auf dem Motorschaft sitzen, sodass sie genau symmetrisch sind. Die Räder dürfen nicht am Gehäuse schleifen.</div>
 </div>
-<div class="flex-box">
+<div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung09](Anleitung09.jpg?lightbox=1024&resize=400 "Anleitung09") </div>
 <div markdown="1"> **Schritt 9:** Entferne die Jumper auf dem Motortreiber und verstaue sie so, dass sie nicht verloren gehen. Stecke danach sechs  Jumper-Kabel auf die Pins En1,2, In1, In2, In3, In4 und En3,4.  Verwende für jeden Pin eine andere Farbe. Notiere dir, welche Farbe zu welchem Pin gehört.</div>
 </div>
-<div class="flex-box">
+<div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung10](Anleitung10.jpg?lightbox=1024&resize=400 "Anleitung10")  </div>
 <div markdown="1"> **Schritt 10:** Führe die Kabel durch die dafür vorgesehenen Öffnungen an den Seiten. In der Regel passen zwei Kabel gut durch das gleiche Loch. </div>
 </div>
-<div class="flex-box">
+<div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung11](Anleitung11.jpg?lightbox=1024&resize=400 "Anleitung11")  </div>
 <div markdown="1">**Schritt 11:** Bereite den Piezo-Summer vor, indem du zwei Jumper-Kabel anbringst. Beachte das Plus-Symbol auf der oberen Seite - der Pin unter dem Plus muss mit dem Digitalpin am Arduino verbunden werden. Der andere Pin wird mit GND am Arduino verbunden. Am besten verwendest du hier wieder ein schwarzes Kabel für alle GND-Kontakte. </div>
 </div>
-<div class="flex-box">
+<div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung12](Anleitung12.jpg?lightbox=1024&resize=400 "Anleitung12")  </div>
 <div markdown="1">**Schritt 12:** Platziere den Piezo-Summer zwischen den beiden Motoren und führe die Kabel durch die Öffnungen an der Seite. </div>
 </div>
-<div class="flex-box">
+<div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung13](Anleitung13.jpg?lightbox=1024&resize=400 "Anleitung13")  </div>
 <div markdown="1"> **Schritt 13:** Stecke das Expansion-Board auf den Arduino. Achte darauf, dass die Pinleisten genau übereinander liegen und nicht gegeneinander versetzt sind.</div>
 </div>
-<div class="flex-box">
+<div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung14](Anleitung14.jpg?lightbox=1024&resize=400 "Anleitung14")  </div>
 <div markdown="1"> **Schritt 14:** Verkabele die Kabel der Bauteile entsprechend des Schaltplans mit dem Arduino. Nutze die GND-Leiste auf den Expansion-Board (schwarze Kabel).</div>
 </div>
-<div class="flex-box">
+<div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung15](Anleitung15.jpg "Anleitung15")  </div>
 <div markdown="1"> **Schritt 15:** Schiebe den Arduino vollständig in das Gehäuse. </div>
 </div>
-<div class="flex-box">
+<div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung16](Anleitung16.jpg "Anleitung16")  </div>
 <div markdown="1"> **Schritt 16:** Hake die Seitenhänger in die Öffnungen an der Seite und platziere die zwei 9V-Blöcke darin. Stecke den Clip mit Zylinderanschluss auf eine der 9V-Blöcke. </div>
 </div>
-<div class="flex-box">
+<div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung17](Anleitung17.jpg "Anleitung17")  </div>
 <div markdown="1"> **Schritt 17:** Wenn der Roboter starten soll, werden beide 9V-Blöcke angeschlossen. Wenn der Roboter programmiert werden soll, werden die 9V-Blöcke abgeklemmt und stattdessen ein USB-Kabel an den Arduino angeschlossen.</div>
 </div>
