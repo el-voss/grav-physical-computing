@@ -1,6 +1,6 @@
 ---
 title: '[D] Düvelbot'
-media_order: '1_düvelbot.png,duevelbot-batteriehaenger.zip,duevelbot-chassis.zip,duevelbot-seitenhaenger.zip,duevelbot-slider.zip'
+media_order: '1_düvelbot.png,duevelbot-batteriehaenger.zip,duevelbot-chassis.zip,duevelbot-seitenhaenger.zip,duevelbot-slider.zip,9v-block.jpg,anhaenger.jpg,arduino-uno.jpg,chassis.jpg,clip-mit-offenen-kontakten.jpg,clip-mit-zylinderstecker.jpg,display-ssd1306.jpg,getriebemotor-n20.jpg,infrarot-sensoren.jpg,kabel.jpg,l298n-front.jpg,l298n-oben.jpg,raeder.jpg,seitenhaenger.jpg,slider.jpg,summer.jpg'
 ---
 
 # Düvelbot
