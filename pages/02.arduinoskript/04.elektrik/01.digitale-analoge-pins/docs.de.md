@@ -1,6 +1,7 @@
 ---
 title: 'Digitale und analoge Pins'
 menu: '[DAP] Digitale und analoge Pins'
+media_order: batteriespannung-messen.png
 ---
 
 # Elektrische Grundlagen Teil 1: Digitale und analoge Pins
@@ -296,6 +297,8 @@ Wenn Batterien kaum noch Ladung gespeichert haben, lässt die Spannung an ihren 
 <div markdown="1" class="projekt">
 #### Batterietester (Voltmeter für Spannungen bis 5V)
 Für eine einfache Messung bei einer 1,5 V-Batterie wird der negative Pol der Batterie mit GND verbunden, sodass ein gemeinsames Nullpotential vorliegt. Der positive Pol der Batterie wird mit einem der analogen Eingänge A0 bis A5 verbunden. Über einen eingebauten Analog-Digital-Wandler (*engl. analog-to-digital converter, ADC*) wird der Spannungswert durch eine Zahl zwischen 0 und 1023 ausgedrückt.
+
+![batteriespannung-messen](batteriespannung-messen.png?lightbox=1024&resize=500&classes=caption "Zur Messung der verbleibenden Spannung einer AA-Batterie wird der Minuspol mit GND und der Pluspol mit einem der analogen Eingänge A0 bis A5 verbunden.")
 
 1.  Schließe eine mit 1,5 V beschriftete Batterie an den Arduino an und miss die Spannung. Berechne aus dem Analogwert die Spannung und lass sie auf dem seriellen Monitor ausgeben.
 
