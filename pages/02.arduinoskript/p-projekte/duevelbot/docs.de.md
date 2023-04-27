@@ -79,10 +79,73 @@ Die Verkabelung erfolgt nach dem folgendem Schaltplan. Bitte scrolle an den ents
 ### Montage
 
 <div class="flex-box">
+<div markdown="1"> ![Anleitung01](Anleitung01.jpg?lightbox=1024&resize=400 "Anleitung01")  </div>
+<div markdown="1"> **Schritt 1:** Führe die Kabel eines Motors durch die Motorhalterung in der Gehäuse.</div>
+</div>
+<div class="flex-box">
+<div markdown="1"> ![Anleitung02](Anleitung02.jpg?lightbox=1024&resize=400 "Anleitung02")  </div>
+<div markdown="1"> **Schritt 2:** Drücke den Motor in seine Halterung. Die Lasche kann vorsichtig nach unten gedrückt werden, bis die äußere goldene Platte des Getriebes fest in der Lasche sitzt.</div>
+</div>
+<div class="flex-box">
+<div markdown="1"> ![Anleitung03](Anleitung03.jpg?lightbox=1024&resize=400 "Anleitung03")  </div>
+<div markdown="1"> **Schritt 3:** Verfahre mit dem Motor auf der anderen Seite genauso.  </div>
+</div>
+<div class="flex-box">
+<div markdown="1"> ![Anleitung04](Anleitung04.jpg?lightbox=1024&resize=400 "Anleitung04")  </div>
+<div markdown="1"> **Schritt 4:** Stecke die Kabel des linken Motors in die linke Schraubklemme des Motortreibers L298N und schraube sie fest. Verfahre genauso auf der rechten Seite </div>
+</div>
+<div class="flex-box">
+<div markdown="1"> ![Anleitung05](Anleitung05.jpg?lightbox=1024&resize=400 "Anleitung05") </div>
+<div markdown="1"> **Schritt 5:** Stecke die Kabel des Clips mit offenen Kontakten in der Schraubklemme für die Spannungsversorgung am Motortreiber L298N. In der mittleren Schraubklemme muss ein zweites schwarzes Kabel (male-male) ergänzt werden, mit dem ein gemeinsames GND-Potential mit dem Arduino hergestellt wird. </div>
+</div>
+<div class="flex-box">
 <div markdown="1">   </div>
 <div markdown="1">   </div>
 </div>
-
+<div class="flex-box">
+<div markdown="1">   </div>
+<div markdown="1">   </div>
+</div>
+<div class="flex-box">
+<div markdown="1">   </div>
+<div markdown="1">   </div>
+</div>
+<div class="flex-box">
+<div markdown="1">   </div>
+<div markdown="1">   </div>
+</div>
+<div class="flex-box">
+<div markdown="1">   </div>
+<div markdown="1">   </div>
+</div>
+<div class="flex-box">
+<div markdown="1">   </div>
+<div markdown="1">   </div>
+</div>
+<div class="flex-box">
+<div markdown="1">   </div>
+<div markdown="1">   </div>
+</div>
+<div class="flex-box">
+<div markdown="1">   </div>
+<div markdown="1">   </div>
+</div>
+<div class="flex-box">
+<div markdown="1">   </div>
+<div markdown="1">   </div>
+</div>
+<div class="flex-box">
+<div markdown="1">   </div>
+<div markdown="1">   </div>
+</div>
+<div class="flex-box">
+<div markdown="1">   </div>
+<div markdown="1">   </div>
+</div>
+<div class="flex-box">
+<div markdown="1">   </div>
+<div markdown="1">   </div>
+</div>
 
 ### Konfiguration
 
