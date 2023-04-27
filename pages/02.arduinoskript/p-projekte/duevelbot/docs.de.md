@@ -135,15 +135,15 @@ Die Verkabelung erfolgt nach dem folgendem Schaltplan. Bitte scrolle an den ents
 <div markdown="1"> **Schritt 14:** Verkabele die Kabel der Bauteile entsprechend des Schaltplans mit dem Arduino. Nutze die GND-Leiste auf den Expansion-Board (schwarze Kabel).</div>
 </div>
 <div class="flex-box" style="align-items: center;">
-<div markdown="1"> ![Anleitung15](Anleitung15.jpg "Anleitung15")  </div>
+<div markdown="1"> ![Anleitung15](Anleitung15.jpg?lightbox=1024&resize=400 "Anleitung15")  </div>
 <div markdown="1"> **Schritt 15:** Schiebe den Arduino vollständig in das Gehäuse. </div>
 </div>
 <div class="flex-box" style="align-items: center;">
-<div markdown="1"> ![Anleitung16](Anleitung16.jpg "Anleitung16")  </div>
+<div markdown="1"> ![Anleitung16](Anleitung16.jpg?lightbox=1024&resize=400 "Anleitung16")  </div>
 <div markdown="1"> **Schritt 16:** Hake die Seitenhänger in die Öffnungen an der Seite und platziere die zwei 9V-Blöcke darin. Stecke den Clip mit Zylinderanschluss auf eine der 9V-Blöcke. </div>
 </div>
 <div class="flex-box" style="align-items: center;">
-<div markdown="1"> ![Anleitung17](Anleitung17.jpg "Anleitung17")  </div>
+<div markdown="1"> ![Anleitung17](Anleitung17.jpg?lightbox=1024&resize=400 "Anleitung17")  </div>
 <div markdown="1"> **Schritt 17:** Wenn der Roboter starten soll, werden beide 9V-Blöcke angeschlossen. Wenn der Roboter programmiert werden soll, werden die 9V-Blöcke abgeklemmt und stattdessen ein USB-Kabel an den Arduino angeschlossen.</div>
 </div>
 
