@@ -1,6 +1,6 @@
 ---
 title: '[D] Düvelbot'
-media_order: 'seitenhaenger.jpg,slider.jpg,anhaenger.jpg,1_düvelbot.png,chassis.jpg,duevelbot-batteriehaenger.zip,duevelbot-chassis.zip,duevelbot-seitenhaenger.zip,duevelbot-slider.zip,9v-block.jpg,arduino-uno.jpg,clip-mit-offenen-kontakten.jpg,clip-mit-zylinderstecker.jpg,display-ssd1306.jpg,getriebemotor-n20.jpg,infrarot-sensoren.jpg,kabel.jpg,l298n-front.jpg,l298n-oben.jpg,raeder.jpg,summer.jpg,expansion-board.jpg,ultraschallsensor.jpg'
+media_order: 'getriebemotor-n20.jpg,clip-mit-offenen-kontakten.jpg,9v-block.jpg,clip-mit-zylinderstecker.jpg,kabel.jpg,display-ssd1306.jpg,infrarot-sensoren.jpg,seitenhaenger.jpg,ultraschallsensor.jpg,summer.jpg,raeder.jpg,l298n-front.jpg,arduino-uno.jpg,expansion-board.jpg,slider.jpg,anhaenger.jpg,1_düvelbot.png,chassis.jpg,duevelbot-batteriehaenger.zip,duevelbot-chassis.zip,duevelbot-seitenhaenger.zip,duevelbot-slider.zip,l298n-oben.jpg'
 ---
 
 # Düvelbot
@@ -37,19 +37,19 @@ Dieser Abschnitt gibt eine Übersicht über die benötigten Bauteile und wie die
 <div markdown="1" style="overflow:auto;">
 | Bild | Bauteil | Anzahl | Hinweise |
 |-------|-----------|----------|--------------|
-|   | Arduino Uno | 1 | |
-|   | Expansion Shield mit kleinem Steckbrett und mehreren Pins für GND und 5V | 1 | |
-|   | Motortreiber L298N | 1 | [Informationen und Datenblatt zum L298N](https://components101.com/modules/l293n-motor-driver-module) |
-|   | N20 Getriebemotoren (100 RPM, 6V) | 2 | |
-|   | Räder mit Felgen | 2 | passend zum Aufsetzen auf die Motorschäfte |
-|   | Piezo-Summer | 1 | |
-|   | Ultraschallsensor | 1 | |
-|   | Infrarotsensoren TCRT5000 | 2 | [Datenblatt des Sensors TCRT5000](https://www.mouser.de/datasheet/2/427/tcrt5000-240273.pdf) |
-|   | OLED-Display SSD1306 0,96" | 1 | |
-|   | Kabel male - female | viele | |
-|   | 9V-Block | 2 | |
-|   | Clip zum Anschluss des 9V-Block mit Zylinderstecker für Arduino | 1 | |
-|   | Clip zum Anschluss des 9V-Block mit offenen Kontakten für Schraubklemme | 1 | |
+| ![arduino-uno](arduino-uno.jpg?lightbox=512&resize=200 "arduino-uno")  | Arduino Uno | 1 | |
+| ![expansion-board](expansion-board.jpg?lightbox=512&resize=200 "expansion-board")  | Expansion Shield mit kleinem Steckbrett und mehreren Pins für GND und 5V | 1 | |
+|  ![l298n-front](l298n-front.jpg?lightbox=512&resize=200 "l298n-front") | Motortreiber L298N | 1 | [Informationen und Datenblatt zum L298N](https://components101.com/modules/l293n-motor-driver-module) |
+| ![getriebemotor-n20](getriebemotor-n20.jpg?lightbox=512&resize=200 "getriebemotor-n20")  | N20 Getriebemotoren (100 RPM, 6V) | 2 | Die Kabel müssen noch angelötet werden. |
+| ![raeder](raeder.jpg?lightbox=512&resize=200 "raeder")  | Räder mit Felgen | 2 | passend zum Aufsetzen auf die Motorschäfte |
+| ![summer](summer.jpg?lightbox=512&resize=200 "summer")  | Piezo-Summer | 1 | |
+| ![ultraschallsensor](ultraschallsensor.jpg?lightbox=512&resize=200 "ultraschallsensor")  | Ultraschallsensor | 1 | |
+|  ![infrarot-sensoren](infrarot-sensoren.jpg?lightbox=512&resize=200 "infrarot-sensoren") | Infrarotsensoren TCRT5000 | 2 | [Datenblatt des Sensors TCRT5000](https://www.mouser.de/datasheet/2/427/tcrt5000-240273.pdf) |
+| ![display-ssd1306](display-ssd1306.jpg?lightbox=512&resize=200 "display-ssd1306")  | OLED-Display SSD1306 0,96" | 1 | |
+| ![kabel](kabel.jpg?lightbox=512&resize=200 "kabel")  | Kabel male - female | viele | Es wird zusätzlich ein male-male-Kabel benötigt. |
+|  ![9v-block](9v-block.jpg?lightbox=512&resize=200 "9v-block") | 9V-Block | 2 | Auch als USB-Akku verfügbar. |
+| ![clip-mit-zylinderstecker](clip-mit-zylinderstecker.jpg?lightbox=512&resize=200 "clip-mit-zylinderstecker")  | Clip zum Anschluss des 9V-Block mit Zylinderstecker für Arduino | 1 | |
+| ![clip-mit-offenen-kontakten](clip-mit-offenen-kontakten.jpg?lightbox=512&resize=200 "clip-mit-offenen-kontakten")  | Clip zum Anschluss des 9V-Block mit offenen Kontakten für Schraubklemme | 1 | |
 </div>
 
 ### Schaltplan
