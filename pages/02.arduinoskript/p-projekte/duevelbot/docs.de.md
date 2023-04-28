@@ -27,6 +27,12 @@ Dieser Abschnitt gibt eine Übersicht über die benötigten Bauteile und wie die
 
 ### Bauteile
 
+<div class="aufgabe" markdown="1">
+#### Bauteile sammeln und kontrollieren
+
+Suche in den bereitgestellten Kästen alle Kunststoffteile und Elektronikteile heraus, die du für den Düvelbot benötigst.
+</div>
+
 **Kunststoffteile**
 
 <div markdown="1" style="overflow:auto;">
@@ -76,13 +82,13 @@ Der folgende Schaltplan gibt einen Gesamtüberblick über die Schaltung aller Ba
 !!! - [Pulsweitenmodulation](../../elektrik/digitale-analoge-pins#pulsweitenmodulation)
 !!! - [Motoren mit Motortreiber steuern](../../elektrik/transistoren-motoren#elektromotoren-mit-dem...)
 
-### Verkabelung
-
-Die Verkabelung erfolgt nach dem folgendem Schaltplan. Bitte scrolle an den entsprechenden Stellen der Anleitung hierhin zurück.
-
-**Schaltplan einfügen**
-
 ### Montage
+
+<div class="aufgabe" markdown="1">
+#### Montage und Verkabelung
+
+Befolge die folgende Anleitung zur Montage und Verkabelung, um die Basisversion des Düvelbots aufzubauen.
+</div>
 
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung01](Anleitung01.jpg?lightbox=1024&resize=400 "Anleitung01")  </div>
@@ -110,7 +116,7 @@ Die Verkabelung erfolgt nach dem folgendem Schaltplan. Bitte scrolle an den ents
 </div>
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung07](Anleitung07.jpg?lightbox=1024&resize=400 "Anleitung07")  </div>
-<div markdown="1"> **Schritt 7:** Suche die Räder und den Slider heraus und schiebe sie an ihre Position. Beachte die Kerbe an den Radnabe, die genau auf die Kerbe am Motorschaft passt. </div>
+<div markdown="1"> **Schritt 7:** Suche die Räder und den Slider heraus und schiebe sie an ihre Position. Beachte die Kerbe an der Radnabe, die genau auf die Kerbe am Motorschaft passt. </div>
 </div>
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung08](Anleitung08.jpg?lightbox=1024&resize=400 "Anleitung08")  </div>
@@ -122,7 +128,7 @@ Die Verkabelung erfolgt nach dem folgendem Schaltplan. Bitte scrolle an den ents
 </div>
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung10](Anleitung10.jpg?lightbox=1024&resize=400 "Anleitung10")  </div>
-<div markdown="1"> **Schritt 10:** Führe die Kabel durch die dafür vorgesehenen Öffnungen an den Seiten. In der Regel passen zwei Kabel gut durch das gleiche Loch. </div>
+<div markdown="1"> **Schritt 10:** Führe die Kabel durch die dafür vorgesehenen Öffnungen an den Seiten. In der Regel passen zwei Kabel gut durch das gleiche Loch (nacheinander). </div>
 </div>
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung11](Anleitung11.jpg?lightbox=1024&resize=400 "Anleitung11")  </div>
@@ -138,7 +144,7 @@ Die Verkabelung erfolgt nach dem folgendem Schaltplan. Bitte scrolle an den ents
 </div>
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung14](Anleitung14.jpg?lightbox=1024&resize=400 "Anleitung14")  </div>
-<div markdown="1"> **Schritt 14:** Verkabele die Kabel der Bauteile entsprechend des Schaltplans mit dem Arduino. Nutze die GND-Leiste auf den Expansion-Board (schwarze Kabel).</div>
+<div markdown="1"> **Schritt 14:** Verkabele die Kabel der Bauteile entsprechend des Schaltplans mit dem Arduino (siehe nächsten Abschnitt unten). Nutze die GND-Leiste auf den Expansion-Board (schwarze Kabel im Bild).</div>
 </div>
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung15](Anleitung15.jpg?lightbox=1024&resize=400 "Anleitung15")  </div>
@@ -152,6 +158,12 @@ Die Verkabelung erfolgt nach dem folgendem Schaltplan. Bitte scrolle an den ents
 <div markdown="1"> ![Anleitung17](Anleitung17.jpg?lightbox=1024&resize=400 "Anleitung17")  </div>
 <div markdown="1"> **Schritt 17:** Wenn der Roboter starten soll, werden beide 9V-Blöcke angeschlossen. Wenn der Roboter programmiert werden soll, werden die 9V-Blöcke abgeklemmt und stattdessen ein USB-Kabel an den Arduino angeschlossen.</div>
 </div>
+
+### Verkabelung
+
+Die Verkabelung erfolgt nach dem folgendem Schaltplan.
+
+**Schaltplan einfügen**
 
 ### Konfiguration
 
