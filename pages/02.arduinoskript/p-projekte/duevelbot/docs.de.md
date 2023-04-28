@@ -5,6 +5,12 @@ media_order: 'getriebemotor-n20.jpg,clip-mit-offenen-kontakten.jpg,9v-block.jpg,
 
 # Düvelbot
 
+<style>
+    body {
+        --abk: 'P-D';
+    }
+</style>
+
 **Bild von Düvelbot ergänzen**
 
 Der Düvelbot ist ein kleiner fahrender Roboter auf Arduino-Basis, der über einen Ultraschallsensor zur Entfernungsmessung und Hindernisvermeidung sowie zwei Infrarot-Sensoren zur Linienverfolgung verfügt. Zusätzlich wird ein Display angebracht, um wichtige Informationen darzustellen, und er kann Töne abgeben. Durch die offene Architektur und die Verwendung von Standard-Arduino-Bauteilen sind einige Erweiterungen denkbar. 
