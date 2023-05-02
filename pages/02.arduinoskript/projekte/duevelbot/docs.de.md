@@ -68,7 +68,7 @@ Suche in den bereitgestellten Kästen alle Kunststoffteile und Elektronikteile h
 
 Der folgende Schaltplan gibt einen Gesamtüberblick über die Schaltung aller Bauteile. Dies wird im folgenden Schritt für Schritt entwickelt.
 
-![Schaltplan des Düvelbot](1_duevelbot.png?lightbox=1024&resize=500&classes=caption "Vollständiger Schaltplan für den Düvelbot.")
+![Schaltplan des Düvelbot](1_duevelbot.png?lightbox=1024&resize=800&classes=caption "Vollständiger Schaltplan für den Düvelbot.")
 
 ## Basisversion mit Motoren und Piezo-Summer
 
@@ -163,7 +163,7 @@ Befolge die folgende Anleitung zur Montage und Verkabelung, um die Basisversion 
 
 Die Verkabelung erfolgt nach dem folgendem Schaltplan.
 
-![Schaltplan für die Motoren und den Piezo-Summer](2_duevelbot-motoren_und_piezo-summer.png?lightbox=1024&resize=500&classes=caption "Schaltplan für die Motoren und den Piezo-Summer.")
+![Schaltplan für die Motoren und den Piezo-Summer](2_duevelbot-motoren_und_piezo-summer.png?lightbox=1024&resize=800&classes=caption "Schaltplan für die Motoren und den Piezo-Summer.")
 
 ### Konfiguration
 
