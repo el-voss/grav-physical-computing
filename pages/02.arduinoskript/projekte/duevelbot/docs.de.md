@@ -1,6 +1,6 @@
 ---
 title: '[D] Düvelbot'
-media_order: 'getriebemotor-n20.jpg,clip-mit-offenen-kontakten.jpg,9v-block.jpg,clip-mit-zylinderstecker.jpg,kabel.jpg,display-ssd1306.jpg,infrarot-sensoren.jpg,seitenhaenger.jpg,ultraschallsensor.jpg,summer.jpg,raeder.jpg,l298n-front.jpg,arduino-uno.jpg,expansion-board.jpg,slider.jpg,anhaenger.jpg,chassis.jpg,duevelbot-batteriehaenger.zip,duevelbot-chassis.zip,duevelbot-seitenhaenger.zip,duevelbot-slider.zip,l298n-oben.jpg,Anleitung01.jpg,Anleitung02.jpg,Anleitung03.jpg,Anleitung04.jpg,Anleitung05.jpg,Anleitung06.jpg,Anleitung07.jpg,Anleitung08.jpg,Anleitung09.jpg,Anleitung10.jpg,Anleitung11.jpg,Anleitung12.jpg,Anleitung15.jpg,Anleitung16.jpg,Anleitung17.jpg,Anleitung18.jpg,Anleitung19.jpg,Anleitung13.jpg,Anleitung14.jpg,1_duevelbot.png,2_duevelbot-motoren_und_piezo-summer.png,4_duevelbot-infrarot-sensoren.png,5_duevelbot-oled-display.png'
+media_order: 'getriebemotor-n20.jpg,3_duevelbot-ultraschallsensor.png,clip-mit-offenen-kontakten.jpg,9v-block.jpg,clip-mit-zylinderstecker.jpg,kabel.jpg,display-ssd1306.jpg,infrarot-sensoren.jpg,seitenhaenger.jpg,ultraschallsensor.jpg,summer.jpg,raeder.jpg,l298n-front.jpg,arduino-uno.jpg,expansion-board.jpg,slider.jpg,anhaenger.jpg,chassis.jpg,duevelbot-batteriehaenger.zip,duevelbot-chassis.zip,duevelbot-seitenhaenger.zip,duevelbot-slider.zip,l298n-oben.jpg,Anleitung01.jpg,Anleitung02.jpg,Anleitung03.jpg,Anleitung04.jpg,Anleitung05.jpg,Anleitung06.jpg,Anleitung07.jpg,Anleitung08.jpg,Anleitung09.jpg,Anleitung10.jpg,Anleitung11.jpg,Anleitung12.jpg,Anleitung15.jpg,Anleitung16.jpg,Anleitung17.jpg,Anleitung18.jpg,Anleitung19.jpg,Anleitung13.jpg,Anleitung14.jpg,1_duevelbot.png,2_duevelbot-motoren_und_piezo-summer.png,4_duevelbot-infrarot-sensoren.png'
 ---
 
 # Düvelbot
@@ -159,16 +159,23 @@ Befolge die folgende Anleitung zur Montage und Verkabelung, um die Basisversion 
 <div markdown="1"> **Schritt 17:** Wenn der Roboter starten soll, werden beide 9V-Blöcke angeschlossen. Wenn der Roboter programmiert werden soll, werden die 9V-Blöcke abgeklemmt und stattdessen ein USB-Kabel an den Arduino angeschlossen.</div>
 </div>
 
-### Verkabelung
+### Schaltplan
 
 Die Verkabelung erfolgt nach dem folgendem Schaltplan.
 
 ![Schaltplan für die Motoren und den Piezo-Summer](2_duevelbot-motoren_und_piezo-summer.png?lightbox=1024&resize=800&classes=caption "Schaltplan für die Motoren und den Piezo-Summer.")
 
-### Konfiguration
+### Konfiguration und Programmierung
 
+Erster Test: Töne abspielen
 
-### Programmierung
+Vorwärts fahren und stoppen
+
+Hintergrundinfo: Der Motortreiber L298N
+
+Vorwärts fahren mit variabler Leistung
+
+Hebelsteuerung
 
 
 ## Erweiterung: Ultraschallsensor
@@ -183,14 +190,23 @@ Die Verkabelung erfolgt nach dem folgendem Schaltplan.
 
 ### Montage
 
+<div class="flex-box" style="align-items: center;">
+<div markdown="1"> ![Anleitung18](Anleitung18.jpg?lightbox=1024&resize=400 "Anleitung18")  </div>
+<div markdown="1"> **Schritt 18:** Stecke vier Kabel auf den Ultraschallsensor. </div>
+</div>
+<div class="flex-box" style="align-items: center;">
+<div markdown="1"> ![Anleitung19](Anleitung19.jpg?lightbox=1024&resize=400 "Anleitung19")  </div>
+<div markdown="1"> **Schritt 19:** Verkabele den Ultraschallsensor entsprechend des Schaltplans (siehe unten).</div>
+</div>
 
-### Verkabelung
+### Schaltplan
 
+Die Verkabelung des Ultraschallsensors erfolgt nach dem folgenden Schaltplan.
 
-### Konfiguration
+![Schaltplan für den Ultraschallsensor](3_duevelbot-ultraschallsensor.png?lightbox=1024&resize=800&classes=caption "Schaltplan für den Ultraschallsensor".)
 
+### Konfiguration und Programmierung
 
-### Programmierung
 
 
 ## Erweiterung: Infrarot-Sensoren und Display
@@ -209,9 +225,13 @@ Die Verkabelung erfolgt nach dem folgendem Schaltplan.
 
 ### Verkabelung
 
+Die Verkabelung des Ultraschallsensors erfolgt nach dem folgenden Schaltplan.
 
-### Konfiguration
+![4_duevelbot-infrarot-sensoren](4_duevelbot-infrarot-sensoren.png "4_duevelbot-infrarot-sensoren")
 
 
-### Programmierung
+
+### Konfiguration und Programmierung
+
+
 
