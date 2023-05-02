@@ -203,7 +203,7 @@ Hebelsteuerung
 
 Die Verkabelung des Ultraschallsensors erfolgt nach dem folgenden Schaltplan.
 
-![Schaltplan für den Ultraschallsensor](3_duevelbot-ultraschallsensor.png?lightbox=1024&resize=800&classes=caption "Schaltplan für den Ultraschallsensor".)
+![Schaltplan für den Ultraschallsensor](3_duevelbot-ultraschallsensor.png?lightbox=1024&resize=800&classes=caption "Schaltplan für den Ultraschallsensor.")
 
 ### Konfiguration und Programmierung
 
