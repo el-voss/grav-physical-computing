@@ -1,6 +1,6 @@
 ---
 title: '[D] Düvelbot'
-media_order: 'getriebemotor-n20.jpg,3_duevelbot-ultraschallsensor.png,clip-mit-offenen-kontakten.jpg,9v-block.jpg,clip-mit-zylinderstecker.jpg,kabel.jpg,display-ssd1306.jpg,infrarot-sensoren.jpg,seitenhaenger.jpg,ultraschallsensor.jpg,summer.jpg,raeder.jpg,l298n-front.jpg,arduino-uno.jpg,expansion-board.jpg,slider.jpg,anhaenger.jpg,chassis.jpg,duevelbot-batteriehaenger.zip,duevelbot-chassis.zip,duevelbot-seitenhaenger.zip,duevelbot-slider.zip,l298n-oben.jpg,Anleitung01.jpg,Anleitung02.jpg,Anleitung03.jpg,Anleitung04.jpg,Anleitung05.jpg,Anleitung06.jpg,Anleitung07.jpg,Anleitung08.jpg,Anleitung09.jpg,Anleitung10.jpg,Anleitung11.jpg,Anleitung12.jpg,Anleitung15.jpg,Anleitung16.jpg,Anleitung17.jpg,Anleitung18.jpg,Anleitung19.jpg,Anleitung13.jpg,Anleitung14.jpg,1_duevelbot.png,2_duevelbot-motoren_und_piezo-summer.png,4_duevelbot-infrarot-sensoren.png'
+media_order: 'getriebemotor-n20.jpg,3_duevelbot-ultraschallsensor.png,clip-mit-offenen-kontakten.jpg,9v-block.jpg,clip-mit-zylinderstecker.jpg,kabel.jpg,display-ssd1306.jpg,infrarot-sensoren.jpg,seitenhaenger.jpg,ultraschallsensor.jpg,summer.jpg,raeder.jpg,l298n-front.jpg,arduino-uno.jpg,expansion-board.jpg,slider.jpg,anhaenger.jpg,chassis.jpg,duevelbot-batteriehaenger.zip,duevelbot-chassis.zip,duevelbot-seitenhaenger.zip,duevelbot-slider.zip,l298n-oben.jpg,Anleitung01.jpg,Anleitung02.jpg,Anleitung03.jpg,Anleitung04.jpg,Anleitung05.jpg,Anleitung06.jpg,Anleitung07.jpg,Anleitung08.jpg,Anleitung09.jpg,Anleitung10.jpg,Anleitung11.jpg,Anleitung12.jpg,Anleitung15.jpg,Anleitung16.jpg,Anleitung17.jpg,Anleitung18.jpg,Anleitung19.jpg,Anleitung13.jpg,Anleitung14.jpg,1_duevelbot.png,2_duevelbot-motoren_und_piezo-summer.png,4_duevelbot-ir-sensoren_und_oled-display.png'
 ---
 
 # Düvelbot
@@ -227,8 +227,7 @@ Die Verkabelung des Ultraschallsensors erfolgt nach dem folgenden Schaltplan.
 
 Die Verkabelung des Ultraschallsensors erfolgt nach dem folgenden Schaltplan.
 
-![4_duevelbot-infrarot-sensoren](4_duevelbot-infrarot-sensoren.png "4_duevelbot-infrarot-sensoren")
-
+![Schaltplan für die Infrarot-Sensoren und das Display](4_duevelbot-ir-sensoren_und_oled-display.png?lightbox=1024&resize=800&classes=caption "Schaltplan für die Infrarot-Sensoren und das Display.")
 
 
 ### Konfiguration und Programmierung
