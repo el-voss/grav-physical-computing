@@ -1,7 +1,6 @@
 ---
 title: 'Transistoren und Motoren'
 menu: '[TM] Transistoren und Motoren'
-media_order: diode-sperrrichtung.png
 ---
 
 # Elektrische Grundlagen Teil 3: Transistoren und Motoren
