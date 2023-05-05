@@ -1,6 +1,7 @@
 ---
 title: 'Transistoren und Motoren'
 menu: '[TM] Transistoren und Motoren'
+media_order: diode-sperrrichtung.png
 ---
 
 # Elektrische Grundlagen Teil 3: Transistoren und Motoren
@@ -111,8 +112,9 @@ Wenn keine Spannung mehr am Motor anliegt, wird sich der Motor aufgrund seiner T
 !!!! 
 !!!! Eine **Diode** ist wie ein elektrisches Ventil: Sie lässt den Strom nur in eine Richtung durch. Im Gegensatz zu Leuchtdioden wandeln “normale” Dioden die elektrische Energie in Wärme um. In *Durchlassrichtung* wird der negative Pol (bzw. GND) mit der Seite verbunden, an der der Ring angebracht ist, und der positive Pol mit der anderen Seite.
 !!!! <div class="flex-box">
-!!!! <div markdown="1">![Diode als Bild](/images/diode2.jpg?resize=250&classes=caption "Diode als Bild.")</div>
-!!!! <div markdown="1">![Diode als Schaltsymbol](/circuits/diode-schaltsym.png?resize=250&classes=caption "Diode als Schaltsymbol.")</div>
+!!!! <div markdown="1">![Diode als Bild](/images/diode2.jpg?resize=250&rotate=180&classes=caption "Diode als Bild.")</div>
+!!!! <div markdown="1">![Diode als Schaltsymbol in Durchlassrichtung](/circuits/diode-schaltsym.png?resize=250&classes=caption "Diode als Schaltsymbol in Durchlassrichtung.")</div>
+!!!! <div markdown="1">![Diode als Schaltsymbol in Sperrrichtung](diode-sperrrichtung.png?resize=250&classes=caption "Diode als Schaltsymbol in Sperrrichtung.")</div>
 !!!! </div>
 
 Die Diode wird jedoch *Sperrrichtung* eingebaut, also so, dass der Ring mit 5V und die andere Seite mit GND verbunden ist. Dadurch fließt im Normalbetrieb kein Strom durch die Diode. Wenn jedoch der entgegengerichtete Induktionsstrom des Motors auftritt, kann dieser durch die Diode abfließen, bis die verbleibende elektrische Energie vollständig in Wärme umgewandelt wurde.
