@@ -23,7 +23,7 @@ Schau dich gerne um!
         <li><a href="https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen">Bausteine von Algorithmen </a></li>
         <li><a href="https://doku.el-voss.de/de/arduinoskript/elektrik">Elektrische Grundlagen </a></li>
         <li><a href="https://doku.el-voss.de/de/arduinoskript/bauteilkunde">Bauteilkunde </a></li>
-        <li><a href="https://doku.el-voss.de/de/arduinoskript/komplexe-systeme">Komplexe Systeme </a></li>
+        <li><a href="https://doku.el-voss.de/de/arduinoskript/automaten">Automaten </a></li>
     </ul>
     </div>
     <div class="overview-card">
