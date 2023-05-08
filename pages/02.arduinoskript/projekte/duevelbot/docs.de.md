@@ -171,7 +171,7 @@ Die Verkabelung erfolgt nach dem folgendem Schaltplan.
 
 !!!! #### Der Motortreiber L298N
 !!!! 
-!!!! Das Motortreibermodul L298N ist ein beliebtes Bauteil, weil es den Anschluss von Motoren sehr einfach macht und weil es zudem über einen Spannungsregler verfügt, den man in einigen Fällen für die Stromversorgung von weiteren Bauteilen verwenden kann. Der Motortreibe-IC ist an ein Kühlelement geschraubt, um die entstehende Wärme abzuleiten. In dem schwarzen Kasten sind zwei [H-Brücken bzw. Vierquadrantensteller](https://doku.el-voss.de/de/arduinoskript/elektrik/transistoren-motoren#aufbau-des-l293d-der...) verbaut, sodass sich die Motoren in beide Richtungen drehen lassen.
+!!!! Das Motortreibermodul L298N ist ein beliebtes Bauteil, weil es den Anschluss von Motoren sehr einfach macht und weil es zudem über einen Spannungsregler verfügt, den man in einigen Fällen für die Stromversorgung von weiteren Bauteilen verwenden kann. Der Motortreiber-IC ist an ein Kühlelement geschraubt, um die entstehende Wärme abzuleiten. In dem schwarzen Kasten sind zwei [H-Brücken bzw. Vierquadrantensteller](https://doku.el-voss.de/de/arduinoskript/elektrik/transistoren-motoren#aufbau-des-l293d-der...) verbaut, sodass sich die Motoren in beide Richtungen drehen lassen.
 !!!! 
 !!!! ![l298n-erklaerung](l298n-erklaerung.png?lightbox=1024&resize=600&classes=caption "Übersicht der Pinbelegung des Motortreibermoduls L298N.")
 !!!! 
