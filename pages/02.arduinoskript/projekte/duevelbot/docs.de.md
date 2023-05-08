@@ -175,6 +175,7 @@ Die Verkabelung erfolgt nach dem folgendem Schaltplan.
 !!!! 
 !!!! ![l298n-erklaerung](l298n-erklaerung.png?lightbox=1024&resize=600&classes=caption "Übersicht der Pinbelegung des Motortreibermoduls L298N.")
 !!!! 
+!!!! *Zur Motorsteuerung*
 !!!! Ein Motor wird an `Out1`und `Out2` angeschlossen. Der jeweilige Zustand der `Out`-Pins kann über die Pins `In1` und `In2` geregelt werden. Wenn an `In1` der Zustand `LOW` und an `In2` der Zustand `HIGH` anliegt, wird dies auf `Out1` bzw. `Out2` übertragen, sodass durch den Motor ein Strom fließen kann und er sich vorwärts dreht. Diese Übertragung wird jedoch durch den Pin `En1,2` (für *Enable 1, 2*) gesteuert. Wenn an `En1,2` `HIGH` anliegt, wird die Input-Konfiguration übertragen, bei `LOW` nicht. Durch ein PWM-Signal an `En1,2` kann die Leistung des Motors entsprechend gedrosselt werden.
 !!!!
 !!!! ![l298n-flussdiagramm-bsp](l298n-flussdiagramm-bsp.png?lightbox=1024&resize=500&classes=caption "Veranschaulichung der Funktionsweise des Motortreibers (siehe Text).")
@@ -183,6 +184,7 @@ Die Verkabelung erfolgt nach dem folgendem Schaltplan.
 !!!! 
 !!!! *Hinweis:* Durch den Jumper auf dem `En1,2`-Pin wird dieser mit dem 5V-Potential (`HIGH`) verbunden, sodass die Input-Konfiguration immer direkt übertragen wird. Dann ist aber kein PWM-Signal mehr möglich, weshalb die Jumper in der Anleitung oben entfernt werden. Stattdessen werden die `En1,2`-Pins mit einem PWM-Pin des Arduino verbunden.
 !!!! 
+!!!! *Zur Spannungsversorgung*
 !!!! Am `Vin`-Pin muss der Pluspol einer Batterie mit 7V bis 12V angeschlossen werden. Der Minuspol muss mit `GND` verbunden werden. Diese Spannung wird vom Spannungsregler auf ein stabiles 5V-Potential heruntergeregelt, welches für die Schaltlogik benötigt wird. Über den `5V`-Pin (in Kombination mit dem `GND`) kann dieses Potential auch für weitere Bauteile genutzt werden. In dieser Anleitung geschieht dies jedoch nicht, weil die Stromstärke der Batterie dann nicht mehr ausreichte, um eine stabile Spannungsversorgung für alle Bauteile zu gewährleisten.
 
 
