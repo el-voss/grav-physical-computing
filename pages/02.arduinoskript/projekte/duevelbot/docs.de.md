@@ -128,7 +128,7 @@ Befolge die folgende Anleitung zur Montage und Verkabelung, um die Basisversion 
 </div>
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung09](Anleitung09.jpg?lightbox=1024&resize=400 "Anleitung09") </div>
-<div markdown="1"> **Schritt 9b:** Stecke danach sechs Kabel auf die Pins En1,2, In1, In2, In3, In4 und En3,4. Eine genaue Beschriftung und Erklärung der Pins folgt im nächsten Abschnitt zum Schaltplan. Verwende für jeden Pin eine andere Farbe. Notiere dir, welche Farbe zu welchem Pin gehört.</div>
+<div markdown="1"> **Schritt 9b:** Stecke danach sechs Kabel auf die Pins En1/2, In1, In2, In3, In4 und En3/4. Eine genaue Beschriftung und Erklärung der Pins folgt im nächsten Abschnitt zum Schaltplan. Verwende für jeden Pin eine andere Farbe. Notiere dir, welche Farbe zu welchem Pin gehört.</div>
 </div>
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung10](Anleitung10.jpg?lightbox=1024&resize=400 "Anleitung10")  </div>
