@@ -86,9 +86,9 @@ Bei vielen Projekten soll sich etwas bewegen - dies lässt sich mit Elektromotor
 <div markdown="1" class="aufgabe">
 #### Motor und Diode - ein Paar, das zusammen gehört
 
-Erkläre die Funktion der Diode parallel zum E-Motor in eigenen Worten. Lies dazu die Hintergrundinformationen zum Elektromotor und zur Diode.
-
-Baue die unten abgebildete Schaltung zum Betrieb eines Gleichstrom-Elektromotors am Arduino auf.
+1. Bei der Verwendung von Elektromotoren benötigt man stets eine Diode, die parallel zum Elektromotor geschaltet wird. Lies im unten folgenden Hintergrundwissen nach, warum dies so ist.
+2. Zeichne den unten abgebildeten Schaltplan zwei Mal ab. Zeichne zuerst den Stomfluss ein, wenn der Arduino unter Spannung steht (z. B. weil er per USB-Kabel am Computer angeschlossen ist). Zeichne in der zweiten Schaltung den Stromfluss ein, wenn die Spannung vom Arduino getrennt wird.
+3. Erkläre die Funktion der Diode parallel zum E-Motor in eigenen Worten.
 
 !! Es ist sehr wichtig, dass die Diode richtig, also in Sperrrichtung, eingebaut wird, da sonst der Arduino zerstört werden könnte!
 
