@@ -105,7 +105,7 @@ Baue die unten abgebildete Schaltung zum Betrieb eines Gleichstrom-Elektromotors
 !!!! <div markdown="1">![Gleichstrom-Elektromotor als Schaltsymbol.](/circuits/motor-schaltsym.png?resize=200&classes=caption "Gleichstrom-Elektromotor als Schaltsymbol.")</div>
 !!!! </div>
 
-Wenn keine Spannung mehr am Motor anliegt, wird sich der Motor aufgrund seiner Trägheit immer noch ein wenig weiterdrehen. Durch das Drehen der Spulen im Magnetfeld der eingebauten Permanentmagneten wird in den Spulen ein Strom induziert, dessen Richtung entgegengesetzt zur vorherigen Richtung ist. Dieser “falsch” gerichtete Strom würde den Arduino zerstören. Aus diesem Grund schaltet man eine *Diode* parallel zum Motor.
+Wenn keine Spannung mehr am Motor anliegt, wird sich der Motor aufgrund seiner Trägheit immer noch ein wenig weiterdrehen. Durch das Drehen der Spulen im Magnetfeld der eingebauten Permanentmagneten wird vom Motor eine Spannung induziert, die entgegengesetzt zur vorherigen Richtung ist. Dort, wo vorher der Minuspol gewesen ist, wird nun vom Motor ein Pluspol induziert und umgekehrt. Diese “falsch” gerichtete Spannung würde den Arduino zerstören. Aus diesem Grund schaltet man eine *Diode* parallel zum Motor.
 
 !!!! #### Diode
 !!!! 
@@ -116,10 +116,10 @@ Wenn keine Spannung mehr am Motor anliegt, wird sich der Motor aufgrund seiner T
 !!!! <div markdown="1">![Diode als Schaltsymbol in Sperrrichtung](diode-sperrrichtung.png?resize=250&classes=caption "Diode als Schaltsymbol in Sperrrichtung.")</div>
 !!!! </div>
 
-Die Diode wird jedoch *Sperrrichtung* eingebaut, also so, dass der Ring mit 5V und die andere Seite mit GND verbunden ist. Dadurch fließt im Normalbetrieb kein Strom durch die Diode. Wenn jedoch der entgegengerichtete Induktionsstrom des Motors auftritt, kann dieser durch die Diode abfließen, bis die verbleibende elektrische Energie vollständig in Wärme umgewandelt wurde.
+Die Diode wird jedoch *Sperrrichtung* eingebaut, also so, dass der Ring mit 5V und die andere Seite mit GND verbunden ist. Dadurch fließt im Normalbetrieb kein Strom durch die Diode. Wenn jedoch die entgegengerichtete Induktionsspannung des Motors auftritt, kann der dadurch hervorgerufene Strom durch die Diode abfließen, bis die verbleibende elektrische Energie vollständig in Wärme umgewandelt wurde.
 
 ! **Recherche: Verpolungsschutz**
-! LEDs leuchten nicht, wenn man sie falsch herum anschließt. Andere Bauteile wie Elektrolytkondensatoren explodieren sogar, wenn man sie falsch herum anschließt. Um zu vermeiden, dass solche Schäden entstehen, wenn man eine Batterie falsch herum anschließt, werden in einigen Fällen Dioden genutzt. Recherchiere im [Elektronik-Kompendium](https://www.elektronik-kompendium.de/sites/slt/1206251.htm) wie dies funktioniert.
+! LEDs leuchten nicht, wenn man sie falsch herum anschließt. Andere Bauteile wie Elektrolytkondensatoren explodieren sogar, wenn man sie falsch herum anschließt. Um zu vermeiden, dass solche Schäden entstehen, wenn man eine Batterie falsch herum anschließt, werden in einigen Fällen Dioden genutzt. Recherchiere im [Elektronik-Kompendium](https://www.elektronik-kompendium.de/sites/slt/1206251.htm), wie dies funktioniert.
 
 ! **Recherche: Aufbau von Gleichstrom-Elektromotoren**
 ! Oben wurde die Funktionsweise von Gleichstrom-Elektromotoren bereits angedeutet. Recherchiere im Internet den genauen Aufbau und Ablauf der Drehbewegung.
