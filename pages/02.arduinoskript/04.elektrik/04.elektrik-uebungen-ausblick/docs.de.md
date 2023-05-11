@@ -1,7 +1,7 @@
 ---
 title: 'Übungen und Ausblick'
 menu: '[U] Übungen und Ausblick'
-media_order: 'schaltplan-ldr-in-reihe.png,schaltplan-spannungsmessung.png,schaltplan-pullup.png,schaltplan-dimmbarer-lautsprecher.png,Bloecke-Dimmbarer-Lautsprecher.png'
+media_order: 'schaltplan-ldr-in-reihe.png,schaltplan-spannungsmessung.png,schaltplan-pullup.png,schaltplan-dimmbarer-lautsprecher.png,Bloecke-Dimmbarer-Lautsprecher.png,schaltplan-ntc-an-arduino.png'
 ---
 
 # Elektrische Grundlagen Teil 4: Vermischte Übungen und Ausblick
@@ -92,7 +92,27 @@ Entwickle mit den unten abgebildeten Befehlen ein Programm, das dafür sorgt, da
 3. Ein NTC ist in einem Spannungsteiler mit einem Festwiderstand $R_F=10\,k\Omega$ am Arduino angeschlossen (siehe Schaltplan unten). Im analogen Eingang A0 wird ein Wert von 643 gemessen. Berechne die Größe des Widerstands des NTC.
 4. Die Tabelle unten zeigt für den verwendeten NTC, welche Widerstandswerte $R$ zu welcher Temperatur $T$ gehören. Bestimme mit Hilfe einer quadratischen Regression einen funktionalen Zusammenhang zwischen $R$ und $T$ und berechne damit die Temperatur, die zum Widerstandswert aus Aufgabenteil 3) gehört.
 
+<div class="flex-box">
+<div markdown="1">
+![schaltplan-ntc-an-arduino](schaltplan-ntc-an-arduino.png?lightbox=1024&resize=500&classes=caption "Schaltplan für einen NTC am Arduino.")
+</div>
+<div>
+<div markdown="1" style="width:80%; background: #eee; border: 3px solid #000; padding:1em; margin: 1em;">
+R/T No. **8307**
+Widerstand bei 25°:
+$R_{25}= 10\,  k\Omega$.  
 
+| T (C) | $R_T/R_{25}$ | 
+| :---- | :------------- | 
+| 5.0   | 2.252         | 
+| 10.0  | 1.8216         |
+| 15.0  | 1.4827         | 
+| 20.0  | 1.2142        | 
+| 25.0  | 1.0000         | 
+| 30.0  | 0.82818        | 
+</div>
+</div>
+</div>
 </div>
 
 ## Ausblick
