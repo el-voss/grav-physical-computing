@@ -126,7 +126,7 @@ Für ein [Moorhuhn Lasertag](https://www.el-voss.de/?p=159) kann man zwei gleich
 2. Erkläre, welcher Wert sich in A0 näherungsweise einstellen sollte, wenn gerade keiner der beiden LDR getroffen ist.
 3. Entwickle mit Hilfe der unten abgebildeten Befehle ein Programm, das auf dem seriellen Monitor ausgibt, welches Moorhuhn (welcher LDR) getroffen wurde. Das Programm soll als Struktogramm dargestellt werden.
 
-![Bloecke-LDR-komplex-Moorhuhn](Bloecke-LDR-komplex-Moorhuhn.png?resize=500 "Blöcke für die Ausgabe des Moorhuhns (des LDR), das (der) getroffen wurde.")
+![Bloecke-LDR-komplex-Moorhuhn](Bloecke-LDR-komplex-Moorhuhn.png "Blöcke für die Ausgabe des Moorhuhns (des LDR), das (der) getroffen wurde.")
 </div>
 
 <div markdown="1" class="aufgabe">
