@@ -1,6 +1,7 @@
 ---
 title: 'Übungen und Ausblick'
 menu: '[U] Übungen und Ausblick'
+media_order: 'schaltplan-ldr-in-reihe.png,schaltplan-spannungsmessung.png,schaltplan-pullup.png,schaltplan-dimmbarer-lautsprecher.png,Bloecke-Dimmbarer-Lautsprecher.png'
 ---
 
 # Elektrische Grundlagen Teil 4: Vermischte Übungen und Ausblick
@@ -50,6 +51,48 @@ Am gemeinsamen GND-Anschluss soll ein gemeinsamer Vorwiderstand für alle LEDs a
 
 1.  Erkläre, welche Unterschiede zur Parallelschaltung von drei LEDs an *einem* Digitalpin zu beachten sind.
 2.  Berechne, wie groß der gemeinsame Vorwiderstand mindestens sein muss.
+</div>
+
+<div markdown="1" class="aufgabe">
+#### Spannungsmessung
+
+Mit der unten abgebildeten Schaltung sollen am Arduino Spannungen an der Batterie bis zu 15V gemessen werden.
+
+![schaltplan-spannungsmessung](schaltplan-spannungsmessung.png?lightbox=1024&resize=500&classes=caption "Schaltung zum Messen von Batteriespannungen bis 15V mit dem Arduino.")
+
+1. Nenne mögliche, sinnvolle Größen für die Widerstände $R_1$ und $R_2$. Begründe, warum sie möglichst groß sein sollten.
+2. Im analogen Eingang A2 wird ein Wert von 789 gemessen. Berechne die Spannung an der Batterie.
+</div>
+
+<div markdown="1" class="aufgabe">
+#### Potentiometer
+
+1. Erläutere die Funktionsweise eines Potentiometers und nenne ein Einsatzbeispiel.
+2. Skizziere, wie man ein Potentiometer am Arduino anschließt.
+3. Ein Potentiometer hat einen Gesamtwiderstand von $R_{ges}=10\,k\Omega$. Der mittlere Kontakt wird im analogen Eingang A0 ausgelesen und liefert einen Analogwert von 824. Berechne, wie groß die Teilwiderstände sind.
+</div>
+
+<div markdown="1" class="aufgabe">
+#### Dimmbarer Lautsprecher
+
+Der Schaltplan unten zeigt ein Potentiometer, dessen mittlerer Kontakt am analogen Eingang A0 eines Arduino angeschlossen ist. Auf der anderen Seite ist ein Piezo-Summer an Digitalpin 6 des Arduino angeschlossen.
+
+![schaltplan-dimmbarer-lautsprecher](schaltplan-dimmbarer-lautsprecher.png?lightbox=1024&resize=500&classes=caption "Schaltplan für einen dimmbaren Lautsprecher.")
+
+Entwickle mit den unten abgebildeten Befehlen ein Programm, das dafür sorgt, dass die Lautstärke des Piezo-Summers durch das Potentiometer gedimmt werden kann. Das Programm soll in einem Struktogramm dokumentiert werden.
+
+![Bloecke-Dimmbarer-Lautsprecher](Bloecke-Dimmbarer-Lautsprecher.png "Blöcke zum Programmieren eines dimmbaren Lautsprechers.")
+</div>
+
+<div markdown="1" class="aufgabe">
+#### LDR und NTC - Basics
+
+1. Nenne jeweils einen Einsatzzweck für einen LDR und einen NTC.
+2. Beschreibe das Widerstandsverhalten eines LDR (eines NTC), wenn sich die Helligkeit (die Temperatur) verringert.
+3. Ein NTC ist in einem Spannungsteiler mit einem Festwiderstand $R_F=10\,k\Omega$ am Arduino angeschlossen (siehe Schaltplan unten). Im analogen Eingang A0 wird ein Wert von 643 gemessen. Berechne die Größe des Widerstands des NTC.
+4. Die Tabelle unten zeigt für den verwendeten NTC, welche Widerstandswerte $R$ zu welcher Temperatur $T$ gehören. Bestimme mit Hilfe einer quadratischen Regression einen funktionalen Zusammenhang zwischen $R$ und $T$ und berechne damit die Temperatur, die zum Widerstandswert aus Aufgabenteil 3) gehört.
+
+
 </div>
 
 ## Ausblick
