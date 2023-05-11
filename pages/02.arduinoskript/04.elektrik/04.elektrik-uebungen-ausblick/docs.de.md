@@ -54,6 +54,14 @@ Am gemeinsamen GND-Anschluss soll ein gemeinsamer Vorwiderstand für alle LEDs a
 </div>
 
 <div markdown="1" class="aufgabe">
+#### Pulsweitenmodulation
+
+1. Berechne die mittlere Spannung, die mit dem Befehl `Schreibe analogen Wert Aktor A 135` ausgegeben wird.
+2. Mit dem in 1) genannten Befehl wird eine Pulsweitenmodulation durchgeführt. Erkläre, was darunter zu verstehen ist.
+3. Jannik meint: "Mit dem Befehl in a) kann ich eine blaue LED auch ohne Vorwiderstand betreiben, denn die halten die berechnete Spannung aus." Nimm dazu Stellung.
+</div>
+
+<div markdown="1" class="aufgabe">
 #### Spannungsmessung
 
 Mit der unten abgebildeten Schaltung sollen am Arduino Spannungen an der Batterie bis zu 15V gemessen werden.
