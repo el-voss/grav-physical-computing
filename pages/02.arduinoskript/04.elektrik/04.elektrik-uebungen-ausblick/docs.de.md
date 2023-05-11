@@ -56,7 +56,7 @@ Am gemeinsamen GND-Anschluss soll ein gemeinsamer Vorwiderstand für alle LEDs a
 <div markdown="1" class="aufgabe">
 #### Pullup-Widerstand und elektrisches Potential
 
-![schaltplan-pullup](schaltplan-pullup.png?lightbox=1024&resize=400&classes=caption "Pullup-Schaltung zum Anschluss eines Tasters an den Arduino.")
+![schaltplan-pullup](schaltplan-pullup.png?lightbox=1024&resize=800&classes=caption "Pullup-Schaltung zum Anschluss eines Tasters an den Arduino.")
 
 In der Abbildung wird ein Taster mit einem sogenannten Pullup-Widerstand an den Arduino angeschlossen. Links ist der Taster offen, rechts ist der Taster geschlossen.
 
