@@ -1,7 +1,7 @@
 ---
 title: 'Übungen und Ausblick'
 menu: '[U] Übungen und Ausblick'
-media_order: 'schaltplan-ldr-in-reihe.png,schaltplan-spannungsmessung.png,schaltplan-pullup.png,schaltplan-dimmbarer-lautsprecher.png,Bloecke-Dimmbarer-Lautsprecher.png,schaltplan-ntc-an-arduino.png,Bloecke-LDR-komplex-Moorhuhn.png'
+media_order: 'schaltplan-ldr-in-reihe.png,schaltplan-spannungsmessung.png,schaltplan-pullup.png,schaltplan-dimmbarer-lautsprecher.png,Bloecke-Dimmbarer-Lautsprecher.png,schaltplan-ntc-an-arduino.png,Bloecke-LDR-komplex-Moorhuhn.png,schaltplan-transistor-und-ntc.png'
 ---
 
 # Elektrische Grundlagen Teil 4: Vermischte Übungen und Ausblick
@@ -127,6 +127,29 @@ Für ein [Moorhuhn Lasertag](https://www.el-voss.de/?p=159) kann man zwei gleich
 3. Entwickle mit Hilfe der unten abgebildeten Befehle ein Programm, das auf dem seriellen Monitor ausgibt, welches Moorhuhn (welcher LDR) getroffen wurde. Das Programm soll als Struktogramm dargestellt werden.
 
 ![Bloecke-LDR-komplex-Moorhuhn](Bloecke-LDR-komplex-Moorhuhn.png?resize=500 "Blöcke für die Ausgabe des Moorhuhns (des LDR), das (der) getroffen wurde.")
+</div>
+
+<div markdown="1" class="aufgabe">
+#### Transistor
+
+Der Schaltplan unten zeigt eine Transistor-Grundschaltung, in der ein Spannungsteiler mit einem Festwiderstand $R_F$ und ein NTC mit Widerstand $R_{NTC}$ verbaut ist. In der folgenden Tabelle ist festgehalten, bei welcher Temperatur der NTC welchen Widerstand hat.
+
+<div class="flex-box">
+<div markdown="1">
+![schaltplan-transistor-und-ntc](schaltplan-transistor-und-ntc.png?lightbox=1024&resize=400&classes=caption "Transistorgrundschaltung mit einem Spannungsteiler von einem Festwiderstand und einem NTC.")
+</div>
+<div>
+| $T$ in $°C$ | $R$ in $k\Omega$ |
+|:---------------:|:--------------------------:|
+| 25 | 10 |
+| 20 | 12,1 |
+|15 | 14,8 |
+</div>
+</div>
+
+Bestimme die Größe von $R_F$ so, dass der Transistor bei 25°C (20°C, 15°C) schaltet.
+
+*Hinweis:* Der Transistor schaltet bei einer Spannung von $U_{BE}=0,7V$.
 </div>
 
 ## Ausblick
