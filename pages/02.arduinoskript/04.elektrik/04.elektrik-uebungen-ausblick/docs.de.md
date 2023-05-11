@@ -1,7 +1,7 @@
 ---
 title: 'Übungen und Ausblick'
 menu: '[U] Übungen und Ausblick'
-media_order: 'schaltplan-ldr-in-reihe.png,schaltplan-spannungsmessung.png,schaltplan-pullup.png,schaltplan-dimmbarer-lautsprecher.png,Bloecke-Dimmbarer-Lautsprecher.png,schaltplan-ntc-an-arduino.png,Bloecke-LDR-komplex-Moorhuhn.png,schaltplan-transistor-und-ntc.png'
+media_order: 'schaltplan-ldr-in-reihe.png,schaltplan-spannungsmessung.png,schaltplan-pullup.png,schaltplan-dimmbarer-lautsprecher.png,Bloecke-Dimmbarer-Lautsprecher.png,schaltplan-ntc-an-arduino.png,Bloecke-LDR-komplex-Moorhuhn.png,schaltplan-transistor-und-ntc.png,programm-pullup.png'
 ---
 
 # Elektrische Grundlagen Teil 4: Vermischte Übungen und Ausblick
@@ -51,6 +51,19 @@ Am gemeinsamen GND-Anschluss soll ein gemeinsamer Vorwiderstand für alle LEDs a
 
 1.  Erkläre, welche Unterschiede zur Parallelschaltung von drei LEDs an *einem* Digitalpin zu beachten sind.
 2.  Berechne, wie groß der gemeinsame Vorwiderstand mindestens sein muss.
+</div>
+
+<div markdown="1" class="aufgabe">
+#### Pullup-Widerstand und elektrisches Potential
+
+![schaltplan-pullup](schaltplan-pullup.png?lightbox=1024&resize=400&classes=caption "Pullup-Schaltung zum Anschluss eines Tasters an den Arduino.")
+
+In der Abbildung wird ein Taster mit einem sogenannten Pullup-Widerstand an den Arduino angeschlossen. Links ist der Taster offen, rechts ist der Taster geschlossen.
+
+1. Markiere die Kabel jeweils farbig, sodass die Kabel, die auf dem gleichen elektrischen Potential liegen, die gleiche Farbe haben. Notiere zudem den Wert des elektrischen Potentials.
+2. Im Open Roberta Lab wird die Board-LED auf dem Arduino als digitaler Aktor konfiguriert. Zudem wird der Taster als digitaler Sensor konfiguriert. Erkläre, wie sich die Schaltung verhält, wenn das unten abgebildete Programm auf dem Arduino läuft.
+
+![programm-pullup](programm-pullup.png)
 </div>
 
 <div markdown="1" class="aufgabe">
