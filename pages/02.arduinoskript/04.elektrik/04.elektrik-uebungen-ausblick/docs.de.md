@@ -138,7 +138,7 @@ Der Schaltplan unten zeigt eine Transistor-Grundschaltung, in der ein Spannungst
 <div markdown="1">
 ![schaltplan-transistor-und-ntc](schaltplan-transistor-und-ntc.png?lightbox=1024&resize=400&classes=caption "Transistorgrundschaltung mit einem Spannungsteiler von einem Festwiderstand und einem NTC.")
 </div>
-<div>
+<div markdown="1">
 | $T$ in $°C$ | $R$ in $k\Omega$ |
 |:---------------:|:--------------------------:|
 | 25 | 10 |
