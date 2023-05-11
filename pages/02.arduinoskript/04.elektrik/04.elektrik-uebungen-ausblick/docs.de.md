@@ -1,7 +1,7 @@
 ---
 title: 'Übungen und Ausblick'
 menu: '[U] Übungen und Ausblick'
-media_order: 'schaltplan-ldr-in-reihe.png,schaltplan-spannungsmessung.png,schaltplan-pullup.png,schaltplan-dimmbarer-lautsprecher.png,Bloecke-Dimmbarer-Lautsprecher.png,schaltplan-ntc-an-arduino.png'
+media_order: 'schaltplan-ldr-in-reihe.png,schaltplan-spannungsmessung.png,schaltplan-pullup.png,schaltplan-dimmbarer-lautsprecher.png,Bloecke-Dimmbarer-Lautsprecher.png,schaltplan-ntc-an-arduino.png,Bloecke-LDR-komplex-Moorhuhn.png'
 ---
 
 # Elektrische Grundlagen Teil 4: Vermischte Übungen und Ausblick
@@ -58,7 +58,7 @@ Am gemeinsamen GND-Anschluss soll ein gemeinsamer Vorwiderstand für alle LEDs a
 
 Mit der unten abgebildeten Schaltung sollen am Arduino Spannungen an der Batterie bis zu 15V gemessen werden.
 
-![schaltplan-spannungsmessung](schaltplan-spannungsmessung.png?lightbox=1024&resize=500&classes=caption "Schaltung zum Messen von Batteriespannungen bis 15V mit dem Arduino.")
+![schaltplan-spannungsmessung](schaltplan-spannungsmessung.png?lightbox=1024&resize=400&classes=caption "Schaltung zum Messen von Batteriespannungen bis 15V mit dem Arduino.")
 
 1. Nenne mögliche, sinnvolle Größen für die Widerstände $R_1$ und $R_2$. Begründe, warum sie möglichst groß sein sollten.
 2. Im analogen Eingang A2 wird ein Wert von 789 gemessen. Berechne die Spannung an der Batterie.
@@ -77,7 +77,7 @@ Mit der unten abgebildeten Schaltung sollen am Arduino Spannungen an der Batteri
 
 Der Schaltplan unten zeigt ein Potentiometer, dessen mittlerer Kontakt am analogen Eingang A0 eines Arduino angeschlossen ist. Auf der anderen Seite ist ein Piezo-Summer an Digitalpin 6 des Arduino angeschlossen.
 
-![schaltplan-dimmbarer-lautsprecher](schaltplan-dimmbarer-lautsprecher.png?lightbox=1024&resize=500&classes=caption "Schaltplan für einen dimmbaren Lautsprecher.")
+![schaltplan-dimmbarer-lautsprecher](schaltplan-dimmbarer-lautsprecher.png?lightbox=1024&resize=400&classes=caption "Schaltplan für einen dimmbaren Lautsprecher.")
 
 Entwickle mit den unten abgebildeten Befehlen ein Programm, das dafür sorgt, dass die Lautstärke des Piezo-Summers durch das Potentiometer gedimmt werden kann. Das Programm soll in einem Struktogramm dokumentiert werden.
 
@@ -94,7 +94,7 @@ Entwickle mit den unten abgebildeten Befehlen ein Programm, das dafür sorgt, da
 
 <div class="flex-box">
 <div markdown="1">
-![schaltplan-ntc-an-arduino](schaltplan-ntc-an-arduino.png?lightbox=1024&resize=500&classes=caption "Schaltplan für einen NTC am Arduino.")
+![schaltplan-ntc-an-arduino](schaltplan-ntc-an-arduino.png?lightbox=1024&resize=400&classes=caption "Schaltplan für einen NTC am Arduino.")
 </div>
 <div>
 <div markdown="1" style="width:80%; background: #eee; border: 3px solid #000; padding:1em; margin: 1em;">
@@ -113,6 +113,20 @@ $R_{25}= 10\,  k\Omega$.
 </div>
 </div>
 </div>
+</div>
+
+<div markdown="1" class="aufgabe">
+#### LDR komplex
+
+Für ein [Moorhuhn Lasertag](https://www.el-voss.de/?p=159) kann man zwei gleichartige LDR in Reihe schalten und wie abgebildet am Arduino anschließen. Jeder LDR soll zu einem Moorhuhn gehören. Durch Einlesen des Wertes in A0 soll ermittelt werden, welches Moorhuhn vom Laser getroffen wurde.
+
+![schaltplan-ldr-in-reihe](schaltplan-ldr-in-reihe.png?lightbox=1024&resize=400&classes=caption "Schaltplan mit zwei LDR in Reihenschaltung am Arduino zur Realisierung eines Moorhuhn-Lasertag.")
+
+1. Erläutere, welche Auswirkung der Laser beim Treffen eines LDR auf die Widerstände und die Spannungen hat.
+2. Erkläre, welcher Wert sich in A0 näherungsweise einstellen sollte, wenn gerade keiner der beiden LDR getroffen ist.
+3. Entwickle mit Hilfe der unten abgebildeten Befehle ein Programm, das auf dem seriellen Monitor ausgibt, welches Moorhuhn (welcher LDR) getroffen wurde. Das Programm soll als Struktogramm dargestellt werden.
+
+![Bloecke-LDR-komplex-Moorhuhn](Bloecke-LDR-komplex-Moorhuhn.png?resize=500 "Blöcke für die Ausgabe des Moorhuhns (des LDR), das (der) getroffen wurde.")
 </div>
 
 ## Ausblick
