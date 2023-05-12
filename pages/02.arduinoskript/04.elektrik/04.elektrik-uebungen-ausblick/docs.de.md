@@ -1,7 +1,7 @@
 ---
 title: 'Übungen und Ausblick'
 menu: '[U] Übungen und Ausblick'
-media_order: 'schaltplan-ldr-in-reihe.png,schaltplan-spannungsmessung.png,schaltplan-pullup.png,schaltplan-dimmbarer-lautsprecher.png,Bloecke-Dimmbarer-Lautsprecher.png,schaltplan-ntc-an-arduino.png,Bloecke-LDR-komplex-Moorhuhn.png,schaltplan-transistor-und-ntc.png,programm-pullup.png'
+media_order: 'schaltplan-ldr-in-reihe.png,schaltplan-spannungsmessung.png,schaltplan-pullup.png,schaltplan-dimmbarer-lautsprecher.png,Bloecke-Dimmbarer-Lautsprecher.png,schaltplan-ntc-an-arduino.png,Bloecke-LDR-komplex-Moorhuhn.png,schaltplan-transistor-und-ntc.png,programm-pullup.png,Schaltplan-Taster-an-A0.png'
 ---
 
 # Elektrische Grundlagen Teil 4: Vermischte Übungen und Ausblick
@@ -85,6 +85,28 @@ Mit der unten abgebildeten Schaltung sollen am Arduino Spannungen an der Batteri
 
 1. Nenne mögliche, sinnvolle Größen für die Widerstände $R_1$ und $R_2$. Begründe, warum sie möglichst groß sein sollten.
 2. Im analogen Eingang A2 wird ein Wert von 789 gemessen. Berechne die Spannung an der Batterie.
+</div>
+
+<div markdown="1" class="aufgabe">
+#### Mehrere Taster an einem analogen Eingang
+
+Um in größeren Projekten mit dem Arduino digitale Pins einzusparen, sollen mehrere Taster an einem analogen Pin angeschlossen werden (vgl. Schaltplan unten). Die Größe der Widerstände ist in der Tabelle daneben angegeben. Durch Auswertung des Analogwertes soll bestimmt werden, welcher der Taster gedrückt wurde. 
+
+<div class="flex-box">
+<div markdown="1">
+![Schaltplan-Taster-an-A0](Schaltplan-Taster-an-A0.png?lightbox=1024&resize=400&classes=caption "Schaltplan für mehrere Taster am Analogpin A0.")
+</div>
+<div>
+<div markdown="1">
+| Widerstand | Größe | 
+| :---- | :------------- | 
+| $R_1$   |  $220 \Omega$   | 
+| $R_2$  |  $330 \Omega$  |
+| $R_3$  |  $660 \Omega$   | 
+| $R_4$  |  $1 k\Omega$   | 
+</div>
+</div>
+</div>
 </div>
 
 <div markdown="1" class="aufgabe">
