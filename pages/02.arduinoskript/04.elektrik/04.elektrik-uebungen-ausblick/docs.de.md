@@ -107,6 +107,23 @@ Um in größeren Projekten mit dem Arduino digitale Pins einzusparen, sollen meh
 </div>
 </div>
 </div>
+
+**Aufgabenteil 1: Kein Taster gedrückt**
+1. Berechne den Gesamtwiderstand und die Stromstärke.
+2. Berechne den Teilwiderstand zwischen A0 und GND und die Spannung, die an diesem anliegt.
+3. Berechne den Analogwert in A0.
+
+**Aufgabenteil 2: Auswirkung der Taster**
+1. Erläutere, was sich durch das Drücken der Taster ändert und inwiefern sich das Drücken der Taster dabei unterscheidet.
+2. Berechne die fehlenden Größen in der folgenden Tabelle. Erläutere damit, wie man anhand des Analogwertes in A0 entscheiden kann, welcher Taster gedrückt wurde.
+
+|  | Taster $T_1$ gedrückt | Taster $T_2$ gedrückt | Taster $T_3$ gedrückt | 
+|----|-----------------------------|--------------------------------|-------------------------------|
+| (Gesamt-)Stromstärke $I$ |                                |                                       |                                     |
+| Teilwiderstand zw. A0 und GND |                      |                             |                       |
+| Spannung zw. A0 und GND |                          |                              |                    |
+| Analogwert in A0            |                               |                              |                    |
+
 </div>
 
 <div markdown="1" class="aufgabe">
