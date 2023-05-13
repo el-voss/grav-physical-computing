@@ -7,7 +7,7 @@ menu: '[D] Dokumentation, Fehlersuche und das EVA-Prinzip'
 
 <style>
     body {
-        --abk: 'BA-D';
+        --abk: 'BA.D';
     }
 </style>
 
