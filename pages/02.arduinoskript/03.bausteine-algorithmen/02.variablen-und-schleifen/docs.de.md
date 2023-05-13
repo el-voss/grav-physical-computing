@@ -7,7 +7,7 @@ menu: '[V] Variablen und Schleifen'
 
 <style>
     body {
-        --abk: 'BA-V';
+        --abk: 'BA.V';
     }
 </style>
 
