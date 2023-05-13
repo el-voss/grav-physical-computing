@@ -7,7 +7,7 @@ menu: '[E] Entscheidungen und der serielle Monitor'
 
 <style>
     body {
-        --abk: 'BA-E';
+        --abk: 'BA.E';
     }
 </style>
 
