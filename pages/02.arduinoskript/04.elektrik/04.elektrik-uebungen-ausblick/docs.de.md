@@ -8,7 +8,7 @@ media_order: 'schaltplan-ldr-in-reihe.png,schaltplan-spannungsmessung.png,schalt
 
 <style>
     body {
-        --abk: 'EG-U';
+        --abk: 'EG.U';
     }
 </style>
 
