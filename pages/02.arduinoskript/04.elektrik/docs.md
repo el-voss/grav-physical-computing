@@ -9,9 +9,9 @@ taxonomy:
 # Elektrische Grundlagen zu digitalen und analogen Pins
 
 <style>
-    h1 {
-  		counter-set: h1 4 ;
-	}
+    body {
+        --abk: 'EG';
+    }
 </style>
 
 In der Arduino-Welt kommt man bereits sehr weit, wenn man die vorkonfigurierten Bauteile nach Anleitung anschließt und dann mit dem Programmieren loslegt. Allerdings kann man manche Schaltungen auch effizienter aufbauen oder anders herum anschließen oder aus den Sensorwerten mehr als nur qualitative Prozentwerte ermitteln, deren genaue Bedeutung völlig unklar ist. Um dies zu erreichen, muss man die physikalischen Grundlagen der Arduino-Pins und einiger grundlegender Bausteine von elektrischen Schaltungen verstehen, die im Folgenden thematisiert werden.
