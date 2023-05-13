@@ -8,7 +8,7 @@ media_order: batteriespannung-messen.png
 
 <style>
     body {
-        --abk: 'EG-DAP';
+        --abk: 'EG.DAP';
     }
 </style>
 
