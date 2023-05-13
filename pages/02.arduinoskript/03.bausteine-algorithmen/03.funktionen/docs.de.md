@@ -7,7 +7,7 @@ menu: '[F] Funktionen'
 
 <style>
     body {
-        --abk: 'BA-F';
+        --abk: 'BA.F';
     }
 </style>
 
