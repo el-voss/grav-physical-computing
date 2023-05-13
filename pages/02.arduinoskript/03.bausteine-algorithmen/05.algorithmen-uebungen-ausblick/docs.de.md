@@ -7,7 +7,7 @@ menu: '[U] Übungen und Ausblick'
 
 <style>
     body {
-        --abk: 'BA-U';
+        --abk: 'BA.U';
     }
 </style>
 
