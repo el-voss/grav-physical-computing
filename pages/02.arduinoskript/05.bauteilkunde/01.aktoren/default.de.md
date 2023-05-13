@@ -6,7 +6,7 @@ menu: '[A] Aktoren'
 # Baulteilkunde Teil 1: Aktoren
 <style>
     body {
-        --abk: 'BK-A';
+        --abk: 'BK.A';
     }
 </style>
 
