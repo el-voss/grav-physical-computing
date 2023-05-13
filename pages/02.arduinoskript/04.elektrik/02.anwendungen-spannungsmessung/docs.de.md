@@ -7,7 +7,7 @@ menu: '[AS] Anwendungen der Spannungsmessung'
 
 <style>
     body {
-        --abk: 'EG-AS';
+        --abk: 'EG.AS';
     }
 </style>
 
