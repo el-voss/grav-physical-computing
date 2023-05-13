@@ -7,7 +7,7 @@ menu: '[TM] Transistoren und Motoren'
 
 <style>
     body {
-        --abk: 'EG-TM';
+        --abk: 'EG.TM';
     }
 </style>
 
