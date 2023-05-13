@@ -7,7 +7,7 @@ menu: '[S] Sensoren'
 
 <style>
     body {
-        --abk: 'BK-S';
+        --abk: 'BK.S';
     }
 </style>
 
