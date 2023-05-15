@@ -1,3 +1,25 @@
+# v1.10.41.2
+## 05/11/2023
+
+1. [](#improved)
+   * Fixed an issue with `lastBackup()` that caused admin dashboard to fail with an error.
+
+# v1.10.41.1
+## 05/09/2023
+
+1. [](#improved)
+   * Fixed another Toolbox deprecation error for `lastBackup()`
+
+# v1.10.41
+## 05/09/2023
+
+1. [](#new)
+   * Updated to use new `BaconQRCode` version `2.0.8` for new SVG features + PHP 8.2+ fixes
+1. [](#improved)
+   * Require Grav `v1.7.41`
+   * Fixed a deprecated message where `Admin::$routes` was being dynamically defined
+   * Fixes to use non-deprecated methods in `ScssCompiler`
+
 # v1.10.40
 ## 03/22/2023
 

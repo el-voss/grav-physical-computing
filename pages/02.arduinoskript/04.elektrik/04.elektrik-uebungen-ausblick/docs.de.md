@@ -117,12 +117,14 @@ Um in größeren Projekten mit dem Arduino digitale Pins einzusparen, sollen meh
 1. Erläutere, was sich durch das Drücken der Taster ändert und inwiefern sich das Drücken der Taster dabei unterscheidet.
 2. Berechne die fehlenden Größen in der folgenden Tabelle. Erläutere damit, wie man anhand des Analogwertes in A0 entscheiden kann, welcher Taster gedrückt wurde.
 
+<div markdown="1" style="overflow:auto;">
 |  | Taster $T_1$ gedrückt | Taster $T_2$ gedrückt | Taster $T_3$ gedrückt | 
 |----|-----------------------------|--------------------------------|-------------------------------|
 | (Gesamt-)Stromstärke $I$ |                                |                                       |                                     |
 | Teilwiderstand zw. A0 und GND |                      |                             |                       |
 | Spannung zw. A0 und GND |                          |                              |                    |
 | Analogwert in A0            |                               |                              |                    |
+</div>
 
 </div>
 
