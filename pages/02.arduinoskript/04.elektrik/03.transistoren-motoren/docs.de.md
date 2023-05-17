@@ -254,16 +254,18 @@ Vergleiche die Steuerung mit einem Transistor und mit einem Relais hinsichtlich 
 !!!! Die Anschlüsse der Spule werden in der Regel mit *A1* und *A2* bezeichnet; die Anschlüsse am Wechselschalter mit *NO* (*normally open*), *NC* (*normally closed*) und *C* (*common ground*) bezeichnet.
 
 
-## Elektromotoren mit dem Motortreiber-IC L293D steuern (inkl. Drehrichtung)
+## Elektromotoren mit einem Motortreiber steuern (inkl. Drehrichtung)
 
-Die Steuerung von Motoren erfordert in den oben beschriebenen Fällen stets mehrere Bauteile und einige Überlegungen zum Aufbau der Schaltung. Außerdem kann dabei nicht die Drehrichtung geändert werden. Der integrierte Schaltkreis L293D vereinfacht den Aufbau der Schaltung für gleich zwei Motoren und ermöglicht zusätzlich die flexible Steuerung der Drehrichtung.
+Die Steuerung von Motoren erfordert in den oben beschriebenen Fällen stets mehrere Bauteile und einige Überlegungen zum Aufbau der Schaltung. Außerdem kann dabei nicht die Drehrichtung geändert werden. Integrierte Schaltkreise wie der L293D oder der L298N, auch Motortreiber genannt, vereinfachen den Aufbau der Schaltung für gleich zwei Motoren und ermöglichen zusätzlich die flexible Steuerung der Drehrichtung. Beide basieren auf der Schaltung mit einer *H-Brücke* bzw. einem *Vierquadrantensteller*.
 
-**Frage:** Wie steuert man einen Motor mit dem L293D?
+**Frage:** Wie steuert man einen Motor inkl. Drehrichtung mit einem Motortreiber?
+
+### Funktionsweise einer H-Brücke 
 
 <div markdown="1" class="aufgabe">
-#### Aufbau des L293D - der Vierquadrantensteller
+#### Aufbau einer H-Brücke - der Vierquadrantensteller
 
-Um die Drehrichtung des Motors kontrollieren zu können, braucht man eine spezielle Anordnung von Transistoren, die als *H-Brücke* oder *Vierquadrantensteller* bezeichnet wird. Dieser Aufbau befindet sich auch im L293D.
+Um die Drehrichtung des Motors kontrollieren zu können, braucht man eine spezielle Anordnung von Transistoren, die als *H-Brücke* oder *Vierquadrantensteller* bezeichnet wird. Dieser Aufbau befindet sich auch im L293D und im L298N.
 
 ![Vereinfachter Aufbau eines Vierquadrantenstellers mit Transistoren und zugehörigen Freilaufdioden (links) sowie die noch einmal vereinfachte Ersatzschaltung mit Schaltern.](/circuits/vierquadrantensteller.png?lightbox=1024&resize=800&classes=caption "Vereinfachter Aufbau eines Vierquadrantenstellers mit Transistoren und zugehörigen Freilaufdioden (links) sowie die noch einmal vereinfachte Ersatzschaltung mit Schaltern.")
 
@@ -278,7 +280,9 @@ Da stets zwei Transistoren gemeinsam eingeschaltet werden müssen, könnten dies
 
 ![Steuerung eines Motors mit einem Vierquadrantensteller am Arduino.](/circuits/vierquadrantensteller-an-arduino.png?lightbox=1024&resize=800&classes=caption "Steuerung eines Motors mit einem Vierquadrantensteller am Arduino.")
 
-Bei der oben dargestellten Schaltung muss jedoch immer noch genau darauf geachtet werden, dass nicht versehentlich alle vier Transitoren leitend geschaltet werden. Daher ist die Steuerung mit dem L293D noch ein wenig komplexer - die oben angestellten Überlegungen verdeutlichen aber gut den prinzipiellen Aufbau.
+Bei der oben dargestellten Schaltung muss jedoch immer noch genau darauf geachtet werden, dass nicht versehentlich alle vier Transistoren leitend geschaltet werden. Daher ist die Steuerung mit dem L293D bzw. dem L298N noch ein wenig komplexer - die oben angestellten Überlegungen verdeutlichen aber gut den prinzipiellen Aufbau.
+
+### Steuerung mit dem L293D
 
 !!!! #### Der Motortreiber L293D
 !!!! 
@@ -317,4 +321,15 @@ Die vier `GND`-Anschlüsse dienen zur Stromversorgung und zur Wärmeableitung, f
 
 ! **Recherche: Wie stark darf der L293D belastet werden?**
 ! Bei Motoren ist immer genau darauf zu achten, welche Stromstärken und Spannungen die verwendeten Bauteile aushalten. Suche nach dem Datenblatt (*data sheet*) des L293D und notiere die Maximalwerte zu Versorgungsspannung, Stromstärke und kurzfristige Spitzenstromstärke, die der IC aushält (*absolute maximum ratings*).
+
+### Steuerung mit dem L298N
+
+
+
+
+
+
+
+
+
 
