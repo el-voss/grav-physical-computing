@@ -345,7 +345,7 @@ Am `Vin`-Pin muss der Pluspol einer Batterie mit 7V bis 12V angeschlossen werden
 <div markdown="1" class="aufgabe">
 #### Betrieb des L298N
 
-1.  Baue die oben beschriebene Schaltung auf. 
+1.  Baue die oben beschriebene Schaltung auf. Nutze als Spannungsquelle eine 9V-Batterie an `VIN` und `GND` des L298N.
 2.  Experimentiere mit verschiedenen Input-Konfigurationen und PWM-Werten für den `En1,2`-Pin.
 3.  Halte die Wirkung auf den Motor tabellarisch fest. Hier genügt es, wenn für den `En1,2`-Pin nur zwischen *ein / 1* und *aus / 0* unterschieden wird.
     
@@ -354,10 +354,11 @@ Am `Vin`-Pin muss der Pluspol einer Batterie mit 7V bis 12V angeschlossen werden
     |  1  |  0   |   1   |    …    |
     
 <div class="flex-box">
-<div markdown="1">![L293D in der Roboterkonfiguration.](/images/prog-konfiguration-l293d.png?classes=caption "L293D in der Roboterkonfiguration.")</div>
-<div markdown="1">![Steuerung des L293D.](/images/prog-motorsteuerung-l293d.png?classes=caption "Steuerung des L293D.")</div>
+<div markdown="1">![L298N in der Roboterkonfiguration.](l298n-konfiguration.png?classes=caption "L298N in der Roboterkonfiguration.")</div>
+<div markdown="1">![Steuerung des L298N.](l298n-steuerung-bsp.png?classes=caption "Steuerung des L298N.")</div>
 </div>
 </div>
+
 
 
 
