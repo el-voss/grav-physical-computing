@@ -228,7 +228,11 @@ Die Verkabelung des Ultraschallsensors erfolgt nach dem folgenden Schaltplan.
 
 ### Konfiguration und Programmierung
 
+20cm vor einer Wand drehen
 
+20cm vor einer Wand stoppen
+
+Variable Geschwindigkeit: Schnelle Fahrt, wenn kein Hindernis in Sicht, langsamer, wenn Hindernis in Sicht
 
 ## Erweiterung: Infrarot-Sensoren und Display
 
@@ -253,5 +257,9 @@ Die Verkabelung des Ultraschallsensors erfolgt nach dem folgenden Schaltplan.
 
 ### Konfiguration und Programmierung
 
+Kantenverfolgung
 
+Linienverfolgung
+
+Linienverfolgung per Steuern und Regeln
 
