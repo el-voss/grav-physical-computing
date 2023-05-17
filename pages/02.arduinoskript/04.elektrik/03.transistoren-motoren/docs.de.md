@@ -1,6 +1,7 @@
 ---
 title: 'Transistoren und Motoren'
 menu: '[TM] Transistoren und Motoren'
+media_order: 'diode-sperrrichtung.png,l298n-steuerung-bsp.png,l298n-konfiguration.png'
 ---
 
 # Elektrische Grundlagen Teil 3: Transistoren und Motoren
