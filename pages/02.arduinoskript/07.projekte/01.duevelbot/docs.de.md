@@ -92,7 +92,7 @@ Befolge die folgende Anleitung zur Montage und Verkabelung, um die Basisversion 
 
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung01](Anleitung01.jpg?lightbox=1024&resize=400 "Anleitung01")  </div>
-<div markdown="1"> **Schritt 1:** Führe die Kabel eines Motors durch die Motorhalterung in der Gehäuse.</div>
+<div markdown="1"> **Schritt 1:** Führe die Kabel eines Motors durch die Motorhalterung in das Gehäuse.</div>
 </div>
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung02](Anleitung02.jpg?lightbox=1024&resize=400 "Anleitung02")  </div>
