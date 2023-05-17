@@ -324,9 +324,40 @@ Die vier `GND`-Anschlüsse dienen zur Stromversorgung und zur Wärmeableitung, f
 
 ### Steuerung mit dem L298N
 
+!!!! #### Der Motortreiber L298N
+!!!! 
+!!!! Das Motortreibermodul L298N ist ein beliebtes Bauteil, weil es den Anschluss von Motoren sehr einfach macht und weil es zudem über einen Spannungsregler verfügt, den man in einigen Fällen für die Stromversorgung von weiteren Bauteilen verwenden kann. Der Motortreiber-IC ist an ein Kühlelement geschraubt, um die entstehende Wärme abzuleiten. In dem schwarzen Kasten sind zwei [H-Brücken bzw. Vierquadrantensteller](https://doku.el-voss.de/de/arduinoskript/elektrik/transistoren-motoren#aufbau-des-l293d-der...) verbaut, sodass sich die Motoren in beide Richtungen drehen lassen.
+!!!! 
+!!!! ![l298n-erklaerung](l298n-erklaerung.png?lightbox=1024&resize=600&classes=caption "Übersicht der Pinbelegung des Motortreibermoduls L298N.")
+ 
+*Zur Motorsteuerung*
+Ein Motor wird an `Out1`und `Out2` angeschlossen. Der jeweilige Zustand der `Out`-Pins kann über die Pins `In1` und `In2` geregelt werden. Wenn an `In1` der Zustand `LOW` und an `In2` der Zustand `HIGH` anliegt, wird dies auf `Out1` bzw. `Out2` übertragen, sodass durch den Motor ein Strom fließen kann und er sich vorwärts dreht. Diese Übertragung wird jedoch durch den Pin `En1,2` (für *Enable 1, 2*) gesteuert. Wenn an `En1,2` `HIGH` anliegt, wird die Input-Konfiguration übertragen, bei `LOW` nicht. Durch ein PWM-Signal an `En1,2` kann die Leistung des Motors entsprechend gedrosselt werden.
 
+![l298n-flussdiagramm-bsp](l298n-flussdiagramm-bsp.png?lightbox=1024&resize=500&classes=caption "Veranschaulichung der Funktionsweise des Motortreibers (siehe Text).")
+ 
+Die Steuerung des Motors an `Out3` und `Out4` erfolgt analog über `In3` und `In4`, deren Konfiguration übertragen wird, wenn `En3,4` auf `HIGH` steht.
+ 
+*Hinweis:* Durch den Jumper auf dem `En1,2`-Pin wird dieser mit dem 5V-Potential (`HIGH`) verbunden, sodass die Input-Konfiguration immer direkt übertragen wird. Dann ist aber kein PWM-Signal mehr möglich, weshalb die Jumper in der Anleitung oben entfernt werden. Stattdessen werden die `En1,2`-Pins mit einem PWM-Pin des Arduino verbunden.
+ 
+*Zur Spannungsversorgung*
+Am `Vin`-Pin muss der Pluspol einer Batterie mit 7V bis 12V angeschlossen werden. Der Minuspol muss mit `GND` verbunden werden. Diese Spannung wird vom Spannungsregler auf ein stabiles 5V-Potential heruntergeregelt, welches für die Schaltlogik benötigt wird. Über den `5V`-Pin (in Kombination mit dem `GND`-Pin) kann dieses Potential auch für weitere Bauteile genutzt werden. In dieser Anleitung geschieht dies jedoch nicht, weil die Stromstärke der Batterie dann nicht mehr ausreicht, um eine stabile Spannungsversorgung für alle Bauteile zu gewährleisten.
 
+<div markdown="1" class="aufgabe">
+#### Betrieb des L298N
 
+1.  Baue die oben beschriebene Schaltung auf. 
+2.  Experimentiere mit verschiedenen Input-Konfigurationen und PWM-Werten für den `En1,2`-Pin.
+3.  Halte die Wirkung auf den Motor tabellarisch fest. Hier genügt es, wenn für den `En1,2`-Pin nur zwischen *ein / 1* und *aus / 0* unterschieden wird.
+    
+    | In1 | In 2 | En1,2 | Wirkung |
+    | :-: | :--: | :---: | :-----: |
+    |  1  |  0   |   1   |    …    |
+    
+<div class="flex-box">
+<div markdown="1">![L293D in der Roboterkonfiguration.](/images/prog-konfiguration-l293d.png?classes=caption "L293D in der Roboterkonfiguration.")</div>
+<div markdown="1">![Steuerung des L293D.](/images/prog-motorsteuerung-l293d.png?classes=caption "Steuerung des L293D.")</div>
+</div>
+</div>
 
 
 
