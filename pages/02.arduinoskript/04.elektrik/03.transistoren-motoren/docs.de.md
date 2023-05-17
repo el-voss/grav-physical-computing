@@ -1,7 +1,7 @@
 ---
 title: 'Transistoren und Motoren'
 menu: '[TM] Transistoren und Motoren'
-media_order: 'diode-sperrrichtung.png,l298n-steuerung-bsp.png,l298n-konfiguration.png'
+media_order: 'diode-sperrrichtung.png,l298n-steuerung-funktion.png,l298n-steuerung-bsp.png,l298n-konfiguration.png'
 ---
 
 # Elektrische Grundlagen Teil 3: Transistoren und Motoren
@@ -360,9 +360,20 @@ Am `Vin`-Pin muss der Pluspol einer Batterie mit 7V bis 12V angeschlossen werden
 </div>
 </div>
 
+<div markdown="1" class="aufgabe">
+#### Einfachere Steuerung mit Funktionen
 
+In der folgenden Abbildung ist festgehalten, wie sich die Motorsteuerung in eine Funktion auslagern lässt, um das Programm aussagekräftiger und kürzer zu machen, wenn die gleichen Blöcke immer wieder genutzt werden.
 
+![l298n-steuerung-funktion](l298n-steuerung-funktion.png?lightbox=1024&resize=500&classes=caption "Steuerung des L298N mit einer Funktion.")
 
+1. Erkläre das abgebildete Programm. Gehe auch darauf ein, welche Werte für die Leistung übergeben werden dürfen.
+2. Passe die Funktion ggf. an, sodass sich dein Motor ebenfalls vorwärts dreht, wenn die Funktion ausgeführt wird (je nach Verkabelung kann es sein, dass dies bereits der Fall ist).
+3. Implementiere selbst die folgenden Funktionen:
+    - `stoppe`: Hält den Motor an.
+    - `dreheRueckwaertsMitLeistung`: Dreht den Motor rückwärts mit der angegebenen Leistung.
+    - `dreheVorwaertsMitLeistungInProzent`: Dreht den Motor vorwärts, wobei eine Leistung von 100 die höchstmögliche Geschwindigkeit bedeutet und eine Leistung von 0 einen Stopp bedeutet.
 
+</div>
 
 
