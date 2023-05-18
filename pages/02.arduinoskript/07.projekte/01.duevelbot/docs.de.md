@@ -169,34 +169,57 @@ Die Verkabelung erfolgt nach dem folgendem Schaltplan.
 
 ![Schaltplan für die Motoren und den Piezo-Summer](2_duevelbot-motoren_und_piezo-summer.png?lightbox=1024&resize=800&classes=caption "Schaltplan für die Motoren und den Piezo-Summer.")
 
-!!!! #### Der Motortreiber L298N
-!!!! 
-!!!! Das Motortreibermodul L298N ist ein beliebtes Bauteil, weil es den Anschluss von Motoren sehr einfach macht und weil es zudem über einen Spannungsregler verfügt, den man in einigen Fällen für die Stromversorgung von weiteren Bauteilen verwenden kann. Der Motortreiber-IC ist an ein Kühlelement geschraubt, um die entstehende Wärme abzuleiten. In dem schwarzen Kasten sind zwei [H-Brücken bzw. Vierquadrantensteller](https://doku.el-voss.de/de/arduinoskript/elektrik/transistoren-motoren#aufbau-des-l293d-der...) verbaut, sodass sich die Motoren in beide Richtungen drehen lassen.
-!!!! 
-!!!! ![l298n-erklaerung](l298n-erklaerung.png?lightbox=1024&resize=600&classes=caption "Übersicht der Pinbelegung des Motortreibermoduls L298N.")
-!!!! 
-!!!! *Zur Motorsteuerung*
-!!!! Ein Motor wird an `Out1`und `Out2` angeschlossen. Der jeweilige Zustand der `Out`-Pins kann über die Pins `In1` und `In2` geregelt werden. Wenn an `In1` der Zustand `LOW` und an `In2` der Zustand `HIGH` anliegt, wird dies auf `Out1` bzw. `Out2` übertragen, sodass durch den Motor ein Strom fließen kann und er sich vorwärts dreht. Diese Übertragung wird jedoch durch den Pin `En1,2` (für *Enable 1, 2*) gesteuert. Wenn an `En1,2` `HIGH` anliegt, wird die Input-Konfiguration übertragen, bei `LOW` nicht. Durch ein PWM-Signal an `En1,2` kann die Leistung des Motors entsprechend gedrosselt werden.
-!!!!
-!!!! ![l298n-flussdiagramm-bsp](l298n-flussdiagramm-bsp.png?lightbox=1024&resize=500&classes=caption "Veranschaulichung der Funktionsweise des Motortreibers (siehe Text).")
-!!!! 
-!!!! Die Steuerung des Motors an `Out3` und `Out4` erfolgt analog über `In3` und `In4`, deren Konfiguration übertragen wird, wenn `En3,4` auf `HIGH` steht.
-!!!! 
-!!!! *Hinweis:* Durch den Jumper auf dem `En1,2`-Pin wird dieser mit dem 5V-Potential (`HIGH`) verbunden, sodass die Input-Konfiguration immer direkt übertragen wird. Dann ist aber kein PWM-Signal mehr möglich, weshalb die Jumper in der Anleitung oben entfernt werden. Stattdessen werden die `En1,2`-Pins mit einem PWM-Pin des Arduino verbunden.
-!!!! 
-!!!! *Zur Spannungsversorgung*
-!!!! Am `Vin`-Pin muss der Pluspol einer Batterie mit 7V bis 12V angeschlossen werden. Der Minuspol muss mit `GND` verbunden werden. Diese Spannung wird vom Spannungsregler auf ein stabiles 5V-Potential heruntergeregelt, welches für die Schaltlogik benötigt wird. Über den `5V`-Pin (in Kombination mit dem `GND`-Pin) kann dieses Potential auch für weitere Bauteile genutzt werden. In dieser Anleitung geschieht dies jedoch nicht, weil die Stromstärke der Batterie dann nicht mehr ausreicht, um eine stabile Spannungsversorgung für alle Bauteile zu gewährleisten.
-
-
 ### Konfiguration und Programmierung
 
-Erster Test: Töne abspielen
+<div markdown="1" class="aufgabe">
+#### Erster Test: Töne abspielen
 
-Vorwärts fahren und stoppen
+Konfiguriere den Piezo-Summer im Open Roberta Lab und lass den Düvelbot ein paar erste Lebenszeichen spielen!
+</div>
 
-Vorwärts fahren mit variabler Leistung
+<div markdown="1" class="aufgabe">
+#### Funktionsweise des Motortreibers
 
-Hebelsteuerung
+Der Motortreiber L298N enthält eine H-Brücke, um die Motoren zu steuern. Um dies im Programm nutzen zu können, muss man die Funktionsweise der H-Brücke verstehen. Bearbeite dazu die folgenden Aufgaben aus dem Abschnitt *Elektrische Grundlagen - Transistoren und Motoren*.
+
+- **[Funktionsweise einer H-Brücke](../../elektrik/transistoren-motoren#funktionsweise-einer-h-brcke?target=_blank):** Lies den Abschnitt und bearbeite die Aufgabe dazu.
+- **[Steuerung mit dem L298N](../../elektrik/transistoren-motoren#steuerung-mit-dem-l298n?target=_blank):** Lies den Abschnitt und bearbeite die erste Aufgabe *Betrieb des L298N*. Übertrage dies, um auch den zweiten Motor anzusteuern.
+
+Ergänze damit die folgende Tabelle:
+
+| In1 | In 2 | En1,2 | In3 | In4 | En3,4 | Wirkung |
+| :-: | :--: | :---: | :----:| :----: | :----: | :-----: |
+|    |     |   |     |     |    |    vorwärts fahren   |
+|    |     |   |     |     |    |    stoppen   |
+|    |     |   |     |     |    |    rückwärts fahren   |
+|    |     |   |     |     |    |    links vorwärts fahren, rechts stoppen   |
+|    |     |   |     |     |    |    links stoppen, rechts vorwärts fahren   |
+|    |     |   |     |     |    |    links vorwärts, rechts rückwärts fahren   |
+|    |     |   |     |     |    |    links rückwärts, rechts vorwärts fahren   |
+
+</div>
+
+<div markdown="1" class="aufgabe">
+#### Funktionen zum Steuern
+
+In der Aufgabe [Einfachere Steuerung mit Funktionen](../../elektrik/transistoren-motoren#einfachere-steuerung-mit...) siehst du, wie man die Steuerung von einem Motor in eine Funktion auslagern kann. Passe dies an, um die folgenden Funktionen zu implementieren:
+- `vorwaertsFahrenMitLeistung ( leistung )`: Lässt den Düvelbot mit der angegebenen Leistung vorwärts fahren.
+- `stoppe`: Lässt den Düvelbot stoppen.
+- `rueckwaertsFahrenMitLeistung ( leistung )`: Lässt den Düvelbot mit der angegebenen Leistung rückwärts fahren.
+- `fahreVorwaertsKurve ( leistungLinks, leistungRechts )`: Lässt den Düvelbot eine Vorwärtskurve fahren, wobei der Motor links mit der Leistung `leistungLinks` und der Motor rechts mit der Leistung `leistungRechts` gedreht wird.
+
+</div>
+
+<div markdown="1" class="aufgabe">
+#### Leistung in Prozent
+
+</div>
+
+<div markdown="1" class="aufgabe">
+#### Hebelsteuerung
+
+</div>
+
 
 
 ## Erweiterung: Ultraschallsensor
