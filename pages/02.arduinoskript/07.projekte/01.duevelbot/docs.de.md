@@ -187,6 +187,7 @@ Der Motortreiber L298N enthält eine H-Brücke, um die Motoren zu steuern. Um di
 
 Ergänze damit die folgende Tabelle:
 
+<div markdown="1" style="overflow:auto;">
 | In1 | In 2 | En1,2 | In3 | In4 | En3,4 | Wirkung |
 | :-: | :--: | :---: | :----:| :----: | :----: | :-----: |
 |    |     |   |     |     |    |    vorwärts fahren   |
@@ -196,7 +197,7 @@ Ergänze damit die folgende Tabelle:
 |    |     |   |     |     |    |    links stoppen, rechts vorwärts fahren   |
 |    |     |   |     |     |    |    links vorwärts, rechts rückwärts fahren   |
 |    |     |   |     |     |    |    links rückwärts, rechts vorwärts fahren   |
-
+</div>
 </div>
 
 <div markdown="1" class="aufgabe">
