@@ -371,7 +371,7 @@ In der folgenden Abbildung ist festgehalten, wie sich die Motorsteuerung in eine
 2. Passe die Funktion ggf. an, sodass sich dein Motor ebenfalls vorwärts dreht, wenn die Funktion ausgeführt wird (je nach Verkabelung kann es sein, dass dies bereits der Fall ist).
 3. Implementiere selbst die folgenden Funktionen:
     - `stoppe`: Hält den Motor an.
-    - `dreheRueckwaertsMitLeistung (leistung )`: Dreht den Motor rückwärts mit der angegebenen Leistung.
+    - `dreheRueckwaertsMitLeistung ( leistung )`: Dreht den Motor rückwärts mit der angegebenen Leistung.
     - `dreheVorwaertsMitLeistungInProzent ( leistung )`: Dreht den Motor vorwärts, wobei eine Leistung von 100 die höchstmögliche Geschwindigkeit bedeutet und eine Leistung von 0 einen Stopp bedeutet.
 
 </div>
