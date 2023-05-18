@@ -367,12 +367,12 @@ In der folgenden Abbildung ist festgehalten, wie sich die Motorsteuerung in eine
 
 ![l298n-steuerung-funktion](l298n-steuerung-funktion.png?lightbox=1024&resize=800&classes=caption "Steuerung des L298N mit einer Funktion.")
 
-1. Erkläre das abgebildete Programm. Gehe auch darauf ein, welche Werte für die Leistung übergeben werden dürfen.
+1. Implementiere das abgebildete Programm selbst und erkläre den Ablauf. Gehe auch darauf ein, welche Werte für die Leistung übergeben werden dürfen.
 2. Passe die Funktion ggf. an, sodass sich dein Motor ebenfalls vorwärts dreht, wenn die Funktion ausgeführt wird (je nach Verkabelung kann es sein, dass dies bereits der Fall ist).
 3. Implementiere selbst die folgenden Funktionen:
     - `stoppe`: Hält den Motor an.
-    - `dreheRueckwaertsMitLeistung`: Dreht den Motor rückwärts mit der angegebenen Leistung.
-    - `dreheVorwaertsMitLeistungInProzent`: Dreht den Motor vorwärts, wobei eine Leistung von 100 die höchstmögliche Geschwindigkeit bedeutet und eine Leistung von 0 einen Stopp bedeutet.
+    - `dreheRueckwaertsMitLeistung (leistung )`: Dreht den Motor rückwärts mit der angegebenen Leistung.
+    - `dreheVorwaertsMitLeistungInProzent ( leistung )`: Dreht den Motor vorwärts, wobei eine Leistung von 100 die höchstmögliche Geschwindigkeit bedeutet und eine Leistung von 0 einen Stopp bedeutet.
 
 </div>
 
