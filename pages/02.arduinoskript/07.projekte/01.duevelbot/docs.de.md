@@ -208,15 +208,15 @@ In der Aufgabe [Einfachere Steuerung mit Funktionen](../../elektrik/transistoren
 - `rueckwaertsFahrenMitLeistung ( leistung )`: Lässt den Düvelbot mit der angegebenen Leistung rückwärts fahren.
 - `fahreVorwaertsKurve ( leistungLinks, leistungRechts )`: Lässt den Düvelbot eine Vorwärtskurve fahren, wobei der Motor links mit der Leistung `leistungLinks` und der Motor rechts mit der Leistung `leistungRechts` gedreht wird.
 
-</div>
-
-<div markdown="1" class="aufgabe">
-#### Leistung in Prozent
-
+*Für Experten:* Passe die Funktionen so an, dass die Leistung in Prozent angegeben wird. Wenn die Leistung also 100 beträgt, dreht sich der Motor mit voller Leistung, wenn die Leistung 0 beträgt, dreht sich der Motor nicht.
 </div>
 
 <div markdown="1" class="aufgabe">
 #### Hebelsteuerung
+
+1. Implementiere die Funktion `fahre ( leistungLinks, leistungRechts )`. Die Werte für `leistungLinks` und `leistungRechts` können jeweils zwischen -100 und 100 liegen, wobei "-100" eine Drehung des jeweiligen Motors mit 100%iger Leistung nach hinten und "100" eine Drehung des jeweiligen Motors mit 100%iger Leistung nach vorne bedeutet.
+2. Erkläre, wie man mit dieser Funktion die Wirkung von jeder der vorher programmierten Funktionen erreichen kann.
+3. Erkläre, wie man den Düvelbot mit dieser Funktion auf der Stelle drehen lassen kann.
 
 </div>
 
