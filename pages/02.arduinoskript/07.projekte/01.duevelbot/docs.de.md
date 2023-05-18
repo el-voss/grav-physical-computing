@@ -15,7 +15,7 @@ media_order: 'getriebemotor-n20.jpg,3_duevelbot-ultraschallsensor.png,clip-mit-o
 
 Der Düvelbot ist ein kleiner fahrender Roboter auf Arduino-Basis, der über einen Ultraschallsensor zur Entfernungsmessung und Hindernisvermeidung sowie zwei Infrarot-Sensoren zur Linienverfolgung verfügt. Zusätzlich wird ein Display angebracht, um wichtige Informationen darzustellen, und er kann Töne abgeben. Durch die offene Architektur und die Verwendung von Standard-Arduino-Bauteilen sind einige Erweiterungen denkbar. 
 
-! Der Düvelbot geht zurück auf eine Idee von Marco Düvelmeyer, der auf seinem [Youtube-Kanal Technikwerkstatt 4.0](https://www.youtube.com/@Technikwerkstatt4.0) Tutorials rund um Arduino, 3D-Druck, CAD-Software und mehr für seinen Profilunterricht anbietet. Die Entwicklungsarbeit hat das Unternehmen [Funduino](https://funduino.de/) übernommen, das den Düvelbot auch [zum Kauf anbietet](https://funduinoshop.com/projekte/arduino-und-3d-druck/duevelbot/funduino-duevelbot). Dort gibt es auch eine [Montageanleitung für den Düvelbot](https://funduino.de/funduino-duevelbot). Für dieses Skript wurde der Düvelbot jedoch in einigen Bestandteilen angepasst und erweitert, daher findet sich hier eine eigene Anleitung mit einigen Anpassungen.
+! Der Düvelbot geht zurück auf eine Idee von Marco Düvelmeyer, der auf seinem [Youtube-Kanal Technikwerkstatt 4.0](https://www.youtube.com/@Technikwerkstatt4.0?target=_blank) Tutorials rund um Arduino, 3D-Druck, CAD-Software und mehr für seinen Profilunterricht anbietet. Die Entwicklungsarbeit hat das Unternehmen [Funduino](https://funduino.de/?target=_blank) übernommen, das den Düvelbot auch [zum Kauf anbietet](https://funduinoshop.com/projekte/arduino-und-3d-druck/duevelbot/funduino-duevelbot?target=_blank). Dort gibt es auch eine [Montageanleitung für den Düvelbot](https://funduino.de/funduino-duevelbot?target=_blank). Für dieses Skript wurde der Düvelbot jedoch in einigen Bestandteilen angepasst und erweitert, daher findet sich hier eine eigene Anleitung mit einigen Anpassungen.
 
 <br />
 
@@ -76,11 +76,11 @@ Der folgende Schaltplan gibt einen Gesamtüberblick über die Schaltung aller Ba
 
 !!! #### Wichtige Grundlagen
 !!! Für diesen Abschnitt werden folgende Grundlagen benötigt:
-!!! - [Piezo-Summer](../../bausteine-algorithmen/entscheidungen-und-serieller-monitor#piezo-summer)
-!!! - [Fallunterscheidungen](../../bausteine-algorithmen/entscheidungen-und-serieller-monitor#entscheidungen-programmieren)
-!!! - [Funktionen](../..//bausteine-algorithmen/funktionen)
-!!! - [Pulsweitenmodulation](../../elektrik/digitale-analoge-pins#pulsweitenmodulation)
-!!! - [Motoren mit Motortreiber steuern](../../elektrik/transistoren-motoren#elektromotoren-mit-dem...)
+!!! - [Piezo-Summer](../../bausteine-algorithmen/entscheidungen-und-serieller-monitor#piezo-summer?target=_blank)
+!!! - [Fallunterscheidungen](../../bausteine-algorithmen/entscheidungen-und-serieller-monitor#entscheidungen-programmieren?target=_blank)
+!!! - [Funktionen](../..//bausteine-algorithmen/funktionen?target=_blank)
+!!! - [Pulsweitenmodulation](../../elektrik/digitale-analoge-pins#pulsweitenmodulation?target=_blank)
+!!! - [Motoren mit Motortreiber steuern](../../elektrik/transistoren-motoren#elektromotoren-mit-dem...?target=_blank)
 
 ### Montage
 
@@ -202,7 +202,7 @@ Ergänze damit die folgende Tabelle:
 <div markdown="1" class="aufgabe">
 #### Funktionen zum Steuern
 
-In der Aufgabe [Einfachere Steuerung mit Funktionen](../../elektrik/transistoren-motoren#einfachere-steuerung-mit...) siehst du, wie man die Steuerung von einem Motor in eine Funktion auslagern kann. Passe dies an, um die folgenden Funktionen zu implementieren:
+In der Aufgabe [Einfachere Steuerung mit Funktionen](../../elektrik/transistoren-motoren#einfachere-steuerung-mit...?target=_blank) siehst du, wie man die Steuerung von einem Motor in eine Funktion auslagern kann. Passe dies an, um die folgenden Funktionen zu implementieren:
 - `vorwaertsFahrenMitLeistung ( leistung )`: Lässt den Düvelbot mit der angegebenen Leistung vorwärts fahren.
 - `stoppe`: Lässt den Düvelbot stoppen.
 - `rueckwaertsFahrenMitLeistung ( leistung )`: Lässt den Düvelbot mit der angegebenen Leistung rückwärts fahren.
@@ -229,8 +229,8 @@ In der Aufgabe [Einfachere Steuerung mit Funktionen](../../elektrik/transistoren
 
 !!! #### Wichtige Grundlagen
 !!! Für diesen Abschnitt werden folgende Grundlagen benötigt:
-!!! - [Ultraschallsensor](../../bauteilkunde/sensoren#ultraschallsensor)
-!!! - [Variablen und Schleifen](../../bausteine-algorithmen/variablen-und-schleifen#programme-mit-variablen-und...)
+!!! - [Ultraschallsensor](../../bauteilkunde/sensoren#ultraschallsensor?target=_blank)
+!!! - [Variablen und Schleifen](../../bausteine-algorithmen/variablen-und-schleifen#programme-mit-variablen-und...?target=_blank)
 
 ### Montage
 
@@ -264,7 +264,7 @@ Variable Geschwindigkeit: Schnelle Fahrt, wenn kein Hindernis in Sicht, langsame
 
 !!! #### Wichtige Grundlagen
 !!! Für diesen Abschnitt werden folgende Grundlagen benötigt:
-!!! - [OLED-Display SSD1306](../../bauteilkunde/aktoren#oled-display-ssd1306)
+!!! - [OLED-Display SSD1306](../../bauteilkunde/aktoren#oled-display-ssd1306?target=_blank)
 !!! - [Infrarot-Sensor TCRT5000]()
 
 
