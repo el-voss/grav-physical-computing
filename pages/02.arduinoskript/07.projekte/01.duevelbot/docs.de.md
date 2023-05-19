@@ -7,7 +7,7 @@ media_order: 'getriebemotor-n20.jpg,3_duevelbot-ultraschallsensor.png,clip-mit-o
 
 <style>
     body {
-        --abk: 'P-D';
+        --abk: 'P.D';
     }
 </style>
 
