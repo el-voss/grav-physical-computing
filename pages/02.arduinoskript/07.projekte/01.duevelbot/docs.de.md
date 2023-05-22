@@ -156,7 +156,7 @@ Befolge die folgende Anleitung zur Montage und Verkabelung, um die Basisversion 
 </div>
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung16](Anleitung16.jpg?lightbox=1024&resize=400 "Anleitung16")  </div>
-<div markdown="1"> **Schritt 16:** Hake die Seitenhänger in die Öffnungen an der Seite und platziere die zwei 9V-Blöcke darin. Stecke den Clip mit Zylinderanschluss auf eine der 9V-Blöcke. </div>
+<div markdown="1"> **Schritt 16:** Hake die Seitenhänger in die Öffnungen an der Seite und platziere die zwei 9V-Blöcke darin. Stecke den Clip mit Zylinderanschluss auf einen der 9V-Blöcke. </div>
 </div>
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung17](Anleitung17.jpg?lightbox=1024&resize=400 "Anleitung17")  </div>
