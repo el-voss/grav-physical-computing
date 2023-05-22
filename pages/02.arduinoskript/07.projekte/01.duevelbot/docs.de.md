@@ -148,7 +148,7 @@ Befolge die folgende Anleitung zur Montage und Verkabelung, um die Basisversion 
 </div>
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung14](Anleitung14.jpg?lightbox=1024&resize=400 "Anleitung14")  </div>
-<div markdown="1"> **Schritt 14:** Verkabele die Kabel der Bauteile entsprechend des Schaltplans mit dem Arduino (siehe nächsten Abschnitt unten). Nutze die GND-Leiste auf den Expansion-Board (schwarze Kabel im Bild).</div>
+<div markdown="1"> **Schritt 14:** Verkabele die Kabel der Bauteile entsprechend des Schaltplans mit dem Arduino (siehe [nächsten Abschnitt unten](#schaltplan-1)). Nutze die GND-Leiste auf den Expansion-Board (schwarze Kabel im Bild).</div>
 </div>
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung15](Anleitung15.jpg?lightbox=1024&resize=400 "Anleitung15")  </div>
