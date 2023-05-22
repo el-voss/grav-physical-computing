@@ -182,8 +182,8 @@ Konfiguriere den Piezo-Summer im Open Roberta Lab und lass den Düvelbot ein paa
 
 Der Motortreiber L298N enthält eine H-Brücke, um die Motoren zu steuern. Um dies im Programm nutzen zu können, muss man die Funktionsweise der H-Brücke verstehen. Bearbeite dazu die folgenden Aufgaben aus dem Abschnitt *Elektrische Grundlagen - Transistoren und Motoren*.
 
-- [ ] **[Funktionsweise einer H-Brücke](../../elektrik/transistoren-motoren#funktionsweise-einer-h-brcke):** Lies den Abschnitt und bearbeite die Aufgabe dazu.
-- [ ] **[Steuerung mit dem L298N](../../elektrik/transistoren-motoren#steuerung-mit-dem-l298n):** Lies den Abschnitt und bearbeite die erste Aufgabe *Betrieb des L298N*. Übertrage dies, um auch den zweiten Motor anzusteuern.
+- **[Funktionsweise einer H-Brücke](../../elektrik/transistoren-motoren#funktionsweise-einer-h-brcke):** Lies den Abschnitt und bearbeite die Aufgabe dazu.
+- **[Steuerung mit dem L298N](../../elektrik/transistoren-motoren#steuerung-mit-dem-l298n):** Lies den Abschnitt und bearbeite die erste Aufgabe *Betrieb des L298N*. Übertrage dies, um auch den zweiten Motor anzusteuern.
 
 Ergänze damit die folgende Tabelle:
 
