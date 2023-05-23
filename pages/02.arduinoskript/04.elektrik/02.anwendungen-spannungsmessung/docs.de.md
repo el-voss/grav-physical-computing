@@ -1,6 +1,7 @@
 ---
 title: 'Anwendungen der Spannungsmessung'
 menu: '[AS] Anwendungen der Spannungsmessung'
+media_order: 'trimmpotentiometer2.jpg,trimmpotentiometer1.jpg'
 ---
 
 # Elektrische Grundlagen Teil 2: Anwendungen der Spannungsmessung
@@ -38,7 +39,9 @@ Ein einfaches Potentiometer kannst du selbst bauen.
 !!!! 
 !!!! Ein **Potentiometer**, kurz: Poti, ist im Grunde nichts anderes als ein Spannungsteiler mit zwei Widerständen. Jedoch kann die Größe der Widerstände z. B. durch Drehen variiert werden. Der Gesamtwiderstand bleibt dabei immer gleich.
 !!!! <div class="flex-box">
-!!!! <div markdown="1">![Potentiometer](/images/poti.jpg?resize=200&classes=caption "Potentiometer.")</div>
+!!!! <div markdown="1">![Drehpotentiometer](/images/poti.jpg?resize=200&classes=caption "Drehpotentiometer.")</div>
+!!!! <div markdown="1">![Trimmpotentiometer1](trimmpotentiometer1.jpg?resize=200&classes=caption "Trimmpotentiometer auf einem Infrarotsensor.")</div>
+!!!! <div markdown="1">![Trimmpotentiometer2](trimmpotentiometer2.jpg?resize=200&classes=caption "Trimmpotentiometer an einem Bewegungsmelder.")</div>
 !!!! <div markdown="1">![Schaltsymbol eines Potentiometers](/images/poti-schaltsymbol.png?resize=150&classes=caption "Schaltsymbol eines Potentiometers.")</div>
 !!!! </div>
 !!!! 
