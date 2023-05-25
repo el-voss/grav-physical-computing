@@ -1,7 +1,7 @@
 ---
 title: Sensoren
 menu: '[S] Sensoren'
-media_order: 'ultraschallsensor-konfiguration.png,konfiguration-beschleunigungssensor.png,neigungsschalter-konfiguration.png,bewegungsmelder-vorkonfiguriert.png,bewegungsmelder-digital-konfiguriert.png'
+media_order: 'ultraschallsensor-konfiguration.png,konfiguration-beschleunigungssensor.png,neigungsschalter-konfiguration.png,bewegungsmelder-vorkonfiguriert.png,bewegungsmelder-digital-konfiguriert.png,joystick-vorkonfiguriert.png,joystick-konfiguration.png'
 ---
 
 # Baulteilkunde Teil 2: Sensoren
@@ -147,6 +147,11 @@ Ein Joystick besteht im Wesentlichen aus zwei Potentiometern, die über einen ge
 </div>
 
 *Programmierung:* Das Joystick-Modul ist in Nepo nicht vorkonfiguriert. Die Bestandteile, also die zwei Potentiometer und der Taster, lassen sich aber einzeln konfigurieren. Dies geht wahlweise mit den vorkonfigurierten Potentiometer- und Taster-Blöcken oder als analoger und digitaler Sensor.
+
+<div class="flex-box">
+<div markdown="1">![joystick-vorkonfiguriert](joystick-vorkonfiguriert.png?classes=caption "Konfiguration des Joysticks mit vorkonfigurierten Blöcken.")</div>
+<div markdown="1">![joystick-konfiguration](joystick-konfiguration.png?classes=caption "Konfiguration des Joysticks mit einem digitalen Sensor (Taster) und zwei analogen Sensoren (Potentiometer).")</div>
+</div>
 
 <div markdown="1" class="aufgabe">
 #### Erste Experimente
