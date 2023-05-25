@@ -1,7 +1,7 @@
 ---
 title: Sensoren
 menu: '[S] Sensoren'
-media_order: ultraschallsensor-konfiguration.png
+media_order: 'ultraschallsensor-konfiguration.png,konfiguration-beschleunigungssensor.png'
 ---
 
 # Baulteilkunde Teil 2: Sensoren
@@ -458,7 +458,10 @@ Auch mit dem Arduino lassen sich interessante Dinge mit Beschleunigungssensoren 
 
 Der ADXL335 gibt für die Beschleunigungen $a_x$ in x-Richtung, $a_y$ in y-Richtung und $a_z$ in z-Richtung jeweils eine Spannung aus, die [laut Datenblatt des ADXL335 (S. 10)](https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL335.pdf) proportional zur Beschleunigung ist. Am Arduino kann diese Spannung über die analogen Eingänge A0 bis A5 gemessen werden. Wenn die Schaltung wie im folgenden Schaltplan erfolgt, dann müssen im Open Roberta Lab drei analoge Sensoren für A0, A1 und A2 angelegt werden, deren Werte als Analogwerte ausgelesen werden.
 
-![Schaltplan zum Beschleunigungsmodul GY-61 am Arduino.](/circuits/beschleunigungssensor-am-arduino.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum Beschleunigungsmodul am Arduino.")
+<div class="flex-box">
+<div markdown="1">![Schaltplan zum Beschleunigungsmodul GY-61 am Arduino.](/circuits/beschleunigungssensor-am-arduino.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum Beschleunigungsmodul am Arduino.")</div>
+<div markdown="1">![konfiguration-beschleunigungssensor](konfiguration-beschleunigungssensor.png?resize=300&classes=caption "Konfiguration des Beschleunigungssensor entsprechend des links abgebildeten Schaltplans.")</div>
+</div>
 
 <div markdown="1" class="aufgabe">
 #### Erste Experimente mit dem Beschleunigungssensor
