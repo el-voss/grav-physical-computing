@@ -1,7 +1,7 @@
 ---
 title: Sensoren
 menu: '[S] Sensoren'
-media_order: 'ultraschallsensor-konfiguration.png,konfiguration-beschleunigungssensor.png,neigungsschalter-konfiguration.png'
+media_order: 'ultraschallsensor-konfiguration.png,konfiguration-beschleunigungssensor.png,neigungsschalter-konfiguration.png,bewegungsmelder-vorkonfiguriert.png,bewegungsmelder-digital-konfiguriert.png'
 ---
 
 # Baulteilkunde Teil 2: Sensoren
@@ -76,8 +76,14 @@ Hinten befinden sich zwei Drehregler (“Potentiometer”), mit denen sich die D
 
 *Programmierung:* Der Bewegungsmelder ist in Nepo bereits vorkonfiguriert und lässt sich damit einfach auslesen. Aufgrund der Ausgabe von `HIGH` und `LOW` bzw. `true` und `false` lässt er sich aber auch als digitaler Sensor konfigurieren. Der Rückgabewert eines digitalen Sensors ist in Nepo vom Typ *Zahl* statt vom Typ *Wahrheitswert*. Dabei bedeutet die Zahl `0` so viel wie `false` und die Zahl `1` bedeutet `true`.
 <div class="flex-box">
-<div markdown="1">![Vorkonfigurierten Bewegungsmelder auslesen.](/images/bewegungsmelder-auslesen.png?classes=caption "Vorkonfigurierten Bewegungsmelder auslesen.")</div>
-<div markdown="1">![Bewegungsmelder als digitalen Sensor auslesen.](/images/digitalen-sensor-auslesen.png?classes=caption "Bewegungsmelder als digitalen Sensor auslesen.")</div>
+<div markdown="1">
+![bewegungsmelder-vorkonfiguriert](bewegungsmelder-vorkonfiguriert.png "Konfigurationsblock für einen Bewegungsmelder mit OUT an Pin 7.")
+![Vorkonfigurierten Bewegungsmelder auslesen.](/images/bewegungsmelder-auslesen.png?classes=caption "Vorkonfigurierten Bewegungsmelder auslesen.")
+</div>
+<div markdown="1">
+![bewegungsmelder-digital-konfiguriert](bewegungsmelder-digital-konfiguriert.png "Konfiguration des Bewegungsmelders als digitaler Sensor mit OUT an Pin 7.")
+![Bewegungsmelder als digitalen Sensor auslesen.](/images/digitalen-sensor-auslesen.png?classes=caption "Bewegungsmelder als digitalen Sensor auslesen.")
+</div>
 </div>
 
 <div markdown="1" class="projekt">
