@@ -1,6 +1,7 @@
 ---
 title: Sensoren
 menu: '[S] Sensoren'
+media_order: ultraschallsensor-konfiguration.png
 ---
 
 # Baulteilkunde Teil 2: Sensoren
@@ -373,7 +374,10 @@ Der Ultraschallsensor verfügt über vier Pins. GND und VCC (5 V) sind wie üb
 
 Die Zeit, die der Echo-Pin auf HIGH liegt, gibt also an, wie lange der Schall braucht, um vom Sensor zum Hindernis und zurück zu gelangen. Mit Hilfe der Schallgeschwindigkeit wird dann berechnet, welche Strecke der Schall zurückgelegt hat. Diese Berechnungen werden praktischerweise von den vorkonfigurierten Nepo-Blöcken übernommen, sodass man direkt die Strecke erhält.
 
-![gib-Abstand-Befehl](/images/gibEntfernung.png)
+<div class="flex-box">
+<div markdown="1">![ultraschallsensor-konfiguration](ultraschallsensor-konfiguration.png?classes=caption "Konfigurationsblock des Ultraschallsensors mit den Standardeinstellungen.")</div>
+<div markdown="1">![gib-Abstand-Befehl](/images/gibEntfernung.png?classes=caption "Programmblock zur Abfrage der Entfernung in Zentimetern.")</div>
+</div>
 
 <div markdown="1" class="projekt">
 #### Einparkhilfe für ein Auto
