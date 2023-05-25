@@ -1,6 +1,6 @@
 ---
 title: '[D] Düvelbot'
-media_order: 'getriebemotor-n20.jpg,3_duevelbot-ultraschallsensor.png,clip-mit-offenen-kontakten.jpg,9v-block.jpg,clip-mit-zylinderstecker.jpg,kabel.jpg,display-ssd1306.jpg,infrarot-sensoren.jpg,seitenhaenger.jpg,ultraschallsensor.jpg,summer.jpg,raeder.jpg,l298n-front.jpg,arduino-uno.jpg,expansion-board.jpg,slider.jpg,anhaenger.jpg,chassis.jpg,duevelbot-batteriehaenger.zip,duevelbot-chassis.zip,duevelbot-seitenhaenger.zip,duevelbot-slider.zip,l298n-oben.jpg,Anleitung01.jpg,Anleitung02.jpg,Anleitung03.jpg,Anleitung04.jpg,Anleitung05.jpg,Anleitung06.jpg,Anleitung07.jpg,Anleitung08.jpg,Anleitung09.jpg,Anleitung10.jpg,Anleitung11.jpg,Anleitung12.jpg,Anleitung15.jpg,Anleitung16.jpg,Anleitung17.jpg,Anleitung18.jpg,Anleitung19.jpg,Anleitung13.jpg,Anleitung14.jpg,1_duevelbot.png,2_duevelbot-motoren_und_piezo-summer.png,4_duevelbot-ir-sensoren_und_oled-display.png,Anleitung09a-jumper-entfernen.png,l298n-erklaerung.png,l298n-flussdiagramm-bsp.png'
+media_order: 'getriebemotor-n20.jpg,3_duevelbot-ultraschallsensor.png,clip-mit-offenen-kontakten.jpg,9v-block.jpg,clip-mit-zylinderstecker.jpg,kabel.jpg,display-ssd1306.jpg,infrarot-sensoren.jpg,seitenhaenger.jpg,ultraschallsensor.jpg,summer.jpg,raeder.jpg,l298n-front.jpg,arduino-uno.jpg,expansion-board.jpg,slider.jpg,anhaenger.jpg,chassis.jpg,duevelbot-batteriehaenger.zip,duevelbot-chassis.zip,duevelbot-seitenhaenger.zip,duevelbot-slider.zip,l298n-oben.jpg,Anleitung01.jpg,Anleitung02.jpg,Anleitung03.jpg,Anleitung04.jpg,Anleitung05.jpg,Anleitung06.jpg,Anleitung07.jpg,Anleitung08.jpg,Anleitung09.jpg,Anleitung10.jpg,Anleitung11.jpg,Anleitung12.jpg,Anleitung15.jpg,Anleitung16.jpg,Anleitung17.jpg,Anleitung18.jpg,Anleitung19.jpg,Anleitung13.jpg,Anleitung14.jpg,1_duevelbot.png,2_duevelbot-motoren_und_piezo-summer.png,4_duevelbot-ir-sensoren_und_oled-display.png,Anleitung09a-jumper-entfernen.png,l298n-erklaerung.png,l298n-flussdiagramm-bsp.png,fkt-vorwaertsFahren.png,fkt-stoppe.png,fkt-rueckwaertsFahren.png,fkt-fahreVorwaertsKurve.png,fkt-fahre.png'
 ---
 
 # Düvelbot
@@ -203,17 +203,34 @@ Ergänze damit die folgende Tabelle:
 <div markdown="1" class="aufgabe">
 #### Funktionen zum Steuern
 
-In der Aufgabe [Einfachere Steuerung mit Funktionen](../../elektrik/transistoren-motoren#einfachere-steuerung-mit...) siehst du, wie man die Steuerung von einem Motor in eine Funktion auslagern kann. Passe dies an, um die folgenden Funktionen zu implementieren:
-- `vorwaertsFahrenMitLeistung ( leistung )`: Lässt den Düvelbot mit der angegebenen Leistung vorwärts fahren.
-- `stoppe`: Lässt den Düvelbot stoppen.
-- `rueckwaertsFahrenMitLeistung ( leistung )`: Lässt den Düvelbot mit der angegebenen Leistung rückwärts fahren.
-- `fahreVorwaertsKurve ( leistungLinks, leistungRechts )`: Lässt den Düvelbot eine Vorwärtskurve fahren, wobei der Motor links mit der Leistung `leistungLinks` und der Motor rechts mit der Leistung `leistungRechts` gedreht wird.
+In der Aufgabe [Einfachere Steuerung mit Funktionen](../../elektrik/transistoren-motoren#einfachere-steuerung-mit...) siehst du, wie man die Steuerung von einem Motor in eine Funktion auslagern kann. Passe dies an, um die folgenden Funktionen zu implementieren.
+
+<div class="flex-box" style="align-items: center;">
+<div markdown="1"> 
+![fkt-vorwaertsFahren](fkt-vorwaertsFahren.png?resize=200 "fkt-vorwaertsFahren") 
+`vorwaertsFahren ( leistung )`: Lässt den Düvelbot mit der angegebenen Leistung vorwärts fahren.
+</div>
+<div markdown="1"> 
+![fkt-stoppe](fkt-stoppe.png?resize=300 "fkt-stoppe")
+`stoppe`: Lässt den Düvelbot stoppen.
+</div>
+<div markdown="1"> 
+![fkt-rueckwaertsFahren](fkt-rueckwaertsFahren.png?resize=300 "fkt-rueckwaertsFahren")
+`rueckwaertsFahren ( leistung )`: Lässt den Düvelbot mit der angegebenen Leistung rückwärts fahren.
+</div>
+<div markdown="1"> 
+![fkt-fahreVorwaertsKurve](fkt-fahreVorwaertsKurve.png?resize=300 "fkt-fahreVorwaertsKurve")
+`fahreVorwaertsKurve ( leistungLinks, leistungRechts )`: Lässt den Düvelbot eine Vorwärtskurve fahren, wobei der Motor links mit der Leistung `leistungLinks` und der Motor rechts mit der Leistung `leistungRechts` gedreht wird.
+</div>
+</div>
 
 *Für Experten:* Passe die Funktionen so an, dass die Leistung in Prozent angegeben wird. Wenn die Leistung also 100 beträgt, dreht sich der Motor mit voller Leistung, wenn die Leistung 0 beträgt, dreht sich der Motor nicht.
 </div>
 
 <div markdown="1" class="aufgabe">
 #### Hebelsteuerung
+
+![fkt-fahre](fkt-fahre.png?resize=300 "fkt-fahre")
 
 1. Implementiere die Funktion `fahre ( leistungLinks, leistungRechts )`. Die Werte für `leistungLinks` und `leistungRechts` können jeweils zwischen -100 und 100 liegen, wobei "-100" eine Drehung des jeweiligen Motors mit 100%iger Leistung nach hinten und "100" eine Drehung des jeweiligen Motors mit 100%iger Leistung nach vorne bedeutet.
 2. Erkläre, wie man mit dieser Funktion die Wirkung von jeder der vorher programmierten Funktionen erreichen kann.
