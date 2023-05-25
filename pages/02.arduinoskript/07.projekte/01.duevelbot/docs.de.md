@@ -206,7 +206,7 @@ Ergänze damit die folgende Tabelle:
 In der Aufgabe [Einfachere Steuerung mit Funktionen](../../elektrik/transistoren-motoren#einfachere-steuerung-mit...) siehst du, wie man die Steuerung von einem Motor in eine Funktion auslagern kann. Passe dies an, um die folgenden Funktionen zu implementieren.
 
 <div class="flex-box">
-<div markdown="1"> ![fkt-vorwaertsFahren](fkt-vorwaertsFahren.png?resize=200 "fkt-vorwaertsFahren") </div>
+<div markdown="1"> ![fkt-vorwaertsFahren](fkt-vorwaertsFahren.png?resize=300 "fkt-vorwaertsFahren") </div>
 <div markdown="1">`vorwaertsFahren ( leistung )`: Lässt den Düvelbot mit der angegebenen Leistung vorwärts fahren.</div>
 </div>
 <div class="flex-box">
