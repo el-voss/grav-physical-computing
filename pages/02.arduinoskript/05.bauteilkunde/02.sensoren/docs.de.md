@@ -1,7 +1,7 @@
 ---
 title: Sensoren
 menu: '[S] Sensoren'
-media_order: 'ultraschallsensor-konfiguration.png,konfiguration-beschleunigungssensor.png'
+media_order: 'ultraschallsensor-konfiguration.png,konfiguration-beschleunigungssensor.png,neigungsschalter-konfiguration.png'
 ---
 
 # Baulteilkunde Teil 2: Sensoren
@@ -46,7 +46,7 @@ Die Abbildungen unten zeigen den Aufbau eines Neigungsschalters im geschlossenen
 *Programmierung:* Der Neigungsschalter ist in Nepo nicht vorkonfiguriert, aber dies ist auch gar nicht nötig. Er lässt sich als digitaler Sensor konfigurieren. Der Rückgabewert eines digitalen Sensors ist in Nepo vom Typ *Zahl* statt vom Typ *Wahrheitswert*. Dabei bedeutet die Zahl `0` so viel wie `false` und die Zahl `1` bedeutet `true`.
 
 <div class="flex-box">
-<div markdown="1"> </div>
+<div markdown="1">![neigungsschalter-konfiguration](neigungsschalter-konfiguration.png?classes=caption "Konfiguration des Neigungsschalter als digitaler Sensor an Pin 3.") </div>
 <div markdown="1"> ![Digitalen Sensor auslesen.](/images/digitalen-sensor-auslesen.png?classes=caption "Auslesen eines digitalen Sensors in Nepo.")</div>
 </div>
     
