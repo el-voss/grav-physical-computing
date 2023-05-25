@@ -267,11 +267,23 @@ Die Verkabelung des Ultraschallsensors erfolgt nach dem folgenden Schaltplan.
 
 ### Konfiguration und Programmierung
 
-20cm vor einer Wand drehen
+<div markdown="1" class="aufgabe">
+#### Erster Test
 
-20cm vor einer Wand stoppen
+Programmiere den Roboter so, dass er geradeaus fährt und möglichst genau 20cm vor einem Hindernis stoppt.
+</div>
 
-Variable Geschwindigkeit: Schnelle Fahrt, wenn kein Hindernis in Sicht, langsamer, wenn Hindernis in Sicht
+<div markdown="1" class="aufgabe">
+#### Endlosfahrt
+
+Programmiere den Roboter so, dass er bei freier Bahn geradeaus fährt. Wenn er aber ein Hindernis "sieht", soll er sich um 90 Grad drehen, damit er wieder freie Fahrt hat. Dies wird endlos wiederholt, sodass der Roboter immer weiter fährt.
+</div>
+
+<div markdown="1" class="aufgabe">
+#### Variable Geschwindigkeit
+
+Programmiere den Roboter so, dass er schnell fährt, wenn kein Hindernis in Sicht ist und langsamer, wenn er ein Hindernis erkennen kann. Wenn das Hindernis zu nah kommt, dreht sich der Roboter und fährt in eine andere Richtung.
+</div>
 
 ## Erweiterung: Infrarot-Sensoren und Display
 
