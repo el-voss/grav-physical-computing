@@ -39,18 +39,21 @@ Die Abbildungen unten zeigen den Aufbau eines Neigungsschalters im geschlossenen
 </div>
 </div>
 
+*Schaltplan:* Wenn der Neigungsschalter wie unten abgebildet am Arduino angeschlossen wird, kann sein Zustand in Digitalpin 3 ausgelesen werden (vgl. das [Auslesen von Tastern](../../bausteine-algorithmen/entscheidungen-und-serieller-monitor#taster)).
+
+![Neigungsschalter am Arduino.](/circuits/neigungsschalter-mit-arduino.png?lightbox=1024&resize=500&classes=caption "Neigungsschalter am Arduino.")
+
 *Programmierung:* Der Neigungsschalter ist in Nepo nicht vorkonfiguriert, aber dies ist auch gar nicht nötig. Er lässt sich als digitaler Sensor konfigurieren. Der Rückgabewert eines digitalen Sensors ist in Nepo vom Typ *Zahl* statt vom Typ *Wahrheitswert*. Dabei bedeutet die Zahl `0` so viel wie `false` und die Zahl `1` bedeutet `true`.
 
-![Digitalen Sensor auslesen.](/images/digitalen-sensor-auslesen.png?classes=caption "Auslesen eines digitalen Sensors in Nepo.")
-
+<div class="flex-box">
+<div markdown="1"> </div>
+<div markdown="1"> ![Digitalen Sensor auslesen.](/images/digitalen-sensor-auslesen.png?classes=caption "Auslesen eines digitalen Sensors in Nepo.")</div>
+</div>
+    
 <div markdown="1" class="projekt">
 #### Alarmanlage
 
 Baue eine Alarmanlage, die auslöst, wenn das Steckbrett angehoben wird.
-
-*Hinweis:* Wenn der Neigungsschalter wie unten abgebildet am Arduino angeschlossen wird, kann sein Zustand in Digitalpin 3 ausgelesen werden (vgl. das [Auslesen von Tastern](https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen/entscheidungen-und-serieller-monitor#taster)).
-
-![Neigungsschalter am Arduino.](/circuits/neigungsschalter-mit-arduino.png?lightbox=1024&resize=500&classes=caption "Neigungsschalter am Arduino.")
 
 *Zusatz:* Erkläre, warum es sinnvoll ist, den Piezo-Summer nicht so wie die LED in der oben diskutierten Aufgabe direkt mit dem Neigungsschalter zu verbinden, sondern das Auslösen des Tons im Programm zu regeln.
 </div>
