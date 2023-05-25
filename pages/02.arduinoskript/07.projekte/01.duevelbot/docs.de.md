@@ -205,23 +205,21 @@ Ergänze damit die folgende Tabelle:
 
 In der Aufgabe [Einfachere Steuerung mit Funktionen](../../elektrik/transistoren-motoren#einfachere-steuerung-mit...) siehst du, wie man die Steuerung von einem Motor in eine Funktion auslagern kann. Passe dies an, um die folgenden Funktionen zu implementieren.
 
-<div class="flex-box" style="align-items: center;">
-<div markdown="1"> 
-![fkt-vorwaertsFahren](fkt-vorwaertsFahren.png?resize=200 "fkt-vorwaertsFahren") 
-`vorwaertsFahren ( leistung )`: Lässt den Düvelbot mit der angegebenen Leistung vorwärts fahren.
+<div class="flex-box">
+<div markdown="1"> ![fkt-vorwaertsFahren](fkt-vorwaertsFahren.png?resize=200 "fkt-vorwaertsFahren") </div>
+<div markdown="1">`vorwaertsFahren ( leistung )`: Lässt den Düvelbot mit der angegebenen Leistung vorwärts fahren.</div>
 </div>
-<div markdown="1"> 
-![fkt-stoppe](fkt-stoppe.png?resize=300 "fkt-stoppe")
-`stoppe`: Lässt den Düvelbot stoppen.
+<div class="flex-box">
+<div markdown="1"> ![fkt-stoppe](fkt-stoppe.png?resize=300 "fkt-stoppe")</div>
+<div markdown="1">`stoppe`: Lässt den Düvelbot stoppen.</div>
 </div>
-<div markdown="1"> 
-![fkt-rueckwaertsFahren](fkt-rueckwaertsFahren.png?resize=300 "fkt-rueckwaertsFahren")
-`rueckwaertsFahren ( leistung )`: Lässt den Düvelbot mit der angegebenen Leistung rückwärts fahren.
+<div class="flex-box">
+<div markdown="1"> ![fkt-rueckwaertsFahren](fkt-rueckwaertsFahren.png?resize=300 "fkt-rueckwaertsFahren")</div>
+<div markdown="1"> `rueckwaertsFahren ( leistung )`: Lässt den Düvelbot mit der angegebenen Leistung rückwärts fahren.</div>
 </div>
-<div markdown="1"> 
-![fkt-fahreVorwaertsKurve](fkt-fahreVorwaertsKurve.png?resize=300 "fkt-fahreVorwaertsKurve")
-`fahreVorwaertsKurve ( leistungLinks, leistungRechts )`: Lässt den Düvelbot eine Vorwärtskurve fahren, wobei der Motor links mit der Leistung `leistungLinks` und der Motor rechts mit der Leistung `leistungRechts` gedreht wird.
-</div>
+<div class="flex-box">
+<div markdown="1"> ![fkt-fahreVorwaertsKurve](fkt-fahreVorwaertsKurve.png?resize=300 "fkt-fahreVorwaertsKurve")</div>
+<div markdown="1">`fahreVorwaertsKurve ( leistungLinks, leistungRechts )`: Lässt den Düvelbot eine Vorwärtskurve fahren, wobei der Motor links mit der Leistung `leistungLinks` und der Motor rechts mit der Leistung `leistungRechts` gedreht wird.</div>
 </div>
 
 *Für Experten:* Passe die Funktionen so an, dass die Leistung in Prozent angegeben wird. Wenn die Leistung also 100 beträgt, dreht sich der Motor mit voller Leistung, wenn die Leistung 0 beträgt, dreht sich der Motor nicht.
