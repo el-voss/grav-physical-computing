@@ -324,7 +324,7 @@ Programmiere den Roboter so, dass er möglichst genau 5cm vor einer Wand stoppt.
 </div>
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung24-Anmerkung](Anleitung24-Anmerkung.png?lightbox=1024&resize=400 "Anleitung24-Anmerkung") </div>
-<div markdown="1"> **Schritt 24:** Schließe die Kabel entsprechend des Schaltplans (siehe unten) an. Notiere dir, ob der rechte oder der linke IR-Sensor mit `A0` verbunden ist (und entsprechend der andere mit `A1), damit du dies später im Programm richtig konfigurieren kannst. </div>
+<div markdown="1"> **Schritt 24:** Schließe die Kabel entsprechend des Schaltplans (siehe unten) an. Notiere dir, ob der rechte oder der linke IR-Sensor mit `A0` am Arduino verbunden ist (und entsprechend der andere mit `A1` am Arduino), damit du dies später im Programm richtig konfigurieren kannst. </div>
 </div>
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung25](Anleitung25.jpg?lightbox=1024&resize=400 "Anleitung25") </div>
