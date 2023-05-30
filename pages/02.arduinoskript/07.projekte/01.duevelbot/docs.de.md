@@ -12,9 +12,9 @@ media_order: 'getriebemotor-n20.jpg,3_duevelbot-ultraschallsensor.png,clip-mit-o
 </style>
 
 
-![duevelbot-fertig](duevelbot-fertig.jpg?lightbox=1024&resize=800&classes=caption "Fertig aufgebauter Düvelbot.")
-
 Der Düvelbot ist ein kleiner fahrender Roboter auf Arduino-Basis, der über einen Ultraschallsensor zur Entfernungsmessung und Hindernisvermeidung sowie zwei Infrarot-Sensoren zur Linienverfolgung verfügt. Zusätzlich wird ein Display angebracht, um wichtige Informationen darzustellen, und er kann Töne abgeben. Durch die offene Architektur und die Verwendung von Standard-Arduino-Bauteilen sind einige Erweiterungen denkbar. 
+
+![duevelbot-fertig](duevelbot-fertig.jpg?lightbox=1024&resize=800&classes=caption "Fertig aufgebauter Düvelbot.")
 
 ! Der Düvelbot geht zurück auf eine Idee von Marco Düvelmeyer, der auf seinem [Youtube-Kanal Technikwerkstatt 4.0](https://www.youtube.com/@Technikwerkstatt4.0) Tutorials rund um Arduino, 3D-Druck, CAD-Software und mehr für seinen Profilunterricht anbietet. Die Entwicklungsarbeit hat das Unternehmen [Funduino](https://funduino.de/) übernommen, das den Düvelbot auch [zum Kauf anbietet](https://funduinoshop.com/projekte/arduino-und-3d-druck/duevelbot/funduino-duevelbot). Dort gibt es auch eine [Montageanleitung für den Düvelbot](https://funduino.de/funduino-duevelbot). Für dieses Skript wurde der Düvelbot jedoch in einigen Bestandteilen angepasst und erweitert, daher findet sich hier eine eigene Anleitung mit einigen Anpassungen.
 
@@ -305,6 +305,31 @@ Programmiere den Roboter so, dass er möglichst genau 5cm vor einer Wand stoppt.
 
 
 ### Montage
+
+<div class="flex-box" style="align-items: center;">
+<div markdown="1"> ![Anleitung20](Anleitung20.jpg?lightbox=1024&resize=400 "Anleitung20") </div>
+<div markdown="1"> **Schritt 20:** Suche die Infrarot-Sensore (IR-Sensoren) und stecke jeweils drei Kabel auf die Pins `Vcc`, `GND` und `A0`. Da der digitale Pin `D0` hier nicht genutzt wird, kann er frei bleiben. Notiere dir, welche Farbe zu welchem Pin gehört, damit du sie später richtig verschalten kannst. </div>
+</div>
+<div class="flex-box" style="align-items: center;">
+<div markdown="1"> ![Anleitung21](Anleitung21.jpg?lightbox=1024&resize=400 "Anleitung21") </div>
+<div markdown="1"> **Schritt 21:** Schiebe den Arduino etwas zurück und führe die Kabel durch die jeweilige Öffnung in das Chassis und nach oben hinaus. </div>
+</div>
+<div class="flex-box" style="align-items: center;">
+<div markdown="1"> ![Anleitung22](Anleitung22.jpg?lightbox=1024&resize=400 "Anleitung22") </div>
+<div markdown="1"> **Schritt 22:** Schiebe die Platinen der IR-Sensoren in die dafür vorgesehene Schiene. Durch die Fertigungstoleranzen kann es dazu kommen, dass die Schiene sehr locker oder sehr eng sitzt. Bitte in keinem Fall grobe Gewalt anwenden! </div>
+</div>
+<div class="flex-box" style="align-items: center;">
+<div markdown="1"> ![Anleitung23-Anmerkung](Anleitung23-Anmerkung.png?lightbox=1024&resize=400 "Anleitung23-Anmerkung") </div>
+<div markdown="1"> **Schritt 23:** Führe die Kabel durch die seitliche Öffnung nach außen. </div>
+</div>
+<div class="flex-box" style="align-items: center;">
+<div markdown="1"> ![Anleitung24-Anmerkung](Anleitung24-Anmerkung.png?lightbox=1024&resize=400 "Anleitung24-Anmerkung") </div>
+<div markdown="1"> **Schritt 24:** Schließe die Kabel entsprechend des Schaltplans (siehe unten) an. </div>
+</div>
+<div class="flex-box" style="align-items: center;">
+<div markdown="1"> ![Anleitung25](Anleitung25.jpg?lightbox=1024&resize=400 "Anleitung25") </div>
+<div markdown="1"> **Schritt 25:** Stecke das Display in das kleine Steckbrett und verkabele es entsprechend des Schaltplans (siehe unten). </div>
+</div>
 
 
 ### Verkabelung
