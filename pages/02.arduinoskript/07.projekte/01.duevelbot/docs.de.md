@@ -1,6 +1,6 @@
 ---
 title: '[D] Düvelbot'
-media_order: 'getriebemotor-n20.jpg,3_duevelbot-ultraschallsensor.png,clip-mit-offenen-kontakten.jpg,9v-block.jpg,clip-mit-zylinderstecker.jpg,kabel.jpg,display-ssd1306.jpg,infrarot-sensoren.jpg,seitenhaenger.jpg,ultraschallsensor.jpg,summer.jpg,raeder.jpg,l298n-front.jpg,arduino-uno.jpg,expansion-board.jpg,slider.jpg,anhaenger.jpg,chassis.jpg,duevelbot-batteriehaenger.zip,duevelbot-chassis.zip,duevelbot-seitenhaenger.zip,duevelbot-slider.zip,l298n-oben.jpg,Anleitung01.jpg,Anleitung02.jpg,Anleitung03.jpg,Anleitung04.jpg,Anleitung05.jpg,Anleitung06.jpg,Anleitung07.jpg,Anleitung08.jpg,Anleitung09.jpg,Anleitung10.jpg,Anleitung11.jpg,Anleitung12.jpg,Anleitung15.jpg,Anleitung16.jpg,Anleitung17.jpg,Anleitung18.jpg,Anleitung19.jpg,Anleitung13.jpg,Anleitung14.jpg,1_duevelbot.png,2_duevelbot-motoren_und_piezo-summer.png,4_duevelbot-ir-sensoren_und_oled-display.png,Anleitung09a-jumper-entfernen.png,l298n-erklaerung.png,l298n-flussdiagramm-bsp.png,fkt-vorwaertsFahren.png,fkt-stoppe.png,fkt-rueckwaertsFahren.png,fkt-fahreVorwaertsKurve.png,fkt-fahre.png,duevelbot-fertig.jpg,Anleitung25.jpg,Anleitung24-Anmerkung.png,Anleitung23-Anmerkung.png,Anleitung22.jpg,Anleitung21.jpg,Anleitung20.jpg'
+media_order: 'getriebemotor-n20.jpg,3_duevelbot-ultraschallsensor.png,clip-mit-offenen-kontakten.jpg,9v-block.jpg,clip-mit-zylinderstecker.jpg,kabel.jpg,display-ssd1306.jpg,infrarot-sensoren.jpg,seitenhaenger.jpg,ultraschallsensor.jpg,summer.jpg,raeder.jpg,l298n-front.jpg,arduino-uno.jpg,expansion-board.jpg,slider.jpg,anhaenger.jpg,chassis.jpg,duevelbot-batteriehaenger.zip,duevelbot-chassis.zip,duevelbot-seitenhaenger.zip,duevelbot-slider.zip,l298n-oben.jpg,Anleitung01.jpg,Anleitung02.jpg,Anleitung03.jpg,Anleitung04.jpg,Anleitung05.jpg,Anleitung06.jpg,Anleitung07.jpg,Anleitung08.jpg,Anleitung09.jpg,Anleitung10.jpg,Anleitung11.jpg,Anleitung12.jpg,Anleitung15.jpg,Anleitung16.jpg,Anleitung17.jpg,Anleitung18.jpg,Anleitung19.jpg,Anleitung13.jpg,Anleitung14.jpg,1_duevelbot.png,2_duevelbot-motoren_und_piezo-summer.png,4_duevelbot-ir-sensoren_und_oled-display.png,Anleitung09a-jumper-entfernen.png,l298n-erklaerung.png,l298n-flussdiagramm-bsp.png,fkt-vorwaertsFahren.png,fkt-stoppe.png,fkt-rueckwaertsFahren.png,fkt-fahreVorwaertsKurve.png,fkt-fahre.png,duevelbot-fertig.jpg,Anleitung25.jpg,Anleitung24-Anmerkung.png,Anleitung23-Anmerkung.png,Anleitung22.jpg,Anleitung21.jpg,Anleitung20.jpg,prog-fahre-start.png'
 ---
 
 # Düvelbot
@@ -229,7 +229,10 @@ In der Aufgabe [Einfachere Steuerung mit Funktionen](../../elektrik/transistoren
 <div markdown="1" class="aufgabe">
 #### Hebelsteuerung
 
-![fkt-fahre](fkt-fahre.png?resize=300 "fkt-fahre")
+<div class="flex-box">
+<div markdown="1" class="flexible"> ![fkt-fahre](fkt-fahre.png?resize=300 "fkt-fahre") </div>
+<div markdown="1" class="flexible"> ![prog-fahre-start](prog-fahre-start.png?lightbox=1024&resize=500&classes=caption "Möglicher Beginn der fahre-Funktion. Es werden mehrere Fallunterscheidungen benötigt. Der grüne Block ist ein Kommentar aus der Kategorie Text, der nur der eigenen Übersicht dient.") </div>
+</div>
 
 1. Implementiere die Funktion `fahre ( leistungLinks, leistungRechts )`. Die Werte für `leistungLinks` und `leistungRechts` können jeweils zwischen -255 und 255 liegen, wobei "-255" eine Drehung des jeweiligen Motors mit voller Leistung nach hinten und "255" eine Drehung des jeweiligen Motors mit voller Leistung nach vorne bedeutet. Achtung: Die Werte für die Enable-Pins müssen immer zwischen 0 und 255 liegen!
 2. Passe die Funktion so an, dass die Werte für `leistungLinks` und `leistungRechts` jeweils zwischen -100 und 100 liegen können, wobei "-100" eine Drehung des jeweiligen Motors mit 100%iger Leistung nach hinten und "100" eine Drehung des jeweiligen Motors mit 100%iger Leistung nach vorne bedeutet.
