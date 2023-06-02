@@ -231,9 +231,10 @@ In der Aufgabe [Einfachere Steuerung mit Funktionen](../../elektrik/transistoren
 
 ![fkt-fahre](fkt-fahre.png?resize=300 "fkt-fahre")
 
-1. Implementiere die Funktion `fahre ( leistungLinks, leistungRechts )`. Die Werte für `leistungLinks` und `leistungRechts` können jeweils zwischen -100 und 100 liegen, wobei "-100" eine Drehung des jeweiligen Motors mit 100%iger Leistung nach hinten und "100" eine Drehung des jeweiligen Motors mit 100%iger Leistung nach vorne bedeutet.
-2. Erkläre, wie man mit dieser Funktion die Wirkung von jeder der vorher programmierten Funktionen erreichen kann.
-3. Erkläre, wie man den Düvelbot mit dieser Funktion auf der Stelle drehen lassen kann.
+1. Implementiere die Funktion `fahre ( leistungLinks, leistungRechts )`. Die Werte für `leistungLinks` und `leistungRechts` können jeweils zwischen -255 und 255 liegen, wobei "-255" eine Drehung des jeweiligen Motors mit voller Leistung nach hinten und "255" eine Drehung des jeweiligen Motors mit voller Leistung nach vorne bedeutet. Achtung: Die Werte für die Enable-Pins müssen immer zwischen 0 und 255 liegen!
+2. Passe die Funktion so an, dass die Werte für `leistungLinks` und `leistungRechts` jeweils zwischen -100 und 100 liegen können, wobei "-100" eine Drehung des jeweiligen Motors mit 100%iger Leistung nach hinten und "100" eine Drehung des jeweiligen Motors mit 100%iger Leistung nach vorne bedeutet.
+3. Erkläre, wie man mit dieser Funktion die Wirkung von jeder der vorher programmierten Funktionen erreichen kann.
+4. Erkläre, wie man den Düvelbot mit dieser Funktion auf der Stelle drehen lassen kann.
 
 </div>
 
