@@ -208,7 +208,7 @@ In der Aufgabe [Einfachere Steuerung mit Funktionen](../../elektrik/transistoren
 
 <div class="flex-box">
 <div markdown="1"> ![fkt-vorwaertsFahren](fkt-vorwaertsFahren.png?resize=300 "fkt-vorwaertsFahren") </div>
-<div markdown="1">`vorwaertsFahren ( leistung )`: Lässt den Düvelbot mit der angegebenen Leistung vorwärts fahren.</div>
+<div markdown="1">`vorwaertsFahren ( leistung )`: Lässt den Düvelbot mit der angegebenen Leistung zwischen 0 und 255 vorwärts fahren.</div>
 </div>
 <div class="flex-box">
 <div markdown="1"> ![fkt-stoppe](fkt-stoppe.png?resize=300 "fkt-stoppe")</div>
@@ -216,11 +216,11 @@ In der Aufgabe [Einfachere Steuerung mit Funktionen](../../elektrik/transistoren
 </div>
 <div class="flex-box">
 <div markdown="1"> ![fkt-rueckwaertsFahren](fkt-rueckwaertsFahren.png?resize=300 "fkt-rueckwaertsFahren")</div>
-<div markdown="1"> `rueckwaertsFahren ( leistung )`: Lässt den Düvelbot mit der angegebenen Leistung rückwärts fahren.</div>
+<div markdown="1"> `rueckwaertsFahren ( leistung )`: Lässt den Düvelbot mit der angegebenen Leistung zwischen 0 und 255 rückwärts fahren.</div>
 </div>
 <div class="flex-box">
 <div markdown="1"> ![fkt-fahreVorwaertsKurve](fkt-fahreVorwaertsKurve.png?resize=300 "fkt-fahreVorwaertsKurve")</div>
-<div markdown="1">`fahreVorwaertsKurve ( leistungLinks, leistungRechts )`: Lässt den Düvelbot eine Vorwärtskurve fahren, wobei der Motor links mit der Leistung `leistungLinks` und der Motor rechts mit der Leistung `leistungRechts` gedreht wird.</div>
+<div markdown="1">`fahreVorwaertsKurve ( leistungLinks, leistungRechts )`: Lässt den Düvelbot eine Vorwärtskurve fahren, wobei der Motor links mit der Leistung `leistungLinks` und der Motor rechts mit der Leistung `leistungRechts` gedreht wird (Leistungswerte zwischen 0 und 255).</div>
 </div>
 
 *Für Experten:* Passe die Funktionen so an, dass die Leistung in Prozent angegeben wird. Wenn die Leistung also 100 beträgt, dreht sich der Motor mit voller Leistung, wenn die Leistung 0 beträgt, dreht sich der Motor nicht.
