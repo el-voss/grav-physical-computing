@@ -230,7 +230,7 @@ In der Aufgabe [Einfachere Steuerung mit Funktionen](../../elektrik/transistoren
 #### Hebelsteuerung
 
 ![fkt-fahre](fkt-fahre.png?resize=300 "fkt-fahre")
-![prog-fahre-start](prog-fahre-start.png?lightbox=1024&resize=500&classes=caption "Möglicher Beginn der fahre-Funktion. Es werden mehrere Fallunterscheidungen benötigt. Der grüne Block ist ein Kommentar aus der Kategorie Text, der nur der eigenen Übersicht dient.") 
+![prog-fahre-start](prog-fahre-start.png?lightbox=1024&resize=700&classes=caption "Möglicher Beginn der fahre-Funktion. Es werden mehrere Fallunterscheidungen benötigt. Der grüne Block ist ein Kommentar aus der Kategorie Text, der nur der eigenen Übersicht dient.") 
 
 1. Implementiere die Funktion `fahre ( leistungLinks, leistungRechts )`. Die Werte für `leistungLinks` und `leistungRechts` können jeweils zwischen -255 und 255 liegen, wobei "-255" eine Drehung des jeweiligen Motors mit voller Leistung nach hinten und "255" eine Drehung des jeweiligen Motors mit voller Leistung nach vorne bedeutet. Achtung: Die Werte für die Enable-Pins müssen immer zwischen 0 und 255 liegen!
 2. Passe die Funktion so an, dass die Werte für `leistungLinks` und `leistungRechts` jeweils zwischen -100 und 100 liegen können, wobei "-100" eine Drehung des jeweiligen Motors mit 100%iger Leistung nach hinten und "100" eine Drehung des jeweiligen Motors mit 100%iger Leistung nach vorne bedeutet.
