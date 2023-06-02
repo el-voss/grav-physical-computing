@@ -308,11 +308,11 @@ Die vier `GND`-Anschlüsse dienen zur Stromversorgung und zur Wärmeableitung, f
 
 1.  Baue die oben beschriebene Schaltung auf. Nutze dazu das *Power Supply Module* (siehe oben).
 2.  Experimentiere mit verschiedenen Input-Konfigurationen und PWM-Werten für den `En1,2`-Pin.
-3.  Halte die Wirkung auf den Motor tabellarisch fest. Hier genügt es, wenn für den `En1,2`-Pin nur zwischen *ein / 1* und *aus / 0* unterschieden wird.
+3.  Halte die Wirkung auf den Motor tabellarisch fest. Hier genügt es, wenn für den `En1,2`-Pin nur zwischen *ein / 255* und *aus / 0* unterschieden wird.
     
     | In1 | In 2 | En1,2 | Wirkung |
     | :-: | :--: | :---: | :-----: |
-    |  1  |  0   |   1   |    …    |
+    |  1  |  0   |   255   |    …    |
     
 <div class="flex-box">
 <div markdown="1">![L293D in der Roboterkonfiguration.](/images/prog-konfiguration-l293d.png?classes=caption "L293D in der Roboterkonfiguration.")</div>
@@ -348,11 +348,11 @@ Am `Vin`-Pin muss der Pluspol einer Batterie mit 7V bis 12V angeschlossen werden
 
 1.  Baue die oben beschriebene Schaltung auf. Nutze als Spannungsquelle eine 9V-Batterie an `VIN` und `GND` des L298N.
 2.  Experimentiere mit verschiedenen Input-Konfigurationen und PWM-Werten für den `En1,2`-Pin.
-3.  Halte die Wirkung auf den Motor tabellarisch fest. Hier genügt es, wenn für den `En1,2`-Pin nur zwischen *ein / 1* und *aus / 0* unterschieden wird.
+3.  Halte die Wirkung auf den Motor tabellarisch fest. Hier genügt es, wenn für den `En1,2`-Pin nur zwischen *ein / 255* und *aus / 0* unterschieden wird.
     
     | In1 | In 2 | En1,2 | Wirkung |
     | :-: | :--: | :---: | :-----: |
-    |  1  |  0   |   1   |    …    |
+    |  1  |  0   |   255   |    …    |
     
 <div class="flex-box">
 <div markdown="1">![L298N in der Roboterkonfiguration.](l298n-konfiguration.png?classes=caption "L298N in der Roboterkonfiguration.")</div>
