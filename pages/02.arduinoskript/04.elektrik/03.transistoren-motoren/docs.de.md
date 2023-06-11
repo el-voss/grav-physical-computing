@@ -338,7 +338,7 @@ Ein Motor wird an `Out1`und `Out2` angeschlossen. Der jeweilige Zustand der `Out
  
 Die Steuerung des Motors an `Out3` und `Out4` erfolgt analog über `In3` und `In4`, deren Konfiguration übertragen wird, wenn `En3,4` auf `HIGH` steht.
  
-*Hinweis:* Durch den Jumper auf dem `En1,2`-Pin wird dieser mit dem 5V-Potential (`HIGH`) verbunden, sodass die Input-Konfiguration immer direkt übertragen wird. Dann ist aber kein PWM-Signal mehr möglich, weshalb die Jumper in der Anleitung oben entfernt werden. Stattdessen werden die `En1,2`-Pins mit einem PWM-Pin des Arduino verbunden.
+*Hinweis:* Durch einen Jumper auf dem `En1,2`-Pin kann dieser direkt mit dem 5V-Potential (`HIGH`) verbunden werden, sodass die Input-Konfiguration immer direkt übertragen wird. Dann ist aber kein PWM-Signal mehr möglich, sodass der Motor immer mit voller Leistung dreht. Im Folgenden wird daher davon ausgegangen, dass die Jumper entfernt wurden und die `En1,2`-Pins stattdessen mit einem PWM-Pin des Arduino verbunden werden.
  
 *Zur Spannungsversorgung*
 Am `Vin`-Pin muss der Pluspol einer Batterie mit 7V bis 12V angeschlossen werden. Der Minuspol muss mit `GND` verbunden werden. Diese Spannung wird vom Spannungsregler auf ein stabiles 5V-Potential heruntergeregelt, welches für die Schaltlogik benötigt wird. Über den `5V`-Pin (in Kombination mit dem `GND`-Pin) kann dieses Potential auch für weitere Bauteile genutzt werden. In dieser Anleitung geschieht dies jedoch nicht, weil die Stromstärke der Batterie dann nicht mehr ausreicht, um eine stabile Spannungsversorgung für alle Bauteile zu gewährleisten.
