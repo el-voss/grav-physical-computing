@@ -86,7 +86,7 @@ Eine Fußgängerampel ist zunächst aus oder deaktiviert. Sie kann jederzeit dur
     
     *Tipp:* Da der Taster jederzeit gedrückt werden kann, benötigt man eine Wahrheitswert-Variable `tasterGedrueckt`, die auf `wahr` gesetzt wird, wenn der Taster gedrückt wurde, damit sich das Drücken speichern lässt, bis es relevant wird. Die Abfrage `wenn Taster gedrückt` kann in jedem Zustand einzeln integriert werden oder nur einmal in der `wiederhole fortlaufend`-Schleife.
 
-Rücklink (öffnet in neuem Tab): <a href="https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen#taster" target="_blank">Taster</a>
+Rücklink (öffnet in neuem Tab): <a href="https://mintorials.de/de/arduinoskript/bausteine-algorithmen#taster" target="_blank">Taster</a>
 
 *Idee: Materialien zum Kerncurriculum Informatik im Sekundarbereich I, Niedersächsisches Kultusministerium*
 </div>
@@ -111,7 +111,7 @@ Rücklink (öffnet in neuem Tab): <a href="https://doku.el-voss.de/de/arduinoskr
     
     *Tipp:* Lege eine Variable für die Zeit an. Nutze die Zeitgeber-Blöcke, um diese Variable um 1 hochzuzählen, wenn (mehr als) 1000 Millisekunden vergangen sind.
     
-    Rücklinks (öffnen in neuem Tab): <a href="https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen#taster" target="_blank">Taster</a>, <a href="https://doku.el-voss.de/de/arduinoskript/bauteilkunde#liquid-crystal-display-lcd">LC-Display</a>
+    Rücklinks (öffnen in neuem Tab): <a href="https://mintorials.de/de/arduinoskript/bausteine-algorithmen#taster" target="_blank">Taster</a>, <a href="https://mintorials.de/de/arduinoskript/bauteilkunde#liquid-crystal-display-lcd">LC-Display</a>
 
 2. Entwickle ein Automatenmodell für einen Timer. Gehe dazu von einer Startzeit von 15 Sekunden aus.
     
@@ -132,7 +132,7 @@ Das Verhalten der Parkplatzschranke soll auf dem Steckbrett simuliert werden. Da
 3.  Entwickle ein Automatenmodell für die Parkplatzschranke. Überlege dazu, in welchen Zuständen sich die einzelnen Elemente beim Einfahren und beim Ausfahren befinden.
 4.  Implementiere das Automatenmodell.
 
-Rücklinks (öffnen in neuem Tab): <a href="https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen#taster" target="_blank">Taster</a>, <a href="https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen#fotowiderstand" target="_blank">LDR</a>, <a href="https://doku.el-voss.de/de/arduinoskript/bauteilkunde#servo" target="_blank">Servo</a>
+Rücklinks (öffnen in neuem Tab): <a href="https://mintorials.de/de/arduinoskript/bausteine-algorithmen#taster" target="_blank">Taster</a>, <a href="https://mintorials.de/de/arduinoskript/bausteine-algorithmen#fotowiderstand" target="_blank">LDR</a>, <a href="https://mintorials.de/de/arduinoskript/bauteilkunde#servo" target="_blank">Servo</a>
 
 *Idee: Materialien zum Kerncurriculum Informatik im Sekundarbereich I, Niedersächsisches Kultusministerium*
 </div>
