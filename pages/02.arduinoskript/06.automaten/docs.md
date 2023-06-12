@@ -22,7 +22,7 @@ In diesem Kapitel lernst du...
 
 [TOC]
 
-## Automaten
+## Endliche Automaten und Zustandsdiagramme
 
 Bisher wurden Algorithmen rezeptartig als feste Handlungsabfolgen beschrieben, die nacheinander durchlaufen werden und dabei ggf. einfache Fallunterscheidungen berücksichtigen. In der Automatentheorie steht weniger das Befolgen eines Rezeptes im Mittelpunkt als das Einnehmen verschiedener Zustände, zwischen denen unter festgelegten Bedingungen Übergänge stattfinden. Dies macht die Algorithmen flexibler im Umgang mit Eingaben aus der Umwelt, wodurch sie zudem leichter zu erweitern sind.
 
@@ -137,9 +137,9 @@ Rücklinks (öffnen in neuem Tab): <a href="https://doku.el-voss.de/de/arduinosk
 *Idee: Materialien zum Kerncurriculum Informatik im Sekundarbereich I, Niedersächsisches Kultusministerium*
 </div>
 
-## Steuern und Regeln
+## Mealy-Automaten
 
-!!! Hier soll ein Abschnitt zum Thema "Steuern und Regeln" entstehen.
+!!! Hier soll ein Abschnitt zum Thema "Mealy Automaten" entstehen.
 
 ## Vermischte Übungen
 
