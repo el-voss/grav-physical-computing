@@ -1,7 +1,7 @@
 ---
 title: Sensoren
 menu: '[S] Sensoren'
-media_order: 'ultraschallsensor-konfiguration.png,konfiguration-beschleunigungssensor.png,neigungsschalter-konfiguration.png,bewegungsmelder-vorkonfiguriert.png,bewegungsmelder-digital-konfiguriert.png,joystick-vorkonfiguriert.png,joystick-konfiguration.png'
+media_order: 'ultraschallsensor-konfiguration.png,konfiguration-beschleunigungssensor.png,neigungsschalter-konfiguration.png,bewegungsmelder-vorkonfiguriert.png,bewegungsmelder-digital-konfiguriert.png,joystick-vorkonfiguriert.png,joystick-konfiguration.png,infrarot-sensoren.jpg,schaltplan-tcrt5000.png'
 ---
 
 # Baulteilkunde Teil 2: Sensoren
@@ -229,6 +229,25 @@ In vielen Bereichen werden LED-Streifen genutzt, um einen Raum mit passendem, in
 
 Das Prinzip lässt sich auf ein Lauflicht übertragen. Baue ein Lauflicht und programmiere verschiedene Lauflicht-Modi, die sich mit der Fernbedienung einstellen lassen.
 </div>
+
+### Infrarot-Sensor TCRT5000
+
+Der Infrarot-Sensor TCRT5000 sendet Infrarotstrahlen aus und registriert die reflektierten Infrarotstrahlen aus der Umgebung. Dadurch können kurze Distanzen gemessen oder Farben erkannt werden. Zu seinen weiteren Einsatzzwecken gehört die Linienverfolgung bei Robotern und der Einsatz als Lichtschranke - so lässt sich bei Seifenspendern erkennen, ob eine Hand nah am Sensor ist und in 3D-Druckern lässt sich erkennen, ob noch Filament vorhanden ist oder nichts mehr nachkommt.
+
+![infrarot-sensoren](infrarot-sensoren.jpg?lightbox=1024&resize=500&classes=caption "Infrarot-Sensor-Modul TCRT5000.")
+
+Auf der Unterseite des Moduls sind zwei Seiten zu erkennen. Die durchsichtige/bläuliche Seite ist eine Infrarot-LED, die Licht im Infrarot-Bereich aussendet, welches für das menschliche Auge unsichtbar ist. Das Infrarot-Licht wird (abhängig von der Art und Farbe der Oberfläche) unterschiedlich gut reflektiert. Das reflektierte Infrarot-Licht trifft dann auf die dunkle Seite des Sensors. Dort befindet sich ein Phototransistor, der die Infrarotstrahlen registriert und daraus einen Strom macht. Der Strom ist umso stärker, je mehr Infrarotstrahlen auf den Phototransistor treffen. Die dunkle Kunstharzschicht dient dazu, das normale Tageslicht herauszufiltern, damit der Sensor nicht schon durch das normale Tageslicht ausgelöst wird, das ebenfalls Infrarotstrahlen enthält.
+
+Durch den Stromfluss entsteht eine Spannung, die am Arduino registriert werden kann. Dabei gibt es zwei Möglichkeiten:
+
+- Am `A0`-Pin des Moduls kann die Spannung direkt als analoges Signal gemessen werden.
+- Am `D0`-Pin des Moduls wird ein digitales Signal ausgegeben. Ab einer bestimmten Stärke der reflektierten Strahlen ist das Signal am `D0`-Pin HIGH, sonst LOW. Die Grenze wird über das Trimmpotentiometer auf dem Modul eingestellt.
+
+In der Regel wird man nur eines dieser Signale benötigen. Im folgenden Schaltplan ist der Vollständigkeit halber trotzdem der Anschluss beider Pins gezeigt.
+
+![schaltplan-tcrt5000](schaltplan-tcrt5000.png?lightbox=1024&resize=700&classes=caption "Schaltplan zum Anschluss des Sensors TCRT5000 am Arduino.")
+
+
 
 ### Temperatur- und Luftfeuchtigkeitssensor DHT-11
 
