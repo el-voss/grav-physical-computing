@@ -260,6 +260,15 @@ Der TCRT5000 ist im Open Roberta Lab nicht vorkonfiguriert. Daher muss man ihn -
 </div>
 </div>
 
+<div markdown="1" class="aufgabe">
+#### Farberkennung
+
+Um herauszufinden, wie man mit Hilfe des Sensors unterschiedliche Farben erkennen kann, sollen die Analogwerte zu unterschiedlichen Farben dokumentiert werden.
+
+
+
+</div>
+
 
 
 
