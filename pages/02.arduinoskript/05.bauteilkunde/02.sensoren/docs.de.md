@@ -266,7 +266,7 @@ Der TCRT5000 ist im Open Roberta Lab nicht vorkonfiguriert. Daher muss man ihn -
 Um herauszufinden, wie man mit Hilfe des Sensors unterschiedliche Farben erkennen kann, sollen die Analogwerte zu unterschiedlichen Farben dokumentiert werden.
 
 1. Skizziere einen Versuchsaufbau und notiere den Abstand des Sensors zum farbigen Gegenstand. Begründe, dass der Sensor dabei immer den gleichen Abstand zum farbigen Gegenstand haben muss.
-
+2. Schließe den Sensor an und erstelle ein kleines Programm zum Auslesen des Analogwertes.
 </div>
 
 ### Temperatur- und Luftfeuchtigkeitssensor DHT-11
