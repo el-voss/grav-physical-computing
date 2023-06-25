@@ -252,11 +252,11 @@ Der TCRT5000 ist im Open Roberta Lab nicht vorkonfiguriert. Daher muss man ihn -
 <div class="flex-box">
 <div markdown="1">
 ![konfiguration-tcrt5000-digital](konfiguration-tcrt5000-digital.png?resize=300 "konfiguration-tcrt5000-digital")
-![tcrt5000-digital-auslesen](tcrt5000-digital-auslesen.png?resize=300&classes=caption "Konfiguration des TCRT5000 als digitaler Sensor an Pin 3 und Abfrage des Status im Programm.")
+![tcrt5000-digital-auslesen](tcrt5000-digital-auslesen.png?resize=500&classes=caption "Konfiguration des TCRT5000 als digitaler Sensor an Pin 3 und Abfrage des Status im Programm.")
 </div>
 <div markdown="1">
 ![konfiguration-tcrt5000-analog](konfiguration-tcrt5000-analog.png?resize=300 "konfiguration-tcrt5000-analog")
-![tcrt5000-auslesen-analog](tcrt5000-auslesen-analog.png?resize=300&classes=caption "Konfiguration des TCRT5000 als analoger Sensor an A0 und Auslesen des Wertes im Programm.")
+![tcrt5000-auslesen-analog](tcrt5000-auslesen-analog.png?resize=500&classes=caption "Konfiguration des TCRT5000 als analoger Sensor an A0 und Auslesen des Wertes im Programm.")
 </div>
 </div>
 
