@@ -1,7 +1,7 @@
 ---
 title: Sensoren
 menu: '[S] Sensoren'
-media_order: 'ultraschallsensor-konfiguration.png,konfiguration-beschleunigungssensor.png,neigungsschalter-konfiguration.png,bewegungsmelder-vorkonfiguriert.png,bewegungsmelder-digital-konfiguriert.png,joystick-vorkonfiguriert.png,joystick-konfiguration.png,infrarot-sensoren.jpg,schaltplan-tcrt5000.png'
+media_order: 'ultraschallsensor-konfiguration.png,konfiguration-beschleunigungssensor.png,neigungsschalter-konfiguration.png,bewegungsmelder-vorkonfiguriert.png,bewegungsmelder-digital-konfiguriert.png,joystick-vorkonfiguriert.png,joystick-konfiguration.png,infrarot-sensoren.jpg,schaltplan-tcrt5000.png,konfiguration-tcrt5000-analog.png,konfiguration-tcrt5000-digital.png,tcrt5000-auslesen-analog.png,tcrt5000-digital-auslesen.png'
 ---
 
 # Baulteilkunde Teil 2: Sensoren
@@ -245,7 +245,22 @@ Durch den Stromfluss entsteht eine Spannung, die am Arduino registriert werden k
 
 In der Regel wird man nur eines dieser Signale benötigen. Im folgenden Schaltplan ist der Vollständigkeit halber trotzdem der Anschluss beider Pins gezeigt.
 
-![schaltplan-tcrt5000](schaltplan-tcrt5000.png?lightbox=1024&resize=700&classes=caption "Schaltplan zum Anschluss des Sensors TCRT5000 am Arduino.")
+![schaltplan-tcrt5000](schaltplan-tcrt5000.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum Anschluss des Sensors TCRT5000 am Arduino.")
+
+Der TCRT5000 ist im Open Roberta Lab nicht vorkonfiguriert. Daher muss man ihn -je nach gewähltem Anschluss- als digitalen oder analogen Sensor konfigurieren. Natürlich kann man auch beides gleichzeitig nutzen, wenn nötig.
+
+<div class="flex-box">
+<div markdown="1">
+![konfiguration-tcrt5000-digital](konfiguration-tcrt5000-digital.png?resize=300 "konfiguration-tcrt5000-digital")
+![tcrt5000-digital-auslesen](tcrt5000-digital-auslesen.png?resize=300&classes=caption "Konfiguration des TCRT5000 als digitaler Sensor an Pin 3 und Abfrage des Status im Programm.")
+</div>
+<div markdown="1">
+![konfiguration-tcrt5000-analog](konfiguration-tcrt5000-analog.png?resize=300 "konfiguration-tcrt5000-analog")
+![tcrt5000-auslesen-analog](tcrt5000-auslesen-analog.png?resize=300&classes=caption "Konfiguration des TCRT5000 als analoger Sensor an A0 und Auslesen des Wertes im Programm.")
+</div>
+</div>
+
+
 
 
 
