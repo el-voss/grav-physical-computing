@@ -260,14 +260,13 @@ Der TCRT5000 ist im Open Roberta Lab nicht vorkonfiguriert. Daher muss man ihn -
 </div>
 </div>
 
-<div class="aufgabe">
-    <h4>Farberkennung</h4>
-    <p>Um herauszufinden, wie man mit Hilfe des Sensors unterschiedliche Farben erkennen kann, sollen die Analogwerte zu unterschiedlichen Farben dokumentiert werden.</p>
-    <p>
-       <ol>
-            <li>Skizziere einen Versuchsaufbau und notiere den Abstand des Sensors zum farbigen Gegenstand. Begründe, dass der Sensor dabei immer den gleichen Abstand zum farbigen Gegenstand haben muss.</li>
-       </ol>
-    </p>
+<div markdown="1" class="aufgabe">
+#### Farberkennung
+
+Um herauszufinden, wie man mit Hilfe des Sensors unterschiedliche Farben erkennen kann, sollen die Analogwerte zu unterschiedlichen Farben dokumentiert werden.
+
+1. Skizziere einen Versuchsaufbau und notiere den Abstand des Sensors zum farbigen Gegenstand. Begründe, dass der Sensor dabei immer den gleichen Abstand zum farbigen Gegenstand haben muss.
+
 </div>
 
 ### Temperatur- und Luftfeuchtigkeitssensor DHT-11
