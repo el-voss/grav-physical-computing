@@ -269,7 +269,13 @@ Um herauszufinden, wie man mit Hilfe des Sensors unterschiedliche Farben erkenne
 
 </div>
 
+<div markdown="1" class="aufgabe">
+#### Abstandsmessung
 
+Laut [Datenblatt des TCRT5000](https://www.mouser.de/datasheet/2/427/tcrt5000-240273.pdf) lassen sich mit ihm kurze Entfernungen bis zu 15mm messen. Dies soll im Folgenden untersucht werden.
+
+
+</div>
 
 
 
