@@ -5,11 +5,11 @@ title: Servo
 ### Servo
 
 <div markdown="1" class="clearfix">
-![Servo-Motor](/images/servo.png?resize=250&classes=caption,figure-right "Servo.")
+![Servo-Motor](servo.png?resize=250&classes=caption,figure-right "Servo.")
 Ein Servo ist in der Regel ein kleiner Elektromotor zusammen mit einer elektronischen Steuereinheit, die dazu dient, den Motor auf einen bestimmten Winkel einzustellen. Häufig wird beides zusammen als Servomotor bezeichnet. Angewendet werden Servos in vielen Bereichen - zum Beispiel im Modellbau.
 </div>
 
-![Verschaltung eines Servo am Arduino.](/circuits/schaltplan-servo.png?lightbox=1024&resize=500&classes=caption "Verschaltung eines Servo am Arduino.")
+![Verschaltung eines Servo am Arduino.](schaltplan-servo.png?lightbox=1024&resize=500&classes=caption "Verschaltung eines Servo am Arduino.")
 
 Der Servo wird mit drei Anschlüssen an den Arduino angeschlossen:
 
@@ -22,7 +22,7 @@ Der Servo wird mit drei Anschlüssen an den Arduino angeschlossen:
 
 Baue mit einem Servo eine Schranke, die auf Knopfdruck geöffnet und wieder geschlossen werden kann.
 
-![Die Servo-Steuerung erfolgt über Angabe eines Winkels zwischen 0° und 180°.](/images/servo-steuerung.png?classes=caption "Die Servo-Steuerung erfolgt über Angabe eines Winkels zwischen 0° und 180°.")
+![Die Servo-Steuerung erfolgt über Angabe eines Winkels zwischen 0° und 180°.](servo-steuerung.png?classes=caption "Die Servo-Steuerung erfolgt über Angabe eines Winkels zwischen 0° und 180°.")
 </div>
 
 ! **Recherche: Wie funktioniert die Steuerung eines Servos?**
