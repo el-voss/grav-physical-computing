@@ -16,7 +16,7 @@ Um ein LC-Display anzusteuern, werden ziemlich viele Kabel benötigt. Daher gibt
 Im Schaltplan sind die Kabel so mit dem Arduino verbunden, wie es die Standardkonfiguration für das LCD 1602 in Nepo angibt. Es empfiehlt sich, die zahlreichen 5V- und GND-Anschlüsse auf den Längsseiten des Steckbretts zu sammeln.
 
 <div class="flex-box">
-<div markdown="1" class="flexible">![Schaltplan zum LC-Display ohne I2C-Modul.](/circuits/schaltplan-lcd-ohne-i2c.png?lightbox=1024&resize=600&classes=caption "Schaltplan zum LC-Display ohne I2C-Modul.")</div>
+<div markdown="1" class="flexible">![Schaltplan zum LC-Display ohne I2C-Modul.](schaltplan-lcd-ohne-i2c.png?lightbox=1024&resize=600&classes=caption "Schaltplan zum LC-Display ohne I2C-Modul.")</div>
 <div markdown="1" class="flexible">
 | **LCD** |    **Arduino**     |
 | :-----: | :----------------: |
