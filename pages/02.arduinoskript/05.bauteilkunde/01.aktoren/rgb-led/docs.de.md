@@ -5,13 +5,13 @@ title: RGB-LED
 ### RGB-LED
 
 <div markdown="1" class="clearfix">
-![RGB-LED](/images/rgb-led.jpg?resize=250&classes=caption,figure-right "RGB-LED.")
+![RGB-LED](rgb-led.jpg?resize=250&classes=caption,figure-right "RGB-LED.")
 Mit einer RGB-LED können die verschiedensten Farben erzeugt werden, die zum Beispiel in Smartphones als Status-LED genutzt werden. Auch in Tastaturen im Gaming-Bereich werden gerne RGB-Farben zur Beleuchtung verwendet.
 
 RGB steht für Rot, Grün und Blau. In einer RGB-LED sind also drei LEDs gleichzeitig verbaut, die sich in unserem Fall eine gemeinsame Anode (Kontakt mit GND) teilen. Die Anode gehört zum längsten Beinchen. Die anderen Kontakte sollten an einen PWM-Pin (gekennzeichet durch eine Tilde: ~) angeschlossen werden.
 </div>
 
-![Verschaltung einer RGB-LED am Arduino.](/circuits/schaltplan-rgb-led-am-arduino.png?lightbox=1024&resize=500&classes=caption "Verschaltung einer RGB-LED am Arduino.")
+![Verschaltung einer RGB-LED am Arduino.](schaltplan-rgb-led-am-arduino.png?lightbox=1024&resize=500&classes=caption "Verschaltung einer RGB-LED am Arduino.")
 
 
 <div markdown="1" class="aufgabe">
@@ -23,12 +23,12 @@ Schließe die RGB-LED wie beschrieben an und experimentiere mit den Befehlen fü
 
 | Farbe | Farbanteile |
 |---|---|
-| ![RGB rot](/images/rgb-rot.png)  | ![RGB rot Code](/images/rgb-rot-code.png)  |
-| ![RGB grün](/images/rgb-gruen.png)  |   |
-| ![RGB lila](/images/rgb-lila.png)  |   |
-| ![RGB orange](/images/rgb-orange.png)  |   |
-| ![RGB blau](/images/rgb-blau.png)  |   |
-| ![RGB türkis](/images/rgb-weiss.png)  |   |
+| ![RGB rot](rgb-rot.png)  | ![RGB rot Code](rgb-rot-code.png)  |
+| ![RGB grün](rgb-gruen.png)  |   |
+| ![RGB lila](rgb-lila.png)  |   |
+| ![RGB orange](rgb-orange.png)  |   |
+| ![RGB blau](rgb-blau.png)  |   |
+| ![RGB türkis](rgb-weiss.png)  |   |
 </div>
 
 
