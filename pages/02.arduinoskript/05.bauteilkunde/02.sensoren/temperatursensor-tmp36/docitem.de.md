@@ -3,6 +3,7 @@ title: 'Temperatursensor TMP36'
 show_pageimage: true
 image_width: 300
 image_height: 300
+featured_image: tmp36.jpg
 ---
 
 Bei deinen Temperaturmessungen mit einem NTC oder dem DHT-11 (in dem auch ein NTC verbaut ist), hast du vielleicht festgestellt, dass die Bauteile nicht besonders genau arbeiten. Für professionellere Anwendungen benötigt man eine wesentlich höhere Genauigkeit. Hier kann der TMP36 helfen: Er hat eine Genauigkeit von $\pm 1 \, °C$ und kann Temperaturen in einem Bereich von $-40 \, °C$ bis $125 \, °C$ zuverlässig messen. Die Messung der Temperatur erfolgt über die Messung einer temperaturabhängigen Spannung. Bei $0 \, °C$ beträgt die Spannung $500 \, mV$ (ein sogenannter *Offset*).
