@@ -3,6 +3,7 @@ title: 'Temperatur- und Luftfeuchtigkeitssensor DHT-11'
 show_pageimage: true
 image_width: 300
 image_height: 300
+featured_image: dht11.jpg
 ---
 
 <div markdown="1" class="clearfix">
