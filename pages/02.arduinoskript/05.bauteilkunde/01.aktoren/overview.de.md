@@ -6,8 +6,8 @@ content:
         - '@self.children'
     limit: 5
     order:
-        by: folder
-        dir: desc
+        by: title
+        dir: asc
     pagination: false
     url_taxonomy_filters: true
 ---
