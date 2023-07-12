@@ -5,7 +5,7 @@ media_order: 'ultraschallsensor-konfiguration.png,konfiguration-beschleunigungss
 content:
     items:
         - '@self.children'
-    limit: 5
+    limit: 30
     order:
         by: folder
         dir: asc
