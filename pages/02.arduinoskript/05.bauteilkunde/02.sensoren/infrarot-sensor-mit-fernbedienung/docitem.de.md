@@ -3,6 +3,7 @@ title: 'Infrarot-Sensor mit Fernbedienung'
 show_pageimage: true
 image_width: 300
 image_height: 300
+featured_image: ir-sensor-led-modul-gross.jpg
 ---
 
 Jeder weiß, wie angenehm es ist, wenn man ein Gerät fernsteuern kann statt aufstehen zu müssen, um die angebrachten Knöpfe zu drücken. Eine einfache Möglichkeit dafür bietet eine Infrarot(IR)-Fernbedienung.
