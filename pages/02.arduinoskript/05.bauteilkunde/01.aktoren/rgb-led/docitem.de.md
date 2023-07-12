@@ -6,8 +6,6 @@ image_width: 300
 image_height: 300
 ---
 
-### RGB-LED
-
 <div markdown="1" class="clearfix">
 ![RGB-LED](rgb-led.jpg?resize=250&classes=caption,figure-right "RGB-LED.")
 Mit einer RGB-LED können die verschiedensten Farben erzeugt werden, die zum Beispiel in Smartphones als Status-LED genutzt werden. Auch in Tastaturen im Gaming-Bereich werden gerne RGB-Farben zur Beleuchtung verwendet.
