@@ -41,4 +41,20 @@ Um herauszufinden, wie man mit Hilfe des Sensors unterschiedliche Farben erkenne
 
 1. Skizziere einen Versuchsaufbau und notiere den Abstand des Sensors zum farbigen Gegenstand. Begründe, dass der Sensor dabei immer den gleichen Abstand zum farbigen Gegenstand haben muss.
 2. Schließe den Sensor an und erstelle ein kleines Programm zum Auslesen des Analogwertes.
+3. Halte unterschiedliches farbiges Papier vor den Sensor und notiere den zugehörigen Analogwert. Welche Farben / Farbtöne lassen sich besonders gut erkennen und warum?
+4. Implementiere ein Programm, das die vorher untersuchten Farben unterscheiden kann.
+5. Untersuche die Abhängigkeit der Werte von der Umgebungshelligkeit (nutze deine Handytaschenlampe zum Erhellen oder deine Hände zum Verdunkeln!).
 </div>
+
+<div markdown="1" class="aufgabe">
+#### Abstandsmessung
+
+Laut [Datenblatt des TCRT5000](https://www.mouser.de/datasheet/2/427/tcrt5000-240273.pdf) lassen sich mit ihm kurze Entfernungen bis zu 15mm messen. Dies soll im Folgenden untersucht werden.
+
+1. Skizziere einen Versuchsaufbau und notiere die Farbe des Gegenstands, dessen Abstand gemessen werden soll. Begründe, dass die Untersuchung zur Abstandsmessung nur für Gegenstände mit derselben Farbe gilt.
+2. Schließe den Sensor an und erstelle ein kleines Programm zum Auslesen des Analogwertes.
+3. Halte den Gegenstand in unterschiedlichen Abständen vor den Sensor und notiere den zugehörigen Analogwert. Ermittle (z. B. per Regression) einen funktionalen Zusammenhang zwischen Analogwert und Abstand.
+4. Implementiere ein Programm, das aus dem Analogwert automatisch den Abstand berechnet.
+5. Untersuche die Abhängigkeit der Werte von der Umgebungshelligkeit (nutze deine Handytaschenlampe zum Erhellen oder deine Hände zum Verdunkeln!).
+</div>
+
