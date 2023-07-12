@@ -1,6 +1,6 @@
 ---
 title: 'Oled Display SSD1306'
-featured_image: ssd1306-oled.jpg
+featured_image: oled-hallowelt.png
 show_pageimage: true
 image_width: 1000
 image_height: 300
