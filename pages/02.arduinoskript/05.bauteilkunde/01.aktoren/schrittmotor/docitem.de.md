@@ -6,8 +6,6 @@ image_width: 300
 image_height: 300
 ---
 
-### Schrittmotor
-
 <div markdown="1" class="clearfix">
 ![Schrittmotor mit Motortreiber ULN2003.](schrittmotor.jpg?resize=250&classes=caption,figure-right "Schrittmotor mit Motortreiber ULN2003.")
 Während ein Servo darauf ausgelegt ist, einen Winkel möglichst präzise anzusteuern, dient ein Schrittmotor dazu, möglichst präzise Drehungen zu realisieren. Damit können zum Beispiel 3D-Drucker oder Roboterarme, aber auch DVD-Laufwerke sehr genau gesteuert werden.
