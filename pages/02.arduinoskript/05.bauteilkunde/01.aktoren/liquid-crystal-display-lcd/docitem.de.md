@@ -1,6 +1,6 @@
 ---
 title: 'Liquid Crystal Display (LCD)'
-featured_image: lcd-im-parkhaus-v2.png
+featured_image: lcd-im-parkhaus.jpg
 show_pageimage: true
 image_width: 1000
 image_height: 300
