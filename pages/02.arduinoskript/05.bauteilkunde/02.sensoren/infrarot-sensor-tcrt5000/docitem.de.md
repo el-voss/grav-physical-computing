@@ -3,6 +3,7 @@ title: 'Infrarot-Sensor TCRT5000'
 show_pageimage: true
 image_width: 300
 image_height: 300
+featured_image: infrarot-sensoren.jpg
 ---
 
 Der Infrarot-Sensor TCRT5000 sendet Infrarotstrahlen aus und registriert die reflektierten Infrarotstrahlen aus der Umgebung. Dadurch können kurze Distanzen gemessen oder Farben erkannt werden. Zu seinen weiteren Einsatzzwecken gehört die Linienverfolgung bei Robotern und der Einsatz als Lichtschranke - so lässt sich bei Seifenspendern erkennen, ob eine Hand nah am Sensor ist und in 3D-Druckern lässt sich erkennen, ob noch Filament vorhanden ist oder nichts mehr nachkommt.
