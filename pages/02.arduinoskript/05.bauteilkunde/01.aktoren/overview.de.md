@@ -4,7 +4,7 @@ menu: '[A] Aktoren'
 content:
     items:
         - '@self.children'
-    limit: 5
+    limit: 30
     order:
         by: title
         dir: asc
