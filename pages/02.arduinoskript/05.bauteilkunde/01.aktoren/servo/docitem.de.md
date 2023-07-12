@@ -7,8 +7,6 @@ image_width: 300
 image_height: 300
 ---
 
-### Servo
-
 <div markdown="1" class="clearfix">
 ![Servo-Motor](servo.png?resize=250&classes=caption,figure-right "Servo.")
 Ein Servo ist in der Regel ein kleiner Elektromotor zusammen mit einer elektronischen Steuereinheit, die dazu dient, den Motor auf einen bestimmten Winkel einzustellen. Häufig wird beides zusammen als Servomotor bezeichnet. Angewendet werden Servos in vielen Bereichen - zum Beispiel im Modellbau.
