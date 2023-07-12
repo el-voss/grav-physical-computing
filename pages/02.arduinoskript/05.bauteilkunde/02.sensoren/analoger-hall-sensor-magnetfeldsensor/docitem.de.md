@@ -3,6 +3,7 @@ title: 'Analoger Hall-Sensor (Magnetfeldsensor)'
 show_pageimage: true
 image_width: 300
 image_height: 300
+featured_image: hall-a3124-lua-t.jpg
 ---
 
 Mit einem analogen Hall-Sensor lässt sich die Stärke eines Magnetfeldes (verkürzt: eines Magneten) messen. Solche Messungen werden zum Beispiel bei der Pipeline-Inspektion genutzt, um Risse in einer Pipeline zu finden und ihre Größe abzuschätzen. Dabei wird die Pipeline durch sehr starke Magnete magnetisiert. Wenn Risse vorhanden sind, kommt es jedoch zu Änderungen bei der Magnetisierung. Diese können durch die Hall-Sensoren erfasst und gemessen werden.
