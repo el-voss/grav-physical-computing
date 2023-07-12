@@ -3,6 +3,7 @@ title: Joystick
 show_pageimage: true
 image_width: 300
 image_height: 300
+featured_image: joystick.jpg
 ---
 
 Joysticks werden bekanntermaßen für Spielecontroller oder auch zur Steuerung von Maschinen genutzt. Mit dem Arduino lassen sich einfache Versionen davon nachbauen.
