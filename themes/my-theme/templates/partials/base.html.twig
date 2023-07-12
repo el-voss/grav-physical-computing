@@ -14,18 +14,18 @@
 
     {% block stylesheets %}
         {% do assets.addCss('theme://css-compiled/nucleus.css',103) %}
-	{% do assets.addCss('theme://css/includefonts.css',102) %}
+        {% do assets.addCss('theme://css/includefonts.css',102) %}
         {% do assets.addCss('theme://css-compiled/theme.css',101) %}
         {% do assets.addCss('theme://css/custom.css',100) %}
         {% do assets.addCss('theme://css/font-awesome.min.css',100) %}
         {% do assets.addCss('theme://css/featherlight.min.css') %}
-	{% do assets.addCss('theme://css/learn2-green.css') %}
-	{% do assets.addCss('theme://css/toggle-sidebar.css') %}
-	{% do assets.addCss('theme://css/youtube.css') %}
-	{% do assets.addCss('theme://css/toc.css') %}
-	{% do assets.addCss('theme://css/exercises.css') %}
-	{% do assets.addCss('theme://css/details.css') %}
-	{% do assets.addCss('theme://css/cookiesnotice.css') %}
+        {% do assets.addCss('theme://css/learn2-green.css') %}
+        {% do assets.addCss('theme://css/toggle-sidebar.css') %}
+        {% do assets.addCss('theme://css/youtube.css') %}
+        {% do assets.addCss('theme://css/toc.css') %}
+        {% do assets.addCss('theme://css/exercises.css') %}
+        {% do assets.addCss('theme://css/details.css') %}
+        {% do assets.addCss('theme://css/cookiesnotice.css') %}
 
         {% if browser.getBrowser == 'msie' and browser.getVersion >= 8 and browser.getVersion <= 9 %}
             {% do assets.addCss('theme://css/nucleus-ie9.css') %}
@@ -41,21 +41,21 @@
         {% do assets.addJs('theme://js/clipboard.min.js') %}
         {% do assets.addJs('theme://js/jquery.scrollbar.min.js') %}
         {% do assets.addJs('theme://js/learn.js') %}
-	{% do assets.addJs('theme://js/add-fullscreen-button.js', {
-	    group: 'bottom',
-	    type: 'module'
-	   })
-	%}
-	{% do assets.addJs('theme://js/toggle-fullscreen.js', {
-	    group: 'bottom',
-	    type: 'module'
-	   })
-	%}
-	{% do assets.addJs('theme://js/youtube-consent.js', {
-	    group: 'bottom',
-	    type: 'module'
-	   })
-	%}
+        {% do assets.addJs('theme://js/add-fullscreen-button.js', {
+            group: 'bottom',
+            type: 'module'
+        })
+        %}
+        {% do assets.addJs('theme://js/toggle-fullscreen.js', {
+            group: 'bottom',
+            type: 'module'
+        })
+        %}
+        {% do assets.addJs('theme://js/youtube-consent.js', {
+            group: 'bottom',
+            type: 'module'
+        })
+        %}
     {% endblock %}
 
     {% block assets deferred %}
@@ -85,33 +85,34 @@
         <div class="padding highlightable">
             
 
-            {% block topbar %}{% if  github_link_position == 'top' or config.plugins.breadcrumbs.enabled %}
-            <div id="top-bar">
-		<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-2x fa-bars"></i></a>
-						
-                {% if  github_link_position == 'top' %}
-                <div id="top-github-link">
-                {% include 'partials/github_link.html.twig' %}
-                </div>
-                {% endif %}
+            {% block topbar %}
+                {% if  github_link_position == 'top' or config.plugins.breadcrumbs.enabled %}
+                    <div id="top-bar">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-2x fa-bars"></i></a>
+                        {% if  github_link_position == 'top' %}
+                        <div id="top-github-link">
+                        {% include 'partials/github_link.html.twig' %}
+                        </div>
+                        {% endif %}
 
-                {% if config.plugins.breadcrumbs.enabled %}
-                {% include 'partials/breadcrumbs.html.twig' %}
+                        {% if config.plugins.breadcrumbs.enabled %}
+                        {% include 'partials/breadcrumbs.html.twig' %}
+                        {% endif %}
+                    </div>
                 {% endif %}
-            </div>
-            {% endif %}{% endblock %}
+            {% endblock %}
 
             {% block content %}{% endblock %}
 
             {% block footer %}
                 {% if  github_link_position == 'bottom' %}
-                {% include 'partials/github_note.html.twig' %}
+                    {% include 'partials/github_note.html.twig' %}
                 {% endif %}
                 {# Render the backtotop link #}
                 {% if config.plugins.backtotop.enabled %}
                      {% include 'partials/backtotop.html.twig' %}
                 {% endif %}
-		{{ cookiesnotice_markup|raw }}
+                {{ cookiesnotice_markup|raw }}
             {% endblock %}
 
         </div>

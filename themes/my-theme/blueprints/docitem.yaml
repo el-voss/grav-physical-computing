@@ -1,0 +1,106 @@
+title: Docs
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        content:
+          type: tab
+          fields:
+            header.options:
+              type: columns
+              ordering@: header.title
+              fields:
+                header.content:
+                  type: column
+                  fields:
+                    header.subtitle:
+                      type: text
+                      style: vertical
+                      label: Subtitle
+                    image_section:
+                      type: section
+                      underline: true
+                      title: Image Options
+                    header.show_pageimage:
+                      type: toggle
+                      style: vertical
+                      label: Show Image
+                      help: Get Help
+                      default: 1
+                      highlight: 1
+                      options:
+                        1: PLUGIN_ADMIN.ENABLED
+                        0: PLUGIN_ADMIN.DISABLED
+                      validate:
+                        type: bool
+                    header.featured_image:
+                      ordering@: header.subtitle
+                      style: vertical
+                      size: medium
+                      type: pagemediaselect
+                      label: Featured Image Label
+                      help: Featured Image help
+                      preview_images: true
+                    header.image_width:
+                        type: number
+                        style: vertical
+                        label: Width
+                        size: small
+                        default: 1000
+                    header.image_height:
+                      type: number
+                      style: vertical
+                      label: Height
+                      size: small
+                      default: 300
+        blog-item:
+          type: tab
+          title: Doc Item
+          fields:
+
+            summary:
+              type: section
+              title: Summary Title
+              underline: true
+
+
+            header.summary.enabled:
+              type: toggle
+              toggleable: true
+              label: Summary enabled
+              highlight: 1
+              options:
+                1: Enabled
+                0: Disabled
+
+            header.summary.format:
+              type: select
+              toggleable: true
+              label: Summary format
+              classes: fancy
+              options:
+                'short': Use the first occurence of delimter or size
+                'long': Summary delimiter will be ignored
+
+            header.summary.size:
+              type: text
+              toggleable: true
+              label: Size
+              classes: large
+              placeholder: 300
+              validate:
+                type: int
+                min: 1
+
+            header.summary.delimiter:
+              type: text
+              toggleable: true
+              label: Delimiter
+              classes: large
+              placeholder: ===

@@ -1,0 +1,44 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set collection = page.collection() %}
+{# {% set parent = page %} #}
+{% set show_image = header_var('show_pageimage')|defined(true) %}
+{% set image = page.media[header.featured_image] ?: page.media.images|first %}
+{% set img_width = header_var('image_width')|default(1000) %}
+{% set img_height = header_var('image_height')|default(300) %}
+{% set title = page.title|raw %}
+
+{# Set page title by taxonomy #}
+{% if uri.param('category') %}
+	{% set listing_title = 'Artikel in der Kategorie: '|t ~ uri.param('category') %}
+{% elseif uri.param('tag') %}
+	{% set listing_title = 'Artikel mit dem Schlagwort: '|t ~ uri.param('tag') %}
+{% elseif uri.param('author') %}
+	{% set listing_title = 'Artikel vom Autor: '|t ~ uri.param('author') %}
+{% elseif uri.param('archives_month') %}
+    {% set listing_title = 'Artikel aus dem Monat: '|t ~ uri.param('archives_month')|replace({'_': ' '}) %}
+{% else %}
+    {% set listing_title = page.header.subtitle|raw %}
+{% endif %}
+
+{% block content %}
+
+    <header class="main">
+        {% if show_image and image %}
+	    <span class="image main">
+		{{ image.cropZoom(img_width, img_height).loading('lazy').html(title,title,'')|raw }}
+	    </span>
+	{% endif %}
+        <h1>{{page.title|raw}}</h1>
+        {% if listing_title %}<p>{{ listing_title|raw }}</p>{% endif %}
+    </header>
+    <div>
+    {{ page.content|raw }}
+    </div>
+    <div class="posts">
+        {% for child in collection %}
+            {% include 'partials/blog-list-item.html.twig' with {parent: page, page: child} %}
+        {% endfor %}
+    </div>
+
+{% endblock %}
