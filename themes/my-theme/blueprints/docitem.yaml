@@ -52,7 +52,7 @@ form:
                         style: vertical
                         label: Width
                         size: small
-                        default: 1000
+                        default: 300
                     header.image_height:
                       type: number
                       style: vertical
