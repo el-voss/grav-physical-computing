@@ -58,8 +58,8 @@ form:
                       style: vertical
                       label: Height
                       size: small
-                      default: 300
-        blog-item:
+                      default: 400
+        doc-item:
           type: tab
           title: Doc Item
           fields:

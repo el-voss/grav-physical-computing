@@ -227,6 +227,7 @@ h2, h3 {
 .posts article h3 {
   margin-top: 0.3em;
   margin-bottom: 0.3em;
+  font-size: 1.5rem;
 }
 .posts article p {
   margin-top: 0.5em;
