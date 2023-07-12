@@ -3,6 +3,7 @@ title: Ultraschallsensor
 show_pageimage: true
 image_width: 300
 image_height: 300
+featured_image: ultraschall-sensor-prinzip.png
 ---
 
 <div markdown="1" class="clearfix">
