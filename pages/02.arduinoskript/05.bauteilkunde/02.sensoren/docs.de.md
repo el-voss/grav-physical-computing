@@ -24,7 +24,7 @@ Im Folgenden werden Sensoren erklärt, also Bauteile, die aus einer physikalisch
 ### Neigungsschalter
 
 <div markdown="1" class="clearfix">
-![Neigungsschalter.](/images/neigungsschalter.png?resize=250&classes=caption,figure-right "Neigungsschalter.")
+![Neigungsschalter.](neigungsschalter.png?resize=250&classes=caption,figure-right "Neigungsschalter.")
 Mit sogenannten Neigungsschaltern (engl. *tilt switch*) lässt sich eine Neigung, aber auch eine Erschütterung oder der Beginn einer Beschleunigung messen. So lässt sich zum Beispiel feststellen, ob ein Gegenstand angehoben wird.
 </div>
 
@@ -33,21 +33,21 @@ Mit sogenannten Neigungsschaltern (engl. *tilt switch*) lässt sich eine Neigung
 
 Die Abbildungen unten zeigen den Aufbau eines Neigungsschalters im geschlossenen und geöffneten Fall. Beschreibe den Aufbau des Schalters und erkläre, wie es in Abhängigkeit der Neigung des Neigungsschalters zum Leuchten der LED im abgebildeten Schaltkreis kommt. Handelt es sich um einen digitalen oder analogen Sensor?
 <div class="flex-box">
-<div markdown="1"> ![Neigungsschalter (geöffnet).](/images/neigungsschalter-offen.png?resize=300&classes=caption "Neigungsschalter (geöffnet).")</div>
-<div markdown="1"> ![Neigungsschalter (geschlossen).](/images/neigungsschalter-geschlossen.png?resize=300&classes=caption "Neigungsschalter (geschlossen).")</div>
-<div markdown="1">![Einfacher Aufbau zum Test eines Neigungsschalters ohne Arduino.](/circuits/neigungsschalter-einfach.png?resize=300&classes=caption "Einfacher Aufbau zum Test eines Neigungsschalters ohne Arduino.")</div>
+<div markdown="1"> ![Neigungsschalter (geöffnet).](neigungsschalter-offen.png?resize=300&classes=caption "Neigungsschalter (geöffnet).")</div>
+<div markdown="1"> ![Neigungsschalter (geschlossen).](neigungsschalter-geschlossen.png?resize=300&classes=caption "Neigungsschalter (geschlossen).")</div>
+<div markdown="1">![Einfacher Aufbau zum Test eines Neigungsschalters ohne Arduino.](neigungsschalter-einfach.png?resize=300&classes=caption "Einfacher Aufbau zum Test eines Neigungsschalters ohne Arduino.")</div>
 </div>
 </div>
 
 *Schaltplan:* Wenn der Neigungsschalter wie unten abgebildet am Arduino angeschlossen wird, kann sein Zustand in Digitalpin 3 ausgelesen werden (vgl. das [Auslesen von Tastern](../../bausteine-algorithmen/entscheidungen-und-serieller-monitor#taster)).
 
-![Neigungsschalter am Arduino.](/circuits/neigungsschalter-mit-arduino.png?lightbox=1024&resize=500&classes=caption "Neigungsschalter am Arduino.")
+![Neigungsschalter am Arduino.](neigungsschalter-mit-arduino.png?lightbox=1024&resize=500&classes=caption "Neigungsschalter am Arduino.")
 
 *Programmierung:* Der Neigungsschalter ist in Nepo nicht vorkonfiguriert, aber dies ist auch gar nicht nötig. Er lässt sich als digitaler Sensor konfigurieren. Der Rückgabewert eines digitalen Sensors ist in Nepo vom Typ *Zahl* statt vom Typ *Wahrheitswert*. Dabei bedeutet die Zahl `0` so viel wie `false` und die Zahl `1` bedeutet `true`.
 
 <div class="flex-box">
 <div markdown="1">![neigungsschalter-konfiguration](neigungsschalter-konfiguration.png?classes=caption "Konfiguration des Neigungsschalter als digitaler Sensor an Pin 3.") </div>
-<div markdown="1"> ![Digitalen Sensor auslesen.](/images/digitalen-sensor-auslesen.png?classes=caption "Auslesen eines digitalen Sensors in Nepo.")</div>
+<div markdown="1"> ![Digitalen Sensor auslesen.](digitalen-sensor-auslesen.png?classes=caption "Auslesen eines digitalen Sensors in Nepo.")</div>
 </div>
     
 <div markdown="1" class="projekt">
@@ -69,20 +69,20 @@ Der mittlere `OUT`-Pin ist der Signal-Pin: Wenn eine Bewegung registriert wurde,
 Hinten befinden sich zwei Drehregler (“Potentiometer”), mit denen sich die Dauer des Bewegungssignals (links) und die Empfindlichkeit (rechts) einstellen lassen. Zusätzlich befindet sich auf der rechten Seite ein sogenannter Jumper, mit dem auf einfache Weise eine Steckverbindung zwischen benachbarten Pins hergestellt werden kann. Wenn sich der Jumper ganz außen befindet, dann bleibt das Bewegungssignal nach dem Erkennen einer Bewegung eine Weile aktiv und wird dann auf jeden Fall deaktiviert. Eine neue Bewegung kann erst nach einer gewissen Zeit wieder registriert werden. Wenn der Jumper hingegen leicht nach innen versetzt ist, bleibt das Bewegungssignal so lange erhalten, wie eine Bewegung erkannt wird (siehe [Funduino](https://funduino.de/nr-8-bewegungsmelder)).
 
 <div markdown="1" class="flex-box">
-<div markdown="1"> ![Bewegungsmelder mit Linse.](/images/bewegungsmelder.jpg?resize=200&classes=caption "Bewegungsmelder mit Linse.")</div>
-<div markdown="1"> ![Pinbelegung.](/images/bewegungsmelder-ohne-linse.jpg?resize=200&classes=caption "Pinbelegung.")</div>
-<div markdown="1"> ![Drehregler für Signaldauer (links) und Empfindlichkeit (rechts).](/images/bewegungsmelder-hinten.jpg?resize=200&classes=caption "Drehregler für die Signaldauer (links) und Empfindlichkeit (rechts).")</div>
+<div markdown="1"> ![Bewegungsmelder mit Linse.](bewegungsmelder.jpg?resize=200&classes=caption "Bewegungsmelder mit Linse.")</div>
+<div markdown="1"> ![Pinbelegung.](bewegungsmelder-ohne-linse.jpg?resize=200&classes=caption "Pinbelegung.")</div>
+<div markdown="1"> ![Drehregler für Signaldauer (links) und Empfindlichkeit (rechts).](bewegungsmelder-hinten.jpg?resize=200&classes=caption "Drehregler für die Signaldauer (links) und Empfindlichkeit (rechts).")</div>
 </div>
 
 *Programmierung:* Der Bewegungsmelder ist in Nepo bereits vorkonfiguriert und lässt sich damit einfach auslesen. Aufgrund der Ausgabe von `HIGH` und `LOW` bzw. `true` und `false` lässt er sich aber auch als digitaler Sensor konfigurieren. Der Rückgabewert eines digitalen Sensors ist in Nepo vom Typ *Zahl* statt vom Typ *Wahrheitswert*. Dabei bedeutet die Zahl `0` so viel wie `false` und die Zahl `1` bedeutet `true`.
 <div class="flex-box">
 <div markdown="1">
 ![bewegungsmelder-vorkonfiguriert](bewegungsmelder-vorkonfiguriert.png "Konfigurationsblock für einen Bewegungsmelder mit OUT an Pin 7.")
-![Vorkonfigurierten Bewegungsmelder auslesen.](/images/bewegungsmelder-auslesen.png?classes=caption "Vorkonfigurierten Bewegungsmelder auslesen.")
+![Vorkonfigurierten Bewegungsmelder auslesen.](bewegungsmelder-auslesen.png?classes=caption "Vorkonfigurierten Bewegungsmelder auslesen.")
 </div>
 <div markdown="1">
 ![bewegungsmelder-digital-konfiguriert](bewegungsmelder-digital-konfiguriert.png "Konfiguration des Bewegungsmelders als digitaler Sensor mit OUT an Pin 7.")
-![Bewegungsmelder als digitalen Sensor auslesen.](/images/digitalen-sensor-auslesen.png?classes=caption "Bewegungsmelder als digitalen Sensor auslesen.")
+![Bewegungsmelder als digitalen Sensor auslesen.](digitalen-sensor-auslesen.png?classes=caption "Bewegungsmelder als digitalen Sensor auslesen.")
 </div>
 </div>
 
@@ -98,15 +98,15 @@ Baue und programmiere eine automatische Tür, die sich öffnet, wenn eine Bewegu
 ### Drehregler / Potentiometer
 
 <div markdown="1" class="clearfix">
-![Potentiometer](/images/poti.jpg?resize=200&classes=caption,figure-right "Potentiometer.")
+![Potentiometer](poti.jpg?resize=200&classes=caption,figure-right "Potentiometer.")
 Ein Drehregler oder Potentiometer ist ein Widerstand, der in zwei Teile aufgeteilt wird. Durch Drehen am Griff kann man die Größe der Teile verändern, allerdings bleibt der Gesamtwiderstand immer gleich groß. Durch den einstellbaren Teilwiderstand lässt sich zum Beispiel eine Lampe dimmen oder die Lautstärke eines Lautsprechers regulieren.
 </div>
 
 Zum Anschluss an den Arduino wird der mittlere Pin mit einem analogen Eingang verbunden, über den die Spannung am Teilwiderstand zwischen GND und dem analogen Eingang abgefragt werden kann. Die anderen beiden Pins müssen mit 5V und GND verbunden werden, wobei es egal ist, welcher Pin mit GND und welcher mit 5V verbunden wird.
 
 <div class="flex-box">
-<div markdown="1" class="flexible">![Anschluss des Potentiometers an den Arduino.](/circuits/potentiometer-schaltplan.png?lightbox=1024&resize=400&classes=caption "Anschluss des Potentiometers an den Arduino.")</div>
-<div markdown="1" class="flexible">![Ersatzschaltplan für das Potentiometer.](/circuits/potentiometer-ersatzschaltplan.png?lightbox=1024&resize=400&classes=caption "Ersatzschaltplan für das Potentiometer.")</div>
+<div markdown="1" class="flexible">![Anschluss des Potentiometers an den Arduino.](potentiometer-schaltplan.png?lightbox=1024&resize=400&classes=caption "Anschluss des Potentiometers an den Arduino.")</div>
+<div markdown="1" class="flexible">![Ersatzschaltplan für das Potentiometer.](potentiometer-ersatzschaltplan.png?lightbox=1024&resize=400&classes=caption "Ersatzschaltplan für das Potentiometer.")</div>
 </div>
 
 Die Grundlagen des Potentiometers werden auch [im Kapitel Elektrische Grundlagen behandelt](../../elektrik/anwendungen-spannungsmessung#drehregler-verwenden).
@@ -115,18 +115,18 @@ Für das Potentiometer existiert ein vorkonfigurierter Block, über den man die 
 
 <div class="flex-box">
 <div markdown="1">
-![Konfiguration des Potentiometers](/images/poti-vorkonfiguriert.png)
-![Konfiguration und Auslesen des Potentiometers mit vorkonfigurierten Blöcken.](/images/poti-befehl-vorkonfiguriert.png?classes=caption "Konfiguration und Auslesen des Potentiometers mit vorkonfigurierten Blöcken.")
+![Konfiguration des Potentiometers](poti-vorkonfiguriert.png)
+![Konfiguration und Auslesen des Potentiometers mit vorkonfigurierten Blöcken.](poti-befehl-vorkonfiguriert.png?classes=caption "Konfiguration und Auslesen des Potentiometers mit vorkonfigurierten Blöcken.")
 </div>
 <div markdown="1">
-![Konfiguration des Potentiometers als analoger Sensor.](/images/poti-analoger-sensor.png)
-![Konfiguration und Auslesen des Potentiometers als analoger Sensor. Dabei werden die Analogwerte genauso wie bei den vorkonfigurierten Blöcken in eine Spannung umgerechnet.](/images/poti-befehl-analoger-sensor.png?classes=caption "Konfiguration und Auslesen des Potentiometers als analoger Sensor. Dabei werden die Analogwerte genauso wie bei den vorkonfigurierten Blöcken in eine Spannung umgerechnet.")
+![Konfiguration des Potentiometers als analoger Sensor.](poti-analoger-sensor.png)
+![Konfiguration und Auslesen des Potentiometers als analoger Sensor. Dabei werden die Analogwerte genauso wie bei den vorkonfigurierten Blöcken in eine Spannung umgerechnet.](poti-befehl-analoger-sensor.png?classes=caption "Konfiguration und Auslesen des Potentiometers als analoger Sensor. Dabei werden die Analogwerte genauso wie bei den vorkonfigurierten Blöcken in eine Spannung umgerechnet.")
 </div>
 </div>
 
 <div markdown="1" class="projekt clearfix">
 #### Dimmbare Lampe
-![PWM-Analog-Diagramm](/images/pwm-analog-diagramm.png?resize=300&classes=caption,figure-right "Diagramm zur Ermittlung einer Funktion.")
+![PWM-Analog-Diagramm](pwm-analog-diagramm.png?resize=300&classes=caption,figure-right "Diagramm zur Ermittlung einer Funktion.")
 Baue und programmiere eine Lampe, deren Helligkeit sich durch ein Potentiometer einstellen lässt.
 
 *Hinweis:* Du musst dafür sorgen, dass der eingelesene Analogwert zwischen 0 und 1023 in einen PWM-Wert zwischen 0 und 255 umgerechnet wird. Ermittle dazu eine passende Funktion.
@@ -137,13 +137,13 @@ Baue und programmiere eine Lampe, deren Helligkeit sich durch ein Potentiometer 
 Joysticks werden bekanntermaßen für Spielecontroller oder auch zur Steuerung von Maschinen genutzt. Mit dem Arduino lassen sich einfache Versionen davon nachbauen.
 
 <div markdown="1" class="clearfix">
-![Joystick.](/images/joystick.jpg?resize=250&classes=caption,figure-right "Joystick.")
+![Joystick.](joystick.jpg?resize=250&classes=caption,figure-right "Joystick.")
 Ein Joystick besteht im Wesentlichen aus zwei Potentiometern, die über einen gemeinsamen Hebel variiert werden können. Wie im Schaltbild zu sehen, teilen sich beide den 5V- und GND-Anschluss; der mittlere Anschluss muss natürlich jeweils einzeln ausgelesen werden. Zusätzlich wird durch Drücken des Joysticks ein angebrachter Taster gedrückt, dessen Status am SW-Pin ausgelesen werden kann (*sw von engl. “switch”*). Da das elektrische Potential am SW-Pin normalerweise schwankt, sollte ein *Pullup*-Widerstand mit $R=1 \, k\Omega$ angebracht werden (vgl. Schaltbild).
 </div>
 
 <div class="flex-box">
-<div markdown="1" class="flexible">![Anschluss des Joystick-Moduls an den Arduino.](/circuits/Schaltplan-Joystick.png?lightbox=1024&resize=500&classes=caption "Anschluss des Joystick-Moduls an den Arduino.")</div>
-<div markdown="1" class="flexible">![Ersatzschaltplan für das Joystick-Modul.](/circuits/Schaltplan-Joystick-Ersatz.png?lightbox=1024&resize=300&classes=caption "Ersatzschaltplan für das Joystick-Modul.")</div>
+<div markdown="1" class="flexible">![Anschluss des Joystick-Moduls an den Arduino.](Schaltplan-Joystick.png?lightbox=1024&resize=500&classes=caption "Anschluss des Joystick-Moduls an den Arduino.")</div>
+<div markdown="1" class="flexible">![Ersatzschaltplan für das Joystick-Modul.](Schaltplan-Joystick-Ersatz.png?lightbox=1024&resize=300&classes=caption "Ersatzschaltplan für das Joystick-Modul.")</div>
 </div>
 
 *Programmierung:* Das Joystick-Modul ist in Nepo nicht vorkonfiguriert. Die Bestandteile, also die zwei Potentiometer und der Taster, lassen sich aber einzeln konfigurieren. Dies geht wahlweise mit den vorkonfigurierten Potentiometer- und Taster-Blöcken oder als analoger und digitaler Sensor.
@@ -184,21 +184,21 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 
 Empfangen werden die Infrarotstrahlen von einem Infrarotsensor, der im Wesentlichen aus einer [Photodiode](https://de.wikipedia.org/wiki/Photodiode) besteht. Diese ist sehr ähnlich wie eine Leuchtdiode aufgebaut, allerdings funktioniert sie genau umgekehrt: Anhand eintreffender (infraroter) Lichtstrahlen wird ein Stromfluss ausgelöst, der dann registriert und weiter verarbeitet werden kann. Die Photodiode reagiert zwar am empfindlichsten auf infrarotes Licht bei einer Frequenz von $38 \, kHz$, allerdings auch (weniger stark) auf sichtbares Licht. Um dieses sichtbare Licht, insbesondere die Umgebungshelligkeit, wegzufiltern, befindet sich die Photodiode in einer schwarzen Kunstharzschicht.
 <div class="flex-box">
-<div markdown="1">![Infrarotsensor.](/images/ir-sensor.jpg?resize=300&classes=caption "Infrarotsensor.")</div>
-<div markdown="1">![Infrarotsensor-Modul.](/images/ir-sensor-led-modul.png?resize=300&classes=caption "Infrarotsensor-Modul.")</div>
+<div markdown="1">![Infrarotsensor.](ir-sensor.jpg?resize=300&classes=caption "Infrarotsensor.")</div>
+<div markdown="1">![Infrarotsensor-Modul.](ir-sensor-led-modul.png?resize=300&classes=caption "Infrarotsensor-Modul.")</div>
 </div>
 Häufig wird der Infrarotsensor zusammen mit einer LED und einem zugehörigen Vorwiderstand auf einer kleinen Platine ausgeliefert, damit das Empfangen eines Signals durch die LED angezeigt werden kann. Es sind aber auch Infrarotsensoren ohne weitere Anzeige im Umlauf.
 
 <div class="flex-box">
-<div markdown="1">![Schaltplan zum Anschluss eines Infrarotsensors am Arduino.](/circuits/schaltplan-ir-sensor.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum Anschluss eines Infrarotsensors am Arduino.")</div>
-<div markdown="1">![Schaltplan zum Anschluss eines Infrarotsensormoduls mit LED-Anzeige am Arduino.](/circuits/schaltplan-ir-sensor-modul.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum Anschluss eines Infrarotsensormoduls mit LED-Anzeige am Arduino.")</div>
+<div markdown="1">![Schaltplan zum Anschluss eines Infrarotsensors am Arduino.](schaltplan-ir-sensor.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum Anschluss eines Infrarotsensors am Arduino.")</div>
+<div markdown="1">![Schaltplan zum Anschluss eines Infrarotsensormoduls mit LED-Anzeige am Arduino.](schaltplan-ir-sensor-modul.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum Anschluss eines Infrarotsensormoduls mit LED-Anzeige am Arduino.")</div>
 </div>
 
 Der Anschluss an den Arduino ist einfach: GND und 5V dienen wie üblich der Stromversorgung. Der Signal-Pin S muss mit einem beliebigen PWM-Pin (mit $\sim$) verbunden werden. Die Pin-Belegung ist aber leider unterschiedlich; je nach dem, ob man ein Modul mit LED-Anzeige oder nur den Infrarotsensor anschließt.
 
 Nachdem der IR-Sensor mit dem Arduino verbunden und in Nepo konfiguriert wurde, können die empfangenen Werte in Nepo abgefragt werden. Die Abbildung unten zeigt ein einfaches Beispiel, wie mit den Tasten 0 und 1 auf einer Infrarot-Fernbedienung die Board-LED des Arduino an- und ausgestellt werden kann. Wenn die Taste mehrere Aktionen auslösen soll (wie die Ausgabe des Codes auf dem seriellen Monitor und das Anschalten der LED), dann muss der Wert in einer Variable gespeichert werden.
 
-![Einfaches Beispielprogramm zur Verwendung einer IR-Fernbedienung.](/images/ir-fernbedienung-auslesen.png?classes=caption "Einfaches Beispielprogramm zur Verwendung einer IR-Fernbedienung.")
+![Einfaches Beispielprogramm zur Verwendung einer IR-Fernbedienung.](ir-fernbedienung-auslesen.png?classes=caption "Einfaches Beispielprogramm zur Verwendung einer IR-Fernbedienung.")
 
 <div markdown="1" class="aufgabe">
 #### Codes kennen lernen
@@ -272,18 +272,18 @@ Um herauszufinden, wie man mit Hilfe des Sensors unterschiedliche Farben erkenne
 ### Temperatur- und Luftfeuchtigkeitssensor DHT-11
 
 <div markdown="1" class="clearfix">
-![DHT-11](/images/dht11.jpg?resize=250&classes=caption,figure-right "DHT-11.")
+![DHT-11](dht11.jpg?resize=250&classes=caption,figure-right "DHT-11.")
 Bei vielen Umweltmessungen interessiert nicht nur die Temperatur, sondern auch die Luftfeuchtigkeit. Der Sensor DHT-11 ist ein einfaches, kleines Bauteil, mit dem sich beides messen lässt.
 </div>
 
 Der DHT-11 verfügt über drei Pins - 5V und GND dienen der Stromversorgung, während das Signal zu den Messdaten über den Signalpin ausgegeben wird. Für die Temperaturmessung ist auf dem DHT-11 ein NTC verbaut.
 
-![Schaltplan zum DHT-11 am Arduino.](/circuits/Schaltplan-DHT11.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum DHT-11 am Arduino.")
+![Schaltplan zum DHT-11 am Arduino.](Schaltplan-DHT11.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum DHT-11 am Arduino.")
 
 Das Auslesen des Signalpins ist einfach, weil der DHT-11 in der Konfiguration bereits implementiert wurde, sodass man nur noch den Signalpin angeben muss. Das Signal wird dann automatisch analysiert und decodiert, um anhand der entsprechenden Befehle auf die übermittelte Temperatur bzw. Luftfeuchtigkeit zuzugreifen. Die Größe kann über das Drop-Down-Menü ausgewählt werden.
 
-![Temperatur auslesen](/images/dht-gibTemperatur.png)
-![Luftfeuchtigkeit auslesen](/images/dht-gibLuftfeuchtigkeit.png)
+![Temperatur auslesen](dht-gibTemperatur.png)
+![Luftfeuchtigkeit auslesen](dht-gibLuftfeuchtigkeit.png)
 
 <div markdown="1" class="projekt">
 #### Wetterstation
@@ -298,9 +298,9 @@ Baue eine kleine Wetterstation, die alle zehn Minuten Temperatur und Luftfeuchti
 Bei deinen Temperaturmessungen mit einem NTC oder dem DHT-11 (in dem auch ein NTC verbaut ist), hast du vielleicht festgestellt, dass die Bauteile nicht besonders genau arbeiten. Für professionellere Anwendungen benötigt man eine wesentlich höhere Genauigkeit. Hier kann der TMP36 helfen: Er hat eine Genauigkeit von $\pm 1 \, °C$ und kann Temperaturen in einem Bereich von $-40 \, °C$ bis $125 \, °C$ zuverlässig messen. Die Messung der Temperatur erfolgt über die Messung einer temperaturabhängigen Spannung. Bei $0 \, °C$ beträgt die Spannung $500 \, mV$ (ein sogenannter *Offset*).
 
 <div class="flex-box">
-<div markdown="1"> ![Temperatursensor TMP36.](/images/tmp36.jpg?resize=200&classes=caption "Temperatursensor TMP36.")
+<div markdown="1"> ![Temperatursensor TMP36.](tmp36.jpg?resize=200&classes=caption "Temperatursensor TMP36.")
 </div>
-<div markdown="1"> ![Pinbelegung des TMP35 (Blick auf die flache Seite).](/images/tmp36-pinbelegung.png?resize=200&classes=caption "Pinbelegung des TMP36 (Blick auf die flache Seite).")</div>
+<div markdown="1"> ![Pinbelegung des TMP35 (Blick auf die flache Seite).](tmp36-pinbelegung.png?resize=200&classes=caption "Pinbelegung des TMP36 (Blick auf die flache Seite).")</div>
 </div>
 
 !! **Achtung:** Es besteht Verwechslungsgefahr mit dem Transistor! Achte daher genau auf die Aufschrift!
@@ -314,8 +314,8 @@ Ein linearer Zusammenhang zwischen der gemessenen Größe (oft eine Spannung) un
 
 *Beachte: Jede Messung ist mit einem Fehler versehen!*
 <div class="flex-box">
-<div markdown="1">![Lineare Kennlinie](/images/u-t-lineare-kennlinie.png?classes=caption "Lineare Kennlinie.")</div>
-<div markdown="1">![Exponentielle Kennlinie](/images/u-t-exponentielle-kennlinie.png?classes=caption "Exponentielle Kennlinie.")</div>
+<div markdown="1">![Lineare Kennlinie](u-t-lineare-kennlinie.png?classes=caption "Lineare Kennlinie.")</div>
+<div markdown="1">![Exponentielle Kennlinie](u-t-exponentielle-kennlinie.png?classes=caption "Exponentielle Kennlinie.")</div>
 </div>
 </div>
 
@@ -333,8 +333,8 @@ Ein linearer Zusammenhang zwischen der gemessenen Größe (oft eine Spannung) un
 Mit einem Tropfensensor lässt sich die Feuchtigkeit auf dem Sensorblatt messen. Solche Sensoren werden zum Beispiel in Windschutzscheiben von Autos eingesetzt, um die Scheibenwischer und ihre Geschwindigkeit zu steuern. Feuchtigkeitssensoren funktionieren im Wesentlichen genauso, allerdings sind die Kontakte dabei so weit auseinander, dass durch Tropfen noch kein Stromfluss entsteht, sondern erst durch zum Beispiel die feuchte Erde eines Blumentopfes, der automatisch bewässert werden soll.
 
 <div class="flex-box">
-<div markdown="1">![Tropfensensor.](/images/tropfensensor.jpg?resize=300&classes=caption "Tropfensensor.")</div>
-<div markdown="1">![Feuchtigkeitssensor.](/images/feuchtigkeitssensor.jpg?resize=300&classes=caption "Feuchtigkeitssensor.")</div>
+<div markdown="1">![Tropfensensor.](tropfensensor.jpg?resize=300&classes=caption "Tropfensensor.")</div>
+<div markdown="1">![Feuchtigkeitssensor.](feuchtigkeitssensor.jpg?resize=300&classes=caption "Feuchtigkeitssensor.")</div>
 </div>
 
 Der Anschluss an den Arduino ist in beiden Fällen einfach: + an 5V, - an GND und der Signalpin S an einen analogen Eingang A[0-5]. Am Signalpin wird eine Spannung (als Analogwert im analogen Eingang) gemessen, die im trockenen Zustand bei $0 \, V$ (0) liegt und bis zu $5 \, V$ (1023) steigen kann.
@@ -349,8 +349,8 @@ Erkläre anhand des unten abgebildeten Schaltplans eines Tropfensensors, wie die
 *Tipp:* Zentral ist der Transistor J3Y, der mit seinen drei Kontakten auf dem Sensor gut erkennbar ist. Die Status-LED mit Vorwiderstand kann dagegen vernachlässigt werden.
 
 <div class="flex-box">
-<div markdown="1" class="flexible">![Schaltplan eines Tropfensensors.](/circuits/tropfensensor-ersatz.png?lightbox=1024&resize=500&classes=caption "(Ersatz-)Schaltplan für einen Tropfensensor.")</div>
-<div markdown="1" class="flexible">![Pinbelegung des Transistors J3Y auf dem Tropfen- und dem Feuchtigkeitssensor.](/images/j3y-pinbelegung.png?resize=150&classes=caption "Pinbelegung des Transistors J3Y.")</div>
+<div markdown="1" class="flexible">![Schaltplan eines Tropfensensors.](tropfensensor-ersatz.png?lightbox=1024&resize=500&classes=caption "(Ersatz-)Schaltplan für einen Tropfensensor.")</div>
+<div markdown="1" class="flexible">![Pinbelegung des Transistors J3Y auf dem Tropfen- und dem Feuchtigkeitssensor.](j3y-pinbelegung.png?resize=150&classes=caption "Pinbelegung des Transistors J3Y.")</div>
 </div>
 </div>
 
@@ -365,12 +365,12 @@ Baue einen Scheibenwischer, der automatisch startet, wenn Feuchtigkeit registrie
 ### Pulssensor
 
 <div markdown="1" class="clearfix">
-![Pulssensor.](/images/pulssensor.jpg?resize=250&classes=caption,figure-right "Rückseite eines Pulssensors.")
+![Pulssensor.](pulssensor.jpg?resize=250&classes=caption,figure-right "Rückseite eines Pulssensors.")
 Aktivitätstracker mit Pulsmessung liegen voll im Trend - aber wie funktioniert so ein Pulssensor eigentlich? Das lässt sich am einfachsten verstehen, wenn man selber einen nachbaut. Weitere Anwendungsmöglichkeiten wären übrigens Lügen-/Angstdetektoren, Schlafanalyse oder ein Alarmsystem für Risikopatienten.
 </div>
 Der Anschluss an den Arduino ist einfach: + an 5V, - an GND, der Signalpin S an einen analogen Eingang A[0-5]. Am Signalpin liegt eine Spannung an, die sich im Rhythmus des Herzschlags verändert und am analogen Eingang des Arduino gemessen werden kann. Dies lässt sich mit dem seriellen Plotter der Arduino IDE veranschaulichen (siehe Abbildung unten). Man erkennt, dass die gemessenen Analogwerte zwischen ca. 500 und ca. 535, also in einem relativ kleinen Bereich, schwanken (35 bzw. $0,171 \, V$).
 
-![Visualisierung von gemessenen Analogwerten zur Bestimmung des Pulses.](/images/pulsmessung-serieller-plotter.png?lightbox=1024&classes=caption "Visualisierung von gemessenen Analogwerten zur Bestimmung des Pulses.")
+![Visualisierung von gemessenen Analogwerten zur Bestimmung des Pulses.](pulsmessung-serieller-plotter.png?lightbox=1024&classes=caption "Visualisierung von gemessenen Analogwerten zur Bestimmung des Pulses.")
 
 Als Kriterium für einen Herzschlag könnte man festlegen, dass der Analogwert über 520 liegt. Diese Werte sind jedoch wenig stabil und schwanken je nach Person und Umgebung! Man sollte unbedingt darauf achten, dass die Haut nicht verschwitzt ist und keine Bauteile auf dem Sensor berührt werden (insbesondere auf der Rückseite), damit die Ergebnisse einigermaßen zuverlässig sind. Wenn sich auf dem Arm keine brauchbaren Werte einstellen, lohnt sich ein Versuch auf dem Ringfinger oder dem Ohrläppchen.
 
@@ -381,9 +381,9 @@ Der Pulssensor kann mit den vorkonfigurierten Blöcken von Nepo oder direkt als 
 
 Für die Messung des Pulses ist die grüne LED und ein Lichtsensor zentral. Erkläre anhand der schematischen Abbildungen unten das Prinzip der optischen Pulsmessung.
 <div class="flex-box">
-<div markdown="1">![Pulssensor-Funktionsprinzip 1](/images/pulssensor-prinzip1.png?lightbox=512)</div>
-<div markdown="1">![Pulssensor-Funktionsprinzip 2](/images/pulssensor-prinzip2.png?lightbox=512)</div>
-<div markdown="1">![Pulssensor-Funktionsprinzip 3](/images/pulssensor-prinzip3.png?lightbox=512)</div>
+<div markdown="1">![Pulssensor-Funktionsprinzip 1](pulssensor-prinzip1.png?lightbox=512)</div>
+<div markdown="1">![Pulssensor-Funktionsprinzip 2](pulssensor-prinzip2.png?lightbox=512)</div>
+<div markdown="1">![Pulssensor-Funktionsprinzip 3](pulssensor-prinzip3.png?lightbox=512)</div>
 </div>
 </div>
 
@@ -403,11 +403,11 @@ Baue einen Pulsmesser, der anhand der Messwerte von 10 Sekunden den Puls (Herzsc
 
 **2.** Öffne die Arduino IDE. Zuerst muss der Arduino verbunden werden. Wähle dazu in der oberen Leiste *Werkzeuge* > *Board: Arduino Uno* und wähle unter *Werkzeuge* > *Port* den Port aus, an dem der Arduino angegeben wird (siehe unten).
 
-![Verbinden eines Arduino mit der Arduino IDE](/images/arduino-ide-plotter-oeffnen.png)
+![Verbinden eines Arduino mit der Arduino IDE](arduino-ide-plotter-oeffnen.png)
 
 **3.** Öffne den Seriellen Plotter unter *Werkzeuge* > *Serieller Plotter*. Das Koordinatensystem wird automatisch an die vom Arduino übermittelten Werte angepasst. Falls keine Werte angezeigt werden, dann kontrolliere, ob die Baud-Rate (unten links) auf 9600 eingestellt ist.
 
-![Serieller Plotter der Arduino IDE.](/images/arduino-ide-plotter-baud.png?resize=600)
+![Serieller Plotter der Arduino IDE.](arduino-ide-plotter-baud.png?resize=600)
 
 </div>
 </details>
@@ -415,13 +415,13 @@ Baue einen Pulsmesser, der anhand der Messwerte von 10 Sekunden den Puls (Herzsc
 ### Ultraschallsensor
 
 <div markdown="1" class="clearfix">
-![Ultraschallsensor am Auto.](/images/ultraschallsensor-am-auto-qn.jpg?resize=250&rotate=90&classes=caption,figure-right "Ultraschallsensor am Auto.")
+![Ultraschallsensor am Auto.](ultraschallsensor-am-auto-qn.jpg?resize=250&rotate=90&classes=caption,figure-right "Ultraschallsensor am Auto.")
 Ultraschallsensoren ermöglichen die berührungslose Messung eines Abstands zwischen dem Sensor und dem nächstgelegenen Gegenstand. Dies macht sie zu einer interessanten Ausrüstung für Staubsaugerroboter, die nicht gegen die Wand fahren sollen, oder Einparkhilfen im Auto, die dem Fahrer anzeigen sollen, wie viel Platz er noch hat.
 </div>
 
 Die wichtigsten Bestandteile des Ultraschallsensors sind der “Transducer” (**T**) und der “Receiver” (**R**). Der Transducer ist praktisch ein Lautsprecher, der für uns nicht hörbare Schallwellen aussendet. Der Receiver entspricht einem Mikrofon für Schallwellen. Die Schallwellen werden also vom Transducer ausgesendet, an einem Hindernis reflektiert und vom Receiver empfangen.
 
-![Funktionsprinzip eines Ultraschallsensors.](/images/ultraschall-sensor-prinzip.png?classes=caption "Funktionsprinzip eines Ultraschallsensors.")
+![Funktionsprinzip eines Ultraschallsensors.](ultraschall-sensor-prinzip.png?classes=caption "Funktionsprinzip eines Ultraschallsensors.")
 
 Der Ultraschallsensor verfügt über vier Pins. GND und VCC (5 V) sind wie üblich zu belegen und dienen der Energieversorgung. Der Trigger-Pin dient dazu, einen Ultraschallpuls auszusenden - wird er für 10 Mikrosekunden auf ein HIGH-Potential gebracht, wird der Ultraschallpuls getriggert. Wenn dies geschieht, wird der Echo-Pin von der Elektronik des Sensors auf ein HIGH-Potential gebracht, das so lange anhält, bis der Receiver die reflektierte Schallwelle empfängt. Trigger-Pin und Echo-Pin können beide mit einem beliebigen Digitalpin am Arduino verbunden werden.
 
@@ -429,7 +429,7 @@ Die Zeit, die der Echo-Pin auf HIGH liegt, gibt also an, wie lange der Schall br
 
 <div class="flex-box">
 <div markdown="1">![ultraschallsensor-konfiguration](ultraschallsensor-konfiguration.png?classes=caption "Konfigurationsblock des Ultraschallsensors mit den Standardeinstellungen.")</div>
-<div markdown="1">![gib-Abstand-Befehl](/images/gibEntfernung.png?classes=caption "Programmblock zur Abfrage der Entfernung in Zentimetern.")</div>
+<div markdown="1">![gib-Abstand-Befehl](gibEntfernung.png?classes=caption "Programmblock zur Abfrage der Entfernung in Zentimetern.")</div>
 </div>
 
 <div markdown="1" class="projekt">
@@ -444,30 +444,30 @@ Baue eine Einparkhilfe für ein Auto, die umso schneller piepst, je näher man d
 ### RFID
 
 <div markdown="1" class="clearfix">
-![RFID-Sender und -Empfänger](/images/rfid.jpg?resize=250&classes=caption,figure-right "RFID-Empfänger (rechts) mit blauem RFID-Sender (links).")
+![RFID-Sender und -Empfänger](rfid.jpg?resize=250&classes=caption,figure-right "RFID-Empfänger (rechts) mit blauem RFID-Sender (links).")
 Mit RFID-Chips (***r**adio **f**requency **id**entification*) lässt sich ein digitaler Schlüssel bauen, um zum Beispiel Türen abzusichern. Der RFID-Empfänger sendet über die rechteckige Spule Radiowellen, welche Energie transportieren. Diese empfängt der RFID-Sender (blauer Chip oder auch weiße Karte), woraufhin er seine eizigartige ID zurücksendet. Diese wird wiederum von der Rechteckspule empfangen und elektronisch so aufbereitet, dass man am Arduino die ID lesen kann.
 </div>
 
 Die Verbindung mit dem Arduino erfolgt über ein *Serial Peripheral Interface (SPI)* (weitere Informationen unten), weshalb die meisten Pins am Arduino festgelegt sind (siehe unten). Der RST-Pin und der SDA-Pin lassen sich ggf. noch ändern. Wichtig: Der Mikrocontroller auf dem RFID-Chip arbeitet mit einem Logiklevel von $3,3 \, V$ und würde durchbrennen, wenn man ihn an 5 V anschließt. Der Arduino verfügt direkt neben dem 5 V-Anschluss auch über einen 3,3 V-Anschluss. Der IRQ-Pin des RFID-Empfängers wird nicht benötigt und kann ignoriert werden.
 
 <div class="flex-box">
-<div markdown="1" class="flexible">![RFID-Konfigurationsblock.](/images/rfid-konfiguration.png?classes=caption "RFID-Konfigurationsblock.")</div>
+<div markdown="1" class="flexible">![RFID-Konfigurationsblock.](rfid-konfiguration.png?classes=caption "RFID-Konfigurationsblock.")</div>
 <div markdown="1" class="flexible">
-![RFID-Block zur Prüfung der Anwesenheit.](/images/rfid-gibAnwesenheit.png?classes=caption "RFID-Block zur Prüfung der Anwesenheit.")
-![RFID-Block zum Erhalten der ID.](/images/rfid-gibID.png?classes=caption "RFID-Block zum Erhalten der ID.")
+![RFID-Block zur Prüfung der Anwesenheit.](rfid-gibAnwesenheit.png?classes=caption "RFID-Block zur Prüfung der Anwesenheit.")
+![RFID-Block zum Erhalten der ID.](rfid-gibID.png?classes=caption "RFID-Block zum Erhalten der ID.")
 </div>
 </div>
 
 Zur Programmierung kann man die bloße Anwesenheit eines RFID-Senders abfragen oder die ID eines RFID-Senders. Die Anwesenheitsabfrage unterscheidet nicht, welcher RFID-Sender anwesend ist, sie liefert also bei *jedem* RFID-Sender `true` zurück. Sinnvoller ist also in den meisten Fällen die Abfrage der einzigartigen ID des RFID-Senders, um diese abspeichern und im nächsten Programm darauf reagieren zu können. Ein Beispielprogramm zeigt die folgende Abbildung.
 
-![Beispielprogramm zum Auslesen eines RFID-Senders in Form einer weißen Karte.](/images/rfid-bsp.png?classes=caption "Beispielprogramm zum Auslesen eines RFID-Senders in Form einer weißen Karte.")
+![Beispielprogramm zum Auslesen eines RFID-Senders in Form einer weißen Karte.](rfid-bsp.png?classes=caption "Beispielprogramm zum Auslesen eines RFID-Senders in Form einer weißen Karte.")
 
 !! *Fehlerquellen:* Bei der Programmierung gibt es zwei Fehlerquellen zu beachten, die man möglichst vermeiden sollte:
 !! 
 !!   - Werden die Befehle `gib ID` und `gib Anwesenheit` kurz hintereinander verwendet, wird der zweite Befehl nicht funktionieren, weil dazu (durch die Implementierung im Hintergrund) immer eine neue Karte erkannt werden muss.
 !!   - Für den Vergleich von vorgegebener ID und eingelesener ID muss für beide eine Variable vom Typ Zeichenkette angelegt werden, damit Nepo keinen Fehler anzeigt. Das unten abgebildete Beispiel erzeugt also einen Fehler. (Hintergrund: Wenn die vorgegebene ID nicht als Zeichenkette (String) definiert wird, wird sie als sogenanntes Character-Array behandelt. Da die eingelesene ID aber vom Typ String ist, sollen sozusagen Äpfel mit Birnen verglichen werden.)
 !!     
-!!     ![Der Vergleich von vorgegebener ID und eingelesener ID erzeugt hier einen Fehler.](/images/rfid-fehler-vgl-chararray-mit-string.png?classes=caption "Der Vergleich von vorgegebener ID und eingelesener ID erzeugt hier einen Fehler.")
+!!     ![Der Vergleich von vorgegebener ID und eingelesener ID erzeugt hier einen Fehler.](rfid-fehler-vgl-chararray-mit-string.png?classes=caption "Der Vergleich von vorgegebener ID und eingelesener ID erzeugt hier einen Fehler.")
 
 <div markdown="1" class="projekt">
 #### Katzentür
@@ -505,14 +505,14 @@ Beschleunigungssensoren oder Lagesensoren tauchen in zig verschiedenen Geräten 
 Auch mit dem Arduino lassen sich interessante Dinge mit Beschleunigungssensoren bauen. Verwendet wird hier das Modul GY-61, auf dem der Beschleunigungssensor ADXL335 verbaut ist. Da der ADXL335 mit einem Pegel von 3V arbeitet, befindet sich auf der kleinen Platine zusätzlich ein Spannungsregler, der die 5V vom Arduino auf 3V für den ADXL335 herunterregelt. Zusätzlich ist ein kleines Koordinatensystem auf der Platine gezeichnet, das angibt, in welchen Richtungen die Beschleunigung gemessen wird. Die z-Achse verläuft dabei senkrecht zur Platine nach unten, wenn man auf das Koordinatensystem schaut. Dies ist erkennbar an dem Kreis mit einem Kreuz darin - als Eselsbrücke kann man sich einen Dartpfeil vorstellen, dessen gekreuzte Federn man von hinten sieht, wenn er von einem weg zeigt.
 
 <div class="flex-box">
-<div markdown="1">![Modul GY61 mit dem Beschleunigungssensor ADXL335 von oben.](/images/beschleunigungssensor-gy61-oben.jpg?resize=300&classes=caption "Modul GY61 mit dem Beschleunigungssensor ADXL335 von oben.")</div>
-<div markdown="1">![Modul GY61 mit dem Beschleunigungssensor ADXL335 von unten.](/images/beschleunigungssensor-gy61-unten.jpg?resize=300&classes=caption "Modul GY61 mit dem Beschleunigungssensor ADXL335 von unten.")</div>
+<div markdown="1">![Modul GY61 mit dem Beschleunigungssensor ADXL335 von oben.](beschleunigungssensor-gy61-oben.jpg?resize=300&classes=caption "Modul GY61 mit dem Beschleunigungssensor ADXL335 von oben.")</div>
+<div markdown="1">![Modul GY61 mit dem Beschleunigungssensor ADXL335 von unten.](beschleunigungssensor-gy61-unten.jpg?resize=300&classes=caption "Modul GY61 mit dem Beschleunigungssensor ADXL335 von unten.")</div>
 </div>
 
 Der ADXL335 gibt für die Beschleunigungen $a_x$ in x-Richtung, $a_y$ in y-Richtung und $a_z$ in z-Richtung jeweils eine Spannung aus, die [laut Datenblatt des ADXL335 (S. 10)](https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL335.pdf) proportional zur Beschleunigung ist. Am Arduino kann diese Spannung über die analogen Eingänge A0 bis A5 gemessen werden. Wenn die Schaltung wie im folgenden Schaltplan erfolgt, dann müssen im Open Roberta Lab drei analoge Sensoren für A0, A1 und A2 angelegt werden, deren Werte als Analogwerte ausgelesen werden.
 
 <div class="flex-box">
-<div markdown="1">![Schaltplan zum Beschleunigungsmodul GY-61 am Arduino.](/circuits/beschleunigungssensor-am-arduino.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum Beschleunigungsmodul am Arduino.")</div>
+<div markdown="1">![Schaltplan zum Beschleunigungsmodul GY-61 am Arduino.](beschleunigungssensor-am-arduino.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum Beschleunigungsmodul am Arduino.")</div>
 <div markdown="1">![konfiguration-beschleunigungssensor](konfiguration-beschleunigungssensor.png?resize=300&classes=caption "Konfiguration des Beschleunigungssensor entsprechend des links abgebildeten Schaltplans.")</div>
 </div>
 
@@ -522,7 +522,7 @@ Der ADXL335 gibt für die Beschleunigungen $a_x$ in x-Richtung, $a_y$ in y-Richt
 1. Schließe den Beschleunigungssensor wie oben beschrieben am Arduino an, konfiguriere drei analoge Sensoren im Open Roberta Lab für die drei Beschleunigungen und lasse deren analogen Werte auf dem seriellen Monitor ausgeben. Beobachte die Werte, während du die Platine auf unterschiedliche Arten beschleunigst (Anheben, Schütteln, Drehen, ...).
 2. Die Abbildung unten zeigt die Analogwerte, während sich der Beschleunigungssensor in Ruhe befindet. Begründe, warum der Analogwert für die Beschleunigung in z-Richtung größer als die anderen beiden ist.
 
-![Analogwerte für die Beschleunigung in x-, y- und z-Richtung bei ruhendem Beschleunigungssensor.](/images/analogwerte-ruhend.png?lightbox=1024&resize=500&classes=caption "Analogwerte für die Beschleunigung in x-, y- und z-Richtung bei ruhendem Beschleunigungssensor.")
+![Analogwerte für die Beschleunigung in x-, y- und z-Richtung bei ruhendem Beschleunigungssensor.](analogwerte-ruhend.png?lightbox=1024&resize=500&classes=caption "Analogwerte für die Beschleunigung in x-, y- und z-Richtung bei ruhendem Beschleunigungssensor.")
 
 3. Die drei Spannungen und damit die Analogwerte, die in A0, A1 und A2 gemessen werden, sind proportional zur Beschleunigung. Ermittle mit Hilfe der Beobachtung aus Schritt 2 einen funktionalen Zusammenhang $a_z(w)$ für die Berechnung der Beschleunigung $a_z$ in Abhängigkeit vom Analogwert $w$. Ermittle auch eine Formel für $a_x$ und $a_y$. 
 </div>
@@ -533,7 +533,7 @@ Der ADXL335 gibt für die Beschleunigungen $a_x$ in x-Richtung, $a_y$ in y-Richt
 Nach Abzug der Analogwerte, die für die Beschleunigung 0 stehen, erhält man drei Analogwerte für die Beschleunigung in x-Richtung, y- Richtung und z-Richtung. Diese lassen sich mathematisch als dreidimensionaler Vektor auffassen, dessen Betrag bzw. Länge berechnet werden kann, um (einen Analogwert für) die Gesamtbeschleunigung zu erhalten.
 
 1. Leite die Formel zur Berechnung der Länge eines dreidimensionalen Vektors anhand der folgenden Skizze her oder recherchiere sie. Ermittle damit eine Formel für einen Analogwert für die Gesamtbeschleunigung.
-![Skizze für die Herleitung der Formel für die Länge des Beschleunigungsvektors.](/images/beschleunigungsvektor.png?lightbox=1024&resize=800&classes=caption "Skizze für die Herleitung der Formel für die Länge des Beschleunigungsvektors. In blau sind die Komponenten ax, ay und az des Beschleunigungsvektors eingetragen. Die gesuchte Länge ist die rot markierte Diagonale. Die Bestimmung der Länge der orange markierten Diagonale wird hilfreich sein.")
+![Skizze für die Herleitung der Formel für die Länge des Beschleunigungsvektors.](beschleunigungsvektor.png?lightbox=1024&resize=800&classes=caption "Skizze für die Herleitung der Formel für die Länge des Beschleunigungsvektors. In blau sind die Komponenten ax, ay und az des Beschleunigungsvektors eingetragen. Die gesuchte Länge ist die rot markierte Diagonale. Die Bestimmung der Länge der orange markierten Diagonale wird hilfreich sein.")
 2. Ermittle mit den Formeln für die Beschleunigungen $a_x$, $a_y$ und $a_z$ (aus Schritt 3 der vorherigen Aufgabe) eine Formel für die Gesamtbeschleunigung.  
 </div>
 
@@ -588,19 +588,19 @@ Es gibt viele verschiedene Hall-Sensoren - in diesem Kurs wird das Hall-Sensor-M
 !! *Achtung:* Hall-Sensoren können leicht mit Transistoren verwechselt werden! Achte genau auf die Aufschrift auf dem schwarzen Kästchen und hole ggf. eine Lupe, um zu erkennen, ob es sich um einen Transistor, einen analogen Hall-Sensor oder einen digitalen Hall-Sensor handelt.
 
 <div class="flex-box">
-<div markdown="1">![Hall-Sensor.](/images/hall-a3124-lua-t.jpg?resize=150&classes=caption "Hall-Sensor.")</div>
-<div markdown="1">![Hall-Sensor auf Platine.](/images/hall-ky-035.jpg?resize=150&classes=caption "Hall-Sensor auf Platine.")</div>
+<div markdown="1">![Hall-Sensor.](hall-a3124-lua-t.jpg?resize=150&classes=caption "Hall-Sensor.")</div>
+<div markdown="1">![Hall-Sensor auf Platine.](hall-ky-035.jpg?resize=150&classes=caption "Hall-Sensor auf Platine.")</div>
 </div>
 
 Sensor und Modul verfügen über drei Pins, die beim Arduino an 5V, GND und einen analogen Eingang (A0 bis A5) angeschlossen werden, wie der Schaltplan unten zeigt.
 
 <!-- Schaltplan -->
-![Schaltplan zum Anschluss des Hall-Sensor-Moduls an den Arduino.](/circuits/hall-ky-035-an-arduino.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum Anschluss des Hall-Sensor-Moduls KY-035 an den Arduino. Falls der Hall-Sensor AH49E ohne das Modul angeschlossen werden soll, istzu beachten, dass die Reihenfolge von VCC und GND auf der Platine vertauscht wird. Beim AH49E ohne Platine ist der GND-Pin dementsprechend in der Mitte.")
+![Schaltplan zum Anschluss des Hall-Sensor-Moduls an den Arduino.](hall-ky-035-an-arduino.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum Anschluss des Hall-Sensor-Moduls KY-035 an den Arduino. Falls der Hall-Sensor AH49E ohne das Modul angeschlossen werden soll, istzu beachten, dass die Reihenfolge von VCC und GND auf der Platine vertauscht wird. Beim AH49E ohne Platine ist der GND-Pin dementsprechend in der Mitte.")
 
 Die Verbindung mit 5V (Pluspol) und GND (Minuspol) sorgt für den Stromfluss durch den Hall-Sensor. Wenn sich der Hall-Sensor in einem Magnetfeld befindet, dann entsteht in ihm eine sogenannte *Hall-Spannung*, die im Hall-Sensor noch weiter verstärkt und stabilisiert wird. Am Signalpin S kann man diese Spannung (gegenüber GND) messen, indem man ihn an einen analogen Eingang am Arduino anschließt.
 
 <!-- Ersatzblockbild zur Spannung mit gemeinsamen Minuspol -->
-![Vereinfachtes Blockdiagramm für den Aufbau des Hall-Sensors.](/circuits/hall-blockdiagramm-vereinfacht.png?lightbox=1024&resize=500&classes=caption "Vereinfachtes Blockdiagramm für den Aufbau des Hall-Sensors. Der Stromfluss durch das Hallplättchen geht von unten nach oben. Die Hall-Spannung, die links und rechts am Hall-Sensor anliegt, wird mit GND zusammengeführt, sodass die Spannung stets gegenüber GND als Nullniveau gemessen wird.")
+![Vereinfachtes Blockdiagramm für den Aufbau des Hall-Sensors.](hall-blockdiagramm-vereinfacht.png?lightbox=1024&resize=500&classes=caption "Vereinfachtes Blockdiagramm für den Aufbau des Hall-Sensors. Der Stromfluss durch das Hallplättchen geht von unten nach oben. Die Hall-Spannung, die links und rechts am Hall-Sensor anliegt, wird mit GND zusammengeführt, sodass die Spannung stets gegenüber GND als Nullniveau gemessen wird.")
 
 <div markdown="1" class="aufgabe">
 #### Theorie: Spannung an analogen Eingängen messen
@@ -632,7 +632,7 @@ Am Arduino wird die Spannung, die der Hall-Sensor ausgibt und die mit der Stärk
 3. Erstelle eine Variable für die Spannung U und ermittle mit Hilfe der unten angegebenen Blöcke die Spannung am Signalpin des Hall-Sensors. Gib diese Spannung auf dem seriellen Monitor aus. Die Spannung sollte ohne Magnetfeld bei etwa 2,5 V liegen.
 
 <!--- Bilder von Blöcken-->
-![Blöcke für die Berechnung und Ausgabe der Spannung am analogen Eingang.](/images/spannung-einlesen-programmbloecke.png?lightbox=1024&resize=800&classes=caption "Blöcke für die Berechnung und Ausgabe der Spannung am analogen Eingang.")
+![Blöcke für die Berechnung und Ausgabe der Spannung am analogen Eingang.](spannung-einlesen-programmbloecke.png?lightbox=1024&resize=800&classes=caption "Blöcke für die Berechnung und Ausgabe der Spannung am analogen Eingang.")
 </div>
 
 Ein Teslameter ist ein Messgerät für die magnetische Flussdichte $B$, deren Einheit nach dem Physiker Nikola Tesla benannt ist. $1 \, T$ (Tesla) ist jedoch bereits eine sehr große Magnetfeldstärke. Handelsübliche Magnete liegen eher im Bereich von wenigen Millitesla.
@@ -696,8 +696,8 @@ Bei einem digitalen Hall-Sensor wird das analoge Signal eines Hall-Sensors durch
 <!-- Bild von Fahrrad -->
 
 <div class="flex-box">
-<div markdown="1">![Hall-Sensor am Fahrrad.](/images/hall-an-fahrrad.png?lightbox=1024&resize=300&classes=caption "Hall-Sensor am Fahrrad.")</div>
-<div markdown="1">![Hall-Sensor A3144 auf Platine.](/images/hall-digital-ky-003.jpg?lightbox=1024&resize=300&classes=caption "Digitales Hall-Sensor-Modul KY-003 mit dem Hall-Sensor A3144.")</div>
+<div markdown="1">![Hall-Sensor am Fahrrad.](hall-an-fahrrad.png?lightbox=1024&resize=300&classes=caption "Hall-Sensor am Fahrrad.")</div>
+<div markdown="1">![Hall-Sensor A3144 auf Platine.](hall-digital-ky-003.jpg?lightbox=1024&resize=300&classes=caption "Digitales Hall-Sensor-Modul KY-003 mit dem Hall-Sensor A3144.")</div>
 </div>
 
 Es gibt verschiedene Hall-Sensoren - in diesem Kurs verwenden wir das Hall-Sensor-Modul KY-003, auf dem der Hall-Sensor A3144 zusammen mit einer LED und einem zugehörigen Widerstand verbaut ist.
@@ -706,7 +706,7 @@ Es gibt verschiedene Hall-Sensoren - in diesem Kurs verwenden wir das Hall-Senso
 
 Unten ist der Schaltplan zum Anschließen an den Arduino abgebildet.
 <!-- Bild von Modul und Bild von Schaltplan -->
-![Schaltplan zum Anschluss des Hall-Sensor-Moduls KY-003 an den Arduino.](/circuits/hall-ky-003-an-arduino.png?lightbox=1024&resize=500&classes=caption "Anschluss des Hall-Sensor-Moduls KY-003 am Arduino. Falls der darauf verwendete Hall-Sensor A3144 ohne das Modul angeschlossen werden soll, ist darauf zu achten, dass VCC und GND auf der Platine vertauscht werden. Beim A3144 ist GND in der Mitte.")
+![Schaltplan zum Anschluss des Hall-Sensor-Moduls KY-003 an den Arduino.](hall-ky-003-an-arduino.png?lightbox=1024&resize=500&classes=caption "Anschluss des Hall-Sensor-Moduls KY-003 am Arduino. Falls der darauf verwendete Hall-Sensor A3144 ohne das Modul angeschlossen werden soll, ist darauf zu achten, dass VCC und GND auf der Platine vertauscht werden. Beim A3144 ist GND in der Mitte.")
 
 Der Hall-Sensor ist nicht im Open Roberta Lab vorkonfiguriert. Er lässt sich aber einfach als *digitaler Sensor* in der Roboterkonfiguration angeben. Mit dem Befehl `gib <digitalen> Wert Sensor <S>` erhält man dann den Rückgabewert `0` (Spannung von 0V bzw. Potential `LOW`) oder den Rückgabewert `1` (Spannung von 5V bzw. Potential `HIGH`).
 
