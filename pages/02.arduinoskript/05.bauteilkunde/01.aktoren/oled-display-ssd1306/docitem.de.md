@@ -6,8 +6,6 @@ image_width: 300
 image_height: 300
 ---
 
-### OLED-Display SSD1306
-
 <div markdown="1" class="clearfix">
 ![Das OLED-Display SSD1306.](ssd1306-oled.jpg?resize=250&classes=caption,figure-right "Das OLED-Display SSD1306 (Büroklammer zum Vergleich).")
 OLED-Displays basieren auf LEDs, die im Gegensatz zu herkömmlichen LEDs aus organischen Materialien hergestellt werden (*OLED* steht für [*organische Leuchtdiode*](https://de.wikipedia.org/wiki/Organische_Leuchtdiode), engl. *organic light-emitting diode*). Bekannt sind OLED-Displays vor allem von Samsung Smartphones mit AMOLED-Display (*active matrix organic light-emitting diode*), aber OLEDs werden auch in Tablets, Fernsehern oder bei der Raumbeleuchtung eingesetzt.
