@@ -1,5 +1,11 @@
 ---
 title: 'Liquid Crystal Display (LCD)'
+featured_image: lcd-im-parkhaus-v2.png
+show_pageimage: true
+image_width: 1000
+image_height: 300
+summary:
+    enabled: '0'
 ---
 
 ### Liquid Crystal Display (LCD)
