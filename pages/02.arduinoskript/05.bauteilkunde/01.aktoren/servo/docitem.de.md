@@ -1,6 +1,10 @@
 ---
 title: Servo
 published: true
+featured_image: servo.png
+show_pageimage: true
+image_width: 300
+image_height: 300
 ---
 
 ### Servo
