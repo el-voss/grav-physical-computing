@@ -4,8 +4,7 @@ featured_image: lcd-im-parkhaus-v2.png
 show_pageimage: true
 image_width: 1000
 image_height: 300
-summary:
-    enabled: '1'
+summary: {  }
 ---
 
 ### Liquid Crystal Display (LCD)
@@ -16,7 +15,7 @@ In vielen Projekten genügt es nicht, Messwerte, Statusanzeigen oder Menüs übe
 
 Um ein LC-Display anzusteuern, werden ziemlich viele Kabel benötigt. Daher gibt es neben den normalen LC-Displays häufig auch eine Variante, bei der ein I2C-Modul am LC-Display angebracht ist, was die benötigten Kabel deutlich reduziert. Im Folgenden werden beide Varianten beschrieben.
 </div>
-===
+
 
 *LC-Display ohne I2C-Modul*
 
