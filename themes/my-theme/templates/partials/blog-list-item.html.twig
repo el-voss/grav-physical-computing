@@ -1,6 +1,5 @@
 {% set image = page.media[page.header.featured_image] ?: page.media.images|first %}
 {% set title = page.title %}
-{% set readmore_txt = blog.header.readmore_text|raw|default('Lesen') %}
 
 <article>
     {% if image %}
@@ -18,6 +17,6 @@
         {% endif %}
     </p>
     <ul class="actions">
-        <li><a href="{{page.url}}" class="button">{{readmore_txt}}</a></li>
+        <li><a href="{{page.url}}" class="button">Lesen</a></li>
     </ul>
 </article>

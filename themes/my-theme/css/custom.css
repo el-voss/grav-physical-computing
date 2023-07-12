@@ -173,8 +173,8 @@ h2, h3 {
   display: -ms-flex;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 2em -6em;
-  width: calc(100% + 6em);
+  margin: 0;
+  width: calc(100%);
 }
 .posts article {
   -moz-flex-grow: 0;
@@ -182,41 +182,55 @@ h2, h3 {
   flex-grow: 0;
   -ms-flex-shrink: 1;
   flex-shrink: 1;
-  margin: 0 0 6em 6em;
+  margin: 1em;
+  padding: 1em;
   position: relative;
-  width: calc((100% / 3) - 6em);
+  width: calc((100% / 3) - 2em);
+  background: #f8f8f8;
+  box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.4);
 }
+/*
 .posts article:before {
   background: rgba(210, 215, 217, 0.75);
   content: "";
   display: block;
-  height: calc(100% + 6em);
-  left: -3em;
+  height: calc(100% + 3em);
+  left: -1em;
   position: absolute;
   top: 0;
   width: 1px;
 }
 .posts article:after {
   background: rgba(210, 215, 217, 0.75);
-  bottom: -3em;
+  bottom: -1em;
   content: "";
   display: block;
   height: 1px;
   position: absolute;
   right: 0;
-  width: calc(100% + 6em);
+  width: calc(100% + 3em);
 }
+*/
 .posts article > :last-child {
   margin-bottom: 0;
 }
 .posts article .image {
   display: block;
   margin: 0 0 2em 0;
+  padding: 0;
 }
 .posts article .image img {
   display: block;
   width: 100%;
   height: auto;
+}
+.posts article h3 {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+.posts article p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 @media screen and (min-width: 1681px) {
   .posts article:nth-child(3n+1):before {

@@ -2,12 +2,10 @@
 title: 'Liquid Crystal Display (LCD)'
 featured_image: lcd-im-parkhaus.jpg
 show_pageimage: true
-image_width: 1000
+image_width: 300
 image_height: 300
 summary: {  }
 ---
-
-### Liquid Crystal Display (LCD)
 
 <div markdown="1" class="clearfix">
 ![LC-Display an einem Parkhaus-Automaten.](lcd-im-parkhaus-v2.png?resize=250&classes=caption,figure-right "LC-Display an einem Parkhaus-Automaten.")
