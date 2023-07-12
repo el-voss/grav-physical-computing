@@ -3,6 +3,7 @@ title: Pulssensor
 show_pageimage: true
 image_width: 300
 image_height: 300
+featured_image: pulssensor.jpg
 ---
 
 <div markdown="1" class="clearfix">
