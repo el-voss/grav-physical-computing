@@ -2,7 +2,7 @@
 title: 'Drehregler / Potentiometer'
 show_pageimage: true
 image_width: 300
-image_height: 300
+image_height: 400
 featured_image: poti.jpg
 ---
 
