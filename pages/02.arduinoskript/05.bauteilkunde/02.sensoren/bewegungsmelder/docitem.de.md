@@ -3,6 +3,7 @@ title: Bewegungsmelder
 show_pageimage: true
 image_width: 300
 image_height: 300
+featured_image: bewegungsmelder.jpg
 ---
 
 *Bewegungsmelder wurden bereits im Abschnitt [Entscheidungen mit mehreren Kriterien treffen](https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen/entscheidungen-und-serieller-monitor#entscheidungen-mit-mehreren...) erklärt und genutzt, um Wahrheitswerte einzuführen. In diesem Abschnitt steht das Bauteil im Vordergrund. Dazu werden noch einmal alle Informationen zusammengefasst und eine alternative Programmierung vorgestellt.*
