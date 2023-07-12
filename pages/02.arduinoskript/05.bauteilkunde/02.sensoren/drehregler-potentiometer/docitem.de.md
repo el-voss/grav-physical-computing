@@ -3,6 +3,7 @@ title: 'Drehregler / Potentiometer'
 show_pageimage: true
 image_width: 300
 image_height: 300
+featured_image: poti.jpg
 ---
 
 <div markdown="1" class="clearfix">
