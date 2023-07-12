@@ -3,6 +3,7 @@ title: 'Beschleunigungssensor oder Lagesensor'
 show_pageimage: true
 image_width: 300
 image_height: 300
+featured_image: beschleunigungssensor-gy61-oben.jpg
 ---
 
 Beschleunigungssensoren oder Lagesensoren tauchen in zig verschiedenen Geräten auf:
