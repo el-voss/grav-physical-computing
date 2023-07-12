@@ -10,10 +10,6 @@
 {% block content %}
 
 <article>
-    <header>
-        <h1 itemprop="name headline">{{ page.title }}</h1>
-        {% if page.header.subtitle %}<p>{{ page.header.subtitle|raw }}</p>{% endif %}
-    </header>
 
 {#    {% if show_image and image %}
         <span class="image main" itemprop="image">{{ image.cropZoom(img_width, img_height).loading('lazy').attribute('decoding','async').html(title,title,'image')|raw }}</span>

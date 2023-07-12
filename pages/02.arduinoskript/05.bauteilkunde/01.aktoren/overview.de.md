@@ -1,5 +1,5 @@
 ---
-title: Aktoren
+title: 'Baulteilkunde: Aktoren'
 menu: '[A] Aktoren'
 content:
     items:
@@ -12,7 +12,6 @@ content:
     url_taxonomy_filters: true
 ---
 
-# Baulteilkunde Teil 1: Aktoren
 <style>
     body {
         --abk: 'BK.A';
