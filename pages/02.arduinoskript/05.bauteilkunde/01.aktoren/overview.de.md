@@ -1,6 +1,15 @@
 ---
 title: Aktoren
 menu: '[A] Aktoren'
+content:
+    items:
+        - '@self.children'
+    limit: 5
+    order:
+        by: folder
+        dir: desc
+    pagination: false
+    url_taxonomy_filters: true
 ---
 
 # Baulteilkunde Teil 1: Aktoren
