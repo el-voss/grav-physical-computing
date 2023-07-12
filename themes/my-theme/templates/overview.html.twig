@@ -1,7 +1,7 @@
 {% extends 'partials/base.html.twig' %}
 
 {% set collection = page.collection() %}
-{# {% set parent = page %} #}
+{% set parent = page %}
 {% set show_image = header_var('show_pageimage')|defined(true) %}
 {% set image = page.media[header.featured_image] ?: page.media.images|first %}
 {% set img_width = header_var('image_width')|default(1000) %}
