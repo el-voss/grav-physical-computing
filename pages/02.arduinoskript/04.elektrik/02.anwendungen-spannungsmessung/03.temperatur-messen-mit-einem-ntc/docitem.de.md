@@ -3,6 +3,7 @@ title: 'Temperatur messen mit einem NTC'
 show_pageimage: true
 image_width: 300
 image_height: 400
+featured_image: ntc.jpg
 ---
 
 <div markdown="1" class="clearfix">
