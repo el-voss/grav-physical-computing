@@ -17,7 +17,7 @@ media_order: 'diode-sperrrichtung.png,l298n-steuerung-bsp.png,l298n-konfiguratio
 ## Schaltungen mit Transistoren steuern
 
 <div markdown="1" class="clearfix">
-![Transistor](/images/transistor.jpg?resize=250&classes=caption,figure-right "Transistor mit flacher Seite nach oben.")
+![Transistor](transistor.jpg?resize=250&classes=caption,figure-right "Transistor mit flacher Seite nach oben.")
 Manche Projekte wie die benötigt nur ein sehr simples Programm in der Form WENN - DANN - SONST. Für solche Fälle ist der Arduino eigentlich eine überdimensionierte Lösung - viel einfacher, jedenfalls in Bezug auf die Anzahl der Bauteile, ist die Umsetzung dieser Schaltung mithilfe eines Transistors. Dieser ist (unter anderem) ein elektronischer Schalter, mit dem sich das WENN - DANN - SONST - Verhalten ganz ohne Programm umsetzen lässt.
 
 **Frage:** Wie verwendet man einen Transistor?
@@ -31,7 +31,7 @@ Ein Transistor hat drei Anschlüsse, die als Kollektor (**C** von engl. *collect
 Befolge die unten angegebenen Schritte und stelle Schlussfolgerungen über die Funktionsweise eines Transistors an. Erkennst du Gemeinsamkeiten zu digitalen Pins?
 
 1.  Baue die unten abgebildeten Schaltungen nacheinander auf. Spiele für die zweite Schaltung ein einfaches Blink-Programm auf den Arduino.
-    ![Schaltpläne mit Transistor](/circuits/Schaltplan-Transistor-verstehen.png?lightbox=1024?resize=800)
+    ![Schaltpläne mit Transistor](Schaltplan-Transistor-verstehen.png?lightbox=1024?resize=800)
 2.  Ersetze den $ 10\,  k\Omega$ Widerstand durch einen $ 100\,  k\Omega$ Widerstand.
 </div>
 
@@ -42,14 +42,14 @@ Um den Transistor zielgerichtet nutzen zu können, muss man die Spannung $U_{BE}
 
 Das Potentiometer lässt sich wieder in zwei Teilwiderstände $R_1$ und $R_2$ zerlegen, an denen die Spannung $U_1$ bzw. $U_2$ abfällt. Erkläre, wie der Widerstand $R_2$ und die Spannung $U_{BE}$ zusammenhängen.
 
-![Transistorschaltung zur Messerung der Spannung zwischen Basis und Emitter.](/circuits/Schaltplan-U-BE-Messung1.png?lightbox=1024&resize=400)
+![Transistorschaltung zur Messerung der Spannung zwischen Basis und Emitter.](Schaltplan-U-BE-Messung1.png?lightbox=1024&resize=400)
 
 Baue die Schaltung nun auf. Um die Spannung $U_{BE}$ messen zu können, wird ein Arduino ergänzt, der die Spannung in A0 ausliest und auf dem seriellen Monitor ausgibt.
 
 Bestimme so die Grenzspannung $U_{BE}$, ab der der Transistor anfängt zu schalten, sodass die LED leuchtet.
 <div class="flex-box">
-<div markdown="1">![Programm: Spannung an Transistor messen.](/images/spannung-an-transistor-messen.png?lightbox=1024&resize=500)</div>
-<div markdown="1">![Schaltplan: Spannung an Transistor messen.](/circuits/Schaltplan-U-BE-Messung.png?lightbox=1024&resize=400)</div>
+<div markdown="1">![Programm: Spannung an Transistor messen.](spannung-an-transistor-messen.png?lightbox=1024&resize=500)</div>
+<div markdown="1">![Schaltplan: Spannung an Transistor messen.](Schaltplan-U-BE-Messung.png?lightbox=1024&resize=400)</div>
 </div>
 </div>
 
@@ -64,15 +64,15 @@ Bestimme die Größe des Festwiderstands $R_F$ so, dass der Transistor schaltet,
 
 Baue die Schaltung danach auf und teste sie.
 
-![Transistorschaltung für eine Straßenlampe.](/circuits/Schaltplan-Strassenlampe-ohne-mC.png?lightbox=1024&resize=500)
+![Transistorschaltung für eine Straßenlampe.](Schaltplan-Strassenlampe-ohne-mC.png?lightbox=1024&resize=500)
 </div>
 
 !!!! #### Der Transistor
 !!!! 
 !!!! Ein Transistor hat drei Anschlüsse, die als Kollektor (**C** von engl. *collector*), Basis (**B**) und Emitter (**E**) bezeichnet werden. Wenn man auf die abgeflachte Seite des Transistors schaut, sind die drei Pins in der genannten Reihenfolge angeordnet.
 !!!! <div class="flex-box">
-!!!! <div markdown="1">![Transistor als Bild.](/images/transistor.jpg?resize=200&classes=caption "Transistor als Bild.")</div>
-!!!! <div markdown="1">![Schaltsymbol für Transistor.](/images/transistor-schaltsymbol.png?resize=200&classes=caption "Schaltsymbol für einen Transistor.")</div>
+!!!! <div markdown="1">![Transistor als Bild.](transistor.jpg?resize=200&classes=caption "Transistor als Bild.")</div>
+!!!! <div markdown="1">![Schaltsymbol für Transistor.](transistor-schaltsymbol.png?resize=200&classes=caption "Schaltsymbol für einen Transistor.")</div>
 !!!! </div>
 !!!! Transistoren dienen als elektronische Schalter oder Verstärker (letzteres wird im Abschnitt zu Motoren genutzt). Als Schalter lassen sie sich nutzen, weil die Strecke vom Kollektor zum Emitter ohne Weiteres nicht leitet. Erst wenn zwischen Basis und Emitter eine Spannung $U_{BE} \approx  0,6\, V$ anliegt, fließt *zwischen Basis und Emitter ein schwacher Strom*, der den Transistor mit Elektronen flutet und es dadurch ermöglicht, dass *zwischen Kollektor und Emitter ein starker Strom* fließen kann.
 !!!! Die Möglichkeit, mit Transistoren automatisierte Schalter herzustellen und dadurch Programme physikalisch abzubilden, macht Transistoren zur Grundlage von Mikrocontrollern und Computern und damit zu einer der wichtigsten Erfindungen des 20. Jahrhunderts. Schon auf dem kleinen integrierten Schaltkreis des Arduino, dem ATMEGA328P, sind Millionen von Transistoren verbaut. Wenn ein Digitalpin des Arduino auf HIGH gestellt wird, dann wird intern ein Transistor geschaltet.
@@ -93,7 +93,7 @@ Bei vielen Projekten soll sich etwas bewegen - dies lässt sich mit Elektromotor
 
 !! Es ist sehr wichtig, dass die Diode richtig, also in Sperrrichtung, eingebaut wird, da sonst der Arduino zerstört werden könnte!
 
-![Anschluss eines Gleichstrom-Elektromotors mit dem Arduino als Spannungsquelle.](/circuits/Schaltplan-Motoranschluss-einfach.png?lightbox=1024&resize=500&classes=caption "Anschluss eines Gleichstrom-Elektromotors mit dem Arduino als Spannungsquelle.")
+![Anschluss eines Gleichstrom-Elektromotors mit dem Arduino als Spannungsquelle.](Schaltplan-Motoranschluss-einfach.png?lightbox=1024&resize=500&classes=caption "Anschluss eines Gleichstrom-Elektromotors mit dem Arduino als Spannungsquelle.")
 </div>
 
 *Hintergrundinformationen:*
@@ -102,8 +102,8 @@ Bei vielen Projekten soll sich etwas bewegen - dies lässt sich mit Elektromotor
 !!!! 
 !!!! Ein **Elektromotor** besteht aus mehreren Spulen und Magneten. Wenn Strom durch die Spulen fließt, baut sich um die Spulen ein Magnetfeld auf, das mit dem Magnetfeld der eingebauten Magneten wechselwirkt (Anziehung/Abstoßung), sodass es zu einer Drehung des Motors kommt. Ein sogenannter Kommutator sorgt dafür, dass der Strom durch die Spulen ständig seine Richtung wechselt, sodass es immer wieder von Neuem zu Anziehung bzw. Abstoßung der Magnetfelder kommt und die Drehung nicht aufhört, solange eine Spannung anliegt.
 !!!! <div class="flex-box">
-!!!! <div markdown="1">![Gleichstrom-Elektromotor als Bild.](/images/dc-motor-klein.png?resize=200&classes=caption "Gleichstrom-Elektromotor als Bild.")</div>
-!!!! <div markdown="1">![Gleichstrom-Elektromotor als Schaltsymbol.](/circuits/motor-schaltsym.png?resize=200&classes=caption "Gleichstrom-Elektromotor als Schaltsymbol.")</div>
+!!!! <div markdown="1">![Gleichstrom-Elektromotor als Bild.](dc-motor-klein.png?resize=200&classes=caption "Gleichstrom-Elektromotor als Bild.")</div>
+!!!! <div markdown="1">![Gleichstrom-Elektromotor als Schaltsymbol.](motor-schaltsym.png?resize=200&classes=caption "Gleichstrom-Elektromotor als Schaltsymbol.")</div>
 !!!! </div>
 
 Wenn keine Spannung mehr am Motor anliegt, wird sich der Motor aufgrund seiner Trägheit immer noch ein wenig weiterdrehen. Durch das Drehen der Spulen im Magnetfeld der eingebauten Permanentmagneten wird vom Motor eine Spannung induziert, die entgegengesetzt zur vorherigen Richtung ist. Dort, wo vorher der Minuspol gewesen ist, wird nun vom Motor ein Pluspol induziert und umgekehrt. Diese “falsch” gerichtete Spannung würde den Arduino zerstören. Aus diesem Grund schaltet man eine *Diode* parallel zum Motor.
@@ -112,8 +112,8 @@ Wenn keine Spannung mehr am Motor anliegt, wird sich der Motor aufgrund seiner T
 !!!! 
 !!!! Eine **Diode** ist wie ein elektrisches Ventil: Sie lässt den Strom nur in eine Richtung durch. Im Gegensatz zu Leuchtdioden wandeln “normale” Dioden die elektrische Energie in Wärme um. In *Durchlassrichtung* wird der negative Pol (bzw. GND) mit der Seite verbunden, an der der Ring angebracht ist, und der positive Pol mit der anderen Seite.
 !!!! <div class="flex-box">
-!!!! <div markdown="1">![Diode als Bild](/images/diode2.jpg?resize=250&rotate=180&classes=caption "Diode als Bild.")</div>
-!!!! <div markdown="1">![Diode als Schaltsymbol in Durchlassrichtung](/circuits/diode-schaltsym.png?resize=250&classes=caption "Diode als Schaltsymbol in Durchlassrichtung.")</div>
+!!!! <div markdown="1">![Diode als Bild](diode2.jpg?resize=250&rotate=180&classes=caption "Diode als Bild.")</div>
+!!!! <div markdown="1">![Diode als Schaltsymbol in Durchlassrichtung](diode-schaltsym.png?resize=250&classes=caption "Diode als Schaltsymbol in Durchlassrichtung.")</div>
 !!!! <div markdown="1">![Diode als Schaltsymbol in Sperrrichtung](diode-sperrrichtung.png?resize=250&classes=caption "Diode als Schaltsymbol in Sperrrichtung.")</div>
 !!!! </div>
 
@@ -136,16 +136,16 @@ Die unten abgebildete Schaltung zeigt, wie ein npn-Transistor eingebaut werden k
 Es ist ratsam, die Basis mit einem PWM-Pin (gekennzeichnet durch $\sim$) zu verbinden, da sich dadurch die Geschwindigkeit des Motors steuern lässt.
 
 <div class="flex-box">
-<div markdown="1" class="flexible">![Anschluss eines Gleichstrom-Elektromotors.](/circuits/motoranschluss-mit-steuerung.png?lightbox=1024&resize=500&classes=caption "Anschluss eines Gleichstrom-Elektromotors mit Hilfe eines Transistors.")</div>
-<div markdown="1" class="flexible">![npn-Transistor; Blick auf die flache Seite](/images/transistor-schematisch.png?resize=250&classes=caption "npn-Transistor Pn2222; Blick auf die flache Seite.") </div>
+<div markdown="1" class="flexible">![Anschluss eines Gleichstrom-Elektromotors.](motoranschluss-mit-steuerung.png?lightbox=1024&resize=500&classes=caption "Anschluss eines Gleichstrom-Elektromotors mit Hilfe eines Transistors.")</div>
+<div markdown="1" class="flexible">![npn-Transistor; Blick auf die flache Seite](transistor-schematisch.png?resize=250&classes=caption "npn-Transistor Pn2222; Blick auf die flache Seite.") </div>
 </div>
 
 <div markdown="1" class="aufgabe">
 Baue die oben abgebildete Schaltung auf und probiere die Steuerung des Motors mittels Pulsweitenmodulation aus.
 
-![analogen Wert schreiben](/images/pwm-motorsteuerung.png)
+![analogen Wert schreiben](pwm-motorsteuerung.png)
 
-Simuliere mit dem Motor eine konstant beschleunigende Bewegung (*vgl. [Fading](https://doku.el-voss.de/de/arduinoskript/elektrik#pulsweitenmodulation-pwm)*), gefolgt von einer abrupten Bremsung.
+Simuliere mit dem Motor eine konstant beschleunigende Bewegung (*vgl. [Fading](https://mintorials.de/de/arduinoskript/elektrik#pulsweitenmodulation-pwm)*), gefolgt von einer abrupten Bremsung.
 </div>
 
 <div markdown="1" class="projekt">
@@ -161,7 +161,7 @@ Wenn der verwendete Elektromotor größer ist und mehr Strom zieht bzw. größer
 
 Der Arduino kann über USB oder eine zweite Batterie mit Strom versorgt werden.
 
-![Anschluss eines Gleichstrom-Elektromotors am Arduino mit Steuerung über einen Transistor und mit externer Spannungsquelle für den Motor.](/circuits/Schaltplan-Motoranschluss-ext-Spannung.png?lightbox=1024&resize=500&classes=caption "Anschluss eines Gleichstrom-Elektromotors am Arduino mit Steuerung über einen Transistor und mit externer Spannungsquelle für den Motor.")
+![Anschluss eines Gleichstrom-Elektromotors am Arduino mit Steuerung über einen Transistor und mit externer Spannungsquelle für den Motor.](Schaltplan-Motoranschluss-ext-Spannung.png?lightbox=1024&resize=500&classes=caption "Anschluss eines Gleichstrom-Elektromotors am Arduino mit Steuerung über einen Transistor und mit externer Spannungsquelle für den Motor.")
 
 ## Elektromotor mit Relais steuern
 
@@ -172,8 +172,8 @@ Wie oben zu sehen, muss der Arbeitsstromkreis mit dem Motor und der Steuerstromk
 Ein Relais (siehe unten, grau unterlegt) besteht im Wesentlichen aus einer Spule mit Eisenkern und einem Wechselschalter, an dem eine Feder angebracht ist.
 
 <div class="flex-box">
-<div markdown="1">![Relais-Aufbau offen](/images/relais-aufbau-offen.png?lightbox=1024&classes=caption "Aufbau eines Relais (grau unterlegt) einschließlich der Stellung des Wechselschalters, wenn im Steuerstromkreis kein Strom fließt.") </div>
-<div markdown="1">![Relais-Aufbau geschlossen](/images/relais-aufbau-geschlossen.png?lightbox=1024&classes=caption "Aufbau eines Relais (grau unterlegt) einschließlich der Stellung des Wechselschalters, wenn im Steuerstromkreis Strom fließt.") </div>
+<div markdown="1">![Relais-Aufbau offen](relais-aufbau-offen.png?lightbox=1024&classes=caption "Aufbau eines Relais (grau unterlegt) einschließlich der Stellung des Wechselschalters, wenn im Steuerstromkreis kein Strom fließt.") </div>
+<div markdown="1">![Relais-Aufbau geschlossen](relais-aufbau-geschlossen.png?lightbox=1024&classes=caption "Aufbau eines Relais (grau unterlegt) einschließlich der Stellung des Wechselschalters, wenn im Steuerstromkreis Strom fließt.") </div>
 </div>
 
 <div markdown="1" class="aufgabe">
@@ -188,18 +188,18 @@ Die Kontakte am Wechselschalter werden mit *NO* (*normally open*), *NC* (*normal
 #### Anschluss eines Relais
 
 **a)** Wie aus dem obigen Schaltplan ersichtlich wird, hat ein Relais fünf Anschlüsse, die jedoch nicht beschriftet sind. Suche im Internet nach “Datasheet 'Gerätebezeichnung des Relais'” (Bezeichnung vom Relais ablesen) und entnimm dem Datenblatt, welche Anschlüsse zum Steuer- bzw. Arbeitsstromkreis gehören.
-![Relais](/images/relais-klein.png?resize=200&classes=caption "Ein Relais.")
+![Relais](relais-klein.png?resize=200&classes=caption "Ein Relais.")
 
 !! **Achtung:** Auf dem Relais ist angegeben, dass damit bis zu $ 250\, V$ Wechselspannung und $ 10\,  A$ geschaltet werden können. Das sollte man mit solch billigen Bastelmodulen aber **niemals machen**\! Generell gilt: **Nur ausgebildete Fachleute sollten mit Spannungen von mehr als 24 V hantieren\!**
 
 **b)** Baue die Schaltung entsprechend des unten abgebildeten Schaltplans auf. Nutze dazu das “Power Module” auf dem Steckbrett (Erklärung unten). Probiere die Schaltung des Relais aus, indem du die Stromzufuhr der Spule unterbrichst und wieder herstellst.
 
-![Relais-Schaltung ohne Arduino](/circuits/relais-schaltung-ohne-arduino.png?lightbox=1024&resize=500&classes=caption "Relais-Schaltung ohne Arduino.")
+![Relais-Schaltung ohne Arduino](relais-schaltung-ohne-arduino.png?lightbox=1024&resize=500&classes=caption "Relais-Schaltung ohne Arduino.")
 
 **c)** Ordne in einer Skizze des Relais die Anschlüsse ihrer Bezeichnung (A1, A2, C, NO, NC) zu.
 </div>
 
-!!!! ![Power Supply Module](/images/steckbrett-mit-power-module-klein.png?resize=300&classes=caption,figure-right "Power Supply Module auf Steckbrett mit angeschlossener Batterie.")
+!!!! ![Power Supply Module](steckbrett-mit-power-module-klein.png?resize=300&classes=caption,figure-right "Power Supply Module auf Steckbrett mit angeschlossener Batterie.")
 !!!! #### Das “Power Supply Module”
 !!!! 
 !!!! Das Power Supply Module dient zur Spannungsversorgung auf einem Steckbrett. Dazu kann eine Batterie mit $ 6,5\, V$ bis $ 12\, V$ oder ein USB-Kabel angeschlossen werden. Die Spannung wird auf dem Modul je nach Einstellung der *Jumper* auf $ 5\, V$ oder $ 3,3\, V$ heruntergeregelt. Dazu verbindet man mithilfe der Jumper die Anschlüsse `5V` und `OFF` bzw. `3.3` und `OFF`.
@@ -209,8 +209,8 @@ Die Kontakte am Wechselschalter werden mit *NO* (*normally open*), *NC* (*normal
 #### Anschluss eines Relais am Arduino
 
 <div class="flex-box">
-<div markdown="1" class="flexible">![Relais-Schaltung mit Arduino](/circuits/relais-schaltung-mit-arduino.png?lightbox=1024&resize=500&classes=caption "Relais-Schaltung am Arduino.")</div>
-<div markdown="1" class="flexible">![npn-Transistor; Blick auf die flache Seite](/images/transistor-schematisch.png?resize=250&classes=caption "npn-Transistor Pn2222; Blick auf die flache Seite.") </div>
+<div markdown="1" class="flexible">![Relais-Schaltung mit Arduino](relais-schaltung-mit-arduino.png?lightbox=1024&resize=500&classes=caption "Relais-Schaltung am Arduino.")</div>
+<div markdown="1" class="flexible">![npn-Transistor; Blick auf die flache Seite](transistor-schematisch.png?resize=250&classes=caption "npn-Transistor Pn2222; Blick auf die flache Seite.") </div>
 </div>
 
 Der Schaltplan oben zeigt, wie man ein Relais mit dem Arduino steuert.
@@ -223,11 +223,11 @@ Der Schaltplan oben zeigt, wie man ein Relais mit dem Arduino steuert.
 <div markdown="1" class="projekt">
 #### Waschmaschinensteuerung
 
-![Relais-Schaltung mit Motor](/circuits/relais-schaltung-mit-motor.png?lightbox=1024&resize=500&classes=caption "Relais-Schaltung am Arduino mit Motor.")
+![Relais-Schaltung mit Motor](relais-schaltung-mit-motor.png?lightbox=1024&resize=500&classes=caption "Relais-Schaltung am Arduino mit Motor.")
 
 Baue die oben abgebildete Schaltung zur Steuerung eines Elektromotors mit einem Relais am Arduino auf. Achte auf die in Sperrrichtung geschaltete Diode parallel zum Motor.
 
-Schließe dann drei Taster an (mit Widerstand! - vgl. den [Abschnitt zu Tastern](https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen#taster)).
+Schließe dann drei Taster an (mit Widerstand! - vgl. den [Abschnitt zu Tastern](https://mintorials.de/de/arduinoskript/bausteine-algorithmen#taster)).
 
 *Programmiere nun einen einfachen steuerbaren Waschmaschinenprototypen!*
 
@@ -249,8 +249,8 @@ Vergleiche die Steuerung mit einem Transistor und mit einem Relais hinsichtlich 
 !!!! 
 !!!! Relais sind elektronisch steuerbare Wechselschalter, bei denen Steuerstromkreis und Arbeitsstromkreis komplett voneinander getrennt sind. Im Steuerstromkreis ist eine Spule, die ein Magnetfeld aufbaut, wenn der Strom eingeschaltet wird. Dadurch wird ein Wechselschalter im Arbeitsstromkreis angezogen, sodass er seine Position wechselt und einen anderen Teil des Arbeitsstromkreises anschaltet. Wenn der Strom durch die Spule im Steuerstromkreis abgeschaltet wird, baut sich das Magnetfeld ab und der Wechselschalter im Arbeitsstromkreis wird durch eine Feder zurück in die Standardstellung (NC) gezogen, sodass der erste Teil des Arbeitsstromkreises angeschaltet wird.
 !!!! <div class="flex-box">
-!!!! <div markdown="1"> ![Relais als Bild.](/images/relais-klein.png?resize=250&classes=caption "Relais als Bild.")</div>
-!!!! <div markdown="1"> ![Relais als Schaltsymbol.](/circuits/schaltsymbol-relais.png?resize=250&classes=caption "Relais als Schaltsymbol.") </div>
+!!!! <div markdown="1"> ![Relais als Bild.](relais-klein.png?resize=250&classes=caption "Relais als Bild.")</div>
+!!!! <div markdown="1"> ![Relais als Schaltsymbol.](schaltsymbol-relais.png?resize=250&classes=caption "Relais als Schaltsymbol.") </div>
 !!!! </div>
 !!!! Die Anschlüsse der Spule werden in der Regel mit *A1* und *A2* bezeichnet; die Anschlüsse am Wechselschalter mit *NO* (*normally open*), *NC* (*normally closed*) und *C* (*common ground*) bezeichnet.
 
@@ -268,7 +268,7 @@ Die Steuerung von Motoren erfordert in den oben beschriebenen Fällen stets mehr
 
 Um die Drehrichtung des Motors kontrollieren zu können, braucht man eine spezielle Anordnung von Transistoren, die als *H-Brücke* oder *Vierquadrantensteller* bezeichnet wird. Dieser Aufbau befindet sich auch im L293D und im L298N.
 
-![Vereinfachter Aufbau eines Vierquadrantenstellers mit Transistoren und zugehörigen Freilaufdioden (links) sowie die noch einmal vereinfachte Ersatzschaltung mit Schaltern.](/circuits/vierquadrantensteller.png?lightbox=1024&resize=800&classes=caption "Vereinfachter Aufbau eines Vierquadrantenstellers mit Transistoren und zugehörigen Freilaufdioden (links) sowie die noch einmal vereinfachte Ersatzschaltung mit Schaltern.")
+![Vereinfachter Aufbau eines Vierquadrantenstellers mit Transistoren und zugehörigen Freilaufdioden (links) sowie die noch einmal vereinfachte Ersatzschaltung mit Schaltern.](vierquadrantensteller.png?lightbox=1024&resize=800&classes=caption "Vereinfachter Aufbau eines Vierquadrantenstellers mit Transistoren und zugehörigen Freilaufdioden (links) sowie die noch einmal vereinfachte Ersatzschaltung mit Schaltern.")
 
 1.  Die Drehrichtung des Motors hängt davon ab, in welcher Richtung der Strom durch den Motor fließt. Notiere, welche Transistoren / Schalter eingeschaltet und welche Transistoren / Schalter ausgeschaltet sein müssen, damit der Strom von links nach rechts durch den Motor fließt. Notiere danach die Kombination für die Stromrichtung von rechts nach links.
 2.  Erkläre, wie sich der Motor mithilfe der vier Transistoren bzw. Schalter bremsen lässt.
@@ -279,7 +279,7 @@ Um die Drehrichtung des Motors kontrollieren zu können, braucht man eine spezie
 
 Da stets zwei Transistoren gemeinsam eingeschaltet werden müssen, könnten diese beim Anschluss an den Arduino über einen gemeinsamen Digitalpin gesteuert werden. Zudem ist es im Allgemeinen sinnvoll, für den Motor und den Arduino verschiedene Spannungsquellen zu verwenden, die über einen gemeinsamen GND-Anschluss geerdet werden, damit die möglicherweise hohen Ströme des Motors den Arduino nicht zerstören.
 
-![Steuerung eines Motors mit einem Vierquadrantensteller am Arduino.](/circuits/vierquadrantensteller-an-arduino.png?lightbox=1024&resize=800&classes=caption "Steuerung eines Motors mit einem Vierquadrantensteller am Arduino.")
+![Steuerung eines Motors mit einem Vierquadrantensteller am Arduino.](vierquadrantensteller-an-arduino.png?lightbox=1024&resize=800&classes=caption "Steuerung eines Motors mit einem Vierquadrantensteller am Arduino.")
 
 Bei der oben dargestellten Schaltung muss jedoch immer noch genau darauf geachtet werden, dass nicht versehentlich alle vier Transistoren leitend geschaltet werden. Daher ist die Steuerung mit dem L293D bzw. dem L298N noch ein wenig komplexer - die oben angestellten Überlegungen verdeutlichen aber gut den prinzipiellen Aufbau.
 
@@ -289,8 +289,8 @@ Bei der oben dargestellten Schaltung muss jedoch immer noch genau darauf geachte
 !!!! 
 !!!! Der L293D ist ein integrierter Schaltkreis (*IC* von engl. *integrated circuit*), das heißt, in das schwarze Gehäuse sind Schaltkreise mit Transistoren, Widerständen, Dioden etc. integriert. Genauer gesagt, enthält der L293D zwei H-Brücken oder Vierquadrantensteller, die sich mit den Pins an beiden Seiten steuern lassen. Bei der Nummerierung der Pins ist darauf zu achten, dass die kleine Kerbe nach oben gehalten wird.
 !!!! <div class="flex-box">
-!!!! <div markdown="1">![L293D als Bild.](/images/l293d.jpg?resize=150&classes=caption "L293D als Bild")</div>
-!!!! <div markdown="1">![L293D als Schaltsymbol.](/circuits/motortreiber-l293d.png?resize=200&classes=caption "L293D als Schaltsymbol.")</div>
+!!!! <div markdown="1">![L293D als Bild.](l293d.jpg?resize=150&classes=caption "L293D als Bild")</div>
+!!!! <div markdown="1">![L293D als Schaltsymbol.](motortreiber-l293d.png?resize=200&classes=caption "L293D als Schaltsymbol.")</div>
 !!!! </div>
 
 !! *Achtung: Der L293D kann leicht mit anderen Bauteilen wie z. B. einem Shift-Register verwechselt werden, das dieselbe Bauart hat. Um sicher zu gehen, muss man die winzige Beschriftung des Bauteils lesen!*
@@ -301,7 +301,7 @@ Der Motor wird an Pin 3 und 6 (`Out1` und `Out2`) angeschlossen. Der jeweilige Z
 
 Die vier `GND`-Anschlüsse dienen zur Stromversorgung und zur Wärmeableitung, falls hohe Ströme auftreten. An `Vmotor` wird der Pluspol der Versorgungsspannung für den Motor angeschlossen; an `Vcc` der Logik-Pegel von 5V für die Schaltung des IC.
 
-![Steuerung eines Motors mit dem L293D.](/circuits/l293d-an-arduino.png?lightbox=1024&resize=500&classes=caption "Steuerung eines Motors mit dem L293D.")
+![Steuerung eines Motors mit dem L293D.](l293d-an-arduino.png?lightbox=1024&resize=500&classes=caption "Steuerung eines Motors mit dem L293D.")
 
 <div markdown="1" class="aufgabe">
 #### Betrieb des L293D
@@ -315,8 +315,8 @@ Die vier `GND`-Anschlüsse dienen zur Stromversorgung und zur Wärmeableitung, f
     |  1  |  0   |   255   |    …    |
     
 <div class="flex-box">
-<div markdown="1">![L293D in der Roboterkonfiguration.](/images/prog-konfiguration-l293d.png?classes=caption "L293D in der Roboterkonfiguration.")</div>
-<div markdown="1">![Steuerung des L293D.](/images/prog-motorsteuerung-l293d.png?classes=caption "Steuerung des L293D.")</div>
+<div markdown="1">![L293D in der Roboterkonfiguration.](prog-konfiguration-l293d.png?classes=caption "L293D in der Roboterkonfiguration.")</div>
+<div markdown="1">![Steuerung des L293D.](prog-motorsteuerung-l293d.png?classes=caption "Steuerung des L293D.")</div>
 </div>
 </div>
 
@@ -327,7 +327,7 @@ Die vier `GND`-Anschlüsse dienen zur Stromversorgung und zur Wärmeableitung, f
 
 !!!! #### Der Motortreiber L298N
 !!!! 
-!!!! Das Motortreibermodul L298N ist ein beliebtes Bauteil, weil es den Anschluss von Motoren sehr einfach macht und weil es zudem über einen Spannungsregler verfügt, den man in einigen Fällen für die Stromversorgung von weiteren Bauteilen verwenden kann. Der Motortreiber-IC ist an ein Kühlelement geschraubt, um die entstehende Wärme abzuleiten. In dem schwarzen Kasten sind zwei [H-Brücken bzw. Vierquadrantensteller](https://doku.el-voss.de/de/arduinoskript/elektrik/transistoren-motoren#aufbau-des-l293d-der...) verbaut, sodass sich die Motoren in beide Richtungen drehen lassen.
+!!!! Das Motortreibermodul L298N ist ein beliebtes Bauteil, weil es den Anschluss von Motoren sehr einfach macht und weil es zudem über einen Spannungsregler verfügt, den man in einigen Fällen für die Stromversorgung von weiteren Bauteilen verwenden kann. Der Motortreiber-IC ist an ein Kühlelement geschraubt, um die entstehende Wärme abzuleiten. In dem schwarzen Kasten sind zwei [H-Brücken bzw. Vierquadrantensteller](https://mintorials.de/de/arduinoskript/elektrik/transistoren-motoren#aufbau-des-l293d-der...) verbaut, sodass sich die Motoren in beide Richtungen drehen lassen.
 !!!! 
 !!!! ![l298n-erklaerung](l298n-erklaerung.png?lightbox=1024&resize=600&classes=caption "Übersicht der Pinbelegung des Motortreibermoduls L298N.")
  
