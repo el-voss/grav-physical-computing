@@ -33,7 +33,7 @@ Nicht nur die Helligkeit beeinflusst unseren Alltag, sondern auch die Temperatur
 <div markdown="1">
 Baue ein digitales Thermometer, das die Lufttemperatur im Raum auf dem seriellen Monitor anzeigt\!
 
-Führe dazu mithilfe des rechts abgebildeten Ausschnitts [aus einem Datenblatt](https://pdf1.alldatasheet.com/datasheet-pdf/view/509832/EPCOS/G1541.html) eine Regression durch.
+Führe dazu mithilfe des rechts abgebildeten Ausschnitts [aus einem Datenblatt](https://pdf1.alldatasheet.com/datasheet-pdf/view/509832/EPCOS/G1541.html) eine Regression durch (siehe die [Anleitung zur Regression](../werkzeug-regression-durchfuehren).
 
 *Das verlinkte Datenblatt ist evtl. nicht das korrekte Datenblatt zu dem NTC. Da die Bauteilnummer bei dem verwendeten Starter Kit nicht angegeben wird, ist eine Zuordnung leider nicht mehr möglich.*
 </div>
