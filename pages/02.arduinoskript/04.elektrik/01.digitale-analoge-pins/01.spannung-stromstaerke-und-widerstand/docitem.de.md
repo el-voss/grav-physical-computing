@@ -122,7 +122,7 @@ Begründe, warum der oben berechnete Vorwiderstand zu niedrig ist. Erkläre, wie
 Suche dir nun den passenden Widerstand für die 7-Segment-Anzeige heraus und verbinde beide mit dem Arduino. Programmiere dann einen Raketencountdown, der von 9 rückwärts bis 0 zählt.
 
 *Tipp:* Erstelle dir zuerst eine Tabelle, in der du übersichtlich festhälst, welche LEDs für welche Zahl an sein müssen und mit welchen Pins am Arduino diese verbunden sind.
-Rücklink (öffnet in neuem Tab): <a href="https://doku.el-voss.de/de/arduinoskript/nepo#widerstandsringe-ablesen" target="_blank">Widerstandsringe ablesen</a>
+Rücklink (öffnet in neuem Tab): <a href="https://mintorials.de/de/arduinoskript/nepo#widerstandsringe-ablesen" target="_blank">Widerstandsringe ablesen</a>
 *Für Schnelle:* Man kann mit einer 7-Segment-Anzeige auch Buchstaben darstellen und nacheinander durchlaufen lassen!
 *Idee: Frick, Fritsch und Trick (2015): *Einführung in Mikrocontroller - Der Arduino als Steuerzentrale*, Bad Saulgau*
 </div>
