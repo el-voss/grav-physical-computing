@@ -17,7 +17,7 @@ media_order: batteriespannung-messen.png
 ## Spannung, Stromstärke und Widerstand berechnen
 
 <div markdown="1" class="clearfix">
-![Widerstände](/images/Widerstaende.jpg?resize=200&classes=caption,figure-right "Widerstände.")
+![Widerstände](Widerstaende.jpg?resize=200&classes=caption,figure-right "Widerstände.")
 Bisher war die Größe des Vorwiderstands von LEDs mit $330\,\Omega$ vorgegeben. In unserem Bausatz finden sich jedoch viele weitere Widerstände, die teilweise größer und teilweise kleiner sind.
 
 **Frage:** Welche Auswirkung haben Widerstände auf den Stromkreis? Wie kann man dies berechnen?
@@ -28,7 +28,7 @@ Bisher war die Größe des Vorwiderstands von LEDs mit $330\,\Omega$ vorgegeben.
 
 Unten ist eine einfache Reihenschaltung mit einer Spannungsquelle, einer LED und einem Vorwiderstand abgebildet. Stelle eine Vermutung an, ob die LED heller oder dunkler leuchten wird, wenn man den Vorwiderstand verkleinert. Begründe deine Vermutung.
 
-![Reihenschaltung von LED und Vorwiderstand an einer Spannungsquelle.](/circuits/ReiheLEDWiderstand.png?resize=400&classes=caption "Reihenschaltung von LED und Vorwiderstand an einer Spannungsquelle.")
+![Reihenschaltung von LED und Vorwiderstand an einer Spannungsquelle.](ReiheLEDWiderstand.png?resize=400&classes=caption "Reihenschaltung von LED und Vorwiderstand an einer Spannungsquelle.")
 </div>
 
 <div markdown="1" class="aufgabe">
@@ -47,7 +47,7 @@ Berechne, wie groß der Vorwiderstand einer LED mindestens sein muss, damit sie 
 </div>
 
 !!!! <div markdown="1" class="clearfix">
-!!!! ![Formeldreieck für Spannung, Stromstärke und Widerstand](/images/uri-dreieck.png?classes=caption,figure-right "Formeldreieck.")
+!!!! ![Formeldreieck für Spannung, Stromstärke und Widerstand](uri-dreieck.png?classes=caption,figure-right "Formeldreieck.")
 !!!! #### Widerstand, Spannung und Stromstärke
 !!!! 
 !!!! Der Widerstand \(R\) ist definiert als das Verhältnis von Spannung $U$ zu Stromstärke $I$: 
@@ -58,7 +58,7 @@ Berechne, wie groß der Vorwiderstand einer LED mindestens sein muss, damit sie 
 !!!! <div markdown="1" class="flex-box">
 !!!! <div markdown="1">
 !!!! #### Gesetze der Reihenschaltung
-!!!! ![Reihenschaltung](/circuits/reihenschaltung.png?lightbox=1024&resize=400)
+!!!! ![Reihenschaltung](reihenschaltung.png?lightbox=1024&resize=400)
 !!!! 
 !!!!   - In einer Reihenschaltung ist die Stromstärke an jeder Stelle gleich groß: $I_{ges}=I_1=I_2= I_3=\dots$
 !!!!   - In einer Reihenschaltung teilt sich die Gesamtspannung auf die einzelnen Bauteile auf: $U_{ges}=U_1 + U_2 + U_3+\dots$
@@ -66,7 +66,7 @@ Berechne, wie groß der Vorwiderstand einer LED mindestens sein muss, damit sie 
 !!!! </div>
 !!!! <div markdown="1">
 !!!! #### Gesetze der Parallelschaltung
-!!!! ![Parallelschaltung](/circuits/parallelschaltung.png?lightbox=1024&resize=400)
+!!!! ![Parallelschaltung](parallelschaltung.png?lightbox=1024&resize=400)
 !!!! 
 !!!!   - In einer Parallelschaltung teilt sich die Gesamtstromstärke auf die einzelnen Zweige auf: $I_{ges}=I_1+I_2+ I_3+\dots$
 !!!!   - In einer Parallelschaltung ist die Spannung in jedem Zweig gleich groß: $U_{ges}=U_1=U_2=U_3=\dots$
@@ -93,7 +93,7 @@ Max überlegt sich, dass er für eine Ampelschaltung am Arduino denselben Vorwid
 
 <div markdown="1" class="clearfix" style="background:#eef; padding:1em;">
 
-![Schaltplan für Ampelschaltung](/circuits/schaltplan-rgb-led-berechnung.png?lightbox=1024&resize=300&classes=caption,figure-right "Schaltplan für Ampelschaltung.")
+![Schaltplan für Ampelschaltung](schaltplan-rgb-led-berechnung.png?lightbox=1024&resize=300&classes=caption,figure-right "Schaltplan für Ampelschaltung.")
 $I_L =  20 \, mA =  0,02 \, A$ $\quad \Longrightarrow \quad$ $I_R =  0,06 \, A$
 
 $U_L =  2,2 \, V$ (max. Spannung, die rote LEDs aushalten)
@@ -123,8 +123,8 @@ Begründe, warum der oben berechnete Vorwiderstand zu niedrig ist. Erkläre, wie
 !!!! Eine 7-Segment-Anzeige besteht aus sieben roten LEDs, die so angeordnet sind, dass sich mit ihnen eine Zahl darstellen lässt. Zusätzlich gibt es zur leichteren Unterscheidung von 6 und 9 eine LED für den Punkt. *Jede LED lässt sich einzeln über einen der Pins ansteuern, wobei sich alle LEDs einen gemeinsamen GND-Anschluss teilen.* Der zweite GND-Anschluss soll hier nicht genutzt werden, um die Schaltung so einfach wie möglich zu halten.
 !!!! 
 !!!! <div class="flex-box">
-!!!! <div markdown="1">![7-Segment-Anzeige.](/images/7segmentanzeige-bild2.jpg?resize=350)</div>
-!!!! <div markdown="1">![Schema einer 7-Segment-Anzeige](/images/7segmentanzeige-schema.png?resize=350)</div>
+!!!! <div markdown="1">![7-Segment-Anzeige.](7segmentanzeige-bild2.jpg?resize=350)</div>
+!!!! <div markdown="1">![Schema einer 7-Segment-Anzeige](7segmentanzeige-schema.png?resize=350)</div>
 !!!! </div>
 
 <div markdown="1" class="projekt">
@@ -170,7 +170,7 @@ Die Ausgabe von 5 V gegenüber GND an einem digitalen Ausgang des Arduino ist 
 </div>
 
 !!!! <div markdown="1" class="clearfix">
-!!!! ![Elektrisches Potential](/images/el-potential.png?lightbox=1024&resize=400&classes=caption,figure-right "El. Potential bei einem einfachen Schaltkreis.")
+!!!! ![Elektrisches Potential](el-potential.png?lightbox=1024&resize=400&classes=caption,figure-right "El. Potential bei einem einfachen Schaltkreis.")
 !!!! #### Elektrisches Potential
 !!!! So wie die Höhendifferenz ein Maß für die Höhenenergie ist, die umgewandelt wird (z. B. in Bewegungsenergie), ist die Spannung ein Maß für die elektrische Energie, die an einer LED, einem Widerstand etc. umgewandelt wird.
 !!!! 
@@ -190,8 +190,8 @@ In dem unten abgebildeten Schaltplan ist dargestellt, wie man einen Taster am Ar
 Markiere die Kabel farbig, sodass die Kabel, die auf dem gleichen elektrischen Potential liegen, die gleiche Farbe haben. Notiere zudem den Wert des elektrischen Potentials.
 
 <div class="flex-box">
-<div markdown="1">![Taster geschlossen (Stromfluss).](/circuits/taster-an-arduino.png?lightbox=1024&resize=400)</div>
-<div markdown="1">![Taster geschlossen (Stromfluss).](/circuits/taster-an-arduino-geschlossen.png?lightbox=1024&resize=400)</div>
+<div markdown="1">![Taster geschlossen (Stromfluss).](taster-an-arduino.png?lightbox=1024&resize=400)</div>
+<div markdown="1">![Taster geschlossen (Stromfluss).](taster-an-arduino-geschlossen.png?lightbox=1024&resize=400)</div>
 </div>
 </div>
 
@@ -200,7 +200,7 @@ Markiere die Kabel farbig, sodass die Kabel, die auf dem gleichen elektrischen P
 
 Eine Alternative zu der bekannten oberen Schaltung ist die Schaltung mit einem sogenannten Pullup-Widerstand. In der Abbildung ist die Schaltung mit einem Taster und einem Pullup-Widerstand dargestellt.
 
-![](/circuits/schaltplan-pullup.png?lightbox=1024&resize=800)
+![](schaltplan-pullup.png?lightbox=1024&resize=800)
 
 1.  Markiere die Kabel jeweils farbig, sodass die Kabel, die auf dem gleichen elektrischen Potential liegen, die gleiche Farbe haben. Notiere zudem den Wert des elektrischen Potentials.
 2.  Erläutere die Bedeutung der beiden Begriffe *Pulldown* und *Pullup*.
@@ -241,7 +241,7 @@ Baue und programmiere eine Fußgängerampel mit einer Pullup-Schaltung für den 
 **Ziel:** Mithilfe des Arduino soll eine funkelnde LED-Kerze gebaut werden.
 
 Der Arduino verfügt über mehrere sogenannte PWM-Pins, die mit einer Tilde ($\sim$) gekennzeichnet sind. Du hast diese Pins schon bei den analogen Aktoren kennen gelernt, weil diese über Pulsweitenmodulation(PWM) angesprochen werden. Die PWM-Werte, die der Anweisung übergeben werden können, variieren von 0 bis 255.
-<center markdown="1">![](/images/analogwrite.png)</center>
+<center markdown="1">![](analogwrite.png)</center>
 
 <div markdown="1" class="aufgabe">
 #### Fading
@@ -263,7 +263,7 @@ Erkläre mithilfe der Zusammenfassung zur Pulsweitenmodulation, was bei der Nutz
 !!!! 
 !!!! Bei der Pulsweitenmodulation wechselt der ausgewählte digitale Pin sehr schnell (mit einer Frequenz von 50 Hz) zwischen den elektrischen Potentialen 5 V und 0 V hin und her - es ergibt sich also ein gepulstes Signal, dessen Weite (Dauer) moduliert werden kann. Aus dem Verhältnis der Zeit, in der der Pin auf einem 5 V-Potential liegt, zu der Zeit, in der der Pin auf einem 0 V-Potential liegt, ergibt sich eine mittlere Spannung (gegenüber Ground), die scheinbar am Pin anliegt. Wenn der Pin in der Hälfte der Zeit auf 5 V und in der anderen Hälfte auf 0 V liegt, dann ergibt sich eine mittlere Spannung von $\overline{U}=2,5\,V$. Wenn der Pin nur in einem Viertel der Zeit auf 5 V liegt, dann ergibt sich eine mittlere Spannung von $\overline{U}=1,25\,V$ ($=5\,V\cdot 0,25$).
 !!!! 
-!!!! ![t-U-Diagramm zur PWM](/images/pwm-info.png?lightbox=1024&resize=500&classes=caption "Darstellung des zeitlichen Verlaufs einer Pulsweitenmodulation mit einem Tastverhältnis von 25%.")
+!!!! ![t-U-Diagramm zur PWM](pwm-info.png?lightbox=1024&resize=500&classes=caption "Darstellung des zeitlichen Verlaufs einer Pulsweitenmodulation mit einem Tastverhältnis von 25%.")
 !!!! 
 !!!! Das Verhältnis der Zeit mit 5 V zu der Gesamtdauer einer Periode mit 5 V und 0 V wird als *Tastverhältnis* bezeichnet. Im Programm wird das Tastverhältnis durch einen Wert zwischen 0 und 255 angegeben. Eine 0 bedeutet, dass die Zeit mit 5 V 0% ausmacht, also liegt der Pin durchgängig auf einem 0 V-Potential. Eine 255 bedeutet, dass die Zeit mit 5 V 100% ausmacht, also liegt der Pin durchgängig auf einem 5 V-Potential. Diese beiden Werte entsprechen dem, was bei den bekannten Befehlen zur Steuerung von digitalen Pins passiert.
 !!!! 
@@ -321,7 +321,7 @@ Für eine einfache Messung bei einer 1,5 V-Batterie wird der negative Pol der 
 
 Da der Arduino beim direkten Anschließen nur maximal 5 V “verträgt”, muss man zum Testen von z. B. 9 V-Blöcken weitere Bauteile verwenden. Mit zwei $ 10\, k\Omega$ Widerständen kann man einen einfachen *Spannungsteiler* aufbauen, der die Messung ermöglicht.
 
-![Schaltplan für Voltmeter bis 10V.](/circuits/schaltplan-batterietester.png?lightbox=1024&resize=400)
+![Schaltplan für Voltmeter bis 10V.](schaltplan-batterietester.png?lightbox=1024&resize=400)
 
 1.  Berechne die Stromstärke und die Spannung an den Widerständen. Warum sind große Widerstände hier sinnvoll?
 2.  Markiere die Kabel in der Abbildung farbig, sodass die Kabel, die auf dem gleichen elektrischen Potential liegen, die gleiche Farbe haben. Notiere zudem den Wert des elektrischen Potentials.
@@ -330,7 +330,7 @@ Da der Arduino beim direkten Anschließen nur maximal 5 V “verträgt”, mus
 </div>
 
 *Hinweis:* Ganz ähnlich funktioniert ein Multimeter, bei dem man mit einem Drehregler ein passendes Widerstandsverhältnis für den aufgedruckten Messbereich einstellen kann. Auch im Multimeter werden für die Spannungsmessung möglichst große Widerstände verwendet.
-![Multimeter](/images/multimeter.jpg?resize=300&classes=caption "Multimeter.")
+![Multimeter](multimeter.jpg?resize=300&classes=caption "Multimeter.")
 
 !!!! #### (Quasi) Analoge Pins am Arduino
 !!!! 

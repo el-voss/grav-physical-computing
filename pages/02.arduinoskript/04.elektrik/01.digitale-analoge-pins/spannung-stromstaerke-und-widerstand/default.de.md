@@ -3,7 +3,7 @@ title: 'Spannung, Stromstärke und Widerstand berechnen'
 ---
 
 <div markdown="1" class="clearfix">
-![Widerstände](/images/Widerstaende.jpg?resize=200&classes=caption,figure-right "Widerstände.")
+![Widerstände](Widerstaende.jpg?resize=200&classes=caption,figure-right "Widerstände.")
 Bisher war die Größe des Vorwiderstands von LEDs mit $330\,\Omega$ vorgegeben. In unserem Bausatz finden sich jedoch viele weitere Widerstände, die teilweise größer und teilweise kleiner sind.
 
 **Frage:** Welche Auswirkung haben Widerstände auf den Stromkreis? Wie kann man dies berechnen?
@@ -14,7 +14,7 @@ Bisher war die Größe des Vorwiderstands von LEDs mit $330\,\Omega$ vorgegeben.
 
 Unten ist eine einfache Reihenschaltung mit einer Spannungsquelle, einer LED und einem Vorwiderstand abgebildet. Stelle eine Vermutung an, ob die LED heller oder dunkler leuchten wird, wenn man den Vorwiderstand verkleinert. Begründe deine Vermutung.
 
-![Reihenschaltung von LED und Vorwiderstand an einer Spannungsquelle.](/circuits/ReiheLEDWiderstand.png?resize=400&classes=caption "Reihenschaltung von LED und Vorwiderstand an einer Spannungsquelle.")
+![Reihenschaltung von LED und Vorwiderstand an einer Spannungsquelle.](ReiheLEDWiderstand.png?resize=400&classes=caption "Reihenschaltung von LED und Vorwiderstand an einer Spannungsquelle.")
 </div>
 
 <div markdown="1" class="aufgabe">
@@ -33,7 +33,7 @@ Berechne, wie groß der Vorwiderstand einer LED mindestens sein muss, damit sie 
 </div>
 
 !!!! <div markdown="1" class="clearfix">
-!!!! ![Formeldreieck für Spannung, Stromstärke und Widerstand](/images/uri-dreieck.png?classes=caption,figure-right "Formeldreieck.")
+!!!! ![Formeldreieck für Spannung, Stromstärke und Widerstand](uri-dreieck.png?classes=caption,figure-right "Formeldreieck.")
 !!!! #### Widerstand, Spannung und Stromstärke
 !!!! 
 !!!! Der Widerstand \(R\) ist definiert als das Verhältnis von Spannung $U$ zu Stromstärke $I$: 
@@ -44,7 +44,7 @@ Berechne, wie groß der Vorwiderstand einer LED mindestens sein muss, damit sie 
 !!!! <div markdown="1" class="flex-box">
 !!!! <div markdown="1">
 !!!! #### Gesetze der Reihenschaltung
-!!!! ![Reihenschaltung](/circuits/reihenschaltung.png?lightbox=1024&resize=400)
+!!!! ![Reihenschaltung](reihenschaltung.png?lightbox=1024&resize=400)
 !!!! 
 !!!!   - In einer Reihenschaltung ist die Stromstärke an jeder Stelle gleich groß: $I_{ges}=I_1=I_2= I_3=\dots$
 !!!!   - In einer Reihenschaltung teilt sich die Gesamtspannung auf die einzelnen Bauteile auf: $U_{ges}=U_1 + U_2 + U_3+\dots$
@@ -52,7 +52,7 @@ Berechne, wie groß der Vorwiderstand einer LED mindestens sein muss, damit sie 
 !!!! </div>
 !!!! <div markdown="1">
 !!!! #### Gesetze der Parallelschaltung
-!!!! ![Parallelschaltung](/circuits/parallelschaltung.png?lightbox=1024&resize=400)
+!!!! ![Parallelschaltung](parallelschaltung.png?lightbox=1024&resize=400)
 !!!! 
 !!!!   - In einer Parallelschaltung teilt sich die Gesamtstromstärke auf die einzelnen Zweige auf: $I_{ges}=I_1+I_2+ I_3+\dots$
 !!!!   - In einer Parallelschaltung ist die Spannung in jedem Zweig gleich groß: $U_{ges}=U_1=U_2=U_3=\dots$
@@ -79,7 +79,7 @@ Max überlegt sich, dass er für eine Ampelschaltung am Arduino denselben Vorwid
 
 <div markdown="1" class="clearfix" style="background:#eef; padding:1em;">
 
-![Schaltplan für Ampelschaltung](/circuits/schaltplan-rgb-led-berechnung.png?lightbox=1024&resize=300&classes=caption,figure-right "Schaltplan für Ampelschaltung.")
+![Schaltplan für Ampelschaltung](schaltplan-rgb-led-berechnung.png?lightbox=1024&resize=300&classes=caption,figure-right "Schaltplan für Ampelschaltung.")
 $I_L =  20 \, mA =  0,02 \, A$ $\quad \Longrightarrow \quad$ $I_R =  0,06 \, A$
 
 $U_L =  2,2 \, V$ (max. Spannung, die rote LEDs aushalten)
@@ -109,8 +109,8 @@ Begründe, warum der oben berechnete Vorwiderstand zu niedrig ist. Erkläre, wie
 !!!! Eine 7-Segment-Anzeige besteht aus sieben roten LEDs, die so angeordnet sind, dass sich mit ihnen eine Zahl darstellen lässt. Zusätzlich gibt es zur leichteren Unterscheidung von 6 und 9 eine LED für den Punkt. *Jede LED lässt sich einzeln über einen der Pins ansteuern, wobei sich alle LEDs einen gemeinsamen GND-Anschluss teilen.* Der zweite GND-Anschluss soll hier nicht genutzt werden, um die Schaltung so einfach wie möglich zu halten.
 !!!! 
 !!!! <div class="flex-box">
-!!!! <div markdown="1">![7-Segment-Anzeige.](/images/7segmentanzeige-bild2.jpg?resize=350)</div>
-!!!! <div markdown="1">![Schema einer 7-Segment-Anzeige](/images/7segmentanzeige-schema.png?resize=350)</div>
+!!!! <div markdown="1">![7-Segment-Anzeige.](7segmentanzeige-bild2.jpg?resize=350)</div>
+!!!! <div markdown="1">![Schema einer 7-Segment-Anzeige](7segmentanzeige-schema.png?resize=350)</div>
 !!!! </div>
 
 <div markdown="1" class="projekt">
