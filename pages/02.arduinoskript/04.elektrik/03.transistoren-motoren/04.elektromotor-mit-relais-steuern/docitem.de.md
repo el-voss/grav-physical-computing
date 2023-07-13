@@ -3,6 +3,7 @@ title: 'Elektromotor mit Relais steuern'
 show_pageimage: true
 image_width: 300
 image_height: 400
+featured_image: relais-klein.png
 ---
 
 Bei der Verwendung eines Transistors muss der Arbeitsstromkreis mit dem Motor und der Steuerstromkreis mit dem Arduino immer miteinander verbunden bleiben - auch bei sehr großen Stromstärken. Damit verbleibt immer eine gewisse Gefahr, dass eine Spannungsspitze auf den Arduino durchschlägt und ihn zerstört. Mit einem Relais lässt sich dieses Risiko vermeiden. Ein weiterer Vorteil ist, dass der Arbeitsstromkreis auch mit Wechselstrom betrieben werden kann, wenn ein Relais als Schalter genutzt wird.
