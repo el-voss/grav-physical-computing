@@ -8,9 +8,9 @@ content:
     limit: 30
     order:
         by: folder
-        dir: desc
-    pagination: true
-    url_taxonomy_filters: true
+        dir: asc
+    pagination: false
+    url_taxonomy_filters: false
 ---
 
 <style>
