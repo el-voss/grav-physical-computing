@@ -13,7 +13,7 @@ Die Messung einer variablen, (quasi-)analogen Spannung eröffnet neue Möglichke
 <div markdown="1" class="aufgabe clearfix">
 #### Bleistiftpotentiometer
 
-![Bleistiftpotentiometer](/images/bleistiftpoti-klein.png?lightbox=1024&resize=300&classes=caption,figure-right "Bleistiftpotentiometer.")
+![Bleistiftpotentiometer](bleistiftpoti-klein.png?lightbox=1024&resize=300&classes=caption,figure-right "Bleistiftpotentiometer.")
 Ein einfaches Potentiometer kannst du selbst bauen.
 
 *Basteln:* Markiere dafür mit Bleistift einen dicken Strich auf einem Blatt Papier und klebe am einen Ende ein Kabel fest, das mit GND verbunden ist. Klebe ans andere Ende ein Kabel, das mit 5V verbunden ist. Mit einem dritten Kabel (“Sensorkabel”), das mit einem analogen Eingang verbunden ist, lässt sich nun messen, welches elektrische Potential an einer beliebigen Stelle des Bleistiftstreifens anliegt.
@@ -29,17 +29,17 @@ Ein einfaches Potentiometer kannst du selbst bauen.
 !!!! 
 !!!! Ein **Potentiometer**, kurz: Poti, ist im Grunde nichts anderes als ein Spannungsteiler mit zwei Widerständen. Jedoch kann die Größe der Widerstände z. B. durch Drehen variiert werden. Der Gesamtwiderstand bleibt dabei immer gleich.
 !!!! <div class="flex-box">
-!!!! <div markdown="1">![Drehpotentiometer](/images/poti.jpg?resize=200&classes=caption "Drehpotentiometer.")</div>
+!!!! <div markdown="1">![Drehpotentiometer](poti.jpg?resize=200&classes=caption "Drehpotentiometer.")</div>
 !!!! <div markdown="1">![Trimmpotentiometer1](trimmpotentiometer1.jpg?resize=200&classes=caption "Trimmpotentiometer auf einem Infrarotsensor.")</div>
 !!!! <div markdown="1">![Trimmpotentiometer2](trimmpotentiometer2.jpg?resize=200&classes=caption "Trimmpotentiometer an einem Bewegungsmelder.")</div>
-!!!! <div markdown="1">![Schaltsymbol eines Potentiometers](/images/poti-schaltsymbol.png?resize=150&classes=caption "Schaltsymbol eines Potentiometers.")</div>
+!!!! <div markdown="1">![Schaltsymbol eines Potentiometers](poti-schaltsymbol.png?resize=150&classes=caption "Schaltsymbol eines Potentiometers.")</div>
 !!!! </div>
 !!!! 
 !!!! Beim Anschluss an den Arduino wird der mittlere Pin des Potentiometers an einen analogen Eingang angeschlossen. Die anderen beiden Pins werden mit GND und 5V verbunden.
 
 <div markdown="1" class="projekt clearfix">
 #### Dimmbare Lampe
-![PWM-Analog-Diagramm](/images/pwm-analog-diagramm.png?resize=300&classes=caption,figure-right "Diagramm zur Ermittlung einer Funktion.")
+![PWM-Analog-Diagramm](pwm-analog-diagramm.png?resize=300&classes=caption,figure-right "Diagramm zur Ermittlung einer Funktion.")
 Baue und programmiere eine Lampe, deren Helligkeit sich durch ein Potentiometer einstellen lässt.
 
 *Hinweis:* Du musst dafür sorgen, dass der eingelesene Analogwert zwischen 0 und 1023 in einen PWM-Wert zwischen 0 und 255 umgerechnet wird. Ermittle dazu eine passende Funktion.
@@ -49,7 +49,7 @@ Baue und programmiere eine Lampe, deren Helligkeit sich durch ein Potentiometer 
 
 Für einige Projekte, wie das Dimmen einer Lampe, ist ein Mikrocontroller eigentlich überdimensioniert, weil sich die Funktion schon durch eine reine Hardwarelösung erreichen lässt.
 
-![Potentiometer-Schaltung](/circuits/potentiometer-anwendung.png?lightbox=1024&resize=500&classes=caption "Auf der linken Seite ist die Anwendung eines Potentiometers ohne Mikrocontroller dargestellt. Auf der rechten Seite ist der zugehörige Ersatzschaltplan gezeichnet, der zeigt, dass das Potentiometer als Spannungsteiler mit zwei variablen Widerständen R2 und R3 aufgefasst werden kann.")
+![Potentiometer-Schaltung](potentiometer-anwendung.png?lightbox=1024&resize=500&classes=caption "Auf der linken Seite ist die Anwendung eines Potentiometers ohne Mikrocontroller dargestellt. Auf der rechten Seite ist der zugehörige Ersatzschaltplan gezeichnet, der zeigt, dass das Potentiometer als Spannungsteiler mit zwei variablen Widerständen R2 und R3 aufgefasst werden kann.")
 
 <div markdown="1" class="projekt">
 #### Dimmbare Lampe ohne Mikrocontroller
@@ -76,5 +76,5 @@ Beim Experimentieren mit dem Potentiometer wirst du feststellen, dass man das Po
 2.  Ordne die Farben der LEDs den rechts abgebildeten Kennlinien von einer blauen, einer grünen, einer gelben und einer roten LED zu. Experimentiere dazu mit dem Potentiometer und den LEDs.
     *Hinweis:* Das menschliche Auge ist in der Lage, bereits bei einer Stromstärke von wenigen Mikroampere ein schwaches Leuchten zu erkennen. Im Diagramm ist so eine geringe Stromstärke kaum von $ 0\,  mA$ zu unterscheiden.
 
-![U-I-Kennlinien einer roten, gelben, grünen und blauen Leuchtdiode.](/circuits/Diodenkennlinien.png?lightbox=1024&resize=700&classes=caption "U-I-Kennlinien einer roten, gelben, grünen und blauen Leuchtdiode.")
+![U-I-Kennlinien einer roten, gelben, grünen und blauen Leuchtdiode.](Diodenkennlinien.png?lightbox=1024&resize=700&classes=caption "U-I-Kennlinien einer roten, gelben, grünen und blauen Leuchtdiode.")
 </div>
