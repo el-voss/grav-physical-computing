@@ -1,5 +1,8 @@
 ---
 title: 'Spannung, Stromstärke und Widerstand berechnen'
+show_pageimage: true
+image_width: 300
+image_height: 400
 ---
 
 <div markdown="1" class="clearfix">
