@@ -3,6 +3,7 @@ title: 'Drehregler verwenden'
 show_pageimage: true
 image_width: 300
 image_height: 400
+featured_image: poti.jpg
 ---
 
 Die Messung einer variablen, (quasi-)analogen Spannung eröffnet neue Möglichkeiten, da die Eingabewerte nun viel differenzierter sind als bei einem Taster, bei dem die Eingabe nur aus “0” oder “1” bestand. Zum Beispiel kann man darüber angeben, wie hell eine Lampe leuchten soll bzw. wie stark sie gedimmt werden soll. Dazu werden Potentiometer verwendet.
