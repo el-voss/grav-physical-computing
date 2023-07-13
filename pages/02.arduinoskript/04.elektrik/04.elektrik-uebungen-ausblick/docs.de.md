@@ -1,10 +1,8 @@
 ---
-title: 'Übungen und Ausblick'
+title: 'Vermischte Übungen zur Elektrik und Ausblick'
 menu: '[U] Übungen und Ausblick'
 media_order: 'schaltplan-ldr-in-reihe.png,schaltplan-spannungsmessung.png,schaltplan-pullup.png,schaltplan-dimmbarer-lautsprecher.png,Bloecke-Dimmbarer-Lautsprecher.png,schaltplan-ntc-an-arduino.png,Bloecke-LDR-komplex-Moorhuhn.png,schaltplan-transistor-und-ntc.png,programm-pullup.png,Schaltplan-Taster-an-A0.png'
 ---
-
-# Elektrische Grundlagen Teil 4: Vermischte Übungen und Ausblick
 
 <style>
     body {
