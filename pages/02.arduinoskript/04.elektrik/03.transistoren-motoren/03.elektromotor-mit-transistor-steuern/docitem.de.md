@@ -3,6 +3,7 @@ title: 'Elektromotor mit Transistor steuern'
 show_pageimage: true
 image_width: 300
 image_height: 400
+featured_image: motoranschluss-mit-steuerung.png
 ---
 
 Der 5 V-Pin des Arduino liefert zwar in vielen Fällen genügend Strom für den Motor, jedoch lässt er sich nicht programmieren. Dazu lässt sich ein Transistor einbauen.
