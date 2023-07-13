@@ -2,6 +2,15 @@
 title: 'Digitale und analoge Pins'
 menu: '[DAP] Digitale und analoge Pins'
 media_order: batteriespannung-messen.png
+content:
+    items:
+        - '@self.children'
+    limit: 30
+    order:
+        by: folder
+        dir: asc
+    pagination: true
+    url_taxonomy_filters: true
 ---
 
 # Elektrische Grundlagen Teil 1: Digitale und analoge Pins
