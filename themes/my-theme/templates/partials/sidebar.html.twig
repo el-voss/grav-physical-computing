@@ -15,9 +15,12 @@
                 <span><b>{% if data_level == 0 %}{{ loop.index }}. {% endif %}</b>{{ p.menu }}</span>
             </a>
             {% if p.children.count > 0 %}
-            <ul>
-                {{ self.loop(p, parent_loop|default(0)+loop.index) }}
-            </ul>
+              {# Tiefe des Inhaltsverzeichnisses in der Sidebar auf 3 Ebenen beschränken #}
+              {% if data_level < 3 %}
+                <ul>
+                    {{ self.loop(p, parent_loop|default(0)+loop.index) }}
+                </ul>
+              {% endif %}
             {% endif %}
         </li>
     {% endfor %}
@@ -62,11 +65,11 @@
                     class="fa fa-fw fa-history"></i> {{ 'THEME_LEARN2_CLEAR_HISTORY'|t }}</a><br/>
 
         <section id="footer">
-            <p>Autor: <a href="https://doku.el-voss.de/de/about#autor">Sebastian Voß</a></p>
-            <br><p>Lizenz: <a rel="license" href="https://doku.el-voss.de/de/about#lizenz">CC-BY-SA 4.0</a>.</p>
-	    <br><p><a href="https://doku.el-voss.de/de/about">Über diese Seite</a></p>
-	        <p><a href="https://doku.el-voss.de/de/impressum">Impressum</a></p>
-		<p><a href="https://doku.el-voss.de/de/datenschutzerklaerung">Datenschutzerklärung</a></p>
+            <p>Autor: <a href="https://mintorials.de/de/about#autor">Sebastian Voß</a></p>
+            <br><p>Lizenz: <a rel="license" href="https://mintorials.de/de/about#lizenz">CC-BY-SA 4.0</a>.</p>
+	    <br><p><a href="https://mintorials.de/de/about">Über diese Seite</a></p>
+	        <p><a href="https://mintorials.de/de/impressum">Impressum</a></p>
+		<p><a href="https://mintorials.de/de/datenschutzerklaerung">Datenschutzerklärung</a></p>
             <br><p>Seite erstellt mit <a href="https://getgrav.org">Grav</a>.</p>
         </section>
     </div>

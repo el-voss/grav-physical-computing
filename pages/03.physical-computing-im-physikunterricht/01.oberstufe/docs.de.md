@@ -14,7 +14,7 @@ Auf dieser Seite sammle ich Exkurse zu Physical Computing im Physikunterricht de
 
 Der Arduino Uno ist ein Mikrocontroller, der entwickelt wurde, um einen einfachen Einstieg in Elektronik und Programmierung zu ermöglichen.
 
-![Die wichtigsten Komponenten eines Arduino Uno.](/images/arduino-beschriftet.png?lightbox=1024&classes=caption "Die wichtigsten Komponenten eines Arduino Uno.")
+![Die wichtigsten Komponenten eines Arduino Uno.](arduino-beschriftet.png?lightbox=1024&classes=caption "Die wichtigsten Komponenten eines Arduino Uno.")
 
 Die Abbildung oben zeigt die wichtigsten Komponenten des Arduino Uno. Wichtig sind an dieser Stelle vor allem folgende Punkte:
 
@@ -29,7 +29,7 @@ Um den Arduino zu programmieren, ruft man die Adresse <https://lab.open-roberta.
 
 Die folgende Abbildung zeigt eine Übersicht über die Oberfläche des Open Roberta Lab, jedoch lernt man sie am besten kennen, indem man einfach drauf loslegt und ausprobiert, was sich damit anstellen lässt.
 
-![Übersicht über die Funktionen von Open Roberta Lab.](/images/openrobertalab.png?lightbox=1024&classes=caption "Übersicht über die Funktionen von Open Roberta Lab.")
+![Übersicht über die Funktionen von Open Roberta Lab.](openrobertalab.png?lightbox=1024&classes=caption "Übersicht über die Funktionen von Open Roberta Lab.")
 
 ### Digitale Ausgänge steuern
 
@@ -57,7 +57,7 @@ Der Arduino und der Computer kommunizieren über die USB-Schnittstelle (*univers
 <div markdown="1" class="aufgabe">
 #### Test des seriellen Monitors
 
-![](/images/serialprint.png?classes=figure-right)
+![](serialprint.png?classes=figure-right)
 1.  Implementiere ein Programm, das in jeder Sekunde “Moin!” an den seriellen Monitor sendet und übertrage es auf den Arduino.
 2.  [Öffne den seriellen Monitor](https://jira.iais.fraunhofer.de/wiki/display/ORInfo/Vorbereitung+Nepo4Arduino#VorbereitungNepo4Arduino-SerialMonitor) im Open Roberta Connector mit einer Baudrate von 9600 und kontrolliere dein Programm.
 </div>
@@ -76,19 +76,19 @@ Der Arduino und der Computer kommunizieren über die USB-Schnittstelle (*univers
 Ein Teslameter misst die Stärke der magnetischen Flussdichte. Dazu werden üblicherweise Hall-Sensoren benutzt, wie sie im Bild unten zu sehen sind. 
 
 <div class="flex-box">
-<div markdown="1">![Hall-Sensor.](/images/hall-a3124-lua-t.jpg?resize=150&classes=caption "Hall-Sensor.")</div>
-<div markdown="1">![Hall-Sensor auf Platine.](/images/hall-ky-035.jpg?resize=150&classes=caption "Hall-Sensor auf Platine.")</div>
+<div markdown="1">![Hall-Sensor.](hall-a3124-lua-t.jpg?resize=150&classes=caption "Hall-Sensor.")</div>
+<div markdown="1">![Hall-Sensor auf Platine.](hall-ky-035.jpg?resize=150&classes=caption "Hall-Sensor auf Platine.")</div>
 </div>
 
 Es gibt viele verschiedene Hall-Sensoren - in diesem Kurs wird das Hall-Sensor-Modul "KY-035" genutzt. Das ist eine kleine Platine, auf der der Hall-Sensor AH49E verlötet ist. Sensor und Modul verfügen über drei Pins, die beim Arduino an 5V, GND und einen analogen Eingang (A0 bis A5) angeschlossen werden, wie der Schaltplan unten zeigt. *Achtung*: Auf der Platine wird die Reihenfolge von 5V und GND vertauscht!
 
 <!-- Schaltplan -->
-![Schaltplan zum Anschluss des Hall-Sensor-Moduls an den Arduino.](/circuits/hall-ky-035-an-arduino.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum Anschluss des Hall-Sensor-Moduls KY-035 an den Arduino. Man beachte, dass die Reihenfolge von VCC und GND auf der Platine vertauscht wird. Beim AH49E ohne Platine ist der GND-Pin dementsprechend in der Mitte.")
+![Schaltplan zum Anschluss des Hall-Sensor-Moduls an den Arduino.](hall-ky-035-an-arduino.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum Anschluss des Hall-Sensor-Moduls KY-035 an den Arduino. Man beachte, dass die Reihenfolge von VCC und GND auf der Platine vertauscht wird. Beim AH49E ohne Platine ist der GND-Pin dementsprechend in der Mitte.")
 
 Die Verbindung mit 5V (Pluspol) und GND (Minuspol) sorgt für den Stromfluss durch das Hall-Plättchen. Der Signalpin, der an einen analogen Eingang angeschlossen wird, gibt eine Spannung (gegenüber GND) aus, mit der sich die magnetische Flussdichte berechnen lässt. Dies ist jedoch **nicht die Hall-Spannung**, da diese in der Regel zu klein wäre. Der Hall-Sensor verfügt über Schaltelemente, die die Hall-Spannung verstärken und stabilisieren, um ein gut messbares Signal als Ausgabespannung abzugeben.
 
 <!-- Ersatzblockbild zur Spannung mit gemeinsamen Minuspol -->
-![Vereinfachtes Blockdiagramm für den Aufbau des Hall-Sensors.](/circuits/hall-blockdiagramm-vereinfacht.png?lightbox=1024&resize=500&classes=caption "Vereinfachtes Blockdiagramm für den Aufbau des Hall-Sensors. Der Stromfluss durch das Hallplättchen geht von unten nach oben. Die Hall-Spannung, die links und rechts am Hall-Sensor anliegt, wird mit GND zusammengeführt, sodass die Spannung stets gegenüber GND als Nullniveau gemessen wird.")
+![Vereinfachtes Blockdiagramm für den Aufbau des Hall-Sensors.](hall-blockdiagramm-vereinfacht.png?lightbox=1024&resize=500&classes=caption "Vereinfachtes Blockdiagramm für den Aufbau des Hall-Sensors. Der Stromfluss durch das Hallplättchen geht von unten nach oben. Die Hall-Spannung, die links und rechts am Hall-Sensor anliegt, wird mit GND zusammengeführt, sodass die Spannung stets gegenüber GND als Nullniveau gemessen wird.")
 
 <div markdown="1" class="aufgabe">
 #### Theorie: Spannung an analogen Eingängen messen
@@ -119,7 +119,7 @@ Die Spannung, die an einem analogen Eingang A[0-5] anliegt, wird über einen ein
 3. Erstelle eine Variable für die Spannung U und ermittle mit Hilfe der unten angegebenen Blöcke die Spannung am Signalpin des Hall-Sensors. Gib diese Spannung auf dem seriellen Monitor aus. Die Spannung sollte ohne Magnetfeld bei etwa 2,5 V liegen.
 
 <!--- Bilder von Blöcken ergänzen -->
-![Blöcke für die Berechnung und Ausgabe der Spannung am analogen Eingang.](/images/spannung-einlesen-programmbloecke.png?lightbox=1024&resize=800&classes=caption "Blöcke für die Berechnung und Ausgabe der Spannung am analogen Eingang.")
+![Blöcke für die Berechnung und Ausgabe der Spannung am analogen Eingang.](spannung-einlesen-programmbloecke.png?lightbox=1024&resize=800&classes=caption "Blöcke für die Berechnung und Ausgabe der Spannung am analogen Eingang.")
 </div>
 
 <div markdown="1" class="projekt">
