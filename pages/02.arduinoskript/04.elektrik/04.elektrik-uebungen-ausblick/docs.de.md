@@ -45,7 +45,7 @@ bei einer Spannung von $ 3,3\, V$ aus.
 
 Eine RGB-LED besteht aus drei einzelnen LEDs (rot, grün, blau), die jeweils über einen eigenen Digitalpin angesteuert werden (vgl. Schaltplan unten).
 
-![RGB-LED-Schaltplan](/images/rgb-led-schaltplan.png?resize=400&classes=caption "Verschaltung einer RGB-LED.")
+![RGB-LED-Schaltplan](rgb-led-schaltplan.png?resize=400&classes=caption "Verschaltung einer RGB-LED.")
 
 Am gemeinsamen GND-Anschluss soll ein gemeinsamer Vorwiderstand für alle LEDs angebracht werden, um die Stromstärke auf maximal $ 15\,  mA$ zu begrenzen. Die Spannung an den LEDs sollte dann $ 2,25\, V$ nicht überschreiten.
 
