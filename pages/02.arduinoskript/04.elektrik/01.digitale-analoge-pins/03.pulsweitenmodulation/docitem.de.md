@@ -3,6 +3,7 @@ title: Pulsweitenmodulation
 show_pageimage: true
 image_width: 300
 image_height: 400
+featured_image: pwm-info.png
 ---
 
 **Ziel:** Mithilfe des Arduino soll eine funkelnde LED-Kerze gebaut werden.
