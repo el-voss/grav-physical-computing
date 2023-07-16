@@ -3,6 +3,7 @@ title: 'Entscheidungen mit mehreren Kriterien'
 show_pageimage: true
 image_width: 300
 image_height: 400
+featured_image: wenn-sonstWenn-sonst-Bsp.png
 ---
 
 Bisher waren die zu treffenden Entscheidungen immer nur von einem Kriterium abhängig. Das sind jedoch Ausnahmen. Nun geht es darum, wie man mehrere Kriterien miteinander kombinieren kann.
