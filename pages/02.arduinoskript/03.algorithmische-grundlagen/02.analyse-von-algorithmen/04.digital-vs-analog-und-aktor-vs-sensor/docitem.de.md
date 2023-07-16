@@ -9,7 +9,7 @@ image_height: 400
 #### Bauteilkunde
 
 Du hast bisher (mindestens) folgende Bauteile verwendet:
-![Bauteilsammlung](/images/bauteilsammlung.png)
+![Bauteilsammlung](bauteilsammlung.png)
 Benenne Gemeinsamkeiten und Unterschiede. Welche Bauteile lassen sich zusammenfassen?
 </div>
 
@@ -24,20 +24,20 @@ Benenne Gemeinsamkeiten und Unterschiede. Welche Bauteile lassen sich zusammenfa
 !!!! -   **Digitale Signale** haben nur zwei mögliche Zustände - z.B. an aus, gedrückt / nicht gedrückt oder 1 / 0.
 !!!! -   **Analoge Signale** haben unendlich viele mögliche Werte, weil sie beliebig fein eingeteilt werden können. Digitale Geräte wie der Arduino können nur *quasi* analoge Signale einlesen. Bei den “analogen” Eingängen A0, A1, …A5 des Arduino sind 1024 verschiedene Stufen möglich; bei “analogen” Ausgängen (Pins mit einer Tilde: $\sim$) sind 256 verschiedene Stufen möglich. Diese Einteilung ist für die meisten Aufgaben fein genug.
 !!!! 
-!!!! ![Digitale und analoge Aktoren und Sensoren in Nepo.](/images/sensoren-und-aktoren.png?classes=caption "Digitale und analoge Aktoren und Sensoren in Nepo.")
+!!!! ![Digitale und analoge Aktoren und Sensoren in Nepo.](sensoren-und-aktoren.png?classes=caption "Digitale und analoge Aktoren und Sensoren in Nepo.")
 
 <div markdown="1" class="projekt">
 #### Alarmanlage mit Lichtschranke
 
-![Lichtschranke mit LED und LDR.](/images/lichtschranke.png?resize=250&classes=caption,figure-right "Lichtschranke mit LED und LDR.")
+![Lichtschranke mit LED und LDR.](lichtschranke.png?resize=250&classes=caption,figure-right "Lichtschranke mit LED und LDR.")
 Baue eine Alarmanlage, indem du mit einer LED (Vorwiderstand!) und einem LDR eine Lichtschranke baust . Wird diese unterbrochen, soll ein akustischer Alarm ertönen. Konfiguriere alle benötigten Bauteile als Aktoren und Sensoren.
 
 *Erweiterung:* Über einen zusätzlichen Taster (mit Widerstand!) soll die Alarmanlage “scharf” gestellt bzw. wieder ausgestellt werden können. Erstelle dazu eine Wahrheitswert-Variable `aktiv`, deren Wert über den Taster verändert wird. Das Auslösen der Alarmanlage wird nur ausgeführt, wenn `aktiv = wahr` ist.
 
-Rücklinks (öffnen in neuem Tab): <a href="https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen/entscheidungen-und-serieller-monitor#fugngerampel" target="_blank">Taster anschließen</a>, <a href="https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen/entscheidungen-und-serieller-monitor#kommunikation-mit-dem-arduino..." target="_blank">LDR anschließen</a>
+Rücklinks (öffnen in neuem Tab): <a href="https://mintorials.de/de/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/einfache-entscheidungen-programmieren#taster" target="_blank">Taster anschließen</a>, <a href="https://mintorials.de/de/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/der-serielle-monitor" target="_blank">LDR anschließen</a>
 <div class="flex-box">
-<div markdown="1">![Befehl: Aktor ansteuern](/images/aktor-ansteuern.png)</div>
-<div markdown="1">![Befehl: Sensor auslesen](/images/sensor-auslesen.png)</div>
+<div markdown="1">![Befehl: Aktor ansteuern](aktor-ansteuern.png)</div>
+<div markdown="1">![Befehl: Sensor auslesen](sensor-auslesen.png)</div>
 </div>
 </div>
 

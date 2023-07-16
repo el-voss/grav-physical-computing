@@ -32,18 +32,18 @@ Unsere Sinne (Augen zum Sehen, Ohren zum Hören, …) ermöglichen die Eingabe v
 !!!! 
 !!!! Informationsverarbeitende Systeme lassen sich nach ihrer Funktion in drei Einheiten zerlegen: Eingabeeinheit, Verarbeitungseinheit, Ausgabeeinheit.
 !!!! 
-!!!! ![Visualisierung des EVA-Prinzips](/images/eva-visualisierung.png)
+!!!! ![Visualisierung des EVA-Prinzips](eva-visualisierung.png)
 !!!! 
 !!!! Mit dem EVA-Prinzip wird die grundlegende Reihenfolge der Verarbeitung von Daten charakterisiert. Dies kann sowohl auf Hardwareebene (Bauteile) als auch auf Softwareebene (Programm) geschehen.
 !!!!
 !!!! <div markdown="1" class="flex-box">
-!!!! <div markdown="1">![Bsp. Dämmerungsschaltung: EVA-Prinzip auf Hardwareebene.](/images/daemmerungsschaltung-eva.png?Lightbox=1024&resize=500&classes=caption "Bsp. Dämmerungsschaltung: EVA-Prinzip auf Hardwareebene.")</div>
-!!!! <div markdown="1">![Bsp. Dämmerungsschaltung: EVA-Prinzip auf Softwareebene.](/images/daemmerungsprogramm-eva.png?Lightbox=1024&resize=500&classes=caption "Bsp. Dämmerungsschaltung: EVA-Prinzip auf Softwareebene.")</div>
+!!!! <div markdown="1">![Bsp. Dämmerungsschaltung: EVA-Prinzip auf Hardwareebene.](daemmerungsschaltung-eva.png?Lightbox=1024&resize=500&classes=caption "Bsp. Dämmerungsschaltung: EVA-Prinzip auf Hardwareebene.")</div>
+!!!! <div markdown="1">![Bsp. Dämmerungsschaltung: EVA-Prinzip auf Softwareebene.](daemmerungsprogramm-eva.png?Lightbox=1024&resize=500&classes=caption "Bsp. Dämmerungsschaltung: EVA-Prinzip auf Softwareebene.")</div>
 !!!! </div>
 
 <div markdown="1" class="aufgabe">
 #### Kleines Begriffstraining
 
-1.  Kategorisiere die [Juke-Box](https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen/entscheidungen-und-serieller-monitor#juke-box) nach dem EVA-Prinzip.
-2.  Kategorisiere den [Reaktionszeitmesser](https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen/variablen-und-schleifen#reaktionszeitmesser) nach dem EVA-Prinzip.
+1.  Kategorisiere die [Juke-Box](https://mintorials.de/de/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/einfache-entscheidungen-programmieren#juke-box) nach dem EVA-Prinzip.
+2.  Kategorisiere den [Reaktionszeitmesser](https://mintorials.de/de/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/wiederholungen-und-zufaellige-ereignisse#reaktionszeitmesser) nach dem EVA-Prinzip.
 </div>

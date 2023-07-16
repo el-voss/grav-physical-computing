@@ -16,10 +16,10 @@ Unten ist ein Programm mit zwei Fehlern abgebildet. Es soll die folgende Summe b
 <center markdown="1">
 $1 + 1,5 + 2 + 2,5 + 3 + \dots + 98,5 + 99 + 99,5 + 100.$
 </center>
-![Beispielprogramm zum Debuggen.](/images/debugBsp.png?classes=caption "Beispielprogramm zum Debuggen.")
+![Beispielprogramm zum Debuggen.](debugBsp.png?classes=caption "Beispielprogramm zum Debuggen.")
 <center>Beispielprogramm zum Debuggen als Download: <a href="/p-templates/debugging-example.xml" download><i class="fa fa-download" aria-hidden="true"></i> debugging-example.xml</a></center>
 
-![Variablenausgabe auf dem seriellen Monitor](/images/DEBUGON.png?classes=caption,figure-right "Implementierung eines Debugging-Modus")
+![Variablenausgabe auf dem seriellen Monitor](DEBUGON.png?classes=caption,figure-right "Implementierung eines Debugging-Modus")
 Um Fehler zu finden, kann man sich die Werte von Variablen auf dem seriellen Monitor ausgeben lassen. Programmierer bauen dann häufig eine Variable `DEBUG_ON` ein und nutzen eine Konstruktion wie rechts abgebildet. Welchen Vorteil könnte das haben?
 
 Öffne das oben abgebildete Programm in Nepo und nutze die Debug-Konstruktion, um die Fehler zu finden oder nachzuweisen. Korrigiere sie.
