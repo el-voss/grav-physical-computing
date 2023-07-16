@@ -18,7 +18,7 @@ Baue und programiere eine Alarmanlage, die wie folgt funktioniert: Wenn über ei
 
 Baue und programmiere ein konfigurierbares Reaktionsspiel!
 
-![Ausgaben des Spiels auf dem seriellen Monitor](/images/reaktionsspiel-serial-monitor.png?resize=250&classes=caption,figure-right "Ausgaben auf dem seriellen Monitor.")
+![Ausgaben des Spiels auf dem seriellen Monitor](reaktionsspiel-serial-monitor.png?resize=250&classes=caption,figure-right "Ausgaben auf dem seriellen Monitor.")
 Dazu werden drei Taster (mit Widerstand!) am Arduino angeschlossen. Nach einer zufälligen Zeit wird auf dem seriellen Monitor angezeigt, welcher (zufällig ausgewürfelte) Taster gedrückt werden soll. Geschieht dies innerhalb einer vorgegebenen maximalen Reaktionszeit, hat man gewonnen, andernfalls verloren.
 
 Am Anfang des Spiels soll diese maximale Reaktionszeit konfiguriert werden können. Das heißt, man kann die max. Reaktionszeit mit dem linken Taster verringern und mit dem rechten Taster vergrößern. Erst wenn der mittlere Taster gedrückt wird, startet das Spiel.

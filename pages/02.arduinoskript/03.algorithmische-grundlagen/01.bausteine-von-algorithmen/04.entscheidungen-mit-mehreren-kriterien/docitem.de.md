@@ -22,9 +22,9 @@ Der mittlere `OUT`-Pin ist der Signal-Pin: Wenn eine Bewegung registriert wurde,
 Hinten befinden sich zwei Drehregler (“Potentiometer”), mit denen sich die Dauer des Bewegungssignals (links) und die Empfindlichkeit (rechts) einstellen lassen. Zusätzlich befindet sich auf der rechten Seite ein sogenannter Jumper, mit dem auf einfache Weise eine Steckverbindung zwischen benachbarten Pins hergestellt werden kann. Wenn sich der Jumper ganz außen befindet, dann bleibt das Bewegungssignal nach dem Erkennen einer Bewegung eine Weile aktiv und wird dann auf jeden Fall deaktiviert. Eine neue Bewegung kann erst nach einer gewissen Zeit wieder registriert werden. Wenn der Jumper hingegen leicht nach innen versetzt ist, bleibt das Bewegungssignal so lange erhalten, wie eine Bewegung erkannt wird (siehe [Funduino](https://funduino.de/nr-8-bewegungsmelder)).
 
 <div markdown="1" class="flex-box">
-<div markdown="1"> ![Bewegungsmelder mit Linse.](/images/bewegungsmelder.jpg?resize=200&classes=caption "Bewegungsmelder mit Linse.")</div>
-<div markdown="1"> ![Pinbelegung.](/images/bewegungsmelder-ohne-linse.jpg?resize=200&classes=caption "Pinbelegung.")</div>
-<div markdown="1"> ![Drehregler für Signaldauer (links) und Empfindlichkeit (rechts).](/images/bewegungsmelder-hinten.jpg?resize=200&classes=caption "Drehregler für die Signaldauer (links) und Empfindlichkeit (rechts).")</div>
+<div markdown="1"> ![Bewegungsmelder mit Linse.](bewegungsmelder.jpg?resize=200&classes=caption "Bewegungsmelder mit Linse.")</div>
+<div markdown="1"> ![Pinbelegung.](bewegungsmelder-ohne-linse.jpg?resize=200&classes=caption "Pinbelegung.")</div>
+<div markdown="1"> ![Drehregler für Signaldauer (links) und Empfindlichkeit (rechts).](bewegungsmelder-hinten.jpg?resize=200&classes=caption "Drehregler für die Signaldauer (links) und Empfindlichkeit (rechts).")</div>
 </div>
 
 <div markdown="1" class="aufgabe"> 
@@ -101,6 +101,6 @@ Leo und Lara möchten ihre Carport-Lampe so umprogrammieren, dass sie nachts imm
 
 Unten sind ihre Programme abgebildet. Entscheide jeweils (begründet!), ob das Programm für das geforderte Verhalten geeignet ist. Mache gegebenenfalls Verbesserungsvorschläge.
 
-![Leos Programm.](/images/wenn-sonstWenn-sonst-Bsp.png?lightbox=1024&classes=caption "Leos Programm.")
-![Laras Programm.](/images/wenn-sonstWenn-sonst-Bsp2.png?lightbox=1024&classes=caption "Laras Programm.")
+![Leos Programm.](wenn-sonstWenn-sonst-Bsp.png?lightbox=1024&classes=caption "Leos Programm.")
+![Laras Programm.](wenn-sonstWenn-sonst-Bsp2.png?lightbox=1024&classes=caption "Laras Programm.")
 </div>

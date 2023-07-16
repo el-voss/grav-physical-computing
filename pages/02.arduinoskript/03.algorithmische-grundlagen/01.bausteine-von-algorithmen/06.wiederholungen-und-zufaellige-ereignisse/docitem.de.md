@@ -6,7 +6,7 @@ image_height: 400
 ---
 
 Viele Dinge werden interessanter, wenn sie sich nicht immer auf die genau gleiche Art wiederholen. Für diese Fälle kann man im Programm den blauen Block für Zufallszahlen verwenden (Expertenblöcke aktivieren!), der jedes Mal eine neue Zufallszahl erzeugt, wenn er aufgerufen wird.
-![Block für Zufallszahlen](/images/zufallszahl.png)
+![Block für Zufallszahlen](zufallszahl.png)
 Ein einfaches Beispiel ist die “Bombe”, die man bei dem Spiel “Tick Tack Bumm” startet und die man so lange herum geben muss, bis sie explodiert. Dabei ist die Dauer des Tickens ein zufälliger Wert zwischen ca. 5s und 20s.
 
 <center>
@@ -20,7 +20,7 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 <div markdown="1" class="projekt clearfix">
 #### Bombe bauen
 
-![Wiederholschleife](/images/wdh10mal.png?classes=figure-right,caption "Wiederholschleife.")
+![Wiederholschleife](wdh10mal.png?classes=figure-right,caption "Wiederholschleife.")
 
 Baue und programmiere eine “Bombe”, die für eine zufällige Dauer zwischen 5s und 20s tickt und dann explodiert. Die Bombe wird über einen Taster aktiviert.
 
@@ -32,7 +32,7 @@ Zusatz: Welchen Unterschied macht es, wenn man die ausgewürfelte Zufallszahl in
 
 Übertrage das unten abgebildete Programm auf den Arduino und betrachte die so erzeugten Zufallszahlen. Drücke dann auf den Reset-Taster am Arduino und betrachte die nun erzeugten Zufallszahlen. Wiederhole den Vorgang einige Male und beschreibe Auffälligkeiten.
 
-![Zufallszahlengenerator](/images/zufallszahlengenerator.png)
+![Zufallszahlengenerator](zufallszahlengenerator.png)
 </div>
 
 <div markdown="1" class="projekt">
@@ -41,8 +41,8 @@ Zusatz: Welchen Unterschied macht es, wenn man die ausgewürfelte Zufallszahl in
 Baue und programmiere einen Reaktionszeitmesser.
 
 <div markdown="1" class="flex-box">
-<div markdown="1">![Stoppuhr-Block 1](/images/stoppuhr2.png)</div>
-<div markdown="1">![Stoppuhr-Block 2](/images/stoppuhr.png)</div>
+<div markdown="1">![Stoppuhr-Block 1](stoppuhr2.png)</div>
+<div markdown="1">![Stoppuhr-Block 2](stoppuhr.png)</div>
 </div>
 
 Der Reaktionszeitmesser soll zunächst warten, bis ein Taster gedrückt wurde, der besagt, dass es losgehen kann. Dann wird eine LED angeschaltet (Vorwiderstand!) und nach einer zufälligen Zeit wieder ausgeschaltet. Nun beginnt die Zeitmessung. Die Stoppuhr läuft solange, bis der Taster gedrückt wurde. Die gemessene Zeit wird dann über den seriellen Monitor ausgegeben und es wird erneut gewartet, bis der Anwender bestätigt, dass es losgehen kann.

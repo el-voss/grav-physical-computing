@@ -10,7 +10,7 @@ Lauflichter findet man inzwischen überall in unserer Welt: An den Rändern von 
 <div markdown="1" class="aufgabe"> 
 #### Zählschleifen verstehen
 
-![Beispiel einer Zählschleife](/images/for-schleife-bsp.png?lightbox=1024&classes=caption "Beispiel einer Zählschleife.")
+![Beispiel einer Zählschleife](for-schleife-bsp.png?lightbox=1024&classes=caption "Beispiel einer Zählschleife.")
 
 Das oben abgebildete Programm enthält zwei selbst definierte Blöcke, mit denen sich eine LED an einem beliebigen Pin zwischen 2 und 13 anstellen bzw. ausschalten lässt. In der Endlosschleife wird dann eine Zählschleife genutzt.
 
@@ -74,7 +74,7 @@ Beschreibe die Wirkung von `Die Schleife abbrechen` und `mit der nächsten Itera
 
 <div class="flex-box" markdown="1">
 <div markdown="1">
-![Beispiel für 'break'.](/images/break-bsp.png?Lightbox=1024&classes=caption "Schleife abbrechen.")
+![Beispiel für 'break'.](break-bsp.png?Lightbox=1024&classes=caption "Schleife abbrechen.")
 <center>
 <video controls="1" width="70%" height="auto" playsinline>
 <source src="/user/pages/images/demo-break.mp4" type="video/mp4"></source>
@@ -84,7 +84,7 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 </center>
 </div>
 <div markdown="1">
-![Beispiel für 'continue'.](/images/continue-bsp.png?Lightbox=1024&classes=caption "Schleife fortfahren.")
+![Beispiel für 'continue'.](continue-bsp.png?Lightbox=1024&classes=caption "Schleife fortfahren.")
 <center>
 <video controls="1" width="70%" height="auto" playsinline>
 <source src="/user/pages/images/demo-continue.mp4" type="video/mp4"></source>
