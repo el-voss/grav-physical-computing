@@ -28,6 +28,13 @@ Simuliere mit dem Motor eine konstant beschleunigende Bewegung (*vgl. [Fading](h
 </div>
 
 <div markdown="1" class="projekt">
+#### Handventilator
+Baue einen Handventilator wie folgenden Video.
+
+
+</div>
+
+<div markdown="1" class="projekt">
 #### Automatischer Lüfter
 Baue einen Lüfter, der anspringt, wenn die Temperatur größer als $ 30 °C$ wird. Probiere deine Schaltung durch Anfassen des NTC aus.
 
