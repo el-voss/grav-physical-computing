@@ -24,7 +24,7 @@ Baue die oben abgebildete Schaltung auf und probiere die Steuerung des Motors mi
 
 ![analogen Wert schreiben](pwm-motorsteuerung.png)
 
-Simuliere mit dem Motor eine konstant beschleunigende Bewegung (*vgl. [Fading](https://mintorials.de/de/arduinoskript/elektrik#pulsweitenmodulation-pwm)*), gefolgt von einer abrupten Bremsung.
+Simuliere mit dem Motor eine konstant beschleunigende Bewegung (*vgl. [Fading](https://mintorials.de/de/arduinoskript/elektrik/pulsweitenmodulation)*), gefolgt von einer abrupten Bremsung.
 </div>
 
 <div markdown="1" class="projekt">
