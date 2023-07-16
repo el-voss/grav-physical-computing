@@ -12,7 +12,7 @@ Bisher hatte die Kommunikation mit dem Arduino stets nur eine Richtung: Vom Comp
 <div markdown="1" class="aufgabe">
 #### Test des seriellen Monitors
 
-![](/images/serialprint.png?classes=figure-right)
+![](serialprint.png?classes=figure-right)
 1.  Implementiere ein Programm, das in jeder Sekunde “Moin!” an den seriellen Monitor sendet und übertrage es auf den Arduino.
 2.  [Öffne den seriellen Monitor](https://jira.iais.fraunhofer.de/wiki/display/ORInfo/Vorbereitung+Nepo4Arduino#VorbereitungNepo4Arduino-SerialMonitor) im Open Roberta Connector mit einer Baudrate von 9600 und kontrolliere dein Programm.
 </div>
@@ -20,10 +20,10 @@ Bisher hatte die Kommunikation mit dem Arduino stets nur eine Richtung: Vom Comp
 Ein LDR ist ein Widerstand, dessen Größe von der Lichtstärke abhängt, die auf ihn trifft (siehe unten). Um ihn auslesen zu können, muss er in einem sogenannten Spannungsteiler mit einem Festwiderstand von $R_F=10 \, k\Omega$ an den Arduino angeschlossen werden (siehe rechts). Der zugehörige Konfigurationsblock ist unten abgebildet.
 
 <div markdown="1" class="flex-box">
-<div markdown="1">![Ein LDR.](/images/ldr2.jpg?lightbox=1024&resize=200&classes=caption "Ein LDR")</div>
-<div markdown="1">![Konfiguration des LDR.](/images/ldr-konfiguration.png?resize=200&classes=caption "Konfiguration des LDR")</div>
-<div markdown="1">![Symbolischer Schaltplan: LDR am Arduino](/circuits/ldr-an-arduino2.png?lightbox=1024&resize=500&classes=caption "Symbolischer Schaltplan: LDR am Arduino")</div>
-<div markdown="1">![Ikonischer Schaltplan: LDR am Arduino](/images/ldr-an-arduino-steckplatine.png?lightbox=1024&resize=500&classes=caption "Ikonischer Schaltplan: LDR am Arduino")</div>
+<div markdown="1">![Ein LDR.](ldr2.jpg?lightbox=1024&resize=200&classes=caption "Ein LDR")</div>
+<div markdown="1">![Konfiguration des LDR.](ldr-konfiguration.png?resize=200&classes=caption "Konfiguration des LDR")</div>
+<div markdown="1">![Symbolischer Schaltplan: LDR am Arduino](ldr-an-arduino2.png?lightbox=1024&resize=500&classes=caption "Symbolischer Schaltplan: LDR am Arduino")</div>
+<div markdown="1">![Ikonischer Schaltplan: LDR am Arduino](ldr-an-arduino-steckplatine.png?lightbox=1024&resize=500&classes=caption "Ikonischer Schaltplan: LDR am Arduino")</div>
 </div>
 
 <div markdown="1" class="aufgabe">
@@ -44,6 +44,6 @@ Baue eine Straßenlampe, deren Licht (Vorwiderstand!) angeht, wenn es dunkel wir
 !!!! Ein **Fotowiderstand**, kurz: **LDR** (*engl. **l**ight **d**ependent **r**esistor*), ist ein lichtabhängiger Widerstand. Wenn es dunkel wird, wird der elektrische Widerstand des LDR größer; wenn es hell wird, wird der elektrische Widerstand des LDR kleiner.
 !!!! 
 !!!! <div markdown="1" class="flex-box">
-!!!! <div markdown="1">![Ein LDR](/images/ldr.jpg?resize=200&classes=caption "Ein LDR")</div>
-!!!! <div markdown="1">![Schaltsymbol des LDR](/images/ldr-schaltsymbol.png?resize=200&classes=caption "Schaltsymbol des LDR")</div>
+!!!! <div markdown="1">![Ein LDR](ldr.jpg?resize=200&classes=caption "Ein LDR")</div>
+!!!! <div markdown="1">![Schaltsymbol des LDR](ldr-schaltsymbol.png?resize=200&classes=caption "Schaltsymbol des LDR")</div>
 !!!! </div>
