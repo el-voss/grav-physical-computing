@@ -1,16 +1,14 @@
 ---
-title: 'Bausteine von Algorithmen'
+title: 'Algorithmische Grundlagen'
 menu: '[BA] Bausteine von Algorithmen'
 taxonomy:
     category:
         - docs
 ---
 
-# Bausteine von Algorithmen
-
 <style>
     body {
-        --abk: 'BA';
+        --abk: 'AG';
     }
 </style>
 
