@@ -1,6 +1,6 @@
 ---
 title: 'Algorithmische Grundlagen'
-menu: '[BA] Bausteine von Algorithmen'
+menu: '[AG] Algorithmische Grundlagen'
 taxonomy:
     category:
         - docs
