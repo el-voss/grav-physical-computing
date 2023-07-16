@@ -6,7 +6,6 @@ taxonomy:
         - docs
 ---
 
-
 <style>
     body {
         --abk: 'EG';
