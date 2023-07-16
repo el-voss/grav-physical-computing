@@ -3,13 +3,15 @@ title: 'Wiederholungen mit Bedingungen steuern'
 show_pageimage: true
 image_width: 300
 image_height: 400
-featured_image: reaktionsspiel-serial-monitor.png
+featured_image: wdh-bis.png
 ---
 
 In vielen Fällen geht es bei Schleifen nicht um eine genau oder zufällig bestimmte Anzahl von Wiederholungen, sondern darum, einen Vorgang zu wiederholen, bis eine Bedingung wahr ergibt, bzw. solange, wie eine Bedingung wahr ergibt. Die Bedingung, die wahr oder falsch ergibt, kann auch Sensorwerte beinhalten.
 
 <div class="projekt" markdown="1">
 #### Alarmanlage
+
+![wiederhole bis](wdh-bis.png?classes=caption,figure-right "Wiederhole bis.")
 
 Baue und programiere eine Alarmanlage, die wie folgt funktioniert: Wenn über einen Bewegungsmelder eine Bewegung registriert wird, dann geht die Alarmanlage los (Blinken und / oder Piepsen). Die Alarmanlage bleibt so lange aktiv, bis ein Taster gedrückt wurde, um sie wieder auszustellen.
 </div>
