@@ -10,7 +10,7 @@ featured_image: Anleitung19.jpg
 
 !!! #### Wichtige Grundlagen
 !!! Für diesen Abschnitt werden folgende Grundlagen benötigt:
-!!! - [Ultraschallsensor](../../bauteilkunde/sensoren#ultraschallsensor)
+!!! - [Ultraschallsensor](/arduinoskript/bauteilkunde/sensoren/ultraschallsensor)
 !!! - [Variablen und Schleifen](../../bausteine-algorithmen/variablen-und-schleifen#programme-mit-variablen-und...)
 
 ### Montage
@@ -35,7 +35,7 @@ Die Verkabelung des Ultraschallsensors erfolgt nach dem folgenden Schaltplan.
 <div markdown="1" class="aufgabe">
 #### Erster Test
 
-1. Recherchiere die [Funktionsweise und Konfiguration des Ultraschallsensors](../../bauteilkunde/sensoren#ultraschallsensor).
+1. Recherchiere die [Funktionsweise und Konfiguration des Ultraschallsensors](/arduinoskript/bauteilkunde/sensoren/ultraschallsensor).
 2. Programmiere den Roboter so, dass er geradeaus fährt und möglichst genau 20cm vor einem Hindernis stoppt.
 </div>
 
