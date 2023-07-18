@@ -68,7 +68,7 @@ Der Schaltplan oben zeigt, wie man ein Relais mit dem Arduino steuert.
 
 Baue die oben abgebildete Schaltung zur Steuerung eines Elektromotors mit einem Relais am Arduino auf. Achte auf die in Sperrrichtung geschaltete Diode parallel zum Motor.
 
-Schließe dann drei Taster an (mit Widerstand! - vgl. den [Abschnitt zu Tastern](https://mintorials.de/de/arduinoskript/bausteine-algorithmen#taster)).
+Schließe dann drei Taster an (mit Widerstand! - vgl. den [Abschnitt zu Tastern](/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/einfache-entscheidungen-programmieren#taster)).
 
 *Programmiere nun einen einfachen steuerbaren Waschmaschinenprototypen!*
 
