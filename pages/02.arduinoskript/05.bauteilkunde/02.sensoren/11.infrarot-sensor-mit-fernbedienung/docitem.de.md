@@ -45,7 +45,7 @@ Nachdem der IR-Sensor mit dem Arduino verbunden und in Nepo konfiguriert wurde, 
 <div markdown="1" class="projekt">
 #### Fernsteuerung eines LED-Streifens
 
-In vielen Bereichen werden LED-Streifen genutzt, um einen Raum mit passendem, indirektem Licht auszustatten. Die meisten LED-Streifen lassen sich über eine kleine Infrarot-Fernbedienung steuern, wodurch sich die Farbe, aber auch der Modus einstellen lässt - zum Beispiel eine einzelne Farbe, [Fading](https://doku.el-voss.de/de/arduinoskript/elektrik#fading), Strobe, …
+In vielen Bereichen werden LED-Streifen genutzt, um einen Raum mit passendem, indirektem Licht auszustatten. Die meisten LED-Streifen lassen sich über eine kleine Infrarot-Fernbedienung steuern, wodurch sich die Farbe, aber auch der Modus einstellen lässt - zum Beispiel eine einzelne Farbe, [Fading](/arduinoskript/elektrik/digitale-analoge-pins/pulsweitenmodulation#fading), Strobe, …
 
 <div class="video">
   <iframe
