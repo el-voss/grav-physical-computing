@@ -3,6 +3,7 @@ title: 'Basisversion mit Motoren und Piezo-Summer'
 show_pageimage: true
 image_width: 300
 image_height: 400
+featured_image: Anleitung17.jpg
 ---
 
 **Ziel:** Es soll eine fahrbare Basisversion des Düvelbot gebaut und programmiert werden, sodass der Düvelbot vorwärts und rückwärts fahren, stoppen und lenken kann. Zudem soll er Töne abspielen können.
