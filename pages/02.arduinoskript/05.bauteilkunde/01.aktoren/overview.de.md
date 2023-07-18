@@ -1,5 +1,5 @@
 ---
-title: 'Baulteilkunde: Aktoren'
+title: 'Aktoren'
 menu: '[A] Aktoren'
 content:
     items:

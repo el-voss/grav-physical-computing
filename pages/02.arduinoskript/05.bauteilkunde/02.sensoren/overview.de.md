@@ -1,5 +1,5 @@
 ---
-title: Baulteilkunde Teil 2: Sensoren
+title: Sensoren
 menu: '[S] Sensoren'
 media_order: 'ultraschallsensor-konfiguration.png,konfiguration-beschleunigungssensor.png,neigungsschalter-konfiguration.png,bewegungsmelder-vorkonfiguriert.png,bewegungsmelder-digital-konfiguriert.png,joystick-vorkonfiguriert.png,joystick-konfiguration.png,infrarot-sensoren.jpg,schaltplan-tcrt5000.png,konfiguration-tcrt5000-analog.png,konfiguration-tcrt5000-digital.png,tcrt5000-auslesen-analog.png,tcrt5000-digital-auslesen.png'
 content:

@@ -3,17 +3,15 @@ title: Projektarbeit
 menu: '[P] Projektarbeit'
 ---
 
-# Bauteilkunde Teil 3: Projektarbeit
+# Projektarbeit
 
 <style>
     body {
-        --abk: 'BK-P';
+        --abk: 'BK.P';
     }
 </style>
 
 In den beiden ersten Teilen zur Bauteilkunde wurde eine Einführung zu sehr vielen Bauteilen gegeben, die sich mit dem Open Roberta Lab programmieren lassen. Damit lassen sich bereits tolle Projekte umsetzen. Hast du eine Idee?
-
-## Projektarbeit
 
 <div markdown="1" class="projekt">
 #### Eigenes Projekt
