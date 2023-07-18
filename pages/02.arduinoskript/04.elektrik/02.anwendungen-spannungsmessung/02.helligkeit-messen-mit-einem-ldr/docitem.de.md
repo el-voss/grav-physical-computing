@@ -10,7 +10,7 @@ featured_image: ldr2.jpg
 ![Ein LDR.](ldr.jpg?resize=150&classes=caption,figure-right "Ein LDR.")
 Die Helligkeit bestimmt unseren Tages- und Jahresrhythmus: Wenn es dunkel wird, schlafen wir (oder gehen feiern) und wenn es hell wird, stehen wir wieder auf und unternehmen etwas. Es ist daher nur logisch, dass es einige Anwendungen für elektrische Schaltungen gibt, die auf die Helligkeit reagieren.
 
-In einfachen Fällen wird dabei auf einen Fotowiderstand, kurz: LDR (*engl. **l**ight **d**ependent **r**esistor*), zurückgegriffen. Diesen hast du bereits in einem [vorherigen Abschnitt](https://mintorials.de/de/arduinoskript/bausteine-algorithmen#erste-experimente-mit-dem-ldr) kennen gelernt: Sein Widerstand wird umso kleiner, je heller es ist.
+In einfachen Fällen wird dabei auf einen Fotowiderstand, kurz: LDR (*engl. **l**ight **d**ependent **r**esistor*), zurückgegriffen. Diesen hast du bereits in einem [vorherigen Abschnitt](/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/der-serielle-monitor) kennen gelernt: Sein Widerstand wird umso kleiner, je heller es ist.
 
 **Frage:** Wie bestimmt man mit Hilfe von Analogwerten die Helligkeit?
 </div>
@@ -18,7 +18,7 @@ In einfachen Fällen wird dabei auf einen Fotowiderstand, kurz: LDR (*engl. **l*
 <div markdown="1" class="aufgabe">
 #### LDR revisited
 
-1.  Die Abbildung unten zeigt noch einmal, wie der [LDR am Arduino angeschlossen wurde](https://mintorials.de/de/arduinoskript/bausteine-algorithmen#erste-experimente-mit-dem-ldr). Erläutere, was im Spannungsteiler passiert, wenn die Helligkeit erhöht wird. Halte dich dabei an folgende Schritte:
+1.  Die Abbildung unten zeigt noch einmal, wie der [LDR am Arduino angeschlossen wurde](/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/der-serielle-monitor#erste-experimente-mit-dem-ldr). Erläutere, was im Spannungsteiler passiert, wenn die Helligkeit erhöht wird. Halte dich dabei an folgende Schritte:
     Widerstand des LDR $\rightarrow$ Spannung am LDR $\rightarrow$ Spannung am Festwiderstand $\rightarrow$ Analogwert in A0.
     ![LDR im Spannungsteiler](spannungsteiler-ldr-beschriftet-2.png?resize=300&classes=caption "Ein LDR zwischen 5V und A0 im Spannungsteiler am Arduino.")
 
