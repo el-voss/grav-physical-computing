@@ -1,12 +1,12 @@
 ---
-title: 'Aktoren'
+title: Aktoren
 menu: '[A] Aktoren'
 content:
     items:
         - '@self.children'
     limit: 30
     order:
-        by: title
+        by: folder
         dir: asc
     pagination: false
     url_taxonomy_filters: true
