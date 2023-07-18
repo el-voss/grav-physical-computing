@@ -82,7 +82,7 @@ Befolge die folgende Anleitung zur Montage und Verkabelung, um die Basisversion 
 </div>
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung14](Anleitung14.jpg?lightbox=1024&resize=400 "Anleitung14")  </div>
-<div markdown="1"> **Schritt 14:** Verkabele die Kabel der Bauteile entsprechend des Schaltplans mit dem Arduino (siehe [nächsten Abschnitt unten](#schaltplan-1)). Nutze die GND-Leiste auf dem Expansion-Board (schwarze Kabel im Bild).</div>
+<div markdown="1"> **Schritt 14:** Verkabele die Kabel der Bauteile entsprechend des Schaltplans mit dem Arduino (siehe [nächsten Abschnitt unten](#schaltplan)). Nutze die GND-Leiste auf dem Expansion-Board (schwarze Kabel im Bild).</div>
 </div>
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![Anleitung15](Anleitung15.jpg?lightbox=1024&resize=400 "Anleitung15")  </div>
@@ -116,8 +116,8 @@ Konfiguriere den Piezo-Summer im Open Roberta Lab und lass den Düvelbot ein paa
 
 Der Motortreiber L298N enthält eine H-Brücke, um die Motoren zu steuern. Um dies im Programm nutzen zu können, muss man die Funktionsweise der H-Brücke verstehen. Bearbeite dazu die folgenden Aufgaben aus dem Abschnitt *Elektrische Grundlagen - Transistoren und Motoren*.
 
-- **[Funktionsweise einer H-Brücke](../../elektrik/transistoren-motoren#funktionsweise-einer-h-brcke):** Lies den Abschnitt und bearbeite die Aufgabe dazu.
-- **[Steuerung mit dem L298N](../../elektrik/transistoren-motoren#steuerung-mit-dem-l298n):** Lies den Abschnitt und bearbeite die erste Aufgabe *Betrieb des L298N*. Übertrage dies, um auch den zweiten Motor anzusteuern.
+- **[Funktionsweise einer H-Brücke](/arduinoskript/elektrik/transistoren-motoren/elektromotoren-mit-einem-motortreiber-steuern#funktionsweise-einer-h-brücke):** Lies den Abschnitt und bearbeite die Aufgabe dazu.
+- **[Steuerung mit dem L298N](/arduinoskript/elektrik/transistoren-motoren/elektromotoren-mit-einem-motortreiber-steuern#steuerung-mit-dem-l298n):** Lies den Abschnitt und bearbeite die erste Aufgabe *Betrieb des L298N*. Übertrage dies, um auch den zweiten Motor anzusteuern.
 
 Ergänze damit die folgende Tabelle:
 
