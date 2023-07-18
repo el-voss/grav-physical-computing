@@ -39,5 +39,5 @@ Ein Joystick besteht im Wesentlichen aus zwei Potentiometern, die über einen ge
 Steuere mit dem Joystick-Modul einen Schrittmotor!
 </div>
 
-!! **Achtung bei Verwendung von Motoren:** Spätestens, wenn mehr als ein Motor am Arduino betrieben werden soll, muss eine externe Spannungsquelle genutzt werden, zum Beispiel durch Anschluss einer 9 V-Batterie an das Power-Supply-Module. Schaue dir dazu noch einmal den [Infokasten zum Power Supply Module](https://doku.el-voss.de/de/arduinoskript/elektrik#das-power-supply-module) an.
+!! **Achtung bei Verwendung von Motoren:** Spätestens, wenn mehr als ein Motor am Arduino betrieben werden soll, muss eine externe Spannungsquelle genutzt werden, zum Beispiel durch Anschluss einer 9 V-Batterie an das Power-Supply-Module. Schaue dir dazu noch einmal den [Infokasten zum Power Supply Module](/arduinoskript/elektrik/transistoren-motoren/elektromotor-mit-relais-steuern#das-“power-supply-module”) an.
 
