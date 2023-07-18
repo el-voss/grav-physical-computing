@@ -60,6 +60,14 @@ Erstelle ein Programm, das alle drei Sekunden eine Zufallszahl `z` zwischen 0 un
   - Die Ausgabe der Zahl `z` soll immer rechtsbündig erfolgen, sodass zwischen den Einern von `z` und der Einheit genau ein Leerzeichen steht.
 </div>
 
+!!!! #### I2C oder IIC: Inter-Integrated Circuit
+!!!! I2C steht für *[Inter-Intergrated-Circuit](https://de.wikipedia.org/wiki/I%C2%B2C)*. Dies ist ein sogenannter Datenbus, also ein System zur Übertragung von Daten zwischen mehreren Teilnehmern. Die Datenübertragung funktioniert über ein getaktetes An- und Ausstellen der Datenleitung, um die Daten in Binärform (1 und 0) zu übertragen. Neben der Spannungsversorgung (GND und VCC) wird dazu ein Kabel für die serielle Datenübertragung (SDA - Serial Data) und ein Kabel für die Abstimmung des Taktes (SCL - Serial Clock) benötigt.
+!!!! Da auch mehrere I2C-kompatible Geräte an denselben Datenbus angeschlossen werden können, bekommt jedes Gerät eine Adresse, damit klar ist, welches Gerät die Daten bekommen soll. Die Adresse wird bei der Konfiguration als Hexadezimalzahl angegeben und kann prinzipiell zwischen 0 und 127 liegen. Typischerweise ist die voreingestellte Adresse `0x27`. Dabei bedeutet `0x`, dass die folgenden beiden Ziffern als Hexadezimalzahl zu interpretieren sind. Falls bereits ein anderes Gerät auf dem gleichen Datenbus dieselbe Adresse hat, kann die Adresse über die Lötbrücken verändert werden (siehe [bastelgarage.ch](https://www.bastelgarage.ch/i2c-schnittstelle-pcf8574-fur-lcd-display)).
+!!!! <figure class="image-caption">
+!!!!     <img title="I2C-Bus mit einem Master- und drei Slave-Geräten" alt="I2C-Bus mit einem Master- und drei Slave-Geräten" class="caption" src="/user/pages/images/i2c-info.png">
+!!!!     <figcaption class="">I2C-Bus mit einem Master- und drei Slave-Geräten (Quelle: <a href="https://de.wikipedia.org/wiki/Datei:I2C.svg" target="_blank">Wikpedia</a>), <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de" target="_blank">CC-BY-SA 3.0</a>, Urheber: <a href="https://en.wikipedia.org/wiki/User:Cburnett" target="_blank">Colin Burnett</a>.</figcaption>
+!!!! </figure>
+
 ! **Recherche: Vor- und Nachteile der OLED-Technologie**
 !
 ! Auf dem Markt für Displays gibt es immer noch eine harte Konkurrenz und längst nicht alle Hersteller setzen auf OLEDs. Recherchiere, welche Vor- und Nachteile diese Technologie für die Verwendung in Bildschirmen hat.
