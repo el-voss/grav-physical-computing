@@ -3,6 +3,7 @@ title: Übersicht
 show_pageimage: true
 image_width: 300
 image_height: 400
+featured_image: 1_duevelbot.png
 ---
 
 Dieser Abschnitt gibt eine Übersicht über die benötigten Bauteile und wie diese zu verkabeln sind. Dies dient der Kontrolle und kann auch zunächst übersprungen werden.
