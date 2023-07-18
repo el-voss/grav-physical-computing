@@ -1,0 +1,37 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set collection = page.collection() %}
+{% set parent = page %}
+{% set title = page.title|raw %}
+
+{% block content %}
+
+    <header class="main">
+        <h1>{{page.title|raw}}</h1>
+    </header>
+
+    <div id="body-inner">
+        <div>
+        {{ page.content|raw }}
+        </div>
+
+        <div class="flex-box">
+            {% for child in collection %}
+                {% set title = child.title %}
+
+                <div class="overview-card">
+
+                    <p><a href="{{child.url}}">{{child.title}}</a></p>
+
+                    <ul>
+                        {% for grandchild in child.collection() %}
+                            <li><a href="{{grandchild.url}}">{{grandchild.title}}</a></li>
+                        {% endfor %}
+                    </ul>
+
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

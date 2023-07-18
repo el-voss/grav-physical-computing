@@ -8,8 +8,6 @@ taxonomy:
         - docs
 ---
 
-# Eine kurze Einführung zum Arduino und zu Nepo
-
 <style>
     body {
         --abk: 'KE';
@@ -31,9 +29,9 @@ In diesem Kapitel lernst du…
 
 Mit der Zeit entwickelten sich zahlreiche andere Modelle des Arduino, die kleiner oder größer waren, über mehr oder weniger Anschlüsse verfügten, schneller oder langsamer waren usw. Das Standardmodell ist heute der Arduino Uno, den auch wir verwenden.
 
-![Die wichtigsten Komponenten eines Arduino Uno.](/images/arduino-beschriftet.png?lightbox=1024&classes=caption "Die wichtigsten Komponenten eines Arduino Uno.")
+![Die wichtigsten Komponenten eines Arduino Uno.](arduino-beschriftet.png?lightbox=1024&classes=caption "Die wichtigsten Komponenten eines Arduino Uno.")
 
-Die Abbildung oben zeigt die wichtigsten Komponenten des Arduino Uno. Eine genauere Beschreibung dieser Funktionseinheiten und ihrer spezifischen Eigenschaften findet sich im [Anhang](https://el-voss.de/doku/). Wichtig sind an dieser Stelle vor allem folgende Punkte:
+Die Abbildung oben zeigt die wichtigsten Komponenten des Arduino Uno. Wichtig sind an dieser Stelle vor allem folgende Punkte:
 
 <!-- TODO: Link zum Anhang ergänzen -->
 -   Über den USB-Anschluss und das mitgelieferte Kabel lässt sich der Arduino mit dem PC verbinden und programmieren.
@@ -48,7 +46,7 @@ Um den Arduino zu programmieren, ruft man die Adresse <https://lab.open-roberta.
 
 Die folgende Abbildung zeigt eine Übersicht über die Oberfläche des Open Roberta Lab, jedoch lernt man sie am besten kennen, indem man einfach drauf loslegt und ausprobiert, was sich damit anstellen lässt.
 
-![Übersicht über die Funktionen von Open Roberta Lab.](/images/openrobertalab.png?lightbox=1024&classes=caption "Übersicht über die Funktionen von Open Roberta Lab.")
+![Übersicht über die Funktionen von Open Roberta Lab.](openrobertalab.png?lightbox=1024&classes=caption "Übersicht über die Funktionen von Open Roberta Lab.")
 
 ## Digitale Ausgänge steuern
 
@@ -73,7 +71,7 @@ Zum Testen der Funktionsweise soll die bordeigene LED zum Blinken gebracht werde
 
 !!!! #### Algorithmus, Anweisung und Argument
 !!!!
-!!!! ![Anweisungen und Argumente in einem Algorithmus.](/images/anweisungen-bsp.png?classes=caption,figure-right "Anweisungen und Argumente in einem Algorithmus.")
+!!!! ![Anweisungen und Argumente in einem Algorithmus.](anweisungen-bsp.png?classes=caption,figure-right "Anweisungen und Argumente in einem Algorithmus.")
 !!!!
 !!!! Ein Programm besteht aus einer Folge von Anweisungen. Man spricht auch von Algorithmen: Ein Algorithmus ist eine eindeutige Handlungsvorschrift zur Lösung eines Problems, die aus endlich vielen Anweisungen besteht (s. [Wikipedia](https://de.wikipedia.org/wiki/Algorithmus)).
 !!!!
@@ -89,13 +87,13 @@ Wir nutzen in den ersten Kapiteln sehr häufig LEDs, weil sich die Grundlagen mi
 
 In der Regel braucht man für interessante Geräte zusätzliche *Hardware* (Sensoren, Motoren, …), die am Arduino angeschlossen wird. Bevor diese fest verlötet werden, nutzt man normalerweise Steckverbindungen bzw. baut die Schaltung auf einem kleinen Steckbrett auf, auf dem man die Verbindungen schnell wieder lösen kann, falls nötig. Steckbretter sind aus dem Physikunterricht bekannt. Die folgende Abbildung zeigt, welche Kontakte auf dem Steckbrett miteinander verbunden sind.
 
-![Die Steckverbindungen sind außen in Längsrichtung und innen in Querrichtung miteinander verbunden.](/circuits/steckbrett.png?lightbox=1024&classes=caption "Die Steckverbindungen sind außen in Längsrichtung und innen in Querrichtung miteinander verbunden.")
+![Die Steckverbindungen sind außen in Längsrichtung und innen in Querrichtung miteinander verbunden.](steckbrett.png?lightbox=1024&classes=caption "Die Steckverbindungen sind außen in Längsrichtung und innen in Querrichtung miteinander verbunden.")
 
 **Ziel:** Eine externe LED an Pin 13 soll zum Leuchten gebracht werden. Diese kann genutzt werden, um das Blinken einer Alarmanlagen-LED zu simulieren.
 <div markdown="1" class="clearfix">
 <div markdown="1" class="flex-box">
-<div markdown="1">![Symbolischer Schaltplan zum Anschließen einer LED mit Vorwiderstand an Pin 13.](/circuits/Schaltplan-LED.png?lightbox=1024&resize=500&classes=caption "Symbolischer Schaltplan zum Anschließen einer LED mit Vorwiderstand an Pin 13.")</div>
-<div markdown="1">![Ikonischer Schaltplan zum Anschließen einer LED mit Vorwiderstand an Pin 13.](/circuits/schaltplan-blink.png?lightbox=1024&resize=500&classes=caption "Ikonischer Schaltplan zum Anschließen einer LED mit Vorwiderstand an Pin 13.")</div>
+<div markdown="1">![Symbolischer Schaltplan zum Anschließen einer LED mit Vorwiderstand an Pin 13.](Schaltplan-LED.png?lightbox=1024&resize=500&classes=caption "Symbolischer Schaltplan zum Anschließen einer LED mit Vorwiderstand an Pin 13.")</div>
+<div markdown="1">![Ikonischer Schaltplan zum Anschließen einer LED mit Vorwiderstand an Pin 13.](schaltplan-blink.png?lightbox=1024&resize=500&classes=caption "Ikonischer Schaltplan zum Anschließen einer LED mit Vorwiderstand an Pin 13.")</div>
 </div>
 
 *Hinweise:*
@@ -124,8 +122,8 @@ Moderne Fernseher nutzen meist eine Bildwiederholungsrate von 144 Hertz; das bed
 !!!! Die Bezeichnung “LED” steht für *Licht emittierende Diode* (kurz: Leuchtdiode). Sie ist ein Halbleiterbauelement, das elektrische Energie sehr effizient in Lichtenergie umwandelt und daher heute weite Verbreitung in allen Bereichen gefunden hat, in denen Licht benötigt wird. Sie ist ein gepoltes Bauteil. Das heißt, dass der lange Kontaktstift der LED mit dem Pluspol und der kurze Kontaktstift mit dem Minuspol verbunden werden muss, damit sie leuchten kann. Damit die LED nicht durchbrennt, muss in der Regel ein Vorwiderstand angebracht werden, um sie zu betreiben.
 !!!! 
 !!!! <div markdown="1" class="flex-box">
-!!!! <div markdown="1">![Mehrere LEDs.](/images/led-sammlung.jpg?resize=200&classes=caption "Mehrere LEDs.")</div>
-!!!! <div markdown="1">![Schaltsymbol einer LED.](/circuits/led-schaltsymbol.png?resize=200&classes=caption "Schaltsymbol einer LED.")</div>
+!!!! <div markdown="1">![Mehrere LEDs.](led-sammlung.jpg?resize=200&classes=caption "Mehrere LEDs.")</div>
+!!!! <div markdown="1">![Schaltsymbol einer LED.](led-schaltsymbol.png?resize=200&classes=caption "Schaltsymbol einer LED.")</div>
 !!!! </div>
 
 <br>
@@ -136,11 +134,11 @@ Leider sind die Widerstände zu klein, um ihren Wert darauf gut lesbar zu drucke
 
 Bei den blauen Kohleschichtwiderständen, die wir verwenden, gibt es fünf Ringe und jede Ringfarbe steht für eine Zahl. Die ersten drei Ringe bilden die ersten drei Ziffern des Widerstandswertes ab. Die darauf folgende Ringfarbe steht für die Zehnerpotenz, die mit den drei Ziffern multipliziert werden muss. Dies dient dazu, auch größere Widerstandswerte codieren zu können. Der letzte Ring wiederum soll einen etwas größeren Abstand haben und steht für die Fehlertoleranz des Widerstandswertes. In der Praxis lässt sich allerdings nicht immer gut erkennen, welcher Ring der letzte und welcher der erste ist…
 
-![](/images/widerstand-schema.png?resize=400)
+![](widerstand-schema.png?resize=400)
 
 Ein Beispiel: Die Ringfarben lauten orange - grün - schwarz - schwarz - braun. Anhand der folgenden Tabelle lässt sich daraus der Wert konstruieren: $3 - 5 - 0 - \cdot 1 (=10^0) - \pm 1\% $, kurz: $350 \Omega \, \pm 3,5 \, \Omega$.
 
-![Tabelle zur Codierung der Widerstandswerte durch Farbringe.](/images/widerstandsfarben-tabelle.png?lightbox=1024&classes=caption "Tabelle zur Codierung der Widerstandswerte durch Farbringe")
+![Tabelle zur Codierung der Widerstandswerte durch Farbringe.](widerstandsfarben-tabelle.png?lightbox=1024&classes=caption "Tabelle zur Codierung der Widerstandswerte durch Farbringe")
 
 <div markdown="1" class="aufgabe">
 #### Erste Übung
@@ -165,8 +163,8 @@ Gib die Farbcodierung für einen Widerstand mit den folgenden Werten an:
 !!!! Ohmsche Widerstände dienen dazu, die Stromstärke zu begrenzen. Je größer ihr Widerstand ist, desto geringer wird die Stromstärke, wenn die Spannung gleich bleibt. Die Größe eines Widerstands lässt sich an seinen Ringen ablesen. Sie bleibt immer gleich groß.
 !!!!
 !!!! <div markdown="1" class="flex-box">
-!!!! <div markdown="1">![Widerstände.](/images/Widerstaende.jpg?resize=200&rotate=90&classes=caption "Widerstände.")</div>
-!!!! <div markdown="1">![Schaltsymbol eines Widerstandes.](/circuits/widerstand-schaltsymbol.png?resize=200&classes=caption "Schaltsymbol eines Widerstandes.")</div>
+!!!! <div markdown="1">![Widerstände.](Widerstaende.jpg?resize=200&rotate=90&classes=caption "Widerstände.")</div>
+!!!! <div markdown="1">![Schaltsymbol eines Widerstandes.](widerstand-schaltsymbol.png?resize=200&classes=caption "Schaltsymbol eines Widerstandes.")</div>
 !!!! </div>
 
 <br>
@@ -190,8 +188,8 @@ Das Blaulicht soll über zwei blaue LEDs verfügen, die abwechselnd blinken. Es 
     b)  $10 \, k\Omega \, \pm 2\%$,
     c)  $4,7 \, k\Omega \, \pm 10\%$.
 2.  Gib die Größe der folgenden Widerstände an:
-    1. ![](/images/widerstand-bsp1.png?resize=400)
-    2. ![](/images/widerstand-bsp2.png?resize=400)
+    1. ![](widerstand-bsp1.png?resize=400)
+    2. ![](widerstand-bsp2.png?resize=400)
 
 *Hinweis:* Als Hilfsmittel ist die Widerstandskarte aus den Boxen zugelassen.
 </div>
