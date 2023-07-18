@@ -1,0 +1,75 @@
+ title: Chapter-Overview
+'@extends':
+    type: default
+    context: blueprints://pages
+
+child_type: overview
+
+rules:
+  slug:
+    pattern: "[a-z][a-z0-9_-]+"
+    min: 2
+    max: 80
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+
+        advanced:
+          fields:
+            overrides:
+              fields:
+                header.child_type:
+                  default: overview
+        chapter-overview:
+          type: tab
+          title: Chapter-Overview
+
+          fields:
+
+            content_title:
+              type: spacer
+              title: Chapter-Overview Title
+
+            header.content.items:
+              type: textarea
+              yaml: true
+              label: Items
+              default: '@self.children'
+              validate:
+                type: yaml
+
+            header.content.limit:
+              type: text
+              label: Max Item Count
+              size: small
+              default: 30
+              validate:
+                required: true
+                type: int
+                min: 1
+
+            header.content.order.by:
+              type: select
+              label: Order By
+              size: medium
+              default: folder
+              options:
+                folder: Folder
+                title: Title
+                date: Date
+                default: Default
+
+            header.content.order.dir:
+              type: select
+              label: Order
+              size: medium
+              default: asc
+              options:
+                asc: Order Ascending
+                desc: Order Descending
+
