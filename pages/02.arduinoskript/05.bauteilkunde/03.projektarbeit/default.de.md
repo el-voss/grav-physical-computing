@@ -3,7 +3,6 @@ title: Projektarbeit
 menu: '[P] Projektarbeit'
 ---
 
-# Projektarbeit
 
 <style>
     body {
