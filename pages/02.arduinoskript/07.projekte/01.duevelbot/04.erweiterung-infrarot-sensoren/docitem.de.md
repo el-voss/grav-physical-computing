@@ -10,8 +10,8 @@ featured_image: Anleitung22.jpg
 
 !!! #### Wichtige Grundlagen
 !!! Für diesen Abschnitt werden folgende Grundlagen benötigt:
-!!! - [OLED-Display SSD1306](../../bauteilkunde/aktoren#oled-display-ssd1306)
-!!! - [Infrarot-Sensor TCRT5000](../../bauteilkunde/sensoren#infrarot-sensor-tcrt5000)
+!!! - [OLED-Display SSD1306](/arduinoskript/bauteilkunde/aktoren/oled-display-ssd1306)
+!!! - [Infrarot-Sensor TCRT5000](/arduinoskript/bauteilkunde/sensoren/infrarot-sensor-tcrt5000)
 
 
 ### Montage
@@ -54,8 +54,8 @@ Die Verkabelung des Ultraschallsensors erfolgt nach dem folgenden Schaltplan.
 <div markdown="1" class="aufgabe">
 #### Funktionstest
 
-1. Recherchiere die Funktionsweise der [Infrarot-Sensoren](../../bauteilkunde/sensoren#infrarot-sensor-tcrt5000) und lasse ihre Werte auf dem seriellen Monitor ausgeben.
-2. Recherchiere die Funktionsweise des [OLED-Display SSD1306](../../bauteilkunde/aktoren#oled-display-ssd1306). Lasse die Werte der Infrarot-Sensoren auf dem Display ausgeben.
+1. Recherchiere die Funktionsweise der [Infrarot-Sensoren](/arduinoskript/bauteilkunde/sensoren/infrarot-sensor-tcrt5000) und lasse ihre Werte auf dem seriellen Monitor ausgeben.
+2. Recherchiere die Funktionsweise des [OLED-Display SSD1306](/arduinoskript/bauteilkunde/aktoren/oled-display-ssd1306). Lasse die Werte der Infrarot-Sensoren auf dem Display ausgeben.
 
 </div>
 
