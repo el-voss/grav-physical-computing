@@ -22,7 +22,7 @@ Die Abbildungen unten zeigen den Aufbau eines Neigungsschalters im geschlossenen
 </div>
 </div>
 
-*Schaltplan:* Wenn der Neigungsschalter wie unten abgebildet am Arduino angeschlossen wird, kann sein Zustand in Digitalpin 3 ausgelesen werden (vgl. das [Auslesen von Tastern](../../bausteine-algorithmen/entscheidungen-und-serieller-monitor#taster)).
+*Schaltplan:* Wenn der Neigungsschalter wie unten abgebildet am Arduino angeschlossen wird, kann sein Zustand in Digitalpin 3 ausgelesen werden (vgl. das [Auslesen von Tastern](/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/einfache-entscheidungen-programmieren#taster)).
 
 ![Neigungsschalter am Arduino.](neigungsschalter-mit-arduino.png?lightbox=1024&resize=500&classes=caption "Neigungsschalter am Arduino.")
 
