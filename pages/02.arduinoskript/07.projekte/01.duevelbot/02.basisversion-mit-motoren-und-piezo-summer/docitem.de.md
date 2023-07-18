@@ -137,7 +137,7 @@ Ergänze damit die folgende Tabelle:
 <div markdown="1" class="aufgabe">
 #### Funktionen zum Steuern
 
-In der Aufgabe [Einfachere Steuerung mit Funktionen](../../elektrik/transistoren-motoren#einfachere-steuerung-mit...) siehst du, wie man die Steuerung von einem Motor in eine Funktion auslagern kann. Passe dies an, um die folgenden Funktionen zu implementieren.
+In der Aufgabe [Einfachere Steuerung mit Funktionen](/arduinoskript/elektrik/transistoren-motoren/elektromotoren-mit-einem-motortreiber-steuern#einfachere-steuerung-mit-funktionen) siehst du, wie man die Steuerung von einem Motor in eine Funktion auslagern kann. Passe dies an, um die folgenden Funktionen zu implementieren.
 
 <div class="flex-box">
 <div markdown="1"> ![fkt-vorwaertsFahren](fkt-vorwaertsFahren.png?resize=300 "fkt-vorwaertsFahren") </div>
