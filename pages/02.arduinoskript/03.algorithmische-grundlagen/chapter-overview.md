@@ -1,9 +1,13 @@
 ---
 title: 'Algorithmische Grundlagen'
 menu: '[AG] Algorithmische Grundlagen'
-taxonomy:
-    category:
-        - docs
+content:
+    items:
+        - '@self.children'
+    limit: 30
+    order:
+        by: folder
+        dir: asc
 ---
 
 <style>

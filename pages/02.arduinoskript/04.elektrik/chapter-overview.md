@@ -1,9 +1,6 @@
 ---
 title: 'Elektrische Grundlagen zu digitalen und analogen Pins'
 menu: '[EG] Elektrische Grundlagen'
-taxonomy:
-    category:
-        - docs
 ---
 
 <style>
