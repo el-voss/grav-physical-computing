@@ -18,7 +18,7 @@ Zum Anschluss an den Arduino wird der mittlere Pin mit einem analogen Eingang ve
 <div markdown="1" class="flexible">![Ersatzschaltplan für das Potentiometer.](potentiometer-ersatzschaltplan.png?lightbox=1024&resize=400&classes=caption "Ersatzschaltplan für das Potentiometer.")</div>
 </div>
 
-Die Grundlagen des Potentiometers werden auch [im Kapitel Elektrische Grundlagen behandelt](../../elektrik/anwendungen-spannungsmessung#drehregler-verwenden).
+Die Grundlagen des Potentiometers werden auch [im Kapitel Elektrische Grundlagen behandelt](/arduinoskript/elektrik/anwendungen-spannungsmessung/drehregler-verwenden).
 
 Für das Potentiometer existiert ein vorkonfigurierter Block, über den man die Spannung am Teilwiderstand zwischen GND und dem analogen Eingang auslesen kann. Diese kann zwischen 0V (Teilwiderstand gleich null) oder 5V (Teilwiderstand gleich Gesamtwiderstand) bewegen. Alternativ kann das Potentiometer als analoger Sensor konfiguriert werden und der Analogwert im Programm abgefragt werden.
 
