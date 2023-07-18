@@ -8,7 +8,7 @@ featured_image: DEBUGON.png
 
 Fehler werden in der Informatik auch als “Bugs” bezeichnet. Fehler treten beim Programmieren ständig auf und sind völlig normal. Erst nach einigem Testen läuft ein Programm völlig stabil und fehlerfrei. Das Entfernen von Fehlern wird dann auch als “Debugging” bezeichnet.
 
-Informatiker unterscheiden zwischen zwei Fehlerarten: Syntaxfehler und logische Fehler. Logische Fehler sind dir vielleicht schon passiert und manche wurden auch schon in diesem Skript behandelt, zum Beispiel zur [`sonst wenn`-Bedingung](https://doku.el-voss.de/de/arduinoskript/bausteine-algorithmen#verschachtelte-entscheidungen). Syntaxfehler entstehen, wenn man die Grammatik (Syntax) einer Programmiersprache nicht beachtet. In Nepo werden die meisten Syntaxfehler automatisch vermieden, weil die meisten Blöcke nur ineinander greifen, wenn sie syntaktisch zueinander passen.
+Informatiker unterscheiden zwischen zwei Fehlerarten: Syntaxfehler und logische Fehler. Logische Fehler sind dir vielleicht schon passiert und manche wurden auch schon in diesem Skript behandelt, zum Beispiel zur [`sonst wenn`-Bedingung](/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/entscheidungen-mit-mehreren-kriterien#verschachtelte-entscheidungen). Syntaxfehler entstehen, wenn man die Grammatik (Syntax) einer Programmiersprache nicht beachtet. In Nepo werden die meisten Syntaxfehler automatisch vermieden, weil die meisten Blöcke nur ineinander greifen, wenn sie syntaktisch zueinander passen.
 
 <div markdown="1" class="aufgabe">
 #### Systematisch Fehler finden
