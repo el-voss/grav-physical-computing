@@ -25,6 +25,7 @@ In diesem Kapitel lernst du…
 -   …mit Schleifen effizient zu programmieren,
 -   …systematisch nach Fehlern im Programm zu suchen.
 
+<!--
 <div class="flex-box">
     <div class="overview-card">
     <p markdown="1">[Entscheidungen und der serielle Monitor](./entscheidungen-und-serieller-monitor)</p>
@@ -64,4 +65,4 @@ In diesem Kapitel lernst du…
     </ul>    
     </div>
 </div>
-
+-->
