@@ -3,6 +3,7 @@ title: 'Erweiterung: Ultraschallsensor'
 show_pageimage: true
 image_width: 300
 image_height: 400
+featured_image: Anleitung19.jpg
 ---
 
 **Ziel:** Der Düvelbot soll um einen Ultraschallsensor erweitert werden, sodass er Hindernisse erkennen und umfahren kann.
