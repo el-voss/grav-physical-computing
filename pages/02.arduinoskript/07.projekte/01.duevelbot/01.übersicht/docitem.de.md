@@ -34,7 +34,7 @@ Suche in den bereitgestellten Kästen alle Kunststoffteile und Elektronikteile h
 |-------|-----------|----------|--------------|
 | ![arduino-uno](arduino-uno.jpg?lightbox=512&resize=200 "arduino-uno")  | Arduino Uno | 1 | |
 | ![expansion-board](expansion-board.jpg?lightbox=512&resize=200 "expansion-board")  | Expansion Shield mit kleinem Steckbrett und mehreren Pins für GND und 5V | 1 | |
-|  ![l298n-front](l298n-front.jpg?lightbox=512&resize=200 "l298n-front") | Motortreiber L298N | 1 | [Aufbau und Funktionsweise](#der-motortreiber-l298n) / [Informationen und Datenblatt zum L298N](https://components101.com/modules/l293n-motor-driver-module) |
+|  ![l298n-front](l298n-front.jpg?lightbox=512&resize=200 "l298n-front") | Motortreiber L298N | 1 | [Aufbau und Funktionsweise](/arduinoskript/elektrik/transistoren-motoren/elektromotoren-mit-einem-motortreiber-steuern#steuerung-mit-dem-l298n) / [Informationen und Datenblatt zum L298N](https://components101.com/modules/l293n-motor-driver-module) |
 | ![getriebemotor-n20](getriebemotor-n20.jpg?lightbox=512&resize=200 "getriebemotor-n20")  | N20 Getriebemotoren (100 RPM, 6V) | 2 | Die Kabel müssen noch angelötet werden. |
 | ![raeder](raeder.jpg?lightbox=512&resize=200 "raeder")  | Räder mit Felgen | 2 | passend zum Aufsetzen auf die Motorschäfte |
 | ![summer](summer.jpg?lightbox=512&resize=200 "summer")  | Piezo-Summer | 1 | |
