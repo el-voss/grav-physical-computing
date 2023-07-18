@@ -3,6 +3,7 @@ title: 'Erweiterung: Infrarot-Sensoren'
 show_pageimage: true
 image_width: 300
 image_height: 400
+featured_image: Anleitung22.jpg
 ---
 
 **Ziel:** Der Düvelbot soll um zwei Infrarot-Sensoren erweitert werden, sodass er einer Linie folgen kann, um Parcours zu absolvieren. Für die Anzeige der Sensorwerte bei der Feinjustierung wird ein Display angebracht.
