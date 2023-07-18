@@ -140,4 +140,5 @@ Mit Hilfe der Zählschleifen im folgenden Programm sollen Eigenschaften von Zahl
 ! [Arduino-kontrollierter LED-Streifen zur Visualisierung von Musik](https://www.instructables.com/id/Party-Lights-1/): Der Arduino lässt sich zudem über ein Smartphone ansteuern.
 !
 ! [Spielekonsole von Makerbuino](https://www.heise.de/make/meldung/Makerbuino-Spielkonsole-fuer-den-Eigenbau-3681578.html): Mithilfe eines Bausatzes lässt sich eine kleine, Arduino-basierte Spielekonsole bauen.
-
+!
+! [Dieser Smart-Klopapierhalter dreht die Rolle immer richtig!](https://www.youtube.com/watch?v=_Mulb7J31Xc): In diesem Video zeigt der Youtuber Tomary, wie er einen smarten Klopapierhalter baut. Dieser basiert zwar auf dem Mikrocontroller ESP32, aber das ganze lässt sich fast genauso mit einem Arduino umsetzen.

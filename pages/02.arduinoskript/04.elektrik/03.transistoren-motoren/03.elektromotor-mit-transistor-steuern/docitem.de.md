@@ -24,14 +24,19 @@ Baue die oben abgebildete Schaltung auf und probiere die Steuerung des Motors mi
 
 ![analogen Wert schreiben](pwm-motorsteuerung.png)
 
-Simuliere mit dem Motor eine konstant beschleunigende Bewegung (*vgl. [Fading](../../digitale-analoge-pins/pulsweitenmodulation)*), gefolgt von einer abrupten Bremsung.
+Simuliere mit dem Motor eine konstant beschleunigende Bewegung (*vgl. [Fading](/arduinoskript/elektrik/digitale-analoge-pins/pulsweitenmodulation#fading)*), gefolgt von einer abrupten Bremsung.
 </div>
 
 <div markdown="1" class="projekt">
 #### Handventilator
 Baue einen Handventilator wie folgenden Video.
 
-
+<center>
+<video controls="1" width="70%" height="auto" playsinline>
+<source src="/user/pages/images/handventilator.mp4" type="video/mp4"></source>
+Ihr Browser kann dieses Video nicht wiedergeben.
+</video>
+</center>
 </div>
 
 <div markdown="1" class="projekt">
