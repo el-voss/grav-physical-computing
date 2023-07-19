@@ -4,6 +4,17 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: wdh-bis.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Einfache Entscheidungen programmieren'
+        - 'Entscheidungen mit mehreren Kriterien'
+    Zusatzvoraussetzungen:
+        - Variablen
+    Inhalte:
+        - 'wiederhole bis/solange'
+    Niveau:
+        - Basis
+        - Fortgeschritten
 ---
 
 In vielen Fällen geht es bei Schleifen nicht um eine genau oder zufällig bestimmte Anzahl von Wiederholungen, sondern darum, einen Vorgang zu wiederholen, bis eine Bedingung wahr ergibt, bzw. solange, wie eine Bedingung wahr ergibt. Die Bedingung, die wahr oder falsch ergibt, kann auch Sensorwerte beinhalten.
