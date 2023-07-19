@@ -4,6 +4,16 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: DEBUGON.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - Variablen
+        - 'Der serielle Monitor'
+        - Zählschleifen
+        - Datentypen
+    Inhalte:
+        - Debugging
+    Niveau:
+        - Fortgeschritten
 ---
 
 Fehler werden in der Informatik auch als “Bugs” bezeichnet. Fehler treten beim Programmieren ständig auf und sind völlig normal. Erst nach einigem Testen läuft ein Programm völlig stabil und fehlerfrei. Das Entfernen von Fehlern wird dann auch als “Debugging” bezeichnet.
