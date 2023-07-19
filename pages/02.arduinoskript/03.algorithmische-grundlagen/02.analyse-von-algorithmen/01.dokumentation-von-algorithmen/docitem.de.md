@@ -10,9 +10,8 @@ taxonomy:
         - 'Entscheidungen mit mehreren Kriterien'
         - 'Wiederholungen und zufällige Ereignisse'
         - 'Wiederholungen mit Bedingungen steuern'
-    Zusatzvoraussetzungen:
-        - Zählschleifen
         - Variablen
+        - Zählschleifen
     Inhalte:
         - Struktogramme
     Niveau:
