@@ -4,6 +4,21 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: Anleitung17.jpg
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Elektromotoren mit einem Motortreiber steuern'
+        - 'Entscheidungen mit mehreren Kriterien'
+        - Funktionen
+        - Pulsweitenmodulation
+    Inhalte:
+        - Montage
+        - Getriebemotoren
+        - 'Motortreiber L298N'
+        - Piezo-Summer
+        - 'Funktionen zum Fahren'
+        - Hebelsteuerung
+    Niveau:
+        - Fortgeschritten
 ---
 
 **Ziel:** Es soll eine fahrbare Basisversion des Düvelbot gebaut und programmiert werden, sodass der Düvelbot vorwärts und rückwärts fahren, stoppen und lenken kann. Zudem soll er Töne abspielen können.
