@@ -4,6 +4,19 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: Sequenz.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Einfache Entscheidungen programmieren'
+        - 'Entscheidungen mit mehreren Kriterien'
+        - 'Wiederholungen und zufällige Ereignisse'
+        - 'Wiederholungen mit Bedingungen steuern'
+    Zusatzvoraussetzungen:
+        - Zählschleifen
+        - Variablen
+    Inhalte:
+        - Struktogramme
+    Niveau:
+        - Basis
 ---
 
 Wenn wir uns über Programme austauschen, dann haben wir nicht immer den Computer zur Hand. In solchen Momenten wäre es viel zu aufwendig, die bunten Blöcke von Nepo zu malen. Außerdem könnte es sein, dass jemand anderes das Programm nicht mit Blöcken, sondern mit Text in der Programmiersprache C++ aufschreiben will, also so wie der Quellcode aussieht.
