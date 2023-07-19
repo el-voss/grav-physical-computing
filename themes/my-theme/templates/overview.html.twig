@@ -29,14 +29,12 @@
     </header>
 
     <div id="body-inner">
-        <div>
         {{ page.content|raw }}
-        </div>
-        <div class="posts">
-            {% for child in collection %}
-                {% include 'partials/blog-list-item.html.twig' with {parent: page, page: child} %}
-            {% endfor %}
-        </div>
+    </div>
+    <div class="posts">
+        {% for child in collection %}
+            {% include 'partials/blog-list-item.html.twig' with {parent: page, page: child} %}
+        {% endfor %}
     </div>
 
 {% endblock %}

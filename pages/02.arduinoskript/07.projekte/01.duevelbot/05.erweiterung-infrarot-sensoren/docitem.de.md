@@ -6,10 +6,10 @@ image_height: 400
 featured_image: Anleitung22.jpg
 taxonomy:
     Mindestvoraussetzungen:
-        - 'Infrarot-Sensor TCRT5000'
         - 'Entscheidungen mit mehreren Kriterien'
-        - Variablen
         - 'Basisversion mit Motoren und Piezo-Summer'
+        - 'Infrarot-Sensor TCRT5000'
+        - Variablen
     Zusatzvoraussetzungen:
         - 'Oled-Display SSD1306'
     Inhalte:
@@ -69,8 +69,22 @@ Recherchiere die Funktionsweise der [Infrarot-Sensoren](/arduinoskript/bauteilku
 
 </div>
 
-Kantenverfolgung
+<div markdown="1" class="aufgabe">
+#### Kantenverfolgung
 
-Linienverfolgung
+Für diese Aufgabe liegt ein Parcour mit einer schwarzen Linie bereit. Das Ziel ist es, dass der Roboter dieser schwarzen Linie bzw. ihrer Kante folgt und möglichst schnell den kompletten Parcour absolviert, ohne die Linie bzw. Kante zu verlieren. Dafür wird zunächst nur ein Sensor genutzt.
+
+1. Notiere dir, welchen Analogwert der linke IR-Sensor anzeigt, wenn er auf schwarz und wenn er auf weiß steht.
+2. Programmiere den Roboter so, dass er der Linie folgt. Beachte dabei die unten abgebildeten Fälle.
+</div>
+
+<div markdown="1" class="aufgabe">
+#### Linienverfolgung
+
+Für diese Aufgabe liegt ein Parcour mit einer schwarzen Linie bereit. Das Ziel ist es, dass der Roboter dieser schwarzen Linie folgt und möglichst schnell den kompletten Parcour absolviert, ohne die Linie zu verlieren. Dafür werden nun beide Sensoren genutzt.
+
+1. Notiere dir, welchen Analogwert der linke IR-Sensor und welchen Analogwert der rechte IR-Sensor anzeigt, wenn er auf schwarz und wenn er auf weiß steht. Es können kleine Unterschiede auftreten!
+2. Programmiere den Roboter so, dass er der Linie folgt. Beachte dabei die unten abgebildeten Fälle.
+</div>
 
 Linienverfolgung per Steuern und Regeln
