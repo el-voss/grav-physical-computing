@@ -7,6 +7,7 @@ featured_image: Anleitung25.jpg
 taxonomy:
     Mindestvoraussetzungen:
         - 'Oled-Display SSD1306'
+        - 'Basisversion mit Motoren und Piezo-Summer'
     Inhalte:
         - Montage
     Niveau:
