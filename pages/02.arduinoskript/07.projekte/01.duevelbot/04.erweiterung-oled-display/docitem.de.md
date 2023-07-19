@@ -4,6 +4,13 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: Anleitung25.jpg
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Oled-Display SSD1306'
+    Inhalte:
+        - Montage
+    Niveau:
+        - Basis
 ---
 
 **Ziel:** Der Düvelbot soll um ein Display erweitert werden, damit er Nachrichten und Informationen anzeigen kann. Dies ist vor allem praktisch, um Sensorwerte anzeigen zu lassen, sodass sich ein Programm genauer konfigurieren lässt.
