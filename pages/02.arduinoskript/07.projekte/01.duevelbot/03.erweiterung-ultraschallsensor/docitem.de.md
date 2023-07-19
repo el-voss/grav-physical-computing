@@ -11,7 +11,7 @@ taxonomy:
         - 'Wiederholungen mit Bedingungen steuern'
     Inhalte:
         - Montage
-        - Hindererkennung
+        - Hinderniserkennung
         - Einparkhilfe
     Niveau:
         - Fortgeschritten

@@ -23,12 +23,47 @@
            <i class="fa fa-check-square"></i>
            <strong>Mindestvoraussetzungen: </strong>
             {% for tag in page.taxonomy.Mindestvoraussetzungen %}
-                <a class="Mindestvoraussetzungen" href="{{ base_url }}/search/tag:{{ tag }}"> {{ tag }} </a>
+                <a href="{{ base_url }}/search/query:{{ tag }}"> {{ tag }} </a>
+                {% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </span>
+        <br>
+        {% endif %}
+
+        {% if page.taxonomy.Zusatzvoraussetzungen %}
+        <span>
+           <i class="fa fa-star"></i>
+           <strong>Zusatzvoraussetzungen: </strong>
+            {% for tag in page.taxonomy.Zusatzvoraussetzungen %}
+                <a href="{{ base_url }}/search/query:{{ tag }}"> {{ tag }} </a>
+                {% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </span>
+        <br>
+        {% endif %}
+
+        {% if page.taxonomy.Inhalte %}
+        <span>
+           <i class="fa fa-tags"></i>
+           <strong>Inhalte: </strong>
+            {% for tag in page.taxonomy.Inhalte %}
+                {{ tag }}
+                {% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </span>
+        <br>
+        {% endif %}
+
+        {% if page.taxonomy.Niveau %}
+        <span>
+           <i class="fa fa-rocket"></i>
+           <strong>Niveau: </strong>
+            {% for tag in page.taxonomy.Niveau %}
+                {{ tag }}
                 {% if not loop.last %}, {% endif %}
             {% endfor %}
         </span>
         {% endif %}
-
 
         {#
         {% if page.taxonomy.category %}
