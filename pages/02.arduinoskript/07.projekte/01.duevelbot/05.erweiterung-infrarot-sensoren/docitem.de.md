@@ -6,12 +6,13 @@ image_height: 400
 featured_image: Anleitung22.jpg
 ---
 
-**Ziel:** Der Düvelbot soll um zwei Infrarot-Sensoren erweitert werden, sodass er einer Linie folgen kann, um Parcours zu absolvieren. Für die Anzeige der Sensorwerte bei der Feinjustierung wird ein Display angebracht.
+**Ziel:** Der Düvelbot soll um zwei Infrarot-Sensoren erweitert werden, sodass er einer Linie folgen kann, um Parcours zu absolvieren.
 
 !!! #### Wichtige Grundlagen
 !!! Für diesen Abschnitt werden folgende Grundlagen benötigt:
-!!! - [OLED-Display SSD1306](/arduinoskript/bauteilkunde/aktoren/oled-display-ssd1306)
 !!! - [Infrarot-Sensor TCRT5000](/arduinoskript/bauteilkunde/sensoren/infrarot-sensor-tcrt5000)
+!!!
+!!! Hilfreich ist es, wenn bereits das Oled-Display an den Düvelbot angebracht wurde.
 
 
 ### Montage
@@ -36,17 +37,13 @@ featured_image: Anleitung22.jpg
 <div markdown="1"> ![Anleitung24-Anmerkung](Anleitung24-Anmerkung.png?lightbox=1024&resize=400 "Anleitung24-Anmerkung") </div>
 <div markdown="1"> **Schritt 24:** Schließe die Kabel entsprechend des Schaltplans (siehe unten) an. Notiere dir, ob der rechte oder der linke IR-Sensor mit `A0` am Arduino verbunden ist (und entsprechend der andere mit `A1` am Arduino), damit du dies später im Programm richtig konfigurieren kannst. </div>
 </div>
-<div class="flex-box" style="align-items: center;">
-<div markdown="1"> ![Anleitung25](Anleitung25.jpg?lightbox=1024&resize=400 "Anleitung25") </div>
-<div markdown="1"> **Schritt 25:** Stecke das Display in das kleine Steckbrett und verkabele es entsprechend des Schaltplans (siehe unten). </div>
-</div>
 
 
 ### Verkabelung
 
-Die Verkabelung des Ultraschallsensors erfolgt nach dem folgenden Schaltplan.
+Die Verkabelung der Infrarot-Sensoren erfolgt nach dem folgenden Schaltplan.
 
-![Schaltplan für die Infrarot-Sensoren und das Display](4_duevelbot-ir-sensoren_und_oled-display.png?lightbox=1024&resize=800&classes=caption "Schaltplan für die Infrarot-Sensoren und das Display.")
+![Schaltplan für die Infrarot-Sensoren](5_duevelbot-ir-sensoren.png?lightbox=1024&resize=800&classes=caption "Schaltplan für die Infrarot-Sensoren.")
 
 
 ### Konfiguration und Programmierung
@@ -54,8 +51,7 @@ Die Verkabelung des Ultraschallsensors erfolgt nach dem folgenden Schaltplan.
 <div markdown="1" class="aufgabe">
 #### Funktionstest
 
-1. Recherchiere die Funktionsweise der [Infrarot-Sensoren](/arduinoskript/bauteilkunde/sensoren/infrarot-sensor-tcrt5000) und lasse ihre Werte auf dem seriellen Monitor ausgeben.
-2. Recherchiere die Funktionsweise des [OLED-Display SSD1306](/arduinoskript/bauteilkunde/aktoren/oled-display-ssd1306). Lasse die Werte der Infrarot-Sensoren auf dem Display ausgeben.
+Recherchiere die Funktionsweise der [Infrarot-Sensoren](/arduinoskript/bauteilkunde/sensoren/infrarot-sensor-tcrt5000) und lasse ihre Werte auf dem seriellen Monitor oder auf dem Oled-Display ausgeben.
 
 </div>
 
