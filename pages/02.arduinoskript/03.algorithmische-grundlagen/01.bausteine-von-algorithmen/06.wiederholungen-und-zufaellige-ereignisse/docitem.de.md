@@ -4,6 +4,16 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: wdh10mal.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Einfache Entscheidungen programmieren'
+        - 'Der serielle Monitor'
+    Inhalte:
+        - Zufallszahlen
+        - 'Wiederhole xmal'
+        - Zeitgeber
+    Niveau:
+        - Fortgeschritten
 ---
 
 Viele Dinge werden interessanter, wenn sie sich nicht immer auf die genau gleiche Art wiederholen. Für diese Fälle kann man im Programm den blauen Block für Zufallszahlen verwenden (Expertenblöcke aktivieren!), der jedes Mal eine neue Zufallszahl erzeugt, wenn er aufgerufen wird.
