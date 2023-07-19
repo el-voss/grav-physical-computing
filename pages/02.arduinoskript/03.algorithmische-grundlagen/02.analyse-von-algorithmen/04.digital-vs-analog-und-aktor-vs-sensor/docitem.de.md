@@ -4,6 +4,20 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: bauteilsammlung.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Einfache Entscheidungen programmieren'
+        - 'Der serielle Monitor'
+        - 'Entscheidungen mit mehreren Kriterien'
+    Zusatzvoraussetzungen:
+        - Zählschleifen
+    Inhalte:
+        - Digital
+        - Analog
+        - Sensor
+        - Aktor
+    Niveau:
+        - Fortgeschritten
 ---
 
 <div markdown="1" class="aufgabe">
