@@ -4,6 +4,14 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: variable-speicher.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Kurze Einführung'
+        - Datentypen
+    Inhalte:
+        - Variablen
+    Niveau:
+        - Fortgeschritten
 ---
 
 <div markdown="1" class="aufgabe">
