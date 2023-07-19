@@ -13,7 +13,7 @@ taxonomy:
         - 'Wiederhole xmal'
         - Zeitgeber
     Niveau:
-        - Fortgeschritten
+        - Basis
 ---
 
 Viele Dinge werden interessanter, wenn sie sich nicht immer auf die genau gleiche Art wiederholen. Für diese Fälle kann man im Programm den blauen Block für Zufallszahlen verwenden (Expertenblöcke aktivieren!), der jedes Mal eine neue Zufallszahl erzeugt, wenn er aufgerufen wird.
