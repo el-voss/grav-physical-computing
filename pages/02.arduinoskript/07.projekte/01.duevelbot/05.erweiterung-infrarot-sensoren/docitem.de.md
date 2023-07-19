@@ -18,6 +18,7 @@ taxonomy:
         - Linienverfolgung
     Niveau:
         - Fortgeschritten
+media_order: '5_duevelbot-ir-sensoren.png,Anleitung20.jpg,Anleitung21.jpg,Anleitung22.jpg,Anleitung23-Anmerkung.png,Anleitung24-Anmerkung.png,kantenverfolgung-geradeaus.png,kantenverfolgung-schwarz.png,kantenverfolgung-weiss.png,linienverfolgung-geradeaus.png,linienverfolgung-links-schwarz.png,linienverfolgung-rechts-schwarz.png'
 ---
 
 **Ziel:** Der Düvelbot soll um zwei Infrarot-Sensoren erweitert werden, sodass er einer Linie folgen kann, um Parcours zu absolvieren.
@@ -76,6 +77,11 @@ Für diese Aufgabe liegt ein Parcour mit einer schwarzen Linie bereit. Das Ziel 
 
 1. Notiere dir, welchen Analogwert der linke IR-Sensor anzeigt, wenn er auf schwarz und wenn er auf weiß steht.
 2. Programmiere den Roboter so, dass er der Linie folgt. Beachte dabei die unten abgebildeten Fälle.
+
+<div class="flex-box" style="align-items: center;">
+<div markdown="1"> ![kantenverfolgung-geradeaus](kantenverfolgung-geradeaus.png?lightbox=1024&resize=400 "kantenverfolgung-geradeaus") </div>
+<div markdown="1"> ![kantenverfolgung-schwarz](kantenverfolgung-schwarz.png?lightbox=1024&resize=400 "kantenverfolgung-schwarz") </div>
+<div markdown="1"> ![kantenverfolgung-weiss](kantenverfolgung-weiss.png?lightbox=1024&resize=400 "kantenverfolgung-weiss") </div>
 </div>
 
 <div markdown="1" class="aufgabe">
@@ -85,6 +91,12 @@ Für diese Aufgabe liegt ein Parcour mit einer schwarzen Linie bereit. Das Ziel 
 
 1. Notiere dir, welchen Analogwert der linke IR-Sensor und welchen Analogwert der rechte IR-Sensor anzeigt, wenn er auf schwarz und wenn er auf weiß steht. Es können kleine Unterschiede auftreten!
 2. Programmiere den Roboter so, dass er der Linie folgt. Beachte dabei die unten abgebildeten Fälle.
+
+<div class="flex-box" style="align-items: center;">
+<div markdown="1"> ![linienverfolgung-geradeaus](linienverfolgung-geradeaus.png?lightbox=1024&resize=400 "linienverfolgung-geradeaus") </div>
+<div markdown="1"> ![linienverfolgung-links-schwarz](linienverfolgung-links-schwarz.png?lightbox=1024&resize=400 "linienverfolgung-links-schwarz") </div>
+<div markdown="1"> ![linienverfolgung-rechts-schwarz](linienverfolgung-rechts-schwarz.png?lightbox=1024&resize=400 "linienverfolgung-rechts-schwarz") </div>
+</div>
 </div>
 
 Linienverfolgung per Steuern und Regeln
