@@ -11,7 +11,7 @@ taxonomy:
     Inhalte:
         - Variablen
     Niveau:
-        - Fortgeschritten
+        - Basis
 ---
 
 <div markdown="1" class="aufgabe">
