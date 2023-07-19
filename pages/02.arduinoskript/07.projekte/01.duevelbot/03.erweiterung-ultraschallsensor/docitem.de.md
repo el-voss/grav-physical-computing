@@ -4,6 +4,17 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: Anleitung19.jpg
+taxonomy:
+    Mindestvoraussetzungen:
+        - Ultraschallsensor
+        - 'Basisversion mit Motoren und Piezo-Summer'
+        - 'Wiederholungen mit Bedingungen steuern'
+    Inhalte:
+        - Montage
+        - Hindererkennung
+        - Einparkhilfe
+    Niveau:
+        - Fortgeschritten
 ---
 
 **Ziel:** Der Düvelbot soll um einen Ultraschallsensor erweitert werden, sodass er Hindernisse erkennen und umfahren kann.
