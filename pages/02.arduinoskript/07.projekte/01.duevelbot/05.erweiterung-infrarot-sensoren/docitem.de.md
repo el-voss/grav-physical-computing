@@ -4,6 +4,20 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: Anleitung22.jpg
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Infrarot-Sensor TCRT5000'
+        - 'Entscheidungen mit mehreren Kriterien'
+        - Variablen
+        - 'Basisversion mit Motoren und Piezo-Summer'
+    Zusatzvoraussetzungen:
+        - 'Oled-Display SSD1306'
+    Inhalte:
+        - Montage
+        - Kantenverfolgung
+        - Linienverfolgung
+    Niveau:
+        - Fortgeschritten
 ---
 
 **Ziel:** Der Düvelbot soll um zwei Infrarot-Sensoren erweitert werden, sodass er einer Linie folgen kann, um Parcours zu absolvieren.
