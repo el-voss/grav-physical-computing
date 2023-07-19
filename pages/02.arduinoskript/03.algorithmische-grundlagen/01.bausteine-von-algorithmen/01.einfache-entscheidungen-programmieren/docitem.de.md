@@ -4,6 +4,15 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: fallunterscheidung-kartenbild.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Kurze Einführung'
+    Inhalte:
+        - Fallunterscheidungen
+        - Taster
+        - Piezo-Summer
+    Niveau:
+        - Basis
 ---
 
 Schaltungen und Programme werden erst dann richtig interessant, wenn sie auf ihre Umwelt reagieren. Im einfachsten Fall lässt sich dazu ein Taster einbauen, mit dem sich von außen entscheiden lässt, wie das Programm weiterlaufen soll. Dementsprechend müssen im Programm *Fallunterscheidungen* eingebaut werden.
