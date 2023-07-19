@@ -4,6 +4,19 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: for-schleife.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - Variablen
+        - 'Einfache Entscheidungen programmieren'
+        - 'Wiederholungen und zufällige Ereignisse'
+        - 'Wiederholungen mit Bedingungen steuern'
+    Inhalte:
+        - Zählschleife
+        - Trace-Tabelle
+        - 'Lokale Variablen'
+        - 'Globale Variablen'
+    Niveau:
+        - Fortgeschritten
 ---
 
 Lauflichter findet man inzwischen überall in unserer Welt: An den Rändern von Landebahnen an Flughäfen, an Spieleautomaten, aufdringlichen Werbeschildern, als Blinker von modernen Autos und vieles mehr. Wenn man diese programmieren will, eignen sich dazu am besten Zählschleifen.
