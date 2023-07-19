@@ -6,12 +6,20 @@ image_height: 400
 featured_image: istPositiv.png
 taxonomy:
     Mindestvoraussetzungen:
+        - 'Der serielle Monitor'
+        - Datentypen
         - 'Entscheidungen mit mehreren Kriterien'
         - Variablen
-        - Datentypen
-        - 'Der serielle Monitor'
     Zusatzvoraussetzungen:
         - Zählschleifen
+    Inhalte:
+        - Funktionen
+        - Argumente
+        - Rückgabewerte
+        - 'Lokale Variablen'
+    Niveau:
+        - Fortgeschritten
+        - Experte
 ---
 
 ## Eigene Funktionen definieren
