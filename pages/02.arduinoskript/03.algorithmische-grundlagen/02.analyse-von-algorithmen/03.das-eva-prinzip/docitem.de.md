@@ -4,6 +4,17 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: eva-visualisierung.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Einfache Entscheidungen programmieren'
+        - 'Der serielle Monitor'
+        - 'Wiederholungen und zufällige Ereignisse'
+    Inhalte:
+        - Eingabe
+        - Ausgabe
+        - Verarbeitung
+    Niveau:
+        - Basis
 ---
 
 In diesem Kapitel hast du bereits einige Bauteile kennengelernt, aber es gibt noch viele mehr. Um dabei nicht den Überblick zu verlieren, wären Kategorien praktisch, mit denen man Bauteile und informationsverarbeitende Systeme im Allgemeinen einordnen kann.
