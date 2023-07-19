@@ -102,4 +102,4 @@ Für diese Aufgabe liegt ein Parcour mit einer schwarzen Linie bereit. Das Ziel 
 
 </div>
 
-Linienverfolgung per Steuern und Regeln
+<!-- Linienverfolgung per Steuern und Regeln -->
