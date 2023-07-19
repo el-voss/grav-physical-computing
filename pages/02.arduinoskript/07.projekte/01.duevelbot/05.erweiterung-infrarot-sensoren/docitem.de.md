@@ -84,6 +84,8 @@ Für diese Aufgabe liegt ein Parcour mit einer schwarzen Linie bereit. Das Ziel 
 <div markdown="1"> ![kantenverfolgung-weiss](kantenverfolgung-weiss.png?lightbox=1024&resize=400 "kantenverfolgung-weiss") </div>
 </div>
 
+</div>
+
 <div markdown="1" class="aufgabe">
 #### Linienverfolgung
 
@@ -97,6 +99,7 @@ Für diese Aufgabe liegt ein Parcour mit einer schwarzen Linie bereit. Das Ziel 
 <div markdown="1"> ![linienverfolgung-links-schwarz](linienverfolgung-links-schwarz.png?lightbox=1024&resize=400 "linienverfolgung-links-schwarz") </div>
 <div markdown="1"> ![linienverfolgung-rechts-schwarz](linienverfolgung-rechts-schwarz.png?lightbox=1024&resize=400 "linienverfolgung-rechts-schwarz") </div>
 </div>
+
 </div>
 
 Linienverfolgung per Steuern und Regeln
