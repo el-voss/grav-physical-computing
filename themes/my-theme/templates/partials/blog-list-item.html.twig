@@ -16,6 +16,34 @@
             {{ page.content|striptags|raw }}
         {% endif %}
     </p>
+
+    <p>
+        {% if page.taxonomy.Mindestvoraussetzungen %}
+        <span>
+           <i class="fa fa-check-square"></i>
+           <strong>Mindestvoraussetzungen: </strong>
+            {% for tag in page.taxonomy.Mindestvoraussetzungen %}
+                <a class="Mindestvoraussetzungen" href="{{ base_url }}/search/tag:{{ tag }}"> {{ tag }} </a>
+                {% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </span>
+        {% endif %}
+
+
+        {#
+        {% if page.taxonomy.category %}
+        <span>
+            <i class="fas fa-link fa-md"></i>
+            {% for category in page.taxonomy.category %}
+                <a class="tags" title="{{ 'Andere Beiträge in ' ~ (category|capitalize) }}"
+			    href="{{ base_url }}/category{{ config.system.param_sep }}{{ category }}" itemprop="url"><span itemprop="keywords">{{ category }}</span></a>
+                {% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </span>
+        {% endif %}
+        #}
+    </p>
+
     <ul class="actions">
         <li><a href="{{page.url}}" class="button">Lesen</a></li>
     </ul>

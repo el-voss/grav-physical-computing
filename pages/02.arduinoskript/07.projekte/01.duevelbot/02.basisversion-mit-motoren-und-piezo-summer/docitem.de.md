@@ -23,14 +23,6 @@ taxonomy:
 
 **Ziel:** Es soll eine fahrbare Basisversion des Düvelbot gebaut und programmiert werden, sodass der Düvelbot vorwärts und rückwärts fahren, stoppen und lenken kann. Zudem soll er Töne abspielen können.
  
-!!! #### Wichtige Grundlagen
-!!! Für diesen Abschnitt werden folgende Grundlagen benötigt:
-!!! - [Piezo-Summer](../../bausteine-algorithmen/entscheidungen-und-serieller-monitor#piezo-summer)
-!!! - [Fallunterscheidungen](../../bausteine-algorithmen/entscheidungen-und-serieller-monitor#entscheidungen-programmieren)
-!!! - [Funktionen](../..//bausteine-algorithmen/funktionen?target=_blank)
-!!! - [Pulsweitenmodulation](../../elektrik/digitale-analoge-pins#pulsweitenmodulation)
-!!! - [Motoren mit Motortreiber steuern](../../elektrik/transistoren-motoren#elektromotoren-mit-dem...)
-
 ### Montage
 
 <div class="aufgabe" markdown="1">
