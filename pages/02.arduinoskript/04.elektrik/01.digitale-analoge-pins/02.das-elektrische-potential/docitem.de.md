@@ -4,6 +4,22 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: el-potential.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Kurze Einführung'
+        - 'Einfache Entscheidungen programmieren'
+        - Spannung
+        - 'Stromstärke und Widerstand berechnen'
+    Inhalte:
+        - 'Elektrisches Potential'
+        - Ground
+        - Taster
+        - Pullup
+        - Pulldown
+        - 'Digitale Pins'
+    Niveau:
+        - Basis
+        - Fortgeschritten
 ---
 
 Die Ausgabe von 5 V gegenüber GND an einem digitalen Ausgang des Arduino ist vergleichbar mit einer Batterie oder einem Spannungsgerät. Um zu verstehen, wie der Arduino digitale Signale einliest und dadurch auf seine Umwelt reagieren kann, muss jedoch zuerst geklärt werden, was sich hinter dem *elektrischen Potential* verbirgt.
