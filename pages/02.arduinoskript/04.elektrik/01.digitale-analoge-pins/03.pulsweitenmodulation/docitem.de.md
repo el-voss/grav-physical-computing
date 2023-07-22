@@ -4,6 +4,19 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: pwm-info.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Kurze Einführung'
+        - 'Spannung Stromstärke und Widerstand berechnen'
+        - Zählschleifen
+        - 'Digital vs Analog und Aktor vs Sensor'
+    Inhalte:
+        - Pulsweitenmodulation
+        - 'Analoge Aktoren'
+        - Tastverhältnis
+    Niveau:
+        - Basis
+        - Fortgeschritten
 ---
 
 **Ziel:** Mithilfe des Arduino soll eine funkelnde LED-Kerze gebaut werden.
