@@ -4,6 +4,19 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: uri-dreieck.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Kurze Einführung'
+    Inhalte:
+        - Spannung
+        - Stromstärke
+        - Widerstand
+        - Reihenschaltung
+        - Parallelschaltung
+        - 7-Segment-Anzeige
+    Niveau:
+        - Basis
+        - Fortgeschritten
 ---
 
 <div markdown="1" class="clearfix">
