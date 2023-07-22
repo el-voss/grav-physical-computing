@@ -9,6 +9,7 @@ taxonomy:
         - 'Kurze Einführung'
         - 'Einfache Entscheidungen programmieren'
         - 'Spannung Stromstärke und Widerstand berechnen'
+        - 'Digital vs Analog und Aktor vs Sensor'
     Inhalte:
         - Taster
         - 'Elektrisches Potential'
