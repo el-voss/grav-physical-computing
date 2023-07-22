@@ -8,12 +8,11 @@ taxonomy:
     Mindestvoraussetzungen:
         - 'Kurze Einführung'
         - 'Einfache Entscheidungen programmieren'
-        - Spannung
-        - 'Stromstärke und Widerstand berechnen'
+        - 'Spannung Stromstärke und Widerstand berechnen'
     Inhalte:
+        - Taster
         - 'Elektrisches Potential'
         - Ground
-        - Taster
         - Pullup
         - Pulldown
         - 'Digitale Pins'
