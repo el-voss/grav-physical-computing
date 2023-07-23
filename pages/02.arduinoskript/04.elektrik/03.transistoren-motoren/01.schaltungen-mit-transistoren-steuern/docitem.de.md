@@ -8,7 +8,7 @@ featured_image: transistor.jpg
 
 <div markdown="1" class="clearfix">
 ![Transistor](transistor.jpg?resize=250&classes=caption,figure-right "Transistor mit flacher Seite nach oben.")
-Manche Projekte wie die benötigt nur ein sehr simples Programm in der Form WENN - DANN - SONST. Für solche Fälle ist der Arduino eigentlich eine überdimensionierte Lösung - viel einfacher, jedenfalls in Bezug auf die Anzahl der Bauteile, ist die Umsetzung dieser Schaltung mithilfe eines Transistors. Dieser ist (unter anderem) ein elektronischer Schalter, mit dem sich das WENN - DANN - SONST - Verhalten ganz ohne Programm umsetzen lässt.
+Manche Projekte wie die [Straßenlampe](/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/der-serielle-monitor#straßenlampe) benötigen nur ein sehr simples Programm in der Form WENN - DANN - SONST. Für solche Fälle ist der Arduino eigentlich eine überdimensionierte Lösung - viel einfacher, jedenfalls in Bezug auf die Anzahl der Bauteile, ist die Umsetzung dieser Schaltung mithilfe eines Transistors. Dieser ist (unter anderem) ein elektronischer Schalter, mit dem sich das WENN - DANN - SONST - Verhalten ganz ohne Programm umsetzen lässt.
 
 **Frage:** Wie verwendet man einen Transistor?
 
