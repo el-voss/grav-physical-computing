@@ -4,6 +4,14 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: regression-geogebra-3.png
+taxonomy:
+    Inhalte:
+        - 'Regression durchführen'
+        - Geogebra
+        - TI-Nspire
+    Niveau:
+        - Basis
+        - Fortgeschritten
 ---
 
 In diesem Abschnitt wird gezeigt, wie man mit verschiedenen Werkzeugen eine Regression durchführt, um einen funktionalen Zusammenhang zu ermitteln. Als Beispiel dienen Daten zur Helligkeit und zur Spannung an einem LDR.
