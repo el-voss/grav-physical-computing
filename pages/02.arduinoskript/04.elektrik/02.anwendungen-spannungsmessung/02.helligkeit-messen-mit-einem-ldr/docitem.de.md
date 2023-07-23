@@ -4,6 +4,24 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: ldr2.jpg
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Spannung Stromstärke und Widerstand berechnen'
+        - 'Spannung messen'
+        - 'Der serielle Monitor'
+        - 'Digital vs Analog und Aktor vs Sensor'
+    Zusatzvoraussetzungen:
+        - Funktionen
+        - 'Drehregler verwenden'
+    Inhalte:
+        - LDR
+        - Spannungsteiler
+        - 'Helligkeit messen'
+        - 'Datenblatt lesen'
+        - 'Regression durchführen'
+    Niveau:
+        - Fortgeschritten
+        - Experte
 ---
 
 <div markdown="1" class="clearfix">
