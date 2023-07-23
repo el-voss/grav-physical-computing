@@ -28,7 +28,7 @@ Die Kontakte am Wechselschalter werden mit *NO* (*normally open*), *NC* (*normal
 <div markdown="1" class="aufgabe">
 #### Anschluss eines Relais
 
-**a)** Wie aus dem obigen Schaltplan ersichtlich wird, hat ein Relais fünf Anschlüsse, die jedoch nicht beschriftet sind. Suche im Internet nach “Datasheet 'Gerätebezeichnung des Relais'” (Bezeichnung vom Relais ablesen) und entnimm dem Datenblatt, welche Anschlüsse zum Steuer- bzw. Arbeitsstromkreis gehören.
+<p markdown="1">**a)** Wie aus dem obigen Schaltplan ersichtlich wird, hat ein Relais fünf Anschlüsse, die jedoch nicht beschriftet sind. Suche im Internet nach “Datasheet 'Gerätebezeichnung des Relais'” (Bezeichnung vom Relais ablesen) und entnimm dem Datenblatt, welche Anschlüsse zum Steuer- bzw. Arbeitsstromkreis gehören.</p>
 ![Relais](relais-klein.png?resize=200&classes=caption "Ein Relais.")
 
 !! **Achtung:** Auf dem Relais ist angegeben, dass damit bis zu $ 250\, V$ Wechselspannung und $ 10\,  A$ geschaltet werden können. Das sollte man mit solch billigen Bastelmodulen aber **niemals machen**\! Generell gilt: **Nur ausgebildete Fachleute sollten mit Spannungen von mehr als 24 V hantieren\!**
