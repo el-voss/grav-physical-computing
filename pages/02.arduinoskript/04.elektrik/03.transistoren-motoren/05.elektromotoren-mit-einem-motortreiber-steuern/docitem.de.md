@@ -4,6 +4,23 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: vierquadrantensteller.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Motor und Diode'
+        - 'Elektromotor mit Transistor steuern'
+        - Pulsweitenmodulation
+        - 'Digital vs Analog und Aktor vs Sensor'
+    Zusatzvoraussetzungen:
+        - Funktionen
+    Inhalte:
+        - H-Brücke
+        - Vierquadrantensteller
+        - 'Motortreiber L293D'
+        - 'Motortreiber L298N'
+        - Drehrichtung
+    Niveau:
+        - Fortgeschritten
+        - Experte
 ---
 
 Die Steuerung von Motoren erfordert beim Transistor und beim Relais stets mehrere Bauteile und einige Überlegungen zum Aufbau der Schaltung. Außerdem kann dabei nicht die Drehrichtung geändert werden. Integrierte Schaltkreise wie der L293D oder der L298N, auch Motortreiber genannt, vereinfachen den Aufbau der Schaltung für gleich zwei Motoren und ermöglichen zusätzlich die flexible Steuerung der Drehrichtung. Beide basieren auf der Schaltung mit einer *H-Brücke* bzw. einem *Vierquadrantensteller*.
