@@ -4,6 +4,27 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: relais-klein.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Spannung Stromstärke und Widerstand berechnen'
+        - 'Motor und Diode'
+        - 'Schaltungen mit Transistoren steuern'
+    Zusatzvoraussetzungen:
+        - 'Elektromotor mit Transistor steuern'
+        - Variablen
+        - 'Wiederholungen mit Bedingungen steuern'
+    Inhalte:
+        - Relais
+        - Wechselschalter
+        - Steuerstromkreis
+        - Arbeitsstromkreis
+        - 'NO (normally open)'
+        - 'NC (normally closed)'
+        - 'C (common ground)'
+        - 'Datenblatt lesen'
+        - 'Power Supply Module'
+    Niveau:
+        - Experte
 ---
 
 Bei der Verwendung eines Transistors muss der Arbeitsstromkreis mit dem Motor und der Steuerstromkreis mit dem Arduino immer miteinander verbunden bleiben - auch bei sehr großen Stromstärken. Damit verbleibt immer eine gewisse Gefahr, dass eine Spannungsspitze auf den Arduino durchschlägt und ihn zerstört. Mit einem Relais lässt sich dieses Risiko vermeiden. Ein weiterer Vorteil ist, dass der Arbeitsstromkreis auch mit Wechselstrom betrieben werden kann, wenn ein Relais als Schalter genutzt wird.
