@@ -4,6 +4,21 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: ntc.jpg
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Spannung Stromstärke und Widerstand berechnen'
+        - 'Spannung messen'
+        - 'Der serielle Monitor'
+        - 'Digital vs Analog und Aktor vs Sensor'
+        - 'Helligkeit messen'
+    Inhalte:
+        - 'NTC / Heißleiter'
+        - Spannungsteiler
+        - 'Datenblatt lesen'
+        - 'Regression durchführen'
+    Niveau:
+        - Fortgeschritten
+        - Experte
 ---
 
 <div markdown="1" class="clearfix">
