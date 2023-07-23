@@ -6,19 +6,20 @@ image_height: 400
 featured_image: motoranschluss-mit-steuerung.png
 taxonomy:
     Mindestvoraussetzungen:
+        - 'Entscheidungen mit mehreren Kriterien'
+        - Variablen
         - 'Spannung Stromstärke und Widerstand berechnen'
         - 'Digital vs Analog und Aktor vs Sensor'
         - Pulsweitenmodulation
-        - 'Entscheidungen mit mehreren Kriterien'
-        - Variablen
     Zusatzvoraussetzungen:
-        - 'Schaltungen mit Transistoren steuern'
         - Zählschleifen
+        - 'Schaltungen mit Transistoren steuern'
         - 'Temperatur messen'
         - 'Das elektrische Potential'
     Inhalte:
         - 'Elektromotor mit Transistor steuern'
         - Beschleunigung
+        - 'Externe Spannungsquelle'
     Niveau:
         - Fortgeschritten
 ---
