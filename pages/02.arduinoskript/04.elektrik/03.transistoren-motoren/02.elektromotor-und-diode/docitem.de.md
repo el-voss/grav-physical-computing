@@ -4,6 +4,17 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: Schaltplan-Motoranschluss-einfach.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Spannung Stromstärke und Widerstand berechnen'
+    Inhalte:
+        - Motor
+        - Diode
+        - Sperrrichtung
+        - Durchlassrichtung
+    Niveau:
+        - Basis
+        - Fortgeschritten
 ---
 
 Bei vielen Projekten soll sich etwas bewegen - dies lässt sich mit Elektromotoren realisieren. Die Ansteuerung eines Elektromotors erfordert auf der Hardware-Seite ein wenig Vorbereitung, denn aufgrund der hohen Ströme, die Elektromotoren ziehen, sollte man sie nicht direkt an den Digitalpins des Arduino anschließen. Für die Steuerung greift man meistens auf einen Transistor zurück; eine brauchbare Alternative ist aber auch das Relais. Beide Steuerungsmöglichkeiten werden im Folgenden erarbeitet.
