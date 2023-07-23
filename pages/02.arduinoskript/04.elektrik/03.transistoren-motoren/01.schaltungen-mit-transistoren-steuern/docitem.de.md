@@ -4,6 +4,22 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: transistor.jpg
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Der serielle Monitor'
+        - 'Spannung Stromstärke und Widerstand berechnen'
+        - 'Spannung messen'
+        - 'Digital vs Analog und Aktor vs Sensor'
+        - 'Helligkeit messen'
+    Inhalte:
+        - Transistor
+        - Kollektor
+        - Basis
+        - Emitter
+        - 'Transistor als Schalter'
+    Niveau:
+        - Fortgeschritten
+        - Experte
 ---
 
 <div markdown="1" class="clearfix">
