@@ -4,6 +4,19 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: batteriespannung-messen.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Der serielle Monitor'
+        - 'Entscheidungen mit mehreren Kriterien'
+        - 'Spannung Stromstärke und Widerstand berechnen'
+        - 'Digital vs Analog und Aktor vs Sensor'
+        - 'Das elektrische Potential'
+    Inhalte:
+        - Spannung
+        - 'Analog Digital Converter'
+        - Spannungsteiler
+    Niveau:
+        - Fortgeschritten
 ---
 
 Wenn Batterien kaum noch Ladung gespeichert haben, lässt die Spannung an ihren Polen nach und sinkt unter den Wert, der auf der Batterie vermerkt ist. Mithilfe der analogen Eingänge A0 bis A5 lässt sich die Spannung messen und so entscheiden, ob die Batterie noch brauchbar ist.
