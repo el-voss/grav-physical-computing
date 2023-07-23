@@ -28,7 +28,6 @@ Die Kontakte am Wechselschalter werden mit *NO* (*normally open*), *NC* (*normal
 <div markdown="1" class="aufgabe">
 #### Anschluss eines Relais
 
-<br>
 **a)** Wie aus dem obigen Schaltplan ersichtlich wird, hat ein Relais fünf Anschlüsse, die jedoch nicht beschriftet sind. Suche im Internet nach “Datasheet 'Gerätebezeichnung des Relais'” (Bezeichnung vom Relais ablesen) und entnimm dem Datenblatt, welche Anschlüsse zum Steuer- bzw. Arbeitsstromkreis gehören.
 ![Relais](relais-klein.png?resize=200&classes=caption "Ein Relais.")
 
