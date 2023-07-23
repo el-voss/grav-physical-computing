@@ -4,6 +4,23 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: motoranschluss-mit-steuerung.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Spannung Stromstärke und Widerstand berechnen'
+        - 'Digital vs Analog und Aktor vs Sensor'
+        - Pulsweitenmodulation
+        - 'Entscheidungen mit mehreren Kriterien'
+        - Variablen
+    Zusatzvoraussetzungen:
+        - 'Schaltungen mit Transistoren steuern'
+        - Zählschleifen
+        - 'Temperatur messen'
+        - 'Das elektrische Potential'
+    Inhalte:
+        - 'Elektromotor mit Transistor steuern'
+        - Beschleunigung
+    Niveau:
+        - Fortgeschritten
 ---
 
 Der 5 V-Pin des Arduino liefert zwar in vielen Fällen genügend Strom für den Motor, jedoch lässt er sich nicht programmieren. Dazu lässt sich ein Transistor einbauen.
