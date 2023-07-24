@@ -4,6 +4,19 @@ show_pageimage: true
 image_width: 300
 image_height: 300
 featured_image: pulssensor.jpg
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Entscheidungen mit mehreren Kriterien'
+        - 'Der serielle Monitor'
+    Zusatzvoraussetzungen:
+        - 'Spannung messen'
+        - 'Digital vs Analog und Aktor vs Sensor'
+    Inhalte:
+        - Pulssensor
+        - Pulsmessung
+        - 'Serieller Plotter'
+    Niveau:
+        - Fortgeschritten
 ---
 
 <div markdown="1" class="clearfix">
