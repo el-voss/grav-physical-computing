@@ -5,6 +5,9 @@ image_width: 300
 image_height: 400
 featured_image: hoerbare-helligkeit.png
 taxonomy:
+    Mindestvoraussetzungen:
+        - 'Bausteine von Algorithmen'
+        - 'Analyse von Algorithmen'
     Niveau:
         - Basis
         - Fortgeschritten
