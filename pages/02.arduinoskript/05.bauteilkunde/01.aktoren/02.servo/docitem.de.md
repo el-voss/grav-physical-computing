@@ -5,6 +5,16 @@ featured_image: servo.png
 show_pageimage: true
 image_width: 300
 image_height: 300
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Kurze Einführung'
+        - 'Einfache Entscheidungen programmieren'
+    Zusatzvoraussetzungen:
+        - Pulsweitenmodulation
+    Inhalte:
+        - Servo
+    Niveau:
+        - Basis
 ---
 
 <div markdown="1" class="clearfix">
