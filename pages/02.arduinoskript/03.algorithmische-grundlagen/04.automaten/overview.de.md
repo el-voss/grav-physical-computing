@@ -1,5 +1,5 @@
 ---
-title: Automaten
+title: '[AU] Automaten'
 menu: '[AU] Automaten'
 content:
     items:
