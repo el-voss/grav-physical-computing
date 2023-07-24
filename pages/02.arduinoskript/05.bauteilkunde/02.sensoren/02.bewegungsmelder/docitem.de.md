@@ -4,6 +4,21 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: bewegungsmelder.jpg
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Einfache Entscheidungen programmieren'
+    Zusatzvoraussetzungen:
+        - 'Digital vs Analog und Aktor vs Sensor'
+        - Servo
+    Inhalte:
+        - Bewegungsmelder
+        - Jumper
+        - Drehregler
+        - Signaldauer
+        - Empfindlichkeit
+    Niveau:
+        - Basis
+        - Fortgeschritten
 ---
 
 *Bewegungsmelder wurden bereits im Abschnitt [Entscheidungen mit mehreren Kriterien treffen](/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/entscheidungen-mit-mehreren-kriterien) erklärt und genutzt, um Wahrheitswerte einzuführen. In diesem Abschnitt steht das Bauteil im Vordergrund. Dazu werden noch einmal alle Informationen zusammengefasst und eine alternative Programmierung vorgestellt.*
