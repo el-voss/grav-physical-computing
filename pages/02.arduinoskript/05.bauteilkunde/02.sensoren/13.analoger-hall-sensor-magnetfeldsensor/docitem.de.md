@@ -8,6 +8,7 @@ taxonomy:
     Mindestvoraussetzungen:
         - 'Der serielle Monitor'
         - Variablen
+        - 'Digital vs Analog und Aktor vs Sensor'
     Zusatzvoraussetzungen:
         - 'Spannung messen'
     Inhalte:
