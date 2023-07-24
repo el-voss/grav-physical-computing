@@ -11,6 +11,7 @@ taxonomy:
         - Ultraschallsensor
         - Transducer
         - Receiver
+        - 'Entfernung messen'
     Niveau:
         - Basis
 ---
