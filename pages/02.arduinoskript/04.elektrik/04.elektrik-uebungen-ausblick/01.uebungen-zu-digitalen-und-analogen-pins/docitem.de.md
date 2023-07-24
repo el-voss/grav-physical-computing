@@ -9,7 +9,7 @@ taxonomy:
     Niveau:
         - Basis
         - Fortgeschritten
-featured_image: rgb-led-schaltplan.png
+featured_image: schaltplan-dimmbarer-lautsprecher.png
 ---
 
 <div markdown="1" class="aufgabe">
