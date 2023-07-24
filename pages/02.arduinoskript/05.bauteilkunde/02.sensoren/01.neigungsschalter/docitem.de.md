@@ -4,6 +4,14 @@ show_pageimage: true
 image_width: 300
 image_height: 300
 featured_image: neigungsschalter.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Einfache Entscheidungen programmieren'
+        - 'Digital vs Analog und Aktor vs Sensor'
+    Inhalte:
+        - Neigungsschalter
+    Niveau:
+        - Basis
 ---
 
 <div markdown="1" class="clearfix">
