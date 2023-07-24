@@ -4,6 +4,21 @@ featured_image: rgb-led.jpg
 show_pageimage: true
 image_width: 300
 image_height: 300
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Kurze Einführung'
+    Zusatzvoraussetzungen:
+        - Zählschleifen
+        - Pulsweitenmodulation
+        - 'Digital vs Analog und Aktor vs Sensor'
+    Inhalte:
+        - RGB-LED
+        - Farben
+        - RGB-Farbmodell
+        - Taster
+    Niveau:
+        - Basis
+        - Fortgeschritten
 ---
 
 <div markdown="1" class="clearfix">
