@@ -117,7 +117,7 @@ Rücklink (öffnet in neuem Tab): <a href="https://mintorials.de/de/arduinoskrip
     
     *Tipp:* Lege eine Variable für die Zeit an. Nutze die Zeitgeber-Blöcke, um diese Variable um 1 hochzuzählen, wenn (mehr als) 1000 Millisekunden vergangen sind.
     
-    Rücklinks (öffnen in neuem Tab): <a href="https://mintorials.de/de/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/einfache-entscheidungen-programmieren#taster" target="_blank">Taster</a>, <a href="https://mintorials.de/de/arduinoskript/bauteilkunde/aktoren/liquid-crystal-display-lcd">LC-Display</a>
+    Rücklinks (öffnen in neuem Tab): <a href="https://mintorials.de/de/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/einfache-entscheidungen-programmieren#taster" target="_blank">Taster</a>, <a href="https://mintorials.de/de/arduinoskript/bauteilkunde/aktoren/oled-display-ssd1306">OLED-Display</a>, <a href="https://mintorials.de/de/arduinoskript/bauteilkunde/aktoren/liquid-crystal-display-lcd">LC-Display</a>
 
 2. Entwickle ein Automatenmodell für einen Timer. Gehe dazu von einer Startzeit von 15 Sekunden aus.
     
