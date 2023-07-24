@@ -9,6 +9,7 @@ taxonomy:
     Niveau:
         - Basis
         - Fortgeschritten
+featured_image: rgb-led-schaltplan.png
 ---
 
 <div markdown="1" class="aufgabe">
