@@ -7,7 +7,6 @@ taxonomy:
 visible: true
 ---
 
-
 Anfang der 2000er Jahre sollte der Professor Massimo Banzi seinen Studenten beibringen, wie man interaktive elektrische Schaltungen für künstlerische Projekte erstellt. Leider erforderten die damals vorhandenen Mikrocontroller einiges an Hintergrundwissen, bevor man irgendetwas mit ihnen anfangen konnte. Professor Banzi hatte dieses Wissen - er mochte seinen Studenten, die ein künstlerisches Designstudium gewählt hatten, jedoch kein Studium zum Elektroingenieur zumuten, ehe sie fähig wären, künstlerische elektronische Projekte umzusetzen.
 
 So kam es, dass Massimo Banzi und David Cuartielles im Jahr 2005 den ersten Arduino entwickelten. Dieser sollte einfach zu handhaben, günstig anzuschaffen und - eine ziemlich neue Idee für Hardware - sein Aufbau sollte frei zugänglich sein, sodass er auch von anderen nachgebaut werden konnte. Natürlich sollte auch die Entwicklungsumgebung, mit der sich der Arduino programmieren lässt, frei verfügbar sein. Diese drei Eigenschaften des Arduino führten innerhalb weniger Jahre zu einer unglaublichen Verbreitung des Mikrocontrollers, die heute nicht nur Studenten und Universitäten betrifft, sondern auch Bastler, Künstler und Schulen weltweit. Elektronik und Programmierung wurde von einer kleinen Nische für Nerds zu einem allgemein verfügbaren Werkzeug, mit dem jeder, der sich ein wenig mit dem Thema beschäftigt, seine Kreativität auf eine neue Weise ausleben kann.
