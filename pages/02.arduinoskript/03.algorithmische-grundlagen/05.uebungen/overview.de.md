@@ -1,5 +1,5 @@
 ---
-title: '[Ü] Übungen'
+title: '[VÜ] Vermischte Übungen'
 content:
     items:
         - '@self.children'
