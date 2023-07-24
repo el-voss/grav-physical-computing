@@ -4,6 +4,11 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: zustandsdiagramm-led-an-aus.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Entscheidungen mit mehreren Kriterien'
+        - Variablen
+        - Datentypen
 ---
 
 Mit den vielen Bauteilen aus der Bauteilkunde lassen sich bereits große und komplexe Projekte realisieren. Um dabei nicht den Überblick zu verlieren, hilft es, sich mit der zustandsbasierten Modellierung und Automaten zu beschäftigen, die das Programm und die Vorgehensweise zur Erstellung des Programms besser strukturieren.
