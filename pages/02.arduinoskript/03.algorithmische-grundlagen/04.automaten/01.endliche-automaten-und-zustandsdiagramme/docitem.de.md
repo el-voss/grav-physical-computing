@@ -6,9 +6,19 @@ image_height: 400
 featured_image: zustandsdiagramm-led-an-aus.png
 taxonomy:
     Mindestvoraussetzungen:
+        - Datentypen
         - 'Entscheidungen mit mehreren Kriterien'
         - Variablen
-        - Datentypen
+    Inhalte:
+        - 'Endlicher Automat'
+        - Zustandsdiagramm
+        - 'Konstante Werte'
+        - Zustandsübergang
+        - Startzustand
+        - Endzustand
+    Niveau:
+        - Fortgeschritten
+        - Experte
 ---
 
 Mit den vielen Bauteilen aus der Bauteilkunde lassen sich bereits große und komplexe Projekte realisieren. Um dabei nicht den Überblick zu verlieren, hilft es, sich mit der zustandsbasierten Modellierung und Automaten zu beschäftigen, die das Programm und die Vorgehensweise zur Erstellung des Programms besser strukturieren.
