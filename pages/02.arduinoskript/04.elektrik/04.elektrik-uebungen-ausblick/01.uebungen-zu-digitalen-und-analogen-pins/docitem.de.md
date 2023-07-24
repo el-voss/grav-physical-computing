@@ -3,6 +3,12 @@ title: 'Übungen zu digitalen und analogen Pins'
 show_pageimage: true
 image_width: 300
 image_height: 400
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Digitale und analoge Pins'
+    Niveau:
+        - Basis
+        - Fortgeschritten
 ---
 
 <div markdown="1" class="aufgabe">
