@@ -4,6 +4,15 @@ show_pageimage: true
 image_width: 300
 image_height: 300
 featured_image: dht11.jpg
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Der serielle Monitor'
+    Inhalte:
+        - DHT-11
+        - 'Temperatur messen'
+        - 'Luftfeuchtigkeit messen'
+    Niveau:
+        - Basis
 ---
 
 <div markdown="1" class="clearfix">
