@@ -4,6 +4,20 @@ show_pageimage: true
 image_width: 300
 image_height: 300
 featured_image: feuchtigkeitssensor.jpg
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Einfache Entscheidungen programmieren'
+        - Servo
+    Zusatzvoraussetzungen:
+        - 'Digital vs Analog und Aktor vs Sensor'
+        - 'Spannung messen'
+        - 'Schaltungen mit Transistoren steuern'
+    Inhalte:
+        - Tropfensensor
+        - Feuchtigkeitssensor
+    Niveau:
+        - Basis
+        - Fortgeschritten
 ---
 
 Mit einem Tropfensensor lässt sich die Feuchtigkeit auf dem Sensorblatt messen. Solche Sensoren werden zum Beispiel in Windschutzscheiben von Autos eingesetzt, um die Scheibenwischer und ihre Geschwindigkeit zu steuern. Feuchtigkeitssensoren funktionieren im Wesentlichen genauso, allerdings sind die Kontakte dabei so weit auseinander, dass durch Tropfen noch kein Stromfluss entsteht, sondern erst durch zum Beispiel die feuchte Erde eines Blumentopfes, der automatisch bewässert werden soll.
