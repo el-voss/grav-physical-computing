@@ -11,6 +11,7 @@ taxonomy:
     Niveau:
         - Fortgeschritten
         - Experte
+featured_image: schaltplan-ldr-in-reihe.png
 ---
 
 <div markdown="1" class="aufgabe">
