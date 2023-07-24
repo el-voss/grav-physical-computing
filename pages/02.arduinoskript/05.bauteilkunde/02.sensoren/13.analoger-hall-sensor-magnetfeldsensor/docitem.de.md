@@ -17,6 +17,8 @@ taxonomy:
         - Teslameter
         - Ruhespannung
         - Sensitivität
+        - Magnete
+        - Magnetfeld
     Niveau:
         - Fortgeschritten
         - Experte
