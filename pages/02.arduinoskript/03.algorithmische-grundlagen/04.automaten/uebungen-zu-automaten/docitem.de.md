@@ -5,8 +5,6 @@ image_width: 300
 image_height: 400
 ---
 
-## Vermischte Übungen
-
 <div markdown="1" class="aufgabe">
 #### Aufzug
 
