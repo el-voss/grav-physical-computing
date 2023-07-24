@@ -4,6 +4,20 @@ featured_image: schrittmotor.jpg
 show_pageimage: true
 image_width: 300
 image_height: 300
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Kurze Einführung'
+    Zusatzvoraussetzungen:
+        - 'Elektromotoren mit einem Motortreiber steuern'
+    Inhalte:
+        - Schrittmotor
+        - 'unipolarer Schrittmotor'
+        - Spannungsversorgung
+        - Schrittwinkel
+        - Geschwindigkeit
+    Niveau:
+        - Basis
+        - Fortgeschritten
 ---
 
 <div markdown="1" class="clearfix">
