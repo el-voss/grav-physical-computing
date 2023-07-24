@@ -237,14 +237,14 @@ h2, h3 {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
-.posts article ul.tags {
+ul.tags {
   margin-top: 1em;
   margin-bottom: 1em;
   list-style: none;
   margin-left: -1em;
   padding-left: 0;
 }
-.posts article ul.tags li {
+ul.tags li {
   padding: 0 0 0.6em 1em;
 }
 
