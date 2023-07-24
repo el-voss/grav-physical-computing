@@ -9,13 +9,77 @@
 
 {% block content %}
 
-<article>
+<div id="body-inner">
+    <h1>{{ page.title }}</h1>
+    {% if page.header.subtitle %}<p>{{ page.header.subtitle|raw }}</p>{% endif %}
 
 {#    {% if show_image and image %}
         <span class="image main" itemprop="image">{{ image.cropZoom(img_width, img_height).loading('lazy').attribute('decoding','async').html(title,title,'image')|raw }}</span>
     {% endif %} #}
 
-    {% include 'partials/page.html.twig' %}
+    <ul class="tags">
+        {% if page.taxonomy.Mindestvoraussetzungen %}
+        <li>
+           <i class="fa fa-check-square"></i>
+           <strong>Mindestvoraussetzungen: </strong>
+            {% for tag in page.taxonomy.Mindestvoraussetzungen %}
+                <a href="{{ base_url }}/search/query:{{ tag }}"> {{ tag }} </a>
+                {% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </li>
+        {% endif %}
 
-</article>
+        {% if page.taxonomy.Zusatzvoraussetzungen %}
+        <li>
+           <i class="fa fa-star"></i>
+           <strong>Zusatzvoraussetzungen: </strong>
+            {% for tag in page.taxonomy.Zusatzvoraussetzungen %}
+                <a href="{{ base_url }}/search/query:{{ tag }}"> {{ tag }} </a>
+                {% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </li>
+        {% endif %}
+
+        {% if page.taxonomy.Inhalte %}
+        <li>
+           <i class="fa fa-tags"></i>
+           <strong>Inhalte: </strong>
+            {% for tag in page.taxonomy.Inhalte %}
+                {{ tag }}
+                {% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </li>
+        {% endif %}
+
+        {% if page.taxonomy.Niveau %}
+        <li>
+           <i class="fa fa-rocket"></i>
+           <strong>Niveau: </strong>
+            {% for tag in page.taxonomy.Niveau %}
+                {{ tag }}
+                {% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </li>
+        {% endif %}
+
+        {#
+        {% if page.taxonomy.category %}
+        <span>
+            <i class="fas fa-link fa-md"></i>
+            {% for category in page.taxonomy.category %}
+                <a class="tags" title="{{ 'Andere Beiträge in ' ~ (category|capitalize) }}"
+			    href="{{ base_url }}/category{{ config.system.param_sep }}{{ category }}" itemprop="url"><span itemprop="keywords">{{ category }}</span></a>
+                {% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </span>
+        {% endif %}
+        #}
+    </ul>
+
+    <p>
+        {{ page.content|raw }}
+    </p>
+
+</div>
+
 {% endblock %}

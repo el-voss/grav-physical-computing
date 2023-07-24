@@ -21,15 +21,6 @@ taxonomy:
         - Experte
 ---
 
-Mit den vielen Bauteilen aus der Bauteilkunde lassen sich bereits große und komplexe Projekte realisieren. Um dabei nicht den Überblick zu verlieren, hilft es, sich mit der zustandsbasierten Modellierung und Automaten zu beschäftigen, die das Programm und die Vorgehensweise zur Erstellung des Programms besser strukturieren.
-
-In diesem Abschnitt lernst du...
-  - …die Funktionsweise von Programmen mit einem Zustandsdiagramm zu planen und zu veranschaulichen,
-  - …Programme durch eine zustandsbasierte Modellierung als endlicher Automat zu flexibilisieren.
-
-
-## Endliche Automaten und Zustandsdiagramme
-
 Bisher wurden Algorithmen rezeptartig als feste Handlungsabfolgen beschrieben, die nacheinander durchlaufen werden und dabei ggf. einfache Fallunterscheidungen berücksichtigen. In der Automatentheorie steht weniger das Befolgen eines Rezeptes im Mittelpunkt als das Einnehmen verschiedener Zustände, zwischen denen unter festgelegten Bedingungen Übergänge stattfinden. Dies macht die Algorithmen flexibler im Umgang mit Eingaben aus der Umwelt, wodurch sie zudem leichter zu erweitern sind.
 
 **Ziel:** Durch eine zustandsbasierte Modellierung sollen Algorithmen flexibler werden und einfacher zu erweitern.
