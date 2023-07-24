@@ -4,6 +4,22 @@ show_pageimage: true
 image_width: 300
 image_height: 300
 featured_image: rfid.jpg
+taxonomy:
+    Mindestvoraussetzungen:
+        - Datentypen
+        - Variablen
+        - 'Einfache Entscheidungen programmieren'
+        - 'Der serielle Monitor'
+        - Servo
+    Inhalte:
+        - RFID-Chip
+        - Sender
+        - Empfänger
+        - SPI
+        - ID
+        - Anwesenheit
+    Niveau:
+        - Fortgeschritten
 ---
 
 <div markdown="1" class="clearfix">
