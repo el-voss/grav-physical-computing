@@ -4,6 +4,22 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: poti.jpg
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Der serielle Monitor'
+        - Variablen
+        - Pulsweitenmodulation
+    Zusatzvoraussetzungen:
+        - 'Digital vs Analog und Aktor vs Sensor'
+        - 'Spannung messen'
+    Inhalte:
+        - Potentiometer
+        - Drehregler
+        - Spannung
+        - 'Analoger Eingang'
+    Niveau:
+        - Basis
+        - Fortgeschritten
 ---
 
 <div markdown="1" class="clearfix">
