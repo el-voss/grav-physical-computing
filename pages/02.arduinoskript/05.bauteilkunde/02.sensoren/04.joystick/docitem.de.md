@@ -4,6 +4,21 @@ show_pageimage: true
 image_width: 300
 image_height: 300
 featured_image: joystick.jpg
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Der serielle Monitor'
+    Zusatzvoraussetzungen:
+        - 'Digital vs Analog und Aktor vs Sensor'
+        - 'Das elektrische Potential'
+        - 'Spannung messen'
+        - Schrittmotor
+    Inhalte:
+        - Joystick
+        - Potentiometer
+        - Taster
+        - Active-Low-Schaltung
+    Niveau:
+        - Fortgeschritten
 ---
 
 Joysticks werden bekanntermaßen für Spielecontroller oder auch zur Steuerung von Maschinen genutzt. Mit dem Arduino lassen sich einfache Versionen davon nachbauen.
