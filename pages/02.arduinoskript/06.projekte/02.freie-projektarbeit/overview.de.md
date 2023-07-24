@@ -1,16 +1,17 @@
 ---
-title: Projektarbeit
-menu: '[P] Projektarbeit'
+title: Freie Projektarbeit
+menu: '[FP] Freie Projektarbeit'
+content:
+    items:
+        - '@self.children'
+    limit: 30
+    order:
+        by: folder
+        dir: asc
+    pagination: false
+    url_taxonomy_filters: false
 ---
 
-
-<style>
-    body {
-        --abk: 'BK.P';
-    }
-</style>
-
-In den beiden ersten Teilen zur Bauteilkunde wurde eine Einführung zu sehr vielen Bauteilen gegeben, die sich mit dem Open Roberta Lab programmieren lassen. Damit lassen sich bereits tolle Projekte umsetzen. Hast du eine Idee?
 
 <div markdown="1" class="projekt">
 #### Eigenes Projekt
