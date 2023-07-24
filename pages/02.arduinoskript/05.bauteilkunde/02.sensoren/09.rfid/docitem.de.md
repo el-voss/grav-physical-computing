@@ -11,7 +11,11 @@ featured_image: rfid.jpg
 Mit RFID-Chips (***r**adio **f**requency **id**entification*) lässt sich ein digitaler Schlüssel bauen, um zum Beispiel Türen abzusichern. Der RFID-Empfänger sendet über die rechteckige Spule Radiowellen, welche Energie transportieren. Diese empfängt der RFID-Sender (blauer Chip oder auch weiße Karte), woraufhin er seine eizigartige ID zurücksendet. Diese wird wiederum von der Rechteckspule empfangen und elektronisch so aufbereitet, dass man am Arduino die ID lesen kann.
 </div>
 
-Die Verbindung mit dem Arduino erfolgt über ein *Serial Peripheral Interface (SPI)* (weitere Informationen unten), weshalb die meisten Pins am Arduino festgelegt sind (siehe unten). Der RST-Pin und der SDA-Pin lassen sich ggf. noch ändern. Wichtig: Der Mikrocontroller auf dem RFID-Chip arbeitet mit einem Logiklevel von $3,3 \, V$ und würde durchbrennen, wenn man ihn an 5 V anschließt. Der Arduino verfügt direkt neben dem 5 V-Anschluss auch über einen 3,3 V-Anschluss. Der IRQ-Pin des RFID-Empfängers wird nicht benötigt und kann ignoriert werden.
+Die Verbindung mit dem Arduino erfolgt über ein *Serial Peripheral Interface (SPI)* (weitere Informationen unten), weshalb die meisten Pins am Arduino festgelegt sind (siehe unten). Der RST-Pin und der SDA-Pin lassen sich ggf. noch ändern. 
+
+!! Wichtig: Der Mikrocontroller auf dem RFID-Chip arbeitet mit einem Logiklevel von $3,3 \, V$ und würde durchbrennen, wenn man ihn an 5 V anschließt. Der Arduino verfügt direkt neben dem 5 V-Anschluss auch über einen 3,3 V-Anschluss. 
+
+Der IRQ-Pin des RFID-Empfängers wird nicht benötigt und kann ignoriert werden.
 
 <div class="flex-box">
 <div markdown="1" class="flexible">![RFID-Konfigurationsblock.](rfid-konfiguration.png?classes=caption "RFID-Konfigurationsblock.")</div>
