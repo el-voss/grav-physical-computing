@@ -4,6 +4,19 @@ show_pageimage: true
 image_width: 300
 image_height: 300
 featured_image: ir-sensor-led-modul-gross.jpg
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Der serielle Monitor'
+        - 'Entscheidungen mit mehreren Kriterien'
+        - Variablen
+    Inhalte:
+        - Infrarot-Sensor
+        - Fernbedienung
+        - Photodiode
+        - Codes
+        - Taster
+    Niveau:
+        - Fortgeschritten
 ---
 
 Jeder weiß, wie angenehm es ist, wenn man ein Gerät fernsteuern kann statt aufstehen zu müssen, um die angebrachten Knöpfe zu drücken. Eine einfache Möglichkeit dafür bietet eine Infrarot(IR)-Fernbedienung.
