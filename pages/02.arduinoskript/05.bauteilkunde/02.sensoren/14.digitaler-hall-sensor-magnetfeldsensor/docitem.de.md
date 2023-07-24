@@ -6,7 +6,7 @@ image_height: 300
 featured_image: hall-digital-ky-003.jpg
 ---
 
-Bei einem digitalen Hall-Sensor wird das analoge Signal eines Hall-Sensors durch weitere Elektronik so weiterverarbeitet, dass bei der Ausgabe nur noch zwischen *Magnetfeld bzw. Magnet anwesend* und *Magnetfeld bzw. Magnet nicht anwesend* unterschieden wird. Dies ist in vielen Anwendungsfällen das Einzige, was wirklich interessiert: So lässt sich damit feststellen, ob der Gurt eines Autos angelegt wurde oder es lässt sich messen, wie oft sich ein Motor oder ein Reifen gedreht hat. Letzteres lässt sich bei Autos oder Fahrrädern nutzen, um aus der Drehzahlmessung die Geschwindigkeit errechnen.
+Bei einem digitalen Hall-Sensor wird das analoge Signal eines Hall-Sensors durch weitere Elektronik so weiterverarbeitet, dass bei der Ausgabe nur noch zwischen *Magnetfeld bzw. Magnet anwesend* und *Magnetfeld bzw. Magnet nicht anwesend* unterschieden wird. Dies ist in vielen Anwendungsfällen das Einzige, was wirklich interessiert: So lässt sich damit feststellen, ob der Gurt eines Autos angelegt wurde oder es lässt sich messen, wie oft sich ein Motor oder ein Reifen gedreht hat. Letzteres lässt sich bei Autos oder Fahrrädern nutzen, um aus der Drehzahlmessung die Geschwindigkeit zu errechnen.
 <!-- Bild von Fahrrad -->
 
 <div class="flex-box">
