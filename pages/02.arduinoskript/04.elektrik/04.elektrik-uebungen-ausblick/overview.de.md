@@ -1,6 +1,6 @@
 ---
 title: 'Vermischte Übungen zur Elektrik'
-menu: '[U] Übungen und Ausblick'
+menu: '[VU] Vermischte Übungen'
 media_order: 'schaltplan-ldr-in-reihe.png,schaltplan-spannungsmessung.png,schaltplan-pullup.png,schaltplan-dimmbarer-lautsprecher.png,Bloecke-Dimmbarer-Lautsprecher.png,schaltplan-ntc-an-arduino.png,Bloecke-LDR-komplex-Moorhuhn.png,schaltplan-transistor-und-ntc.png,programm-pullup.png,Schaltplan-Taster-an-A0.png'
 ---
 
