@@ -3,9 +3,7 @@ title: 'Kurze Einführung zum Arduino und zum Open Roberta Lab'
 menu: '[KE] Kurze Einführung'
 page-toc:
     active: true
-taxonomy:
-    category:
-        - docs
+media_order: 'anweisungen-bsp.png,arduino-beschriftet.png,arduino-beschriftet.svg,led-sammlung.jpg,led-schaltsymbol.png,openrobertalab.png,openrobertalab.svg,Schaltplan-LED.png,steckbrett.png,Widerstaende.jpg,widerstand-bsp1.png,widerstand-bsp2.png,widerstand-schaltsymbol.png,widerstand-schema.png,widerstandsfarben-tabelle.png,schaltplan-blink.png'
 ---
 
 <style>
