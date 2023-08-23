@@ -25,6 +25,8 @@ Schaltungen und Programme werden erst dann richtig interessant, wenn sie auf ihr
 ![Fallunterscheidung](wenn-mache-sonst.png?classes=caption,figure-right "Fallunterscheidung.")
 
 Baue und programmiere eine Fußgängerampel! Nutze dazu die Informationen aus dem Info-Kasten zum Taster.
+
+*Erweiterung für Schnelle:* Ergänze einen Piezo-Summer, der während der Grünphase tickt, damit auch Sehbehinderte wissen, wann sie passieren dürfen. Nutze dazu dei Informationen zum Piezo-Summer weiter unten auf der Seite.
 </div>
 
 !!!! #### Taster
