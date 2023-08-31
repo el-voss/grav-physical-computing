@@ -15,6 +15,7 @@ taxonomy:
         - Zahl
     Niveau:
         - Basis
+media_order: 'textargument.png,wahrheitswertargument1.png,wahrheitswertargument2.png,zahlargument1.png,zahlargument2.png,datentyp-bewegungsmelder.png,datentyp-ist-gerade.png,datentyp-oder.png,datentyp-rfid.png,datentyp-serial-monitor.png,datentyp-wdh-bis.png,datentyp-wdh-x-mal.png,datentyp-zeitgeber.png'
 ---
 
 <div markdown="1" class="aufgabe"> 
@@ -40,3 +41,21 @@ taxonomy:
 !!!! <div markdown="1"> ![Zahl](zahlargument1.png?resize=200) <br> Zahlenwerte: <br> Sowohl ganze Zahlen als auch Dezimalzahlen (mit Punkt als Komma). </div>
 !!!! <div markdown="1"> ![Zeichenketten](textargument.png?resize=200) <br> Zeichenketten: <br> Aneinanderreihung von Zeichen.</div>
 !!!! </div>
+
+<div markdown="1" class="aufgabe">
+#### Datentypen erkennen
+
+Gib zu den folgenden Blöcken jeweils an, welcher Datentyp beim Argument bzw. beim Rückgabewert/Ergebnis erwartet wird.
+
+| Block | Datentyp des Arguments / der Argumente | Datentyp des Rückgabewertes |
+|---------|--------------------------------------------------------|-------------------------------------------|
+| ![datentyp-wdh-x-mal](datentyp-wdh-x-mal.png "datentyp-wdh-x-mal")  |    |    |
+| ![datentyp-zeitgeber](datentyp-zeitgeber.png "datentyp-zeitgeber")  |    |    |
+| ![datentyp-bewegungsmelder](datentyp-bewegungsmelder.png "datentyp-bewegungsmelder")  |    |    |
+|  ![datentyp-wdh-bis](datentyp-wdh-bis.png "datentyp-wdh-bis") |    |    |
+| ![datentyp-ist-gerade](datentyp-ist-gerade.png "datentyp-ist-gerade")  |    |    |
+| ![datentyp-serial-monitor](datentyp-serial-monitor.png "datentyp-serial-monitor")  |    |    |
+| ![datentyp-oder](datentyp-oder.png "datentyp-oder")  |    |    |
+|  ![datentyp-rfid](datentyp-rfid.png "datentyp-rfid") |    |    |
+
+</div>
