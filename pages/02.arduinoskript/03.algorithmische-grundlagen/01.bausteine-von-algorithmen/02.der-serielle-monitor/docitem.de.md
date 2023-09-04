@@ -12,6 +12,7 @@ taxonomy:
         - 'Serieller Monitor'
     Niveau:
         - Basis
+media_order: 'ldr-an-arduino-steckplatine.png,ldr-an-arduino2.png,ldr-konfiguration.png,ldr-schaltsymbol.png,ldr.jpg,ldr2.jpg,serialprint.png,gibLichtinProzent.png'
 ---
 
 Bisher hatte die Kommunikation mit dem Arduino stets nur eine Richtung: Vom Computer zum Arduino. Das reicht nicht mehr, wenn eine Messung vorgenommen und deren Ergebnis zurück gemeldet werden soll. Die einfachste Möglichkeit, um dies zu realisieren, ist der serielle Monitor. Dieser soll im Folgenden genutzt werden, um eine Straßenlampe zu konfigurieren, die leuchtet, wenn es dunkel wird.
@@ -29,10 +30,13 @@ Bisher hatte die Kommunikation mit dem Arduino stets nur eine Richtung: Vom Comp
 Ein LDR ist ein Widerstand, dessen Größe von der Lichtstärke abhängt, die auf ihn trifft (siehe unten). Um ihn auslesen zu können, muss er in einem sogenannten Spannungsteiler mit einem Festwiderstand von $R_F=10 \, k\Omega$ an den Arduino angeschlossen werden (siehe rechts). Der zugehörige Konfigurationsblock ist unten abgebildet.
 
 <div markdown="1" class="flex-box">
-<div markdown="1">![Ein LDR.](ldr2.jpg?lightbox=1024&resize=200&classes=caption "Ein LDR")</div>
-<div markdown="1">![Konfiguration des LDR.](ldr-konfiguration.png?resize=200&classes=caption "Konfiguration des LDR")</div>
-<div markdown="1">![Symbolischer Schaltplan: LDR am Arduino](ldr-an-arduino2.png?lightbox=1024&resize=500&classes=caption "Symbolischer Schaltplan: LDR am Arduino")</div>
-<div markdown="1">![Ikonischer Schaltplan: LDR am Arduino](ldr-an-arduino-steckplatine.png?lightbox=1024&resize=500&classes=caption "Ikonischer Schaltplan: LDR am Arduino")</div>
+<div markdown="1">![Ein LDR.](ldr2.jpg?lightbox=1024&resize=200&classes=caption "Ein LDR.")</div>
+<div markdown="1">
+![Konfiguration des LDR.](ldr-konfiguration.png?resize=200&classes=caption "Konfiguration des LDR.")
+![gibLichtinProzent](gibLichtinProzent.png?resize=200&classes=caption "Block zum Auslesen des LDR.")
+</div>
+<div markdown="1">![Symbolischer Schaltplan: LDR am Arduino](ldr-an-arduino2.png?lightbox=1024&resize=500&classes=caption "Symbolischer Schaltplan: LDR am Arduino.")</div>
+<div markdown="1">![Ikonischer Schaltplan: LDR am Arduino](ldr-an-arduino-steckplatine.png?lightbox=1024&resize=500&classes=caption "Ikonischer Schaltplan: LDR am Arduino.")</div>
 </div>
 
 <div markdown="1" class="aufgabe">
