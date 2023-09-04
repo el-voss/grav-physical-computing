@@ -7,15 +7,16 @@ featured_image: joystick.jpg
 taxonomy:
     Mindestvoraussetzungen:
         - 'Der serielle Monitor'
+        - 'Drehregler / Potentiometer'
     Zusatzvoraussetzungen:
-        - 'Digital vs Analog und Aktor vs Sensor'
         - 'Das elektrische Potential'
+        - 'Digital vs Analog und Aktor vs Sensor'
         - 'Spannung messen'
         - Schrittmotor
     Inhalte:
-        - Joystick
-        - Potentiometer
         - Taster
+        - Potentiometer
+        - Joystick
         - Active-Low-Schaltung
     Niveau:
         - Fortgeschritten
