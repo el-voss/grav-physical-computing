@@ -8,9 +8,9 @@ taxonomy:
     Mindestvoraussetzungen:
         - 'Einfache Entscheidungen programmieren'
         - 'Entscheidungen mit mehreren Kriterien'
+        - Variablen
         - 'Wiederholungen und zufällige Ereignisse'
         - 'Wiederholungen mit Bedingungen steuern'
-        - Variablen
         - Zählschleifen
     Inhalte:
         - Struktogramme
@@ -80,4 +80,4 @@ Stelle die unten abgebildeten Programme jeweils mithilfe eines Struktogramms dar
 !!!! </div>
 !!!! </div>
 
-! In diesem Abschnitt werden Struktogramme zwar eingeführt, um Programm übersichtlich auf Papier darstellen zu können, aber auch digital kann es Sinn ergeben, ein Programm in dieser Struktur (und ohne Ballast) darzustellen. In diesen Fällen kann dir der [Structorizer](https://structorizer.fisch.lu/) helfen.
+! In diesem Abschnitt werden Struktogramme zwar eingeführt, um Programm übersichtlich auf Papier darstellen zu können, aber auch digital kann es Sinn ergeben, ein Programm in dieser Struktur (und ohne Ballast) darzustellen. In diesen Fällen kann dir der [Struktogrammeditor der TU Dresden](https://dditools.inf.tu-dresden.de/ovk/Informatik/Programmierung/Grundlagen/Struktogramme.html) helfen.
