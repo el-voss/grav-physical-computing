@@ -6,7 +6,7 @@ title: 'Über diese Seite'
 
 <h1 id="autor">Autor</h1>
 
-Mein Name ist Sebastian Voß und ich bin leidenschaftlicher Tüftler und Bastler mit allem, was mit Computern und Mikrocontrollern zu tun hat. Beruflich bin ich Lehrer für Mathematik und Physik an einem Gymnasium in Niedersachsen. Zusätzlich unterrichte ich inzwischen Informatik in der Sekundarstufe I.
+Mein Name ist Sebastian Voß und ich bin leidenschaftlicher Tüftler und Bastler mit allem, was mit Computern und Mikrocontrollern zu tun hat. Beruflich bin ich Lehrer für Mathematik, Physik und Informatik an einem Gymnasium in Niedersachsen.
 
 ![Bild des Autors](sebastian.png?resize=400)
 
