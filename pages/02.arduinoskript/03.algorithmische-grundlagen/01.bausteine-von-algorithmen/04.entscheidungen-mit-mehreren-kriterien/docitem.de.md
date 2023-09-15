@@ -108,6 +108,9 @@ Hinten befinden sich zwei Drehregler (“Potentiometer”), mit denen sich die D
 <div markdown="1" class="aufgabe">
 #### Tasterkombinationen
 
+wenn-wenn-bsp vorgeben als Vgl zu UND und Fehler finden
+
+wenn-sonst-wenn-bsp vorgeben und Vgl. zu Operation ODER - füge zusätzliche LEDs hinzu, sodass der dies nich tmit ODER übereinstimmt
 
 Erstelle ein Programm mit vier LEDs L1 bis L4 und zwei Taster T1, T2, sodass die folgenden Bedingungen umgesetzt werden.
 | T1 und T2 gedrückt | nur L1 leuchtet |
