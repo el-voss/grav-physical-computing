@@ -104,6 +104,20 @@ Hinten befinden sich zwei Drehregler (“Potentiometer”), mit denen sich die D
 !!!! </div>
 !!!! Achtung: Die ODER-Operation ergibt auch dann “wahr”, wenn beide Aussagen wahr sind. Das aus dem Alltag bekannte “ENTWEDER-ODER” (XOR) ist eine weitere logische Operation, die “falsch” ergibt, wenn beide Aussagen wahr sind. Diese Operation ist aber nicht in Nepo enthalten.
 
+<!---
+<div markdown="1" class="aufgabe">
+#### Tasterkombinationen
+
+
+Erstelle ein Programm mit vier LEDs L1 bis L4 und zwei Taster T1, T2, sodass die folgenden Bedingungen umgesetzt werden.
+| T1 und T2 gedrückt | nur L1 leuchtet |
+| nur T1 gedrückt  | nur L2 leuchtet |
+| nur T2 gedrückt  | nur L3 leuchtet |
+| kein Taster gedrückt |  nur L4 leuchtet |
+
+</div>
+-->
+
 
 <div markdown="1" class="aufgabe"> 
 #### Verschachtelte Entscheidungen?!
