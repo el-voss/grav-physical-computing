@@ -124,7 +124,7 @@ Am Arduino werden zwei Taster T1 und T2 sowie eine LED L angeschlossen. Das folg
 ![wenn-sonstwenn-bsp](wenn-sonstwenn-bsp.png?resize=500&classes=caption "Ein Programm mit 'sonst wenn'.")
 
 1. Erkläre, welche logische Operation das gleiche Verhalten wie die abgebildete Verzweigung bewirken würde.
-2. Nun wird eine zweite LED L2 hinzugefügt. Erweitere das Programm so, dass die logische Operation aus (1) nicht mehr das gleiche Verhalten bewirkt.Dabei dürfen nur Blöcke zum Ein- und Ausschalten von L2 hinzugefügt werden. Erkläre deine Lösung kurz.
+2. Nun wird eine zweite LED L2 hinzugefügt. Erweitere das Programm so, dass die logische Operation aus (1) nicht mehr das gleiche Verhalten bewirkt. Dabei dürfen nur Blöcke zum Ein- und Ausschalten von L2 hinzugefügt werden. Erkläre deine Lösung kurz.
 </div>
 
 <div markdown="1" class="aufgabe">
