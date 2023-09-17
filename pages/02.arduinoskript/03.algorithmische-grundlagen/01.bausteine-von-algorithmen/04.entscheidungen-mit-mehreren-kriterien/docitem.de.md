@@ -12,6 +12,7 @@ taxonomy:
         - Fallunterscheidungen
         - Wahrheitswerttabellen
         - Bewegungsmelder
+        - 'Logische Operationen'
     Niveau:
         - Fortgeschritten
 media_order: 'bewegungsmelder-hinten.jpg,bewegungsmelder-ohne-linse.jpg,bewegungsmelder.jpg,wenn-sonstWenn-sonst-Bsp.png,wenn-sonstWenn-sonst-Bsp2.png,wenn-sonstwenn-bsp.png,wenn-wenn-bsp.png'
