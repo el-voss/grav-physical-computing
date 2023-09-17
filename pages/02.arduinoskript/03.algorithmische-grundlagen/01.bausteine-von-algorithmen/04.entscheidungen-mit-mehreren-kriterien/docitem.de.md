@@ -14,6 +14,7 @@ taxonomy:
         - Bewegungsmelder
     Niveau:
         - Fortgeschritten
+media_order: 'bewegungsmelder-hinten.jpg,bewegungsmelder-ohne-linse.jpg,bewegungsmelder.jpg,wenn-sonstWenn-sonst-Bsp.png,wenn-sonstWenn-sonst-Bsp2.png,wenn-sonstwenn-bsp.png,wenn-wenn-bsp.png'
 ---
 
 Bisher waren die zu treffenden Entscheidungen immer nur von einem Kriterium abhängig. Das sind jedoch Ausnahmen. Nun geht es darum, wie man mehrere Kriterien miteinander kombinieren kann.
@@ -104,22 +105,36 @@ Hinten befinden sich zwei Drehregler (“Potentiometer”), mit denen sich die D
 !!!! </div>
 !!!! Achtung: Die ODER-Operation ergibt auch dann “wahr”, wenn beide Aussagen wahr sind. Das aus dem Alltag bekannte “ENTWEDER-ODER” (XOR) ist eine weitere logische Operation, die “falsch” ergibt, wenn beide Aussagen wahr sind. Diese Operation ist aber nicht in Nepo enthalten.
 
-<!---
 <div markdown="1" class="aufgabe">
-#### Tasterkombinationen
+#### Operation durch Verschachteln?!
 
-wenn-wenn-bsp vorgeben als Vgl zu UND und Fehler finden
+Am Arduino werden zwei Taster T1 und T2 sowie eine LED L angeschlossen. Die LED soll nur dann leuchten, wenn beide Taster gleichzeitig gedrückt werden, sonst soll sie (wieder) ausgeschaltet werden.
 
-wenn-sonst-wenn-bsp vorgeben und Vgl. zu Operation ODER - füge zusätzliche LEDs hinzu, sodass der dies nich tmit ODER übereinstimmt
+1. Nenne die logische Operation, mit der sich dieses Verhalten bewirken lässt.
+2. Lukas möchte das Verhalten nicht durch eine logische Operation, sondern durch eine Verschachtelung von Bedingungen erreichen wie sie unten abgebildet ist. Erkläre, welchen Fehler Lukas dabei gemacht hat und beschreibe, wie er ihn beheben könnte.
 
-Erstelle ein Programm mit vier LEDs L1 bis L4 und zwei Taster T1, T2, sodass die folgenden Bedingungen umgesetzt werden.
-| T1 und T2 gedrückt | nur L1 leuchtet |
-| nur T1 gedrückt  | nur L2 leuchtet |
-| nur T2 gedrückt  | nur L3 leuchtet |
-| kein Taster gedrückt |  nur L4 leuchtet |
-
+![wenn-wenn-bsp](wenn-wenn-bsp.png?resize=500&classes=caption "Programm von Lukas mit verschachtelten Bedingungen.")
 </div>
--->
+
+<div markdown="1" class="aufgabe">
+#### Verzweigungen mit "sonst wenn"
+
+Am Arduino werden zwei Taster T1 und T2 sowie eine LED L angeschlossen. Das folgende Programm wird auf den Arduino gespielt.
+
+![wenn-sonstwenn-bsp](wenn-sonstwenn-bsp.png?resize=500&classes=caption "Ein Programm mit 'sonst wenn'.")
+
+1. Erkläre, welche logische Operation das gleiche Verhalten wie die abgebildete Verzweigung bewirken würde.
+2. Nun wird eine zweite LED L2 hinzugefügt. Erweitere das Programm so, dass die logische Operation aus (1) nicht mehr das gleiche Verhalten bewirkt.Dabei dürfen nur Blöcke zum Ein- und Ausschalten von L2 hinzugefügt werden. Erkläre deine Lösung kurz.
+</div>
+
+<div markdown="1" class="aufgabe">
+#### Entweder-Oder (XOR)
+
+Aus dem Alltag kennen wir häufig ein "entweder-oder", also ein exklusives Oder (daher die englische Abkürzung "XOR"). Als Beispiel soll eine LED L am Arduino so programmiert werden, dass sie leuchtet, wenn entweder Taster T1 oder Taster T2 (aber nicht beide gleichzeitig) gedrückt werden.
+
+1. Erstelle eine Wahrheitswerttabelle für das "Entweder-Oder".
+2. Erstelle ein Programm, das das beschriebene Verhalten umsetzt.
+</div>
 
 
 <div markdown="1" class="aufgabe"> 
