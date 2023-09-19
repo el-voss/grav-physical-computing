@@ -7,9 +7,9 @@ featured_image: wdh-bis.png
 taxonomy:
     Mindestvoraussetzungen:
         - 'Einfache Entscheidungen programmieren'
-        - 'Entscheidungen mit mehreren Kriterien'
     Zusatzvoraussetzungen:
         - Variablen
+        - 'Entscheidungen mit mehreren Kriterien'
     Inhalte:
         - 'wiederhole bis/solange'
     Niveau:
