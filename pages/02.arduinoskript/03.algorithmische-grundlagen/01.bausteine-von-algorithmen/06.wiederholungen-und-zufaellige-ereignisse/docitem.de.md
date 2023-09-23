@@ -36,6 +36,8 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 Baue und programmiere eine “Bombe”, die für eine zufällige Dauer zwischen 5s und 20s tickt und dann explodiert. Die Bombe wird über einen Taster aktiviert.
 
 Zusatz: Welchen Unterschied macht es, wenn man die ausgewürfelte Zufallszahl in einer Variable speichert?
+
+Rücklink: [Taster anschließen](/user/pages/algorithmische-grundlagen/bausteine-von-algorithmen/einfache-entscheidungen-programmieren)
 </div>
 
 <div markdown="1" class="aufgabe">
@@ -59,6 +61,8 @@ Baue und programmiere einen Reaktionszeitmesser.
 Der Reaktionszeitmesser soll zunächst warten, bis ein Taster gedrückt wurde, der besagt, dass es losgehen kann. Dann wird eine LED angeschaltet (Vorwiderstand!) und nach einer zufälligen Zeit wieder ausgeschaltet. Nun beginnt die Zeitmessung. Die Stoppuhr läuft solange, bis der Taster gedrückt wurde. Die gemessene Zeit wird dann über den seriellen Monitor ausgegeben und es wird erneut gewartet, bis der Anwender bestätigt, dass es losgehen kann.
 
 Miss mindestens zehn Mal deine Reaktionszeit und bestimme den Mittelwert. Bist du besser als dein Partner?
+
+Rücklink: [Taster anschließen](/user/pages/algorithmische-grundlagen/bausteine-von-algorithmen/einfache-entscheidungen-programmieren)
 
 *Idee: Frick, Fritsch und Trick (2015): Einführung in Mikrocontroller - Der Arduino als Steuerzentrale, Bad Saulgau*
 </div>
