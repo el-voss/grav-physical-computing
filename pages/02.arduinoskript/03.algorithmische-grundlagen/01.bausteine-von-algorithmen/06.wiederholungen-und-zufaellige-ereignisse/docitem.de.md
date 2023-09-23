@@ -37,7 +37,7 @@ Baue und programmiere eine “Bombe”, die für eine zufällige Dauer zwischen 
 
 Zusatz: Welchen Unterschied macht es, wenn man die ausgewürfelte Zufallszahl in einer Variable speichert?
 
-Rücklink: <a href="https://mintorials.de/de/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/einfache-entscheidungen-programmieren#taster" target="_blank">Taster</a>
+Rücklink: <a href="https://mintorials.de/de/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/einfache-entscheidungen-programmieren#taster" target="_blank">Taster anschließen</a>
 </div>
 
 <div markdown="1" class="aufgabe">
@@ -62,7 +62,7 @@ Der Reaktionszeitmesser soll zunächst warten, bis ein Taster gedrückt wurde, d
 
 Miss mindestens zehn Mal deine Reaktionszeit und bestimme den Mittelwert. Bist du besser als dein Partner?
 
-Rücklink: <a href="https://mintorials.de/de/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/einfache-entscheidungen-programmieren#taster" target="_blank">Taster</a>
+Rücklink: <a href="https://mintorials.de/de/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/einfache-entscheidungen-programmieren#taster" target="_blank">Taster anschließen</a>
 
 *Idee: Frick, Fritsch und Trick (2015): Einführung in Mikrocontroller - Der Arduino als Steuerzentrale, Bad Saulgau*
 </div>
