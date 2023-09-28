@@ -129,7 +129,7 @@ Am Arduino werden zwei Taster T1 und T2 sowie eine LED L angeschlossen. Das folg
     | T1 gedrückt | T2 gedrückt | Ergebnis an LED |
     |-------|----------|---------|
     | ... | ... | ... |
-2. Erkläre, welche Kombination von Wahrheitswerten vom Programm nicht unterschieden wird. Hast du deine Idee, wie man das Programm ändern müsste, damit es nicht mehr das gleiche Verhalten wie die logische Operation aus (1) bewirken würde?
+2. Erkläre, welche Kombination von Wahrheitswerten vom Programm nicht unterschieden wird. Hast du eine Idee, wie man das Programm ändern müsste, damit es nicht mehr das gleiche Verhalten wie die logische Operation aus (1) bewirken würde?
 </div>
 
 <div markdown="1" class="aufgabe">
