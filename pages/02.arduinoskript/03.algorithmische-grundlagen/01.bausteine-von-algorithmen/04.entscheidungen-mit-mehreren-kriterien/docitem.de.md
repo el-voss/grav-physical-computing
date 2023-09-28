@@ -138,7 +138,7 @@ Am Arduino werden zwei Taster T1 und T2 sowie eine LED L angeschlossen. Das folg
 Aus dem Alltag kennen wir häufig ein "entweder-oder", also ein exklusives Oder (daher die englische Abkürzung "XOR"). Als Beispiel soll eine LED L am Arduino so programmiert werden, dass sie leuchtet, wenn entweder Taster T1 oder Taster T2 (aber nicht beide gleichzeitig) gedrückt werden.
 
 1. Erstelle eine Wahrheitswerttabelle für das "Entweder-Oder".
-2. Erstelle ein Programm, das das beschriebene Verhalten umsetzt.
+2. Erstelle ein Programm, das das beschriebene Verhalten umsetzt, und probiere es aus.
 </div>
 
 
