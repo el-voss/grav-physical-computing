@@ -47,11 +47,12 @@ Baue und programiere eine Alarmanlage, die wie folgt funktioniert: Wenn über ei
 !!!! <div markdown="1">
 !!!!  |**Zeile** | **counter** |
 !!!!  |----------|-------|
-!!!!  |   …      |   …   |
-!!!!  |   5      |   2   |
-!!!!  |   6      |   2   |
-!!!!  |   5      |   3   |
-!!!!  |   6      |   3   |
+!!!!  |   1   |  1  |
+!!!!  |   2    |   1   |
+!!!!  |   3      |   1   |
+!!!!  |   4      |   2   |
+!!!!  |   3      |   2   |
+!!!!  |   4      |   3   |
 !!!! </div>
 !!!! </div>
 
