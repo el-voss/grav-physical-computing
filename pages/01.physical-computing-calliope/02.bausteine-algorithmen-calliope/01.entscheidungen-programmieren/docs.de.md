@@ -4,7 +4,6 @@ menu: '[E] Entscheidungen programmieren'
 media_order: 'erste-entscheidung1.png,erste-entscheidung2.png'
 ---
 
-
 <div markdown="1" class="aufgabe">
 #### Programmvergleich
 
