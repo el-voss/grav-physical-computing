@@ -1,7 +1,7 @@
 ---
 title: 'Verarbeitung von Umwelteingaben'
 menu: '[V] Verarbeitung von Umwelteingaben'
-media_order: 'erste-entscheidung1.png,erste-entscheidung2.png'
+media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,eva-visualisierung.png,calliope-eva-software.png,calliope-eva-hardware.png'
 ---
 
 <div markdown="1" class="aufgabe">
@@ -75,7 +75,7 @@ Welche weiteren Gemeinsamkeiten und Unterschiede weisen die Bauteile auf?
 !!!! Mit dem EVA-Prinzip wird die grundlegende Reihenfolge der Verarbeitung von Daten charakterisiert. Dies kann sowohl auf Hardwareebene (Bauteile) als auch auf Softwareebene (Programm) geschehen.
 !!!!
 !!!! <div markdown="1" class="flex-box">
-!!!! <div markdown="1">![Bsp. Dämmerungsschaltung: EVA-Prinzip auf Hardwareebene.](daemmerungsschaltung-eva.png?Lightbox=1024&resize=500&classes=caption "Bsp. Dämmerungsschaltung: EVA-Prinzip auf Hardwareebene.")</div>
-!!!! <div markdown="1">![Bsp. Dämmerungsschaltung: EVA-Prinzip auf Softwareebene.](daemmerungsprogramm-eva.png?Lightbox=1024&resize=500&classes=caption "Bsp. Dämmerungsschaltung: EVA-Prinzip auf Softwareebene.")</div>
+!!!! <div markdown="1">![EVA-Prinzip auf Hardwareebene.](calliope-eva-hardware.png?Lightbox=1024&resize=500&classes=caption "EVA-Prinzip auf Hardwareebene.")</div>
+!!!! <div markdown="1">![EVA-Prinzip auf Softwareebene.](calliope-eva-software.png?Lightbox=1024&resize=500&classes=caption "EVA-Prinzip auf Softwareebene.")</div>
 !!!! </div>
 
