@@ -5,7 +5,6 @@ menu: '[KE] Kurze Einführung'
 media_order: 'calliope-bauteile.png,openroberta-calliope-uebersicht-erklaert.png,calliope-erstes-programm.png,calliope-anweisung-argument.png'
 ---
 
-
 <style>
     body {
         --abk: 'KE';
@@ -85,4 +84,21 @@ Programmiere eine einfache Ampel mit der RGB-LED.
 #### Jukebox
 
 Programmiere ein Lied, das der Calliope abspielt. Recherchiere die Noten dazu im Internet.
+
+
+*Hinweise:*
+
+Zwei mögliche Beispiele von Melodien mit Link zu den Noten:
+
+-   [“Alle meine Entchen”](https://www.lieder-archiv.de/alle_meine_entchen-notenblatt_100055.html),
+-   [“Oh Tannenbaum”](https://www.lieder-archiv.de/o_tannenbaum-notenblatt_200078.html).
+
+*Frequenzen in Hertz zu den Noten:*
+
+<div markdown="1" style="overflow:auto;">
+  | $c^1$ | $cis^1/des^1$ | $d^1$ | $dis^1/es^1$ | $e^1$ | $f^1$ | $fis^1/ges^1$ | $g^1$ | $gis^1/as^1$ | $a^1$ | $ais^1/b^1$ | $h^1$ |
+  |-------|---------------|-------|--------------|-------|-------|---------------|-------|--------------|-------|-------------|-------|
+  | 262   |     277       | 294   |    311       | 330   | 349   |     370       | 392   |    415       | 440   |   466       | 494   |
+</div>
+
 </div>
