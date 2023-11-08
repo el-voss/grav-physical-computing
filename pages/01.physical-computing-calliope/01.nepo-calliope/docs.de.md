@@ -5,7 +5,6 @@ menu: '[KE] Kurze Einführung'
 media_order: 'calliope-bauteile.png,openroberta-calliope-uebersicht-erklaert.png,calliope-erstes-programm.png,calliope-anweisung-argument.png'
 ---
 
-# Eine kurze Einführung zum Calliope und zum Open Roberta Lab
 
 <style>
     body {
