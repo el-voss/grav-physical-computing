@@ -1,6 +1,6 @@
 ---
 title: 'Verarbeitung von Umwelteingaben'
-menu: '[E] Entscheidungen programmieren'
+menu: '[V] Verarbeitung von Umwelteingaben'
 media_order: 'erste-entscheidung1.png,erste-entscheidung2.png'
 ---
 
