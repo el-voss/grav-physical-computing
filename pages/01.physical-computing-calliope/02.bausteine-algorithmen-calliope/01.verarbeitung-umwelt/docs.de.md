@@ -18,9 +18,10 @@ Beschreibe, was die beiden folgenden Programme bewirken und vergleiche sie. Prob
 <div markdown="1" class="aufgabe">
 #### Simulation von Informatiksystemen im Alltag
 
-Simuliere mit dem Calliope verschiedene Informatiksysteme aus deinem Alltag. Wähle selbst.
+1. Simuliere mit dem Calliope verschiedene Informatiksysteme aus deinem Alltag. Wähle selbst.
+2. Notiere jeweils, welche Bauteile auf dem Calliope benötigt werden und sichere das Programm als Screenshot und ggf. als Datei.
+3. Diskutiere die Grenzen deiner Programme: Wo bzw. wann treten Probleme auf? Wo ist die Simulation unvollständig oder stößt an Grenzen?
 
-Notiere jeweils, welche Bauteile auf dem Calliope benötigt werden und sichere das Programm als Screenshot und ggf. als Datei.
 
 <div class="flex-box">
 <div markdown="1" class="example-card">
