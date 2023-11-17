@@ -11,6 +11,7 @@ taxonomy:
     Niveau:
         - Basis
         - Fortgeschritten
+media_order: 'Aufg-Programme-verstehen.png,hoerbare-helligkeit.png,jukebox2.png,zaehlschleife-analysieren.png,zaehlschleifen-fuer-mathematik.png,befehle-zu-konfigurierbares-blinken.png'
 ---
 
 <div markdown="1" class="aufgabe">
@@ -20,6 +21,8 @@ Am Arduino ist ein Taster und eine LED angeschlossen. Die LED soll zunächst jew
 
 1.  Zeichne einen Schaltplan und benenne die Größe der jeweils notwendigen Widerstände.
 2.  Entwickle ein Programm nach den beschriebenen Anforderungen und stelle es als Struktogramm dar.
+
+![befehle-zu-konfigurierbares-blinken](befehle-zu-konfigurierbares-blinken.png "Blöcke zum Programmieren des konfigurierbaren Blinkens. Die Argumente dürfen angepasst werden. Die Blöcke dürfen mehrmals verwendet werden.")
 </div>
 
 <div markdown="1" class="aufgabe">
