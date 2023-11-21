@@ -1,5 +1,5 @@
 ---
-title: '[F] Funktionen'
+title: Funktionen
 media_order: 'einstieg-funktionen.png,istPositiv.png,istPrimzahl-Block.png,istGerade.png,istGerade-ohneKommatest.png,istDunkel.png,funktion-mathe-beispiele.png'
 ---
 
