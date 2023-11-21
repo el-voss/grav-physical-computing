@@ -1,6 +1,6 @@
 ---
 title: '[F] Funktionen'
-media_order: einstieg-funktionen.png
+media_order: 'einstieg-funktionen.png,istPositiv.png,istPrimzahl-Block.png,istGerade.png,istGerade-ohneKommatest.png,istDunkel.png,funktion-mathe-beispiele.png'
 ---
 
 In vielen Fällen ist es hilfreich, wenn man sich eigene Blöcke erstellen und nutzen kann, um Programme abzukürzen oder lesbarer zu machen. In der Programmiersprache C++ wird dies als Funktion bezeichnet. Ganz ähnlich wie eine Funktion in der Mathematik kann man Werte an die Funktion übergeben und man kann ggf. einen Wert zurückbekommen.
