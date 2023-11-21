@@ -50,9 +50,9 @@ Die Temperaturampel zeigt an, ob die Temperatur zu kalt, angenehm oder zu warm i
 Die Lärmampel zeigt an, ob die Lautstärke angenehm, noch erträglich oder zu laut ist.
 </div>
 <div markdown="1" class="example-card">
-**Blumenkontrollsystem**
+**Einparkhilfe**
 
-Das Blumenkontrollsystem zeigt an, ob in der Erde des Blumentopfes genug Feuchtigkeit ist.
+Eine Einparkhilfe piepst immer schneller, je näher man einem Hindernis kommt.
 </div>
 </div>
 
