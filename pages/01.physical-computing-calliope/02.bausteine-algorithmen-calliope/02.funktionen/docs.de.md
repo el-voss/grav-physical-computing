@@ -1,6 +1,6 @@
 ---
 title: Funktionen
-media_order: 'einstieg-funktionen.png,istPositiv.png,istPrimzahl-Block.png,istGerade.png,istGerade-ohneKommatest.png,istDunkel.png,funktion-mathe-beispiele.png'
+media_order: 'einstieg-funktionen.png,istPositiv.png,istPrimzahl-Block.png,istGerade.png,istGerade-ohneKommatest.png,istDunkel.png,funktionen-flaeche-und-umfang.png'
 ---
 
 In vielen Fällen ist es hilfreich, wenn man sich eigene Blöcke erstellen und nutzen kann, um Programme abzukürzen oder lesbarer zu machen. In der Programmiersprache C++ wird dies als Funktion bezeichnet. Ganz ähnlich wie eine Funktion in der Mathematik kann man Werte an die Funktion übergeben und man kann ggf. einen Wert zurückbekommen.
@@ -28,7 +28,7 @@ Die folgende Abbildung enthält drei verschiedene Funktionen (eigene Blöcke). B
 
 Funktionen in der Informatik und Funktionen in der Mathematik sind sehr ähnlich: Funktionen in der Mathematik ordnen in der Regel einer oder mehreren Zahlen eine neue Zahl zu. Dies lässt sich über die Parameter und den Rückgabewert eines Funktionsblocks umsetzen.
 
-![Mathematische Funktionen mit Blöcken implementiert](funktion-mathe-beispiele.png?Lightbox=1024&resize=600&classes=caption "Mathematische Funktionen als informatische Funktionen implementiert.")
+![Mathematische Funktionen mit Blöcken implementiert](funktionen-flaeche-und-umfang.png?Lightbox=1024&resize=600&classes=caption "Mathematische Funktionen als informatische Funktionen implementiert.")
 
 Implementiere ein Programm mit den oben abgebildeten Funktionen, sodass diese eine korrekte Ausgabe liefern.
 
