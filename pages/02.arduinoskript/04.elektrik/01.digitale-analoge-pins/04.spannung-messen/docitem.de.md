@@ -54,7 +54,7 @@ Da der Arduino beim direkten Anschließen nur maximal 5 V “verträgt”, mus
 
 ![Schaltplan für Voltmeter bis 10V.](schaltplan-batterietester.png?lightbox=1024&resize=400)
 
-1.  Berechne die Stromstärke und die Spannung an den Widerständen. Warum sind große Widerstände hier sinnvoll?
+1.  Bei einem neuen 9V-Block beträgt die Spannung noch genau 9V. Berechne die Stromstärke und die Spannung an den Widerständen. Warum sind große Widerstände für die Messung der Spannung sinnvoll?
 2.  Markiere die Kabel in der Abbildung farbig, sodass die Kabel, die auf dem gleichen elektrischen Potential liegen, die gleiche Farbe haben. Notiere zudem den Wert des elektrischen Potentials.
 3.  Gib an, wie man mit dem Arduino die Spannung am 9 V-Block berechnet. Baue den Batterietester dann auf und probiere ihn mit dem 9 V-Block aus der Box aus.
 4.  *Zum Nachdenken:* Wie groß darf die Spannung beim oben verwendeten Spannungsteiler maximal sein, damit am Arduino nicht mehr als 5 V anliegen? Wie könnte man den Spannungsteiler bauen, sodass man Spannungen bis zu 15 V messen kann?
