@@ -7,12 +7,12 @@ featured_image: poti.jpg
 taxonomy:
     Mindestvoraussetzungen:
         - 'Der serielle Monitor'
-        - 'Spannung messen'
         - 'Spannung Stromstärke und Widerstand berechnen'
+        - 'Spannung messen'
         - Pulsweitenmodulation
     Inhalte:
-        - Potentiometer
         - Spannungsteiler
+        - Potentiometer
         - 'Potentiometer ohne Mikrocontroller'
         - 'Kennlinien von Leuchtdioden'
     Niveau:
@@ -34,7 +34,7 @@ Ein einfaches Potentiometer kannst du selbst bauen.
 
 *Experimentieren:* Schreibe ein Programm, dass dir fortlaufend auf dem seriellen Monitor die Analogwerte und die umgerechneten Werte für das elektrische Potenzial bzw. die Spannung gegenüber GND anzeigt. Bewege dann das Sensorkabel über den Streifen und beobachte, wie sich die Spannungswerte verändern.
 
-*Analysieren:* Der Bleistiftstreifen leitet den Strom bei einem bestimmten Gesamtwiderstand $R_{ges}$. Durch das Sensorkabel wird der Streifen in zwei Teile mit den Teilwiderständen $R_1$ und $R_2$ geteilt. Erläutere anhand deiner Beobachtungen, wie die drei Widerstände zusammenhängen.
+*Analysieren:* Der Bleistiftstreifen leitet den Strom bei einem bestimmten Gesamtwiderstand $R_{ges}$. Durch das Sensorkabel wird der Streifen in zwei Teile mit den Teilwiderständen $R_1$ und $R_2$ geteilt. Erläutere anhand deiner Beobachtungen, wie die drei Widerstände und die in A0 gemessene Spannung zusammenhängen.
 
 *Idee: Frick, Fritsch und Trick (2015): *Einführung in Mikrocontroller - Der Arduino als Steuerzentrale*, Bad Saulgau*
 </div>
