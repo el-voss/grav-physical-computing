@@ -50,6 +50,18 @@ Ein Joystick besteht im Wesentlichen aus zwei Potentiometern, die über einen ge
 </div>
 
 <div markdown="1" class="projekt">
+#### Joystick-Steuerung für eine LED-Kette
+
+Schließe am Arduino zusätzlich zum Joystick fünf LEDs mit Vorwiderstand an. Diese sollen folgendermaßen programmiert werden:
+
+- Wenn der Joystick in der Mitte steht, dann leuchtet nur die mittlere LED mit mittlerer Helligkeit.
+- Wenn der Joystick nach oben bewegt wird, dann werden abhängig von der Auslenkung die "oberen" LEDs hinzugeschaltet, analog gilt dies für die "unteren" LEDs. Dies gilt nur solange, wie der Joystick nach oben bzw. unten gehalten wird.
+- Wenn der Joystick nach links/rechts bewegt wird, dann wird abhängig von der Auslenkung die Helligkeit verringert / vergrößert.
+
+Zusatz: Mit einem Druck auf den Joystick lassen sich die LEDs an- / ausschalten.
+</div>
+
+<div markdown="1" class="projekt">
 #### Joystick-Motor-Steuerung
 
 Steuere mit dem Joystick-Modul einen Schrittmotor!
