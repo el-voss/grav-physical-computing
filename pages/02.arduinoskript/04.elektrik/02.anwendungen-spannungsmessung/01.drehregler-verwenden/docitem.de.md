@@ -100,7 +100,7 @@ Beim Experimentieren mit dem Potentiometer wirst du feststellen, dass man das Po
 <div markdown="1" class="aufgabe">
 #### Genaue Analyse des Spannungsteilers
 
-Kann man die Spannung, die in A0 gemessen wird, auch schon im Voraus berechnen?
+Kann man die Spannung, die in A0 gemessen wird (unten als $U_2$ bezeichnet), auch schon im Voraus berechnen?
 
 ![spannungsteileranalyse](spannungsteileranalyse.png?resize=300 "spannungsteileranalyse")
 
@@ -108,7 +108,7 @@ Kann man die Spannung, die in A0 gemessen wird, auch schon im Voraus berechnen?
 	a. Gib die Spannung an, falls $R_1=5k\Omega$ und $R_2=5k\Omega$.
 	b. Gib die Spannung an, falls $R_1=2,5k\Omega$ und $R_2=7,5k\Omega$.
 	c. Gib die Spannung an, falls $R_1=8k\Omega$ und $R_2=2k\Omega$.
-2. Für kompliziertere Fälle braucht man eine Formel. Leite eine Formel zur Berechnung der Spannung in A0 her.
+2. Für kompliziertere Fälle braucht man eine Formel. Leite eine Formel zur Berechnung von $U_2$, also der Spannung in A0 gegenüber GND, her.
 Tipp: Betrachte zuerst die Stromstärken $I_1$ und $I_2$ durch die beiden Widerstände. Durch das Sensorkabel fließt (näherungsweise) kein Strom.
 </div>
 
