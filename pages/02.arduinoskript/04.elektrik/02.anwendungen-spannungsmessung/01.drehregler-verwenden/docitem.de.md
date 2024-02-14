@@ -18,6 +18,7 @@ taxonomy:
     Niveau:
         - Fortgeschritten
         - Experte
+media_order: 'bleistiftpoti-klein.png,Diodenkennlinien.png,potentiometer-anwendung.png,poti-schaltsymbol.png,poti.jpg,pwm-analog-diagramm.png,trimmpotentiometer1.jpg,trimmpotentiometer2.jpg,spannungsteileranalyse.png'
 ---
 
 Die Messung einer variablen, (quasi-)analogen Spannung eröffnet neue Möglichkeiten, da die Eingabewerte nun viel differenzierter sind als bei einem Taster, bei dem die Eingabe nur aus “0” oder “1” bestand. Zum Beispiel kann man darüber angeben, wie hell eine Lampe leuchten soll bzw. wie stark sie gedimmt werden soll. Dazu werden Potentiometer verwendet.
@@ -100,7 +101,10 @@ Beim Experimentieren mit dem Potentiometer wirst du feststellen, dass man das Po
 #### Genaue Analyse des Spannungsteilers
 
 Kann man die Spannung, die in A0 gemessen wird, auch schon im Voraus berechnen?
-1. In einfachen Fällen gelingt dir das sicherlich schnell ($R_1$ ist jeweils der Widerstand zwischen GND und A0, $R_2$ ist der Widerstand zwischen A0 und 5V --> erübrigt sich durch BILD!!):
+
+![spannungsteileranalyse](spannungsteileranalyse.png?resize=300 "spannungsteileranalyse")
+
+1. In einfachen Fällen gelingt dir das sicherlich schnell:
 	a. Gib die Spannung an, falls $R_1=5k\Omega$ und $R_2=5k\Omega$.
 	b. Gib die Spannung an, falls $R_1=2,5k\Omega$ und $R_2=7,5k\Omega$.
 	c. Gib die Spannung an, falls $R_1=8k\Omega$ und $R_2=2k\Omega$.
