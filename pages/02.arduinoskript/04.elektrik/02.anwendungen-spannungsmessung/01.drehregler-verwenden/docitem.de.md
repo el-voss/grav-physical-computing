@@ -18,7 +18,7 @@ taxonomy:
     Niveau:
         - Fortgeschritten
         - Experte
-media_order: 'bleistiftpoti-klein.png,Diodenkennlinien.png,potentiometer-anwendung.png,poti-schaltsymbol.png,poti.jpg,pwm-analog-diagramm.png,trimmpotentiometer1.jpg,trimmpotentiometer2.jpg,spannungsteileranalyse.png'
+media_order: 'bleistiftpoti-klein.png,Diodenkennlinien.png,potentiometer-anwendung.png,poti-schaltsymbol.png,poti.jpg,pwm-analog-diagramm.png,trimmpotentiometer1.jpg,trimmpotentiometer2.jpg,spannungsteileranalyse.png,spannungsteiler.png'
 ---
 
 Die Messung einer variablen, (quasi-)analogen Spannung eröffnet neue Möglichkeiten, da die Eingabewerte nun viel differenzierter sind als bei einem Taster, bei dem die Eingabe nur aus “0” oder “1” bestand. Zum Beispiel kann man darüber angeben, wie hell eine Lampe leuchten soll bzw. wie stark sie gedimmt werden soll. Dazu werden Potentiometer verwendet.
