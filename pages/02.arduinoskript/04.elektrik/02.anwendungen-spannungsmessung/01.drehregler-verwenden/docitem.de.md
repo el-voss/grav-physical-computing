@@ -92,3 +92,25 @@ Beim Experimentieren mit dem Potentiometer wirst du feststellen, dass man das Po
 
 ![U-I-Kennlinien einer roten, gelben, grünen und blauen Leuchtdiode.](Diodenkennlinien.png?lightbox=1024&resize=700&classes=caption "U-I-Kennlinien einer roten, gelben, grünen und blauen Leuchtdiode.")
 </div>
+
+### Theoretische Analyse des Potentiometers
+
+
+<div markdown="1" class="aufgabe">
+#### Genaue Analyse des Spannungsteilers
+
+Kann man die Spannung, die in A0 gemessen wird, auch schon im Voraus berechnen?
+1. In einfachen Fällen gelingt dir das sicherlich schnell ($R_1$ ist jeweils der Widerstand zwischen GND und A0, $R_2$ ist der Widerstand zwischen A0 und 5V --> erübrigt sich durch BILD!!):
+	a. Gib die Spannung an, falls $R_1=5k\Omega$ und $R_2=5k\Omega$.
+	b. Gib die Spannung an, falls $R_1=2,5k\Omega$ und $R_2=7,5k\Omega$.
+	c. Gib die Spannung an, falls $R_1=8k\Omega$ und $R_2=2k\Omega$.
+2. Für kompliziertere Fälle braucht man eine Formel. Leite eine Formel zur Berechnung der Spannung in A0 her.
+Tipp: Betrachte zuerst die Stromstärken $I_1$ und $I_2$ durch die beiden Widerstände. Durch das Sensorkabel fließt (näherungsweise) kein Strom.
+</div>
+
+
+!!!! #### Der Spannungsteiler
+!!!! 
+!!!! ![image](spannungsteiler.png?resize=250)
+!!!! Der Spannungsteiler ist ein häufig verwendeter Teil einer Schaltung, in dem zwei Widerstände in Reihe geschaltet sind. Dadurch teilt sich die insgesamt anliegende Spannung auf die beiden Widerstände entsprechend ihrer jeweiligen Größe auf. Dabei gilt:
+!!!! <center markdown="1">$\frac{U_1}{R_1} = \frac{U_2}{R_2} = \frac{U_{ges}}{R_{ges}}.$</center>
