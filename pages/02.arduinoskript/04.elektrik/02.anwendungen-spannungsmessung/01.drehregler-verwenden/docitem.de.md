@@ -110,6 +110,7 @@ Kann man die Spannung, die in A0 gemessen wird (unten als $U_2$ bezeichnet), auc
 	c. Gib die Spannung an, falls $R_1=8k\Omega$ und $R_2=2k\Omega$.
 2. Für kompliziertere Fälle braucht man eine Formel. Leite eine Formel zur Berechnung von $U_2$, also der Spannung in A0 gegenüber GND, her.
 Tipp: Betrachte zuerst die Stromstärken $I_1$ und $I_2$ durch die beiden Widerstände. Durch das Sensorkabel fließt (näherungsweise) kein Strom.
+3. Berechne $U_2$, falls "R_1=1,5k\Omega$ ist.
 </div>
 
 
