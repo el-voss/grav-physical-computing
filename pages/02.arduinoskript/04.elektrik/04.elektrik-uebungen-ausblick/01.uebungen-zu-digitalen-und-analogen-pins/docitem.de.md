@@ -24,8 +24,7 @@ Eine rote LED soll an Pin 13 des Arduino betrieben werden. Durch die LED soll ei
 <div markdown="1" class="aufgabe">
 #### Parallelschaltung
 
-Drei grüne LEDs sollen parallel geschaltet an Pin 13 des Arduino angeschlossen und mit einem gemeinsamen Vorwiderstand betrieben werden. Die LEDs halten eine Stromstärke von maximal $ 20\,  mA$
-bei einer Spannung von $ 3,3\, V$ aus.
+Drei grüne LEDs sollen parallel geschaltet an Pin 13 des Arduino angeschlossen und mit einem gemeinsamen Vorwiderstand betrieben werden. Die LEDs halten eine Stromstärke von maximal $ 20\,  mA$ bei einer Spannung von $ 3,3\, V$ aus.
 
 1.  Zeichne den zugehörigen Schaltplan.
 2.  Ein Digitalpin am Arduino darf maximal mit einer Stromstärke von $ 40\,  mA$ belastet werden. Berechne, welche Stromstärke dann maximal durch die einzelnen LEDs fließen darf.
