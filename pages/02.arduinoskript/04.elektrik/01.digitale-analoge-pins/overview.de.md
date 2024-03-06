@@ -1,6 +1,6 @@
 ---
 title: 'Digitale und analoge Pins'
-menu: '[DAP] Digitale und analoge Pins'
+menu: 'Digitale und analoge Pins'
 media_order: batteriespannung-messen.png
 content:
     items:
