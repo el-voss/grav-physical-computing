@@ -1,6 +1,6 @@
 ---
-title: Freie Projektarbeit
-menu: '[FP] Freie Projektarbeit'
+title: 'Freie Projektarbeit'
+menu: 'Freie Projektarbeit'
 content:
     items:
         - '@self.children'
@@ -11,7 +11,6 @@ content:
     pagination: false
     url_taxonomy_filters: false
 ---
-
 
 <div markdown="1" class="projekt">
 #### Eigenes Projekt
