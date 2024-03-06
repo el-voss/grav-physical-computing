@@ -1,6 +1,6 @@
 ---
 title: 'Verarbeitung von Umwelteingaben'
-menu: '[V] Verarbeitung von Umwelteingaben'
+menu: 'Verarbeitung von Umwelteingaben'
 media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,eva-visualisierung.png,calliope-eva-software.png,calliope-eva-hardware.png'
 ---
 
