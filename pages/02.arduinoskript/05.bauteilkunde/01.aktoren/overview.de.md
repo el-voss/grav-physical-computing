@@ -1,6 +1,6 @@
 ---
 title: Aktoren
-menu: '[A] Aktoren'
+menu: Aktoren
 content:
     items:
         - '@self.children'
