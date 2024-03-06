@@ -1,7 +1,7 @@
 ---
 title: 'Bausteine von Algorithmen'
 published: true
-menu: '[BA] Bausteine von Algorithmen'
+menu: 'Bausteine von Algorithmen'
 ---
 
 # Bausteine von Algorithmen
