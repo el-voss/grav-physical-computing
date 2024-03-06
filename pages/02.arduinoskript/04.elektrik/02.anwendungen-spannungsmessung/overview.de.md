@@ -1,6 +1,6 @@
 ---
 title: 'Anwendungen der Spannungsmessung'
-menu: '[AS] Anwendungen der Spannungsmessung'
+menu: 'Anwendungen der Spannungsmessung'
 media_order: 'trimmpotentiometer2.jpg,trimmpotentiometer1.jpg'
 content:
     items:
