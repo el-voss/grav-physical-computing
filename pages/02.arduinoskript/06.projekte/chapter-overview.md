@@ -1,6 +1,6 @@
 ---
 title: Projekte
-menu: '[P] Projekte'
+menu: Projekte
 content:
     items:
         - '@self.children'
