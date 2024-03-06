@@ -1,6 +1,6 @@
 ---
 title: Bauteilkunde
-menu: '[BK] Bauteilkunde'
+menu: Bauteilkunde
 content:
     items:
         - '@self.children'
