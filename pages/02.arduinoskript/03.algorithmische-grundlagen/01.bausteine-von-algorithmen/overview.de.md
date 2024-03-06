@@ -1,5 +1,5 @@
 ---
-title: '[BA] Bausteine von Algorithmen'
+title: 'Bausteine von Algorithmen'
 content:
     items:
         - '@self.children'
