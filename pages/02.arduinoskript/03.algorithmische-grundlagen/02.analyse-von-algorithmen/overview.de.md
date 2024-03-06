@@ -1,5 +1,5 @@
 ---
-title: '[AA] Analyse von Algorithmen'
+title: 'Analyse von Algorithmen'
 content:
     items:
         - '@self.children'
