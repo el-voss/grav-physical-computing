@@ -1,6 +1,6 @@
 ---
 title: Automaten
-menu: '[AU] Automaten'
+menu: Automaten
 content:
     items:
         - '@self.children'
