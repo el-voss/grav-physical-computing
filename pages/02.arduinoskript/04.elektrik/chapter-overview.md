@@ -1,6 +1,6 @@
 ---
 title: 'Elektrische Grundlagen zu digitalen und analogen Pins'
-menu: '[EG] Elektrische Grundlagen'
+menu: 'Elektrische Grundlagen'
 content:
     items:
         - '@self.children'
