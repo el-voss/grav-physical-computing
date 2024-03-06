@@ -1,6 +1,6 @@
 ---
 title: 'Algorithmische Grundlagen'
-menu: '[AG] Algorithmische Grundlagen'
+menu: 'Algorithmische Grundlagen'
 content:
     items:
         - '@self.children'
