@@ -2,7 +2,6 @@
 title: Datenschutzerklärung
 ---
 
-<h1>Datenschutzerklärung</h1>
 <p>Stand: 3. Februar 2022</p>
 <h2>Inhaltsübersicht</h2>
 
