@@ -21,7 +21,7 @@ title: Datenschutzerklärung
 <h2 id="m3">Verantwortlicher</h2>
 <p>Sebastian Voß<br>Koorskamp 33<br>49811 Lingen (Ems)</p>
 E-Mail-Adresse: sebastian@el-voss.de
-Impressum: <a href="https://doku.el-voss.de/de/impressum" target="_blank">https://doku.el-voss.de/de/impressum</a>
+Impressum: <a href="https://mintorials.de/de/impressum" target="_blank">https://mintorials.de/de/impressum</a>
 
 <h2 id="mOverview">Übersicht der Verarbeitungen</h2>
 <p>Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und die Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen Personen.</p>
