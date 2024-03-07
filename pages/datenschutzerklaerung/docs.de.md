@@ -19,7 +19,7 @@ title: Datenschutzerklärung
 </ul>
 
 <h2 id="m3">Verantwortlicher</h2>
-<p>Sebastian Voß<br>Rüskenweg 11a<br>49811 Lingen (Ems)</p>
+<p>Sebastian Voß<br>Koorskamp 33<br>49811 Lingen (Ems)</p>
 E-Mail-Adresse: sebastian@el-voss.de
 Impressum: <a href="https://doku.el-voss.de/de/impressum" target="_blank">https://doku.el-voss.de/de/impressum</a>
 
