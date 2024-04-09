@@ -12,7 +12,7 @@
         <li class="dd-item{{ parent_page }}{{ current_page }}" data-nav-id="{{ p.route }}">
             <a href="{{ p.url }}" {% if p.header.class %}class="{{ p.header.class }}"{% endif %}>
                 <i class="fa fa-check read-icon"></i>
-                <span><b>{% if data_level == 0 %}{{ loop.index }}. {% endif %}</b>{{ p.menu }}</span>
+                <span><!-- <b>{% if data_level == 0 %}{{ loop.index }}. {% endif %}</b> --> {{ p.menu }}</span>
             </a>
             {% if p.children.count > 0 %}
               {# Tiefe des Inhaltsverzeichnisses in der Sidebar auf 3 Ebenen beschränken #}
@@ -55,7 +55,7 @@
                 {% if theme_config.root_page %}
                     {{ macro.loop(page.find(theme_config.root_page), '') }}
                 {% else %}
-            {{ macro.loop(pages, '') }}
+	            {{ macro.loop(pages, '') }}
                 {% endif %}
             </ul>
         {% endif %}
@@ -70,6 +70,7 @@
 	    <br><p><a href="https://mintorials.de/de/about">Über diese Seite</a></p>
 	        <p><a href="https://mintorials.de/de/impressum">Impressum</a></p>
 		<p><a href="https://mintorials.de/de/datenschutzerklaerung">Datenschutzerklärung</a></p>
+	    <br><p>Partnerseite: <a href="https://technikwerkstatt40.de" target="_blank">Technikwerkstatt 4.0</a></p>
             <br><p>Seite erstellt mit <a href="https://getgrav.org">Grav</a>.</p>
         </section>
     </div>

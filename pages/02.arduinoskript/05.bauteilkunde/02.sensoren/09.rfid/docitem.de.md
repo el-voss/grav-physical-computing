@@ -6,10 +6,10 @@ image_height: 300
 featured_image: rfid.jpg
 taxonomy:
     Mindestvoraussetzungen:
-        - Datentypen
-        - Variablen
         - 'Einfache Entscheidungen programmieren'
         - 'Der serielle Monitor'
+        - Datentypen
+        - Variablen
         - Servo
     Inhalte:
         - RFID-Chip
@@ -24,7 +24,8 @@ taxonomy:
 
 <div markdown="1" class="clearfix">
 ![RFID-Sender und -Empfänger](rfid.jpg?resize=250&classes=caption,figure-right "RFID-Empfänger (rechts) mit blauem RFID-Sender (links).")
-Mit RFID-Chips (***r**adio **f**requency **id**entification*) lässt sich ein digitaler Schlüssel bauen, um zum Beispiel Türen abzusichern. Der RFID-Empfänger sendet über die rechteckige Spule Radiowellen, welche Energie transportieren. Diese empfängt der RFID-Sender (blauer Chip oder auch weiße Karte), woraufhin er seine eizigartige ID zurücksendet. Diese wird wiederum von der Rechteckspule empfangen und elektronisch so aufbereitet, dass man am Arduino die ID lesen kann.
+Mit RFID-Chips (***r**adio **f**requency **id**entification*) lässt sich ein digitaler Schlüssel bauen, um zum Beispiel Türen abzusichern. Die eindeutige ID zur Identifikation ist auf einem blauen Chip oder einer weißen Karte gespeichert und soll von diesem bzw. dieser an einen Empfänger gesendet werden. Daher werden diese im folgenden als RFID-Sender bezeichnet.
+Da der RFID-Sender über keine eigene Spannungsquelle verfügt, sendet der RFID-Empfänger zunächst über die rechteckige Spule Radiowellen, welche Energie transportieren. Diese empfängt der RFID-Sender (blauer Chip oder weiße Karte), woraufhin er seine eizigartige ID zurücksendet. Diese wird wiederum von der Rechteckspule empfangen und elektronisch so aufbereitet, dass man am Arduino die ID lesen kann.
 </div>
 
 Die Verbindung mit dem Arduino erfolgt über ein *Serial Peripheral Interface (SPI)* (weitere Informationen unten), weshalb die meisten Pins am Arduino festgelegt sind (siehe unten). Der RST-Pin und der SDA-Pin lassen sich ggf. noch ändern. 
