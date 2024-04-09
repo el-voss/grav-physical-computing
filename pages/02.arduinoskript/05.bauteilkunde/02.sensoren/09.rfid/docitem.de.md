@@ -54,6 +54,15 @@ Zur Programmierung kann man die bloße Anwesenheit eines RFID-Senders abfragen o
 !!     ![Der Vergleich von vorgegebener ID und eingelesener ID erzeugt hier einen Fehler.](rfid-fehler-vgl-chararray-mit-string.png?classes=caption "Der Vergleich von vorgegebener ID und eingelesener ID erzeugt hier einen Fehler.")
 
 <div markdown="1" class="projekt">
+#### Diebstahlsicherung
+
+Ein Anwendungsgebiet von RFID-Chips ist die Verhinderung von Diebstählen. Dazu bekommen die Waren (z. B. Klamotten) eine Sicherheitsetikette mit einem RFID-Sender, der normalerweise beim Bezahlen entfernt oder durch einen starken Magneten zerstört wird. Geschieht dies jedoch nicht, ertönt beim Verlassen des Geschäfts ein Alarmton, weil der intakte RFID-Chip vom RFID-Empfänger im Eingang erkannt wird.
+
+Baue und programmiere selbst eine Anlage zur Diebstahlsicherung.
+</div>
+
+
+<div markdown="1" class="projekt">
 #### Katzentür
 
 Baue und programmiere einen Prototypen für eine Katzentür, die sich automatisch öffnet, wenn die Katze (mit RFID-Chip am Halsband) sich der Tür nähert.
