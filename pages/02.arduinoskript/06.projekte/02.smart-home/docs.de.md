@@ -22,6 +22,6 @@ Entwickle einen Prototypen für ein "Smart Home" mit möglichst vielen oder mög
 Als Grundlage dient ein Karton, der als Haus gestaltet werden soll und Platz für die Technik bietet. Es dürfen alle Bauteile aus dem Arduino Kit verwenden werden. Recherchiere selbst im Kapitel "[Bauteilkunde](https://mintorials.de/de/arduinoskript/bauteilkunde)" nach Anleitungen.
 </div>
 
-!!! Da bei diesem Projekt sehr viele Bauteile zusammenkommen können, die teilweise viel Strom benötigen, sollte die Stromversorgung nicht vom Arduino stammen. Nutze das Power Supply Module auf dem Steckbrett, um sowohl den Arduino als auch die Bauteile mit Strom zu versorgen.
+!! Da bei diesem Projekt sehr viele Bauteile zusammenkommen können, die teilweise viel Strom benötigen, sollte die Stromversorgung nicht vom Arduino stammen. Nutze das Power Supply Module auf dem Steckbrett, um sowohl den Arduino als auch die Bauteile mit Strom zu versorgen.
 
 
