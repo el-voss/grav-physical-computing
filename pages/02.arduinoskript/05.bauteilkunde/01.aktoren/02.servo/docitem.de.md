@@ -30,6 +30,8 @@ Der Servo wird mit drei Anschlüssen an den Arduino angeschlossen:
   - GND (schwarz/braun): Die Stromversorgung ist nur komplett, wenn auch das GND-Niveau auf das GND-Niveau des Arduino festgelegt wird.
   - Signalleitung (gelb): Die Einstellung des Winkels erfolgt über ein Pulsweitenmodulation, allerdings wird diese von einer zusätzlichen Bibliothek bereitgestellt, sodass das gelbe Kabel mit jedem Digitalpin am Arduino verbunden werden kann.
 
+!! Der Arduino kann nur für einen Servo genügend Strom liefern. Wenn mehrere Servos oder andere Bauteile genutzt werden, die viel Strom benötigen, muss die Stromversorgung z. B. über ein *Power Supply Module* (ein Spannungsregler) gewährleistet werden. Eine genauere Beschreibung für mehrere Servos folgt unten.
+
 <div markdown="1" class="projekt">
 #### Schranke
 
