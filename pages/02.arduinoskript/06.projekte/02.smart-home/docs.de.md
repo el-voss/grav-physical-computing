@@ -31,3 +31,11 @@ Als Grundlage dient ein Karton, der als Haus gestaltet werden soll und Platz fü
 !!!! Das Power Supply Module dient zur Spannungsversorgung auf einem Steckbrett. Dazu kann eine Batterie mit $ 6,5\, V$ bis $ 12\, V$ oder ein USB-Kabel angeschlossen werden. Die Spannung wird auf dem Modul je nach Einstellung der *Jumper* auf $ 5\, V$ oder $ 3,3\, V$ heruntergeregelt. Dazu verbindet man mithilfe der Jumper die Anschlüsse `5V` und `OFF` bzw. `3.3` und `OFF`.
 !!!! Die Spannung kann entlang der langen äußeren Leisten abgegriffen werden, wenn der Taster neben der Hohlbuchse gedrückt ist. Die Zuordnung zu Pluspol und Minuspol ist auf dem Power Supply Module mit `+` bzw. `-` markiert.
 
+**Material**
+- Karton (etwas größer als ein Schuhkarton)
+- Arduino Kit (vgl. Bauteilkunde)
+- zusätzliche Servo-Motoren
+- zusätzliche Bewegungsmelder
+- zusätzliche Kabel, male - female, 40cm
+- Kreppband
+
