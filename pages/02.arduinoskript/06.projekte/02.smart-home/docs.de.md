@@ -34,8 +34,6 @@ Als Grundlage dient ein Karton, der als Haus gestaltet werden soll und Platz fü
 **Material**
 - Karton (etwas größer als ein Schuhkarton)
 - Arduino Kit (vgl. Bauteilkunde)
-- zusätzliche Servo-Motoren
-- zusätzliche Bewegungsmelder
 - zusätzliche Kabel, male - female, 40cm
 - Kreppband
 
