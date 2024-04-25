@@ -54,7 +54,7 @@ Baue mit einem Servo eine Schranke, die auf Knopfdruck geöffnet und wieder gesc
 
 Das folgende Bild zeigt, wie man die Stromversorgung für einen Servo über ein Power Supply Module herstellt, das mehr Strom liefern kann als der Arduino.
 
-![steckbrett-mit-power-supply-und-servo-Markierung](steckbrett-mit-power-supply-und-servo-Markierung.png?lightbox=1024&resize=500&classes=caption "Steckbrett mit Power Supply Module, Arduino und Servo.")
+![steckbrett-mit-power-supply-und-servo-Markierung](steckbrett-mit-power-supply-und-servo-Markierung.png?lightbox=1024&resize=800&classes=caption "Steckbrett mit Power Supply Module, Arduino und Servo.")
 
 Wichtig sind dabei folgende Punkte:
 - Das Power Supply Module ist so eingesteckt, dass das `+` vom Modul auf der `+`-Leiste vom Steckbrett und das `-` vom Modul auf der `-` -Leiste des Steckbretts liegt (rote Markierung).
