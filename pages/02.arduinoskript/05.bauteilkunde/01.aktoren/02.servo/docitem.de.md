@@ -15,6 +15,7 @@ taxonomy:
         - Servo
     Niveau:
         - Basis
+media_order: 'schaltplan-servo.png,servo-steuerung.png,servo.png,steckbrett-mit-power-supply-und-servo-Markierung.png,steckbrett-mit-power-module.jpg,steckbrett-mit-power-module-klein.png'
 ---
 
 <div markdown="1" class="clearfix">
@@ -42,3 +43,21 @@ Baue mit einem Servo eine Schranke, die auf Knopfdruck geöffnet und wieder gesc
 
 ! **Recherche: Wie funktioniert die Steuerung eines Servos?**
 ! Der Winkel, auf den sich die Ausgangswelle des Servo drehen soll, wird über ein PWM-Signal geregelt. Recherchiere im Internet, wie dies realisiert wird und fasse es zusammen.
+
+## Anschluss mehrerer Servos mit dem Power Supply Module
+
+!!!! ![Power Supply Module](steckbrett-mit-power-module-klein.png?resize=300&classes=caption,figure-right "Power Supply Module auf Steckbrett mit angeschlossener Batterie.")
+!!!! #### Das “Power Supply Module”
+!!!! 
+!!!! Das Power Supply Module dient zur Spannungsversorgung auf einem Steckbrett. Dazu kann eine Batterie mit $ 6,5\, V$ bis $ 12\, V$ oder ein USB-Kabel angeschlossen werden. Die Spannung wird auf dem Modul je nach Einstellung der *Jumper* auf $ 5\, V$ oder $ 3,3\, V$ heruntergeregelt. Dazu verbindet man mithilfe der Jumper die Anschlüsse `5V` und `OFF` bzw. `3.3` und `OFF`.
+!!!! Die Spannung kann entlang der langen äußeren Leisten abgegriffen werden, wenn der Taster neben der Hohlbuchse gedrückt ist. Die Zuordnung zu Pluspol und Minuspol ist auf dem Power Supply Module mit `+` bzw. `-` markiert.
+
+Das folgende Bild zeigt, wie man die Stromversorgung für einen Servo über ein Power Supply Module herstellt, das mehr Strom liefern kann als der Arduino.
+
+![steckbrett-mit-power-supply-und-servo-Markierung](steckbrett-mit-power-supply-und-servo-Markierung.png?lightbox=1024&resize=500&classes=caption "Steckbrett mit Power Supply Module, Arduino und Servo.")
+
+Wichtig sind dabei folgende Punkte:
+- Das Power Supply Module ist so eingesteckt, dass das + vom Modul auf der +-Leiste vom Steckbrett und das - vom Modul auf der - -Leiste des Steckbretts liegt (rote Markierung).
+- Die Jumper auf dem Power Supply Module stehen auf 5V (gelbe Markierung).
+- Der GND-Anschluss des Arduino ist mit dem Minus-Anschluss des Steckbretts bzw. Power Supply Module verbunden.
+- Bei manchen Steckbrettern sind die Plus- und Minusleisten in der Mitte getrennt. Gegebenenfalls muss hier ein Kabel zur Überbrückung eingebaut werden.
