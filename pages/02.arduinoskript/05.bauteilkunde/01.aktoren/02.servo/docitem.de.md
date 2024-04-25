@@ -61,3 +61,7 @@ Wichtig sind dabei folgende Punkte:
 - Die Jumper auf dem Power Supply Module stehen auf 5V (gelbe Markierung).
 - Der GND-Anschluss des Arduino ist mit dem Minus-Anschluss des Steckbretts bzw. Power Supply Module verbunden.
 - Bei manchen Steckbrettern sind die Plus- und Minusleisten in der Mitte getrennt. Gegebenenfalls muss hier ein Kabel zur Überbrückung eingebaut werden.
+- Am besten ist es, wenn sowohl der Arduino als auch das Power Supply Module von einer eigenen 9V-Batterie versorgt werden. Es werden also zwei Batterien benötigt.
+- Alternativ kann nur eine 9V-Batterie am Power Supply Module angeschlossen werden. Dann wird zusätzlich ein Kabel von der `+`-Leiste des Steckbretts an den 5V-Anschluss des Arduino benötigt.
+
+Auf diese Weise können auch mehrere Servos oder andere stromhungrige Bauteile genutzt werden, ohne den Arduino zu überlasten. Der maximale Stromfluss beträgt bei dem Power Supply Module $1\,A$.
