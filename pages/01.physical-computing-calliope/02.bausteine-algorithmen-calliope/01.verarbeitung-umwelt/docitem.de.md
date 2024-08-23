@@ -6,6 +6,16 @@ featured_image: eva-visualisierung.png
 show_pageimage: true
 image_width: 300
 image_height: 400
+taxonomy:
+    Inhalte:
+        - Fallunterscheidungen
+        - Eingabe
+        - Ausgabe
+        - Verarbeitung
+        - Sensor
+        - Aktor
+    Niveau:
+        - Basis
 ---
 
 <div markdown="1" class="aufgabe">
