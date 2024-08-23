@@ -2,6 +2,10 @@
 title: 'Verarbeitung von Umwelteingaben'
 menu: 'Verarbeitung von Umwelteingaben'
 media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,eva-visualisierung.png,calliope-eva-software.png,calliope-eva-hardware.png,verzweigungen.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png'
+featured_image: eva-visualisierung.png
+show_pageimage: true
+image_width: 300
+image_height: 400
 ---
 
 <div markdown="1" class="aufgabe">
