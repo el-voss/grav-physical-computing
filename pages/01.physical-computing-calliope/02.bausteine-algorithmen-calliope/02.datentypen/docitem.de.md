@@ -5,9 +5,6 @@ image_width: 300
 image_height: 400
 featured_image: wahrheitswertargument2.png
 taxonomy:
-    Mindestvoraussetzungen:
-        - 'Einfache Entscheidungen programmieren'
-        - 'Der serielle Monitor'
     Inhalte:
         - Datentypen
         - Text
