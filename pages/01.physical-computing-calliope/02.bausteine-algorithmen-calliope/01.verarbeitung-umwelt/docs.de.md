@@ -1,7 +1,7 @@
 ---
 title: 'Verarbeitung von Umwelteingaben'
 menu: 'Verarbeitung von Umwelteingaben'
-media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,eva-visualisierung.png,calliope-eva-software.png,calliope-eva-hardware.png'
+media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,eva-visualisierung.png,calliope-eva-software.png,calliope-eva-hardware.png,verzweigungen.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png'
 ---
 
 <div markdown="1" class="aufgabe">
@@ -14,6 +14,19 @@ Beschreibe, was die beiden folgenden Programme bewirken und vergleiche sie. Prob
 <div markdown="1"> ![Programm B](erste-entscheidung2.png?Lightbox=1024&classes=caption "Programm B.")</div>
 </div>
 </div>
+
+!!!! #### Verzweigungen
+!!!! 
+!!!! Mit Verzweigungen kann man den Calliope je nach Situation anders reagieren lassen. Im einfachsten Fall wird eine Anweisung nur ausgeführt, wenn eine zugehörige Bedingung wahr ist (oberste Verzweigung im Bild). Es ist aber auch möglich, dass je nach Wahrheitswert der Bedingung die erste Anweisung oder die zweite Anweisung ausgeführt wird (mittlere Verzweigung im Bild). Dies lässt sich über das Plus noch weiter führen, um weitere Bedingungen und Fälle hinzuzufügen (untere Verzweigung im Bild.
+!!!! 
+!!!! ![verzweigungen](verzweigungen.png "Verschiedene Verzweigungen.")
+!!!! 
+!!!! Als Bedingung eignen sich hellblaue Blöcke. Manche Sensoreingaben, wie zum Beispiel das Drücken einer Taste, kann man auch direkt als Bedingung verwenden (erkennbar an der hellblauen Nase). Bei anderen Sensorblöcken erhält man erst durch den Vergleich mit einer Zahl einen Wahrheitswert (wahr oder falsch). Die Zahl, die zum Vergleich herangezogen wird, nennt man auch *Schwellwert*.
+!!!! 
+!!!! <div markdown="1" class="flex-box">
+!!!! <div markdown="1">![bedingung-taste-A](bedingung-taste-A.png "Der Sensorblock <Taste A gedrückt?> liefert <wahr> oder <falsch> (hellblaue Nase) und kann als Bedingung für Verzweigungen verwendet werden.)</div>
+!!!! <div markdown="1">![bedingung-mit-schwellwert](bedingung-mit-schwellwert.png "Der Vergleich der Lautstärke mit einem Schwellwert liefert <wahr> oder <falsch> und kann als Bedingung für Verzweigungen genutzt werden.")</div>
+!!!! </div>
 
 <div markdown="1" class="aufgabe">
 #### Simulation von Informatiksystemen im Alltag
