@@ -39,7 +39,7 @@ Beschreibe, was die beiden folgenden Programme bewirken und vergleiche sie. Prob
 !!!! <div markdown="1">![bedingung-mit-schwellwert](bedingung-mit-schwellwert.png?classes=caption "Der Vergleich der Lautstärke mit einem Schwellwert liefert <wahr> oder <falsch> und kann als Bedingung für Verzweigungen genutzt werden.")</div>
 !!!! </div>
 
-<div markdown="1" class="aufgabe">
+<div markdown="1" class="projekt">
 #### Simulation von Informatiksystemen im Alltag
 
 1. Simuliere mit dem Calliope verschiedene Informatiksysteme aus deinem Alltag. Wähle selbst.
