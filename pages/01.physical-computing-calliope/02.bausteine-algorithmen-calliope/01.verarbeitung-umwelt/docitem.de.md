@@ -9,11 +9,8 @@ image_height: 400
 taxonomy:
     Inhalte:
         - Fallunterscheidungen
-        - Eingabe
-        - Ausgabe
-        - Verarbeitung
         - Sensor
-        - Aktor
+        - Wahrheitswert
     Niveau:
         - Basis
 ---
