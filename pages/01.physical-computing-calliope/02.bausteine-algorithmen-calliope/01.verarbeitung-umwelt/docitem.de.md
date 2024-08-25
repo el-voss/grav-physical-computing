@@ -1,7 +1,7 @@
 ---
 title: 'Verarbeitung von Umwelteingaben'
 menu: 'Verarbeitung von Umwelteingaben'
-media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,eva-visualisierung.png,calliope-eva-software.png,calliope-eva-hardware.png,verzweigungen.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png'
+media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,verzweigungen.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png,nachtlicht-flackert.png'
 featured_image: bedingung-mit-schwellwert.png
 show_pageimage: true
 image_width: 300
@@ -77,4 +77,16 @@ Die Lärmampel zeigt an, ob die Lautstärke angenehm, noch erträglich oder zu l
 
 </div>
 
+<div markdown="1" class="aufgabe">
+#### Probleme mit dem Nachtlicht
 
+Das folgende Programm soll ein Nachtlicht im Flur dazu bringen, im Dunkeln zu leuchten, während es tagsüber aus ist.
+
+![nachtlicht-flackert](nachtlicht-flackert.png?Lightbox=1024&resize=500&classes=caption "Programm für ein flackerndes Nachtlicht.")
+
+Leo beobachtet, dass das Nachtlicht in der Dämmerung, wenn es noch nicht richtig dunkel, aber auch nicht mehr hell ist, immer anfängt zu flackern. Es geht also ständig an und wieder aus.
+
+1. Erkläre das Flackern des Nachtlichts.
+2. Mache einen Vorschlag zur Verbesserung des Programms.
+
+</div>
