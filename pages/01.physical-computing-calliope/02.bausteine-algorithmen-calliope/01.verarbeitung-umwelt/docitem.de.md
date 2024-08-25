@@ -1,7 +1,7 @@
 ---
 title: 'Verarbeitung von Umwelteingaben'
 menu: 'Verarbeitung von Umwelteingaben'
-media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,verzweigungen.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png,nachtlicht-flackert.png'
+media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,verzweigungen.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png,nachtlicht-flackert.png,knopfprobleme1.png,knopfprobleme2.png'
 featured_image: bedingung-mit-schwellwert.png
 show_pageimage: true
 image_width: 300
@@ -78,6 +78,21 @@ Die Lärmampel zeigt an, ob die Lautstärke angenehm, noch erträglich oder zu l
 </div>
 
 <div markdown="1" class="aufgabe">
+#### Tasterprobleme
+
+Die folgenden Programme funktionieren nicht richtig, obwohl sie auf den ersten Blick richtig aussehen.
+
+<div markdown="1" class="flex-box">
+<div markdown="1">![knopfprobleme1](knopfprobleme1.png?Lightbox=1024&resize=500&classes=caption "Die RGB-LED soll im Normalfall rot anzeigen, aber wenn Taste A gedrückt wird, soll sie grün anzeigen.")</div>
+<div markdown="1">![knopfprobleme2](knopfprobleme2.png?Lightbox=1024&resize=500&classes=caption "Die RGB-LED soll zunächst rot anzeigen. Wenn Taste A gedrückt wird, soll sie grün anzeigen. Wenn Taste A noch mal gedrückt wird, soll sie wieder rot anzeigen.")</div>
+</div>
+
+1. Beschreibe das tatsächliche Verhalten des Calliope. Erkläre, wieso er sich so verhält.
+2. Mache einen Vorschlag zur Verbesserung des Programms.
+
+</div>
+
+<div markdown="1" class="aufgabe">
 #### Probleme mit dem Nachtlicht
 
 Das folgende Programm soll ein Nachtlicht im Flur dazu bringen, im Dunkeln zu leuchten, während es tagsüber aus ist.
@@ -90,3 +105,4 @@ Leo beobachtet, dass das Nachtlicht in der Dämmerung, wenn es noch nicht richti
 2. Mache einen Vorschlag zur Verbesserung des Programms.
 
 </div>
+
