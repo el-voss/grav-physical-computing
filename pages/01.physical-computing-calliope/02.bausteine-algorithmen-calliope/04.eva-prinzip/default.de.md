@@ -2,7 +2,6 @@
 title: EVA-Prinzip
 ---
 
-
 <div markdown="1" class="aufgabe">
 #### EVA-Prinzip und Bauteile
 
