@@ -1,5 +1,17 @@
 ---
 title: EVA-Prinzip
+show_pageimage: true
+image_width: 300
+image_height: 400
+taxonomy:
+    Inhalte:
+        - Eingabe
+        - Ausgabe
+        - Verarbeitung
+        - Sensor
+        - Aktor
+    Niveau:
+        - Basis
 ---
 
 <div markdown="1" class="aufgabe">
