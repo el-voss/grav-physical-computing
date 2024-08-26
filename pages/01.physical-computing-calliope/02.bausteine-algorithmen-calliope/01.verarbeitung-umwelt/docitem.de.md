@@ -1,7 +1,7 @@
 ---
 title: 'Verarbeitung von Umwelteingaben'
 menu: 'Verarbeitung von Umwelteingaben'
-media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,verzweigungen.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png,nachtlicht-flackert.png,knopfprobleme1.png,knopfprobleme2.png'
+media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,verzweigungen.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png,nachtlicht-flackert.png,knopfprobleme1.png,knopfprobleme2.png,verzweigungsproblem.png'
 featured_image: bedingung-mit-schwellwert.png
 show_pageimage: true
 image_width: 300
@@ -89,6 +89,16 @@ Die folgenden Programme funktionieren nicht richtig, obwohl sie auf den ersten B
 
 1. Beschreibe das tatsächliche Verhalten des Calliope. Erkläre, wieso er sich so verhält.
 2. Mache einen Vorschlag zur Verbesserung des Programms.
+
+</div>
+
+<div markdown="1" class="aufgabe">
+#### Probleme mit der Ampel
+
+Max hat eine Lautstärkeampel gebaut und beschwert sich: "Meine Ampel wird nie rot! Der Mikrofon-Sensor funktioniert nicht!"
+Erkläre, worin das Problem wiklich liegt und wie es sich beheben lässt.
+
+![verzweigungsproblem](verzweigungsproblem.png "verzweigungsproblem")
 
 </div>
 
