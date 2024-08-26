@@ -98,7 +98,7 @@ Die folgenden Programme funktionieren nicht richtig, obwohl sie auf den ersten B
 Max hat eine Lautstärkeampel gebaut und beschwert sich: "Meine Ampel wird nie rot! Der Mikrofon-Sensor funktioniert nicht!"
 Erkläre, worin das Problem wiklich liegt und wie es sich beheben lässt.
 
-![verzweigungsproblem](verzweigungsproblem.png "verzweigungsproblem")
+![verzweigungsproblem](verzweigungsproblem.png?Lightbox=1024&resize=500&classes=caption "Programm von Max.")
 
 </div>
 
