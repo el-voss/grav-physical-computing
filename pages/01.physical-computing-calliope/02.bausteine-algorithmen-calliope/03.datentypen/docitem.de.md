@@ -46,13 +46,13 @@ Gib zu den folgenden Blöcken jeweils an, welcher Datentyp beim Argument bzw. be
 
 | Block | Datentyp des Arguments / der Argumente | Datentyp des Rückgabewertes |
 |---------|--------------------------------------------------------|-------------------------------------------|
-| ![datentyp-wdh-x-mal](datentyp-wdh-x-mal.png "datentyp-wdh-x-mal")  |    |    |
-| ![datentyp-zeitgeber](datentyp-zeitgeber.png "datentyp-zeitgeber")  |    |    |
-| ![datentyp-bewegungsmelder](datentyp-bewegungsmelder.png "datentyp-bewegungsmelder")  |    |    |
-|  ![datentyp-wdh-bis](datentyp-wdh-bis.png "datentyp-wdh-bis") |    |    |
-| ![datentyp-ist-gerade](datentyp-ist-gerade.png "datentyp-ist-gerade")  |    |    |
-| ![datentyp-serial-monitor](datentyp-serial-monitor.png "datentyp-serial-monitor")  |    |    |
-| ![datentyp-oder](datentyp-oder.png "datentyp-oder")  |    |    |
-|  ![datentyp-rfid](datentyp-rfid.png "datentyp-rfid") |    |    |
+| ![datentyp-wdh-x-mal](datentyp-wiederholexmal.png "datentyp-wiederholexmal")  |    |    |
+| ![datentyp-zeitgeber](datentyp-gibwertmszeitgeber.png "datentyp-zeitgeber")  |    |    |
+| ![datentyp-gibaufrechtlage](datentyp-gibaufrechtlage.png "datentyp-gibaufrechtlage")  |    |    |
+|  ![datentyp-wiederholebis](datentyp-wiederholebis.png "datentyp-wiederholebis") |    |    |
+| ![datentyp-istgerade](datentyp-istgerade.png "datentyp-istgerade")  |    |    |
+| ![datentyp-zeigetext](datentyp-zeigetext.png "datentyp-zeigetext")  |    |    |
+| ![datentyp-logischund](datentyp-logischund.png "datentyp-logischund")  |    |    |
+|  ![datentyp-empfangenachricht](datentyp-empfangenachricht.png "datentyp-empfangenachricht") |    |    |
 
 </div>
