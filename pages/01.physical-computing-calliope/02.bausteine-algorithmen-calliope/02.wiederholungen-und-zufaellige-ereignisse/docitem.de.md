@@ -34,9 +34,6 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 
 Baue und programmiere eine “Bombe”, die für eine zufällige Dauer zwischen 5s und 20s tickt und dann explodiert. Die Bombe wird über einen Taster aktiviert.
 
-Zusatz: Welchen Unterschied macht es, wenn man die ausgewürfelte Zufallszahl in einer Variable speichert?
-
-Rücklink: <a href="https://mintorials.de/de/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/einfache-entscheidungen-programmieren#taster" target="_blank">Taster anschließen</a>
 </div>
 
 <div markdown="1" class="aufgabe">
