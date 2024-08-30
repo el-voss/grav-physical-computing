@@ -6,8 +6,7 @@ image_height: 400
 featured_image: wdh10mal.png
 taxonomy:
     Mindestvoraussetzungen:
-        - 'Einfache Entscheidungen programmieren'
-        - 'Der serielle Monitor'
+        - 'Verarbeitung von Umwelteingaben'
     Inhalte:
         - Zufallszahlen
         - 'Wiederhole xmal'
