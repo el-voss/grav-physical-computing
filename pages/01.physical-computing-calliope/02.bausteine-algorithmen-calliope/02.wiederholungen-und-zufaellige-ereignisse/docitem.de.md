@@ -54,11 +54,11 @@ Baue und programmiere einen Reaktionszeitmesser.
 <div markdown="1">![Stoppuhr-Block 2](stoppuhr.png)</div>
 </div>
 
-Der Reaktionszeitmesser soll zunächst warten, bis ein Taster gedrückt wurde, der besagt, dass es losgehen kann. Dann wird eine LED angeschaltet (Vorwiderstand!) und nach einer zufälligen Zeit wieder ausgeschaltet. Nun beginnt die Zeitmessung. Die Stoppuhr läuft solange, bis der Taster gedrückt wurde. Die gemessene Zeit wird dann über den seriellen Monitor ausgegeben und es wird erneut gewartet, bis der Anwender bestätigt, dass es losgehen kann.
+Der Reaktionszeitmesser soll zunächst warten, bis ein Taster gedrückt wurde, der besagt, dass es losgehen kann. Dann wird eine LED angeschaltet und nach einer zufälligen Zeit wieder ausgeschaltet. Nun beginnt die Zeitmessung. Die Stoppuhr läuft solange, bis der Taster gedrückt wurde. Die gemessene Zeit wird dann ausgegeben und es wird erneut gewartet, bis der Anwender bestätigt, dass es losgehen kann.
 
 Miss mindestens zehn Mal deine Reaktionszeit und bestimme den Mittelwert. Bist du besser als dein Partner?
 
-Rücklink: <a href="https://mintorials.de/de/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/einfache-entscheidungen-programmieren#taster" target="_blank">Taster anschließen</a>
+*Für Schnelle:* Erweitere den Reaktionszeitmesser so, dass **zusätzlich** ausgewürfelt wird, welcher der beiden Taster gedrückt werden muss. Finde heraus, welchen Einfluss dies auf die deine Reaktionszeit hat.
 
 *Idee: Frick, Fritsch und Trick (2015): Einführung in Mikrocontroller - Der Arduino als Steuerzentrale, Bad Saulgau*
 </div>
