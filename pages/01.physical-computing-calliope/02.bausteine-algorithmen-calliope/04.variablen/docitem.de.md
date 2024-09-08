@@ -28,6 +28,8 @@ Das folgende Beispiel zeigt den Einsatz einer Variable namens `zaehler`.
 	- Welche Ausgabe macht der Calliope?
 	- Was ist die letzte angezeigte Zahl?
 2. Teste, ob du richtig liegst.
+3. Erstelle ein Programm ohne Variable, das die gleiche Ausagbe erzeugt.
+4. Vergleiche beide Programme. Begründe, warum der Einsatz einer Variable sinnvoll ist.
 </div>
 
 <div markdown="1" class="notices green clearfix">
