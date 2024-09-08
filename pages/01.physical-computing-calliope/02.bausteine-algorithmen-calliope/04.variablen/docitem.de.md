@@ -16,15 +16,15 @@ taxonomy:
 ---
 
 <div markdown="1" class="aufgabe">
-#### Programmvergleich
+#### Variableneinsatz
 
-a) Jana und Jonas haben jeweils LEDs an den Arduino angeschlossen und steuern diese mit den unten abgebildeten Programmen. Vergleiche die beiden Programme im Hinblick auf ihre Wirkung und die Art der Programmierung. Welches gefällt dir besser?
-b) Zusatzüberlegung: Wie viel muss man ändern, wenn man die Leuchtdauer ändern will?
+Das folgende Beispiel zeigt den Einsatz einer Variable namens `zaehler`.
 
-<div markdown="1" class="flex-box">
-<div markdown="1">![Janas Programm zum Steuern der LEDs.](lauflicht-ohne-variable.png?lightbox=1024&classes=caption "Janas Programm zum Steuern der LEDs.")</div>
-<div markdown="1"> ![Jonas Programm zum Steuern der LEDs.](lauflicht-mit-variable.png?lightbox=1024&classes=caption "Jonas Programm zum Steuern der LEDs.")</div>
-</div>
+1. Analysiere das Programm:
+	- Wie wird eine Variable eingeführt?
+	- Welche Ausgabe macht der Calliope?
+	- Was ist die letzte angezeigte Zahl?
+2. Teste, ob du richtig liegst.
 </div>
 
 <div markdown="1" class="notices green clearfix">
