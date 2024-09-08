@@ -62,3 +62,11 @@ Miss mindestens zehn Mal deine Reaktionszeit und bestimme den Mittelwert. Bist d
 
 *Idee: Frick, Fritsch und Trick (2015): Einführung in Mikrocontroller - Der Arduino als Steuerzentrale, Bad Saulgau*
 </div>
+
+<div class="projekt" markdown="1">
+#### Alarmanlage
+
+![wiederhole bis](wdh-bis.png?classes=caption,figure-right "Wiederhole bis.")
+
+Programiere eine Alarmanlage für ein Geheimfach, die wie folgt funktioniert: Der Calliope liegt mit im dunklen, geschlossenen Geheimfach. Wenn die Tür geöffnet wird und es daher hell wird, dann geht die Alarmanlage los (Blinken und Piepsen). Die Alarmanlage bleibt so lange aktiv, bis ein Taster gedrückt wurde, um sie wieder auszustellen.
+</div>
