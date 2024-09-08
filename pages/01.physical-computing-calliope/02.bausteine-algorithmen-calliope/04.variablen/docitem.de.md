@@ -82,7 +82,7 @@ Das folgende zweite Beispiel zeigt eine Alternative zur Anpassung des Variablenw
 <div class="aufgabe" markdown="1">
 #### Berechnung mit einer Wiederholschleife
 
-![trace-rechnung](trace-rechnung-zeilennummern.png?lightbox=1024&classes=caption "Algorithmus zur Berechnung einer bestimmten Zahl.")
+![trace-rechnung](trace-rechnung-zeilennummern.png?lightbox=1024&resize=400&classes=caption "Algorithmus zur Berechnung einer bestimmten Zahl.")
 
 1. Stelle eine Vermutung an, welche Zahl mit dem vorliegenden Programm berechnet werden soll.
 2. Überprüfe deine Vermutung und führe den Algorithmus durch. Stelle dazu den Programmablauf in einer Trace-Tabelle dar.
