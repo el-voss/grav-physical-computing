@@ -4,5 +4,3 @@ published: true
 menu: 'Bausteine von Algorithmen'
 ---
 
-
-
