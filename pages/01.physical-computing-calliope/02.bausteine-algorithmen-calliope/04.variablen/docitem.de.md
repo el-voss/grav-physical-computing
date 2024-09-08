@@ -38,7 +38,7 @@ Das folgende Beispiel zeigt den Einsatz einer Variable namens `zaehler`.
 
 Das folgende zweite Beispiel zeigt eine Alternative zur Anpassung des Variablenwertes.
 
-![Alternativer Variableneinsatz](variable-potenz.png?resize=400&lightbox=1024&classes=caption "Alternativer Variableneinsatz.")
+![Alternativer Variableneinsatz](variable-potenz.png?resize=300&lightbox=1024&classes=caption "Alternativer Variableneinsatz.")
 
 1. Stelle eine Vermutung an, welche Ausgabe dieses Programm erzeugt.
 2. Teste deine Vermutung.
