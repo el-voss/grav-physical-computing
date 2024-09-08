@@ -22,7 +22,7 @@ media_order: 'trace-counter.png,trace-counter2.png,trace-rechnung.png,variable-s
 
 Das folgende Beispiel zeigt den Einsatz einer Variable namens `zaehler`.
 
-![Einsatz einer Variable](variablen-zaehler.png?resize=400&lightbox=1024&classes=caption "Einsatz einer Variable.")
+![Einsatz einer Variable](variablen-zaehler.png?resize=300&lightbox=1024&classes=caption "Einsatz einer Variable.")
 
 1. Analysiere das Programm:
 	- Wie wird eine Variable eingeführt?
