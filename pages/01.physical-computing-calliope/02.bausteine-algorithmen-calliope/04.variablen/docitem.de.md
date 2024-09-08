@@ -21,6 +21,8 @@ featured_image: variable-speicher.png
 
 Das folgende Beispiel zeigt den Einsatz einer Variable namens `zaehler`.
 
+![Einsatz einer Variable](variablen-zaehler.png?resize=500&classes=caption "Einsatz einer Variable.")
+
 1. Analysiere das Programm:
 	- Wie wird eine Variable eingeführt?
 	- Welche Ausgabe macht der Calliope?
