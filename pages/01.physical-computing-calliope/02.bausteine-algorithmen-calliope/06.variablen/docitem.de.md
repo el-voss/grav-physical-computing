@@ -3,10 +3,17 @@ title: Variablen
 show_pageimage: true
 image_width: 300
 image_height: 400
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Verarbeitung von Umwelteingaben'
+        - Datentypen
+        - 'Wiederholungen und zufällige Ereignisse'
+    Inhalte:
+        - Variablen
+        - Trace-Tabelle
+    Niveau:
+        - Basis
 ---
-
-
-
 
 <div class="aufgabe" markdown="1">
 #### Wiederholschleifen vergleichen und verstehen
