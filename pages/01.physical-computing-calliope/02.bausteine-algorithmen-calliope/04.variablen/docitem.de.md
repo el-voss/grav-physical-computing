@@ -13,6 +13,7 @@ taxonomy:
         - Trace-Tabelle
     Niveau:
         - Basis
+featured_image: variable-speicher.png
 ---
 
 <div markdown="1" class="aufgabe">
