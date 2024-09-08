@@ -52,14 +52,14 @@ Das folgende zweite Beispiel zeigt eine Alternative zur Anpassung des Variablenw
 </div>
 
 <div class="aufgabe" markdown="1">
-#### Wiederholschleifen vergleichen und verstehen
+#### Wiederholschleifen mit Zähler vergleichen und verstehen
 
 1. Vergleiche die beiden unten dargestellten Schleifen.
-2. Ermittle jeweils den Wert, der auf dem Seriellen Monitor angezeigt wird. Stelle dazu den Programmablauf mit einer Trace-Tabelle dar (siehe unten).
+2. Ermittle jeweils den Wert, der auf dem Calliope angezeigt wird. Stelle dazu den Programmablauf mit einer Trace-Tabelle dar (siehe unten).
 
 <div class="flex-box" markdown="1">
-<div markdown="1"> ![trace-counter](trace-counter.png "trace-counter")</div>
-<div markdown="1"> ![trace-counter2](trace-counter2.png "trace-counter2")</div>
+<div markdown="1"> ![wdhbis-zaehler-zeilennummern](wdhbis-zaehler-zeilennummern.png "wdhbis-zaehler-zeilennummern")</div>
+<div markdown="1"> ![wdhsolange-zaehler-zeilennummern](wdhsolange-zaehler-zeilennummern.png "wdhsolange-zaehler-zeilennummern")</div>
 </div>
 </div>
 
