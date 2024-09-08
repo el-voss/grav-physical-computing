@@ -4,9 +4,5 @@ published: true
 menu: 'Bausteine von Algorithmen'
 ---
 
-<style>
-    body {
-        --abk: 'BA';
-    }
-</style>
+
 
