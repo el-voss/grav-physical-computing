@@ -51,6 +51,12 @@ Das folgende zweite Beispiel zeigt eine Alternative zur Anpassung des Variablenw
 <p>Für den Namen hat sich der <a href="https://de.wikipedia.org/wiki/Binnenmajuskel#Programmiersprachen">lowerCamelCase</a> etabliert: Der erste Buchstabe ist klein; wenn weitere Wörter folgen, fangen diese mit einem großen Buchstaben an. Leerzeichen sind nicht erlaubt.</p>
 </div>
 
+<div class="projekt" markdown="1">
+#### Hand-Klick-Zähler
+
+Entwickle einen Hand-Klick-Zähler, mit dem man etwas zählen kann, ohne auf den Zähler schauen zu müssen.
+</div>
+
 <div class="aufgabe" markdown="1">
 #### Wiederholschleifen mit Zähler vergleichen und verstehen
 
