@@ -29,7 +29,7 @@ Das folgende Beispiel zeigt den Einsatz einer Variable namens `zaehler`.
 	- Welche Ausgabe macht der Calliope?
 	- Was ist die letzte angezeigte Zahl?
 2. Teste, ob du richtig liegst.
-3. Erstelle ein Programm ohne Variable, das die gleiche Ausagbe erzeugt.
+3. Erstelle ein Programm ohne Variable, das die gleiche Ausgabe erzeugt.
 4. Vergleiche beide Programme. Begründe, warum der Einsatz einer Variable sinnvoll ist.
 </div>
 
@@ -52,9 +52,10 @@ Das folgende zweite Beispiel zeigt eine Alternative zur Anpassung des Variablenw
 </div>
 
 <div class="projekt" markdown="1">
-#### Hand-Klick-Zähler
+#### Handzähler
 
-Entwickle einen Hand-Klick-Zähler, mit dem man etwas zählen kann, ohne auf den Zähler schauen zu müssen.
+Entwickle einen Handzähler, mit dem man etwas zählen kann, ohne auf den Zähler schauen zu müssen.
+<a title="Die Autorenschaft wurde nicht in einer maschinell lesbaren Form angegeben. Es wird Joho345 als Autor angenommen (basierend auf den Rechteinhaber-Angaben)., Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Handz%C3%A4hler.jpg"><img width="256" alt="Handzähler" src="https://upload.wikimedia.org/wikipedia/commons/b/be/Handz%C3%A4hler.jpg?20060423101621"></a>
 </div>
 
 <div class="aufgabe" markdown="1">
