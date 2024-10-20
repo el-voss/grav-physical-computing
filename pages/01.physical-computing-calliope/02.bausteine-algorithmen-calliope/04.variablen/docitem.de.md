@@ -75,14 +75,14 @@ Entwickle einen <a href="https://de.wikipedia.org/wiki/Handz%C3%A4hler?uselang=d
 !!!! <div markdown="1" class="flex-box">
 !!!! <div markdown="1"> Trace-Tabellen stellen den Wert von Variablen beim Durchlaufen des Programms dar. Auf diese Art und Weise kann man sich zum Beispiel genau veranschaulichen, wann Schleifen abgebrochen werden.</div>
 !!!! <div markdown="1">
-!!!!  |**Zeile** | **counter** |
+!!!!  |**Zeile** | **Variable z** |
 !!!!  |----------|-------|
 !!!!  |   1   |  1  |
 !!!!  |   2    |   1   |
-!!!!  |   3      |   1   |
-!!!!  |   4      |   2   |
 !!!!  |   3      |   2   |
-!!!!  |   4      |   3   |
+!!!!  |   2      |   2   |
+!!!!  |   3      |   3   |
+!!!!  |   2      |   3   |
 !!!! </div>
 !!!! </div>
 
