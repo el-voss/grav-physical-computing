@@ -56,6 +56,10 @@ Das folgende zweite Beispiel zeigt eine Alternative zur Anpassung des Variablenw
 
 Entwickle einen <a href="https://de.wikipedia.org/wiki/Handz%C3%A4hler?uselang=de" target="_blank">Handzähler</a>, mit dem man etwas zählen kann, ohne auf den Zähler schauen zu müssen.
 <a title="Die Autorenschaft wurde nicht in einer maschinell lesbaren Form angegeben. Es wird Joho345 als Autor angenommen (basierend auf den Rechteinhaber-Angaben)., Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Handz%C3%A4hler.jpg"><img width="256" alt="Handzähler" src="https://upload.wikimedia.org/wikipedia/commons/b/be/Handz%C3%A4hler.jpg?20060423101621"></a>
+
+*Mögliche Erweiterungen:*
+- Korrekturmöglichkeit: Ein Druck auf den anderen Taster verringert den Wert wieder.
+- Hörbares Feedback: Der Handzähler gibt je nach Zählerstand unterschiedliche Töne aus.
 </div>
 
 <div class="aufgabe" markdown="1">
