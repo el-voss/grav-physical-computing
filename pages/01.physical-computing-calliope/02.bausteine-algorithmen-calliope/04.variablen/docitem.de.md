@@ -99,3 +99,12 @@ Entwickle einen <a href="https://de.wikipedia.org/wiki/Handz%C3%A4hler?uselang=d
 2. Überprüfe deine Vermutung und führe den Algorithmus durch. Stelle dazu den Programmablauf in einer Trace-Tabelle dar.
 
 </div>
+
+<div class="aufgabe" markdown="1">
+#### Ticketautomat
+
+Entwickle einen einfachen Ticketautomaten:
+- Zuerst wird die Anzahl der Erwachsenen eingegeben. Erwachsene zahlen für ein Ticket 11,50€.
+- Dann wird die Anzahl der Kinder eingegeben. Kinder zahlen für ein Ticket 4,50€.
+- Nach der Bestätigung erfolgt die Angabe des zu zahlenden Preises.
+</div>
