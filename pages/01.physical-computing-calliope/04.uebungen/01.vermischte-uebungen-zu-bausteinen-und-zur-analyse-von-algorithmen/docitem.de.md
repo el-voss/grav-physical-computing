@@ -82,6 +82,8 @@ Auf dem Calliope wird das folgende Programm ausgeführt.
 
 Entwickle ein Programm für den Calliope, sodass auf der Diagonale der LED-Matrix ein Lauflicht von oben links nach unten rechts verläuft. Stelle es als Struktogramm dar.
 
+Hinweis: Zu jedem Zeitpunkt leuchtet genau eine der LEDs.
+
 ![befehle-zu-diagonales-lauflichtn](diagonales-lauflicht-startbloecke.png?lightbox=1024&resize=800&classes=caption "Blöcke zum Programmieren des diagonalen Lauflichts. Die Argumente dürfen angepasst werden. Die Blöcke dürfen mehrmals verwendet werden.")
 </div>
 
