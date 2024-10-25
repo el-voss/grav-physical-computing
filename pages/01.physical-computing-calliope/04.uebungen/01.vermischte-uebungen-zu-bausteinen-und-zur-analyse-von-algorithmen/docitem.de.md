@@ -11,6 +11,7 @@ taxonomy:
     Niveau:
         - Basis
         - Fortgeschritten
+media_order: 'diagonales-lauflicht-startbloecke.png,konfigurierbares-blinken-startbloecke.png,laermampel-zur-analyse.png,laermlampe-startbloecke.png,zaehlschleife-analysieren.png,zaehlschleifen-fuer-mathematik.png,Aufg-Programme-verstehen.png'
 ---
 
 <div markdown="1" class="aufgabe">
