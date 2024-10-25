@@ -1,5 +1,5 @@
 ---
-title: 'Zählschleifen'
+title: Zählschleifen
 show_pageimage: true
 image_width: 300
 image_height: 400
@@ -7,12 +7,12 @@ featured_image: zaehlschleife-einstieg.png
 taxonomy:
     Mindestvoraussetzungen:
         - 'Verarbeitung von Umwelteingaben'
-        - Variablen
         - 'Wiederholungen und zufällige Ereignisse'
+        - Variablen
         - 'Wiederholungen mit Bedingungen steuern'
     Inhalte:
-        - Zählschleife
         - Trace-Tabelle
+        - Zählschleife
         - 'Lokale Variablen'
         - 'Globale Variablen'
     Niveau:
@@ -123,7 +123,7 @@ Programmiere die folgenden zwei Blinkmuster.
   <div>
     <center>
     <video controls="1" width="70%" height="auto" playsinline>
-    <source src="/user/pages/videos/calliope/schleife-abbrechen.mp4" type="video/mp4"></source>
+    <source src="/user/pages/videos/calliope/muster-diagonal-groesser.mp4" type="video/mp4"></source>
     Ihr Browser kann dieses Video nicht wiedergeben.
     </video>
     </center>
@@ -131,7 +131,7 @@ Programmiere die folgenden zwei Blinkmuster.
   <div>
     <center>
     <video controls="1" width="70%" height="auto" playsinline>
-    <source src="/user/pages/videos/calliope/schleife-fortfahren.mp4" type="video/mp4"></source>
+    <source src="/user/pages/videos/calliope/muster-schlange.mp4" type="video/mp4"></source>
     Ihr Browser kann dieses Video nicht wiedergeben.
     </video>
     </center>
