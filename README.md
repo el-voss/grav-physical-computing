@@ -1,6 +1,6 @@
 # grav-physical-computing
 
-Dieses Repository enthält die grundlegenden Dateien der Webseite [doku.el-voss.de](https://doku.el-voss.de/de), die im Wesentlichen das Skript "Physical Computing. Eine Einführung in Informatik und Physik des Arduino mit dem Open Roberta Lab" enhtält. Die Seite dient dem Autor als Schulbuch für ein MINT-Profilfach im Jahrgang 10 eines Gymnasiums, in dem Schaltungen mit dem [Arduino](https://www.arduino.cc/) aufgebaut und mit dem [Open Roberta Lab](https://lab.open-roberta.org/) programmiert werden.
+Dieses Repository enthält die grundlegenden Dateien der Webseite [mintorials.de](https://mintorials.de/de), die im Wesentlichen das Skript "Physical Computing. Eine Einführung in Informatik und Physik des Arduino mit dem Open Roberta Lab" enhtält. Die Seite dient dem Autor als Schulbuch für ein MINT-Profilfach im Jahrgang 10 eines Gymnasiums, in dem Schaltungen mit dem [Arduino](https://www.arduino.cc/) aufgebaut und mit dem [Open Roberta Lab](https://lab.open-roberta.org/) programmiert werden.
 
 Dieses Repository und die Webseite stehen unter der Lizenz [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
