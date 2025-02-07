@@ -118,6 +118,7 @@ Begründe, warum der oben berechnete Vorwiderstand zu niedrig ist. Erkläre, wie
 
 1.  Zeichne einen vereinfachten Schaltplan einer 7-Segment-Anzeige, in dem die LEDs einzeln eingezeichnet sind (siehe Infokasten unten).
 2.  Es wäre sehr umständlich, für jede LED einen eigenen Vorwiderstand anzuschließen; praktischer ist es, einen einzigen Vorwiderstand zwischen GND-Anschluss der 7-Segment-Anzeige und GND-Anschluss des Arduino anzubringen. Die Größe des gemeinsamen Vorwiderstands der acht LEDs (Anzeige & Punkt) soll $ 330\, \Omega$ betragen. Berechne die Gesamtstromstärke und die Stromstärke in jeder LED bei Darstellung einer 1 und einer 8 (jeweils ohne Punkt).
+Hinweis: Gehe davon aus, dass die Spannung an den LEDs etwa 2 V beträgt.
 3.  Deute die unterschiedlichen Stromstärken in den LEDs.
 </div>
 
