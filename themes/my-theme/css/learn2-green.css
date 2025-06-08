@@ -29,8 +29,10 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 }
 
 #sidebar ul.topics > li > a {
-  color: #42bb70;
+  /*color: #42bb70;*/
+  letter-spacing: 0px;
 }
+
 
 #sidebar ul.topics > li:not(:last-child) {
   border-bottom: 1px solid #007f61;

@@ -109,7 +109,14 @@ Das folgende Programm soll ein Nachtlicht im Flur dazu bringen, im Dunkeln zu le
 
 ![nachtlicht-flackert](nachtlicht-flackert.png?Lightbox=1024&resize=500&classes=caption "Programm für ein flackerndes Nachtlicht.")
 
-Leo beobachtet, dass das Nachtlicht in der Dämmerung, wenn es noch nicht richtig dunkel, aber auch nicht mehr hell ist, immer anfängt zu flackern. Es geht also ständig an und wieder aus.
+Leo beobachtet, dass das Nachtlicht in der Dämmerung, wenn es noch nicht richtig dunkel, aber auch nicht mehr hell ist, immer anfängt zu flackern. Es geht also ständig an und wieder aus (siehe Video).
+
+<center>
+<video controls="1" width="70%" height="auto" playsinline>
+<source src="/user/pages/images/Flackerndes-Nachtlicht.mp4" type="video/mp4"></source>
+Ihr Browser kann dieses Video nicht wiedergeben.
+</video>
+</center>
 
 1. Erkläre das Flackern des Nachtlichts.
 2. Mache einen Vorschlag zur Verbesserung des Programms.
