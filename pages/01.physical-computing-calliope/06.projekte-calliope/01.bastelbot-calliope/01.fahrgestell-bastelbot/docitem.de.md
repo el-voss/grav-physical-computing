@@ -64,7 +64,8 @@ Konstruiere mit Hilfe von Pappe und Schrauben ein geeignetes Gehäuse für deine
 1. Schließe die Motoren an der Pin-Leiste des Calliope an. Dazu müssen die Kabel des einen Motors mit den Pins M0- und M0+ verbunden werden. Die Kabel des anderen Motors werden mit M1- und M1+ verbunden.
 2. Schließe die Batterie an. **Beachte die Sicherheitshinweise.**
 
-!! Wenn die Batterie falsch angeschlossen wird, wird der Calliope zerstört. Daher ist es wichtig, bei diesem Schritt sehr genau vorzugehen. Die Batterie wird mit den beiden Pins GND und VM+ auf der linken Seite der Abbildung unten verbunden. Das schwarze Kabel des Batterieclips, das mit dem Minuspol der Batterie verbunden ist, muss mit GND verbunden werden. Das rote Kabel des Batterieclips, das mit dem Pluspol der Batterie verbunden ist, muss mit VM+ verbunden werden. **Beachte, dass sich diese beiden Pins auf der rechten Seite befinden, wenn du den Calliope von oben betrachtest!**
+!! Wenn die Batterie falsch angeschlossen wird, wird der Calliope zerstört. Daher ist es wichtig, bei diesem Schritt sehr genau vorzugehen. Die Batterie wird mit den beiden **Pins GND und VM+** auf der linken Seite der Abbildung unten verbunden. 
+!! Das schwarze Kabel des Batterieclips, das mit dem Minuspol der Batterie verbunden ist, muss mit GND verbunden werden. Das rote Kabel des Batterieclips, das mit dem Pluspol der Batterie verbunden ist, muss mit VM+ verbunden werden. **Beachte, dass sich diese beiden Pins auf der rechten Seite befinden, wenn du den Calliope von oben betrachtest!**
 !! Wenn der Calliope mit dem USB-Kabel programmiert wird, muss die Batterie wieder abgesteckt werden. Dazu reicht es, das rote Kabel von VM+ herauszuziehen.
 
 ![calliopev3-rueckseite](calliopev3-rueckseite.jpg?lightbox=1024&resize=500 "calliopev3-rueckseite")
