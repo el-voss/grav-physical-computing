@@ -4,7 +4,7 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 media_order: 'akku-anschluss.jpg,batterie.jpg,calliopev3.jpg,calliopev3-rueckseite.jpg,fusskugel.jpg,gleichstrommotor.jpg,lochplatte.jpg,m3-kreuzschrauben.jpg,motorhalterung.jpg,pappe-einwellig.jpg,reifen.jpg,schere-stift-geo.jpg,schraubendreher.jpg,basisversion-frontal.jpg,basisversion-von-oben.jpg'
-featured_image: lochplatte.jpg
+featured_image: basisversion-von-oben.jpg
 published: true
 ---
 
