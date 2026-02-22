@@ -9,6 +9,7 @@ content:
         dir: desc
     pagination: true
     url_taxonomy_filters: true
+published: true
 ---
 
 Der Bastelbot ist ein kleiner fahrender Roboter auf Basis des Calliope v3. Durch die Wahl von Karton als Gehäuse soll es den Anwenderinnen und Anwendern ermöglicht werden, selbst kreativ zu werden und die Form des Roboters persönlich auszugestalten.
