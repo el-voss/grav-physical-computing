@@ -5,6 +5,7 @@ image_width: 300
 image_height: 400
 media_order: 'akku-anschluss.jpg,batterie.jpg,calliopev3.jpg,calliopev3-rueckseite.jpg,fusskugel.jpg,gleichstrommotor.jpg,lochplatte.jpg,m3-kreuzschrauben.jpg,motorhalterung.jpg,pappe-einwellig.jpg,reifen.jpg,schere-stift-geo.jpg,schraubendreher.jpg'
 featured_image: lochplatte.jpg
+published: true
 ---
 
 Der Bau des Roboters beginnt mit dem Aufbau des Fahrgestells und der Verschaltung der Motoren.
