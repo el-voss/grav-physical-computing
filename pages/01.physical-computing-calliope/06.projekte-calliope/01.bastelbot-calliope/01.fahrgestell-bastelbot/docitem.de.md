@@ -3,7 +3,7 @@ title: 'Bau des Fahrgestells'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'akku-anschluss.jpg,batterie.jpg,calliopev3.jpg,calliopev3-rueckseite.jpg,fusskugel.jpg,gleichstrommotor.jpg,lochplatte.jpg,m3-kreuzschrauben.jpg,motorhalterung.jpg,pappe-einwellig.jpg,reifen.jpg,schere-stift-geo.jpg,schraubendreher.jpg,basisversion-frontal.jpg,basisversion-von-oben.jpg'
+media_order: 'akku-anschluss.jpg,batterie.jpg,calliopev3.jpg,calliopev3-rueckseite.jpg,fusskugel.jpg,gleichstrommotor.jpg,lochplatte.jpg,m3-kreuzschrauben.jpg,motorhalterung.jpg,pappe-einwellig.jpg,reifen.jpg,schere-stift-geo.jpg,schraubendreher.jpg,basisversion-frontal.jpg,basisversion-von-oben.jpg,motor-in-halterung.jpg,motor-in-halterung2.jpg'
 featured_image: basisversion-von-oben.jpg
 published: true
 ---
@@ -37,4 +37,35 @@ Suche in den bereitgestellten Kästen alle Teile heraus, die du für den Bastelb
 | ![schere-stift-geo](schere-stift-geo.jpg?lightbox=1024&resize=200 "schere-stift-geo") | Schere, Bleistift, Geodreieck, Radiergummi | 1 | ggf. mit zweiter Gruppe teilen |
 </div>
 
+### Aufbau
 
+<div class="aufgabe" markdown="1">
+#### Aufbau des Fahrgestells
+
+1. Klemme die zwei Getriebemotoren in die Motorhalterungen. Achte darauf, die Kabel nicht einzuklemmen. Vergleiche mit den Fotos.
+2. Befestige mit Hilfe von Schrauben und Muttern die Motorhalterungen und den Slider auf der Lochplatte.
+
+
+![motor-in-halterung](motor-in-halterung.jpg?lightbox=512&resize=200 "motor-in-halterung")
+![motor-in-halterung2](motor-in-halterung2.jpg?lightbox=512&resize=200 "motor-in-halterung2")
+</div>
+
+
+<div class="aufgabe" markdown="1">
+#### Bau eines Gehäuses
+
+Konstruiere mit Hilfe von Pappe und Schrauben ein geeignetes Gehäuse für deinen Bastelbot! Das Gehäuse sollte so gestaltet sein, dass der Calliope fest darauf sitzt und sowohl der USB-Anschluss als auch die schwarze Pin-Leiste unterhalb der drei RGB-LEDs zugänglich sind. Zudem sollte das Gehäuse so hoch sein, dass man daran weitere Sensoren befestigen kann.
+
+</div>
+
+<div class="aufgabe" markdown="1">
+#### Verkabelung
+
+1. Schließe die Motoren an der Pin-Leiste des Calliope an. Dazu müssen die Kabel des einen Motors mit den Pins M0- und M0+ verbunden werden. Die Kabel des anderen Motors werden mit M1- und M1+ verbunden.
+2. Schließe die Batterie an. **Beachte die Sicherheitshinweise.**
+
+!! Wenn die Batterie falsch angeschlossen wird, wird der Calliope zerstört. Daher ist es wichtig, bei diesem Schritt sehr genau vorzugehen. Die Batterie wird mit den beiden Pins GND und VM+ auf der linken Seite der Abbildung unten verbunden. Das schwarze Kabel des Batterieclips, das mit dem Minuspol der Batterie verbunden ist, muss mit GND verbunden werden. Das rote Kabel des Batterieclips, das mit dem Pluspol der Batterie verbunden ist, muss mit VM+ verbunden werden. **Beachte, dass sich diese beiden Pins auf der rechten Seite befinden, wenn du den Calliope von oben betrachtest!**
+!! Wenn der Calliope mit dem USB-Kabel programmiert wird, muss die Batterie wieder abgesteckt werden. Dazu reicht es, das rote Kabel von VM+ herauszuziehen.
+
+![calliopev3-rueckseite](calliopev3-rueckseite.jpg?lightbox=1024&resize=500 "calliopev3-rueckseite")
+</div>
