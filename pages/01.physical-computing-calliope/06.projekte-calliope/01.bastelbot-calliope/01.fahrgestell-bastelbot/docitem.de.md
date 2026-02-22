@@ -10,7 +10,7 @@ published: true
 
 Der Bau des Roboters beginnt mit dem Aufbau des Fahrgestells und der Verschaltung der Motoren.
 
-![basisversion-von-oben](basisversion-von-oben.jpg?lightbox=1024&resize=500 "basisversion-von-oben")
+![basisversion-von-oben](basisversion-von-oben.jpg?lightbox=1024&resize=500&caption="Fertige Basisversion des Bastelbots")
 
 ### Bauteile
 
