@@ -10,7 +10,7 @@ published: true
 
 Der Bau des Roboters beginnt mit dem Aufbau des Fahrgestells und der Verschaltung der Motoren.
 
-![basisversion-von-oben](basisversion-von-oben.jpg?lightbox=1024&resize=500&caption="Fertige Basisversion des Bastelbots")
+![basisversion-von-oben](basisversion-von-oben.jpg?lightbox=1024&resize=500&classes=caption "Fertige Basisversion des Bastelbots")
 
 ### Bauteile
 
@@ -69,5 +69,5 @@ Konstruiere mit Hilfe von Pappe und Schrauben ein geeignetes Gehäuse für deine
 !! Das schwarze Kabel des Batterieclips, das mit dem Minuspol der Batterie verbunden ist, muss mit GND verbunden werden. Das rote Kabel des Batterieclips, das mit dem Pluspol der Batterie verbunden ist, muss mit VM+ verbunden werden. **Beachte, dass sich diese beiden Pins auf der rechten Seite befinden, wenn du den Calliope von oben betrachtest!**
 !! Wenn der Calliope mit dem USB-Kabel programmiert wird, muss die Batterie wieder abgesteckt werden. Dazu reicht es, das rote Kabel von VM+ herauszuziehen.
 
-![calliopev3-rueckseite](calliopev3-rueckseite.jpg?lightbox=1024&resize=500 "calliopev3-rueckseite")
+![calliopev3-rueckseite](calliopev3-rueckseite.jpg?lightbox=1024&resize=500&classes=caption "Auf der Rückseite des Calliope kann man die Pinbelegung sehen. Achte darauf, den richtigen Pin zu erwischen, wenn du den Calliope umdrehst. Klicke das Bild an, um zu vergrößern.")
 </div>
