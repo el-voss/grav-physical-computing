@@ -50,14 +50,12 @@ Suche in den bereitgestellten Kästen alle Teile heraus, die du für den Bastelb
 ![motor-in-halterung2](motor-in-halterung2.jpg?lightbox=512&resize=200 "motor-in-halterung2")
 </div>
 
-<div markdown="1">
 <center>
 <video controls width="70%" height="auto" autoplay>
 <source src="/user/pages/videos/calliope/schraubverbindung.mp4" type="video/mp4"></source>
 Ihr Browser kann dieses Video nicht wiedergeben.
 </video>
 </center>
-</div>
 
 <div class="aufgabe" markdown="1">
 #### Bau eines Gehäuses
