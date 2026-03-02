@@ -52,7 +52,7 @@ Suche in den bereitgestellten Kästen alle Teile heraus, die du für den Bastelb
 
 <div markdown="1">
 <center>
-<video controls="1" width="70%" height="auto" autoplay>
+<video controls width="70%" height="auto" autoplay>
 <source src="/user/pages/videos/calliope/schraubverbindung.mp4" type="video/mp4"></source>
 Ihr Browser kann dieses Video nicht wiedergeben.
 </video>
