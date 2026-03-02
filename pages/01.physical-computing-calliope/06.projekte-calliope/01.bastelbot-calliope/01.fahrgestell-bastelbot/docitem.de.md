@@ -3,7 +3,7 @@ title: 'Bau des Fahrgestells'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'akku-anschluss.jpg,basisversion-frontal.jpg,basisversion-von-oben.jpg,batterie.jpg,calliopev3.jpg,calliopev3-rueckseite.jpg,fusskugel.jpg,gleichstrommotor.jpg,lochplatte.jpg,m3-kreuzschrauben.jpg,motorhalterung.jpg,motor-in-halterung.jpg,motor-in-halterung2.jpg,pappe-einwellig.jpg,reifen.jpg,schere-stift-geo.jpg,schraubendreher.jpg,schraubverbindung.mp4'
+media_order: 'akku-anschluss.jpg,basisversion-frontal.jpg,basisversion-von-oben.jpg,batterie.jpg,calliopev3.jpg,calliopev3-rueckseite.jpg,fusskugel.jpg,gleichstrommotor.jpg,lochplatte.jpg,m3-kreuzschrauben.jpg,motorhalterung.jpg,motor-in-halterung.jpg,motor-in-halterung2.jpg,pappe-einwellig.jpg,reifen.jpg,schere-stift-geo.jpg,schraubendreher.jpg'
 featured_image: basisversion-von-oben.jpg
 published: true
 ---
@@ -53,8 +53,7 @@ Suche in den bereitgestellten Kästen alle Teile heraus, die du für den Bastelb
 <div markdown="1">
 <center>
 <video controls="1" width="70%" height="auto" playsinline autoplay>
-<!---<source src="/user/pages/videos/calliope/schleife-abbrechen.mp4" type="video/mp4"></source>-->
-<source src="schraubverbindung.mp4" type="video/mp4"></source>
+<source src="/user/pages/videos/calliope/schraubverbindung.mp4" type="video/mp4"></source>
 Ihr Browser kann dieses Video nicht wiedergeben.
 </video>
 </center>
