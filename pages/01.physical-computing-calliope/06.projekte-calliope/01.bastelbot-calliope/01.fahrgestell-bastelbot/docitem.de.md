@@ -50,18 +50,18 @@ Suche in den bereitgestellten Kästen alle Teile heraus, die du für den Bastelb
 ![motor-in-halterung2](motor-in-halterung2.jpg?lightbox=512&resize=200 "motor-in-halterung2")
 </div>
 
+<div class="aufgabe" markdown="1">
+#### Bau eines Gehäuses
+
+Konstruiere mit Hilfe von Pappe und Schrauben ein geeignetes Gehäuse für deinen Bastelbot! Das Gehäuse sollte so gestaltet sein, dass der Calliope fest darauf sitzt und sowohl der USB-Anschluss als auch die schwarze Pin-Leiste unterhalb der drei RGB-LEDs zugänglich sind. Zudem sollte das Gehäuse so hoch sein, dass man daran weitere Sensoren befestigen kann.
+
+Die Verbindungen der Pappe lassen sich wie im folgenden Video gezeigt mit Schrauben herstellen.
 <center>
 <video controls width="70%" height="auto" autoplay>
 <source src="/user/pages/videos/calliope/schraubverbindung.mp4" type="video/mp4"></source>
 Ihr Browser kann dieses Video nicht wiedergeben.
 </video>
 </center>
-
-<div class="aufgabe" markdown="1">
-#### Bau eines Gehäuses
-
-Konstruiere mit Hilfe von Pappe und Schrauben ein geeignetes Gehäuse für deinen Bastelbot! Das Gehäuse sollte so gestaltet sein, dass der Calliope fest darauf sitzt und sowohl der USB-Anschluss als auch die schwarze Pin-Leiste unterhalb der drei RGB-LEDs zugänglich sind. Zudem sollte das Gehäuse so hoch sein, dass man daran weitere Sensoren befestigen kann.
-
 </div>
 
 <div class="aufgabe" markdown="1">
