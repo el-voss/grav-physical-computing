@@ -2,36 +2,31 @@
 
 <div class="col-{{ conf.cols_top_pages }}">
     <h5 class="d-flex justify-content-between pe-2">
-        {{ title|default('Most Viewed Pages') }}
-        {% if hide_show_all is not defined %}<a href="{{ pageStats.urls.allPages }}"> <i class="fa fa-fw fa-line-chart"></i> View all</a>{% endif %}
-
+        {{ title|default("PLUGIN_PAGE_STATS.MOST_VIEWED_PAGES"|t) }}
+        {% if hide_show_all is not defined %}<a href="{{ pageStats.urls.allPages }}"> <i class="fa fa-fw fa-line-chart"></i> {{ "PLUGIN_PAGE_STATS.VIEW_ALL"|t }}</a>{% endif %}
     </h5>
     <table class="table">
         <tr>
             <th>
-                Page
-
+                {{ "PLUGIN_PAGE_STATS.TABLE_PAGE"|t }}
             </th>
             <th>
-                Views
-
+                {{ "PLUGIN_PAGE_STATS.TABLE_PAGE_VIEWS"|t }}
             </th>
             <th>
-                Unique visitors
-
+                {{ "PLUGIN_PAGE_STATS.TABLE_UNIQUE_VISITORS"|t }}
             </th>
             <th>
-                Unique logged in Users
-
+                {{ "PLUGIN_PAGE_STATS.TABLE_UNIQUE_LOGGED_IN_USERS"|t }}
             </th>
         </tr>
         {% for s in data %}
             <tr>
                 <td>
-                    <a class="me-2" title="view page" target="blank" href="{{ s.route }}">
+                    <a class="me-2" title="{{ "PLUGIN_PAGE_STATS.VIEW_PAGE"|t }}" target="blank" href="{{ s.route }}">
                         <i class="fa fa-external-link"></i>
                     </a>
-                    <a class="me-2" title="view page stats" href="{{ pageStats.urls.pageDetails}}?page={{ s.route }}" title="{{ s.route }}">
+                    <a class="me-2" title="{{ "PLUGIN_PAGE_STATS.VIEW_PAGE_STATS"|t }}" href="{{ pageStats.urls.pageDetails}}?page={{ s.route }}" title="{{ s.route }}">
                         <i class="fa fa-fw fa-line-chart"></i>
                     </a>
                     {{ macros.page_title(s, conf) }}

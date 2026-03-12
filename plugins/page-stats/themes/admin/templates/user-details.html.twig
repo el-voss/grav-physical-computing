@@ -2,8 +2,7 @@
 {% block pageTitle %}
     <h1>
         <i class="fa fa-fw fa-line-chart"></i>
-        User Details:
-
+        {{ "PLUGIN_PAGE_STATS.USER_DETAILS"|t }}
         {{ grav.uri.query('user') }}
     </h1>
 {% endblock %}
@@ -21,7 +20,6 @@
     {% if grav.uri.query('user') matches '#^([0-9]{1,3}\.){2,}#' %}
         {% set queryKey = 'ip' %}
     {% endif %}
-
 
     {% set conf = config.plugins['page-stats'] %}
     {% include 'partials/messages.html.twig' %}

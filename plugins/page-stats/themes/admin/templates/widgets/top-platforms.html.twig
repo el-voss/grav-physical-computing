@@ -1,16 +1,18 @@
 <div class="mb-5 {{ conf.cols_top_countries }}">
     <h5 class=" mb-2">
-         {% if hide_show_all is not defined %}
-            <a href="{{ pageStats.urls.topPlatforms }}" title="View All"><i class="fa fa-fw fa-line-chart"></i> Top Platforms</a>
+        {% if hide_show_all is not defined %}
+            <a href="{{ pageStats.urls.topPlatforms }}" title="{{ "PLUGIN_PAGE_STATS.VIEW_ALL"|t }}">
+               <i class="fa fa-fw fa-line-chart"></i>
+               {{ "PLUGIN_PAGE_STATS.TOP_PLATFORMS"|t }}</a>
         {% else %}
-            Top Platforms
+            {{ "PLUGIN_PAGE_STATS.TOP_PLATFORMS"|t }}
         {% endif %}
     </h5>
 
     {% set conf = config.plugins['page-stats'] %}
-{% if conf.style_top_platforms == 'table' %}
-    {% include 'widgets/top-platforms-table.html.twig' %}
-{% else %}
+    {% if conf.style_top_platforms == 'table' %}
+        {% include 'widgets/top-platforms-table.html.twig' %}
+    {% else %}
         {% include 'widgets/top-platforms-pie.html.twig' %}
-{% endif %}
+    {% endif %}
 </div>

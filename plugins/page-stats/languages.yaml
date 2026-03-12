@@ -4,7 +4,6 @@ en:
     STATS_DB_LABEL: Page Stats DB path
     STATS_DB_HELP: Path to db relative to Grav root
 
-
     WIDGET:
         ENABLED:
             TEXT: Enabled
@@ -45,6 +44,7 @@ en:
     PAGE_VIEWS_WIDGET: Page Views
 
     RECENTLY_VIEWED_PAGES: Recently Viewed Pages
+    VIEW_LAST_1000_PAGES: View last 1000 pages
 
     TOP_PAGES: Top Pages
 
@@ -54,6 +54,40 @@ en:
 
     TOP_PLATFORMS: Top Platforms
 
+    TOP_USERS: Top Users
+
+    UNIQUE_USERS: Unique Users
+    UNIQUE_VISITORS: Unique Visitors
+
+    TABLE_COUNTRIES: Countries
+    TABLE_COUNTRY: Country
+    TABLE_PLATFORM: Platform
+    TABLE_SHARE: "% share"
+    TABLE_DATE: Date
+    TABLE_PAGE: Page
+    TABLE_USER: User
+    TABLE_LOCATION: Location
+    TABLE_BROWSER: Browser
+    TABLE_TIME_ON_PAGE: Time on Page
+    TABLE_USER_AGENT: User Agent
+    TABLE_VIEWS: Views
+    TABLE_PAGE_VIEWS: Page Views
+    TABLE_UNIQUE_VISITORS: Unique visitors
+    TABLE_UNIQUE_LOGGED_IN_USERS: Unique logged in Users
+
+    VIEW_ALL: View all
+    ALL_PAGES: All Pages
+    PAGE_DETAILS_TITLE: Page Details
+    PAGE_STATS_TITLE: Page Stats
+    USER_DETAILS: User Details
+    USING: Using
+    PAGE_VIEWS: Page Views
+    VIEW_PAGE: view page
+    VIEW_PAGE_STATS: view page stats
+    NOT_LOGGED_IN: not logged in
+    VIEW_STATS_USER: View stats for user
+    MOST_VIEWED_PAGES: Most Viewed Pages
+    
     IGNORED_IPS_LABEL: "IP's to ignore"
     IGNORED_IPS_HELP: "IP's in this list will be ignored, you can use regular expressions or normal IP dotted notation (eg: 127.0.0.1 or 127.*)"
     IP: "IP to ignore"
@@ -79,7 +113,6 @@ en:
     IGNORE_ERRORS_LABEL: Ignore Errors
     IGNORE_ERRORS_HELP: IF true, errors will be logged, otherwise an exception is thrown.
 
-
     PAGE_DETAILS:
       RECENT_VIEWS: Recent Views on Page Details
 
@@ -92,4 +125,132 @@ en:
     BOT_REGEXP:
         TEXT: Bot User Agents
         HELP: USer agents to classify as bots (can use regular expression)
+
+fr:
+  PLUGIN_PAGE_STATS:
+    PAGE_STATS: Statistiques
+    STATS_DB_LABEL: Chemin de la base de données des statistiques
+    STATS_DB_HELP: Chemin vers la base de données, relatif à la racine de Grav
+
+    WIDGET:
+        ENABLED:
+            TEXT: Activé
+            HELP: Si activé, le widget sera affiché
+        SIZE:
+            TEXT: Taille
+            HELP: La taille du widget sur le tableau de bord
+        LIMIT:
+            TEXT: Limite
+            HELP: "Le nombre d'enregistrements à récupérer"
+        STYLE:
+            TEXT: Style
+            HELP: Le style utilisé pour présenter les données (tableau ou graphique)
+
+    ANONYMIZE_IPS_LABEL: Anonymiser les adresses IP
+    ANONYMIZE_IPS_HELP: "Si activé, les adresses IP seront tronquées après 2 octets (pour IPv4) et 4 octets (pour IPv6) avant d'être stockées dans la base de données, pour faciliter la conformité RGPD. REMARQUE : Cela ne s'applique qu'aux NOUVELLES visites enregistrées, PAS aux entrées déjà présentes dans la base de données."
+
+    DATETIME_OFFSET_LABEL: Décalage horaire par rapport à UTC
+    DATETIME_OFFSET_HELP: Affiche les valeurs de date/heure ajustées par rapport à UTC selon le décalage spécifié
+
+    LOG_TIME_ON_PAGE_LABEL: Enregistrer le temps passé sur la page
+    LOG_TIME_ON_PAGE_HELP: "Si activé, le front-end déclenchera un événement de ping à intervalles réguliers pour indiquer que l'utilisateur est toujours sur la page"
+    # STATS_DB_CREATE_LABEL: Reconstruire la base de données des statistiques
+    # STATS_DB_CREATE_HELP: "Cela créera une base de données à l'emplacement spécifié et écrasera celle existante sans confirmation"
+    # STATS_DB_CREATE_BTN_TEXT: Créer une nouvelle base de données des statistiques
+
+    LOG_ADMIN_LABEL: "Enregistrer l'activité des utilisateurs administrateurs"
+    LOG_ADMIN_HELP: "Enregistre l'activité des utilisateurs administrateurs sur le site, mais jamais lorsqu'ils utilisent le panneau d'administration"
+    LOG_BOT_LABEL: "Enregistrer l'activité des robots"
+    LOG_BOT_HELP: "Par défaut, l'activité des robots connus n'est pas enregistrée. Activez cette option pour les enregistrer"
+
+    TOP_USERS_WIDGET: Utilisateurs les plus actifs
+
+    UNIQUE_USERS_WIDGET: Utilisateurs uniques
+
+    UNIQUE_VISITORS_WIDGET: Visiteurs uniques
+
+    PAGE_VIEWS_WIDGET: Pages vues
+
+    RECENTLY_VIEWED_PAGES: Pages récemment consultées
+    VIEW_LAST_1000_PAGES: Voir les 1000 dernières pages
+
+    TOP_PAGES: Top Pages
+
+    TOP_BROWSERS: Top Navigateurs
+
+    TOP_COUNTRIES: Top Pays
+
+    TOP_PLATFORMS: Top Plateformes
+
+    TOP_USERS: Top Utilisateur
+
+    UNIQUE_USERS: Visiteurs uniques
+    UNIQUE_VISITORS: Utilisateurs uniques
+
+    TABLE_COUNTRIES: Pays
+    TABLE_COUNTRY: Pays
+    TABLE_PLATFORM: Platforme
+    TABLE_SHARE: "% Répartition"
+    TABLE_DATE: Date
+    TABLE_PAGE: Page
+    TABLE_USER: Utilisateur
+    TABLE_LOCATION: Localisation
+    TABLE_BROWSER: Navigateur
+    TABLE_TIME_ON_PAGE: Temps sur la page
+    TABLE_USER_AGENT: User Agent
+    TABLE_VIEWS: Vues
+    TABLE_PAGE_VIEWS: Page vues
+    TABLE_UNIQUE_VISITORS: Visiteurs uniques
+    TABLE_UNIQUE_LOGGED_IN_USERS: Visiteurs uniques connecté
+
+    VIEW_ALL: Tout voir
+    ALL_PAGES: Toutes les pages
+    PAGE_DETAILS_TITLE: Details de la page
+    PAGE_STATS_TITLE: Stat Page
+    USER_DETAILS: Details utilisateur
+    USING: Utilise
+    PAGE_VIEWS: Page Vues
+    VIEW_PAGE: voir la page
+    VIEW_PAGE_STATS: voir les stats de la page
+    NOT_LOGGED_IN: non connecté
+    VIEW_STATS_USER: Voir les statistiques de l'utilisateur
+    MOST_VIEWED_PAGES: Pages les plus vues
+
+    IGNORED_IPS_LABEL: "Adresses IP à ignorer"
+    IGNORED_IPS_HELP: "Les adresses IP de cette liste seront ignorées. Vous pouvez utiliser des expressions régulières ou la notation IP classique (ex: 127.0.0.1 ou 127.*)"
+    IP: "Adresse IP à ignorer"
+
+    IGNORED_URLS:
+        TEXT: "URL à ignorer"
+        LABEL: "URLs à ignorer"
+        HELP: "Les URLs de cette liste seront ignorées. Vous pouvez utiliser des expressions régulières ou une chaîne de caractères"
+
+    SECTION_WIDGETS: Configuration des widgets
+    SECTION_WIDGETS_LABEL: Configurer les widgets des statistiques de page
+
+    SECTION_BEHAVIOUR: Comportement
+    SECTION_BEHAVIOUR_LABEL: Contrôler quand le plugin collecte les statistiques
+
+    WIDGET_SIZE_LABEL: Taille du widget
+    WIDGET_SIZE_HELP: "Le nombre de colonnes que le widget utilisera pour s'afficher"
+
+    SQL_LIMIT_LABEL: Enregistrements à afficher
+    SQL_LIMIT_HELP: "Le nombre d'enregistrements à afficher pour ce widget"
+
+
+    IGNORE_ERRORS_LABEL: Ignorer les erreurs
+    IGNORE_ERRORS_HELP: Si vrai, les erreurs seront enregistrées, sinon une exception sera levée.
+
+    PAGE_DETAILS:
+      RECENT_VIEWS: Vues récentes dans les détails de la page
+
+    PAGE_URL:
+        TEXT: Afficher la page comme
+        HELP: "La page doit-elle être affichée sous forme d'URL ou de titre de page"
+
+    SECTION_BOTS: Robots
+    SECTION_BOTS_TEXT: "Identifier les robots d'indexation"
+    BOT_REGEXP:
+        TEXT: Agents utilisateurs des robots
+        HELP: Agents utilisateurs à classer comme robots (peut utiliser des expressions régulières)
 

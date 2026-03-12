@@ -1,7 +1,6 @@
 <div class="mb-5 {{ conf.cols_unique_visitors_widget }}">
     <h5>
-        Unique Visitors
-
+        {{ "PLUGIN_PAGE_STATS.UNIQUE_VISITORS"|t }}
     </h5>
     <div style="width: w-100">
         <canvas id="chart_ips"></canvas>
@@ -26,7 +25,7 @@
         data: {
             datasets: [
                 {
-                    label: 'Unique visitors',
+                    label: '{{ "PLUGIN_PAGE_STATS.TABLE_UNIQUE_VISITORS"|t }}',
                     data: [{% for s in data %}
                             {
                                 x: "{{ s.date }}",

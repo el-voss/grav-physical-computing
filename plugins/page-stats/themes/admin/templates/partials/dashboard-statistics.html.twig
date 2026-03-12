@@ -10,7 +10,6 @@
         </div>
     </div>
 
-
     <script>
     Chart.defaults.color = "#fff";
     Chart.defaults.borderColor = "#999";
@@ -40,7 +39,7 @@
 
                     {
                         borderColor: "#fff",
-                        label: 'Page Views',
+                        label: '{{ "PLUGIN_PAGE_STATS.PAGE_VIEWS"|t }}',
                         data: [{% for s in data %}{
                                     x: "{{ s.date }}",
                                     y: {{ s.hits }}

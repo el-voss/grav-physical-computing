@@ -1,9 +1,11 @@
 <div class="mb-5 {{ conf.cols_top_countries }}">
     <h5 class=" mb-2">
-         {% if hide_show_all is not defined %}
-            <a href="{{ pageStats.urls.topCountries }}" title="View All"><i class="fa fa-fw fa-line-chart"></i> Top Countries</a>
+        {% if hide_show_all is not defined %}
+            <a href="{{ pageStats.urls.topCountries }}" title="{{ "PLUGIN_PAGE_STATS.VIEW_ALL"|t }}">
+               <i class="fa fa-fw fa-line-chart"></i>
+               {{ "PLUGIN_PAGE_STATS.TOP_COUNTRIES"|t }}</a>
         {% else %}
-            Top Countries
+            {{ "PLUGIN_PAGE_STATS.TOP_COUNTRIES"|t }}
         {% endif %}
     </h5>
 

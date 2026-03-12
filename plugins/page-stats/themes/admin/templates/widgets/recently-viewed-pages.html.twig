@@ -2,37 +2,31 @@
 
 <div class="mb-5  col-12{{ conf.cols_recently_viewed_pages }}">
     <h5 class="pe-2 d-flex justify-content-between">
-        Recently Viewed Pages
+        {{ "PLUGIN_PAGE_STATS.RECENTLY_VIEWED_PAGES"|t }}
         {% if hide_show_all is not defined %}
             <a href="{{ pageStats.urls.recentlyedViewdPages }}">
                 <i class="fa fa-fw fa-line-chart"></i>
-                View last 1000 pages</a>
+                {{ "PLUGIN_PAGE_STATS.VIEW_LAST_1000_PAGES"|t }}</a>
         {% endif %}
     </h5>
 
     <table class="table table-hover">
         <tr>
             <th>
-                Date
+                {{ "PLUGIN_PAGE_STATS.TABLE_DATE"|t }}
             </th>
             {% if hide_page is not defined %}
                 <th>
-                    Page
+                    {{ "PLUGIN_PAGE_STATS.TABLE_PAGE"|t }}
                 </th>
             {% endif %}
             {% if hide_user is not defined %}
-                <th>User</th>
+                <th>{{ "PLUGIN_PAGE_STATS.TABLE_USER"|t }}</th>
             {% endif %}
-            <th>Location</th>
-            <th>
-                Browser
-            </th>
-            <th>
-                Platform
-            </th>
-            <th>
-                Time on Page
-            </th>
+            <th>{{ "PLUGIN_PAGE_STATS.TABLE_LOCATION"|t }}</th>
+            <th>{{ "PLUGIN_PAGE_STATS.TABLE_BROWSER"|t }}</th>
+            <th>{{ "PLUGIN_PAGE_STATS.TABLE_PLATFORM"|t }}</th>
+            <th>{{ "PLUGIN_PAGE_STATS.TABLE_TIME_ON_PAGE"|t }}</th>
         </tr>
         {% for day, d in data %}
 
@@ -48,10 +42,10 @@
                     </td>
                     {% if hide_page is not defined %}
                         <td class="w-100">
-                            <a class="me-2" title="view page" target="blank" href="{{ s.route }}">
+                            <a class="me-2" title="{{ "PLUGIN_PAGE_STATS.VIEW_PAGE"|t }}" target="blank" href="{{ s.route }}">
                                 <i class="fa fa-external-link"></i>
                             </a>
-                            <a class="me-2" title="view page stats" href="{{ pageStats.urls.pageDetails}}?page={{ s.route }}" title="{{ s.route }}">
+                            <a class="me-2" title="{{ "PLUGIN_PAGE_STATS.VIEW_PAGE_STATS"|t }}" href="{{ pageStats.urls.pageDetails}}?page={{ s.route }}" title="{{ s.route }}">
                                 <i class="fa fa-fw fa-line-chart"></i>
                             </a>
                             {{ macros.page_title(s, conf)  }}
@@ -60,7 +54,7 @@
 
                     {% if hide_user is not defined %}
                         <td>
-                            <a class="me-2" href="{{ pageStats.urls.userDetails}}?user={{ s.user|default(s.ip) }}" title="View stats for user">
+                            <a class="me-2" href="{{ pageStats.urls.userDetails}}?user={{ s.user|default(s.ip) }}" title="{{ "PLUGIN_PAGE_STATS.VIEW_STATS_USER"|t }}">
                                 <i class="fa fa-fw fa-line-chart"></i>
                                 {{ s.user|default(s.ip)}}
                             </a>
@@ -92,7 +86,7 @@
                 {% if show_user_agent is defined %}
                     <tr>
                         <td colspan="6">
-                            <strong class="ps-5">User Agent:
+                            <strong class="ps-5">{{ "PLUGIN_PAGE_STATS.TABLE_USER_AGENT"|t }}:
                             </strong>
                             {{ s.user_agent }}
                         </td>

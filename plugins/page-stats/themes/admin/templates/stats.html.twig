@@ -14,16 +14,14 @@
     <div class="button-bar">
         <div class="button-group">
             <p>
-                Using: {{ pageStats.db.dbStats.path }} ({{ pageStats.db.dbStats.mb }} MB)
+                {{ "PLUGIN_PAGE_STATS.USING"|t }}: {{ pageStats.db.dbStats.path }} ({{ pageStats.db.dbStats.mb }} MB)
             </p>
         </div>
     </div>
     {% block pageTitle %}
         <h1>
             <i class="fa fa-fw fa-line-chart"></i>
-            Page Stats
-
-
+            {{ "PLUGIN_PAGE_STATS.PAGE_STATS_TITLE"|t }}
         </h1>
     {% endblock %}
 {% endblock %}

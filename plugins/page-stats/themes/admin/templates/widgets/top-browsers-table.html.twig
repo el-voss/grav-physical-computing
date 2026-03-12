@@ -1,13 +1,11 @@
 <table class="table table-hover">
     <tr>
         <th>
-            Browser
-
+            {{ "PLUGIN_PAGE_STATS.TABLE_BROWSER"|t }}
         </th>
         <th>
-            % share
+            {{ "PLUGIN_PAGE_STATS.TABLE_SHARE"|t }}
         </th>
-
     </tr>
     {% for s in data %}
         <tr>
@@ -15,11 +13,9 @@
                 {{ s.browser }}
             </td>
             <td>
-                <span title="{{ s.hits }} views">{{ s.share }}
+                <span title="{{ s.hits }} {{ "PLUGIN_PAGE_STATS.TABLE_VIEWS"|t }}">{{ s.share }}
                     %</span>
-
             </td>
-
         </tr>
     {% endfor %}
 </table>

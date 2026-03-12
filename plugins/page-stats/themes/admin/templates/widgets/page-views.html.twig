@@ -1,8 +1,7 @@
 
 <div class="mb-5 {{ conf.cols_page_views_widget }}">
     <h5>
-        Page Views
-
+        {{ "PLUGIN_PAGE_STATS.PAGE_VIEWS_WIDGET"|t }}
     </h5>
     <div style="width: w-100">
         <canvas id="chart_hits"></canvas>
@@ -28,7 +27,7 @@
         data: {
             datasets: [
                 {
-                    label: 'Page Views',
+                    label: '{{ "PLUGIN_PAGE_STATS.TABLE_PAGE_VIEWS"|t }}',
                     data: [{% for s in data %}
                             {
                                 x: "{{ s.date }}",

@@ -1,11 +1,11 @@
 <div class="mb-5 {{ conf.cols_top_countries }}">
     <h5 class=" mb-2">
         {% if hide_show_all is not defined %}
-            <a href="{{ pageStats.urls.topBrowsers }}" title="View All">
-                <i class="fa fa-fw fa-line-chart"></i>
-                Top Browsers</a>
+            <a href="{{ pageStats.urls.topBrowsers }}" title="{{ "PLUGIN_PAGE_STATS.VIEW_ALL"|t }}">
+               <i class="fa fa-fw fa-line-chart"></i>
+               {{ "PLUGIN_PAGE_STATS.TOP_BROWSERS"|t }}</a>
         {% else %}
-            Top Browsers
+            {{ "PLUGIN_PAGE_STATS.TOP_BROWSERS"|t }}
         {% endif %}
     </h5>
 
