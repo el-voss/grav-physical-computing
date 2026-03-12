@@ -37,8 +37,15 @@ In der Kategorie "Motoren" gibt es dazu den Block "Motor ... an mit ...%", der e
 #### Quadratfahren
 
 1. Markiere auf dem Boden ein Quadrat mit Seitenlänge 1m.
-2. Lass den Roboter das Quadrat abfahren!
+2. Lass den Roboter das Quadrat abfahren! Sorge dafür, dass die Fahrt erst startet, wenn du auf Taste A gedrückt hast.
 
 Tipp: Damit sich der Roboter auf der Stelle dreht, lasse einen Motor vorwärts und den anderen rückwärts drehen (eine sogenannte "Hebelsteuerung"). Füge danach eine Pause mit dem Block "pausiere ... ms" ein, die genau so lang ist, dass sich der Roboter um 90° dreht.
 </div>
 
+<div markdown="1" class="aufgabe">
+#### Funktionen für das Fahren
+
+Die Programme werden handlicher und übersichtlicher, wenn die einzelnen Fahrfunktionen auch als Funktion im Programm umgesetzt werden. Implementiere die unten abgebildeten Funktionen.
+
+
+</div>
