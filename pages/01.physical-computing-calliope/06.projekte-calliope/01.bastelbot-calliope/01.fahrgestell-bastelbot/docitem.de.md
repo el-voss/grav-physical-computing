@@ -3,7 +3,7 @@ title: 'Bau des Fahrgestells'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'akku-anschluss.jpg,basisversion-frontal.jpg,basisversion-von-oben.jpg,batterie.jpg,calliopev3.jpg,calliopev3-rueckseite.jpg,fusskugel.jpg,gleichstrommotor.jpg,lochplatte.jpg,m3-kreuzschrauben.jpg,motorhalterung.jpg,motor-in-halterung.jpg,motor-in-halterung2.jpg,pappe-einwellig.jpg,reifen.jpg,schere-stift-geo.jpg,schraubendreher.jpg'
+media_order: 'akku-anschluss.jpg,basisversion-frontal.jpg,basisversion-von-oben.jpg,batterie.jpg,calliopev3.jpg,calliopev3-rueckseite.jpg,fusskugel.jpg,gleichstrommotor.jpg,lochplatte.jpg,m3-kreuzschrauben.jpg,motorhalterung.jpg,motor-in-halterung.jpg,motor-in-halterung2.jpg,pappe-einwellig.jpg,reifen.jpg,schere-stift-geo.jpg,schraubendreher.jpg,bastelbot-anschluss-motoren-akku.png'
 featured_image: basisversion-von-oben.jpg
 published: true
 taxonomy:
@@ -81,5 +81,9 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 !! Das schwarze Kabel des Batterieclips, das mit dem Minuspol der Batterie verbunden ist, muss mit GND verbunden werden. Das rote Kabel des Batterieclips, das mit dem Pluspol der Batterie verbunden ist, muss mit VM+ verbunden werden. **Beachte, dass sich diese beiden Pins auf der rechten Seite befinden, wenn du den Calliope von oben betrachtest!**
 !! Wenn der Calliope mit dem USB-Kabel programmiert wird, muss die Batterie wieder abgesteckt werden. Dazu reicht es, das rote Kabel von VM+ herauszuziehen.
 
-![calliopev3-rueckseite](calliopev3-rueckseite.jpg?lightbox=1024&resize=500&classes=caption "Auf der Rückseite des Calliope kann man die Pinbelegung sehen. Achte darauf, den richtigen Pin zu erwischen, wenn du den Calliope umdrehst. Klicke das Bild an, um zu vergrößern.")
+<div class="fex-box">
+<div markdown="1" class="flexible">![calliopev3-rueckseite](calliopev3-rueckseite.jpg?lightbox=1024&resize=500&classes=caption "Auf der Rückseite des Calliope kann man die Pinbelegung sehen. Achte darauf, den richtigen Pin zu erwischen, wenn du den Calliope umdrehst. Klicke das Bild an, um zu vergrößern.") </div>
+<div markdown="1" class="flexible">![bastelbot-anschluss-motoren-akku](bastelbot-anschluss-motoren-akku.png?lightbox=1024&resize=500&classes=caption "Anschluss von Motor und Akku von vorne gesehen (schematisch).") </div>
+</div>
+
 </div>
