@@ -3,7 +3,7 @@ title: 'Fahren lernen'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'motorblock.png,funktion-drehung-links.png,funktion-drehung-rechts.png,funktion-motor-leistung.png,funktion-motor-stop.png'
+media_order: 'motorblock.png,funktion-drehung-links.png,funktion-drehung-rechts.png,funktion-motor-leistung.png,funktion-motor-stop.png,bastelbot-quadrat-fahren.png'
 taxonomy:
     Inhalte:
         - Funktionen
@@ -35,6 +35,8 @@ In der Kategorie "Motoren" gibt es dazu den Block "Motor ... an mit ...%", der e
 
 <div markdown="1" class="aufgabe">
 #### Quadratfahren
+
+![bastelbot-quadrat-fahren](bastelbot-quadrat-fahren.png?lightbox=500&resize=500 "bastelbot-quadrat-fahren")
 
 1. Markiere auf dem Boden ein Quadrat mit Seitenlänge 1m.
 2. Lass den Roboter das Quadrat abfahren! Sorge dafür, dass die Fahrt erst startet, wenn du auf Taste A gedrückt hast.
