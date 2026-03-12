@@ -3,7 +3,7 @@ title: 'Fahren lernen'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: motorblock.png
+media_order: 'motorblock.png,funktion-drehung-links.png,funktion-drehung-rechts.png,funktion-motor-leistung.png,funktion-motor-stop.png'
 taxonomy:
     Inhalte:
         - Funktionen
@@ -21,7 +21,7 @@ In der Kategorie "Motoren" gibt es dazu den Block "Motor ... an mit ...%", der e
 - "0%" bedeutet, die Motoren bleiben stehen,
 - "-50%" bedeutet, die Motoren drehen sich mit halber Leistung rückwärts.
 
-![motorblock](motorblock.png?lightbox=500&resize=500&classes=caption "motorblock")
+![motorblock](motorblock.png?lightbox=500&resize=500&classes=caption "Block zum Steuern der Motoren, wenn Knopf A gedrückt wurde.")
 
 !! #### Sicherheitshinweis
 !! Bevor der Calliope per USB-Kabel am Computer angeschlossen wird, muss die **Batterie stets abgeklemmt werden**. Ziehe dazu das rote Kabel vom Pluspol heraus. Das schwarze Kabel vom Minuspol kann stecken bleiben, da die Verbindung bereits unterbrochen ist. So musst du später nur ein Kabel wieder einstecken und dir dabei nicht merken, wohin "+" und "-" müssen, weil das Kabel vom Minuspol ja noch steckt.
@@ -47,5 +47,10 @@ Tipp: Damit sich der Roboter auf der Stelle dreht, lasse einen Motor vorwärts u
 
 Die Programme werden handlicher und übersichtlicher, wenn die einzelnen Fahrfunktionen auch als Funktion im Programm umgesetzt werden. Implementiere die unten abgebildeten Funktionen.
 
-
+<div class="flex-box">
+<div markdown="1" class="flexible">![funktion-motor-stop](funktion-motor-stop.png?lightbox=500&resize=300 "funktion-motor-stop")</div>
+<div markdown="1" class="flexible">![funktion-motor-leistung](funktion-motor-leistung.png?lightbox=500&resize=300 "funktion-motor-leistung")</div>
+<div markdown="1" class="flexible">![funktion-drehung-rechts](funktion-drehung-rechts.png?lightbox=500&resize=300 "funktion-drehung-rechts")</div>
+<div markdown="1" class="flexible">![funktion-drehung-links](funktion-drehung-links.png?lightbox=500&resize=300 "funktion-drehung-links")</div>
+</div>
 </div>
