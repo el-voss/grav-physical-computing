@@ -49,7 +49,7 @@ Die Programme werden handlicher und übersichtlicher, wenn die einzelnen Fahrfun
 
 <div class="flex-box">
 <div markdown="1" class="flexible">![funktion-motor-stop](funktion-motor-stop.png?lightbox=500&resize=300 "funktion-motor-stop")</div>
-<div markdown="1" class="flexible">![funktion-motor-leistung](funktion-motor-leistung.png?lightbox=500&resize=300 "funktion-motor-leistung")</div>
+<div markdown="1" class="flexible">![funktion-motor-leistung](funktion-motor-leistung.png?lightbox=500&resize=500 "funktion-motor-leistung")</div>
 <div markdown="1" class="flexible">![funktion-drehung-rechts](funktion-drehung-rechts.png?lightbox=500&resize=300 "funktion-drehung-rechts")</div>
 <div markdown="1" class="flexible">![funktion-drehung-links](funktion-drehung-links.png?lightbox=500&resize=300 "funktion-drehung-links")</div>
 </div>
