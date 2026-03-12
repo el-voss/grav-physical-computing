@@ -24,7 +24,7 @@ In der Kategorie "Motoren" gibt es dazu den Block "Motor ... an mit ...%", der e
 ![motorblock](motorblock.png?lightbox=500&resize=500&classes=caption "motorblock")
 
 !! #### Sicherheitshinweis
-!! Bevor der Calliope per USB-Kabel am Computer angeschlossen wird, muss die Batterie stets abgeklemmt werden. Ziehe dazu das rote Kabel vom Pluspol heraus. Das schwarze Kabel vom Minuspol kann stecken bleiben, da die Verbindung bereits unterbrochen ist. So musst du später nur ein Kabel wieder einstecken und dir dabei nicht merken, wohin "+" und "-" müssen, weil das Kabel vom Minuspol ja noch steckt.
+!! Bevor der Calliope per USB-Kabel am Computer angeschlossen wird, muss die **Batterie stets abgeklemmt werden**. Ziehe dazu das rote Kabel vom Pluspol heraus. Das schwarze Kabel vom Minuspol kann stecken bleiben, da die Verbindung bereits unterbrochen ist. So musst du später nur ein Kabel wieder einstecken und dir dabei nicht merken, wohin "+" und "-" müssen, weil das Kabel vom Minuspol ja noch steckt.
 
 <div markdown="1" class="aufgabe">
 #### Vor und zurück
@@ -32,3 +32,13 @@ In der Kategorie "Motoren" gibt es dazu den Block "Motor ... an mit ...%", der e
 1. Füge ein Skript hinzu, sodass sich die Motoren stoppen lassen, wenn die Taste B gedrückt wird. Dies ist hilfreich, wenn du das nächste Programm übertragen willst.
 2. Füge ein Skript zum Vorwärts- oder Rückwärtsfahren hinzu und beobachte die Motoren. Wenn sie sich falsch herum drehen, musst du die Kabel der Motoren anders herum am Calliope anschließen.
 </div>
+
+<div markdown="1" class="aufgabe">
+#### Quadratfahren
+
+1. Markiere auf dem Boden ein Quadrat mit Seitenlänge 1m.
+2. Lass den Roboter das Quadrat abfahren!
+
+Tipp: Damit sich der Roboter auf der Stelle dreht, lasse einen Motor vorwärts und den anderen rückwärts drehen (eine sogenannte "Hebelsteuerung"). Füge danach eine Pause mit dem Block "pausiere ... ms" ein, die genau so lang ist, dass sich der Roboter um 90° dreht.
+</div>
+
