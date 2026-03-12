@@ -4,6 +4,13 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 media_order: motorblock.png
+taxonomy:
+    Inhalte:
+        - Getriebemotoren
+        - Funktionen
+        - 'Funktionen zum Fahren'
+    Niveau:
+        - Basis
 ---
 
 Nachdem der Roboter nun über ein Fahrgestell verfügt und die Motoren verkabelt sind, wird es Zeit, ihm das Fahren beizubringen!
