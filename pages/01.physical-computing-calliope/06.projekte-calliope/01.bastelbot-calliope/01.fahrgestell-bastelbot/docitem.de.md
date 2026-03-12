@@ -6,6 +6,12 @@ image_height: 400
 media_order: 'akku-anschluss.jpg,basisversion-frontal.jpg,basisversion-von-oben.jpg,batterie.jpg,calliopev3.jpg,calliopev3-rueckseite.jpg,fusskugel.jpg,gleichstrommotor.jpg,lochplatte.jpg,m3-kreuzschrauben.jpg,motorhalterung.jpg,motor-in-halterung.jpg,motor-in-halterung2.jpg,pappe-einwellig.jpg,reifen.jpg,schere-stift-geo.jpg,schraubendreher.jpg'
 featured_image: basisversion-von-oben.jpg
 published: true
+taxonomy:
+    Inhalte:
+        - Montage
+        - Kartonverbidnung
+    Niveau:
+        - Basis
 ---
 
 Der Bau des Roboters beginnt mit dem Aufbau des Fahrgestells und der Verschaltung der Motoren.
