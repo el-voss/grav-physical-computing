@@ -6,9 +6,10 @@ image_height: 400
 media_order: motorblock.png
 taxonomy:
     Inhalte:
-        - Getriebemotoren
         - Funktionen
+        - Getriebemotoren
         - 'Funktionen zum Fahren'
+        - Hebelsteuerung
     Niveau:
         - Basis
 ---
