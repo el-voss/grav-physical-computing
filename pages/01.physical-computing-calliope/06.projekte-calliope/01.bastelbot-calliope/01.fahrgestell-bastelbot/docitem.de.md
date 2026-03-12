@@ -83,7 +83,7 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 
 <div class="fex-box">
 <div markdown="1" class="flexible">![calliopev3-rueckseite](calliopev3-rueckseite.jpg?lightbox=1024&resize=500&classes=caption "Auf der Rückseite des Calliope kann man die Pinbelegung sehen. Achte darauf, den richtigen Pin zu erwischen, wenn du den Calliope umdrehst. Klicke das Bild an, um zu vergrößern.") </div>
-<div markdown="1" class="flexible">![bastelbot-anschluss-motoren-akku](bastelbot-anschluss-motoren-akku.png?lightbox=1024&resize=500&classes=caption "Anschluss von Motor und Akku von vorne gesehen (schematisch).") </div>
+<div markdown="1" class="flexible">![bastelbot-anschluss-motoren-akku](bastelbot-anschluss-motoren-akku.png?lightbox=1024&resize=500&classes=caption "Anschluss von Motor und Akku von vorne gesehen (schematisch). Klicke das Bild an, um es zu vergrößern.") </div>
 </div>
 
 </div>
