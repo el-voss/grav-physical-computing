@@ -44,7 +44,7 @@ Zum Programmieren mit Makecode muss die Erweiterung "Grove" geladen werden. Dar�
 Über den Jacdac-Anschluss können auf einfache Weise Sensoren und Aktoren an den Calliope angeschlossen und angesteuert werden. Es können mehrere Jacdac-Bauteile hintereinander angeschlossen werden. Über den Jacdac-Hub können sie auch parallel angeschlossen werden. Jacdac ermöglicht nicht nur die Kommunikation von Sensor und Calliope, sondern auch per WebUSB mit Makecode. Auf diese Weise wird der aktuelle Sensorwert direkt in Makecode angezeigt.
 </div>
 
-Der Ultraschallsensor mit Jacdac-Anschluss wird mit einem der Jacdac-Anschlüsse des Calliope verbunden. Das Vorgehen für das Laden der Jacdac-Erweiterung und erste Programmierschritte zeigt die [Jacdac-Dokumentation der offiziellen Calliope-Seite](https://calliope.cc/calliope-mini/erweiterungen/jacdac) sehr gut.
+Der Ultraschallsensor mit Jacdac-Anschluss wird mit einem der Jacdac-Anschlüsse des Calliope verbunden. Das Vorgehen für das Laden der Jacdac-Erweiterung und erste Programmierschritte zeigt die **[Jacdac-Dokumentation der offiziellen Calliope-Seite](https://calliope.cc/calliope-mini/erweiterungen/jacdac)** sehr gut.
 
 Der Block ```<Messwert> Entfernung (m)``` stellt vier mögliche Messwerte in Metern bereit, nämlich ```entfernung1```, ```entfernung2```, ```distance3``` und ```distance4```. Welcher davon einen geeigneten Wert liefert, lässt sich durch ausprobieren herausfinden.
 
