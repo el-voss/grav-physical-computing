@@ -4,6 +4,7 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 media_order: 'ultraschall-sensor-prinzip.png,ultraschallsensor-am-auto.jpg,ultraschallsensor-grove.jpg,ultraschallsensor-jacdac.jpg,makecode-erweiterung-grove.png,makecode-erweiterung-jacdac.png,makecode-jacdac-ultraschall-test.png,schaltskizze-ultraschall-grove.png'
+featured_image: ultraschall-sensor-prinzip.png
 ---
 
 <div markdown="1" class="clearfix">
@@ -33,4 +34,21 @@ Zum Programmieren mit Makecode muss die Erweiterung "Grove" geladen werden. Dar�
 <div class="flex-box">
 <div markdown="1" class="flexible">![makecode-erweiterung-grove](makecode-erweiterung-grove.png?resize=400 "makecode-erweiterung-grove")</div>
 <div markdown="1" class="flexible">![makecode-grove-ultraschall-test](makecode-grove-ultraschall-test.png?resize=400 "makecode-grove-ultraschall-test")</div>
+</div>
+
+
+## Anschluss mit Jacdac
+
+<div markdown="1" class="clearfix">
+![ultraschallsensor-jacdac](ultraschallsensor-jacdac.jpg?lightbox=512&resize=250&classes=caption,figure-right "Ultraschallsensor mit Jacdac-Anschluss.")
+Über den Jacdac-Anschluss können auf einfache Weise Sensoren und Aktoren an den Calliope angeschlossen und angesteuert werden. Es können mehrere Jacdac-Bauteile hintereinander angeschlossen werden. Über den Jacdac-Hub können sie auch parallel angeschlossen werden. Jacdac ermöglicht nicht nur die Kommunikation von Sensor und Calliope, sondern auch per WebUSB mit Makecode. Auf diese Weise wird der aktuelle Sensorwert direkt in Makecode angezeigt.
+</div>
+
+Der Ultraschallsensor mit Jacdac-Anschluss wird mit einem der Jacdac-Anschlüsse des Calliope verbunden. Das Vorgehen für das Laden der Jacdac-Erweiterung und erste Programmierschritte zeigt die [Jacdac-Dokumentation der offiziellen Calliope-Seite](https://calliope.cc/calliope-mini/erweiterungen/jacdac) sehr gut.
+
+Der Block ```<Messwert> Entfernung (m)``` stellt vier mögliche Messwerte in Metern bereit, nämlich ```entfernung1```, ```entfernung2```, ```distance3``` und ```distance4```. Welcher davon einen geeigneten Wert liefert, lässt sich durch ausprobieren herausfinden.
+
+<div class="flex-box">
+<div markdown="1" class="flexible">![makecode-erweiterung-jacdac](makecode-erweiterung-jacdac.png?resize=400 "makecode-erweiterung-jacdac")</div>
+<div markdown="1" class="flexible">![makecode-jacdac-ultraschall-test](makecode-jacdac-ultraschall-test.png?resize=400 "makecode-jacdac-ultraschall-test")</div>
 </div>
