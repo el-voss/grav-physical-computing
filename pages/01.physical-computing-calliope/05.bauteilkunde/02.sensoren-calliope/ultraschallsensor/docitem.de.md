@@ -7,7 +7,7 @@ media_order: 'ultraschall-sensor-prinzip.png,ultraschallsensor-am-auto.jpg,ultra
 ---
 
 <div markdown="1" class="clearfix">
-![Ultraschallsensor am Auto.](ultraschallsensor-am-auto-qn.jpg?resize=250&rotate=90&classes=caption,figure-right "Ultraschallsensor am Auto.")
+![Ultraschallsensor am Auto.](ultraschallsensor-am-auto.jpg?resize=250&rotate=90&classes=caption,figure-right "Ultraschallsensor am Auto.")
 Ultraschallsensoren ermöglichen die berührungslose Messung eines Abstands zwischen dem Sensor und dem nächstgelegenen Gegenstand. Dies macht sie zu einer interessanten Ausrüstung für Staubsaugerroboter, die nicht gegen die Wand fahren sollen, oder Einparkhilfen im Auto, die dem Fahrer anzeigen sollen, wie viel Platz er noch hat.
 </div>
 
