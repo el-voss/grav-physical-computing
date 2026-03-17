@@ -52,3 +52,15 @@ Der Block ```<Messwert> Entfernung (m)``` stellt vier mögliche Messwerte in Met
 <div markdown="1" class="flexible">![makecode-erweiterung-jacdac](makecode-erweiterung-jacdac.png?resize=400 "makecode-erweiterung-jacdac")</div>
 <div markdown="1" class="flexible">![makecode-jacdac-ultraschall-test](makecode-jacdac-ultraschall-test.png?resize=400 "makecode-jacdac-ultraschall-test")</div>
 </div>
+
+
+## Anwendung
+
+<div markdown="1" class="projekt">
+#### Einparkhilfe für ein Auto
+
+Baue eine Einparkhilfe für ein Auto, die umso schneller piepst, je näher man dem Hindernis kommt. Ab einer Entfernung von 30 cm soll der Ton durchgängig ertönen.
+</div>
+
+! **Recherche: Wie wird Ultraschall erzeugt und gemessen?**
+! Die Erzeugung des Ultraschalls beruht wie beim Piezo-Summer auf dem inversen piezo-elektrischen Effekt (vgl. [Piezo-Summer](/arduinoskript/algorithmische-grundlagen/bausteine-von-algorithmen/einfache-entscheidungen-programmieren#piezo-summer)); die Messung des Ultraschalls beruht auf dem piezo-elektrischen Effekt. Recherchiere im Internet die Hintergründe dieser Effekte und fasse sie zusammen.
