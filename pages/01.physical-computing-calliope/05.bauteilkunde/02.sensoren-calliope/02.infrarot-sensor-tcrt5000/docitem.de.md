@@ -3,7 +3,8 @@ title: 'Infrarot-Sensor TCRT5000'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: infrarot-sensoren.jpg
+media_order: 'infrarot-sensoren.jpg,schaltskizze-calliope-infrarot-tcrt5000.png'
+featured_image: infrarot-sensoren.jpg
 ---
 
 Der Infrarot-Sensor TCRT5000 sendet Infrarotstrahlen aus und registriert die reflektierten Infrarotstrahlen aus der Umgebung. Dadurch können kurze Distanzen gemessen oder Farben erkannt werden. Zu seinen weiteren Einsatzzwecken gehört die Linienverfolgung bei Robotern und der Einsatz als Lichtschranke - so lässt sich bei Seifenspendern erkennen, ob eine Hand nah am Sensor ist und in 3D-Druckern lässt sich erkennen, ob noch Filament vorhanden ist oder nichts mehr nachkommt.
@@ -12,15 +13,21 @@ Der Infrarot-Sensor TCRT5000 sendet Infrarotstrahlen aus und registriert die ref
 
 Auf der Unterseite des Moduls sind zwei Seiten zu erkennen. Die durchsichtige/bläuliche Seite ist eine Infrarot-LED, die Licht im Infrarot-Bereich aussendet, welches für das menschliche Auge unsichtbar ist. Das Infrarot-Licht wird (abhängig von der Art und Farbe der Oberfläche) unterschiedlich gut reflektiert. Das reflektierte Infrarot-Licht trifft dann auf die dunkle Seite des Sensors. Dort befindet sich ein Phototransistor, der die Infrarotstrahlen registriert und daraus einen Strom macht. Der Strom ist umso stärker, je mehr Infrarotstrahlen auf den Phototransistor treffen. Die dunkle Kunstharzschicht dient dazu, das normale Tageslicht herauszufiltern, damit der Sensor nicht schon durch das normale Tageslicht ausgelöst wird, das ebenfalls Infrarotstrahlen enthält.
 
-Durch den Stromfluss entsteht eine Spannung, die am Arduino registriert werden kann. Dabei gibt es zwei Möglichkeiten:
+Durch den Stromfluss entsteht eine Spannung, die am Calliope registriert werden kann. Dabei gibt es zwei Möglichkeiten:
 
 - Am `A0`-Pin des Moduls kann die Spannung direkt als analoges Signal gemessen werden.
 - Am `D0`-Pin des Moduls wird ein digitales Signal ausgegeben. Ab einer bestimmten Stärke der reflektierten Strahlen ist das Signal am `D0`-Pin HIGH, sonst LOW. Die Grenze wird über das Trimmpotentiometer auf dem Modul eingestellt.
 
 In der Regel wird man nur eines dieser Signale benötigen. Im folgenden Schaltplan ist der Vollständigkeit halber trotzdem der Anschluss beider Pins gezeigt.
 
-![schaltplan-tcrt5000](schaltplan-tcrt5000.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum Anschluss des Sensors TCRT5000 am Arduino.")
+![schaltskizze-calliope-infrarot-tcrt5000](schaltskizze-calliope-infrarot-tcrt5000.png?lightbox=1024&resize=500&classes=caption "Schaltskizze zum Anschluss des Sensors TCRT5000 am Calliope.")
 
+! **Achtung:** Einige Pins auf der Pinleiste des Calliope sind doppelt belegt. So werden die im Schaltplan genutzten Pins P0 und P1 auch für die entsprechenden Ringpads (goldene Ringe) genutzt. Wenn dort also schon ein anderes Bauteil angeschlossen ist, lassen sich diese Pins nicht mehr nutzen. 
+! - Die freien Pins zur allgemeinen Verwendung sind folgende: P0, P1, P2, P3, C8, C9, C13, C14, C15. 
+! - Nicht alle davon eignen sich für das Lesen eines analogen Signals (Verbindung mit A0 des TCRT5000). Mit dem Ausgang A0 des TCRT5000 können nur folgende Pins verbunden werden: P0, P1, P2, C4, C10, C16, C18. 
+! Weitere Informationen finden sich in der [Dokumentation zu den Pins des Calliope](https://docs.calliope.cc/tech/hardware/pins/).
+
+Zum Auslesen des TCRT5000
 Der TCRT5000 ist im Open Roberta Lab nicht vorkonfiguriert. Daher muss man ihn -je nach gewähltem Anschluss- als digitalen oder analogen Sensor konfigurieren. Natürlich kann man auch beides gleichzeitig nutzen, wenn nötig.
 
 <div class="flex-box">
