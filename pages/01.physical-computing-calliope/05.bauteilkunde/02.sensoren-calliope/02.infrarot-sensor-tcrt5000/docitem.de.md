@@ -3,7 +3,7 @@ title: 'Infrarot-Sensor TCRT5000'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'infrarot-sensoren.jpg,schaltskizze-calliope-infrarot-tcrt5000.png'
+media_order: 'infrarot-sensoren.jpg,schaltskizze-calliope-infrarot-tcrt5000.png,tcrt5000-auslesen-analog-makecode.png,tcrt5000-digital-auslesen-makecode.png,makecode-serial-monitor-tcrt5000.png,tcrt5000-auslesen-analog-makecode-anzeige.png'
 featured_image: infrarot-sensoren.jpg
 ---
 
@@ -28,17 +28,25 @@ In der Regel wird man nur eines dieser Signale benötigen. Im folgenden Schaltpl
 ! 
 ! Weitere Informationen finden sich in der [Dokumentation zu den Pins des Calliope](https://docs.calliope.cc/tech/hardware/pins/).
 
-Zum Auslesen des TCRT5000
-Der TCRT5000 ist im Open Roberta Lab nicht vorkonfiguriert. Daher muss man ihn -je nach gewähltem Anschluss- als digitalen oder analogen Sensor konfigurieren. Natürlich kann man auch beides gleichzeitig nutzen, wenn nötig.
+Zum Auslesen des TCRT5000 lässt man sich aus der Kategorie "Pins" die digitalen bzw. analogen Werte der entsprechenden Pins anzeigen.
 
 <div class="flex-box">
 <div markdown="1">
-![konfiguration-tcrt5000-digital](konfiguration-tcrt5000-digital.png?resize=300 "konfiguration-tcrt5000-digital")
-![tcrt5000-digital-auslesen](tcrt5000-digital-auslesen.png?resize=500&classes=caption "Konfiguration des TCRT5000 als digitaler Sensor an Pin 3 und Abfrage des Status im Programm.")
+![tcrt5000-digital-auslesen-makecode](tcrt5000-digital-auslesen-makecode.png?resize=500&classes=caption "Auslesen des digitalen Wertes des TCRT5000.")
 </div>
 <div markdown="1">
-![konfiguration-tcrt5000-analog](konfiguration-tcrt5000-analog.png?resize=300 "konfiguration-tcrt5000-analog")
-![tcrt5000-auslesen-analog](tcrt5000-auslesen-analog.png?resize=500&classes=caption "Konfiguration des TCRT5000 als analoger Sensor an A0 und Auslesen des Wertes im Programm.")
+![tcrt5000-auslesen-analog-makecode-anzeige](tcrt5000-auslesen-analog-makecode-anzeige.png?resize=500&classes=caption "Auslesen des analogen Wertes des TCRT5000.")
+</div>
+</div>
+
+Für das Auslesen des analogen Wertes bietet es sich an, den analogen Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen und dort visualisieren zu lassen. Der Befehl dazu findet sich in der Kategorie "Seriell". Nach dem Übertragen des Programms kann man im linken Fensterbereich auf "Daten anzeigen Calliope mini" auswählen und bekommt die unten abgebildete Ansicht.
+
+<div class="flex-box">
+<div markdown="1">
+![tcrt5000-auslesen-analog-makecode](tcrt5000-auslesen-analog-makecode.png?resize=500&classes=caption "Senden des analogen Wertes über die serielle Schnittstelle (USB-Kabel) an den Computer.")
+</div>
+<div markdown="1">
+![makecode-serial-monitor-tcrt5000](makecode-serial-monitor-tcrt5000.png?resize=500&classes=caption "Visualisierung der erhaltenen Werte in Makecode.")
 </div>
 </div>
 
