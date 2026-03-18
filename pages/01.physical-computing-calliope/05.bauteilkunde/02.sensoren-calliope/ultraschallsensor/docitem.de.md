@@ -5,6 +5,15 @@ image_width: 300
 image_height: 400
 media_order: 'ultraschall-sensor-prinzip.png,ultraschallsensor-am-auto.jpg,ultraschallsensor-grove.jpg,ultraschallsensor-jacdac.jpg,makecode-erweiterung-grove.png,makecode-erweiterung-jacdac.png,makecode-jacdac-ultraschall-test.png,schaltskizze-ultraschall-grove.png'
 featured_image: ultraschall-sensor-prinzip.png
+published: true
+taxonomy:
+    Inhalte:
+        - Ultraschallsensor
+        - Transducer
+        - Receiver
+        - 'Entfernung messen'
+    Niveau:
+        - Basis
 ---
 
 <div markdown="1" class="clearfix">
