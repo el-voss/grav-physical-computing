@@ -25,6 +25,7 @@ In der Regel wird man nur eines dieser Signale benötigen. Im folgenden Schaltpl
 ! **Achtung:** Einige Pins auf der Pinleiste des Calliope sind doppelt belegt. So werden die im Schaltplan genutzten Pins P0 und P1 auch für die entsprechenden Ringpads (goldene Ringe) genutzt. Wenn dort also schon ein anderes Bauteil angeschlossen ist, lassen sich diese Pins nicht mehr nutzen. 
 ! - Die freien Pins zur allgemeinen Verwendung sind folgende: P0, P1, P2, P3, C8, C9, C13, C14, C15. 
 ! - Nicht alle davon eignen sich für das Lesen eines analogen Signals (Verbindung mit A0 des TCRT5000). Mit dem Ausgang A0 des TCRT5000 können nur folgende Pins verbunden werden: P0, P1, P2, C4, C10, C16, C18. 
+! 
 ! Weitere Informationen finden sich in der [Dokumentation zu den Pins des Calliope](https://docs.calliope.cc/tech/hardware/pins/).
 
 Zum Auslesen des TCRT5000
