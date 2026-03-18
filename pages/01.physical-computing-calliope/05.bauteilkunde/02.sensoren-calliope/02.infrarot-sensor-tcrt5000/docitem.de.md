@@ -46,7 +46,7 @@ Für das Auslesen des analogen Wertes bietet es sich an, den analogen Wert über
 ![tcrt5000-auslesen-analog-makecode](tcrt5000-auslesen-analog-makecode.png?resize=500&classes=caption "Senden des analogen Wertes über die serielle Schnittstelle (USB-Kabel) an den Computer.")
 </div>
 <div markdown="1">
-![makecode-serial-monitor-tcrt5000](makecode-serial-monitor-tcrt5000.png?resize=500&classes=caption "Visualisierung der erhaltenen Werte in Makecode.")
+![makecode-serial-monitor-tcrt5000](makecode-serial-monitor-tcrt5000.png?lightbox=1024&resize=500&classes=caption "Visualisierung der erhaltenen Werte in Makecode.")
 </div>
 </div>
 
