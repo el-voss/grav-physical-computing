@@ -3,7 +3,7 @@ title: Linienverfolgung
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'bastelbot-kantenverfolgung-geradeaus.png,bastelbot-kantenverfolgung-schwarz.png,bastelbot-kantenverfolgung-weiss.png,bastelbot-linienverfolgung-geradeaus.png,bastelbot-linienverfolgung-links-schwarz.png,bastelbot-linienverfolgung-rechts-schwarz.png,bastelbot-mit-infrarotsensoren.png'
+media_order: 'bastelbot-kantenverfolgung-geradeaus.png,bastelbot-kantenverfolgung-schwarz.png,bastelbot-kantenverfolgung-weiss.png,bastelbot-linienverfolgung-geradeaus.png,bastelbot-linienverfolgung-links-schwarz.png,bastelbot-mit-infrarotsensoren.png,bastelbot-linienverfolgung-rechts-schwarz.png'
 featured_image: bastelbot-mit-infrarotsensoren.png
 taxonomy:
     Mindestvoraussetzungen:
