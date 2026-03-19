@@ -4,6 +4,7 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 media_order: bastelbot-mit-ultraschallsensor.png
+featured_image: bastelbot-mit-ultraschallsensor.png
 ---
 
 **Ziel:** Der Bastelbot soll um einen Ultraschallsensor erweitert werden, sodass er Hindernisse erkennen und umfahren kann.
