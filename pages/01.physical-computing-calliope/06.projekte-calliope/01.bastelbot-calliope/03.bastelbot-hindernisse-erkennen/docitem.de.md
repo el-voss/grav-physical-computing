@@ -3,6 +3,7 @@ title: 'Hindernisse erkennen'
 show_pageimage: true
 image_width: 300
 image_height: 400
+media_order: bastelbot-mit-ultraschallsensor.png
 ---
 
 **Ziel:** Der Bastelbot soll um einen Ultraschallsensor erweitert werden, sodass er Hindernisse erkennen und umfahren kann.
@@ -14,6 +15,8 @@ image_height: 400
 
 1. Recherchiere die [Funktionsweise und Verkabelung des Ultraschallsensors](/physical-computing-calliope/bauteilkunde/sensoren-calliope/ultraschallsensor).
 2. Bringe den Ultraschallsensor so am Roboter an, dass der Ultraschallsensor nach vorne "guckt", und führe die Verkabelung durch.
+
+![bastelbot-mit-ultraschallsensor](bastelbot-mit-ultraschallsensor.png?lightbox=1024&resize=500&classes=caption "Bringe den Ultraschallsensor vorne am Bastelbot an.")
 </div>
 
 
