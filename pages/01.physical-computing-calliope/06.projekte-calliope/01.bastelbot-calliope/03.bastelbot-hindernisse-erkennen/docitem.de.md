@@ -5,6 +5,15 @@ image_width: 300
 image_height: 400
 media_order: bastelbot-mit-ultraschallsensor.png
 featured_image: bastelbot-mit-ultraschallsensor.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - 'Verarbeitung von Umwelteingaben'
+        - Variablen
+    Inhalte:
+        - Hinderniserkennung
+        - Einparkhilfe
+    Niveau:
+        - Fortgeschritten
 ---
 
 **Ziel:** Der Bastelbot soll um einen Ultraschallsensor erweitert werden, sodass er Hindernisse erkennen und umfahren kann.
