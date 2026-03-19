@@ -27,7 +27,7 @@ taxonomy:
 <div markdown="1" class="aufgabe">
 #### Funktionstest
 
-Recherchiere die Funktionsweise der [Infrarot-Sensoren TCRT5000](/physical-computing-calliope/bauteilkunde/sensoren-calliope/infrarot-sensor-tcrt5000) und lasse ihre **analogen** Werte über die serielle Schnittstelle in Makecode ausgeben. Die digitalen Werte werden nicht benötigt, daher ist das zugehörige Kabel ebenfalls nicht nötig.
+Recherchiere die Funktionsweise der [Infrarot-Sensoren TCRT5000](/physical-computing-calliope/bauteilkunde/sensoren-calliope/infrarot-sensor-tcrt5000) und lasse ihre **analogen** Werte über die serielle Schnittstelle in Makecode ausgeben, während du den Sensor über weiße und schwarze Flächen hälst. Die digitalen Werte werden nicht benötigt, daher ist das zugehörige Kabel ebenfalls nicht nötig.
 
 </div>
 
