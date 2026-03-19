@@ -5,7 +5,7 @@ image_width: 300
 image_height: 400
 ---
 
-**Ziel:** Der Düvelbot soll um zwei Infrarot-Sensoren erweitert werden, sodass er einer Linie folgen kann, um Parcours zu absolvieren.
+**Ziel:** Der Bastelbot soll um zwei Infrarot-Sensoren erweitert werden, sodass er einer Linie folgen kann, um Parcours zu absolvieren.
 
 ### Montage und Verkabelung
 
