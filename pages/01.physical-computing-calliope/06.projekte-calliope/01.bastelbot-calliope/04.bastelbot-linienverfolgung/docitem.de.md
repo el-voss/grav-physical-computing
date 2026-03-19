@@ -4,6 +4,16 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 media_order: 'bastelbot-kantenverfolgung-geradeaus.png,bastelbot-kantenverfolgung-schwarz.png,bastelbot-kantenverfolgung-weiss.png,bastelbot-linienverfolgung-geradeaus.png,bastelbot-linienverfolgung-links-schwarz.png,bastelbot-linienverfolgung-rechts-schwarz.png,bastelbot-mit-infrarotsensoren.png'
+featured_image: bastelbot-mit-infrarotsensoren.png
+taxonomy:
+    Mindestvoraussetzungen:
+        - Variablen
+        - 'Entscheidungen mit mehreren Kriterien'
+    Inhalte:
+        - Kantenverfolgung
+        - Linienverfolgung
+    Niveau:
+        - Fortgeschritten
 ---
 
 **Ziel:** Der Bastelbot soll um zwei Infrarot-Sensoren erweitert werden, sodass er einer Linie folgen kann, um Parcours zu absolvieren.
