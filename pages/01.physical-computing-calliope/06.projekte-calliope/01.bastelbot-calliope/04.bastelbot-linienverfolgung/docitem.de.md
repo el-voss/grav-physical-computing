@@ -34,7 +34,7 @@ Recherchiere die Funktionsweise der [Infrarot-Sensoren TCRT5000](/physical-compu
 <div markdown="1" class="aufgabe">
 #### Kantenverfolgung
 
-Für diese Aufgabe liegt ein Parcour mit einer schwarzen Linie bereit. Das Ziel ist es, dass der Roboter dieser schwarzen Linie bzw. ihrer Kante folgt und möglichst schnell den kompletten Parcour absolviert, ohne die Linie bzw. Kante zu verlieren. Dafür wird zunächst nur ein Sensor genutzt.
+Für diese Aufgabe liegt ein Parcour mit einer schwarzen Linie bereit. Das Ziel ist es, dass der Roboter dieser schwarzen Linie bzw. ihrer Kante folgt und möglichst schnell den kompletten Parcour absolviert, ohne die Linie bzw. Kante zu verlieren. Dafür wird **zunächst nur ein Sensor** genutzt.
 
 1. Notiere dir, welchen Analogwert der linke IR-Sensor anzeigt, wenn er auf schwarz und wenn er auf weiß steht.
 2. Programmiere den Roboter so, dass er der Linie folgt. Beachte dabei die unten abgebildeten Fälle.
@@ -50,7 +50,7 @@ Für diese Aufgabe liegt ein Parcour mit einer schwarzen Linie bereit. Das Ziel 
 <div markdown="1" class="aufgabe">
 #### Linienverfolgung
 
-Für diese Aufgabe liegt ein Parcour mit einer schwarzen Linie bereit. Das Ziel ist es, dass der Roboter dieser schwarzen Linie folgt und möglichst schnell den kompletten Parcour absolviert, ohne die Linie zu verlieren. Dafür werden nun beide Sensoren genutzt.
+Für diese Aufgabe liegt ein Parcour mit einer schwarzen Linie bereit. Das Ziel ist es, dass der Roboter dieser schwarzen Linie folgt und möglichst schnell den kompletten Parcour absolviert, ohne die Linie zu verlieren. Dafür werden **nun beide Sensoren** genutzt.
 
 1. Notiere dir, welchen Analogwert der linke IR-Sensor und welchen Analogwert der rechte IR-Sensor anzeigt, wenn er auf schwarz und wenn er auf weiß steht. Es können kleine Unterschiede auftreten!
 2. Programmiere den Roboter so, dass er der Linie folgt. Beachte dabei die unten abgebildeten Fälle.
