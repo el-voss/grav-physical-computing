@@ -3,13 +3,14 @@ title: Linienverfolgung
 show_pageimage: true
 image_width: 300
 image_height: 400
+media_order: 'bastelbot-kantenverfolgung-geradeaus.png,bastelbot-kantenverfolgung-schwarz.png,bastelbot-kantenverfolgung-weiss.png,bastelbot-linienverfolgung-geradeaus.png,bastelbot-linienverfolgung-links-schwarz.png,bastelbot-linienverfolgung-rechts-schwarz.png,bastelbot-mit-infrarotsensoren.png'
 ---
 
 **Ziel:** Der Bastelbot soll um zwei Infrarot-Sensoren erweitert werden, sodass er einer Linie folgen kann, um Parcours zu absolvieren.
 
 ### Montage und Verkabelung
 
-
+![bastelbot-mit-infrarotsensoren](bastelbot-mit-infrarotsensoren.png?lightbox=1024&resize=500&classes=caption "Die Infrarotsensoren lassen sich mit Schrauben auf der Lochplatte befestigen und mit Karton verkleiden.")
 
 ### Programmierung
 
@@ -29,9 +30,9 @@ Für diese Aufgabe liegt ein Parcour mit einer schwarzen Linie bereit. Das Ziel 
 2. Programmiere den Roboter so, dass er der Linie folgt. Beachte dabei die unten abgebildeten Fälle.
 
 <div class="flex-box" style="align-items: center;">
-<div markdown="1"> ![kantenverfolgung-geradeaus](kantenverfolgung-geradeaus.png?lightbox=1024&resize=400 "kantenverfolgung-geradeaus") </div>
-<div markdown="1"> ![kantenverfolgung-schwarz](kantenverfolgung-schwarz.png?lightbox=1024&resize=400 "kantenverfolgung-schwarz") </div>
-<div markdown="1"> ![kantenverfolgung-weiss](kantenverfolgung-weiss.png?lightbox=1024&resize=400 "kantenverfolgung-weiss") </div>
+<div markdown="1"> ![bastelbot-kantenverfolgung-geradeaus](bastelbot-kantenverfolgung-geradeaus.png?lightbox=1024&resize=400 "bastelbot-kantenverfolgung-geradeaus") </div>
+<div markdown="1"> ![bastelbot-kantenverfolgung-schwarz](bastelbot-kantenverfolgung-schwarz.png?lightbox=1024&resize=400 "bastelbot-kantenverfolgung-schwarz")</div>
+<div markdown="1"> ![bastelbot-kantenverfolgung-weiss](bastelbot-kantenverfolgung-weiss.png?lightbox=1024&resize=400 "bastelbot-kantenverfolgung-weiss") </div>
 </div>
 
 </div>
@@ -45,9 +46,9 @@ Für diese Aufgabe liegt ein Parcour mit einer schwarzen Linie bereit. Das Ziel 
 2. Programmiere den Roboter so, dass er der Linie folgt. Beachte dabei die unten abgebildeten Fälle.
 
 <div class="flex-box" style="align-items: center;">
-<div markdown="1"> ![linienverfolgung-geradeaus](linienverfolgung-geradeaus.png?lightbox=1024&resize=400 "linienverfolgung-geradeaus") </div>
-<div markdown="1"> ![linienverfolgung-links-schwarz](linienverfolgung-links-schwarz.png?lightbox=1024&resize=400 "linienverfolgung-links-schwarz") </div>
-<div markdown="1"> ![linienverfolgung-rechts-schwarz](linienverfolgung-rechts-schwarz.png?lightbox=1024&resize=400 "linienverfolgung-rechts-schwarz") </div>
+<div markdown="1"> ![bastelbot-linienverfolgung-geradeaus](bastelbot-linienverfolgung-geradeaus.png?lightbox=1024&resize=400 "bastelbot-linienverfolgung-geradeaus")</div>
+<div markdown="1"> ![bastelbot-linienverfolgung-links-schwarz](bastelbot-linienverfolgung-links-schwarz.png?lightbox=1024&resize=400 "bastelbot-linienverfolgung-links-schwarz") </div>
+<div markdown="1"> ![bastelbot-linienverfolgung-rechts-schwarz](bastelbot-linienverfolgung-rechts-schwarz.png?lightbox=1024&resize=400 "bastelbot-linienverfolgung-rechts-schwarz")</div>
 </div>
 
 </div>
