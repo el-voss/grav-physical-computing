@@ -54,6 +54,6 @@ Die Programme werden handlicher und übersichtlicher, wenn die einzelnen Fahrfun
 <div markdown="1" class="flexible">![funktion-motor-leistung](funktion-motor-leistung.png?lightbox=500&resize=500 "funktion-motor-leistung")</div>
 <div markdown="1" class="flexible">![funktion-drehung-rechts](funktion-drehung-rechts.png?lightbox=500&resize=400 "funktion-drehung-rechts")</div>
 <div markdown="1" class="flexible">![funktion-drehung-links](funktion-drehung-links.png?lightbox=500&resize=400 "funktion-drehung-links")</div>
-<div markdown="1" class="flexible">![funktion-fahre](funktion-fahre.png?lightbox=500&resize=400 "funktion-fahre")</div>
+<div markdown="1" class="flexible">![funktion-fahre](funktion-fahre.png?lightbox=500&resize=500 "funktion-fahre")</div>
 </div>
 </div>
