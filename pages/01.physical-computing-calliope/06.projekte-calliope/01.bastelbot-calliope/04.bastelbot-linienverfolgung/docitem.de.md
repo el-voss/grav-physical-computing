@@ -3,7 +3,7 @@ title: Linienverfolgung
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'bastelbot-kantenverfolgung-geradeaus.png,bastelbot-kantenverfolgung-schwarz.png,bastelbot-kantenverfolgung-weiss.png,bastelbot-linienverfolgung-geradeaus.png,bastelbot-linienverfolgung-links-schwarz.png,bastelbot-mit-infrarotsensoren.png,bastelbot-linienverfolgung-rechts-schwarz.png'
+media_order: 'bastelbot-kantenverfolgung-geradeaus.png,bastelbot-kantenverfolgung-schwarz.png,bastelbot-kantenverfolgung-weiss.png,bastelbot-linienverfolgung-geradeaus.png,bastelbot-linienverfolgung-links-schwarz.png,bastelbot-mit-infrarotsensoren.png,bastelbot-linienverfolgung-rechts-schwarz.png,calliope-mit-zwei-tcrt5000.png'
 featured_image: bastelbot-mit-infrarotsensoren.png
 taxonomy:
     Mindestvoraussetzungen:
@@ -20,7 +20,15 @@ taxonomy:
 
 ### Montage und Verkabelung
 
+Die Infrarot-Sensoren TCRT5000 werden vorne am Bastelbot angebracht, sodass die beiden Dioden nach unten zum Boden schauen. Die Module können mit einer Schraube auf der Lochplatte befestigt werden.
+
 ![bastelbot-mit-infrarotsensoren](bastelbot-mit-infrarotsensoren.png?lightbox=1024&resize=500&classes=caption "Die Infrarotsensoren lassen sich mit Schrauben auf der Lochplatte befestigen und mit Karton verkleiden.")
+
+Bei der Verkabelung tritt das Problem auf, dass beide Module mit VCC und GND verbunden werden müssen. Dazu kann ein kleines Steckbrett verwendet werden. Innerhalb einer (halben) Reihe sind alle Löcher miteinander verbunden, sodass die beiden Kabel von den zwei Modulen hier zusammengeführt werden können.
+
+Für die Pins, die das analoge Signal empfangen werden im folgenden Schaltplan P0 und P1 gewählt. Falls diese bereits anderweitig besetzt sind, können auch folgende Pins mit dem Pin A0 der Infrarotsensoren verbunden werden: P0, P1, P2, C4, C10, C16, C18. **Tipp:** Notiere dir, welche Seite (Infrarot_links, Infrarot_rechts) mit welchem Pin auf dem Calliope verbunden ist!
+
+![calliope-mit-zwei-tcrt5000](calliope-mit-zwei-tcrt5000.png?lightbox=1024&resize=500&classes=caption "Verkabelung von zwei TCRT5000 mit dem Calliope. Wenn man zwei TCRT5000 an den Calliope anschließen will, benötigt man ein kleines Steckbrett, um die beiden VCC- bzw. GND-Kabel zusammenzuführen.")
 
 ### Programmierung
 
