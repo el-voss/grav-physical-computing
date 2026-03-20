@@ -3,7 +3,7 @@ title: Linienverfolgung
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'bastelbot-kantenverfolgung-geradeaus.png,bastelbot-kantenverfolgung-schwarz.png,bastelbot-kantenverfolgung-weiss.png,bastelbot-linienverfolgung-geradeaus.png,bastelbot-linienverfolgung-links-schwarz.png,bastelbot-mit-infrarotsensoren.png,bastelbot-linienverfolgung-rechts-schwarz.png,calliope-mit-zwei-tcrt5000.png'
+media_order: 'bastelbot-kantenverfolgung-geradeaus.png,bastelbot-kantenverfolgung-schwarz.png,bastelbot-kantenverfolgung-weiss.png,bastelbot-linienverfolgung-geradeaus.png,bastelbot-linienverfolgung-links-schwarz.png,bastelbot-mit-infrarotsensoren.png,bastelbot-linienverfolgung-rechts-schwarz.png,calliope-mit-zwei-tcrt5000.png,infrarot-sensoren.jpg,kabel.jpg,steckbrett-klein.jpg'
 featured_image: bastelbot-mit-infrarotsensoren.png
 taxonomy:
     Mindestvoraussetzungen:
@@ -17,6 +17,17 @@ taxonomy:
 ---
 
 **Ziel:** Der Bastelbot soll um zwei Infrarot-Sensoren erweitert werden, sodass er einer Linie folgen kann, um Parcours zu absolvieren.
+
+### Zusätzliches Material
+
+<div markdown="1" style="overflow:auto;">
+| Bild | Bauteil | Anzahl | Hinweise |
+|-------|----------|-----------|---------------------------------|
+| ![infrarot-sensoren](infrarot-sensoren.jpg?lightbox=1024&resize=200 "infrarot-sensoren") | Infrarot-Sensoren TCRT5000 | 2 | |
+| ![kabel](kabel.jpg?lightbox=1024&resize=200 "kabel") | Jumper-Kabel male-female und male-male | 6 / 2 | |
+| ![steckbrett-klein](steckbrett-klein.jpg?lightbox=1024&resize=200 "steckbrett-klein") | Kleines Steckbrett | 1 | auch andere Formen möglich |
+| | ggf. Karton und Werkzeug | | |
+</div>
 
 ### Montage und Verkabelung
 
