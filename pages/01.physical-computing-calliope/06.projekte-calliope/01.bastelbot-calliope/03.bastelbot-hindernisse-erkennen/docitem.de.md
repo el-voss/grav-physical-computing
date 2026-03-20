@@ -3,7 +3,7 @@ title: 'Hindernisse erkennen'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: bastelbot-mit-ultraschallsensor.png
+media_order: 'bastelbot-mit-ultraschallsensor.png,ultraschallsensor-grove.jpg'
 featured_image: bastelbot-mit-ultraschallsensor.png
 taxonomy:
     Mindestvoraussetzungen:
@@ -17,6 +17,16 @@ taxonomy:
 ---
 
 **Ziel:** Der Bastelbot soll um einen Ultraschallsensor erweitert werden, sodass er Hindernisse erkennen und umfahren kann.
+
+### Zusätzliches Material
+
+<div markdown="1" style="overflow:auto;">
+| Bild | Bauteil | Anzahl | Hinweise |
+|-------|----------|-----------|---------------------------------|
+| ![ultraschallsensor-grove](ultraschallsensor-grove.jpg?lightbox=1024&resize=200 "ultraschallsensor-grove") | Ultraschallsensor mit Kabel | 1 | unterschiedliche Anschlussarten möglich |
+</div>
+
+Für eine schöne Verkleidung werden ggf. Karton, Schrauben und entsprechende Werkzeuge benötigt.
 
 ### Montage und Anschluss
 
