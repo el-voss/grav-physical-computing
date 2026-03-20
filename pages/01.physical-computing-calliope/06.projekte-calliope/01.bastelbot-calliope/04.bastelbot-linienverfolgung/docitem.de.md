@@ -27,6 +27,7 @@ Die Infrarot-Sensoren TCRT5000 werden vorne am Bastelbot angebracht, sodass die 
 Bei der Verkabelung tritt das Problem auf, dass beide Module mit VCC und GND verbunden werden müssen. Dazu kann ein kleines Steckbrett verwendet werden. Innerhalb einer (halben) Reihe sind alle Löcher miteinander verbunden, sodass die beiden Kabel von den zwei Modulen hier zusammengeführt werden können.
 
 Für die Pins, die das analoge Signal empfangen werden im folgenden Schaltplan P0 und P1 gewählt. Falls diese bereits anderweitig besetzt sind, können auch folgende Pins mit dem Pin A0 der Infrarotsensoren verbunden werden: P0, P1, P2, C4, C10, C16, C18. **Tipp:** Notiere dir, welche Seite (Infrarot_links, Infrarot_rechts) mit welchem Pin auf dem Calliope verbunden ist!
+Da das digitale Signal aus D0 an den Infrarotsensoren nicht verwendet wird, muss dieser Pin nicht verkabelt werden.
 
 ![calliope-mit-zwei-tcrt5000](calliope-mit-zwei-tcrt5000.png?lightbox=1024&resize=500&classes=caption "Verkabelung von zwei TCRT5000 mit dem Calliope. Wenn man zwei TCRT5000 an den Calliope anschließen will, benötigt man ein kleines Steckbrett, um die beiden VCC- bzw. GND-Kabel zusammenzuführen.")
 
@@ -35,7 +36,7 @@ Für die Pins, die das analoge Signal empfangen werden im folgenden Schaltplan P
 <div markdown="1" class="aufgabe">
 #### Funktionstest
 
-Recherchiere die Funktionsweise der [Infrarot-Sensoren TCRT5000](/physical-computing-calliope/bauteilkunde/sensoren-calliope/infrarot-sensor-tcrt5000) und lasse ihre **analogen** Werte über die serielle Schnittstelle in Makecode ausgeben, während du den Sensor über weiße und schwarze Flächen hälst. Die digitalen Werte werden nicht benötigt, daher ist das zugehörige Kabel ebenfalls nicht nötig.
+Recherchiere die Funktionsweise der [Infrarot-Sensoren TCRT5000](/physical-computing-calliope/bauteilkunde/sensoren-calliope/infrarot-sensor-tcrt5000) und lasse ihre **analogen** Werte über die serielle Schnittstelle in Makecode ausgeben, während du den Sensor über weiße und schwarze Flächen hälst.
 
 </div>
 
