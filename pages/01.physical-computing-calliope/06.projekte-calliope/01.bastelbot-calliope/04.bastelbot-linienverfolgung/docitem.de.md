@@ -26,8 +26,9 @@ taxonomy:
 | ![infrarot-sensoren](infrarot-sensoren.jpg?lightbox=1024&resize=200 "infrarot-sensoren") | Infrarot-Sensoren TCRT5000 | 2 | |
 | ![kabel](kabel.jpg?lightbox=1024&resize=200 "kabel") | Jumper-Kabel male-female und male-male | 6 / 2 | |
 | ![steckbrett-klein](steckbrett-klein.jpg?lightbox=1024&resize=200 "steckbrett-klein") | Kleines Steckbrett | 1 | auch andere Formen möglich |
-| | ggf. Karton und Werkzeug | | |
 </div>
+
+Für eine schöne Verkleidung werden ggf. Karton, Schrauben und entsprechende Werkzeuge benötigt.
 
 ### Montage und Verkabelung
 
