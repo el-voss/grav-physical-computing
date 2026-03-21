@@ -3,7 +3,7 @@ title: Ultraschallsensor
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'ultraschall-sensor-prinzip.png,ultraschallsensor-am-auto.jpg,ultraschallsensor-grove.jpg,ultraschallsensor-jacdac.jpg,makecode-erweiterung-grove.png,makecode-erweiterung-jacdac.png,schaltskizze-ultraschall-grove.png,makecode-grove-ultraschall-test.png,makecode-jacdac-ultraschall-test.png'
+media_order: 'ultraschall-sensor-prinzip.png,ultraschallsensor-am-auto.jpg,ultraschallsensor-grove.jpg,ultraschallsensor-jacdac.jpg,makecode-erweiterung-grove.png,makecode-erweiterung-jacdac.png,schaltskizze-ultraschall-grove.png,makecode-grove-ultraschall-test.png,makecode-jacdac-ultraschall-test.png,makecode-pulseIn-ultraschall-test.png'
 featured_image: ultraschall-sensor-prinzip.png
 published: true
 taxonomy:
@@ -27,7 +27,7 @@ Die wichtigsten Bestandteile des Ultraschallsensors sind der “Transducer” (*
 
 Ultraschallsensoren gibt es in verschiedenen Varianten und mit verschiedenen Verbindungsmöglichkeiten.
 
-## Anschluss mit dem Grove-Connector
+### Anschluss mit dem Grove-Connector
 
 <div markdown="1" class="clearfix">
 ![ultraschallsensor-grove](ultraschallsensor-grove.jpg?lightbox=512&resize=250&classes=caption,figure-right "Ultraschallsensor mit Grove-Anschluss.")
@@ -46,7 +46,7 @@ Zum Programmieren mit Makecode muss die Erweiterung "Grove" geladen werden. Dar�
 </div>
 
 
-## Anschluss mit Jacdac
+### Anschluss mit Jacdac
 
 <div markdown="1" class="clearfix">
 ![ultraschallsensor-jacdac](ultraschallsensor-jacdac.jpg?lightbox=512&resize=250&classes=caption,figure-right "Ultraschallsensor mit Jacdac-Anschluss.")
@@ -65,8 +65,28 @@ Der Block ```<Messwert> Entfernung (m)``` stellt vier mögliche Messwerte in Met
 <div markdown="1" class="flexible">![makecode-jacdac-ultraschall-test](makecode-jacdac-ultraschall-test.png?resize=400 "makecode-jacdac-ultraschall-test")</div>
 </div>
 
+### Anschluss mit Jumper-Kabeln
 
-## Anwendung
+!!! **Achtung:** Der HC-SR04 funktioniert nur mit dem Calliope, wenn er sich mit 3,3V betreiben lässt! Die meisten Ultraschallsensoren, die man findet, funktionieren allerdings nur mit 5V, daher muss man genau hinschauen.
+
+Der Ultraschallsensor HC-SR04 ist für wenig Geld zu haben und daher sehr beliebt. Die Verkabelung erfolgt hier einzeln mit sogenannten Jumper-Kabeln. Sie ist dem folgenden Schaltplan zu entnehmen.
+
+
+
+Zur Bestimmung des Abstands muss man auf das Funktionsprinzip des Ultraschallsensors zurückgreifen, das oben beschrieben wurde. Mit dem folgenden Programm wird die Entfernung ermittelt und auf dem Display des Calliope ausgegeben.
+
+![makecode-pulseIn-ultraschall-test](makecode-pulseIn-ultraschall-test.png?lightbox=1024&resize=500&classes=caption "Programm zur Ermittlung des Abstands mit dem HC-SR04 (Erklärung im Text).")
+
+- Zuächst wird der Pin C9 und damit der Trigger-Pin des Ultraschallsensors für 5ms auf 0 gesetzt, sodass kein Strom fließt. Dies dient dazu, den Startzeitpunkt des folgenden Signals festzulegen.
+- Als Nächstes wird der Pin C9 und damit der Trigger-Pin des Ultraschallsensors für 30ms auf 1 gesetzt. Dadurch wird ein Ultraschall-Signal ausgesendet.
+- Im Folgenden werden sowohl C9 als auch C8, also Trigger und Echo am Ultraschallsensor, auf 0 gesetzt. Dadurch wird das Ultraschallsignal beendet und der Echo-Pin auf das Signal vorbereitet.
+- Mit dem Befehl ```Impuls in Mikrosekunden an Pin C8 mit hoch``` wird die Zeit in Mikrosekunden ermittelt, die das Ultraschallsignal braucht, um nach dem Aussenden wieder zurück zum Ultraschallsensor zu gelangen. Dies wird in der Variable ```zeit``` gespeichert.
+- Die gemessene Zeit muss nun durch 2 geteilt werden, weil die gesuchte Strecke zwei Mal vom Ultraschall durchlaufen wurde (Hin- und Rückweg). Das Ergebnis wird mit der Geschwindigkeit des Ultraschalls in Zentimeter pro Mikrosekunde multipliziert.
+
+Für die Verwendung in größeren Zusammenhängen ist es sinnvoll, diese Abfolge in eine Funktion auszulagern, die die Entfernung zurückgibt.
+
+
+### Anwendung
 
 <div markdown="1" class="projekt">
 #### Einparkhilfe für ein Auto
