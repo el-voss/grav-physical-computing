@@ -3,7 +3,7 @@ title: Ultraschallsensor
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'ultraschall-sensor-prinzip.png,ultraschallsensor-am-auto.jpg,ultraschallsensor-grove.jpg,ultraschallsensor-jacdac.jpg,makecode-erweiterung-grove.png,makecode-erweiterung-jacdac.png,schaltskizze-ultraschall-grove.png,makecode-grove-ultraschall-test.png,makecode-jacdac-ultraschall-test.png,makecode-pulseIn-ultraschall-test.png'
+media_order: 'ultraschall-sensor-prinzip.png,ultraschallsensor-am-auto.jpg,ultraschallsensor-grove.jpg,ultraschallsensor-jacdac.jpg,makecode-erweiterung-grove.png,makecode-erweiterung-jacdac.png,schaltskizze-ultraschall-grove.png,makecode-grove-ultraschall-test.png,makecode-jacdac-ultraschall-test.png,makecode-pulseIn-ultraschall-test.png,schaltskizze-calliope-hc-sr04.png'
 featured_image: ultraschall-sensor-prinzip.png
 published: true
 taxonomy:
@@ -71,7 +71,9 @@ Der Block ```<Messwert> Entfernung (m)``` stellt vier mögliche Messwerte in Met
 
 Der Ultraschallsensor HC-SR04 ist für wenig Geld zu haben und daher sehr beliebt. Die Verkabelung erfolgt hier einzeln mit sogenannten Jumper-Kabeln. Sie ist dem folgenden Schaltplan zu entnehmen.
 
+![schaltskizze-calliope-hc-sr04](schaltskizze-calliope-hc-sr04.png?lightbox=1024&resize=500&classes=caption "Schaltskizze zum Anschluss des HC-SR04 mit Jumper-Kabeln am Calliope.")
 
+Grundsätzlich sind die folgenden Pins sowohl für den Trigger-Pin als auch für den Echo-Pin geeignet: P0, P1, P2, P3, C8, C9, C13, C14, C15, C16, C17. Beachte, dass die Pins P0, P1, P2, P3 über die äußeren Ringpads (goldene Ringe) schon belegt sein können.
 
 Zur Bestimmung des Abstands muss man auf das Funktionsprinzip des Ultraschallsensors zurückgreifen, das oben beschrieben wurde. Mit dem folgenden Programm wird die Entfernung ermittelt und auf dem Display des Calliope ausgegeben.
 
