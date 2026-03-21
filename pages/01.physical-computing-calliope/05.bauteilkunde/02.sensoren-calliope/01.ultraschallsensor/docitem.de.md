@@ -67,7 +67,7 @@ Der Block ```<Messwert> Entfernung (m)``` stellt vier mögliche Messwerte in Met
 
 ### Anschluss mit Jumper-Kabeln
 
-!!! **Achtung:** Der HC-SR04 funktioniert nur mit dem Calliope, wenn er sich mit 3,3V betreiben lässt! Die meisten Ultraschallsensoren, die man findet, funktionieren allerdings nur mit 5V, daher muss man genau hinschauen.
+! **Achtung:** Der HC-SR04 funktioniert nur mit dem Calliope, wenn er sich mit 3,3V betreiben lässt! Die meisten Ultraschallsensoren, die man findet, funktionieren allerdings nur mit 5V, daher muss man genau hinschauen.
 
 Der Ultraschallsensor HC-SR04 ist für wenig Geld zu haben und daher sehr beliebt. Die Verkabelung erfolgt hier einzeln mit sogenannten Jumper-Kabeln. Sie ist dem folgenden Schaltplan zu entnehmen.
 
