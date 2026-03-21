@@ -3,7 +3,7 @@ title: Ultraschallsensor
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'ultraschall-sensor-prinzip.png,ultraschallsensor-am-auto.jpg,ultraschallsensor-grove.jpg,ultraschallsensor-jacdac.jpg,makecode-erweiterung-grove.png,makecode-erweiterung-jacdac.png,makecode-jacdac-ultraschall-test.png,schaltskizze-ultraschall-grove.png'
+media_order: 'ultraschall-sensor-prinzip.png,ultraschallsensor-am-auto.jpg,ultraschallsensor-grove.jpg,ultraschallsensor-jacdac.jpg,makecode-erweiterung-grove.png,makecode-erweiterung-jacdac.png,schaltskizze-ultraschall-grove.png,makecode-grove-ultraschall-test.png,makecode-jacdac-ultraschall-test.png'
 featured_image: ultraschall-sensor-prinzip.png
 published: true
 taxonomy:
