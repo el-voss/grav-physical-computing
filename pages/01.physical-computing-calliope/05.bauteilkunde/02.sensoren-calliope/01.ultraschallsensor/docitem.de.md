@@ -73,7 +73,7 @@ Der Ultraschallsensor HC-SR04 ist für wenig Geld zu haben und daher sehr belieb
 
 ![schaltskizze-calliope-hc-sr04](schaltskizze-calliope-hc-sr04.png?lightbox=1024&resize=500&classes=caption "Schaltskizze zum Anschluss des HC-SR04 mit Jumper-Kabeln am Calliope.")
 
-Grundsätzlich sind die folgenden Pins sowohl für den Trigger-Pin als auch für den Echo-Pin geeignet: P0, P1, P2, P3, C8, C9, C13, C14, C15, C16, C17. Beachte, dass die Pins P0, P1, P2, P3 über die äußeren Ringpads (goldene Ringe) schon belegt sein können.
+Grundsätzlich sind die folgenden Pins sowohl für den Trigger-Pin als auch für den Echo-Pin geeignet: P0, P1, P2, P3, C8, C9, C13, C14, C15, C16, C17. Beachte, dass die Pins P0, P1, P2, P3 über die äußeren Ringpads (goldene Ringe) schon belegt sein können. Für weitere Informationen schaue dir die [Pin-Belegung des Calliope](https://docs.calliope.cc/tech/hardware/pins/) an.
 
 Zur Bestimmung des Abstands muss man auf das Funktionsprinzip des Ultraschallsensors zurückgreifen, das oben beschrieben wurde. Mit dem folgenden Programm wird die Entfernung ermittelt und auf dem Display des Calliope ausgegeben.
 
