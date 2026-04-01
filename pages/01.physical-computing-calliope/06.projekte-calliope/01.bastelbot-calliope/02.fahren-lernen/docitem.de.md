@@ -12,6 +12,7 @@ taxonomy:
         - Hebelsteuerung
     Niveau:
         - Basis
+featured_image: bastelbot-quadrat-fahren.png
 ---
 
 Nachdem der Roboter nun über ein Fahrgestell verfügt und die Motoren verkabelt sind, wird es Zeit, ihm das Fahren beizubringen!
