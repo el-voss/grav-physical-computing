@@ -59,12 +59,12 @@ Zum Programmieren mit Makecode muss die Erweiterung "Grove" geladen werden. Dar�
 </div>
 
   </div>
-  <div class="roberta content-block" style="display: none;">
+  <div class="roberta content-block">
     <!-- Inhalt für Open Roberta Lab -->
     <h3>Open Roberta Lab</h3>
     <p>Hier steht der Inhalt für Open Roberta Lab...</p>
   </div>
-  <div class="python content-block" style="display: none;">
+  <div class="python content-block">
     <!-- Inhalt für Python -->
     Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
   </div>
@@ -107,11 +107,11 @@ Der Block ```<Messwert> Entfernung (m)``` stellt vier mögliche Messwerte in Met
 </div>
 
   </div>
-  <div class="roberta content-block" style="display: none;">
+  <div class="roberta content-block">
     <!-- Inhalt für Open Roberta Lab -->
     Die Programmierung von Jacdac-Bauteilen ist mit dem Open Roberta Lab aktuell (Stand: 01.04.26) nicht möglich.
   </div>
-  <div class="python content-block" style="display: none;">
+  <div class="python content-block">
     <!-- Inhalt für Python -->
     Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
   </div>
@@ -153,11 +153,11 @@ Zur Bestimmung des Abstands muss man auf das Funktionsprinzip des Ultraschallsen
 Für die Verwendung in größeren Zusammenhängen ist es sinnvoll, diese Abfolge in eine Funktion auszulagern, die die Entfernung zurückgibt.
 
   </div>
-  <div class="roberta content-block" style="display: none;">
+  <div class="roberta content-block">
     <!-- Inhalt für Open Roberta Lab -->
     Die Programmierung von Jacdac-Bauteilen ist mit dem Open Roberta Lab aktuell (Stand: 01.04.26) nicht möglich.
   </div>
-  <div class="python content-block" style="display: none;">
+  <div class="python content-block">
     <!-- Inhalt für Python -->
     Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
   </div>
