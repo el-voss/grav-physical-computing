@@ -41,6 +41,7 @@ Das schwarze Kabel verbindet die beiden GND-Anschlüsse (Minus-Pol), das rote Ka
 ### Programmierung
 
 <!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
 <div class="tabs">
   <button class="tab-button" data-umgebung="makecode">Makecode</button>
   <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
@@ -69,6 +70,7 @@ Zum Programmieren mit Makecode muss die Erweiterung "Grove" geladen werden. Dar�
     Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
   </div>
 </div>
+</div>
 
 
 
@@ -84,6 +86,7 @@ Der Ultraschallsensor mit Jacdac-Anschluss wird mit einem der Jacdac-Anschlüsse
 ### Programmierung
 
 <!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
 <div class="tabs">
   <button class="tab-button" data-umgebung="makecode">Makecode</button>
   <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
@@ -116,6 +119,7 @@ Der Block ```<Messwert> Entfernung (m)``` stellt vier mögliche Messwerte in Met
     Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
   </div>
 </div>
+</div>
 
 ## Anschluss mit Jumper-Kabeln
 
@@ -130,6 +134,7 @@ Grundsätzlich sind die folgenden Pins sowohl für den Trigger-Pin als auch für
 ### Programmierung
 
 <!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
 <div class="tabs">
   <button class="tab-button" data-umgebung="makecode">Makecode</button>
   <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
@@ -161,6 +166,7 @@ Für die Verwendung in größeren Zusammenhängen ist es sinnvoll, diese Abfolge
     <!-- Inhalt für Python -->
     Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
   </div>
+</div>
 </div>
 
 
