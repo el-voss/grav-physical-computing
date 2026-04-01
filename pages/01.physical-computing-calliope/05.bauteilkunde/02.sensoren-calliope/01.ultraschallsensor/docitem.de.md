@@ -27,7 +27,7 @@ Die wichtigsten Bestandteile des Ultraschallsensors sind der “Transducer” (*
 
 Ultraschallsensoren gibt es in verschiedenen Varianten und mit verschiedenen Verbindungsmöglichkeiten.
 
-### Anschluss mit dem Grove-Connector
+## Anschluss mit dem Grove-Connector
 
 <div markdown="1" class="clearfix">
 ![ultraschallsensor-grove](ultraschallsensor-grove.jpg?lightbox=512&resize=250&classes=caption,figure-right "Ultraschallsensor mit Grove-Anschluss.")
@@ -38,6 +38,19 @@ Das schwarze Kabel verbindet die beiden GND-Anschlüsse (Minus-Pol), das rote Ka
 
 ![schaltskizze-ultraschall-grove](schaltskizze-ultraschall-grove.png?lightbox=1024&resize=500&classes=caption "Schaltskizze zum Anschluss des Ultraschallsensors am Anschluss A1 des Calliope.")
 
+### Programmierung
+
+<!-- Tabs für die Auswahl -->
+<div class="tabs">
+  <button class="tab-button active" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block">
+    <!-- Inhalt für Makecode -->
 Zum Programmieren mit Makecode muss die Erweiterung "Grove" geladen werden. Darüber können mehrere Sensoren, die alle über einen Grove-Anschluss verfügen, angesteuert bzw. ausgelesen werden. Für den Ultraschallsensor wird der Block ```Entfernung <Pin> cm``` benötigt, der die Entfernung in Zentimetern zurückgibt, die mit dem Ultraschallsensor gemessen wurde. Als Pin muss ```C16 (A1 RX)``` ausgewählt werden, da dies der Echo-Pin ist, der das Signal zurückgibt.
 
 <div class="flex-box">
@@ -45,8 +58,21 @@ Zum Programmieren mit Makecode muss die Erweiterung "Grove" geladen werden. Dar�
 <div markdown="1" class="flexible">![makecode-grove-ultraschall-test](makecode-grove-ultraschall-test.png?resize=400 "makecode-grove-ultraschall-test")</div>
 </div>
 
+  </div>
+  <div class="roberta content-block" style="display: none;">
+    <!-- Inhalt für Open Roberta Lab -->
+    <h3>Open Roberta Lab</h3>
+    <p>Hier steht der Inhalt für Open Roberta Lab...</p>
+  </div>
+  <div class="python content-block" style="display: none;">
+    <!-- Inhalt für Python -->
+    Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
+  </div>
+</div>
 
-### Anschluss mit Jacdac
+
+
+## Anschluss mit Jacdac
 
 <div markdown="1" class="clearfix">
 ![ultraschallsensor-jacdac](ultraschallsensor-jacdac.jpg?lightbox=512&resize=250&classes=caption,figure-right "Ultraschallsensor mit Jacdac-Anschluss.")
@@ -65,7 +91,7 @@ Der Block ```<Messwert> Entfernung (m)``` stellt vier mögliche Messwerte in Met
 <div markdown="1" class="flexible">![makecode-jacdac-ultraschall-test](makecode-jacdac-ultraschall-test.png?resize=400 "makecode-jacdac-ultraschall-test")</div>
 </div>
 
-### Anschluss mit Jumper-Kabeln
+## Anschluss mit Jumper-Kabeln
 
 !! **Achtung:** Der HC-SR04 funktioniert nur mit dem Calliope, wenn er sich mit 3,3V betreiben lässt! Die meisten Ultraschallsensoren, die man findet, funktionieren allerdings nur mit 5V, daher muss man genau hinschauen.
 
@@ -88,7 +114,7 @@ Zur Bestimmung des Abstands muss man auf das Funktionsprinzip des Ultraschallsen
 Für die Verwendung in größeren Zusammenhängen ist es sinnvoll, diese Abfolge in eine Funktion auszulagern, die die Entfernung zurückgibt.
 
 
-### Anwendung
+## Anwendung
 
 <div markdown="1" class="projekt">
 #### Einparkhilfe für ein Auto
