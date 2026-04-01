@@ -40,7 +40,7 @@ In der Kategorie "Motoren" gibt es dazu den Block "Motor ... an mit ...%", der e
   <div class="roberta content-block" markdown="1">
 Zunächst müssen die Motoren konfiguriert werden. Dabei werden die Anschlüsse von Motor M0 als Port A bezeichnet und diejenigen von Motor M1 als Port B. Es ist sinnvoll, die Benennung der Motoren so vorzunehmen, dass man gleich sieht, welcher Motor links und welcher rechts am Roboter angebracht ist.
 
-![orl-motoren-steuern](orl-motoren-steuern.png?lightbox=500&resize=500&classes=caption "Konfiguration der Motoren.")
+![orl-motoren-steuern](orl-motorkonfiguration.png?lightbox=500&resize=500&classes=caption "Konfiguration der Motoren.")
 
 In der Kategorie "Aktion" -> "Bewegen" finden sich einige Blöcke zum Steuern der Motoren. Die Werte für das Tempo in % können dabei von -100 (maximale Geschwindigkeit rückwärts) bis 100 (maximale Geschwindigkeit vorwärts) reichen.
 
