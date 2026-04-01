@@ -63,7 +63,7 @@ Zum Programmieren mit Makecode muss die Erweiterung "Grove" geladen werden. Dar�
 Zunächst muss der Ultraschallsensor in der Roboterkonfiguration angelegt werden. Dort steht nur der Anschluss über A1 zur Verfügung, an dem der Ultraschallsensor auch angeschlossen sein sollte (A0 funktioniert nicht). Danach kann der gemessene Abstand über den Block ```gib Abstand cm Ultraschallsensor U``` ausgelesen werden.
 <div class="flex-box">
 <div markdown="1" class="flexible">![orl-ultraschall-grove-konf](orl-ultraschall-grove-konf.png?resize=300 "orl-ultraschall-grove-konf")</div>
-<div markdown="1" class="flexible">![orl-ultraschall-grove-prog](orl-ultraschall-grove-prog.png?resize=400 "orl-ultraschall-grove-prog")</div>
+<div markdown="1" class="flexible">![orl-ultraschall-grove-prog](orl-ultraschall-grove-prog.png?resize=500 "orl-ultraschall-grove-prog")</div>
 </div>
   </div>
   <div class="python content-block">
