@@ -33,6 +33,7 @@ In der Regel wird man nur eines dieser Signale benötigen. Im folgenden Schaltpl
 ## Programmierung
 
 <!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
 <div class="tabs">
   <button class="tab-button" data-umgebung="makecode">Makecode</button>
   <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
@@ -42,7 +43,6 @@ In der Regel wird man nur eines dieser Signale benötigen. Im folgenden Schaltpl
 <!-- Inhalte für jede Programmierumgebung -->
 <div class="tab-content">
   <div class="makecode content-block">
-    <!-- Inhalt für Makecode -->
 Zum Auslesen des TCRT5000 lässt man sich aus der Kategorie "Pins" die digitalen bzw. analogen Werte der entsprechenden Pins anzeigen.
 
 <div class="flex-box">
@@ -51,6 +51,7 @@ Zum Auslesen des TCRT5000 lässt man sich aus der Kategorie "Pins" die digitalen
 </div>
 <div markdown="1">
 ![tcrt5000-auslesen-analog-makecode-anzeige](tcrt5000-auslesen-analog-makecode-anzeige.png?resize=500&classes=caption "Auslesen des analogen Wertes des TCRT5000.")
+</div>
 </div>
 </div>
 
@@ -77,7 +78,7 @@ Für das Auslesen des analogen Wertes bietet es sich an, den analogen Wert über
   </div>
 </div>
 
-
+## Aufgaben
 
 <div markdown="1" class="aufgabe">
 #### Farberkennung
