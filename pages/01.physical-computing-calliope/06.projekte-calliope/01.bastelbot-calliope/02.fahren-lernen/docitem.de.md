@@ -53,6 +53,8 @@ In der Kategorie "Aktion" -> "Bewegen" finden sich einige Blöcke zum Steuern de
 </div>
 </div>
 
+## Aufgaben
+
 !! #### Sicherheitshinweis
 !! Bevor der Calliope per USB-Kabel am Computer angeschlossen wird, muss die **Batterie stets abgeklemmt werden**. Ziehe dazu das rote Kabel vom Pluspol heraus. Das schwarze Kabel vom Minuspol kann stecken bleiben, da die Verbindung bereits unterbrochen ist. So musst du später nur ein Kabel wieder einstecken und dir dabei nicht merken, wohin "+" und "-" müssen, weil das Kabel vom Minuspol ja noch steckt.
 
