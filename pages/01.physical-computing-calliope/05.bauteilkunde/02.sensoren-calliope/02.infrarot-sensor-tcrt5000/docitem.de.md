@@ -43,8 +43,28 @@ In der Regel wird man nur eines dieser Signale benötigen. Im folgenden Schaltpl
 <div class="tab-content">
   <div class="makecode content-block">
     <!-- Inhalt für Makecode -->
-    <h3>Makecode</h3>
-    <p>Hier steht der Inhalt für Makecode...</p>
+    Zum Auslesen des TCRT5000 lässt man sich aus der Kategorie "Pins" die digitalen bzw. analogen Werte der entsprechenden Pins anzeigen.
+
+    <div class="flex-box">
+    <div markdown="1">
+    ![tcrt5000-digital-auslesen-makecode](tcrt5000-digital-auslesen-makecode.png?resize=500&classes=caption "Auslesen des digitalen Wertes des TCRT5000.")
+    </div>
+    <div markdown="1">
+    ![tcrt5000-auslesen-analog-makecode-anzeige](tcrt5000-auslesen-analog-makecode-anzeige.png?resize=500&classes=caption "Auslesen des analogen Wertes des TCRT5000.")
+    </div>
+    </div>
+
+    Für das Auslesen des analogen Wertes bietet es sich an, den analogen Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen und dort visualisieren zu lassen. Der Befehl dazu findet sich in der Kategorie "Seriell". Nach dem Übertragen des Programms kann man im linken Fensterbereich auf "Daten anzeigen Calliope mini" auswählen und bekommt die unten abgebildete Ansicht.
+
+    <div class="flex-box">
+    <div markdown="1">
+    ![tcrt5000-auslesen-analog-makecode](tcrt5000-auslesen-analog-makecode.png?resize=500&classes=caption "Senden des analogen Wertes über die serielle Schnittstelle (USB-Kabel) an den Computer.")
+    </div>
+    <div markdown="1">
+    ![makecode-serial-monitor-tcrt5000](makecode-serial-monitor-tcrt5000.png?lightbox=1024&resize=500&classes=caption "Visualisierung der erhaltenen Werte in Makecode. Dabei wird der Sensor über unterschiedlich helle bzw. dunkle Flächen bewegt.")
+    </div>
+    </div>
+
   </div>
   <div class="roberta content-block" style="display: none;">
     <!-- Inhalt für Open Roberta Lab -->
@@ -53,32 +73,11 @@ In der Regel wird man nur eines dieser Signale benötigen. Im folgenden Schaltpl
   </div>
   <div class="python content-block" style="display: none;">
     <!-- Inhalt für Python -->
-    <h3>Python</h3>
-    <p>Hier steht der Inhalt für Python...</p>
+    Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
   </div>
 </div>
 
-Zum Auslesen des TCRT5000 lässt man sich aus der Kategorie "Pins" die digitalen bzw. analogen Werte der entsprechenden Pins anzeigen.
 
-<div class="flex-box">
-<div markdown="1">
-![tcrt5000-digital-auslesen-makecode](tcrt5000-digital-auslesen-makecode.png?resize=500&classes=caption "Auslesen des digitalen Wertes des TCRT5000.")
-</div>
-<div markdown="1">
-![tcrt5000-auslesen-analog-makecode-anzeige](tcrt5000-auslesen-analog-makecode-anzeige.png?resize=500&classes=caption "Auslesen des analogen Wertes des TCRT5000.")
-</div>
-</div>
-
-Für das Auslesen des analogen Wertes bietet es sich an, den analogen Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen und dort visualisieren zu lassen. Der Befehl dazu findet sich in der Kategorie "Seriell". Nach dem Übertragen des Programms kann man im linken Fensterbereich auf "Daten anzeigen Calliope mini" auswählen und bekommt die unten abgebildete Ansicht.
-
-<div class="flex-box">
-<div markdown="1">
-![tcrt5000-auslesen-analog-makecode](tcrt5000-auslesen-analog-makecode.png?resize=500&classes=caption "Senden des analogen Wertes über die serielle Schnittstelle (USB-Kabel) an den Computer.")
-</div>
-<div markdown="1">
-![makecode-serial-monitor-tcrt5000](makecode-serial-monitor-tcrt5000.png?lightbox=1024&resize=500&classes=caption "Visualisierung der erhaltenen Werte in Makecode. Dabei wird der Sensor über unterschiedlich helle bzw. dunkle Flächen bewegt.")
-</div>
-</div>
 
 <div markdown="1" class="aufgabe">
 #### Farberkennung

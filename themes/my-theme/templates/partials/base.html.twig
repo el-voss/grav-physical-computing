@@ -56,6 +56,11 @@
             type: 'module'
         })
         %}
+        {% do assets.addJs('theme://js/programming-environment.js', {
+            group: 'bottom',
+            type: 'module'
+        })
+        %}
     {% endblock %}
 
     {% block assets deferred %}

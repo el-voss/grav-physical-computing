@@ -386,11 +386,12 @@ ul.actions li {
   padding: 8px 16px;
   background: #f0f0f0;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 .tab-button.active {
-  background: #007bff;
+  background: #42bb70;
   color: white;
 }
 
