@@ -51,7 +51,6 @@ Das schwarze Kabel verbindet die beiden GND-Anschlüsse (Minus-Pol), das rote Ka
 <!-- Inhalte für jede Programmierumgebung -->
 <div class="tab-content">
   <div class="makecode content-block" markdown="1">
-    <!-- Inhalt für Makecode -->
 Zum Programmieren mit Makecode muss die Erweiterung "Grove" geladen werden. Darüber können mehrere Sensoren, die alle über einen Grove-Anschluss verfügen, angesteuert bzw. ausgelesen werden. Für den Ultraschallsensor wird der Block ```Entfernung <Pin> cm``` benötigt, der die Entfernung in Zentimetern zurückgibt, die mit dem Ultraschallsensor gemessen wurde. Als Pin muss ```C16 (A1 RX)``` ausgewählt werden, da dies der Echo-Pin ist, der das Signal zurückgibt.
 
 <div class="flex-box">
@@ -96,7 +95,6 @@ Der Ultraschallsensor mit Jacdac-Anschluss wird mit einem der Jacdac-Anschlüsse
 <!-- Inhalte für jede Programmierumgebung -->
 <div class="tab-content">
   <div class="makecode content-block" markdown="1">
-    <!-- Inhalt für Makecode -->
 Das Vorgehen für das Laden der Jacdac-Erweiterung und erste Programmierschritte zeigt die [Jacdac-Dokumentation der offiziellen Calliope-Seite](https://calliope.cc/calliope-mini/erweiterungen/jacdac) sehr gut. Im Überblick:
 - Jacdac-Erweiterung laden. Danach erscheint die neue Block-Kategorie "Module", die aber nur zwei Blöcke enthält.
 - Jacdac-Sensor anschließen und ein ggf. leeres Programm auf den Calliope herunterladen.
@@ -111,11 +109,9 @@ Der Block ```<Messwert> Entfernung (m)``` stellt vier mögliche Messwerte in Met
 
   </div>
   <div class="roberta content-block">
-    <!-- Inhalt für Open Roberta Lab -->
     Die Programmierung von Jacdac-Bauteilen ist mit dem Open Roberta Lab aktuell (Stand: 01.04.26) nicht möglich.
   </div>
   <div class="python content-block">
-    <!-- Inhalt für Python -->
     Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
   </div>
 </div>
@@ -144,7 +140,6 @@ Grundsätzlich sind die folgenden Pins sowohl für den Trigger-Pin als auch für
 <!-- Inhalte für jede Programmierumgebung -->
 <div class="tab-content">
   <div class="makecode content-block" markdown="1">
-    <!-- Inhalt für Makecode -->
 Zur Bestimmung des Abstands muss man auf das Funktionsprinzip des Ultraschallsensors zurückgreifen, das oben beschrieben wurde. Mit dem folgenden Programm wird die Entfernung ermittelt und auf dem Display des Calliope ausgegeben.
 
 ![makecode-pulseIn-ultraschall-test](makecode-pulseIn-ultraschall-test.png?lightbox=1024&resize=500&classes=caption "Programm zur Ermittlung des Abstands mit dem HC-SR04 (Erklärung im Text).")
@@ -159,11 +154,9 @@ Für die Verwendung in größeren Zusammenhängen ist es sinnvoll, diese Abfolge
 
   </div>
   <div class="roberta content-block">
-    <!-- Inhalt für Open Roberta Lab -->
     Die Programmierung von Jacdac-Bauteilen ist mit dem Open Roberta Lab aktuell (Stand: 01.04.26) nicht möglich.
   </div>
   <div class="python content-block">
-    <!-- Inhalt für Python -->
     Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
   </div>
 </div>
