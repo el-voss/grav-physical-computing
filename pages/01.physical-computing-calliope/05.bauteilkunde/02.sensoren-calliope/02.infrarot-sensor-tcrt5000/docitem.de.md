@@ -69,7 +69,7 @@ Für das Auslesen des analogen Wertes bietet es sich an, den analogen Wert über
   <div class="roberta content-block" markdown="1">
 Zum Auslesen des TCRT5000 muss man zunächst die Konfiguration der Pins als digitaler bzw. analoger Sensor vornehmen.
 
-![orl-tcrt5000-konf](orl-tcrt5000-konf.png?resize=500&classes=caption "Konfiguration von Pin P1 als digitaler bzw. analoger Sensor. Achtung: Die dargestellte Doppelkonfiguration ist nicht sinnvoll, sondern nur zur Demonstrationszwecken vorgenommen!")
+![orl-tcrt5000-konf](orl-tcrt5000-konf.png?resize=500&classes=caption "Konfiguration von Pin P1 als digitaler bzw. analoger Sensor. Achtung: Die dargestellte Doppelkonfiguration ist nicht sinnvoll, sondern nur zu Demonstrationszwecken vorgenommen!")
 
 ! Bei der Konfiguration als analoger Sensor stehen nicht alle oben aufgezählten Pins zur Auswahl. Dies ist ein Bug im Open Roberta Lab (Stand: 01.04.26). Insbesondere ist auch der Pin P0 nicht als analoger Sensor auswählbar, weshalb anders als in oben dargestellten Schaltskizze der Pin P1 als analoger Sensor ausgewählt wird. **Wenn der Pin P1 als analoger Sensor konfiguriert wird, sollte er auch mit Pin A0 des TCRT5000 verbunden werden.**
 
