@@ -42,7 +42,7 @@ Das schwarze Kabel verbindet die beiden GND-Anschlüsse (Minus-Pol), das rote Ka
 
 <!-- Tabs für die Auswahl -->
 <div class="tabs">
-  <button class="tab-button active" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
   <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
   <button class="tab-button" data-umgebung="python">Python</button>
 </div>
