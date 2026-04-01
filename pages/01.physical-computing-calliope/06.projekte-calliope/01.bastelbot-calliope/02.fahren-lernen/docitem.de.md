@@ -3,7 +3,7 @@ title: 'Fahren lernen'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'motorblock.png,funktion-drehung-links.png,funktion-drehung-rechts.png,funktion-motor-leistung.png,funktion-motor-stop.png,bastelbot-quadrat-fahren.png,funktion-fahre.png'
+media_order: 'motorblock.png,funktion-drehung-links.png,funktion-drehung-rechts.png,funktion-motor-leistung.png,funktion-motor-stop.png,bastelbot-quadrat-fahren.png,funktion-fahre.png,orl-funktion-geradeaus.png,orl-funktion-linksherum.png,orl-funktion-rechtsherum.png,orl-motorkonfiguration.png,orl-motoren-steuern.png'
 taxonomy:
     Inhalte:
         - Funktionen
@@ -17,12 +17,41 @@ featured_image: bastelbot-quadrat-fahren.png
 
 Nachdem der Roboter nun über ein Fahrgestell verfügt und die Motoren verkabelt sind, wird es Zeit, ihm das Fahren beizubringen!
 
+## Programmierung der Motoren
+
+<!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block" markdown="1">
 In der Kategorie "Motoren" gibt es dazu den Block "Motor ... an mit ...%", der es erlaubt, die Leistung der Motoren einzustellen:
 - "50%" bedeutet, die Motoren drehen sich mit halber Leistung vorwärts,
 - "0%" bedeutet, die Motoren bleiben stehen,
 - "-50%" bedeutet, die Motoren drehen sich mit halber Leistung rückwärts.
 
-![motorblock](motorblock.png?lightbox=500&resize=500&classes=caption "Block zum Steuern der Motoren, wenn Knopf A gedrückt wurde.")
+![motorblock](motorblock.png?lightbox=500&resize=500&classes=caption "Block zum Ansteuern der Motoren, wenn Knopf A gedrückt wurde.")
+  </div>
+  <div class="roberta content-block" markdown="1">
+Zunächst müssen die Motoren konfiguriert werden. Dabei werden die Anschlüsse von Motor M0 als Port A bezeichnet und diejenigen von Motor M1 als Port B. Es ist sinnvoll, die Benennung der Motoren so vorzunehmen, dass man gleich sieht, welcher Motor links und welcher rechts am Roboter angebracht ist.
+
+![orl-motoren-steuern](orl-motoren-steuern.png?lightbox=500&resize=500&classes=caption "Konfiguration der Motoren.")
+
+In der Kategorie "Aktion" -> "Bewegen" finden sich einige Blöcke zum Steuern der Motoren. Die Werte für das Tempo in % können dabei von -100 (maximale Geschwindigkeit rückwärts) bis 100 (maximale Geschwindigkeit vorwärts) reichen.
+
+![orl-motoren-steuern](orl-motoren-steuern.png?lightbox=500&resize=500&classes=caption "Block zum Ansteuern der Motoren, wenn Knopf A gedrückt wurde.")
+  </div>
+  <div class="python content-block">
+    <!-- Inhalt für Python -->
+    Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
+  </div>
+</div>
+</div>
 
 !! #### Sicherheitshinweis
 !! Bevor der Calliope per USB-Kabel am Computer angeschlossen wird, muss die **Batterie stets abgeklemmt werden**. Ziehe dazu das rote Kabel vom Pluspol heraus. Das schwarze Kabel vom Minuspol kann stecken bleiben, da die Verbindung bereits unterbrochen ist. So musst du später nur ein Kabel wieder einstecken und dir dabei nicht merken, wohin "+" und "-" müssen, weil das Kabel vom Minuspol ja noch steckt.
@@ -50,6 +79,17 @@ Tipp: Damit sich der Roboter auf der Stelle dreht, lasse einen Motor vorwärts u
 
 Die Programme werden handlicher und übersichtlicher, wenn die einzelnen Fahrfunktionen auch als Funktion im Programm umgesetzt werden. Implementiere die unten abgebildeten Funktionen.
 
+<!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block" markdown="1">
 <div class="flex-box">
 <div markdown="1" class="flexible">![funktion-motor-stop](funktion-motor-stop.png?lightbox=500&resize=300 "funktion-motor-stop")</div>
 <div markdown="1" class="flexible">![funktion-motor-leistung](funktion-motor-leistung.png?lightbox=500&resize=500 "funktion-motor-leistung")</div>
@@ -57,4 +97,20 @@ Die Programme werden handlicher und übersichtlicher, wenn die einzelnen Fahrfun
 <div markdown="1" class="flexible">![funktion-drehung-links](funktion-drehung-links.png?lightbox=500&resize=400 "funktion-drehung-links")</div>
 <div markdown="1" class="flexible">![funktion-fahre](funktion-fahre.png?lightbox=500&resize=500 "funktion-fahre")</div>
 </div>
+  </div>
+  <div class="roberta content-block" markdown="1">
+<div class="flex-box">
+<div markdown="1" class="flexible">![orl-funktion-geradeaus](orl-funktion-geradeaus.png "orl-funktion-geradeaus")</div>
+<div markdown="1" class="flexible">![orl-funktion-linksherum](orl-funktion-linksherum.png "orl-funktion-linksherum")</div>
+<div markdown="1" class="flexible">![orl-funktion-rechtsherum](orl-funktion-rechtsherum.png "orl-funktion-rechtsherum")</div>
+</div>
+  </div>
+  <div class="python content-block">
+    <!-- Inhalt für Python -->
+    Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
+  </div>
+</div>
+</div>
+
+
 </div>
