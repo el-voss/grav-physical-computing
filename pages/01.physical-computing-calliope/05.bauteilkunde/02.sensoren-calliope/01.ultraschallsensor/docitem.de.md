@@ -3,7 +3,7 @@ title: Ultraschallsensor
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'ultraschall-sensor-prinzip.png,ultraschallsensor-am-auto.jpg,ultraschallsensor-grove.jpg,ultraschallsensor-jacdac.jpg,makecode-erweiterung-grove.png,makecode-erweiterung-jacdac.png,schaltskizze-ultraschall-grove.png,makecode-grove-ultraschall-test.png,makecode-jacdac-ultraschall-test.png,makecode-pulseIn-ultraschall-test.png,schaltskizze-calliope-hc-sr04.png'
+media_order: 'ultraschall-sensor-prinzip.png,ultraschallsensor-am-auto.jpg,ultraschallsensor-grove.jpg,ultraschallsensor-jacdac.jpg,makecode-erweiterung-grove.png,makecode-erweiterung-jacdac.png,schaltskizze-ultraschall-grove.png,makecode-grove-ultraschall-test.png,makecode-jacdac-ultraschall-test.png,makecode-pulseIn-ultraschall-test.png,schaltskizze-calliope-hc-sr04.png,orl-ultraschall-grove-konf.png,orl-ultraschall-grove-prog.png,orl-ultraschallsensor-manuell.png,orl-konfiguration-pin.png'
 featured_image: ultraschall-sensor-prinzip.png
 published: true
 taxonomy:
@@ -59,10 +59,12 @@ Zum Programmieren mit Makecode muss die Erweiterung "Grove" geladen werden. Dar�
 </div>
 
   </div>
-  <div class="roberta content-block">
-    <!-- Inhalt für Open Roberta Lab -->
-    <h3>Open Roberta Lab</h3>
-    <p>Hier steht der Inhalt für Open Roberta Lab...</p>
+  <div class="roberta content-block" markdown="1">
+Zunächst muss der Ultraschallsensor in der Roboterkonfiguration angelegt werden. Dort steht nur der Anschluss über A1 zur Verfügung, an dem der Ultraschallsensor auch angeschlossen sein sollte (A0 funktioniert nicht). Danach kann der gemessene Abstand über den Block ```gib Abstand cm Ultraschallsensor U``` ausgelesen werden.
+<div class="flex-box">
+<div markdown="1" class="flexible">![orl-ultraschall-grove-konf](orl-ultraschall-grove-konf.png?resize=300 "orl-ultraschall-grove-konf")</div>
+<div markdown="1" class="flexible">![orl-ultraschall-grove-prog](orl-ultraschall-grove-prog.png?resize=400 "orl-ultraschall-grove-prog")</div>
+</div>
   </div>
   <div class="python content-block">
     <!-- Inhalt für Python -->
@@ -153,8 +155,22 @@ Zur Bestimmung des Abstands muss man auf das Funktionsprinzip des Ultraschallsen
 Für die Verwendung in größeren Zusammenhängen ist es sinnvoll, diese Abfolge in eine Funktion auszulagern, die die Entfernung zurückgibt.
 
   </div>
-  <div class="roberta content-block">
-    Die Programmierung von Jacdac-Bauteilen ist mit dem Open Roberta Lab aktuell (Stand: 01.04.26) nicht möglich.
+  <div class="roberta content-block" markdown="1">
+Zur Bestimmung des Abstands muss man auf das Funktionsprinzip des Ultraschallsensors zurückgreifen, das oben beschrieben wurde. Zunächst wird der Trigger-Pin als digitaler Aktor und der Echo-Pin als digitaler Sensor konfiguriert.
+
+![orl-konfiguration-pin](orl-konfiguration-pin.png "orl-konfiguration-pin")
+
+Mit dem folgenden Programm wird dann die Entfernung ermittelt und auf dem Display des Calliope ausgegeben.
+
+![orl-ultraschallsensor-manuell](orl-ultraschallsensor-manuell.png?lightbox=1024&resize=500&classes=caption "Programm zur Ermittlung des Abstands mit dem HC-SR04 (Erklärung im Text)." "orl-ultraschallsensor-manuell")
+
+- Zuächst wird der Trigger-Pin (C9) für 5ms auf 0 gesetzt, sodass kein Strom fließt. Dies dient dazu, den Startzeitpunkt des folgenden Signals festzulegen.
+- Als Nächstes wird der Trigger-Pin für 30ms auf 1 gesetzt. Dadurch wird ein Ultraschall-Signal ausgesendet.
+- Im Folgenden wird der Trigger-Pin auf 0 gesetzt. Dadurch wird das Ultraschallsignal beendet.
+- Mit dem Befehl ```gib <Pulszeit HIGH> Pin Echo``` wird die Zeit in Mikrosekunden ermittelt, die das Ultraschallsignal braucht, um nach dem Aussenden wieder zurück zum Ultraschallsensor zu gelangen. Dies wird in der Variable ```zeit``` gespeichert. Hinweis: In der Blockauswahl für Sensoren steht zunächst ```gib <digitalen Wert> Pin Echo```. Dort kann dann Pulszeit HIGH ausgewählt werden.
+- Die gemessene Zeit muss nun durch 2 geteilt werden, weil die gesuchte Strecke zwei Mal vom Ultraschall durchlaufen wurde (Hin- und Rückweg). Das Ergebnis wird mit der Geschwindigkeit des Ultraschalls in Zentimeter pro Mikrosekunde multipliziert.
+
+Für die Verwendung in größeren Zusammenhängen ist es sinnvoll, diese Abfolge in eine Funktion auszulagern, die die Entfernung zurückgibt.
   </div>
   <div class="python content-block">
     Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
