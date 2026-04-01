@@ -373,4 +373,29 @@ ul.actions li {
 }
 
 
+/* CSS für die unterschiedlichen Programmierumgebungen beim Calliope */
 
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.tab-button {
+  padding: 8px 16px;
+  background: #f0f0f0;
+  border: none;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background: #007bff;
+  color: white;
+}
+
+/* Inhalte */
+.tab-content-block {
+  padding: 10px;
+  border: 1px solid #ddd;
+}

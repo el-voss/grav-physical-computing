@@ -13,6 +13,8 @@ Der Infrarot-Sensor TCRT5000 sendet Infrarotstrahlen aus und registriert die ref
 
 Auf der Unterseite des Moduls sind zwei Seiten zu erkennen. Die durchsichtige/bläuliche Seite ist eine Infrarot-LED, die Licht im Infrarot-Bereich aussendet, welches für das menschliche Auge unsichtbar ist. Das Infrarot-Licht wird (abhängig von der Art und Farbe der Oberfläche) unterschiedlich gut reflektiert. Das reflektierte Infrarot-Licht trifft dann auf die dunkle Seite des Sensors. Dort befindet sich ein Phototransistor, der die Infrarotstrahlen registriert und daraus einen Strom macht. Der Strom ist umso stärker, je mehr Infrarotstrahlen auf den Phototransistor treffen. Die dunkle Kunstharzschicht dient dazu, das normale Tageslicht herauszufiltern, damit der Sensor nicht schon durch das normale Tageslicht ausgelöst wird, das ebenfalls Infrarotstrahlen enthält.
 
+## Anschluss am Calliope
+
 Durch den Stromfluss entsteht eine Spannung, die am Calliope registriert werden kann. Dabei gibt es zwei Möglichkeiten:
 
 - Am `A0`-Pin des Moduls kann die Spannung direkt als analoges Signal gemessen werden.
@@ -27,6 +29,34 @@ In der Regel wird man nur eines dieser Signale benötigen. Im folgenden Schaltpl
 ! - Nicht alle davon eignen sich für das Lesen eines analogen Signals (Verbindung mit A0 des TCRT5000). Mit dem Ausgang A0 des TCRT5000 können nur folgende Pins verbunden werden: P0, P1, P2, C4, C10, C16, C18. 
 ! 
 ! Weitere Informationen finden sich in der [Dokumentation zu den Pins des Calliope](https://docs.calliope.cc/tech/hardware/pins/).
+
+## Programmierung
+
+<!-- Tabs für die Auswahl -->
+<div class="tabs">
+  <button class="tab-button active" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block">
+    <!-- Inhalt für Makecode -->
+    <h3>Makecode</h3>
+    <p>Hier steht der Inhalt für Makecode...</p>
+  </div>
+  <div class="roberta content-block" style="display: none;">
+    <!-- Inhalt für Open Roberta Lab -->
+    <h3>Open Roberta Lab</h3>
+    <p>Hier steht der Inhalt für Open Roberta Lab...</p>
+  </div>
+  <div class="python content-block" style="display: none;">
+    <!-- Inhalt für Python -->
+    <h3>Python</h3>
+    <p>Hier steht der Inhalt für Python...</p>
+  </div>
+</div>
 
 Zum Auslesen des TCRT5000 lässt man sich aus der Kategorie "Pins" die digitalen bzw. analogen Werte der entsprechenden Pins anzeigen.
 
