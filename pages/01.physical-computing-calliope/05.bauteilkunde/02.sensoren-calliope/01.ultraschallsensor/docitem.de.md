@@ -79,7 +79,22 @@ Zum Programmieren mit Makecode muss die Erweiterung "Grove" geladen werden. Dar�
 Über den Jacdac-Anschluss können auf einfache Weise Sensoren und Aktoren an den Calliope angeschlossen und angesteuert werden. Es können mehrere Jacdac-Bauteile hintereinander angeschlossen werden. Über den Jacdac-Hub können sie auch parallel angeschlossen werden. Jacdac ermöglicht nicht nur die Kommunikation von Sensor und Calliope, sondern auch per WebUSB mit Makecode. Auf diese Weise wird der aktuelle Sensorwert direkt in Makecode angezeigt.
 </div>
 
-Der Ultraschallsensor mit Jacdac-Anschluss wird mit einem der Jacdac-Anschlüsse des Calliope verbunden. Das Vorgehen für das Laden der Jacdac-Erweiterung und erste Programmierschritte zeigt die [Jacdac-Dokumentation der offiziellen Calliope-Seite](https://calliope.cc/calliope-mini/erweiterungen/jacdac) sehr gut. Im Überblick:
+Der Ultraschallsensor mit Jacdac-Anschluss wird mit einem der Jacdac-Anschlüsse des Calliope verbunden. 
+    
+### Programmierung
+
+<!-- Tabs für die Auswahl -->
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block">
+    <!-- Inhalt für Makecode -->
+Das Vorgehen für das Laden der Jacdac-Erweiterung und erste Programmierschritte zeigt die [Jacdac-Dokumentation der offiziellen Calliope-Seite](https://calliope.cc/calliope-mini/erweiterungen/jacdac) sehr gut. Im Überblick:
 - Jacdac-Erweiterung laden. Danach erscheint die neue Block-Kategorie "Module", die aber nur zwei Blöcke enthält.
 - Jacdac-Sensor anschließen und ein ggf. leeres Programm auf den Calliope herunterladen.
 - Danach sollten der Sensor und die zugehörigen Blöcke in Makecode angezeigt werden.
@@ -89,6 +104,17 @@ Der Block ```<Messwert> Entfernung (m)``` stellt vier mögliche Messwerte in Met
 <div class="flex-box">
 <div markdown="1" class="flexible">![makecode-erweiterung-jacdac](makecode-erweiterung-jacdac.png?resize=400 "makecode-erweiterung-jacdac")</div>
 <div markdown="1" class="flexible">![makecode-jacdac-ultraschall-test](makecode-jacdac-ultraschall-test.png?resize=400 "makecode-jacdac-ultraschall-test")</div>
+</div>
+
+  </div>
+  <div class="roberta content-block" style="display: none;">
+    <!-- Inhalt für Open Roberta Lab -->
+    Die Programmierung von Jacdac-Bauteilen ist mit dem Open Roberta Lab aktuell (Stand: 01.04.26) nicht möglich.
+  </div>
+  <div class="python content-block" style="display: none;">
+    <!-- Inhalt für Python -->
+    Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
+  </div>
 </div>
 
 ## Anschluss mit Jumper-Kabeln
@@ -101,6 +127,19 @@ Der Ultraschallsensor HC-SR04 ist für wenig Geld zu haben und daher sehr belieb
 
 Grundsätzlich sind die folgenden Pins sowohl für den Trigger-Pin als auch für den Echo-Pin geeignet: P0, P1, P2, P3, C8, C9, C13, C14, C15, C16, C17. Beachte, dass die Pins P0, P1, P2, P3 über die äußeren Ringpads (goldene Ringe) schon belegt sein können. Für weitere Informationen schaue dir die [Pin-Belegung des Calliope](https://docs.calliope.cc/tech/hardware/pins/) an.
 
+### Programmierung
+
+<!-- Tabs für die Auswahl -->
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block">
+    <!-- Inhalt für Makecode -->
 Zur Bestimmung des Abstands muss man auf das Funktionsprinzip des Ultraschallsensors zurückgreifen, das oben beschrieben wurde. Mit dem folgenden Programm wird die Entfernung ermittelt und auf dem Display des Calliope ausgegeben.
 
 ![makecode-pulseIn-ultraschall-test](makecode-pulseIn-ultraschall-test.png?lightbox=1024&resize=500&classes=caption "Programm zur Ermittlung des Abstands mit dem HC-SR04 (Erklärung im Text).")
@@ -112,6 +151,18 @@ Zur Bestimmung des Abstands muss man auf das Funktionsprinzip des Ultraschallsen
 - Die gemessene Zeit muss nun durch 2 geteilt werden, weil die gesuchte Strecke zwei Mal vom Ultraschall durchlaufen wurde (Hin- und Rückweg). Das Ergebnis wird mit der Geschwindigkeit des Ultraschalls in Zentimeter pro Mikrosekunde multipliziert.
 
 Für die Verwendung in größeren Zusammenhängen ist es sinnvoll, diese Abfolge in eine Funktion auszulagern, die die Entfernung zurückgibt.
+
+  </div>
+  <div class="roberta content-block" style="display: none;">
+    <!-- Inhalt für Open Roberta Lab -->
+    Die Programmierung von Jacdac-Bauteilen ist mit dem Open Roberta Lab aktuell (Stand: 01.04.26) nicht möglich.
+  </div>
+  <div class="python content-block" style="display: none;">
+    <!-- Inhalt für Python -->
+    Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
+  </div>
+</div>
+
 
 
 ## Anwendung
