@@ -162,7 +162,7 @@ Zur Bestimmung des Abstands muss man auf das Funktionsprinzip des Ultraschallsen
 
 Mit dem folgenden Programm wird dann die Entfernung ermittelt und auf dem Display des Calliope ausgegeben.
 
-![orl-ultraschallsensor-manuell](orl-ultraschallsensor-manuell.png?lightbox=1024&resize=500&classes=caption "Programm zur Ermittlung des Abstands mit dem HC-SR04 (Erklärung im Text)." "orl-ultraschallsensor-manuell")
+![orl-ultraschallsensor-manuell](orl-ultraschallsensor-manuell.png?lightbox=1024&resize=500&classes=caption "Programm zur Ermittlung des Abstands mit dem HC-SR04 (Erklärung im Text).")
 
 - Zuächst wird der Trigger-Pin (C9) für 5ms auf 0 gesetzt, sodass kein Strom fließt. Dies dient dazu, den Startzeitpunkt des folgenden Signals festzulegen.
 - Als Nächstes wird der Trigger-Pin für 30ms auf 1 gesetzt. Dadurch wird ein Ultraschall-Signal ausgesendet.
