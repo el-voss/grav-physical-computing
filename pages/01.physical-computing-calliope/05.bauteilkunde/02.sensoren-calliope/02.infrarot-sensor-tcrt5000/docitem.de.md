@@ -53,7 +53,6 @@ Zum Auslesen des TCRT5000 lässt man sich aus der Kategorie "Pins" die digitalen
 ![tcrt5000-auslesen-analog-makecode-anzeige](tcrt5000-auslesen-analog-makecode-anzeige.png?resize=500&classes=caption "Auslesen des analogen Wertes des TCRT5000.")
 </div>
 </div>
-</div>
 
 Für das Auslesen des analogen Wertes bietet es sich an, den analogen Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen und dort visualisieren zu lassen. Der Befehl dazu findet sich in der Kategorie "Seriell". Nach dem Übertragen des Programms kann man im linken Fensterbereich auf "Daten anzeigen Calliope mini" auswählen und bekommt die unten abgebildete Ansicht.
 
@@ -76,6 +75,7 @@ Für das Auslesen des analogen Wertes bietet es sich an, den analogen Wert über
     <!-- Inhalt für Python -->
     Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
   </div>
+</div>
 </div>
 
 ## Aufgaben
