@@ -3,7 +3,7 @@ title: 'Infrarot-Sensor TCRT5000'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'infrarot-sensoren.jpg,schaltskizze-calliope-infrarot-tcrt5000.png,tcrt5000-auslesen-analog-makecode.png,tcrt5000-digital-auslesen-makecode.png,makecode-serial-monitor-tcrt5000.png,tcrt5000-auslesen-analog-makecode-anzeige.png'
+media_order: 'infrarot-sensoren.jpg,schaltskizze-calliope-infrarot-tcrt5000.png,tcrt5000-auslesen-analog-makecode.png,tcrt5000-digital-auslesen-makecode.png,makecode-serial-monitor-tcrt5000.png,tcrt5000-auslesen-analog-makecode-anzeige.png,orl-tcrt5000-analog-auslesen.png,orl-tcrt5000-digital-auslesen.png,orl-tcrt5000-konf.png,serial-monitor-starten.png,orl-tcrt5000-seriell-ausgeben.png'
 featured_image: infrarot-sensoren.jpg
 ---
 
@@ -66,12 +66,37 @@ Für das Auslesen des analogen Wertes bietet es sich an, den analogen Wert über
 </div>
 
   </div>
-  <div class="roberta content-block" style="display: none;">
-    <!-- Inhalt für Open Roberta Lab -->
-    <h3>Open Roberta Lab</h3>
-    <p>Hier steht der Inhalt für Open Roberta Lab...</p>
+  <div class="roberta content-block" markdown="1">
+Zum Auslesen des TCRT5000 muss man zunächst die Konfiguration der Pins als digitaler bzw. analoger Sensor vornehmen.
+
+![orl-tcrt5000-konf](orl-tcrt5000-konf.png?resize=500&classes=caption "Konfiguration von Pin P1 als digitaler bzw. analoger Sensor. Achtung: Die dargestellte Doppelkonfiguration ist nicht sinnvoll, sondern nur zur Demonstrationszwecken vorgenommen!")
+
+! Bei der Konfiguration als analoger Sensor stehen nicht alle oben aufgezählten Pins zur Auswahl. Dies ist ein Bug im Open Roberta Lab (Stand: 01.04.26). Insbesondere ist auch der Pin P0 nicht als analoger Sensor auswählbar, weshalb anders als in oben dargestellten Schaltskizze der Pin P1 als analoger Sensor ausgewählt wird. **Wenn der Pin P1 als analoger Sensor konfiguriert wird, sollte er auch mit Pin A0 des TCRT5000 verbunden werden.**
+
+Nach der Konfiguration kann man sich die Werte auf dem Display des Calliope anzeigen lassen.
+
+<div class="flex-box">
+<div markdown="1">
+![orl-tcrt5000-digital-auslesen](orl-tcrt5000-digital-auslesen.png?resize=500&classes=caption "Auslesen des digitalen Wertes des TCRT5000.")
+</div>
+<div markdown="1">
+![orl-tcrt5000-analog-auslesen](orl-tcrt5000-analog-auslesen.png?resize=500&classes=caption "Auslesen des analogen Wertes des TCRT5000.")
+</div>
+</div>
+
+Für das Auslesen des analogen Wertes bietet es sich an, den analogen Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen, um den Verlauf besser nachzuvollziehen. Nach dem Übertragen des Programms kann man im [Open Roberta Connector](https://jira.iais.fraunhofer.de/wiki/spaces/ORInfo/pages/90802891/Open+Roberta+Connector) die Verbindung mit dem Calliope herstellen und den Seriellen Monitor starten (siehe Abbildung). Um die Werte zu visualisieren, kann man sie optional in eine Tabellenkalkulation kopieren und dort ein Diagramm erstellen.
+
+<div class="flex-box">
+<div markdown="1">
+![orl-tcrt5000-seriell-ausgeben](orl-tcrt5000-seriell-ausgeben.png?resize=500&classes=caption "Senden des analogen Wertes über die serielle Schnittstelle (USB-Kabel) an den Computer.")
+</div>
+<div markdown="1">
+![serial-monitor-starten](serial-monitor-starten.png?resize=500&classes=caption "Öffnen des seriellen Monitors im Open Roberta Connector.")
+</div>
+</div>
+
   </div>
-  <div class="python content-block" style="display: none;">
+  <div class="python content-block">
     <!-- Inhalt für Python -->
     Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
   </div>
