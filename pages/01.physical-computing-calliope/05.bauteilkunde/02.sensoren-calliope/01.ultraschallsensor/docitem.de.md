@@ -50,7 +50,7 @@ Das schwarze Kabel verbindet die beiden GND-Anschlüsse (Minus-Pol), das rote Ka
 
 <!-- Inhalte für jede Programmierumgebung -->
 <div class="tab-content">
-  <div class="makecode content-block">
+  <div class="makecode content-block" markdown="1">
     <!-- Inhalt für Makecode -->
 Zum Programmieren mit Makecode muss die Erweiterung "Grove" geladen werden. Darüber können mehrere Sensoren, die alle über einen Grove-Anschluss verfügen, angesteuert bzw. ausgelesen werden. Für den Ultraschallsensor wird der Block ```Entfernung <Pin> cm``` benötigt, der die Entfernung in Zentimetern zurückgibt, die mit dem Ultraschallsensor gemessen wurde. Als Pin muss ```C16 (A1 RX)``` ausgewählt werden, da dies der Echo-Pin ist, der das Signal zurückgibt.
 
@@ -95,7 +95,7 @@ Der Ultraschallsensor mit Jacdac-Anschluss wird mit einem der Jacdac-Anschlüsse
 
 <!-- Inhalte für jede Programmierumgebung -->
 <div class="tab-content">
-  <div class="makecode content-block">
+  <div class="makecode content-block" markdown="1">
     <!-- Inhalt für Makecode -->
 Das Vorgehen für das Laden der Jacdac-Erweiterung und erste Programmierschritte zeigt die [Jacdac-Dokumentation der offiziellen Calliope-Seite](https://calliope.cc/calliope-mini/erweiterungen/jacdac) sehr gut. Im Überblick:
 - Jacdac-Erweiterung laden. Danach erscheint die neue Block-Kategorie "Module", die aber nur zwei Blöcke enthält.
@@ -143,7 +143,7 @@ Grundsätzlich sind die folgenden Pins sowohl für den Trigger-Pin als auch für
 
 <!-- Inhalte für jede Programmierumgebung -->
 <div class="tab-content">
-  <div class="makecode content-block">
+  <div class="makecode content-block" markdown="1">
     <!-- Inhalt für Makecode -->
 Zur Bestimmung des Abstands muss man auf das Funktionsprinzip des Ultraschallsensors zurückgreifen, das oben beschrieben wurde. Mit dem folgenden Programm wird die Entfernung ermittelt und auf dem Display des Calliope ausgegeben.
 

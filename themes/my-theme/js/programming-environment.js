@@ -1,39 +1,45 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Tabs und Inhalte auswählen
-    const tabButtons = document.querySelectorAll('.tab-button');
-    const contentBlocks = document.querySelectorAll('.content-block');
-
     // Auswahl aus Local Storage laden (Standard: 'makecode')
     const gespeicherteUmgebung = localStorage.getItem('programmierumgebung') || 'makecode';
 
-    // Standardmäßig aktiven Tab und Inhalt setzen
-    const aktiverTab = document.querySelector(`.tab-button[data-umgebung="${gespeicherteUmgebung}"]`);
-    const aktiverInhalt = document.querySelector(`.${gespeicherteUmgebung}`);
+    // Alle Tab-Gruppen auswählen
+    const tabGroups = document.querySelectorAll('[data-group="programmierumgebung"]');
 
-    // Alle Inhalte ausblenden
-    contentBlocks.forEach(block => block.style.display = 'none');
+    // Funktion zum Aktualisieren aller Tab-Gruppen
+    function updateAllTabs(selectedUmgebung) {
+        tabGroups.forEach(group => {
+            // Tabs aktualisieren
+            const tabButtons = group.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => {
+                button.classList.remove('active');
+                if (button.getAttribute('data-umgebung') === selectedUmgebung) {
+                    button.classList.add('active');
+                }
+            });
 
-    // Aktiven Tab und Inhalt anzeigen
-    if (aktiverTab) aktiverTab.classList.add('active');
-    if (aktiverInhalt) aktiverInhalt.style.display = 'block';
+            // Inhalte aktualisieren
+            const contentBlocks = group.querySelectorAll('.content-block');
+            contentBlocks.forEach(block => {
+                block.style.display = 'none';
+                if (block.classList.contains(selectedUmgebung)) {
+                    block.style.display = 'block';
+                }
+            });
+        });
+    }
 
-    // Tab-Klick-Handler
-    tabButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const umgebung = this.getAttribute('data-umgebung');
+    // Standardmäßig alle Tab-Gruppen aktualisieren
+    updateAllTabs(gespeicherteUmgebung);
 
-            // Aktiven Tab aktualisieren
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-
-            // Alle Inhalte ausblenden
-            contentBlocks.forEach(block => block.style.display = 'none');
-
-            // Nur den ausgewählten Inhalt anzeigen
-            document.querySelector(`.${umgebung}`).style.display = 'block';
-
-            // Auswahl im Local Storage speichern
-            localStorage.setItem('programmierumgebung', umgebung);
+    // Tab-Klick-Handler für alle Tab-Gruppen
+    tabGroups.forEach(group => {
+        const tabButtons = group.querySelectorAll('.tab-button');
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const umgebung = this.getAttribute('data-umgebung');
+                updateAllTabs(umgebung);
+                localStorage.setItem('programmierumgebung', umgebung);
+            });
         });
     });
 });
