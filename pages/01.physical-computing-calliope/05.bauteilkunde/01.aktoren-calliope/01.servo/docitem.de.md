@@ -36,7 +36,7 @@ Für die Verbindung mit dem Jacdac-Anschluss gibt es ein Servo-Modul, an dem sic
 
 ### 3V-Servo am Calliope
 
-Wenn nur ein Servo angesteuer werden soll und dieser schon ab einer Spannung von 3V funktioniert, lässt sich der Servo direkt an der Pin-Leiste des Calliope anschließen. (Wenn du dir unsicher bist, ob 3V für deinen Servo ausreichen, dann recherchiere im Internet, z. B. mit dem Begriff "Servo *bezeichnung* Datasheet".) Für die folgenden Beispiele wurden die 3V-Servos FT90R und FT90B verwendet.
+Wenn nur ein Servo angesteuert werden soll und dieser schon ab einer Spannung von 3V funktioniert, lässt sich der Servo direkt an der Pin-Leiste des Calliope anschließen. (Wenn du dir unsicher bist, ob 3V für deinen Servo ausreichen, dann recherchiere im Internet, z. B. mit dem Begriff "Servo *bezeichnung* Datasheet".) Für die folgenden Beispiele wurden die 3V-Servos FT90R und FT90B verwendet.
 
 ![calliope-v3-3,3volt-servo](calliope-v3-3,3volt-servo.png?lightbox=1024&resize=500&classes=caption "Anschluss eines 3V-Servos direkt am Calliope.")
 
