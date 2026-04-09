@@ -23,7 +23,7 @@ Es wird zwischen zwei Arten von Servos unterschieden:
 </div>
 Jeder Servo kommt mit drei Anschlüssen: VCC (rotes Kabel, Pluspol) und GND (braunes Kabel, Minuspol) stellen die Stromversorgung sicher, ein drittes Kabel (orange) dient als Signalkabel, um den Winkel bzw. die Geschwindigkeit einzustellen. Das Signal wird per Pulsweitenmodulation übermittelt.
 
-## Schaltung und Programmierung mit Jacdac-Anschluss
+## Jacdac
 
 Über den Jacdac-Anschluss können auf einfache Weise Sensoren und Aktoren an den Calliope angeschlossen und angesteuert werden. Es können mehrere Jacdac-Bauteile hintereinander angeschlossen werden. Über den Jacdac-Hub können sie auch parallel angeschlossen werden. Jacdac ermöglicht nicht nur die Kommunikation von Sensor und Calliope, sondern auch per WebUSB mit Makecode. Auf diese Weise wird der aktuelle Wert direkt in Makecode angezeigt.
 
@@ -32,17 +32,50 @@ Für die Verbindung mit dem Jacdac-Anschluss gibt es ein Servo-Modul, an dem sic
 *Achte darauf, welcher Servo der kontinuierliche Servo (360° Servo) und welcher der Winkelsteller-Servo (180° Servo) ist, um sie richtig anzusteuern.*
 
 
-## Schaltungen und Programmierung über die Pin-Leiste
+## Pin-Leiste
+
+### Schaltung über die Pin-Leiste
 
 Am einfachsten ist wahrscheinlich die Nutzung des [Servoboards](https://calliope.cc/calliope-mini/erweiterungen/servoboard), über das bis zur vier Servos und zwei Motoren am Calliope angeschlossen werden können. Falls dieses jedoch nicht zur Verfügung steht, werden unten andere Schaltungsarten dargestellt. Die Programmierung erfolgt mit dem Servoboard genauso wie unten dargestellt, jedoch müssen die Signalpins entsprechend angepasst werden.
 
-### 3V-Servo am Calliope
+#### 3V-Servo am Calliope
 
 Wenn nur ein Servo angesteuert werden soll und dieser schon ab einer Spannung von 3V funktioniert, lässt sich der Servo direkt an der Pin-Leiste des Calliope anschließen. (Wenn du dir unsicher bist, ob 3V für deinen Servo ausreichen, dann recherchiere im Internet, z. B. mit dem Begriff "Servo *bezeichnung* Datasheet".) Für die folgenden Beispiele wurden die 3V-Servos FT90R und FT90B verwendet.
 
 ![calliope-v3-3,3volt-servo](calliope-v3-3,3volt-servo.png?lightbox=1024&resize=500&classes=caption "Anschluss eines 3V-Servos direkt am Calliope.")
 
 Für das Signalkabel (orange) kommen die Pins P0, P1, P2, P3, C4, C8, C9, C13, C14, C15, C16, C17 in Frage, soweit diese nicht anderweitig schon belegt sind (die Pins P0 bis P3 können über die goldenen Ringpads schon in Benutzung sein).
+
+#### 5V-Servo mit Batteriefach
+
+Auch stärkere Servos wie der verbreitete SG90 können mit dem Calliope gesteuert werden. Die Stromversorgung muss jedoch anders hergestellt werden, weil der Calliope weder genug Spannung noch genug Strom bereitstellen kann. Dazu kann wie im Folgenden dargestellt ein Batteriefach genutzt werden. Mit vier 1,5V Batterien kommt man auf 6V. Im Fall des SG90, der mit 4,8V bis 6V versorgt werden muss, passt das.
+
+![calliope-v3-servo-mit-batteriefach-6v](calliope-v3-servo-mit-batteriefach-6v.png?lightbox=1024&resize=500&classes=caption "Anschluss eines SG90-Servos am Calliope mit Hilfe eines Batteriefachs und eines kleinen Steckbretts. Gestrichelt dargestellt ist ein zweiter Servo, der zusätzlich angeschlossen werden kann. Auf die dargestellte Weise können bis zu vier Servos angeschlossen werden.")
+
+Für das Signalkabel (orange) kommen die Pins P0, P1, P2, P3, C4, C8, C9, C13, C14, C15, C16, C17 in Frage, soweit diese nicht anderweitig schon belegt sind (die Pins P0 bis P3 können über die goldenen Ringpads schon in Benutzung sein).
+
+Die Programmierung erfolgt genauso wie oben für den 3V-Servo beschrieben. Da es sich bei dem SG90 um einen Winkelsteller-Servo handelt, sind die entsprechenden Programmbeispiele für ihn relevant.
+
+
+#### Anschluss mehrerer Servos mit dem Power Supply Module
+
+!!!! ![Power Supply Module](steckbrett-mit-power-module-klein.png?resize=300&classes=caption,figure-right "Power Supply Module auf Steckbrett mit angeschlossener Batterie.")
+!!!! #### Das “Power Supply Module”
+!!!! 
+!!!! Das Power Supply Module dient zur Spannungsversorgung auf einem Steckbrett. Dazu kann eine Batterie mit $ 6,5\, V$ bis $ 12\, V$ oder ein USB-Kabel angeschlossen werden. Die Spannung wird auf dem Modul je nach Einstellung der *Jumper* auf $ 5\, V$ oder $ 3,3\, V$ heruntergeregelt. Dazu verbindet man mithilfe der Jumper die Anschlüsse `5V` und `OFF` bzw. `3.3` und `OFF`.
+!!!! Die Spannung kann entlang der langen äußeren Leisten abgegriffen werden, wenn der Taster neben der Hohlbuchse gedrückt ist. Die Zuordnung zu Pluspol und Minuspol ist auf dem Power Supply Module mit `+` bzw. `-` markiert.
+
+Das folgende Bild zeigt, wie man die Stromversorgung für zwei Servos mit Hilfe des Power Supply Modules herstellen kann.
+
+![power-supply-module-zwei-servos-hinweise](power-supply-module-zwei-servos-hinweise.png?lightbox=1024&resize=800&classes=caption "Steckbrett mit Power Supply Module, Calliope und zwei Servos.")
+
+Ergänzende Hinweise:
+- Der Jumper ist auf 5V eingestellt, da die FT90B/R Servos bis zu 5V vertragen. Bei einer Einstellung des Jumpers auf 3,3V reichte die Spannung bei meinen Tests aufgrund von Verlusten im Steckbrett nicht aus.
+- Bei manchen Steckbrettern sind die Plus- und Minusleisten in der Mitte getrennt. Gegebenenfalls muss hier ein Kabel zur Überbrückung eingebaut werden.
+- Der maximale Stromfluss beträgt bei dem Power Supply Module $1\,A$.
+
+
+### Programmierung über die Pin-Leiste
 
 #### Programmierung mit Servo-Befehlen
 
@@ -194,35 +227,6 @@ while True:
   </div>
 </div>
 </div>
-
-### 5V-Servo mit Batteriefach
-
-Auch stärkere Servos wie der verbreitete SG90 können mit dem Calliope gesteuert werden. Die Stromversorgung muss jedoch anders hergestellt werden, weil der Calliope weder genug Spannung noch genug Strom bereitstellen kann. Dazu kann wie im Folgenden dargestellt ein Batteriefach genutzt werden. Mit vier 1,5V Batterien kommt man auf 6V. Im Fall des SG90, der mit 4,8V bis 6V versorgt werden muss, passt das.
-
-![calliope-v3-servo-mit-batteriefach-6v](calliope-v3-servo-mit-batteriefach-6v.png?lightbox=1024&resize=500&classes=caption "Anschluss eines SG90-Servos am Calliope mit Hilfe eines Batteriefachs und eines kleinen Steckbretts. Gestrichelt dargestellt ist ein zweiter Servo, der zusätzlich angeschlossen werden kann. Auf die dargestellte Weise können bis zu vier Servos angeschlossen werden.")
-
-Für das Signalkabel (orange) kommen die Pins P0, P1, P2, P3, C4, C8, C9, C13, C14, C15, C16, C17 in Frage, soweit diese nicht anderweitig schon belegt sind (die Pins P0 bis P3 können über die goldenen Ringpads schon in Benutzung sein).
-
-Die Programmierung erfolgt genauso wie oben für den 3V-Servo beschrieben. Da es sich bei dem SG90 um einen Winkelsteller-Servo handelt, sind die entsprechenden Programmbeispiele für ihn relevant.
-
-
-### Anschluss mehrerer Servos mit dem Power Supply Module
-
-!!!! ![Power Supply Module](steckbrett-mit-power-module-klein.png?resize=300&classes=caption,figure-right "Power Supply Module auf Steckbrett mit angeschlossener Batterie.")
-!!!! #### Das “Power Supply Module”
-!!!! 
-!!!! Das Power Supply Module dient zur Spannungsversorgung auf einem Steckbrett. Dazu kann eine Batterie mit $ 6,5\, V$ bis $ 12\, V$ oder ein USB-Kabel angeschlossen werden. Die Spannung wird auf dem Modul je nach Einstellung der *Jumper* auf $ 5\, V$ oder $ 3,3\, V$ heruntergeregelt. Dazu verbindet man mithilfe der Jumper die Anschlüsse `5V` und `OFF` bzw. `3.3` und `OFF`.
-!!!! Die Spannung kann entlang der langen äußeren Leisten abgegriffen werden, wenn der Taster neben der Hohlbuchse gedrückt ist. Die Zuordnung zu Pluspol und Minuspol ist auf dem Power Supply Module mit `+` bzw. `-` markiert.
-
-Das folgende Bild zeigt, wie man die Stromversorgung für zwei Servos mit Hilfe des Power Supply Modules herstellen kann.
-
-![power-supply-module-zwei-servos-hinweise](power-supply-module-zwei-servos-hinweise.png?lightbox=1024&resize=800&classes=caption "Steckbrett mit Power Supply Module, Calliope und zwei Servos.")
-
-Ergänzende Hinweise:
-- Der Jumper ist auf 5V eingestellt, da die FT90B/R Servos bis zu 5V vertragen. Bei einer Einstellung des Jumpers auf 3,3V reichte die Spannung bei meinen Tests aufgrund von Verlusten im Steckbrett nicht aus.
-- Bei manchen Steckbrettern sind die Plus- und Minusleisten in der Mitte getrennt. Gegebenenfalls muss hier ein Kabel zur Überbrückung eingebaut werden.
-- Der maximale Stromfluss beträgt bei dem Power Supply Module $1\,A$.
-
 
 ## Aufgaben
 
