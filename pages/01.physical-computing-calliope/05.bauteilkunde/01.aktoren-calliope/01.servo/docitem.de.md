@@ -27,9 +27,9 @@ Jeder Servo kommt mit drei Anschlüssen: VCC (rotes Kabel, Pluspol) und GND (bra
 
 Über den Jacdac-Anschluss können auf einfache Weise Sensoren und Aktoren an den Calliope angeschlossen und angesteuert werden. Es können mehrere Jacdac-Bauteile hintereinander angeschlossen werden. Über den Jacdac-Hub können sie auch parallel angeschlossen werden. Jacdac ermöglicht nicht nur die Kommunikation von Sensor und Calliope, sondern auch per WebUSB mit Makecode. Auf diese Weise wird der aktuelle Wert direkt in Makecode angezeigt.
 
-Für die Verbindung mit dem Jacdac-Anschluss gibt es ein Servo-Modul, an dem sich zwei Servos anschließen lassen. Beachte die Angabe der Farben auf dem Modul, damit die Kabel richtig herum angeschlossen werden! Da ein Servomotor recht viel Strom ziehen kann, wird zusätzlich das Power-Modul benötigt. Der Anschluss und die Programmierung ist auf der [Jacdac-Seite von calliope.cc](https://calliope.cc/calliope-mini/erweiterungen/jacdac#servo) schön gezeigt.
+Für die Verbindung mit dem Jacdac-Anschluss gibt es ein Servo-Modul, an dem sich zwei Servos anschließen lassen. Beachte die Angabe der Farben auf dem Modul, damit die Kabel richtig herum angeschlossen werden! Da ein Servomotor recht viel Strom ziehen kann, wird zusätzlich das Power-Modul benötigt. **Der Anschluss und die Programmierung ist auf der [Jacdac-Seite von calliope.cc](https://calliope.cc/calliope-mini/erweiterungen/jacdac#servo) schön gezeigt**.
 
-**Achte darauf, welcher Servo der kontinuierliche Servo (360° Servo) und welcher der Winkelsteller-Servo (180° Servo) ist, um sie richtig anzusteuern.**
+*Achte darauf, welcher Servo der kontinuierliche Servo (360° Servo) und welcher der Winkelsteller-Servo (180° Servo) ist, um sie richtig anzusteuern.*
 
 
 ## Schaltungen mit Jumper-Kabeln
@@ -71,8 +71,8 @@ Zunächst muss der Servo in der Roboterkonfiguration angelegt werden. Dort stehe
 <div markdown="1" class="flexible">![orl-servo-steuern](orl-servo-steuern.png?resize=500 "orl-servo-steuern")</div>
 </div>
   </div>
-  <div class="python content-block">
-    Zunächst muss das Modul "Servo" zum Projekt hinzugefügt werden, welches zwei Funktionen zum Ansteuern von Servos zur Verfügung stellt. Dazu gehe auf Projekt -> Module hinzufügen -> Servo. Danach muss das Modul in `main.py` importiert werden und die Funktionen stehen bereit.
+  <div class="python content-block" markdown="1">
+    Zunächst muss das Modul "Servo" zum Projekt hinzugefügt werden, welches zwei Funktionen zum Ansteuern von Servos zur Verfügung stellt. Dazu gehe auf **Projekt -> Module hinzufügen -> Servo**. Danach muss das Modul in `main.py` importiert werden und die Funktionen stehen bereit.
     <div class="flex-box">
         <div markdown="1" class="flexible">
  ```python
