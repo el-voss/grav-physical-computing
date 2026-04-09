@@ -141,7 +141,7 @@ Im Folgenden wird die Programmierung mit den Signalzeiten für den Servo FT90R b
 | 1,5ms | Tempo 0% / Stopp | 77 |
 | 2,3ms | Tempo 100% gegen den Uhrzeigersinn | 118 |
 
-
+<br>
 
 <!-- Tabs für die Auswahl -->
 <div class="tab-group" data-group="programmierumgebung">
