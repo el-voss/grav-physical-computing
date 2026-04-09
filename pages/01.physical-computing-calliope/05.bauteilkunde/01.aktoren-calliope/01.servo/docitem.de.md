@@ -126,6 +126,7 @@ while True:
         set_servo_angle(pin0, 180)  # Winkel auf 180°
         sleep(1000)
 ```
+Testprogramm zum Ansteuern eines Winkelsteller-Servos.
 </div>
 <div markdown="1" class="flexible">
  ```python
@@ -145,6 +146,7 @@ while True:
         sleep(1000)
         set_servo_speed(pin0, 0)   # Stopp
 ```
+Testprogramm zum Ansteuern eines kontinuierlichen Servos.
 </div>
 </div>
   </div>
