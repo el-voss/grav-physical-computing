@@ -193,11 +193,11 @@ while True:
 </div>
 </div>
 
-### Stärkerer Servo mit Batteriefach
+### 5V-Servo mit Batteriefach
 
 Auch stärkere Servos wie der verbreitete SG90 können mit dem Calliope gesteuert werden. Die Stromversorgung muss jedoch anders hergestellt werden, weil der Calliope weder genug Spannung noch genug Strom bereitstellen kann. Dazu kann wie im Folgenden dargestellt ein Batteriefach genutzt werden. Mit vier 1,5V Batterien kommt man auf 6V. Im Fall des SG90, der mit 4,8V bis 6V versorgt werden muss, passt das.
 
-![calliope-v3-servo-mit-batteriefach-6v](calliope-v3-servo-mit-batteriefach-6v.png?lightbox=1024&resize=500&classes=caption "Anschluss eines SG90-Servos am Calliope mit Hilfe eines Batteriefachs. Gestrichelt dargestellt ist ein zweiter Servo, der zusätzlich angeschlossen werden kann. Auf die dargestellte Weise können bis zu vier Servos angeschlossen werden.")
+![calliope-v3-servo-mit-batteriefach-6v](calliope-v3-servo-mit-batteriefach-6v.png?lightbox=1024&resize=500&classes=caption "Anschluss eines SG90-Servos am Calliope mit Hilfe eines Batteriefachs und eines kleinen Steckbretts. Gestrichelt dargestellt ist ein zweiter Servo, der zusätzlich angeschlossen werden kann. Auf die dargestellte Weise können bis zu vier Servos angeschlossen werden.")
 
 Die Programmierung erfolgt genauso wie oben für den 3V-Servo beschrieben. Da es sich bei dem SG90 um einen Winkelsteller-Servo handelt, sind die entsprechenden Programmbeispiele für ihn relevant.
 
