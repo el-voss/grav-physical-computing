@@ -82,7 +82,7 @@ Zunächst muss der Ultraschallsensor in der Roboterkonfiguration angelegt werden
 Über den Jacdac-Anschluss können auf einfache Weise Sensoren und Aktoren an den Calliope angeschlossen und angesteuert werden. Es können mehrere Jacdac-Bauteile hintereinander angeschlossen werden. Über den Jacdac-Hub können sie auch parallel angeschlossen werden. Jacdac ermöglicht nicht nur die Kommunikation von Sensor und Calliope, sondern auch per WebUSB mit Makecode. Auf diese Weise wird der aktuelle Sensorwert direkt in Makecode angezeigt.
 </div>
 
-Der Ultraschallsensor mit Jacdac-Anschluss wird mit einem der Jacdac-Anschlüsse des Calliope verbunden. 
+Der Ultraschallsensor mit Jacdac-Anschluss wird mit einem der Jacdac-Anschlüsse des Calliope verbunden. Der Anschluss und die Programmierung ist auch auf der [Jacdac-Seite von calliope.cc](https://calliope.cc/calliope-mini/erweiterungen/jacdac#ultraschall) schön gezeigt.
     
 ### Programmierung
 
