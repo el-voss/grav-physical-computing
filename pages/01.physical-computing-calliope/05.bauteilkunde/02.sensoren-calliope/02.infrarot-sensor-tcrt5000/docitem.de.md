@@ -3,7 +3,7 @@ title: 'Infrarot-Sensor TCRT5000'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'infrarot-sensoren.jpg,schaltskizze-calliope-infrarot-tcrt5000.png,tcrt5000-auslesen-analog-makecode.png,tcrt5000-digital-auslesen-makecode.png,makecode-serial-monitor-tcrt5000.png,tcrt5000-auslesen-analog-makecode-anzeige.png,orl-tcrt5000-analog-auslesen.png,orl-tcrt5000-digital-auslesen.png,orl-tcrt5000-konf.png,serial-monitor-starten.png,orl-tcrt5000-seriell-ausgeben.png'
+media_order: 'infrarot-sensoren.jpg,schaltskizze-calliope-infrarot-tcrt5000.png,tcrt5000-auslesen-analog-makecode.png,tcrt5000-digital-auslesen-makecode.png,makecode-serial-monitor-tcrt5000.png,tcrt5000-auslesen-analog-makecode-anzeige.png,orl-tcrt5000-analog-auslesen.png,orl-tcrt5000-digital-auslesen.png,orl-tcrt5000-konf.png,serial-monitor-starten.png,orl-tcrt5000-seriell-ausgeben.png,py-tcrt5000-seriell.png'
 featured_image: infrarot-sensoren.jpg
 ---
 
@@ -96,9 +96,57 @@ Für das Auslesen des analogen Wertes bietet es sich an, den analogen Wert über
 </div>
 
   </div>
-  <div class="python content-block">
-    <!-- Inhalt für Python -->
-    Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
+  <div class="python content-block" markdown="1">
+Zum Auslesen des TCRT5000 lässt man sich aus der Kategorie "Pins" die digitalen bzw. analogen Werte der entsprechenden Pins anzeigen.
+
+<div class="flex-box">
+<div markdown="1">
+´´´python
+# Imports go at the top
+from calliopemini import *
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    display.show(pin1.read_digital())
+    display.clear()
+    sleep(1000)
+```
+Auslesen des digitalen Werts des TCRT5000.
+</div>
+<div markdown="1">
+´´´python
+# Imports go at the top
+from calliopemini import *
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    display.scroll(pin0.read_analog())
+    display.clear()
+    sleep(1000)
+```
+Auslesen des analogen Werts des TCRT5000.
+</div>
+</div>
+
+Für das Auslesen des analogen Wertes bietet es sich an, den analogen Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen, um den Verlauf besser nachzuvollziehen. Nach dem Übertragen des Programms kann man direkt im Python Editor den Seriellen Monitor öffnen. Um die Werte zu visualisieren, kann man sie optional in eine Tabellenkalkulation kopieren und dort ein Diagramm erstellen.
+
+<div class="flex-box">
+<div markdown="1">
+´´´python
+# Imports go at the top
+from calliopemini import *
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    print(pin0.read_analog())
+    sleep(500)
+```
+Ausgabe des Analogwerts des TCRT5000 auf dem seriellen Monitor.
+</div>
+<div markdown="1">
+![py-tcrt5000-seriell](py-tcrt5000-seriell.png?lightbox=1024&resize=400&classes=caption "Ausgabe der Analogwerte des TCRT5000 auf dem seriellen Monitor.")
+</div>
+</div>
   </div>
 </div>
 </div>
