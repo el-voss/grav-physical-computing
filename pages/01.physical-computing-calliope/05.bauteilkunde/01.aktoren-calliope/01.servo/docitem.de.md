@@ -125,7 +125,7 @@ Die Signalzeit 1,5ms steht für einen Winkel von 90°. Um den zugehörigen Analo
 
 Im Folgenden wird die Programmierung mit den Signalzeiten für den Servo FT90R bzw. FT90B zu Grunde gelegt.
 
-<div class="flex-box" style="text-align: left; gap: 12em;">
+<div class="flex-box" style="justify-content: left; gap: 2em;">
 <div markdown="1" class="flexible">
 **FT90B** (180° Servo)
 
