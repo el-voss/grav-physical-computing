@@ -8,7 +8,7 @@ taxonomy:
         - Servo
     Niveau:
         - Basis
-featured_image: servo.png
+featured_image: servo-3v.jpg
 media_order: 'calliope-v3-servo-mit-batteriefach-6v.png,mc-erweiterung-servo.png,mc-360-grad-servo-steuern.png,servo.png,orl-conf-servo.png,calliope-v3-3,3volt-servo.png,servo-3v.jpg,mc-servo-steuern.png,mc-servo-mit-pwm-steuern.png,orl-servo-steuern.png'
 ---
 
