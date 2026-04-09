@@ -101,7 +101,7 @@ Zum Auslesen des TCRT5000 lässt man sich aus der Kategorie "Pins" die digitalen
 
 <div class="flex-box">
 <div markdown="1">
-´´´python
+ ```python
 # Imports go at the top
 from calliopemini import *
 
@@ -110,11 +110,11 @@ while True:
     display.show(pin1.read_digital())
     display.clear()
     sleep(1000)
-´´´
+```
 Auslesen des digitalen Werts des TCRT5000.
 </div>
 <div markdown="1">
-´´´python
+ ```python
 # Imports go at the top
 from calliopemini import *
 
@@ -123,7 +123,7 @@ while True:
     display.scroll(pin0.read_analog())
     display.clear()
     sleep(1000)
-´´´
+ ```
 Auslesen des analogen Werts des TCRT5000.
 </div>
 </div>
@@ -132,7 +132,7 @@ Für das Auslesen des analogen Wertes bietet es sich an, den analogen Wert über
 
 <div class="flex-box">
 <div markdown="1">
-´´´python
+ ```python
 # Imports go at the top
 from calliopemini import *
 
@@ -140,7 +140,7 @@ from calliopemini import *
 while True:
     print(pin0.read_analog())
     sleep(500)
-´´´
+ ```
 Ausgabe des Analogwerts des TCRT5000 auf dem seriellen Monitor.
 </div>
 <div markdown="1">
