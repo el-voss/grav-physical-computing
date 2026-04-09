@@ -9,7 +9,7 @@ taxonomy:
     Niveau:
         - Basis
 featured_image: servo-3v.jpg
-media_order: 'calliope-v3-servo-mit-batteriefach-6v.png,mc-erweiterung-servo.png,mc-360-grad-servo-steuern.png,servo.png,orl-conf-servo.png,calliope-v3-3,3volt-servo.png,servo-3v.jpg,mc-servo-steuern.png,mc-servo-mit-pwm-steuern.png,orl-servo-steuern.png'
+media_order: 'calliope-v3-servo-mit-batteriefach-6v.png,mc-erweiterung-servo.png,mc-360-grad-servo-steuern.png,servo.png,orl-conf-servo.png,servo-3v.jpg,mc-servo-steuern.png,mc-servo-mit-pwm-steuern.png,orl-servo-steuern.png,calliope-v3-3,3volt-servo.png,orl-servo-mit-pwm-steuern.png,orl-conf-aktor.png'
 ---
 
 <div markdown="1" class="clearfix">
@@ -116,6 +116,96 @@ while True:
 </div>
 </div>
 
+#### Programmierung mit Pulsweitenmodulation
+
+Die Steuerung der Servos erfolgt über ein PWM-Signal (Pulsweitenmodulation). Dabei gibt die Länge der Signalzeit, in der die Spannung auf 3,3V liegt, an, welcher Winkel bzw. welche Geschwindigkeit eingestellt werden soll. Die Signalzeiten variieren dabei von Servo zu Servo ein bisschen, sind aber im Wesentlichen vergleichbar. Wenn der Winkel mit Hilfe der Erweiterung (siehe oben) nicht ganz korrekt eingestellt wird, liegt das daran, dass die Signalzeiten für den verwendeten Servo nicht genau denen entsprechen, die der Erweiterung zugrunde liegen. Wenn man die Signalzeiten zu einem Analogwert für die Pulsweitenmodulation umrechnet, erhält man die exakten Werte.
+
+Beispiel:
+Die Signalzeit 1,5ms steht für einen Winkel von 90°. Um den zugehörigen Analogwert zu berechnen, teilt man die Signalzeit durch die Periodendauer (20ms) und multipliziert diese mit dem maximalen Analogwert von 1023: $\frac{1,5ms}{20ms} \cdot 1023 = 76,725 \approx 77$.
+
+Im Folgenden wird die Programmierung mit den Signalzeiten für den Servo FT90R bzw. FT90B zu Grunde gelegt.
+
+**FT90B** (180° Servo)
+| Signalzeit | Bedeutung | Analogwert |
+|--------------|----------------|-----------------|
+| 0,7 ms | 0° | 36 |
+| 1,5ms | 90° | 77 |
+| 2,3ms | 180° | 118 |
+
+**FT90R** (360° Servo)
+| Signalzeit | Bedeutung | Analogwert |
+|--------------|----------------|-----------------|
+| 0,7 ms | Tempo 100% im Uhrzeigersinn | 36 |
+| 1,5ms | Tempo 0% / Stopp | 77 |
+| 2,3ms | Tempo 100% gegen den Uhrzeigersinn | 118 |
+
+<!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block" markdown="1">
+Eine Erweiterung ist nicht nötig. Die Befehle finden sich unter Fortgeschritten -> Pins. Das folgende Programm stellt den Winkel bzw. die Geschwindigkeit entsprechend der oben dargestellten Tabellen ein.
+
+![mc-servo-mit-pwm-steuern](mc-servo-mit-pwm-steuern.png?lightbox=1024&resize=500 "mc-servo-mit-pwm-steuern")
+
+  </div>
+  <div class="roberta content-block" markdown="1">
+Zunächst muss ein analoger Aktor in der Roboterkonfiguration angelegt werden. Dort stehen aktuell (Stand 09.04.26) nicht alle möglichen Pins zur Verfügung, daher muss das Signalkabel ggf. an einen anderen, hier ausgewählten Pin wie P1 angeschlossen werden. Das folgende Programm stellt den Winkel bzw. die Geschwindigkeit entsprechend der oben dargestellten Tabellen ein.
+<div class="flex-box">
+<div markdown="1" class="flexible">![orl-conf-aktor](orl-conf-aktor.png?resize=300 "orl-conf-aktor")</div>
+<div markdown="1" class="flexible">![orl-servo-mit-pwm-steuern](orl-servo-mit-pwm-steuern.png?resize=500 "orl-servo-mit-pwm-steuern")</div>
+</div>
+  </div>
+  <div class="python content-block" markdown="1">
+
+<div class="flex-box">
+<div markdown="1" class="flexible">
+ ```python
+# Imports go at the top
+from calliopemini import *
+from Servo import *
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    if button_a.is_pressed():
+        # 180°-Servo an P0 wird auf 0°, 90° und 180° gestellt
+        set_servo_angle(pin0, 0)  # Winkel auf 0°
+        sleep(1000)
+        set_servo_angle(pin0, 90)  # Winkel auf 90°
+        sleep(1000)
+        set_servo_angle(pin0, 180)  # Winkel auf 180°
+        sleep(1000)
+```
+</div>
+<div markdown="1" class="flexible">
+ ```python
+# Imports go at the top
+from calliopemini import *
+from Servo import *
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    if button_a.is_pressed():
+        # 360°-Servo an P0 
+        set_servo_speed(pin0, 100) # volles Tempo vorwärts
+        sleep(1000)
+        set_servo_speed(pin0, 0)   # Stopp
+        sleep(1000)
+        set_servo_angle(pin0, -100) # volles Tempo rückwärts
+        sleep(1000)
+        set_servo_speed(pin0, 0)   # Stopp
+```
+</div>
+</div>
+  </div>
+</div>
+</div>
 
 # Aufgaben
 
