@@ -23,7 +23,7 @@ Es wird zwischen zwei Arten von Servos unterschieden:
 </div>
 Jeder Servo kommt mit drei Anschlüssen: VCC (rotes Kabel, Pluspol) und GND (braunes Kabel, Minuspol) stellen die Stromversorgung sicher, ein drittes Kabel (orange) dient als Signalkabel, um den Winkel bzw. die Geschwindigkeit einzustellen. Das Signal wird per Pulsweitenmodulation übermittelt.
 
-# Schaltung und Programmierung mit Jacdac-Anschluss
+## Schaltung und Programmierung mit Jacdac-Anschluss
 
 Über den Jacdac-Anschluss können auf einfache Weise Sensoren und Aktoren an den Calliope angeschlossen und angesteuert werden. Es können mehrere Jacdac-Bauteile hintereinander angeschlossen werden. Über den Jacdac-Hub können sie auch parallel angeschlossen werden. Jacdac ermöglicht nicht nur die Kommunikation von Sensor und Calliope, sondern auch per WebUSB mit Makecode. Auf diese Weise wird der aktuelle Wert direkt in Makecode angezeigt.
 
@@ -32,9 +32,9 @@ Für die Verbindung mit dem Jacdac-Anschluss gibt es ein Servo-Modul, an dem sic
 **Achte darauf, welcher Servo der kontinuierliche Servo (360° Servo) und welcher der Winkelsteller-Servo (180° Servo) ist, um sie richtig anzusteuern.**
 
 
-# Schaltungen mit Jumper-Kabeln
+## Schaltungen mit Jumper-Kabeln
 
-## 3V-Servo am Calliope
+### 3V-Servo am Calliope
 
 Wenn nur ein Servo angesteuer werden soll und dieser schon ab einer Spannung von 3V funktioniert, lässt sich der Servo direkt an der Pin-Leiste des Calliope anschließen. (Wenn du dir unsicher bist, ob 3V für deinen Servo ausreichen, dann recherchiere im Internet, z. B. mit dem Begriff "Servo *bezeichnung* Datasheet".) Für die folgenden Beispiele wurden die 3V-Servos FT90R und FT90B verwendet.
 
@@ -42,7 +42,7 @@ Wenn nur ein Servo angesteuer werden soll und dieser schon ab einer Spannung von
 
 Für das Signalkabel (orange) kommen die Pins P0, P1, P2, P3, C4, C8, C9, C13, C14, C15, C16, C17 in Frage, soweit diese nicht anderweitig schon belegt sind (die Pins P0 bis P3 können über die goldenen Ringpads schon in Benutzung sein).
 
-### Programmierung mit Servo-Befehlen
+#### Programmierung mit Servo-Befehlen
 
 <!-- Tabs für die Auswahl -->
 <div class="tab-group" data-group="programmierumgebung">
