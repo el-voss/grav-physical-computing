@@ -9,7 +9,7 @@ taxonomy:
     Niveau:
         - Basis
 featured_image: servo-3v.jpg
-media_order: 'calliope-v3-servo-mit-batteriefach-6v.png,mc-erweiterung-servo.png,mc-360-grad-servo-steuern.png,servo.png,orl-conf-servo.png,servo-3v.jpg,mc-servo-steuern.png,mc-servo-mit-pwm-steuern.png,orl-servo-steuern.png,orl-servo-mit-pwm-steuern.png,orl-conf-aktor.png,calliope-v3-3,3volt-servo.png,power-supply-module-zwei-servos-hinweise.png'
+media_order: 'calliope-v3-servo-mit-batteriefach-6v.png,mc-erweiterung-servo.png,mc-360-grad-servo-steuern.png,servo.png,orl-conf-servo.png,servo-3v.jpg,mc-servo-steuern.png,mc-servo-mit-pwm-steuern.png,orl-servo-steuern.png,orl-servo-mit-pwm-steuern.png,orl-conf-aktor.png,power-supply-module-zwei-servos-hinweise.png,calliope-v3-3,3volt-servo.png,steckbrett-mit-power-module-klein.png'
 ---
 
 <div markdown="1" class="clearfix">
