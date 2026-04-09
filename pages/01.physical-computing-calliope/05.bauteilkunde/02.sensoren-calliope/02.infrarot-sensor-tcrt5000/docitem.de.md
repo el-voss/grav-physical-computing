@@ -110,7 +110,7 @@ while True:
     display.show(pin1.read_digital())
     display.clear()
     sleep(1000)
-```
+´´´
 Auslesen des digitalen Werts des TCRT5000.
 </div>
 <div markdown="1">
@@ -123,7 +123,7 @@ while True:
     display.scroll(pin0.read_analog())
     display.clear()
     sleep(1000)
-```
+´´´
 Auslesen des analogen Werts des TCRT5000.
 </div>
 </div>
@@ -140,7 +140,7 @@ from calliopemini import *
 while True:
     print(pin0.read_analog())
     sleep(500)
-```
+´´´
 Ausgabe des Analogwerts des TCRT5000 auf dem seriellen Monitor.
 </div>
 <div markdown="1">
