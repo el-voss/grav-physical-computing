@@ -163,46 +163,23 @@ Zunächst muss ein analoger Aktor in der Roboterkonfiguration angelegt werden. D
 </div>
   </div>
   <div class="python content-block" markdown="1">
-
-<div class="flex-box">
-<div markdown="1" class="flexible">
- ```python
+Das Hinzufügen eines Moduls ist nicht mehr nötig. Das folgende Programm stellt den Winkel bzw. die Geschwindigkeit entsprechend der oben dargestellten Tabellen ein.
+```python
 # Imports go at the top
 from calliopemini import *
-from Servo import *
 
 # Code in a 'while True:' loop repeats forever
 while True:
     if button_a.is_pressed():
-        # 180°-Servo an P0 wird auf 0°, 90° und 180° gestellt
-        set_servo_angle(pin0, 0)  # Winkel auf 0°
-        sleep(1000)
-        set_servo_angle(pin0, 90)  # Winkel auf 90°
-        sleep(1000)
-        set_servo_angle(pin0, 180)  # Winkel auf 180°
-        sleep(1000)
+        pin0.write_analog(118)
+        sleep(5000)
+        pin0.write_analog(77)
+        sleep(5000)
+        pin0.write_analog(36)
+        sleep(5000)
+        pin0.write_analog(77)
 ```
-</div>
-<div markdown="1" class="flexible">
- ```python
-# Imports go at the top
-from calliopemini import *
-from Servo import *
 
-# Code in a 'while True:' loop repeats forever
-while True:
-    if button_a.is_pressed():
-        # 360°-Servo an P0 
-        set_servo_speed(pin0, 100) # volles Tempo vorwärts
-        sleep(1000)
-        set_servo_speed(pin0, 0)   # Stopp
-        sleep(1000)
-        set_servo_angle(pin0, -100) # volles Tempo rückwärts
-        sleep(1000)
-        set_servo_speed(pin0, 0)   # Stopp
-```
-</div>
-</div>
   </div>
 </div>
 </div>
