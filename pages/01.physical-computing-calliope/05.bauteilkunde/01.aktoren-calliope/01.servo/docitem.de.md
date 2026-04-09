@@ -14,12 +14,13 @@ media_order: 'calliope-v3-servo-mit-batteriefach-6v.png,mc-erweiterung-servo.png
 
 <div markdown="1" class="clearfix">
 ![Servo-Motor](servo-3v.jpg?resize=250&classes=caption,figure-right "Servo.")
-Ein Servo ist in der Regel ein kleiner Elektromotor zusammen mit einer elektronischen Steuereinheit, die dazu dient, den Motor auf einen bestimmten Winkel oder eine bestimmte Geschwindigkeit einzustellen. Häufig wird beides zusammen als Servomotor bezeichnet. Angewendet werden Servos in vielen Bereichen - zum Beispiel im Modellbau.
-</div>
-Es wird zwischen zwei Arten von Servos unterschieden:
-- Winkelsteller: Diese Servos können auf einen bestimmten Winkel eingestellt werden. Ihre Bezeichnung endet auf einem **B** (z. B. FT90B). Der Winkelbereich beträgt in der Regel 180°.
-- Kontinuierliche Servos (auch 360° Servos): Diese können sich kontinuierlich, um 360°, drehen. Das Steuersignal wird als Geschwindigkeit aufgefasst. Ihre Bezeichnung endet auf einem **R** (z. B. FT90R).
+Ein Servo ist ein kleiner Elektromotor zusammen mit einer elektronischen Steuereinheit, die dazu dient, den Motor auf einen bestimmten Winkel oder eine bestimmte Geschwindigkeit einzustellen. Häufig wird beides zusammen als Servomotor bezeichnet. Angewendet werden Servos in vielen Bereichen - zum Beispiel im Modellbau.
 
+Es wird zwischen zwei Arten von Servos unterschieden:
+- **Winkelsteller (auch 180° Servos)**: Diese Servos können auf einen bestimmten Winkel eingestellt werden. Ihre Bezeichnung endet auf einem **B** (z. B. FT90B). Der Winkelbereich beträgt 180°.
+- **Kontinuierliche Servos (auch 360° Servos)**: Diese können sich kontinuierlich, um 360°, drehen. Das Steuersignal wird als Geschwindigkeit aufgefasst. Ihre Bezeichnung endet auf einem **R** (z. B. FT90R).
+
+</div>
 Jeder Servo kommt mit drei Anschlüssen: VCC (rotes Kabel, Pluspol) und GND (braunes Kabel, Minuspol) stellen die Stromversorgung sicher, ein drittes Kabel (orange) dient als Signalkabel, um den Winkel bzw. die Geschwindigkeit einzustellen. Das Signal wird per Pulsweitenmodulation übermittelt.
 
 # Schaltung und Programmierung mit Jacdac-Anschluss
