@@ -193,20 +193,16 @@ while True:
 </div>
 </div>
 
-# Aufgaben
+### Stärkerer Servo mit Batteriefach
 
-<div markdown="1" class="projekt">
-#### Schranke
+Auch stärkere Servos wie der verbreitete SG90 können mit dem Calliope gesteuert werden. Die Stromversorgung muss jedoch anders hergestellt werden, weil der Calliope weder genug Spannung noch genug Strom bereitstellen kann. Dazu kann wie im Folgenden dargestellt ein Batteriefach genutzt werden. Mit vier 1,5V Batterien kommt man auf 6V. Im Fall des SG90, der mit 4,8V bis 6V versorgt werden muss, passt das.
 
-Baue mit einem Servo eine Schranke, die auf Knopfdruck geöffnet und wieder geschlossen werden kann.
+![calliope-v3-servo-mit-batteriefach-6v](calliope-v3-servo-mit-batteriefach-6v.png?lightbox=1024&resize=500&classes=caption "Anschluss eines SG90-Servos am Calliope mit Hilfe eines Batteriefachs. Gestrichelt dargestellt ist ein zweiter Servo, der zusätzlich angeschlossen werden kann. Auf die dargestellte Weise können bis zu vier Servos angeschlossen werden.")
 
-![Die Servo-Steuerung erfolgt über Angabe eines Winkels zwischen 0° und 180°.](servo-steuerung.png?classes=caption "Die Servo-Steuerung erfolgt über Angabe eines Winkels zwischen 0° und 180°.")
-</div>
+Die Programmierung erfolgt genauso wie oben für den 3V-Servo beschrieben. Da es sich bei dem SG90 um einen Winkelsteller-Servo handelt, sind die entsprechenden Programmbeispiele für ihn relevant.
 
-! **Recherche: Wie funktioniert die Steuerung eines Servos?**
-! Der Winkel, auf den sich die Ausgangswelle des Servo drehen soll, wird über ein PWM-Signal geregelt. Recherchiere im Internet, wie dies realisiert wird und fasse es zusammen.
 
-## Anschluss mehrerer Servos mit dem Power Supply Module
+### Anschluss mehrerer Servos mit dem Power Supply Module
 
 !!!! ![Power Supply Module](steckbrett-mit-power-module-klein.png?resize=300&classes=caption,figure-right "Power Supply Module auf Steckbrett mit angeschlossener Batterie.")
 !!!! #### Das “Power Supply Module”
@@ -227,3 +223,13 @@ Wichtig sind dabei folgende Punkte:
 - Alternativ kann nur eine 9V-Batterie am Power Supply Module angeschlossen werden. Dann wird zusätzlich ein Kabel von der `+`-Leiste des Steckbretts an den 5V-Anschluss des Arduino benötigt.
 
 Auf diese Weise können auch mehrere Servos oder andere stromhungrige Bauteile genutzt werden, ohne den Arduino zu überlasten. Der maximale Stromfluss beträgt bei dem Power Supply Module $1\,A$.
+
+
+## Aufgaben
+
+<div markdown="1" class="projekt">
+#### Schranke
+
+Baue mit einem Servo eine Schranke, die auf Knopfdruck geöffnet und wieder geschlossen werden kann.
+
+</div>
