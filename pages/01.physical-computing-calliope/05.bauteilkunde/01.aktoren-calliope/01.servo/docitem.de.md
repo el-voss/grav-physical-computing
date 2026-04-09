@@ -201,6 +201,8 @@ Auch stärkere Servos wie der verbreitete SG90 können mit dem Calliope gesteuer
 
 ![calliope-v3-servo-mit-batteriefach-6v](calliope-v3-servo-mit-batteriefach-6v.png?lightbox=1024&resize=500&classes=caption "Anschluss eines SG90-Servos am Calliope mit Hilfe eines Batteriefachs und eines kleinen Steckbretts. Gestrichelt dargestellt ist ein zweiter Servo, der zusätzlich angeschlossen werden kann. Auf die dargestellte Weise können bis zu vier Servos angeschlossen werden.")
 
+Für das Signalkabel (orange) kommen die Pins P0, P1, P2, P3, C4, C8, C9, C13, C14, C15, C16, C17 in Frage, soweit diese nicht anderweitig schon belegt sind (die Pins P0 bis P3 können über die goldenen Ringpads schon in Benutzung sein).
+
 Die Programmierung erfolgt genauso wie oben für den 3V-Servo beschrieben. Da es sich bei dem SG90 um einen Winkelsteller-Servo handelt, sind die entsprechenden Programmbeispiele für ihn relevant.
 
 
