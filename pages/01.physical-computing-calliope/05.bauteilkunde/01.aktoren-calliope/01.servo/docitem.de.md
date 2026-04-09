@@ -220,7 +220,7 @@ Das folgende Bild zeigt, wie man die Stromversorgung für einen Servo über ein 
 
 Wichtig sind dabei folgende Punkte:
 - Das Power Supply Module ist so eingesteckt, dass das `+` vom Modul auf der `+`-Leiste vom Steckbrett und das `-` vom Modul auf der `-` -Leiste des Steckbretts liegt (rote Markierung).
-- Die Jumper auf dem Power Supply Module stehen auf 5V (gelbe Markierung).
+- Die Jumper auf dem Power Supply Module stehen auf 3,3V (gelbe Markierung).
 - Der GND-Anschluss des Arduino ist mit dem Minus-Anschluss des Steckbretts bzw. Power Supply Module verbunden.
 - Bei manchen Steckbrettern sind die Plus- und Minusleisten in der Mitte getrennt. Gegebenenfalls muss hier ein Kabel zur Überbrückung eingebaut werden.
 - Am besten ist es, wenn sowohl der Arduino als auch das Power Supply Module von einer eigenen 9V-Batterie versorgt werden. Es werden also zwei Batterien benötigt.
