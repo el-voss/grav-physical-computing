@@ -72,9 +72,9 @@ Zunächst muss der Servo in der Roboterkonfiguration angelegt werden. Dort stehe
 </div>
   </div>
   <div class="python content-block" markdown="1">
-    Zunächst muss das Modul "Servo" zum Projekt hinzugefügt werden, welches zwei Funktionen zum Ansteuern von Servos zur Verfügung stellt. Dazu gehe auf **Projekt -> Module hinzufügen -> Servo**. Danach muss das Modul in `main.py` importiert werden und die Funktionen stehen bereit.
-    <div class="flex-box">
-        <div markdown="1" class="flexible">
+Zunächst muss das Modul "Servo" zum Projekt hinzugefügt werden, welches zwei Funktionen zum Ansteuern von Servos zur Verfügung stellt. Dazu gehe auf **Projekt -> Module hinzufügen -> Servo**. Danach muss das Modul in `main.py` importiert werden und die Funktionen stehen bereit.
+<div class="flex-box">
+<div markdown="1" class="flexible">
  ```python
 # Imports go at the top
 from calliopemini import *
@@ -91,8 +91,8 @@ while True:
         set_servo_angle(pin0, 180)  # Winkel auf 180°
         sleep(1000)
 ```
-		</div>
-        <div markdown="1" class="flexible">
+</div>
+<div markdown="1" class="flexible">
  ```python
 # Imports go at the top
 from calliopemini import *
@@ -110,8 +110,8 @@ while True:
         sleep(1000)
         set_servo_speed(pin0, 0)   # Stopp
 ```
-        </div>
-    </div>
+</div>
+</div>
   </div>
 </div>
 </div>
