@@ -81,7 +81,7 @@ Zunächst muss der Ultraschallsensor in der Roboterkonfiguration angelegt werden
 
 ### Schaltung
 
-**Der Anschluss und die Programmierung ist auch auf der [Jacdac-Seite von calliope.cc](https://calliope.cc/calliope-mini/erweiterungen/jacdac#ultraschall) schön gezeigt.**
+**Der Anschluss und die Programmierung ist auf der [Jacdac-Seite von calliope.cc](https://calliope.cc/calliope-mini/erweiterungen/jacdac#ultraschall) schön gezeigt.**
 
 ![ultraschallsensor-jacdac](ultraschallsensor-jacdac.jpg?lightbox=512&resize=250&classes=caption "Ultraschallsensor mit Jacdac-Anschluss.")
     
