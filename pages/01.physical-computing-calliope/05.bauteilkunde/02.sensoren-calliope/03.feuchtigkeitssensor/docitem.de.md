@@ -3,7 +3,7 @@ title: 'Tropfen- und Feuchtigkeitssensor'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'feuchtigkeitssensor.jpg,tropfensensor.jpg,calliope-feuchtigkeitssensor.png,calliope-feuchtigkeitssensor-grove.png,makecode-erweiterung-grove.png,mc-grove-feuchtigkeitssensor-auslesen.png'
+media_order: 'feuchtigkeitssensor.jpg,tropfensensor.jpg,calliope-feuchtigkeitssensor.png,calliope-feuchtigkeitssensor-grove.png,makecode-erweiterung-grove.png,mc-grove-feuchtigkeitssensor-auslesen.png,mc-feuchtigkeitssensor-auslesen.png'
 featured_image: feuchtigkeitssensor.jpg
 taxonomy:
     Inhalte:
@@ -117,10 +117,9 @@ Das Signalkabel S (in der Schaltskizze blau eingezeichnet) muss mit einem Pin ve
 <!-- Inhalte für jede Programmierumgebung -->
 <div class="tab-content">
   <div class="makecode content-block">
-Zum Auslesen des Feuchtigkeitssensors lässt man sich aus der Kategorie "Pins" die analogen Werte des Signalpins anzeigen.
+Zum Auslesen des Feuchtigkeitssensors lässt man sich aus der Kategorie "Pins" die analogen Werte des Signalpins anzeigen. Um eine prozentuale Anzeige zu erhalten, teilt man den Analogwert durch 1023.
 
-
-
+![mc-feuchtigkeitssensor-auslesen](mc-feuchtigkeitssensor-auslesen.png?lightbox=1024&resize=500&classes=caption "Auslesen der Analogwerte des Feuchtigkeitssensors.")
 
   </div>
   <div class="roberta content-block" markdown="1">
@@ -135,7 +134,7 @@ Nach der Konfiguration kann man sich die Werte auf dem Display des Calliope anze
 
   </div>
   <div class="python content-block" markdown="1">
-Das in der Schaltskizze blau eingezeichnete Signalkabel des Feuchtigkeitssensors ist mit dem Pin P0 verbunden. Von diesem werden die Analogwerte abgerufen und auf dem Display angezeigt.
+Das in der Schaltskizze blau eingezeichnete Signalkabel des Feuchtigkeitssensors ist mit dem Pin P0 verbunden. Von diesem werden die Analogwerte abgerufen und auf dem Display angezeigt. Um eine prozentuale Anzeige zu erhalten, teilt man den Analogwert durch 1023.
 
 ```python
 # Imports go at the top
