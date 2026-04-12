@@ -27,7 +27,7 @@ Die wichtigsten Bestandteile des Ultraschallsensors sind der “Transducer” (*
 
 Ultraschallsensoren gibt es in verschiedenen Varianten und mit verschiedenen Verbindungsmöglichkeiten.
 
-## Anschluss mit dem Grove-Connector
+## Verbindung mit Grove
 
 <div markdown="1" class="clearfix">
 ![ultraschallsensor-grove](ultraschallsensor-grove.jpg?lightbox=512&resize=250&classes=caption,figure-right "Ultraschallsensor mit Grove-Anschluss.")
@@ -50,15 +50,14 @@ Das schwarze Kabel verbindet die beiden GND-Anschlüsse (Minus-Pol), das rote Ka
 
 <!-- Inhalte für jede Programmierumgebung -->
 <div class="tab-content">
-  <div class="makecode content-block" markdown="1">
+<div class="makecode content-block" markdown="1">
 Zum Programmieren mit Makecode muss die Erweiterung "Grove" geladen werden. Darüber können mehrere Sensoren, die alle über einen Grove-Anschluss verfügen, angesteuert bzw. ausgelesen werden. Für den Ultraschallsensor wird der Block ```Entfernung <Pin> cm``` benötigt, der die Entfernung in Zentimetern zurückgibt, die mit dem Ultraschallsensor gemessen wurde. Als Pin muss ```C16 (A1 RX)``` ausgewählt werden, da dies der Echo-Pin ist, der das Signal zurückgibt.
 
 <div class="flex-box">
 <div markdown="1" class="flexible">![makecode-erweiterung-grove](makecode-erweiterung-grove.png?resize=400 "makecode-erweiterung-grove")</div>
 <div markdown="1" class="flexible">![makecode-grove-ultraschall-test](makecode-grove-ultraschall-test.png?resize=400 "makecode-grove-ultraschall-test")</div>
 </div>
-
-  </div>
+</div>
   <div class="roberta content-block" markdown="1">
 Zunächst muss der Ultraschallsensor in der Roboterkonfiguration angelegt werden. Dort steht nur der Anschluss über A1 zur Verfügung, an dem der Ultraschallsensor auch angeschlossen sein sollte (A0 funktioniert nicht). Danach kann der gemessene Abstand über den Block ```gib Abstand cm Ultraschallsensor U``` ausgelesen werden.
 <div class="flex-box">
@@ -75,14 +74,14 @@ Zunächst muss der Ultraschallsensor in der Roboterkonfiguration angelegt werden
 
 
 
-## Anschluss mit Jacdac
+## Verbindung mit Jacdac
 
-<div markdown="1" class="clearfix">
-![ultraschallsensor-jacdac](ultraschallsensor-jacdac.jpg?lightbox=512&resize=250&classes=caption,figure-right "Ultraschallsensor mit Jacdac-Anschluss.")
-Über den Jacdac-Anschluss können auf einfache Weise Sensoren und Aktoren an den Calliope angeschlossen und angesteuert werden. Es können mehrere Jacdac-Bauteile hintereinander angeschlossen werden. Über den Jacdac-Hub können sie auch parallel angeschlossen werden. Jacdac ermöglicht nicht nur die Kommunikation von Sensor und Calliope, sondern auch per WebUSB mit Makecode. Auf diese Weise wird der aktuelle Sensorwert direkt in Makecode angezeigt.
-</div>
+!!!! Über den Jacdac-Anschluss können auf einfache Weise Sensoren und Aktoren an den Calliope angeschlossen und angesteuert werden. Es können mehrere Jacdac-Bauteile hintereinander angeschlossen werden. Über den Jacdac-Hub können sie auch parallel angeschlossen werden. Jacdac ermöglicht nicht nur die Kommunikation von Sensor und Calliope, sondern auch per WebUSB mit Makecode. Auf diese Weise wird der aktuelle Sensorwert direkt in Makecode angezeigt.
 
+
+### Schaltung
 Der Ultraschallsensor mit Jacdac-Anschluss wird mit einem der Jacdac-Anschlüsse des Calliope verbunden. Der Anschluss und die Programmierung ist auch auf der [Jacdac-Seite von calliope.cc](https://calliope.cc/calliope-mini/erweiterungen/jacdac#ultraschall) schön gezeigt.
+![ultraschallsensor-jacdac](ultraschallsensor-jacdac.jpg?lightbox=512&resize=250&classes=caption "Ultraschallsensor mit Jacdac-Anschluss.")
     
 ### Programmierung
 
@@ -119,9 +118,11 @@ Der Block ```<Messwert> Entfernung (m)``` stellt vier mögliche Messwerte in Met
 </div>
 </div>
 
-## Anschluss mit Jumper-Kabeln
+## Verbindung mit Pin-Leiste
 
 !! **Achtung:** Der HC-SR04 funktioniert nur mit dem Calliope, wenn er sich mit 3,3V betreiben lässt! Die meisten Ultraschallsensoren, die man findet, funktionieren allerdings nur mit 5V, daher muss man genau hinschauen.
+
+### Schaltung
 
 Der Ultraschallsensor HC-SR04 ist für wenig Geld zu haben und daher sehr beliebt. Die Verkabelung erfolgt hier einzeln mit sogenannten Jumper-Kabeln. Sie ist dem folgenden Schaltplan zu entnehmen.
 
