@@ -117,110 +117,38 @@ Das Signalkabel S (in der Schaltskizze blau eingezeichnet) muss mit einem Pin ve
 <!-- Inhalte für jede Programmierumgebung -->
 <div class="tab-content">
   <div class="makecode content-block">
-Zum Auslesen des TCRT5000 lässt man sich aus der Kategorie "Pins" die digitalen bzw. analogen Werte der entsprechenden Pins anzeigen.
+Zum Auslesen des Feuchtigkeitssensors lässt man sich aus der Kategorie "Pins" die analogen Werte des Signalpins anzeigen.
 
-<div class="flex-box">
-<div markdown="1">
-![tcrt5000-digital-auslesen-makecode](tcrt5000-digital-auslesen-makecode.png?resize=500&classes=caption "Auslesen des digitalen Wertes des TCRT5000.")
-</div>
-<div markdown="1">
-![tcrt5000-auslesen-analog-makecode-anzeige](tcrt5000-auslesen-analog-makecode-anzeige.png?resize=500&classes=caption "Auslesen des analogen Wertes des TCRT5000.")
-</div>
-</div>
 
-Für das Auslesen des analogen Wertes bietet es sich an, den analogen Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen und dort visualisieren zu lassen. Der Befehl dazu findet sich in der Kategorie "Seriell". Nach dem Übertragen des Programms kann man im linken Fensterbereich auf "Daten anzeigen Calliope mini" auswählen und bekommt die unten abgebildete Ansicht.
 
-<div class="flex-box">
-<div markdown="1">
-![tcrt5000-auslesen-analog-makecode](tcrt5000-auslesen-analog-makecode.png?resize=500&classes=caption "Senden des analogen Wertes über die serielle Schnittstelle (USB-Kabel) an den Computer.")
-</div>
-<div markdown="1">
-![makecode-serial-monitor-tcrt5000](makecode-serial-monitor-tcrt5000.png?lightbox=1024&resize=500&classes=caption "Visualisierung der erhaltenen Werte in Makecode. Dabei wird der Sensor über unterschiedlich helle bzw. dunkle Flächen bewegt.")
-</div>
-</div>
 
   </div>
   <div class="roberta content-block" markdown="1">
-Zum Auslesen des TCRT5000 muss man zunächst die Konfiguration der Pins als digitaler bzw. analoger Sensor vornehmen.
+Zum Auslesen des Feuchtigkeitssensors muss man zunächst die Konfiguration des Signalpins als analoger Sensor vornehmen.
 
 ![orl-tcrt5000-konf](orl-tcrt5000-konf.png?resize=500&classes=caption "Konfiguration von Pin P1 als digitaler bzw. analoger Sensor. Achtung: Die dargestellte Doppelkonfiguration ist nicht sinnvoll, sondern nur zu Demonstrationszwecken vorgenommen!")
 
-! Bei der Konfiguration als analoger Sensor stehen nicht alle oben aufgezählten Pins zur Auswahl. Dies ist ein Bug im Open Roberta Lab (Stand: 01.04.26). Insbesondere ist auch der Pin P0 nicht als analoger Sensor auswählbar, weshalb anders als in oben dargestellten Schaltskizze der Pin P1 als analoger Sensor ausgewählt wird. **Wenn der Pin P1 als analoger Sensor konfiguriert wird, sollte er auch mit Pin A0 des TCRT5000 verbunden werden.**
+! Bei der Konfiguration als analoger Sensor stehen nicht alle oben aufgezählten Pins zur Auswahl. Dies ist ein Bug im Open Roberta Lab (Stand: 01.04.26). Insbesondere ist auch der Pin P0 nicht als analoger Sensor auswählbar, weshalb anders als in oben dargestellten Schaltskizze der Pin P1 als analoger Sensor ausgewählt wird. **Wenn der Pin P1 als analoger Sensor konfiguriert wird, sollte er auch mit dem Signalpin des Feuchtigkeitssensors verbunden werden.**
 
 Nach der Konfiguration kann man sich die Werte auf dem Display des Calliope anzeigen lassen.
 
-<div class="flex-box">
-<div markdown="1">
-![orl-tcrt5000-digital-auslesen](orl-tcrt5000-digital-auslesen.png?resize=500&classes=caption "Auslesen des digitalen Wertes des TCRT5000.")
-</div>
-<div markdown="1">
-![orl-tcrt5000-analog-auslesen](orl-tcrt5000-analog-auslesen.png?resize=500&classes=caption "Auslesen des analogen Wertes des TCRT5000.")
-</div>
-</div>
-
-Für das Auslesen des analogen Wertes bietet es sich an, den analogen Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen, um den Verlauf besser nachzuvollziehen. Nach dem Übertragen des Programms kann man im [Open Roberta Connector](https://jira.iais.fraunhofer.de/wiki/spaces/ORInfo/pages/90802891/Open+Roberta+Connector?target=_blank) die Verbindung mit dem Calliope herstellen und den Seriellen Monitor starten (siehe Abbildung). Um die Werte zu visualisieren, kann man sie optional in eine Tabellenkalkulation kopieren und dort ein Diagramm erstellen.
-
-<div class="flex-box">
-<div markdown="1">
-![orl-tcrt5000-seriell-ausgeben](orl-tcrt5000-seriell-ausgeben.png?resize=500&classes=caption "Senden des analogen Wertes über die serielle Schnittstelle (USB-Kabel) an den Computer.")
-</div>
-<div markdown="1">
-![serial-monitor-starten](serial-monitor-starten.png?resize=500&classes=caption "Öffnen des seriellen Monitors im Open Roberta Connector.")
-</div>
-</div>
 
   </div>
   <div class="python content-block" markdown="1">
-Zum Auslesen des TCRT5000 lässt man sich aus der Kategorie "Pins" die digitalen bzw. analogen Werte der entsprechenden Pins anzeigen.
+Das in der Schaltskizze blau eingezeichnete Signalkabel des Feuchtigkeitssensors ist mit dem Pin P0 verbunden. Von diesem werden die Analogwerte abgerufen und auf dem Display angezeigt.
 
-<div class="flex-box">
-<div markdown="1">
- ```python
+```python
 # Imports go at the top
 from calliopemini import *
 
 # Code in a 'while True:' loop repeats forever
 while True:
-    display.show(pin1.read_digital())
+    feuchtigkeit = pin0.read_analog() # Wert von 0–1023 
+    display.scroll(feuchtigkeit)
     display.clear()
-    sleep(1000)
-```
-Auslesen des digitalen Werts des TCRT5000.
-</div>
-<div markdown="1">
- ```python
-# Imports go at the top
-from calliopemini import *
-
-# Code in a 'while True:' loop repeats forever
-while True:
-    display.scroll(pin0.read_analog())
-    display.clear()
-    sleep(1000)
- ```
-Auslesen des analogen Werts des TCRT5000.
-</div>
-</div>
-
-Für das Auslesen des analogen Wertes bietet es sich an, den analogen Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen, um den Verlauf besser nachzuvollziehen. Nach dem Übertragen des Programms kann man direkt im Python Editor den Seriellen Monitor öffnen. Um die Werte zu visualisieren, kann man sie optional in eine Tabellenkalkulation kopieren und dort ein Diagramm erstellen.
-
-<div class="flex-box">
-<div markdown="1">
- ```python
-# Imports go at the top
-from calliopemini import *
-
-# Code in a 'while True:' loop repeats forever
-while True:
-    print(pin0.read_analog())
     sleep(500)
- ```
-Ausgabe des Analogwerts des TCRT5000 auf dem seriellen Monitor.
-</div>
-<div markdown="1">
-![py-tcrt5000-seriell](py-tcrt5000-seriell.png?lightbox=1024&resize=400&classes=caption "Ausgabe der Analogwerte des TCRT5000 auf dem seriellen Monitor.")
-</div>
-</div>
+```
+
   </div>
 </div>
 </div>
