@@ -47,7 +47,7 @@ Die Feuchtigkeit kann leider nicht als absoluter Wert gemessen werden. Mit Hilfe
 
 <!-- Inhalte für jede Programmierumgebung -->
 <div class="tab-content">
-  <div class="makecode content-block">
+  <div class="makecode content-block" markdown="1">
 Zum Auslesen des Feuchtigkeitssensors per Grove lädt man zuerst die Grove-Erweiterung. Dort findet sich der abgebildete Block.
 
 <div class="flex-box">
@@ -116,7 +116,7 @@ Das Signalkabel S (in der Schaltskizze blau eingezeichnet) muss mit einem Pin ve
 
 <!-- Inhalte für jede Programmierumgebung -->
 <div class="tab-content">
-  <div class="makecode content-block">
+  <div class="makecode content-block" markdown="1">
 Zum Auslesen des Feuchtigkeitssensors lässt man sich aus der Kategorie "Pins" die analogen Werte des Signalpins anzeigen. Um eine prozentuale Anzeige zu erhalten, teilt man den Analogwert durch 1023.
 
 ![mc-feuchtigkeitssensor-auslesen](mc-feuchtigkeitssensor-auslesen.png?lightbox=1024&resize=500&classes=caption "Auslesen der Analogwerte des Feuchtigkeitssensors.")
