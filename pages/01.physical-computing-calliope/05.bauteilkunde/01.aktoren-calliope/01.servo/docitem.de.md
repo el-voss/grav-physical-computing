@@ -34,7 +34,7 @@ Für die Verbindung mit dem Jacdac-Anschluss gibt es ein Servo-Modul, an dem sic
 *Achte darauf, welcher Servo der kontinuierliche Servo (360° Servo) und welcher der Winkelsteller-Servo (180° Servo) ist, um sie richtig anzusteuern.*
 
 
-## Verbindung mit Pin-Leiste
+## Verbindung mit der Pinleiste
 
 ### Schaltung über die Pin-Leiste
 
