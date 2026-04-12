@@ -65,9 +65,24 @@ Zunächst muss der Ultraschallsensor in der Roboterkonfiguration angelegt werden
 <div markdown="1" class="flexible">![orl-ultraschall-grove-prog](orl-ultraschall-grove-prog.png?resize=500 "orl-ultraschall-grove-prog")</div>
 </div>
   </div>
-  <div class="python content-block">
-    <!-- Inhalt für Python -->
-    Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
+  <div class="python content-block" markdown="1">
+Zunächst muss das Modul "Ultraschallsensor" hinzugefügt werden. Gehe dazu links unten auf "Projekt" -> "Module hinzufügen" und wähle das Modul "Ultraschallsensor" aus. DIeses stellt die beiden Funktionen `measure_in_cm( pin )` und `measure_in_inch( pin )` bereit, wobei als `pin` der ECHO-Pin des Ultraschallsensors angegeben werden muss. Bei der Grove-Verbindung ist das A1_RX.
+
+```python
+# Imports go at the top
+from calliopemini import *
+import Ultraschallsensor  # Import des Moduls für den Ultraschallsensor
+
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    entfernung = Ultraschallsensor.measure_in_cm(pin_A1_RX)  # Pin beim Grove-Anschluss
+    display.scroll(entfernung)
+    display.clear()
+    sleep(500)
+
+```
+
   </div>
 </div>
 </div>
