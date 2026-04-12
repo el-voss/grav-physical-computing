@@ -176,7 +176,39 @@ Mit dem folgenden Programm wird dann die Entfernung ermittelt und auf dem Displa
 Für die Verwendung in größeren Zusammenhängen ist es sinnvoll, diese Abfolge in eine Funktion auszulagern, die die Entfernung zurückgibt.
   </div>
   <div class="python content-block">
-    Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
+Zur Bestimmung des Abstands muss man auf das Funktionsprinzip des Ultraschallsensors zurückgreifen, das oben beschrieben wurde. Zunächst wird der Trigger-Pin als digitaler Aktor und der Echo-Pin als digitaler Sensor konfiguriert.
+
+```python
+# Imports go at the top
+from calliopemini import *
+import machine
+
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    pin9.write_digital(0)  # Trigger-Pin auf 0 setzen, um den Startzeitpunkt des folgenden Signals festzulegen
+    sleep(5)
+    pin9.write_digital(1)  # Trigger-Pin für 30ms auf 1 setzen, um ein Ultraschallsignal auszusenden
+    sleep(30)
+    pin8.write_digital(0)  # Echo-Pin auf 0 setzen, um Signal vorzubereiten
+    pin9.write_digital(0)  # Trigger-Pin auf 0 setzen, um Ultraschallsignal zu beenden
+    
+    zeit = machine.time_pulse_us(pin8, 1, 50000)  # hier wird die Zeit in Mikrosekunden (us) ermittelt, die das 
+    # Ultraschallsignal braucht, um nach dem Aussenden wieder zurück zum Ultraschallsensor zu gelangen
+    # die 50000 ist ein Timeout in Mikrosekunden, falls kein Signal zurückkommt
+    # die Zeit in Mikrosekunden wird in der Variable zeit gespeichert
+    
+    entfernung = (zeit / 2) * 0.034346  # die gemessene Zeit muss nun durch 2 geteilt werden, weil die gesuchte
+    # Strecke zwei Mal vom Ultraschall durchlaufen wurde (Hin- und Rückweg)
+    # das Ergebnis wird mit der Geschwindigkeit des Ultraschalls in Zentimeter pro Mikrosekunde multipliziert
+    
+    entfernung = round(entfernung,1)   # Runden des Ergebnisses auf eine Nachkommastelle
+    
+    display.scroll(entfernung)  # Ausgabe auf dem Calliope
+    display.clear()
+    sleep(500)
+```
+
   </div>
 </div>
 </div>
