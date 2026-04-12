@@ -175,7 +175,7 @@ Mit dem folgenden Programm wird dann die Entfernung ermittelt und auf dem Displa
 
 Für die Verwendung in größeren Zusammenhängen ist es sinnvoll, diese Abfolge in eine Funktion auszulagern, die die Entfernung zurückgibt.
   </div>
-  <div class="python content-block">
+  <div class="python content-block" markdown="1">
 Zur Bestimmung des Abstands muss man auf das Funktionsprinzip des Ultraschallsensors zurückgreifen, das oben beschrieben wurde. Zunächst wird der Trigger-Pin als digitaler Aktor und der Echo-Pin als digitaler Sensor konfiguriert.
 
 ```python
