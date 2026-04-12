@@ -120,7 +120,7 @@ Der Block ```<Messwert> Entfernung (m)``` stellt vier mögliche Messwerte in Met
 </div>
 </div>
 
-## Verbindung mit Pin-Leiste
+## Verbindung mit der Pinleiste
 
 !! **Achtung:** Der HC-SR04 funktioniert nur mit dem Calliope, wenn er sich mit 3,3V betreiben lässt! Die meisten Ultraschallsensoren, die man findet, funktionieren allerdings nur mit 5V, daher muss man genau hinschauen.
 
