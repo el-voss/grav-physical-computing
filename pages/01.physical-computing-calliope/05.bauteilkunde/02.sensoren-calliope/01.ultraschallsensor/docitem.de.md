@@ -115,7 +115,7 @@ Der Block ```<Messwert> Entfernung (m)``` stellt vier mögliche Messwerte in Met
     Die Programmierung von Jacdac-Bauteilen ist mit dem Open Roberta Lab aktuell (Stand: 01.04.26) nicht möglich.
   </div>
   <div class="python content-block">
-    Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
+    Die Programmierung von Jacdac-Bauteilen ist mit dem Python-Editor aktuell (Stand: 12.04.26) nicht möglich.
   </div>
 </div>
 </div>
