@@ -3,7 +3,7 @@ title: 'Tropfen- und Feuchtigkeitssensor'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'feuchtigkeitssensor.jpg,tropfensensor.jpg'
+media_order: 'feuchtigkeitssensor.jpg,tropfensensor.jpg,calliope-feuchtigkeitssensor.png,calliope-feuchtigkeitssensor-grove.png'
 featured_image: feuchtigkeitssensor.jpg
 taxonomy:
     Inhalte:
@@ -25,6 +25,7 @@ Mit einem Tropfensensor lässt sich die Feuchtigkeit auf dem Sensorblatt messen.
 
 ### Schaltung
 
+![calliope-feuchtigkeitssensor-grove](calliope-feuchtigkeitssensor-grove.png?lightbox=1024&resize=500&classes=caption "Verbindung des Feuchtigkeitssensors mit dem Calliope über den Grove-Verbinder. Man kann nur den rechten Anschluss A1 verwenden, nicht den linken Anschluss A0.")
 
 ### Programmierung
 
@@ -34,8 +35,12 @@ Mit einem Tropfensensor lässt sich die Feuchtigkeit auf dem Sensorblatt messen.
 
 ### Schaltung
 
+![calliope-feuchtigkeitssensor](calliope-feuchtigkeitssensor.png?lightbox=1024&resize=500&classes=caption "Anschluss des Feuchtigkeitssensors an der Pinleiste des Calliope. Für den Tropfensensor erfolgt der Anschluss analog.")
+
+Das Signalkabel S (in der Schaltskizze blau eingezeichnet) muss mit einem Pin verbunden werden, der ein analoges Signal lesen kann. Dafür kommen folgende Pins in Frage: P0, P1, P2, C4, C10, C16, C18. Achtung: Die Pins können schon an anderer Stelle verwendet worden sein, z. B. über die Ringpads (P0, P1, P2) oder den Grove-Anschluss A1 (betrifft C16).
 
 ### Programmierung
+
 
 
 ## Aufgaben
