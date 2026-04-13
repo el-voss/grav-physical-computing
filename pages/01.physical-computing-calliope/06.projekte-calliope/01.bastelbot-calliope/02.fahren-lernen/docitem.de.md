@@ -46,9 +46,39 @@ In der Kategorie "Aktion" -> "Bewegen" finden sich einige Blöcke zum Steuern de
 
 ![orl-motoren-steuern](orl-motoren-steuern.png?lightbox=500&resize=500&classes=caption "Block zum Ansteuern der Motoren, wenn Knopf A gedrückt wurde.")
   </div>
-  <div class="python content-block">
-    <!-- Inhalt für Python -->
-    Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
+  <div class="python content-block" markdown="1">
+    Die Motor-Befehle finden sich in der Referenz unter "Motoren". Dort gibt es auch bereits einige hilfreiche Erklärungen und auswählbare Beispiele.
+
+```python
+# Imports go at the top
+from calliopemini import *
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    # vorwärts
+    pin_M_MODE.write_digital(1)
+    
+    pin_M0_DIR.write_digital(0)  # Motor M0 vorwärts
+    pin_M1_DIR.write_digital(0)  # Motor M1 vorwärts
+    
+    pin_M0_SPEED.write_analog(1023)  # Motor M0 mit voller Geschwindigkeit
+    pin_M1_SPEED.write_analog(1023)  # Motor M1 mit voller Geschwindigkeit
+
+    sleep(1000)  # für 1 Sekunde fahren
+    
+    # Stoppen
+    pin_M_MODE.write_digital(1)
+    
+    pin_M0_DIR.write_digital(1)  # Motor M0 rückwärts
+    pin_M1_DIR.write_digital(1)  # Motor M1 rückwärts
+    
+    pin_M0_SPEED.write_analog(0)  # Motor M0 Stopp (Geschwindigkeit 0)
+    pin_M1_SPEED.write_analog(0)  # Motor M1 Stopp (Geschwindigkeit 0)
+
+    sleep(1000)  # für 1 Sekunde stoppen
+    
+```
+
   </div>
 </div>
 </div>
@@ -107,9 +137,28 @@ Die Programme werden handlicher und übersichtlicher, wenn die einzelnen Fahrfun
 <div markdown="1" class="flexible">![orl-funktion-rechtsherum](orl-funktion-rechtsherum.png "orl-funktion-rechtsherum")</div>
 </div>
   </div>
-  <div class="python content-block">
-    <!-- Inhalt für Python -->
-    Eine Erklärung für die Programmierung mit Python erfolgt evtl. zukünftig.
+  <div class="python content-block" markdown="1">
+```python
+def vorwaerts_fahren(geschwindigkeit):  # geschwindigkeit von 0 bis 1023
+    pass
+
+def rueckwaerts_fahren(geschwindigkeit): # geschwindigkeit von 0 bis 1023
+    pass
+
+def stoppen():
+    pass
+
+def lenke_rechts_um_90_grad():
+    pass
+
+def lenke_links_um_90_grad():
+    pass
+
+def fahre(geschwindigkeitLinks, geschwindigkeitRechts): # geschwindigkeit jeweils von 0 bis 1023
+    pass
+
+
+```
   </div>
 </div>
 </div>
