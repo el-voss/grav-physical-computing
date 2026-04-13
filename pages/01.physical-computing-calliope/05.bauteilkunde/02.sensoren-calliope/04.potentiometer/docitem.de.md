@@ -16,7 +16,9 @@ Es gibt auch Versionen, bei denen die Größe der Teilwiderstände nicht durch D
 
 ## Verbindung mit Jacdac
 
+!!!! Über den Jacdac-Anschluss können auf einfache Weise Sensoren und Aktoren an den Calliope angeschlossen und angesteuert werden. Es können mehrere Jacdac-Bauteile hintereinander angeschlossen werden. Über den Jacdac-Hub können sie auch parallel angeschlossen werden. Jacdac ermöglicht nicht nur die Kommunikation von Sensor und Calliope, sondern auch per WebUSB mit Makecode. Auf diese Weise wird der aktuelle Sensorwert direkt in Makecode angezeigt.
 
+**Der Anschluss und die Programmierung ist auf der [Jacdac-Seite von calliope.cc](https://calliope.cc/calliope-mini/erweiterungen/jacdac#schieberegler) schön gezeigt**.
 
 ## Verbindung mit der Pinleiste
 
