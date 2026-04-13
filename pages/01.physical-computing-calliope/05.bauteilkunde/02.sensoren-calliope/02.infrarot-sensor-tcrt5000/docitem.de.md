@@ -5,6 +5,14 @@ image_width: 300
 image_height: 400
 media_order: 'infrarot-sensoren.jpg,schaltskizze-calliope-infrarot-tcrt5000.png,tcrt5000-auslesen-analog-makecode.png,tcrt5000-digital-auslesen-makecode.png,makecode-serial-monitor-tcrt5000.png,tcrt5000-auslesen-analog-makecode-anzeige.png,orl-tcrt5000-analog-auslesen.png,orl-tcrt5000-digital-auslesen.png,orl-tcrt5000-konf.png,serial-monitor-starten.png,orl-tcrt5000-seriell-ausgeben.png,py-tcrt5000-seriell.png'
 featured_image: infrarot-sensoren.jpg
+taxonomy:
+    Inhalte:
+        - Infrarot-Sensor
+        - Phototransistor
+        - Farberkennung
+        - Abstandsmessung
+    Niveau:
+        - Fortgeschritten
 ---
 
 Der Infrarot-Sensor TCRT5000 sendet Infrarotstrahlen aus und registriert die reflektierten Infrarotstrahlen aus der Umgebung. Dadurch können kurze Distanzen gemessen oder Farben erkannt werden. Zu seinen weiteren Einsatzzwecken gehört die Linienverfolgung bei Robotern und der Einsatz als Lichtschranke - so lässt sich bei Seifenspendern erkennen, ob eine Hand nah am Sensor ist und in 3D-Druckern lässt sich erkennen, ob noch Filament vorhanden ist oder nichts mehr nachkommt.
