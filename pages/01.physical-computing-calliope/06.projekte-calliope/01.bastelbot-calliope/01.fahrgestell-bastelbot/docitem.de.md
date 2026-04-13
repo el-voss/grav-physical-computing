@@ -52,14 +52,14 @@ Suche in den bereitgestellten Kästen alle Teile heraus, die du für den Bastelb
 2. Befestige mit Hilfe von Schrauben und Muttern die Motorhalterungen und den Slider auf der Lochplatte.
 
 <div class="flex-box">
-	<div> ![motor-in-halterung](motor-in-halterung.jpg?lightbox=512&resize=200 "motor-in-halterung")</div>
-    <div> ![motor-in-halterung2](motor-in-halterung2.jpg?lightbox=512&resize=200 "motor-in-halterung2")</div>
+	<div markdown="1"> ![motor-in-halterung](motor-in-halterung.jpg?lightbox=512&resize=200 "motor-in-halterung")</div>
+    <div markdown="1"> ![motor-in-halterung2](motor-in-halterung2.jpg?lightbox=512&resize=200 "motor-in-halterung2")</div>
 </div>
 
 
 <div class="flex-box">
-	<div> ![lochplatte-anordnung-oben](lochplatte-anordnung-oben.png?lightbox=1024&resize=400  "lochplatte-anordnung-oben")</div>
-    <div> ![lochplatte-anordnung-unten](lochplatte-anordnung-unten.png?lightbox=1024&resize=400  "lochplatte-anordnung-unten")</div>
+	<div markdown="1"> ![lochplatte-anordnung-oben](lochplatte-anordnung-oben.png?lightbox=1024&resize=400  "lochplatte-anordnung-oben")</div>
+    <div markdown="1"> ![lochplatte-anordnung-unten](lochplatte-anordnung-unten.png?lightbox=1024&resize=400  "lochplatte-anordnung-unten")</div>
 </div>
 
 
