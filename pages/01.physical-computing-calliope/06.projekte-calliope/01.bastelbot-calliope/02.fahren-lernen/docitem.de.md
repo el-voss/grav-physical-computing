@@ -47,7 +47,7 @@ In der Kategorie "Aktion" -> "Bewegen" finden sich einige Blöcke zum Steuern de
 ![orl-motoren-steuern](orl-motoren-steuern.png?lightbox=500&resize=500&classes=caption "Block zum Ansteuern der Motoren, wenn Knopf A gedrückt wurde.")
   </div>
   <div class="python content-block" markdown="1">
-    Die Motor-Befehle finden sich in der Referenz unter "Motoren". Dort gibt es auch bereits einige hilfreiche Erklärungen und auswählbare Beispiele.
+Die Motor-Befehle finden sich in der Referenz unter "Motoren". Dort gibt es auch bereits einige hilfreiche Erklärungen und auswählbare Beispiele.
 
 ```python
 # Imports go at the top
