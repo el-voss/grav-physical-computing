@@ -3,7 +3,7 @@ title: 'Drehregler / Potentiometer'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'poti.jpg,orl-poti-serielle-ausgabe.png,mc-poti-serieller-monitor.png,mc-poti-serielle-ausgabe.png,calliope-potentiometer.png,calliope-potentiometer-ersatzschaltskizze.png,poti-schaltsymbol.png,py-poti-serieller-monitor.png,orl-conf-poti-serielle-ausgabe.png,serial-monitor-starten.png'
+media_order: 'poti.jpg,orl-poti-serielle-ausgabe.png,mc-poti-serieller-monitor.png,mc-poti-serielle-ausgabe.png,calliope-potentiometer.png,calliope-potentiometer-ersatzschaltskizze.png,poti-schaltsymbol.png,py-poti-serieller-monitor.png,orl-conf-poti-serielle-ausgabe.png,serial-monitor-starten.png,pwm-analog-diagramm.png'
 featured_image: poti.jpg
 ---
 
@@ -106,7 +106,8 @@ Ausgabe des Analogwerts des Potentiometers auf dem seriellen Monitor.
 <div markdown="1" class="projekt clearfix">
 #### Dimmbare Lampe
 ![PWM-Analog-Diagramm](pwm-analog-diagramm.png?resize=300&classes=caption,figure-right "Diagramm zur Ermittlung einer Funktion.")
-Baue und programmiere eine Lampe, deren Helligkeit sich durch ein Potentiometer einstellen lässt.
 
-*Hinweis:* Du musst dafür sorgen, dass der eingelesene Analogwert zwischen 0 und 1023 in einen PWM-Wert zwischen 0 und 255 umgerechnet wird. Ermittle dazu eine passende Funktion.
+Programmiere den Calliope so, dass die Helligkeit der drei RGB-LEDs durch das Potentiometer eingestellt wird.
+
+Tipp für die Programmierung mit Python: Beschränke dich zunächst auf die Farbe Rot, die bei voller Helligkeit durch das Tupel (255, 0, 0) codiert wird. Dunklere Rottöne ergeben sich, wenn der erste Wert zwischen 0 und 255 liegt.
 </div>
