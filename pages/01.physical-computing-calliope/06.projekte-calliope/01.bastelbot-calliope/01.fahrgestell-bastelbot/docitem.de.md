@@ -3,7 +3,7 @@ title: 'Bau des Fahrgestells'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'akku-anschluss.jpg,basisversion-frontal.jpg,basisversion-von-oben.jpg,batterie.jpg,calliopev3.jpg,calliopev3-rueckseite.jpg,fusskugel.jpg,gleichstrommotor.jpg,lochplatte.jpg,m3-kreuzschrauben.jpg,motorhalterung.jpg,motor-in-halterung.jpg,motor-in-halterung2.jpg,pappe-einwellig.jpg,reifen.jpg,schere-stift-geo.jpg,schraubendreher.jpg,bastelbot-anschluss-motoren-akku.png'
+media_order: 'akku-anschluss.jpg,basisversion-frontal.jpg,basisversion-von-oben.jpg,batterie.jpg,calliopev3.jpg,calliopev3-rueckseite.jpg,fusskugel.jpg,gleichstrommotor.jpg,lochplatte.jpg,m3-kreuzschrauben.jpg,motorhalterung.jpg,motor-in-halterung.jpg,motor-in-halterung2.jpg,pappe-einwellig.jpg,reifen.jpg,schere-stift-geo.jpg,schraubendreher.jpg,bastelbot-anschluss-motoren-akku.png,lochplatte-anordnung-oben.png,lochplatte-anordnung-unten.png'
 featured_image: basisversion-von-oben.jpg
 published: true
 taxonomy:
@@ -51,9 +51,20 @@ Suche in den bereitgestellten Kästen alle Teile heraus, die du für den Bastelb
 1. Klemme die zwei Getriebemotoren in die Motorhalterungen. Achte darauf, die Kabel nicht einzuklemmen. Vergleiche mit den Fotos.
 2. Befestige mit Hilfe von Schrauben und Muttern die Motorhalterungen und den Slider auf der Lochplatte.
 
+<div class="flex-box">
+	<div> ![motor-in-halterung](motor-in-halterung.jpg?lightbox=512&resize=200 "motor-in-halterung")</div>
+    <div> ![motor-in-halterung2](motor-in-halterung2.jpg?lightbox=512&resize=200 "motor-in-halterung2")</div>
+</div>
 
-![motor-in-halterung](motor-in-halterung.jpg?lightbox=512&resize=200 "motor-in-halterung")
-![motor-in-halterung2](motor-in-halterung2.jpg?lightbox=512&resize=200 "motor-in-halterung2")
+
+<div class="flex-box">
+	<div> ![lochplatte-anordnung-oben](lochplatte-anordnung-oben.png?lightbox=1024&resize=400  "lochplatte-anordnung-oben")</div>
+    <div> ![lochplatte-anordnung-unten](lochplatte-anordnung-unten.png?lightbox=1024&resize=400  "lochplatte-anordnung-unten")</div>
+</div>
+
+
+
+
 </div>
 
 <div class="aufgabe" markdown="1">
