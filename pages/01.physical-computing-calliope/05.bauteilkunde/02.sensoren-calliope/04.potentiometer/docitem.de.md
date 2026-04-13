@@ -3,6 +3,7 @@ title: 'Drehregler / Potentiometer'
 show_pageimage: true
 image_width: 300
 image_height: 400
+media_order: 'poti.jpg,orl-poti-serielle-ausgabe.png,mc-poti-serieller-monitor.png,mc-poti-serielle-ausgabe.png,calliope-potentiometer.png,calliope-potentiometer-ersatzschaltskizze.png,poti-schaltsymbol.png,py-poti-serieller-monitor.png'
 ---
 
 <div markdown="1" class="clearfix">
