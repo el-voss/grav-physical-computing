@@ -41,15 +41,15 @@ Weitere Informationen finden sich in der [Pin-Übersicht des Calliope](https://d
 <!-- Inhalte für jede Programmierumgebung -->
 <div class="tab-content">
   <div class="makecode content-block" markdown="1">
-Zum Auslesen des Potentiometers lässt man sich aus der Kategorie "Pins" die analogen Werte des entsprechenden Pins (hier P0) anzeigen.
+Zum Auslesen des Joysticks lässt man sich aus der Kategorie "Pins" die analogen Werte bzw. den digitalen Wert der entsprechenden Pins (hier P0, P1, P2) anzeigen.
 
-Für das Auslesen des analogen Wertes bietet es sich an, den analogen Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen und dort visualisieren zu lassen. Der Befehl dazu findet sich in der Kategorie "Seriell". Nach dem Übertragen des Programms kann man im linken Fensterbereich auf "Daten anzeigen Calliope mini" auswählen und bekommt die unten abgebildete Ansicht.
+Für das Auslesen der Werte bietet es sich an, den analogen Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen und dort visualisieren zu lassen. Der Befehl dazu findet sich in der Kategorie "Seriell". Nach dem Übertragen des Programms kann man im linken Fensterbereich auf "Daten anzeigen Calliope mini" auswählen und bekommt die unten abgebildete Ansicht.
 <div class="flex-box">
 <div markdown="1">
-![mc-poti-serielle-ausgabe](mc-poti-serielle-ausgabe.png?lightbox=1024&resize=500 "mc-poti-serielle-ausgabe")
+![mc-joystick-seriell-ausgeben](mc-joystick-seriell-ausgeben.png?lightbox=1024&resize=500 "mc-joystick-seriell-ausgeben")
 </div>
 <div markdown="1">
-![mc-poti-serieller-monitor](mc-poti-serieller-monitor.png?lightbox=1024&resize=500 "mc-poti-serieller-monitor")
+![mc-serieller-monitor](mc-serieller-monitor.png?lightbox=1024&resize=500 "mc-serieller-monitor")
 </div>
 </div>
 
