@@ -32,7 +32,7 @@ taxonomy:
 
 Für eine schöne Verkleidung werden ggf. Karton, Schrauben und entsprechende Werkzeuge benötigt.
 
-## Montage und Verkabelung
+## Montage und Verbindung
 
 Die Infrarot-Sensoren TCRT5000 werden vorne am Bastelbot angebracht, sodass die beiden Dioden nach unten zum Boden schauen. Die Module können mit einer Schraube auf der Lochplatte befestigt werden.
 
