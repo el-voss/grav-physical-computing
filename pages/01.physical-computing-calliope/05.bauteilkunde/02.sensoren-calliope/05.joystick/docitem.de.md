@@ -115,28 +115,20 @@ Ausgabe des Analogwerts des Potentiometers auf dem seriellen Monitor.
 <div markdown="1" class="aufgabe">
 #### Erste Experimente
 
-1.  Bewege den Hebel des Joystick-Moduls und beobachte, wie sich dabei die Potentiometer an den Seiten mitbewegen. Bringe auch den Plastikdeckel an, drücke den Joystick herunter und beobachte dabei das Verhalten des Tasters.
-2.  Schließe das Joystick-Modul wie oben beschrieben an den Arduino an. Lies die Werte der Potentiometer aus, während du sie bewegst. Notiere, welche Bewegungsrichtung die X-Richtung und welche die Y-Richtung darstellt. Notiere außerdem, welches der beiden Potentiometer (ggü. von Taster oder ggü. der Pins) für die X-Richtung bzw. Y-Richtung verantwortlich ist.
-3.  Mit dem Pullup-Widerstand wird eine sogenannte Active-Low Schaltung aufgebaut. Teste die Funktionsweise des Tasters, indem du das elektrische Potential in D3 ausliest und beschreibe, was mit dem Begriff Active-Low gemeint ist.
+1.  Bewege den Hebel des Joystick-Moduls und beobachte, wie sich dabei die Potentiometer an den Seiten mitbewegen.
+2.  Schließe das Joystick-Modul wie oben beschrieben an den Calliope an. Lies die Werte der Potentiometer aus, während du sie bewegst. Notiere, welche Bewegungsrichtung die X-Richtung und welche die Y-Richtung darstellt. Notiere außerdem, welches der beiden Potentiometer (ggü. von Taster oder ggü. der Pins) für die X-Richtung bzw. Y-Richtung verantwortlich ist.
+3.  Mit dem Pullup-Widerstand wird eine sogenannte Active-Low Schaltung aufgebaut. Teste die Funktionsweise des Tasters und beschreibe, was mit dem Begriff Active-Low gemeint ist.
 </div>
 
 <div markdown="1" class="projekt">
-#### Joystick-Steuerung für eine LED-Kette
+#### Joystick-Steuerung für RGB-LEDs
 
-Schließe am Arduino zusätzlich zum Joystick fünf LEDs mit Vorwiderstand an. Diese sollen folgendermaßen programmiert werden:
-
-- Wenn der Joystick in der Mitte steht, dann leuchtet nur die mittlere LED mit mittlerer Helligkeit.
-- Wenn der Joystick nach oben bewegt wird, dann werden abhängig von der Auslenkung die "oberen" LEDs hinzugeschaltet, analog gilt dies für die "unteren" LEDs. Dies gilt nur solange, wie der Joystick nach oben bzw. unten gehalten wird.
-- Wenn der Joystick nach links/rechts bewegt wird, dann wird abhängig von der Auslenkung die Helligkeit verringert / vergrößert.
-
-Zusatz: Mit einem Druck auf den Joystick lassen sich die LEDs an- / ausschalten.
+Entwickle eine Steuerung des drei RGB-LEDs des Calliope mit Hilfe des Joysticks.
 </div>
 
 <div markdown="1" class="projekt">
 #### Joystick-Motor-Steuerung
 
-Steuere mit dem Joystick-Modul einen Schrittmotor!
+Steuere mit dem Joystick-Modul einen Motor!
 </div>
-
-!! **Achtung bei Verwendung von Motoren:** Spätestens, wenn mehr als ein Motor am Arduino betrieben werden soll, muss eine externe Spannungsquelle genutzt werden, zum Beispiel durch Anschluss einer 9 V-Batterie an das Power-Supply-Module. Schaue dir dazu noch einmal den [Infokasten zum Power Supply Module](/arduinoskript/elektrik/transistoren-motoren/elektromotor-mit-relais-steuern#das-“power-supply-module”) an.
 
