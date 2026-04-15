@@ -16,9 +16,11 @@ taxonomy:
         - Fortgeschritten
 ---
 
+[TOC]
+
 **Ziel:** Der Bastelbot soll um einen Ultraschallsensor erweitert werden, sodass er Hindernisse erkennen und umfahren kann.
 
-### Zusätzliches Material
+## Zusätzliches Material
 
 <div markdown="1" style="overflow:auto;">
 | Bild | Bauteil | Anzahl | Hinweise |
@@ -28,10 +30,10 @@ taxonomy:
 
 Für eine schöne Verkleidung werden ggf. Karton, Schrauben und entsprechende Werkzeuge benötigt.
 
-### Montage und Anschluss
+## Montage und Verbindung
 
 <div markdown="1" class="aufgabe">
-#### Montage und Anschluss
+#### Montage und Verbindung
 
 1. Recherchiere die [Funktionsweise und Verkabelung des Ultraschallsensors](/physical-computing-calliope/bauteilkunde/sensoren-calliope/ultraschallsensor).
 2. Bringe den Ultraschallsensor so am Roboter an, dass der Ultraschallsensor nach vorne "guckt", und führe die Verkabelung durch.
@@ -40,7 +42,7 @@ Für eine schöne Verkleidung werden ggf. Karton, Schrauben und entsprechende We
 </div>
 
 
-### Programmierung
+## Programmierung
 
 <div markdown="1" class="aufgabe">
 #### Erster Test
