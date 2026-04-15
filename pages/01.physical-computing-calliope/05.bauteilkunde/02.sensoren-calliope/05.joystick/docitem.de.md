@@ -123,7 +123,7 @@ Ausgabe des Analogwerts des Potentiometers auf dem seriellen Monitor.
 <div markdown="1" class="projekt">
 #### Joystick-Steuerung für RGB-LEDs
 
-Entwickle eine Steuerung des drei RGB-LEDs des Calliope mit Hilfe des Joysticks.
+Entwickle eine Steuerung der drei RGB-LEDs des Calliope mit Hilfe des Joysticks.
 </div>
 
 <div markdown="1" class="projekt">
