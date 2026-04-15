@@ -4,6 +4,7 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 media_order: 'calliope-joystick.png,joystick.jpg,mc-joystick-seriell-ausgeben.png,orl-conf-joystick.png,orl-joystick-auslesen.png,py-serieller-monitor.png,Schaltplan-Joystick-Ersatz.png,mc-serieller-monitor.png,serial-monitor-starten.png'
+featured_image: joystick.jpg
 ---
 
 Joysticks werden bekanntermaßen für Spielecontroller oder auch zur Steuerung von Maschinen genutzt. Mit dem Calliope lassen sich einfache Versionen davon nachbauen.
