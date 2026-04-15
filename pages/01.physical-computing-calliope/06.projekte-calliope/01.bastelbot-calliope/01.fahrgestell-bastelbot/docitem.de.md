@@ -14,6 +14,8 @@ taxonomy:
         - Basis
 ---
 
+[TOC]
+
 Der Bau des Roboters beginnt mit dem Aufbau des Fahrgestells und der Verschaltung der Motoren.
 
 ![basisversion-von-oben](basisversion-von-oben.jpg?lightbox=1024&resize=500&classes=caption "Fertige Basisversion des Bastelbots")
