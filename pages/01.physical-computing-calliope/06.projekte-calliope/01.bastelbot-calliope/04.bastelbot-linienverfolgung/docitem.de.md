@@ -16,9 +16,11 @@ taxonomy:
         - Fortgeschritten
 ---
 
+[TOC]
+
 **Ziel:** Der Bastelbot soll um zwei Infrarot-Sensoren erweitert werden, sodass er einer Linie folgen kann, um Parcours zu absolvieren.
 
-### Zusätzliches Material
+## Zusätzliches Material
 
 <div markdown="1" style="overflow:auto;">
 | Bild | Bauteil | Anzahl | Hinweise |
@@ -30,7 +32,7 @@ taxonomy:
 
 Für eine schöne Verkleidung werden ggf. Karton, Schrauben und entsprechende Werkzeuge benötigt.
 
-### Montage und Verkabelung
+## Montage und Verkabelung
 
 Die Infrarot-Sensoren TCRT5000 werden vorne am Bastelbot angebracht, sodass die beiden Dioden nach unten zum Boden schauen. Die Module können mit einer Schraube auf der Lochplatte befestigt werden.
 
@@ -43,7 +45,7 @@ Da das digitale Signal aus D0 an den Infrarotsensoren nicht verwendet wird, muss
 
 ![calliope-mit-zwei-tcrt5000](calliope-mit-zwei-tcrt5000.png?lightbox=1024&resize=500&classes=caption "Verkabelung von zwei TCRT5000 mit dem Calliope. Wenn man zwei TCRT5000 an den Calliope anschließen will, benötigt man ein kleines Steckbrett, um die beiden VCC- bzw. GND-Kabel zusammenzuführen.")
 
-### Programmierung
+## Programmierung
 
 <div markdown="1" class="aufgabe">
 #### Funktionstest
