@@ -3,7 +3,7 @@ title: Joystick
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'calliope-joystick.png,joystick.jpg,mc-joystick-seriell-ausgeben.png,orl-conf-joystick.png,orl-joystick-auslesen.png,py-serieller-monitor.png,Schaltplan-Joystick-Ersatz.png'
+media_order: 'calliope-joystick.png,joystick.jpg,mc-joystick-seriell-ausgeben.png,orl-conf-joystick.png,orl-joystick-auslesen.png,py-serieller-monitor.png,Schaltplan-Joystick-Ersatz.png,mc-serieller-monitor.png,serial-monitor-starten.png'
 ---
 
 Joysticks werden bekanntermaßen für Spielecontroller oder auch zur Steuerung von Maschinen genutzt. Mit dem Calliope lassen sich einfache Versionen davon nachbauen.
@@ -55,17 +55,17 @@ Für das Auslesen der Werte bietet es sich an, den analogen Wert über die serie
 
   </div>
   <div class="roberta content-block" markdown="1">
-Zum Auslesen des Potentiometers muss man zunächst die Konfiguration des Signalpins als analoger Sensor vornehmen.
+Zum Auslesen des Potentiometers muss man zunächst die Konfiguration der Signalpins der Potentiometer (VRx und VRy) als analoger Sensor vornehmen. Der SW-Pin des Tasters wird als digitaler Sensor konfiguriert und zusätzlich wird hier der Pullup-Widerstand aktiviert.
 
-![orl-conf-poti-serielle-ausgabe](orl-conf-poti-serielle-ausgabe.png?resize=500&classes=caption "Konfiguration des Signalpins P1 als analoger Sensor.")
+![orl-conf-joystick](orl-conf-joystick.png?resize=500&classes=caption "Konfiguration der Pins des Joysticks.")
       
-! Bei der Konfiguration als analoger Sensor stehen nicht alle oben aufgezählten Pins zur Auswahl. Dies ist ein Bug im Open Roberta Lab (Stand: 01.04.26). Insbesondere ist auch der Pin P0 nicht als analoger Sensor auswählbar, weshalb anders als in oben dargestellten Schaltskizze der Pin P1 als analoger Sensor ausgewählt wird. **Wenn der Pin P1 als analoger Sensor konfiguriert wird, sollte er dementsprechend auch mit dem Potentiometer verbunden werden.**
+! Bei der Konfiguration als analoger Sensor stehen nicht alle oben aufgezählten Pins zur Auswahl. Dies ist ein Bug im Open Roberta Lab (Stand: 01.04.26). Insbesondere ist auch der Pin P0 nicht als analoger Sensor auswählbar, weshalb anders als in oben dargestellten Schaltskizze der Pin P1 als analoger Sensor ausgewählt wird. Stattdessen wird Pin P0 als digitaler Sensor für den Taster konfiguriert. **Dementsprechend muss auch die Verkabelung geändert werden.**
 
-Für das Auslesen des analogen Wertes bietet es sich an, den analogen Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen, um den Verlauf besser nachzuvollziehen. Nach dem Übertragen des Programms kann man im [Open Roberta Connector](https://jira.iais.fraunhofer.de/wiki/spaces/ORInfo/pages/90802891/Open+Roberta+Connector?target=_blank) die Verbindung mit dem Calliope herstellen und den Seriellen Monitor starten (siehe Abbildung). Um die Werte zu visualisieren, kann man sie optional in eine Tabellenkalkulation kopieren und dort ein Diagramm erstellen.
+Für das Auslesen der Werte bietet es sich an, die Werte über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen, um den Verlauf besser nachzuvollziehen. Nach dem Übertragen des Programms kann man im [Open Roberta Connector](https://jira.iais.fraunhofer.de/wiki/spaces/ORInfo/pages/90802891/Open+Roberta+Connector?target=_blank) die Verbindung mit dem Calliope herstellen und den Seriellen Monitor starten (siehe Abbildung). Um die Werte zu visualisieren, kann man sie optional in eine Tabellenkalkulation kopieren und dort ein Diagramm erstellen.
 
 <div class="flex-box">
 <div markdown="1">
-![orl-poti-serielle-ausgabe](orl-poti-serielle-ausgabe.png?resize=500&classes=caption "Senden des analogen Wertes über die serielle Schnittstelle (USB-Kabel) an den Computer.")
+![orl-joystick-auslesen](orl-joystick-auslesen.png?resize=500&classes=caption "Senden der Werte über die serielle Schnittstelle (USB-Kabel) an den Computer.")
 </div>
 <div markdown="1">
 ![serial-monitor-starten](serial-monitor-starten.png?resize=500&classes=caption "Öffnen des seriellen Monitors im Open Roberta Connector.")
