@@ -129,10 +129,10 @@ Nach der Konfiguration kann man sich die analogen Werte zwischen 0 und 1023 auf 
 
 <div class="flex-box">
 <div markdown="1">
-![orl-conf-feuchtigkeitssensor-auslesen](orl-conf-feuchtigkeitssensor-auslesen.png?resize=500 "orl-conf-feuchtigkeitssensor-auslesen")
+![orl-conf-feuchtigkeitssensor](orl-conf-feuchtigkeitssensor.png?resize=500 "orl-conf-feuchtigkeitssensor")
 </div>
 <div markdown="1">
-![orl-conf-feuchtigkeitssensor](orl-conf-feuchtigkeitssensor.png?resize=500 "orl-conf-feuchtigkeitssensor")
+![orl-conf-feuchtigkeitssensor-auslesen](orl-conf-feuchtigkeitssensor-auslesen.png?resize=500 "orl-conf-feuchtigkeitssensor-auslesen")
 </div>
 </div>
 
