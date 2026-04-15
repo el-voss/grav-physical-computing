@@ -7,6 +7,8 @@ media_order: 'calliope-joystick.png,joystick.jpg,mc-joystick-seriell-ausgeben.pn
 featured_image: joystick.jpg
 ---
 
+[TOC]
+
 Joysticks werden bekanntermaßen für Spielecontroller oder auch zur Steuerung von Maschinen genutzt. Mit dem Calliope lassen sich einfache Versionen davon nachbauen.
 
 <div markdown="1" class="clearfix">
