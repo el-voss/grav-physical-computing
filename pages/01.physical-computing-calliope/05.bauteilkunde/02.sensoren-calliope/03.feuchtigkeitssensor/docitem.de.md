@@ -123,9 +123,9 @@ Zum Auslesen des Feuchtigkeitssensors lässt man sich aus der Kategorie "Pins" d
 
   </div>
   <div class="roberta content-block" markdown="1">
-Zum Auslesen des Feuchtigkeitssensors muss man zunächst in der Konfiguration den Feuchtigkeitssensor ergänzen. Die Verbindung mit dem Calliope wird falsch dargestellt, aber der Pin richtig angegeben (A1).
+Zum Auslesen des Feuchtigkeitssensors muss man zunächst in der Konfiguration den Feuchtigkeitssensor ergänzen.
 
-Nach der Konfiguration kann man sich die Werte auf dem Display des Calliope anzeigen lassen. Die Werte werden in Prozent von 0% bis 100% angegeben.
+Nach der Konfiguration kann man sich die analogen Werte zwischen 0 und 1023 auf dem Display des Calliope anzeigen lassen. Um eine prozentuale Anzeige zu erhalten, teilt man den Analogwert durch 1023.
 
 <div class="flex-box">
 <div markdown="1">
