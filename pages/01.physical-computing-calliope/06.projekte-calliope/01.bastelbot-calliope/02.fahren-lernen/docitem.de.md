@@ -15,6 +15,8 @@ taxonomy:
 featured_image: bastelbot-quadrat-fahren.png
 ---
 
+[TOC]
+
 Nachdem der Roboter nun über ein Fahrgestell verfügt und die Motoren verkabelt sind, wird es Zeit, ihm das Fahren beizubringen!
 
 ## Programmierung der Motoren
