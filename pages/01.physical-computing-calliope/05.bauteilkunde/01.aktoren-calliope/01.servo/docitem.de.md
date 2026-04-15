@@ -12,6 +12,8 @@ featured_image: servo-3v.jpg
 media_order: 'calliope-v3-servo-mit-batteriefach-6v.png,mc-erweiterung-servo.png,mc-360-grad-servo-steuern.png,servo.png,orl-conf-servo.png,servo-3v.jpg,mc-servo-steuern.png,mc-servo-mit-pwm-steuern.png,orl-servo-steuern.png,orl-servo-mit-pwm-steuern.png,orl-conf-aktor.png,power-supply-module-zwei-servos-hinweise.png,calliope-v3-3,3volt-servo.png,steckbrett-mit-power-module-klein.png'
 ---
 
+[TOC]
+
 <div markdown="1" class="clearfix">
 ![Servo-Motor](servo-3v.jpg?resize=250&classes=caption,figure-right "Servo.")
 Ein Servo ist ein kleiner Elektromotor zusammen mit einer elektronischen Steuereinheit, die dazu dient, den Motor auf einen bestimmten Winkel oder eine bestimmte Geschwindigkeit einzustellen. Häufig wird beides zusammen als Servomotor bezeichnet. Angewendet werden Servos in vielen Bereichen - zum Beispiel im Modellbau.
