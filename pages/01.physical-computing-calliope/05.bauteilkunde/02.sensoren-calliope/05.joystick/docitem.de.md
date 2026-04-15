@@ -3,7 +3,7 @@ title: Joystick
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'calliope-joystick.png,joystick.jpg,mc-joystick-seriell-ausgeben.png,orl-conf-joystick.png,orl-joystick-auslesen.png,py-serieller-monitor.png,Schaltplan-Joystick-Ersatz.png,mc-serieller-monitor.png,serial-monitor-starten.png'
+media_order: 'calliope-joystick.png,joystick.jpg,mc-joystick-seriell-ausgeben.png,orl-conf-joystick.png,orl-joystick-auslesen.png,Schaltplan-Joystick-Ersatz.png,serial-monitor-starten.png,py-serieller-monitor.png,mc-serieller-monitor.png'
 featured_image: joystick.jpg
 ---
 
