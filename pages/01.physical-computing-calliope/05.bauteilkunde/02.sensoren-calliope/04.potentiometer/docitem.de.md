@@ -7,6 +7,8 @@ media_order: 'poti.jpg,orl-poti-serielle-ausgabe.png,mc-poti-serielle-ausgabe.pn
 featured_image: poti.jpg
 ---
 
+[TOC]
+
 <div markdown="1" class="clearfix">
 ![Potentiometer](poti.jpg?resize=200&classes=caption,figure-right "Potentiometer.")
 Ein Drehregler oder Potentiometer ist ein Widerstand, der in zwei Teile aufgeteilt wird. Durch Drehen am Griff kann man die Größe der Teile verändern, allerdings bleibt der Gesamtwiderstand immer gleich groß. Durch den einstellbaren Teilwiderstand lässt sich zum Beispiel eine Lampe dimmen oder die Lautstärke eines Lautsprechers regulieren.
