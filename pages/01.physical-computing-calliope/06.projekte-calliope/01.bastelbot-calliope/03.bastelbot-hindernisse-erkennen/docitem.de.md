@@ -13,6 +13,7 @@ taxonomy:
         - Hinderniserkennung
         - Einparkhilfe
     Niveau:
+        - Basis
         - Fortgeschritten
 ---
 
