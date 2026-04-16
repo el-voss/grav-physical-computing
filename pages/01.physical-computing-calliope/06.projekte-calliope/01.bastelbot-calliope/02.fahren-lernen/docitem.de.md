@@ -5,6 +5,8 @@ image_width: 300
 image_height: 400
 media_order: 'motorblock.png,funktion-drehung-links.png,funktion-drehung-rechts.png,funktion-motor-leistung.png,funktion-motor-stop.png,bastelbot-quadrat-fahren.png,funktion-fahre.png,orl-funktion-geradeaus.png,orl-funktion-linksherum.png,orl-funktion-rechtsherum.png,orl-motorkonfiguration.png,orl-motoren-steuern.png'
 taxonomy:
+    Mindestvoraussetzungen:
+        - 'Bau des Fahrgestells'
     Inhalte:
         - Funktionen
         - Getriebemotoren
