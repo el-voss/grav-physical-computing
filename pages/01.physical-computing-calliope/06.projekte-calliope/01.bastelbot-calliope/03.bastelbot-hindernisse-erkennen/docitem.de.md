@@ -7,8 +7,8 @@ media_order: 'bastelbot-mit-ultraschallsensor.png,ultraschallsensor-grove.jpg'
 featured_image: bastelbot-mit-ultraschallsensor.png
 taxonomy:
     Mindestvoraussetzungen:
-        - 'Verarbeitung von Umwelteingaben'
-        - Variablen
+        - 'Bau des Fahrgestells'
+        - 'Fahren lernen'
     Inhalte:
         - Hinderniserkennung
         - Einparkhilfe
