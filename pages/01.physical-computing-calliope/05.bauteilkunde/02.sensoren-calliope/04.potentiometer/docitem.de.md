@@ -5,6 +5,14 @@ image_width: 300
 image_height: 400
 media_order: 'poti.jpg,orl-poti-serielle-ausgabe.png,mc-poti-serielle-ausgabe.png,calliope-potentiometer.png,calliope-potentiometer-ersatzschaltskizze.png,poti-schaltsymbol.png,orl-conf-poti-serielle-ausgabe.png,serial-monitor-starten.png,pwm-analog-diagramm.png,mc-poti-serieller-monitor.png,py-poti-serieller-monitor.png'
 featured_image: poti.jpg
+taxonomy:
+    Inhalte:
+        - Potentiometer
+        - Drehregler
+        - 'Analoger Eingang'
+    Niveau:
+        - Basis
+        - Fortgeschritten
 ---
 
 [TOC]
