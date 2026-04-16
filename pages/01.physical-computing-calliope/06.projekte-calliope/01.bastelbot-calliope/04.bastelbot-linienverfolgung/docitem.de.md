@@ -7,8 +7,8 @@ media_order: 'bastelbot-kantenverfolgung-geradeaus.png,bastelbot-kantenverfolgun
 featured_image: bastelbot-mit-infrarotsensoren.png
 taxonomy:
     Mindestvoraussetzungen:
-        - Variablen
-        - 'Entscheidungen mit mehreren Kriterien'
+        - 'Bau des Fahrgestells'
+        - 'Fahren lernen'
     Inhalte:
         - Kantenverfolgung
         - Linienverfolgung
