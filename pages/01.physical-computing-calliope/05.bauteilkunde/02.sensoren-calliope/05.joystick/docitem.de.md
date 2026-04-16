@@ -5,6 +5,14 @@ image_width: 300
 image_height: 400
 media_order: 'calliope-joystick.png,joystick.jpg,mc-joystick-seriell-ausgeben.png,orl-conf-joystick.png,orl-joystick-auslesen.png,Schaltplan-Joystick-Ersatz.png,serial-monitor-starten.png,py-serieller-monitor.png,mc-serieller-monitor.png'
 featured_image: joystick.jpg
+taxonomy:
+    Inhalte:
+        - Taster
+        - Potentiometer
+        - Joystick
+        - Active-Low-Schaltung
+    Niveau:
+        - Fortgeschritten
 ---
 
 [TOC]
