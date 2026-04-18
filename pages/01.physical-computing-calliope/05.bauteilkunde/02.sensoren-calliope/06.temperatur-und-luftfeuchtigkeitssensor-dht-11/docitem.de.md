@@ -5,6 +5,12 @@ image_width: 300
 image_height: 400
 media_order: 'py-serielle-ausgabe.png,mc-serielle-ausgabe.png,mc-serielle-ausgabe-programm.png,mc-erweiterung-dht11_dht22.png,calliope-dht11-schaltskizze.png,dht11.jpg'
 featured_image: dht11.jpg
+taxonomy:
+    Inhalte:
+        - 'Temperatur messen'
+        - 'Luftfeuchtigkeit messen'
+    Niveau:
+        - Fortgeschritten
 ---
 
 [TOC] 
