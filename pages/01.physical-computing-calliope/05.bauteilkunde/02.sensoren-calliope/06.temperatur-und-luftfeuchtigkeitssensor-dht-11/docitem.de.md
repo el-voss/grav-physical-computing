@@ -56,6 +56,10 @@ Zum Programmieren mit Makecode muss die Erweiterung "DHT11_DHT22" geladen werden
 </div>
 
 Das abgebildete Programm ist relativ komplex, weil das Auslesen des DHT-11 in meinen Tests relativ häufig zu Fehlern führte. Zwischen zwei Messungen soll stets eine Wartezeit von 30 Sekunden liegen, daher wird die Variable `wartezeit` auf 30000 (Millisekunden) gesetzt. Dann werden bis zu 10 Versuche unternommen, den DHT-11 auszulesen. Falls die Abfrage geklappt hat, erfolgt eine entsprechende Ausgabe auf dem seriellen Monitor und die Schleife wird abgebrochen. Sonst erfolgt keine Ausgabe. Am Ende erfolt das Warten bis zur nächsten Messung, wobei die Wartezeit, die schon zwischen den ggf. mehrfachen Abfragen vergangen ist, abgezogen wird.
+
+Die Abbildung unten zeigt die entsprechende Ausgabe auf dem seriellen Monitor.
+
+![mc-serielle-ausgabe](mc-serielle-ausgabe.png?lightbox=1024&resize=700&classes=caption "Ausgabe der Werte des DHT-11 auf dem seriellen Monitor.")
 </div>
   <div class="roberta content-block" markdown="1">
 Die Abfrage des DHT-11 mit dem Calliope v3 ist bisher nicht im Open Roberta Lab implementiert (Stand 18.04.26).
@@ -111,7 +115,7 @@ while True:
 
 Die Abbildung unten zeigt die entsprechende Ausgabe auf dem seriellen Monitor.
 
-![py-serielle-ausgabe](py-serielle-ausgabe.png?lightbox=1024&resize=500 "py-serielle-ausgabe")
+![py-serielle-ausgabe](py-serielle-ausgabe.png?lightbox=1024&resize=700&classes=caption "Ausgabe der Werte des DHT-11 auf dem seriellen Monitor.")
 
   </div>
 </div>
