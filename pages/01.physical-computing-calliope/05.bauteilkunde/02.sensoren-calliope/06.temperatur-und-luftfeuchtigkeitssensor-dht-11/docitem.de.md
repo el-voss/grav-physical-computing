@@ -52,7 +52,7 @@ Zum Programmieren mit Makecode muss die Erweiterung "DHT11_DHT22" geladen werden
 
 <div class="flex-box">
 <div markdown="1" class="flexible">![mc-erweiterung-dht11_dht22](mc-erweiterung-dht11_dht22.png?lightbox=1024&resize=400&classes=caption "Makecode-Erweiterung für den DHT-11 (und DHT-22).")</div>
-<div markdown="1" class="flexible">![mc-serielle-ausgabe-programm](mc-serielle-ausgabe-programm.png?lightbox=1024&resize=400&classes=caption "Programm zum Auslesen des DHT-11.)</div>
+<div markdown="1" class="flexible">![mc-serielle-ausgabe-programm](mc-serielle-ausgabe-programm.png?lightbox=1024&resize=400&classes=caption "Programm zum Auslesen des DHT-11.")</div>
 </div>
 
 Das abgebildete Programm ist relativ komplex, weil das Auslesen des DHT-11 in meinen Tests relativ häufig zu Fehlern führte. Zwischen zwei Messungen soll stets eine Wartezeit von 30 Sekunden liegen, daher wird die Variable `wartezeit` auf 30000 (Millisekunden) gesetzt. Dann werden bis zu 10 Versuche unternommen, den DHT-11 auszulesen. Falls die Abfrage geklappt hat, erfolgt eine entsprechende Ausgabe auf dem seriellen Monitor und die Schleife wird abgebrochen. Sonst erfolgt keine Ausgabe. Am Ende erfolt das Warten bis zur nächsten Messung, wobei die Wartezeit, die schon zwischen den ggf. mehrfachen Abfragen vergangen ist, abgezogen wird.
