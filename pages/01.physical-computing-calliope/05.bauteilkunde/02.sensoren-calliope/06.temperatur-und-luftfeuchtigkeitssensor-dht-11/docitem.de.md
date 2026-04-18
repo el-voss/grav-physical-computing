@@ -3,6 +3,7 @@ title: 'Temperatur- und Luftfeuchtigkeitssensor DHT-11'
 show_pageimage: true
 image_width: 300
 image_height: 400
+media_order: 'py-serielle-ausgabe.png,mc-serielle-ausgabe.png,mc-serielle-ausgabe-programm.png,mc-erweiterung-dht11_dht22.png,calliope-dht11-schaltskizze.png,dht11.jpg'
 ---
 
 <div markdown="1" class="clearfix">
