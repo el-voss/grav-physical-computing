@@ -4,7 +4,7 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 media_order: 'poti.jpg,orl-poti-serielle-ausgabe.png,mc-poti-serielle-ausgabe.png,calliope-potentiometer.png,calliope-potentiometer-ersatzschaltskizze.png,poti-schaltsymbol.png,orl-conf-poti-serielle-ausgabe.png,serial-monitor-starten.png,pwm-analog-diagramm.png,mc-poti-serieller-monitor.png,py-poti-serieller-monitor.png,poti2.jpg'
-featured_image: poti.jpg
+featured_image: poti2.jpg
 taxonomy:
     Inhalte:
         - Potentiometer
