@@ -4,7 +4,7 @@ menu: Aktoren
 content:
     items:
         - '@self.children'
-    limit: 5
+    limit: 15
     order:
         by: folder
         dir: desc
