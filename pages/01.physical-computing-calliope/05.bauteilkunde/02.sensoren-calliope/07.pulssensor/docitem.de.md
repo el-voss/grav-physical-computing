@@ -58,7 +58,8 @@ Die Werte vom Pulssensor schwanken jedoch je nach Person und Umgebung. Daher kan
 
   </div>
   <div class="roberta content-block" markdown="1">
-Zum Auslesen des Potentiometers muss man zunächst die Konfiguration der Signalpins der Potentiometer (VRx und VRy) als analoger Sensor vornehmen. Der SW-Pin des Tasters wird als digitaler Sensor konfiguriert und zusätzlich wird hier der Pullup-Widerstand aktiviert.
+
+<!--Zum Auslesen des Potentiometers muss man zunächst die Konfiguration der Signalpins der Potentiometer (VRx und VRy) als analoger Sensor vornehmen. Der SW-Pin des Tasters wird als digitaler Sensor konfiguriert und zusätzlich wird hier der Pullup-Widerstand aktiviert.
 
 ![orl-conf-joystick](orl-conf-joystick.png?resize=500&classes=caption "Konfiguration der Pins des Joysticks.")
       
@@ -74,9 +75,12 @@ Für das Auslesen der Werte bietet es sich an, die Werte über die serielle Schn
 ![serial-monitor-starten](serial-monitor-starten.png?resize=500&classes=caption "Öffnen des seriellen Monitors im Open Roberta Connector.")
 </div>
 </div>
+-->
 
   </div>
   <div class="python content-block" markdown="1">
+
+<!--
 Zum Auslesen der Potentiometer und des Tasters lässt man sich aus die analogen Werte bzw. digitalen Werte des entsprechenden Pins anzeigen. Dabei bietet es sich an, die Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen, um den Verlauf besser nachzuvollziehen. Nach dem Übertragen des Programms kann man direkt im Python Editor den Seriellen Monitor öffnen. Um die Werte zu visualisieren, kann man sie optional in eine Tabellenkalkulation kopieren (alles markieren und STRG + UMSCHALT + C drücken) und dort ein Diagramm erstellen.
 
 <div class="flex-box">
@@ -107,6 +111,7 @@ Ausgabe des Analogwerts des Potentiometers auf dem seriellen Monitor.
 </div>
 <div markdown="1">![py-serieller-monitor](py-serieller-monitor.png?lightbox=1024&resize=400&classes=caption "Ausgabe der Werte des Joysticks auf dem seriellen Monitor.")</div>
 </div>
+-->
 
   </div>
 </div>
