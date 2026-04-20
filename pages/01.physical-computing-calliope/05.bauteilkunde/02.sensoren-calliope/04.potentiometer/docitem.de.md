@@ -41,7 +41,7 @@ Es gibt auch Versionen, bei denen die Größe der Teilwiderstände nicht durch D
 
 VCC und GND, also Pluspol und Minuspol, müssen mit den äußeren Kontakten verbunden werden, sodass zwischen diesen Polen der gesamte Widerstand liegt. Mit dem mittleren Kontakt lässt sich dann die Spannung am Teilwiderstand zwischen P0 und GND als Analogwert messen.
 
-Das Signalkabel (in der Schaltskizze blau eingezeichnet) muss mit einem Pin verbunden werden, der ein analoges Signal lesen kann. Dafür kommen folgende Pins in Frage: P0, P1, P2, C4, C10, C16, C18. Achtung: Die Pins können schon an anderer Stelle verwendet worden sein, z. B. über die Ringpads (P0, P1, P2) oder den Grove-Anschluss A1 (betrifft C16).
+Das Signalkabel (in der Schaltskizze blau eingezeichnet) muss mit einem Pin verbunden werden, der ein analoges Signal lesen kann. Dafür kommen folgende Pins in Frage: P0, P1, P2, C4, C10, C16, C18. Achtung: Die Pins können schon an anderer Stelle verwendet worden sein, z. B. über die Ringpads (P0, P1, P2) oder den Grove-Anschluss A1 (betrifft C16). Siehe für doppelt belegte Pins auch die [Dokumentation zur Pinbelegung des Calliope](https://docs.calliope.cc/tech/hardware/pins/).
 
 
 ### Programmierung
