@@ -3,12 +3,119 @@ title: Pulssensor
 show_pageimage: true
 image_width: 300
 image_height: 400
+featured_image: pulssensor.jpg
+media_order: 'pulssensor-prinzip1.png,pulssensor-prinzip2.png,pulssensor-prinzip3.png,pulssensor.jpg,schaltskizze-calliope-pulssensor.png,mc-pulssensor-lesen-mit-filter.png,mc-pulssensor-lesen.png,mc-serieller-monitor.png,pulssensor-skala-serieller-monitor.png'
 ---
+
+[TOC]
 
 <div markdown="1" class="clearfix">
 ![Pulssensor.](pulssensor.jpg?resize=250&classes=caption,figure-right "Rückseite eines Pulssensors.")
 Aktivitätstracker mit Pulsmessung liegen voll im Trend - aber wie funktioniert so ein Pulssensor eigentlich? Das lässt sich am einfachsten verstehen, wenn man selber einen nachbaut. Weitere Anwendungsmöglichkeiten wären übrigens Lügen-/Angstdetektoren, Schlafanalyse oder ein Alarmsystem für Risikopatienten.
 </div>
+
+## Verbindung mit der Pinleiste
+
+### Schaltung
+
+![schaltskizze-calliope-pulssensor](schaltskizze-calliope-pulssensor.png?lightbox=1024&resize=500&classes=caption "Schaltplan zum Pulssensor am Calliope.")
+
+Das Signalkabel S (in der Schaltskizze orange eingezeichnet) muss mit einem Pin verbunden werden, der ein analoges Signal lesen kann. Dafür kommen folgende Pins in Frage: P0, P1, P2, C4, C10, C16, C18. Achtung: Die Pins können schon an anderer Stelle verwendet worden sein, z. B. über die Ringpads (P0, P1, P2) oder den Grove-Anschluss A1 (betrifft C16). Siehe für doppelt belegte Pins auch die [Dokumentation zur Pinbelegung des Calliope](https://docs.calliope.cc/tech/hardware/pins/).
+
+### Programmierung
+
+<!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block" markdown="1">
+Zum Auslesen des Pulssensors lässt man sich aus der Kategorie "Pins" den analogen Wert des entsprechenden Pins (hier P0) anzeigen.
+
+Für das Auslesen der Werte bietet es sich an, den analogen Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen und dort visualisieren zu lassen. Der Befehl dazu findet sich in der Kategorie "Seriell". Nach dem Übertragen des Programms kann man im linken Fensterbereich auf "Daten anzeigen Calliope mini" auswählen und bekommt die unten abgebildete Ansicht.
+<div class="flex-box">
+<div markdown="1">
+![mc-pulssensor-lesen](mc-pulssensor-lesen.png?lightbox=1024&resize=500&classes=caption "Programm zum Auslesen des Pulssensors.")
+</div>
+<div markdown="1">
+![mc-serieller-monitor](mc-serieller-monitor.png?lightbox=1024&resize=500&classes=caption "Ausgabe auf dem seriellen Monitor.")
+</div>
+</div>
+Achtung: Die "korrekten" Werte schwanken in einem sehr kleinen Bereich, im Screenshot oben zwischen 509 und 531. Daher lässt sich der Puls erst als solcher erkennen, wenn die Skala von Makecode entsprechend fein gewählt wurde.
+
+![pulssensor-skala-serieller-monitor](pulssensor-skala-serieller-monitor.png?lightbox=1024&classes=caption "Der Puls lässt sich nur erkennen, wenn die Skala von Makecode sehr fein gewählt wurde. Dazu muss der Pulssensor eine Weile korrekt aufliegen, damit keine Ausreißer mehr vorhanden sind.")
+
+Um Ausreißer bzw. unpassende Werte von Vornherein auszusortieren, kann man im obigen Beispiel nur die Werte ausgeben, deren Abstand zu 500 nicht größer als 100 ist. Dies wird im folgenden Programm umgesetzt.
+
+![mc-pulssensor-lesen-mit-filter](mc-pulssensor-lesen-mit-filter.png?lightbox=1024&resize=500&classes=caption "Auslesen des Pulssensors mit einem Filter (siehe Text).")
+
+Die Werte vom Pulssensor schwanken jedoch je nach Person und Umgebung. Daher kann es auch sein, dass sie eher um den Wert 400 oder 600 schwanken. Man sollte unbedingt darauf achten, dass die Haut nicht verschwitzt ist und keine Bauteile auf dem Sensor berührt werden (insbesondere auf der Rückseite), damit die Ergebnisse einigermaßen zuverlässig sind. Wenn sich auf dem Arm keine brauchbaren Werte einstellen, lohnt sich ein Versuch auf dem Ringfinger oder dem Ohrläppchen.
+
+  </div>
+  <div class="roberta content-block" markdown="1">
+Zum Auslesen des Potentiometers muss man zunächst die Konfiguration der Signalpins der Potentiometer (VRx und VRy) als analoger Sensor vornehmen. Der SW-Pin des Tasters wird als digitaler Sensor konfiguriert und zusätzlich wird hier der Pullup-Widerstand aktiviert.
+
+![orl-conf-joystick](orl-conf-joystick.png?resize=500&classes=caption "Konfiguration der Pins des Joysticks.")
+      
+! Bei der Konfiguration als analoger Sensor stehen nicht alle oben aufgezählten Pins zur Auswahl. Dies ist ein Bug im Open Roberta Lab (Stand: 01.04.26). Insbesondere ist auch der Pin P0 nicht als analoger Sensor auswählbar, weshalb anders als in oben dargestellten Schaltskizze der Pin P1 als analoger Sensor ausgewählt wird. Stattdessen wird Pin P0 als digitaler Sensor für den Taster konfiguriert. **Dementsprechend muss auch die Verkabelung geändert werden.**
+
+Für das Auslesen der Werte bietet es sich an, die Werte über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen, um den Verlauf besser nachzuvollziehen. Nach dem Übertragen des Programms kann man im [Open Roberta Connector](https://jira.iais.fraunhofer.de/wiki/spaces/ORInfo/pages/90802891/Open+Roberta+Connector?target=_blank) die Verbindung mit dem Calliope herstellen und den Seriellen Monitor starten (siehe Abbildung). Um die Werte zu visualisieren, kann man sie optional in eine Tabellenkalkulation kopieren und dort ein Diagramm erstellen.
+
+<div class="flex-box">
+<div markdown="1">
+![orl-joystick-auslesen](orl-joystick-auslesen.png?resize=500&classes=caption "Senden der Werte über die serielle Schnittstelle (USB-Kabel) an den Computer.")
+</div>
+<div markdown="1">
+![serial-monitor-starten](serial-monitor-starten.png?resize=500&classes=caption "Öffnen des seriellen Monitors im Open Roberta Connector.")
+</div>
+</div>
+
+  </div>
+  <div class="python content-block" markdown="1">
+Zum Auslesen der Potentiometer und des Tasters lässt man sich aus die analogen Werte bzw. digitalen Werte des entsprechenden Pins anzeigen. Dabei bietet es sich an, die Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen, um den Verlauf besser nachzuvollziehen. Nach dem Übertragen des Programms kann man direkt im Python Editor den Seriellen Monitor öffnen. Um die Werte zu visualisieren, kann man sie optional in eine Tabellenkalkulation kopieren (alles markieren und STRG + UMSCHALT + C drücken) und dort ein Diagramm erstellen.
+
+<div class="flex-box">
+<div markdown="1">
+ ```python
+# Imports go at the top
+from calliopemini import *
+
+# Pin 1 mit einem Pullup-Widerstand versehen
+# dadurch ist der Zustand im Fall "nicht gedrückt" 1 (HIGH)
+pin1.set_pull(pin1.PULL_UP)
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    # Pin P0 analog auslesen, Ergebnis in String umwandeln und Ausgabe auf dem seriellen Monitor
+    print("x: " + str(pin0.read_analog()) )
+
+    # Pin P2 analog auslesen, Ergebnis in String umwandeln und Ausgabe auf dem seriellen Monitor
+    print("y: " + str(pin2.read_analog()) )  
+
+    # Pin P1 digital auslesen, Ergebnis in String umwandeln und Ausgabe auf dem seriellen Monitor
+    print("sw: " + str(pin1.read_digital()) ) 
+    print("--------------------")
+    sleep(500)
+
+ ```
+Ausgabe des Analogwerts des Potentiometers auf dem seriellen Monitor.
+</div>
+<div markdown="1">![py-serieller-monitor](py-serieller-monitor.png?lightbox=1024&resize=400&classes=caption "Ausgabe der Werte des Joysticks auf dem seriellen Monitor.")</div>
+</div>
+
+  </div>
+</div>
+</div>
+
+## Aufgaben
+
+
+<!--
 Der Anschluss an den Arduino ist einfach: + an 5V, - an GND, der Signalpin S an einen analogen Eingang A[0-5]. Am Signalpin liegt eine Spannung an, die sich im Rhythmus des Herzschlags verändert und am analogen Eingang des Arduino gemessen werden kann. Dies lässt sich mit dem seriellen Plotter der Arduino IDE veranschaulichen (siehe Abbildung unten). Man erkennt, dass die gemessenen Analogwerte zwischen ca. 500 und ca. 535, also in einem relativ kleinen Bereich, schwanken (35 bzw. $0,171 \, V$).
 
 ![Visualisierung von gemessenen Analogwerten zur Bestimmung des Pulses.](pulsmessung-serieller-plotter.png?lightbox=1024&classes=caption "Visualisierung von gemessenen Analogwerten zur Bestimmung des Pulses.")
@@ -16,6 +123,7 @@ Der Anschluss an den Arduino ist einfach: + an 5V, - an GND, der Signalpin S an 
 Als Kriterium für einen Herzschlag könnte man festlegen, dass der Analogwert über 520 liegt. Diese Werte sind jedoch wenig stabil und schwanken je nach Person und Umgebung! Man sollte unbedingt darauf achten, dass die Haut nicht verschwitzt ist und keine Bauteile auf dem Sensor berührt werden (insbesondere auf der Rückseite), damit die Ergebnisse einigermaßen zuverlässig sind. Wenn sich auf dem Arm keine brauchbaren Werte einstellen, lohnt sich ein Versuch auf dem Ringfinger oder dem Ohrläppchen.
 
 Der Pulssensor kann mit den vorkonfigurierten Blöcken von Nepo oder direkt als analoger Sensor eingelesen werden. Im Hintergrund passiert das Gleiche.
+-->
 
 <div markdown="1" class="aufgabe">
 #### Theorie: Wie wird der Puls gemessen?
