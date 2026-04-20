@@ -52,7 +52,7 @@ Achtung: Die "korrekten" Werte schwanken in einem sehr kleinen Bereich, im Scree
 
 Um Ausreißer bzw. unpassende Werte von Vornherein auszusortieren, kann man im obigen Beispiel nur die Werte ausgeben, deren Abstand zu 500 nicht größer als 100 ist. Dies wird im folgenden Programm umgesetzt.
 
-![mc-pulssensor-lesen-mit-filter](mc-pulssensor-lesen-mit-filter.png?lightbox=1024&resize=500&classes=caption "Auslesen des Pulssensors mit einem Filter (siehe Text).")
+![mc-pulssensor-lesen-mit-filter](mc-pulssensor-lesen-mit-filter.png?lightbox=1024&resize=600&classes=caption "Auslesen des Pulssensors mit einem Filter (siehe Text).")
 
 Die Werte vom Pulssensor schwanken jedoch je nach Person und Umgebung. Daher kann es auch sein, dass sie eher um den Wert 400 oder 600 schwanken. Man sollte unbedingt darauf achten, dass die Haut nicht verschwitzt ist und keine Bauteile auf dem Sensor berührt werden (insbesondere auf der Rückseite), damit die Ergebnisse einigermaßen zuverlässig sind. Wenn sich auf dem Arm keine brauchbaren Werte einstellen, lohnt sich ein Versuch auf dem Ringfinger oder dem Ohrläppchen.
 
