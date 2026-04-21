@@ -4,7 +4,7 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: pulssensor.jpg
-media_order: 'pulssensor-prinzip1.png,pulssensor-prinzip2.png,pulssensor-prinzip3.png,pulssensor.jpg,schaltskizze-calliope-pulssensor.png,mc-pulssensor-lesen-mit-filter.png,mc-pulssensor-lesen.png,mc-serieller-monitor.png,pulssensor-skala-serieller-monitor.png'
+media_order: 'pulssensor-prinzip1.png,pulssensor-prinzip2.png,pulssensor-prinzip3.png,pulssensor.jpg,schaltskizze-calliope-pulssensor.png,mc-pulssensor-lesen-mit-filter.png,mc-pulssensor-lesen.png,mc-serieller-monitor.png,pulssensor-skala-serieller-monitor.png,ino-serial-monitor-puls.png,ino-serieller-monitor-skala-unguenstig-Anm.png,ino-start-serieller-monitor.png'
 ---
 
 [TOC]
@@ -79,39 +79,48 @@ Für das Auslesen der Werte bietet es sich an, die Werte über die serielle Schn
 
   </div>
   <div class="python content-block" markdown="1">
+Zum Auslesen des Pulssensors lässt man sich den analogen Wert des entsprechenden Pins (hier P0) anzeigen.
 
-<!--
-Zum Auslesen der Potentiometer und des Tasters lässt man sich aus die analogen Werte bzw. digitalen Werte des entsprechenden Pins anzeigen. Dabei bietet es sich an, die Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen, um den Verlauf besser nachzuvollziehen. Nach dem Übertragen des Programms kann man direkt im Python Editor den Seriellen Monitor öffnen. Um die Werte zu visualisieren, kann man sie optional in eine Tabellenkalkulation kopieren (alles markieren und STRG + UMSCHALT + C drücken) und dort ein Diagramm erstellen.
-
+Für das Auslesen der Werte bietet es sich an, den analogen Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen und dort visualisieren zu lassen. Für die Visualisierung, also die Darstellung in einem Graphen, lässt sich die Arduino IDE nutzen (siehe Anleitung unten).
 <div class="flex-box">
 <div markdown="1">
- ```python
+```python
 # Imports go at the top
 from calliopemini import *
 
-# Pin 1 mit einem Pullup-Widerstand versehen
-# dadurch ist der Zustand im Fall "nicht gedrückt" 1 (HIGH)
-pin1.set_pull(pin1.PULL_UP)
+# Code in a 'while True:' loop repeats forever
+while True:
+    print(pin0.read_analog())
+    sleep(100)
+```
+Programm zum Auslesen des Pulssensors.
+</div>
+<div markdown="1">
+![ino-serial-monitor-puls](ino-serial-monitor-puls.png?lightbox=1024&resize=500&classes=caption "Ausgabe auf dem seriellen Monitor.")
+</div>
+</div>
+Achtung: Die "korrekten" Werte schwanken in einem sehr kleinen Bereich, im Screenshot oben zwischen 508 und 535. Daher lässt sich der Puls erst als solcher erkennen, wenn die Skala von Makecode entsprechend fein gewählt wurde.
+
+![ino-serieller-monitor-skala-unguenstig-Anm](ino-serieller-monitor-skala-unguenstig-Anm.png?lightbox=1024&classes=caption "Der Puls lässt sich nur erkennen, wenn die Skala von Makecode sehr fein gewählt wurde. Dazu muss der Pulssensor eine Weile korrekt aufliegen, damit keine Ausreißer mehr vorhanden sind.")
+
+Um Ausreißer bzw. unpassende Werte von Vornherein auszusortieren, kann man im obigen Beispiel nur die Werte ausgeben, deren Abstand zu 500 nicht größer als 100 ist. Dies wird im folgenden Programm umgesetzt.
+
+```python
+# Imports go at the top
+from calliopemini import *
 
 # Code in a 'while True:' loop repeats forever
 while True:
-    # Pin P0 analog auslesen, Ergebnis in String umwandeln und Ausgabe auf dem seriellen Monitor
-    print("x: " + str(pin0.read_analog()) )
+    neuer_messwert = pin0.read_analog()    # speichern des Messwerts in Variable
+    if ( abs(neuer_messwert - 500) < 100):   # abs( neuer_messwert - 500 ) liefert den betragsmäßigen Abstand (abs) von 500
+        print(neuer_messwert)
+        sleep(100)
+    else:
+        sleep(200)
+```
 
-    # Pin P2 analog auslesen, Ergebnis in String umwandeln und Ausgabe auf dem seriellen Monitor
-    print("y: " + str(pin2.read_analog()) )  
+Die Werte vom Pulssensor schwanken jedoch je nach Person und Umgebung. Daher kann es auch sein, dass sie eher um den Wert 400 oder 600 schwanken. Man sollte unbedingt darauf achten, dass die Haut nicht verschwitzt ist und keine Bauteile auf dem Sensor berührt werden (insbesondere auf der Rückseite), damit die Ergebnisse einigermaßen zuverlässig sind. Wenn sich auf dem Arm keine brauchbaren Werte einstellen, lohnt sich ein Versuch auf dem Ringfinger oder dem Ohrläppchen.
 
-    # Pin P1 digital auslesen, Ergebnis in String umwandeln und Ausgabe auf dem seriellen Monitor
-    print("sw: " + str(pin1.read_digital()) ) 
-    print("--------------------")
-    sleep(500)
-
- ```
-Ausgabe des Analogwerts des Potentiometers auf dem seriellen Monitor.
-</div>
-<div markdown="1">![py-serieller-monitor](py-serieller-monitor.png?lightbox=1024&resize=400&classes=caption "Ausgabe der Werte des Joysticks auf dem seriellen Monitor.")</div>
-</div>
--->
 
   </div>
 </div>
