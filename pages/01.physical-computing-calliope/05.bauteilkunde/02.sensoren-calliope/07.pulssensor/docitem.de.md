@@ -112,7 +112,7 @@ from calliopemini import *
 # Code in a 'while True:' loop repeats forever
 while True:
     neuer_messwert = pin0.read_analog()    # speichern des Messwerts in Variable
-    if ( abs(neuer_messwert - 500) < 100):   # abs( neuer_messwert - 500 ) liefert den betragsmäßigen Abstand (abs) von 500
+    if ( abs(neuer_messwert - 500) &lt; 100):   # abs( neuer_messwert - 500 ) liefert den betragsmäßigen Abstand (abs) von 500
         print(neuer_messwert)
         sleep(100)
     else:
