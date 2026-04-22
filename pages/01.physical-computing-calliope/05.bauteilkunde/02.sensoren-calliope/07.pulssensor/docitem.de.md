@@ -66,6 +66,21 @@ Zum Auslesen des Pulssensors muss man zunächst den Signalpin als analogen Senso
 ! Bei der Konfiguration als analoger Sensor stehen nicht alle oben aufgezählten Pins zur Auswahl. Dies ist ein Bug im Open Roberta Lab (Stand: 01.04.26). Insbesondere ist auch der Pin P0 nicht als analoger Sensor auswählbar, weshalb anders als in oben dargestellten Schaltskizze der Pin P1 als analoger Sensor ausgewählt wird. **Wenn der Pin P1 als analoger Sensor konfiguriert wird, sollte er dementsprechend auch mit dem Pulssensor verbunden werden.**
 
 Für das Auslesen der Werte bietet es sich an, den analogen Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen und dort visualisieren zu lassen. Für die Visualisierung, also die Darstellung in einem Graphen, lässt sich die Arduino IDE nutzen (siehe Anleitung unten).
+
+<details class="details">
+<summary class="details__trigger details__title">Visualisierung mit dem Seriellen Plotter der Arduino IDE</summary>
+<div class="details__content" markdown="1">
+**0.** Vorbereitung: Damit überhaupt Werte über den seriellen Port (USB) übermittelt werden, erstelle ein Programm, das fortlaufend den aktuellen Wert des Pulssensors auf den seriellen Monitor schreibt und übertrage es auf den Arduino.
+
+**1.** Der Serielle Plotter ist in die Arduino IDE eingebaut, die genutzt wird, um den Arduino textbasiert zu programmieren. [Lade die Arduino IDE herunter](https://www.arduino.cc/en/software) und installiere sie.
+
+**2.** Öffne die Arduino IDE. Zuerst muss der USB-Port und das verwendete Board verbunden werden (siehe Bild). Als Board kann man den Arduino Uno  (oder irgendein anderes Board) auswählen, solange der Calliope nicht programmiert werden soll, sondern nur der serielle Monitor bzw. Plotter verwendet werden soll. Danach kann der serieller Plotter geöffnet werden. Falls keine Werte angezeigt werden, dann kontrolliere, ob die Baud-Rate (unten links) auf 9600 eingestellt ist.
+
+![ino-start-serieller-monitor](ino-start-serieller-monitor.png "ino-start-serieller-monitor")
+
+</div>
+</details>
+
 <div class="flex-box">
 <div markdown="1">
 ![orl-pulssensor-lesen](orl-pulssensor-lesen.png?lightbox=1024&resize=500&classes=caption "Programm zum Auslesen des Pulssensors.")
@@ -90,6 +105,21 @@ Die Werte vom Pulssensor schwanken jedoch je nach Person und Umgebung. Daher kan
 Zum Auslesen des Pulssensors lässt man sich den analogen Wert des entsprechenden Pins (hier P0) anzeigen.
 
 Für das Auslesen der Werte bietet es sich an, den analogen Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen und dort visualisieren zu lassen. Für die Visualisierung, also die Darstellung in einem Graphen, lässt sich die Arduino IDE nutzen (siehe Anleitung unten).
+
+<details class="details">
+<summary class="details__trigger details__title">Visualisierung mit dem Seriellen Plotter der Arduino IDE</summary>
+<div class="details__content" markdown="1">
+**0.** Vorbereitung: Damit überhaupt Werte über den seriellen Port (USB) übermittelt werden, erstelle ein Programm, das fortlaufend den aktuellen Wert des Pulssensors auf den seriellen Monitor schreibt und übertrage es auf den Arduino.
+
+**1.** Der Serielle Plotter ist in die Arduino IDE eingebaut, die genutzt wird, um den Arduino textbasiert zu programmieren. [Lade die Arduino IDE herunter](https://www.arduino.cc/en/software) und installiere sie.
+
+**2.** Öffne die Arduino IDE. Zuerst muss der USB-Port und das verwendete Board verbunden werden (siehe Bild). Als Board kann man den Arduino Uno  (oder irgendein anderes Board) auswählen, solange der Calliope nicht programmiert werden soll, sondern nur der serielle Monitor bzw. Plotter verwendet werden soll. Danach kann der serieller Plotter geöffnet werden. Falls keine Werte angezeigt werden, dann kontrolliere, ob die Baud-Rate (unten links) auf 9600 eingestellt ist.
+
+![ino-start-serieller-monitor](ino-start-serieller-monitor.png "ino-start-serieller-monitor")
+
+</div>
+</details>
+
 <div class="flex-box">
 <div markdown="1">
 ```python
@@ -136,17 +166,6 @@ Die Werte vom Pulssensor schwanken jedoch je nach Person und Umgebung. Daher kan
 
 ## Aufgaben
 
-
-<!--
-Der Anschluss an den Arduino ist einfach: + an 5V, - an GND, der Signalpin S an einen analogen Eingang A[0-5]. Am Signalpin liegt eine Spannung an, die sich im Rhythmus des Herzschlags verändert und am analogen Eingang des Arduino gemessen werden kann. Dies lässt sich mit dem seriellen Plotter der Arduino IDE veranschaulichen (siehe Abbildung unten). Man erkennt, dass die gemessenen Analogwerte zwischen ca. 500 und ca. 535, also in einem relativ kleinen Bereich, schwanken (35 bzw. $0,171 \, V$).
-
-![Visualisierung von gemessenen Analogwerten zur Bestimmung des Pulses.](pulsmessung-serieller-plotter.png?lightbox=1024&classes=caption "Visualisierung von gemessenen Analogwerten zur Bestimmung des Pulses.")
-
-Als Kriterium für einen Herzschlag könnte man festlegen, dass der Analogwert über 520 liegt. Diese Werte sind jedoch wenig stabil und schwanken je nach Person und Umgebung! Man sollte unbedingt darauf achten, dass die Haut nicht verschwitzt ist und keine Bauteile auf dem Sensor berührt werden (insbesondere auf der Rückseite), damit die Ergebnisse einigermaßen zuverlässig sind. Wenn sich auf dem Arm keine brauchbaren Werte einstellen, lohnt sich ein Versuch auf dem Ringfinger oder dem Ohrläppchen.
-
-Der Pulssensor kann mit den vorkonfigurierten Blöcken von Nepo oder direkt als analoger Sensor eingelesen werden. Im Hintergrund passiert das Gleiche.
--->
-
 <div markdown="1" class="aufgabe">
 #### Theorie: Wie wird der Puls gemessen?
 
@@ -165,20 +184,3 @@ Baue einen Pulsmesser, der anhand der Messwerte von 10 Sekunden den Puls (Herzsc
 *Hinweis: Es kann nötig sein, sich die Werte von einem seriellen Plotter visualisieren zu lassen, um einen Eindruck vom Wertebereich und von der Grenze für die Herzschlagerkennung zu bekommen. Klappe dafür die Anleitung unter diesem Projekt aus.*
 </div>
 
-<details class="details">
-<summary class="details__trigger details__title">Visualisierung mit dem Seriellen Plotter der Arduino IDE</summary>
-<div class="details__content" markdown="1">
-**0.** Vorbereitung: Damit überhaupt Werte über den seriellen Port (USB) übermittelt werden, erstelle ein Programm in Open Roberta, das fortlaufend den aktuellen Wert des Pulssensors auf den seriellen Monitor schreibt und übertrage es auf den Arduino.
-
-**1.** Der Serielle Plotter ist in die Arduino IDE eingebaut, die genutzt wird, um den Arduino textbasiert zu programmieren. [Lade die Arduino IDE herunter](https://www.arduino.cc/en/software) und installiere sie.
-
-**2.** Öffne die Arduino IDE. Zuerst muss der Arduino verbunden werden. Wähle dazu in der oberen Leiste *Werkzeuge* > *Board: Arduino Uno* und wähle unter *Werkzeuge* > *Port* den Port aus, an dem der Arduino angegeben wird (siehe unten).
-
-![Verbinden eines Arduino mit der Arduino IDE](arduino-ide-plotter-oeffnen.png)
-
-**3.** Öffne den Seriellen Plotter unter *Werkzeuge* > *Serieller Plotter*. Das Koordinatensystem wird automatisch an die vom Arduino übermittelten Werte angepasst. Falls keine Werte angezeigt werden, dann kontrolliere, ob die Baud-Rate (unten links) auf 9600 eingestellt ist.
-
-![Serieller Plotter der Arduino IDE.](arduino-ide-plotter-baud.png?resize=600)
-
-</div>
-</details>
