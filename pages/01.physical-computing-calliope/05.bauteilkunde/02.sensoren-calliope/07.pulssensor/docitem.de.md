@@ -81,6 +81,9 @@ Für das Auslesen der Werte bietet es sich an, den analogen Wert über die serie
 </div>
 </details>
 
+<br>
+<br>
+
 <div class="flex-box">
 <div markdown="1">
 ![orl-pulssensor-lesen](orl-pulssensor-lesen.png?lightbox=1024&resize=500&classes=caption "Programm zum Auslesen des Pulssensors.")
@@ -119,6 +122,9 @@ Für das Auslesen der Werte bietet es sich an, den analogen Wert über die serie
 
 </div>
 </details>
+
+<br>
+<br>
 
 <div class="flex-box">
 <div markdown="1">
