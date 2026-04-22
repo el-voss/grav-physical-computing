@@ -82,7 +82,6 @@ Für das Auslesen der Werte bietet es sich an, den analogen Wert über die serie
 </details>
 
 <br>
-<br>
 
 <div class="flex-box">
 <div markdown="1">
@@ -123,7 +122,6 @@ Für das Auslesen der Werte bietet es sich an, den analogen Wert über die serie
 </div>
 </details>
 
-<br>
 <br>
 
 <div class="flex-box">
