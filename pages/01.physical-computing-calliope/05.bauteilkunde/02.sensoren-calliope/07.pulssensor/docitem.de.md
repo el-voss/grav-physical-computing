@@ -4,7 +4,7 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: pulssensor.jpg
-media_order: 'pulssensor-prinzip1.png,pulssensor-prinzip2.png,pulssensor-prinzip3.png,pulssensor.jpg,schaltskizze-calliope-pulssensor.png,mc-pulssensor-lesen-mit-filter.png,mc-pulssensor-lesen.png,mc-serieller-monitor.png,pulssensor-skala-serieller-monitor.png,ino-serial-monitor-puls.png,ino-serieller-monitor-skala-unguenstig-Anm.png,ino-start-serieller-monitor.png'
+media_order: 'pulssensor-prinzip1.png,pulssensor-prinzip2.png,pulssensor-prinzip3.png,pulssensor.jpg,schaltskizze-calliope-pulssensor.png,mc-pulssensor-lesen-mit-filter.png,mc-pulssensor-lesen.png,mc-serieller-monitor.png,pulssensor-skala-serieller-monitor.png,ino-serial-monitor-puls.png,ino-serieller-monitor-skala-unguenstig-Anm.png,ino-start-serieller-monitor.png,orl-conf-pulssensor.png,orl-pulssensor-lesen.png'
 ---
 
 [TOC]
@@ -59,23 +59,31 @@ Die Werte vom Pulssensor schwanken jedoch je nach Person und Umgebung. Daher kan
   </div>
   <div class="roberta content-block" markdown="1">
 
-<!--Zum Auslesen des Potentiometers muss man zunächst die Konfiguration der Signalpins der Potentiometer (VRx und VRy) als analoger Sensor vornehmen. Der SW-Pin des Tasters wird als digitaler Sensor konfiguriert und zusätzlich wird hier der Pullup-Widerstand aktiviert.
+Zum Auslesen des Pulssensors muss man zunächst den Signalpin als analogen Sensor konfigurieren.
 
-![orl-conf-joystick](orl-conf-joystick.png?resize=500&classes=caption "Konfiguration der Pins des Joysticks.")
+![orl-conf-pulssensor](orl-conf-pulssensor.png?resize=500&classes=caption "Konfiguration des Signalpins P1 als analoger Sensor.")
       
-! Bei der Konfiguration als analoger Sensor stehen nicht alle oben aufgezählten Pins zur Auswahl. Dies ist ein Bug im Open Roberta Lab (Stand: 01.04.26). Insbesondere ist auch der Pin P0 nicht als analoger Sensor auswählbar, weshalb anders als in oben dargestellten Schaltskizze der Pin P1 als analoger Sensor ausgewählt wird. Stattdessen wird Pin P0 als digitaler Sensor für den Taster konfiguriert. **Dementsprechend muss auch die Verkabelung geändert werden.**
+! Bei der Konfiguration als analoger Sensor stehen nicht alle oben aufgezählten Pins zur Auswahl. Dies ist ein Bug im Open Roberta Lab (Stand: 01.04.26). Insbesondere ist auch der Pin P0 nicht als analoger Sensor auswählbar, weshalb anders als in oben dargestellten Schaltskizze der Pin P1 als analoger Sensor ausgewählt wird. **Wenn der Pin P1 als analoger Sensor konfiguriert wird, sollte er dementsprechend auch mit dem Pulssensor verbunden werden.**
 
-Für das Auslesen der Werte bietet es sich an, die Werte über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen, um den Verlauf besser nachzuvollziehen. Nach dem Übertragen des Programms kann man im [Open Roberta Connector](https://jira.iais.fraunhofer.de/wiki/spaces/ORInfo/pages/90802891/Open+Roberta+Connector?target=_blank) die Verbindung mit dem Calliope herstellen und den Seriellen Monitor starten (siehe Abbildung). Um die Werte zu visualisieren, kann man sie optional in eine Tabellenkalkulation kopieren und dort ein Diagramm erstellen.
-
+Für das Auslesen der Werte bietet es sich an, den analogen Wert über die serielle Schnittstelle (USB-Kabel) an den Computer schicken zu lassen und dort visualisieren zu lassen. Für die Visualisierung, also die Darstellung in einem Graphen, lässt sich die Arduino IDE nutzen (siehe Anleitung unten).
 <div class="flex-box">
 <div markdown="1">
-![orl-joystick-auslesen](orl-joystick-auslesen.png?resize=500&classes=caption "Senden der Werte über die serielle Schnittstelle (USB-Kabel) an den Computer.")
+![orl-pulssensor-lesen](orl-pulssensor-lesen.png?lightbox=1024&resize=500&classes=caption "Programm zum Auslesen des Pulssensors.")
 </div>
 <div markdown="1">
-![serial-monitor-starten](serial-monitor-starten.png?resize=500&classes=caption "Öffnen des seriellen Monitors im Open Roberta Connector.")
+![ino-serial-monitor-puls](ino-serial-monitor-puls.png?lightbox=1024&resize=500&classes=caption "Ausgabe auf dem seriellen Monitor.")
 </div>
 </div>
--->
+Achtung: Die "korrekten" Werte schwanken in einem sehr kleinen Bereich, im Screenshot oben zwischen 508 und 535. Daher lässt sich der Puls erst als solcher erkennen, wenn die Skala von Makecode entsprechend fein gewählt wurde.
+
+![ino-serieller-monitor-skala-unguenstig-Anm](ino-serieller-monitor-skala-unguenstig-Anm.png?lightbox=1024&classes=caption "Der Puls lässt sich nur erkennen, wenn die Skala von Makecode sehr fein gewählt wurde. Dazu muss der Pulssensor eine Weile korrekt aufliegen, damit keine Ausreißer mehr vorhanden sind.")
+
+Um Ausreißer bzw. unpassende Werte von Vornherein auszusortieren, kann man im obigen Beispiel nur die Werte ausgeben, deren Abstand zu 500 nicht größer als 100 ist. Dies wird im folgenden Programm umgesetzt.
+
+
+
+Die Werte vom Pulssensor schwanken jedoch je nach Person und Umgebung. Daher kann es auch sein, dass sie eher um den Wert 400 oder 600 schwanken. Man sollte unbedingt darauf achten, dass die Haut nicht verschwitzt ist und keine Bauteile auf dem Sensor berührt werden (insbesondere auf der Rückseite), damit die Ergebnisse einigermaßen zuverlässig sind. Wenn sich auf dem Arm keine brauchbaren Werte einstellen, lohnt sich ein Versuch auf dem Ringfinger oder dem Ohrläppchen.
+
 
   </div>
   <div class="python content-block" markdown="1">
