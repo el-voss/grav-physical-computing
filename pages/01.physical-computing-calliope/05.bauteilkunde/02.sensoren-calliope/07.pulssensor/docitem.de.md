@@ -74,7 +74,7 @@ Für das Auslesen der Werte bietet es sich an, den analogen Wert über die serie
 ![ino-serial-monitor-puls](ino-serial-monitor-puls.png?lightbox=1024&resize=500&classes=caption "Ausgabe auf dem seriellen Monitor.")
 </div>
 </div>
-Achtung: Die "korrekten" Werte schwanken in einem sehr kleinen Bereich, im Screenshot oben zwischen 508 und 535. Daher lässt sich der Puls erst als solcher erkennen, wenn die Skala von Makecode entsprechend fein gewählt wurde.
+Achtung: Die "korrekten" Werte schwanken in einem sehr kleinen Bereich, im Screenshot oben zwischen 508 und 535. Daher lässt sich der Puls erst als solcher erkennen, wenn die Skala von der Arduino IDE entsprechend fein gewählt wurde.
 
 ![ino-serieller-monitor-skala-unguenstig-Anm](ino-serieller-monitor-skala-unguenstig-Anm.png?lightbox=1024&classes=caption "Der Puls lässt sich nur erkennen, wenn die Skala von Makecode sehr fein gewählt wurde. Dazu muss der Pulssensor eine Weile korrekt aufliegen, damit keine Ausreißer mehr vorhanden sind.")
 
@@ -107,7 +107,7 @@ Programm zum Auslesen des Pulssensors.
 ![ino-serial-monitor-puls](ino-serial-monitor-puls.png?lightbox=1024&resize=500&classes=caption "Ausgabe auf dem seriellen Monitor.")
 </div>
 </div>
-Achtung: Die "korrekten" Werte schwanken in einem sehr kleinen Bereich, im Screenshot oben zwischen 508 und 535. Daher lässt sich der Puls erst als solcher erkennen, wenn die Skala von Makecode entsprechend fein gewählt wurde.
+Achtung: Die "korrekten" Werte schwanken in einem sehr kleinen Bereich, im Screenshot oben zwischen 508 und 535. Daher lässt sich der Puls erst als solcher erkennen, wenn die Skala von der Arduino IDE entsprechend fein gewählt wurde.
 
 ![ino-serieller-monitor-skala-unguenstig-Anm](ino-serieller-monitor-skala-unguenstig-Anm.png?lightbox=1024&classes=caption "Der Puls lässt sich nur erkennen, wenn die Skala von Makecode sehr fein gewählt wurde. Dazu muss der Pulssensor eine Weile korrekt aufliegen, damit keine Ausreißer mehr vorhanden sind.")
 
