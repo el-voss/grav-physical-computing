@@ -19,6 +19,7 @@
     position: relative;
     display: block;
     font-weight: 700;
+    color: #42bb70;
 }
 .details__title::before,
 .details__title::after {
