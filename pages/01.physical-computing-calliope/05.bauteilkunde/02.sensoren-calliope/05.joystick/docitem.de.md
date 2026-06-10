@@ -29,7 +29,7 @@ Ein Joystick besteht im Wesentlichen aus zwei Potentiometern, die über einen ge
 ### Schaltung
 
 <div class="flex-box">
-<div markdown="1" class="flexible">![calliope-joystick](calliope-joystick.png?lightbox=1024&resize=500&classes=caption "Anschluss des Joystick-Moduls an den Arduino.")</div>
+<div markdown="1" class="flexible">![calliope-joystick](calliope-joystick.png?lightbox=1024&resize=500&classes=caption "Anschluss des Joystick-Moduls an den Calliope.")</div>
 <div markdown="1" class="flexible">![Ersatzschaltplan für das Joystick-Modul.](Schaltplan-Joystick-Ersatz.png?lightbox=1024&resize=300&classes=caption "Ersatzschaltplan für das Joystick-Modul.")</div>
 </div>
 
