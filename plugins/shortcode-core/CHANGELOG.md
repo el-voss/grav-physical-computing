@@ -1,3 +1,40 @@
+# v6.2.2
+## 07/02/2026
+
+1. [](#bugfix)
+    * [security] Shortcode parameters that set an element's color, size, id, class or style are now escaped when written into the page, closing a stored cross-site scripting hole where a crafted value could break out of the attribute and run script in a visitor's or an administrator's browser ([GHSA-q5fw-vpqc-fgph](https://github.com/getgrav/grav/security/advisories/GHSA-q5fw-vpqc-fgph)).
+
+# v6.2.1
+## 06/29/2026
+
+1. [](#bugfix)
+    * Fixed the `[safe-email]` shortcode producing a broken, double-wrapped link when Grav's GFM autolinker had already turned the bare address into a mailto link.
+
+# v6.2.0
+## 06/24/2026
+
+1. [](#improved)
+    * Renamed the `TarsParser` added in 6.1.0 to `HybridParser`, a name that better describes how it works: one regex pass lexes every tag, then a stack-based pass resolves nesting. It pairs RegexParser's speed with RegularParser's correctness.
+    * Made `hybrid` the default parser for new installs and renamed the matching Processor dropdown option in the plugin settings.
+    * Kept the old `tars` setting working. Sites that selected it keep running unchanged, the value now resolves to `HybridParser` automatically, so no config edits are needed.
+
+# v6.1.0
+## 06/21/2026
+
+1. [](#new)
+    * Added the new `TarsParser`, which matches the Regular parser's correctness but runs several times faster and uses less memory.
+    * Made Tars the default parser for new installs, selectable from the Processor dropdown in the plugin settings.
+
+# v6.0.0
+## 06/17/2026
+
+1. [](#new)
+    * Added a Shortcode Builder that lets you define your own shortcodes in config, each backed by a Twig template or an inline output snippet, with no plugin or PHP class needed.
+    * Added a dedicated Shortcode Builder tab to the plugin settings that works in both the classic admin and Admin Next.
+    * Added two starter Shortcode Builder examples, a template-backed `[callout]` and an inline `[badge]`, that you can edit or remove.
+    * Added a `[translate]KEY[/translate]` shortcode that looks up a language string, the safe in-content replacement for `{{ 'KEY'|t }}` when Twig in content is disabled.
+    * Added a `[uri param="foo" /]` shortcode that prints a value from the current URL with its output HTML-escaped by default, the safe in-content replacement for `{{ uri.param('foo') }}`.
+
 # v5.4.0
 ## 05/07/2026
 

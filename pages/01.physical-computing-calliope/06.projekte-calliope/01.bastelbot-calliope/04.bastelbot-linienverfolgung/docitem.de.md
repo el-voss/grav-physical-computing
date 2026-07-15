@@ -59,8 +59,8 @@ Recherchiere die Funktionsweise der [Infrarot-Sensoren TCRT5000](/physical-compu
 
 Für diese Aufgabe liegt ein Parcour mit einer schwarzen Linie bereit. Das Ziel ist es, dass der Roboter dieser schwarzen Linie bzw. ihrer Kante folgt und möglichst schnell den kompletten Parcour absolviert, ohne die Linie bzw. Kante zu verlieren. Dafür wird **zunächst nur ein Sensor** genutzt.
 
-1. Notiere dir, welchen Analogwert der linke IR-Sensor anzeigt, wenn er auf schwarz und wenn er auf weiß steht.
-2. Programmiere den Roboter so, dass er der Linie folgt. Beachte dabei die unten abgebildeten Fälle.
+1. Notiere dir, welchen Analogwert der linke IR-Sensor in den unten abgebildeten Fällen anzeigt.
+2. Programmiere den Roboter so, dass er der Linie folgt. Nutze eine Verzweigung mit passenden Schwellwerten für die drei Fälle.
 
 <div class="flex-box" style="align-items: center;">
 <div markdown="1"> ![bastelbot-kantenverfolgung-geradeaus](bastelbot-kantenverfolgung-geradeaus.png?lightbox=1024&resize=400 "bastelbot-kantenverfolgung-geradeaus") </div>
@@ -75,7 +75,7 @@ Für diese Aufgabe liegt ein Parcour mit einer schwarzen Linie bereit. Das Ziel 
 
 Für diese Aufgabe liegt ein Parcour mit einer schwarzen Linie bereit. Das Ziel ist es, dass der Roboter dieser schwarzen Linie folgt und möglichst schnell den kompletten Parcour absolviert, ohne die Linie zu verlieren. Dafür werden **nun beide Sensoren** genutzt.
 
-1. Notiere dir, welchen Analogwert der linke IR-Sensor und welchen Analogwert der rechte IR-Sensor anzeigt, wenn er auf schwarz und wenn er auf weiß steht. Es können kleine Unterschiede auftreten!
+1. Notiere dir, welchen Analogwert der linke IR-Sensor und welchen Analogwert der rechte IR-Sensor anzeigt, wenn er auf schwarz und wenn er auf weiß steht. Es können deutliche Unterschiede auftreten!
 2. Programmiere den Roboter so, dass er der Linie folgt. Beachte dabei die unten abgebildeten Fälle.
 
 <div class="flex-box" style="align-items: center;">

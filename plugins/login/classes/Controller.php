@@ -108,7 +108,11 @@ class Controller
             $this->grav['log']->error('plugin.login: '. $e->getMessage());
         }
 
-        if (!$this->redirect && $redirect) {
+        // Never honor a client-supplied `_redirect` that points off-site. This
+        // closes the open-redirect across every login task (e.g. `twofa_cancel`,
+        // which returns without setting its own redirect), not just the one that
+        // was reported. Server-side redirects set by a task are unaffected.
+        if (!$this->redirect && $redirect && !Uri::isExternal($redirect)) {
             $this->setRedirect($redirect, 303);
         }
 
@@ -351,6 +355,20 @@ class Controller
         /** @var Language $language */
         $language = $this->grav['language'];
         $messages = $this->grav['messages'];
+
+        // When the admin has opted into requiring a trusted host, refuse to
+        // generate a reset link from the request Host while no canonical host
+        // is configured. This fails closed at the exact point the spoofable
+        // link would be created (GHSA-46jp-rc59-w2gc). The message is
+        // deliberately generic so an unauthenticated requester learns nothing
+        // about account existence or the site's configuration.
+        if ($config->get('plugins.login.require_trusted_host', false) && !Email::isTrustedHostConfigured()) {
+            $this->grav['log']->error('login: password reset refused because require_trusted_host is enabled but neither plugins.login.site_host nor system.custom_base_url is set.');
+            $messages->add($language->translate('PLUGIN_LOGIN.FORGOT_TEMPORARILY_UNAVAILABLE'), 'error');
+            $this->setRedirect($this->login->getRoute('forgot') ?? '/');
+
+            return true;
+        }
 
         /** @var UserCollectionInterface $users */
         $users = $this->grav['accounts'];
@@ -745,7 +763,15 @@ class Controller
             /** @var UserInterface $user */
             $user = $this->grav['user'];
 
-            if ($user->exists()) {
+            // Require a fully authorized session, not merely an existing one.
+            // During the 2FA challenge the session user is authenticated but
+            // NOT authorized (Login sets `authorized = false` while the login is
+            // delayed). Gating on `exists()` alone let a pending attacker mint
+            // and read the victim's new 2FA secret (GHSA-7mgc). Legitimate
+            // first-time enrollment / QR regeneration happens from the account
+            // profile page where the user is fully logged in (authorized=true),
+            // so that flow still passes this gate.
+            if ($user->exists() && $user->authorized === true) {
                 /** @var TwoFactorAuth $twoFa */
                 $twoFa = $this->grav['login']->twoFactorAuth();
                 $secret = $twoFa->createSecret();

@@ -38,9 +38,11 @@ use Grav\Plugin\Login\Invitations\Invitation;
 use Grav\Plugin\Login\Invitations\Invitations;
 use Grav\Plugin\Login\Login;
 use Grav\Plugin\Login\Controller;
+use Grav\Plugin\Login\Email;
 use Grav\Plugin\Login\RememberMe\RememberMe;
 use RocketTheme\Toolbox\Event\Event;
 use RocketTheme\Toolbox\Session\Message;
+use Twig\TwigFunction;
 use function is_array;
 
 /**
@@ -91,8 +93,13 @@ class LoginPlugin extends Plugin
             'onDisplayErrorPage.403'    => ['onDisplayErrorPage403', -1],
             'onPageInitialized'         => [['authorizeLoginPage', 10], ['authorizePage', 0]],
             'onPageFallBackUrl'         => ['authorizeFallBackUrl', 0],
+            'onTwigInitialized'         => ['onTwigInitialized', 0],
+            'onBuildTwigSandboxPolicy'  => ['onBuildTwigSandboxPolicy', 0],
+            'onShortcodeHandlers'       => ['onShortcodeHandlers', 0],
             'onTwigTemplatePaths'       => ['onTwigTemplatePaths', 0],
             'onTwigSiteVariables'       => ['onTwigSiteVariables', -100000],
+            'onAdminTwigTemplatePaths'  => ['onAdminUntrustedHostNotice', 0],
+            'onApiDashboardNotifications' => ['onApiDashboardNotifications', 0],
             'onFormProcessed'           => ['onFormProcessed', 0],
             'onUserLoginAuthenticate'   => [['userLoginAuthenticateByMagic', 10004], ['userLoginAuthenticateRateLimit', 10003], ['userLoginAuthenticateByRegistration', 10002], ['userLoginAuthenticateByRememberMe', 10001], ['userLoginAuthenticateByEmail', 10000], ['userLoginAuthenticate', 0]],
             'onUserLoginAuthorize'      => ['userLoginAuthorize', 0],
@@ -671,6 +678,29 @@ class LoginPlugin extends Plugin
                     return;
                 }
                 break;
+
+            case 'twofa_cancel':
+                // The 2FA form carries the `login-form` nonce, so verify it here
+                // too — `twofa_cancel` was previously unguarded, letting it run
+                // (and act on a client `_redirect`) without a nonce.
+                if (!isset($post['login-form-nonce']) || !Utils::verifyNonce($post['login-form-nonce'], 'login-form')) {
+                    $this->grav['messages']->add($this->grav['language']->translate('PLUGIN_LOGIN.ACCESS_DENIED'), 'info');
+                    return;
+                }
+                break;
+
+            case 'regenerate2FASecret':
+                // CSRF hardening (GHSA-4px8): this task was previously reachable
+                // with no nonce and via a top-level GET (SameSite=Lax). Require
+                // POST to kill the Lax GET vector, and verify the `login-form`
+                // nonce that the 2FA setup field now sends.
+                if (($_SERVER['REQUEST_METHOD'] ?? 'GET') !== 'POST'
+                    || !isset($post['login-form-nonce'])
+                    || !Utils::verifyNonce($post['login-form-nonce'], 'login-form')) {
+                    $this->grav['messages']->add($this->grav['language']->translate('PLUGIN_LOGIN.ACCESS_DENIED'), 'info');
+                    return;
+                }
+                break;
         }
 
         $controller = new Controller($this->grav, $task, $post);
@@ -874,6 +904,49 @@ class LoginPlugin extends Plugin
 
             $this->setUnauthorizedPage();
         }
+    }
+
+    /**
+     * [onTwigInitialized] Register the `authenticated()` Twig helper.
+     *
+     * Lets templates and page content ask whether the current visitor is
+     * logged in — and, optionally, whether they hold a given permission or
+     * belong to a given group — without touching the `grav.user` object, which
+     * the content Twig sandbox blocks.
+     */
+    public function onTwigInitialized(): void
+    {
+        $login = $this->grav['login'];
+        $this->grav['twig']->twig()->addFunction(
+            new TwigFunction('authenticated', static function ($permission = null, $group = null) use ($login) {
+                return $login->isAuthenticated($permission, $group);
+            })
+        );
+    }
+
+    /**
+     * [onBuildTwigSandboxPolicy] Allow `authenticated()` inside the content
+     * sandbox so editor-authored page content can use `{% if authenticated() %}`.
+     * The helper only ever returns a boolean about the current visitor, so it is
+     * safe to expose.
+     */
+    public function onBuildTwigSandboxPolicy(Event $event): void
+    {
+        $functions = $event['functions'];
+        $functions[] = 'authenticated';
+        $event['functions'] = $functions;
+    }
+
+    /**
+     * [onShortcodeHandlers] Register the optional `[authenticated]` / `[guest]`
+     * shortcodes. This event is fired only by the shortcode-core plugin, so the
+     * shortcodes are added when it is installed without the Login plugin
+     * depending on it; the same checks are always available via the
+     * `authenticated()` Twig function.
+     */
+    public function onShortcodeHandlers(): void
+    {
+        $this->grav['shortcode']->registerAllShortcodes(__DIR__ . '/classes/shortcodes');
     }
 
     /**
@@ -1196,8 +1269,26 @@ class LoginPlugin extends Plugin
 
         $fields = (array)$this->config->get('plugins.login.user_registration.fields', []);
 
+        // Privilege fields must never be sourced from self-service profile input, the
+        // same defence the registration handler applies (GHSA-pxm6-mhxr-q4mj). On the
+        // default DataUser backend `update()` is a raw merge with no field-level
+        // security gate, so an attacker-supplied `access`/`groups` would otherwise
+        // persist straight to the account and grant super-admin (GHSA-h33v-82r9-v8pm).
+        $privilegeFields = ['groups', 'access'];
+
         $data = [];
         foreach ($fields as $field) {
+            if (in_array($field, $privilegeFields, true)) {
+                if ($form_data->get($field) !== null) {
+                    $this->grav['log']->warning(sprintf(
+                        'Login profile: ignored client-supplied "%s" from form submission (username=%s)',
+                        $field,
+                        is_string($user->get('username')) ? $user->get('username') : '<invalid>'
+                    ));
+                }
+                continue;
+            }
+
             $data_field = $form_data->get($field);
             if (!isset($data[$field]) && isset($data_field)) {
                 $data[$field] = $form_data->get($field);
@@ -1526,5 +1617,62 @@ class LoginPlugin extends Plugin
         }
 
         return $login->getRoute('after_logout') ?? false;
+    }
+
+    /**
+     * [onAdminTwigTemplatePaths] Admin-classic notice.
+     *
+     * Fires only in admin-classic. When neither plugins.login.site_host nor
+     * system.custom_base_url is set, password reset and activation email links
+     * are built from the (spoofable) request host (GHSA-46jp-rc59-w2gc). Surface
+     * a warning banner to the logged-in admin via the messages system so the
+     * weak configuration is visible to the person who can fix it.
+     *
+     * @return void
+     */
+    public function onAdminUntrustedHostNotice(): void
+    {
+        if (Email::isTrustedHostConfigured()) {
+            return;
+        }
+
+        $user = $this->grav['user'] ?? null;
+        if (!$user || !$user->authenticated || !$user->authorize('admin.login')) {
+            return;
+        }
+
+        $this->grav['messages']->add(
+            $this->grav['language']->translate('PLUGIN_LOGIN.UNTRUSTED_HOST_NOTICE'),
+            'warning'
+        );
+    }
+
+    /**
+     * [onApiDashboardNotifications] Admin-next (admin2) notice.
+     *
+     * Contributes the same untrusted-host warning as a persistent, dismissible
+     * dashboard banner in the `top` location. Dismissal and reappearance flow
+     * through the API plugin's standard notification handling.
+     *
+     * @param Event $event
+     * @return void
+     */
+    public function onApiDashboardNotifications(Event $event): void
+    {
+        if (Email::isTrustedHostConfigured()) {
+            return;
+        }
+
+        $notifications = $event['notifications'] ?? [];
+        $notifications['top'][] = [
+            'id'             => 'login-untrusted-host',
+            'date'           => date('c'),
+            'level'          => 'warning',
+            'icon'           => 'shield-alert',
+            'location'       => ['top'],
+            'message'        => $this->grav['language']->translate('PLUGIN_LOGIN.UNTRUSTED_HOST_NOTICE'),
+            'reappear_after' => '+7 days',
+        ];
+        $event['notifications'] = $notifications;
     }
 }
