@@ -132,6 +132,45 @@ while True:
 
 **Vorlage für den Empfänger:**
 ```python
+# Imports go at the top
+from calliopemini import *
+import radio
+
+radio.on()
+radio.config(group=0)
+
+# Variablen für die Motorleistung
+l0 = 0
+l1 = 0
+
+while True:
+    nachricht = radio.receive()
+    # wenn keine Nachricht ankommt, ist der Variableninhalt None und dies liefert im Folgenden False
+    # wenn eine Nachricht ankommt, liefert die folgende Abfrage True
+    if nachricht:
+        # Umwandeln von Zeichenkette in Zahl
+        nachricht = float(nachricht)
+        # TODO: Setzen der Motorleistung l0 bzw. l1, je nach Größe der empfangenen Zahl
+        
+
+    # Motoren anstellen
+    pin_M_MODE.write_digital(1)
+
+    # TODO: Auswertung der Drehrichtung
+    
+
+    # TODO: Werte umrechnen: l0 bzw. l1 liegt zwischen -100 und 100, gebraucht wird ein Wert lM0 bzw. lM1 zwischen 0 und 1023
+    # dazu neue Variable anlegen, um Auswertung der Drehrichtung im nächsten Durchlauf der Schleife
+    # nicht zu verfälschen
+
+    lM0 = 
+    lM1 = 
+    
+    # Leistung der Motoren festlegen
+    pin_M0_SPEED.write_analog(lM0)
+    pin_M1_SPEED.write_analog(lM1)
+
+    sleep(100)
 
 ```
 
