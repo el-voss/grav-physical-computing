@@ -114,16 +114,18 @@ l0 = 0
 l1 = 0
 
 while True:
-    # Einlesen von vrx und vry sowie Berechnung von l0 und l1 fehlt hier noch
+    # TODO: Einlesen von vrx und vry sowie Berechnung von l0 und l1 fehlt hier noch
     
-    # im Folgenden Beispielwerte für l0 und l1 zur Demonstration des Sendens
+    # im Folgenden Beispielwerte für l0 und l1 zur Demonstration des Sendens,
+    # diese müssen wieder entfernt werden, wenn oberes TODO abgearbeitet ist
     l0 = 50
+    l1 = -50
+    
     # Wert von l0 wird mit 1000 addiert und in eine Zeichenkette (String) umgewandelt,
     # da nur Zeichenketten versendet werden können
     radio.send(str(l0 + 1000))
     sleep(100)
 
-    l1 = -50
     # Wert von l1 wird mit 2000 addiert und in eine Zeichenkette (String) umgewandelt,
     # da nur Zeichenketten versendet werden können
     radio.send(str(l1 + 2000))
@@ -131,6 +133,9 @@ while True:
 ```
 
 **Vorlage für den Empfänger:**
+
+Für die Programmierung mit Python hätte die Koordinatentransformation oben auch anders aussehen können, da die Ansteuerung der Motoren in Python nicht über eine Leistung von -100 bis 100 erfolgt, sondern über einen Befehl für die Richtung und einen Befehl für die Drehgeschwindigkeit mit Werten von 0 bis 1023. Wenn man jedoch wie in den anderen Programmiersprachen eine Leistung von -100 bis 100 sendet, dann kann man anhand dieser Leistung leicht die Drehrichtung und einen (absoluten) Wert für die Drehgeschwindigkeit von 0 bis 1023 berechnen lassen.
+
 ```python
 # Imports go at the top
 from calliopemini import *
