@@ -4,7 +4,7 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: fernsteuerung-schematisch.png
-media_order: 'fernsteuerung-schematisch.png,fernsteuerung-joystick-werte.png,fernsteuerung-joystick-idee1.png,fernsteuerung-joystick-koordinatentransformation.png,funk-Wertepaar-Befehl.png,empfaenger-programm-vorlage.png'
+media_order: 'fernsteuerung-schematisch.png,fernsteuerung-joystick-werte.png,fernsteuerung-joystick-idee1.png,fernsteuerung-joystick-koordinatentransformation.png,funk-Wertepaar-Befehl.png,empfaenger-programm-vorlage.png,orl-sender-vorlage.png,orl-empfaenger-vorlage.png'
 ---
 
 [TOC]
@@ -88,10 +88,19 @@ Wenn der Joystick in der Mitte steht, ist die jeweilige Motorleistung 0. Wenn de
 
   </div>
   <div class="roberta content-block" markdown="1">
+Um unterscheiden zu können, ob die Leistung `l0` oder die Leistung `l1` gesendet wird, wird die Leistung `l0` vor dem Senden mit 1000 addiert und die Leistung `l1` mit 2000. Der Empfänger muss dann prüfen, wie groß die empfangene Zahl ist, um zu entscheiden, ob sie für `l0` oder `l1` gesetzt werden soll.
+
+**Vorlage für den Sender:**
+![orl-sender-vorlage](orl-sender-vorlage.png "orl-sender-vorlage")
+
+**Vorlage für den Empfänger:**
+![orl-empfaenger-vorlage](orl-empfaenger-vorlage.png "orl-empfaenger-vorlage")
 
   </div>
   <div class="python content-block" markdown="1">
-**Befehl für den Sender:**
+Um unterscheiden zu können, ob die Leistung `l0` oder die Leistung `l1` gesendet wird, wird die Leistung `l0` vor dem Senden mit 1000 addiert und die Leistung `l1` mit 2000. Der Empfänger muss dann prüfen, wie groß die empfangene Zahl ist, um zu entscheiden, ob sie für `l0` oder `l1` gesetzt werden soll.
+
+**Vorlage für den Sender:**
 ```python
 
 ```
