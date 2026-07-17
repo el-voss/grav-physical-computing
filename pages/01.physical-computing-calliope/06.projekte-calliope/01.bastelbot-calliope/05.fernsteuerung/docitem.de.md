@@ -31,7 +31,9 @@ Mit Hilfe eines Joysticks lässt sich der Roboter intuitiv steuern. Dabei werden
 <div markdown="1" class="aufgabe">
 #### Idee 1: Drehachsen entsprechen Motorleistung
 
-Die erste Idee zur Fernsteuerung des Roboters ist die, dass jede der Drehachsen des Joysticks (entsprechend `vrx` und `vry`) die Leistung eines Motors steuert. Im Folgenden bezeichnen wir die Leistung von Motor M0 als `l0` un die Leistung von Motor M1 als `l1`. Wenn der Joystick in der Mitte steht, ist die jeweilige Motorleistung 0. Wenn der Joystick in x-Richtung nach links ausgelenkt wird, wird `l0` erhöht, bis sie 100% erreicht. Bei einer Bewegung nach rechts, wird `l0` verringert, bis sie -100% erreicht. Entsprechend für die y-Richtung.
+Die erste Idee zur Fernsteuerung des Roboters ist die, dass jede der Drehachsen des Joysticks (entsprechend `vrx` und `vry`) die Leistung eines Motors steuert. Im Folgenden bezeichnen wir die Leistung von Motor M0 als `l0` un die Leistung von Motor M1 als `l1`. 
+
+Wenn der Joystick in der Mitte steht, ist die jeweilige Motorleistung 0. Wenn der Joystick in x-Richtung nach links ausgelenkt wird, wird `l0` erhöht, bis sie 100% erreicht. Bei einer Bewegung nach rechts, wird `l0` verringert, bis sie -100% erreicht. Entsprechend für die y-Richtung.
 
 ![fernsteuerung-joystick-idee1](fernsteuerung-joystick-idee1.png?lightbox=1024&resize=700&classes=caption "Veranschaulichung der ersten Idee zur Fernsteuerung.")
 
