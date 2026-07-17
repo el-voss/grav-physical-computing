@@ -4,7 +4,7 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: fernsteuerung-schematisch.png
-media_order: 'fernsteuerung-schematisch.png,fernsteuerung-joystick-werte.png,fernsteuerung-joystick-idee1.png'
+media_order: 'fernsteuerung-schematisch.png,fernsteuerung-joystick-werte.png,fernsteuerung-joystick-idee1.png,fernsteuerung-joystick-koordinatentransformation.png'
 ---
 
 [TOC]
@@ -61,6 +61,7 @@ Wenn der Joystick in der Mitte steht, ist die jeweilige Motorleistung 0. Wenn de
 </div>
 </div>
 
-3. Finde eine Formel zur Berechnung von `l0`aus `vrx` und zur Berechnung von `l1` aus `vry`.
+3. Finde eine Formel zur Berechnung von `l0`aus `vrx` und zur Berechnung von `l1` aus `vry`. Die Abbildung unten visualisiert den Vorgang dieser *Koordinatentransformation*.
 
+![fernsteuerung-joystick-koordinatentransformation](fernsteuerung-joystick-koordinatentransformation.png?lightbox=1024&resize=800 "fernsteuerung-joystick-koordinatentransformation")
 </div>
