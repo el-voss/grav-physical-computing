@@ -4,7 +4,7 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: fernsteuerung-schematisch.png
-media_order: 'fernsteuerung-schematisch.png,fernsteuerung-joystick-werte.png,fernsteuerung-joystick-idee1.png,fernsteuerung-joystick-koordinatentransformation.png'
+media_order: 'fernsteuerung-schematisch.png,fernsteuerung-joystick-werte.png,fernsteuerung-joystick-idee1.png,fernsteuerung-joystick-koordinatentransformation.png,funk-Wertepaar-Befehl.png,empfaenger-programm-vorlage.png'
 ---
 
 [TOC]
@@ -64,4 +64,45 @@ Wenn der Joystick in der Mitte steht, ist die jeweilige Motorleistung 0. Wenn de
 3. Finde eine Formel zur Berechnung von `l0`aus `vrx` und zur Berechnung von `l1` aus `vry`. Die Abbildung unten visualisiert den Vorgang dieser *Koordinatentransformation*.
 
 ![fernsteuerung-joystick-koordinatentransformation](fernsteuerung-joystick-koordinatentransformation.png?lightbox=1024&resize=800 "fernsteuerung-joystick-koordinatentransformation")
+
+4. Entwickle zwei Programme zur Fernsteuerung des Roboters per Joystick:
+**Sender:** Der Sender liest die Werte von Joystick ein und berechnet daraus die Motorleistungen `l0` und `l1`. Dann sendet er diese jeweils an den Empfänger. *Hinweis: Sprecht euch in der Klasse ab, wer welche Funkgruppe nutzt, damit jeder Roboter die richtigen Befehle empfängt!*
+**Empfänger:** Der Empfänger liest aus, welche Leistung übermittelt wurde und setzt die entsprechende Variable für die Motorleistung auf den empfangenen Wert. Nutze dazu die unten abgebildete Vorlage.
+
+<!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block" markdown="1">
+**Befehl für den Sender:**
+![funk-Wertepaar-Befehl](funk-Wertepaar-Befehl.png "funk-Wertepaar-Befehl")
+
+**Vorlage für den Empfänger:**
+![empfaenger-programm-vorlage](empfaenger-programm-vorlage.png "empfaenger-programm-vorlage")
+
+  </div>
+  <div class="roberta content-block" markdown="1">
+
+  </div>
+  <div class="python content-block" markdown="1">
+**Befehl für den Sender:**
+```python
+
+```
+
+**Vorlage für den Empfänger:**
+```python
+
+```
+
+  </div>
+</div>
+</div>
+
 </div>
