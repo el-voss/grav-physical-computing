@@ -39,6 +39,7 @@ Wenn der Joystick in der Mitte steht, ist die jeweilige Motorleistung 0. Wenn de
 
 1. Ordne den Punkten P1 bis P4 in der oberen Abbildung die folgenden Situationen zu: Geradeaus fahren, Linksdrehung, Rechtsdrehung, Rückwärtsfahren (jeweils mit maximaler Leistung).
 2. Vervollständige die folgende Tabelle zur Übersetzung von Potentiometerwerten des Joysticks in Motorleistungen.
+
 <div class="flex-box">
 <div markdown="1">
 Übersetzung von Potentiometerwert `vrx` in Motorleistung `l0` von Motor M0
