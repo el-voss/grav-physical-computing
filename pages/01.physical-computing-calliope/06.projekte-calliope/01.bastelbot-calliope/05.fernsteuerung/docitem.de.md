@@ -42,6 +42,7 @@ Wenn der Joystick in der Mitte steht, ist die jeweilige Motorleistung 0. Wenn de
 <div class="flex-box">
 <div markdown="1">
 Übersetzung von Potentiometerwert `vrx` in Motorleistung `l0` von Motor M0
+
 | `vrx` | `l0` |
 | --- | --- |
 | 0 | |
@@ -50,6 +51,7 @@ Wenn der Joystick in der Mitte steht, ist die jeweilige Motorleistung 0. Wenn de
 </div>
 <div markdown="1">
 Übersetzung von Potentiometerwert `vry` in Motorleistung `l1` von Motor M1
+
 | `vry` | `l1` |
 | --- | --- |
 | 0 | |
