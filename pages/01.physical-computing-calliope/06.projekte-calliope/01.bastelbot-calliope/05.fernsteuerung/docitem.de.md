@@ -102,7 +102,32 @@ Um unterscheiden zu können, ob die Leistung `l0` oder die Leistung `l1` gesende
 
 **Vorlage für den Sender:**
 ```python
+# Imports go at the top
+from calliopemini import *
+import radio
 
+radio.on()
+radio.config(group=0)
+
+# Variablen für die Motorleistung
+l0 = 0
+l1 = 0
+
+while True:
+    # Einlesen von vrx und vry sowie Berechnung von l0 und l1 fehlt hier noch
+    
+    # im Folgenden Beispielwerte für l0 und l1 zur Demonstration des Sendens
+    l0 = 50
+    # Wert von l0 wird mit 1000 addiert und in eine Zeichenkette (String) umgewandelt,
+    # da nur Zeichenketten versendet werden können
+    radio.send(str(l0 + 1000))
+    sleep(100)
+
+    l1 = -50
+    # Wert von l1 wird mit 2000 addiert und in eine Zeichenkette (String) umgewandelt,
+    # da nur Zeichenketten versendet werden können
+    radio.send(str(l1 + 2000))
+    sleep(100)
 ```
 
 **Vorlage für den Empfänger:**
