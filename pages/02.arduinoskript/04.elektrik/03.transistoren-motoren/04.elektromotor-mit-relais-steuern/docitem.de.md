@@ -5,11 +5,10 @@ image_width: 300
 image_height: 400
 featured_image: relais-klein.png
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Spannung Stromstärke und Widerstand berechnen'
         - 'Motor und Diode'
         - 'Schaltungen mit Transistoren steuern'
-    Zusatzvoraussetzungen:
         - 'Elektromotor mit Transistor steuern'
         - Variablen
         - 'Wiederholungen mit Bedingungen steuern'
