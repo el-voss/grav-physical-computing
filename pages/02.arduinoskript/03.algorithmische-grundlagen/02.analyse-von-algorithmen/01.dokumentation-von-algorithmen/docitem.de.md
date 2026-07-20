@@ -5,7 +5,7 @@ image_width: 300
 image_height: 400
 featured_image: Sequenz.png
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Einfache Entscheidungen programmieren'
         - 'Entscheidungen mit mehreren Kriterien'
         - Variablen
