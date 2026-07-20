@@ -5,10 +5,9 @@ image_width: 300
 image_height: 300
 featured_image: feuchtigkeitssensor.jpg
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Einfache Entscheidungen programmieren'
         - Servo
-    Zusatzvoraussetzungen:
         - 'Digital vs Analog und Aktor vs Sensor'
         - 'Spannung messen'
         - 'Schaltungen mit Transistoren steuern'
