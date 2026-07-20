@@ -5,9 +5,8 @@ image_width: 300
 image_height: 400
 featured_image: bewegungsmelder.jpg
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Einfache Entscheidungen programmieren'
-    Zusatzvoraussetzungen:
         - 'Digital vs Analog und Aktor vs Sensor'
         - Servo
     Inhalte:
