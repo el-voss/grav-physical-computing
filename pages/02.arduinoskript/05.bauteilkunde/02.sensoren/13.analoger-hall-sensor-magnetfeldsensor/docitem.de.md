@@ -5,11 +5,10 @@ image_width: 300
 image_height: 300
 featured_image: hall-ky-035.jpg
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Der serielle Monitor'
         - Variablen
         - 'Digital vs Analog und Aktor vs Sensor'
-    Zusatzvoraussetzungen:
         - 'Spannung messen'
     Inhalte:
         - Hall-Sensor
