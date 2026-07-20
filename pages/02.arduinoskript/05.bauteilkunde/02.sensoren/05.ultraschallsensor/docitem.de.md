@@ -5,7 +5,7 @@ image_width: 300
 image_height: 300
 featured_image: ultraschall-sensor-prinzip.png
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Einfache Entscheidungen programmieren'
     Inhalte:
         - Ultraschallsensor
