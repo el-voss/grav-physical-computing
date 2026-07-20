@@ -6,9 +6,8 @@ image_width: 300
 image_height: 300
 summary: {  }
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Kurze Einführung'
-    Zusatzvoraussetzungen:
         - 'Drehregler verwenden'
     Inhalte:
         - LC-Display
