@@ -5,7 +5,7 @@ image_width: 300
 image_height: 400
 featured_image: Anleitung25.jpg
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Oled-Display SSD1306'
         - 'Basisversion mit Motoren und Piezo-Summer'
     Inhalte:
