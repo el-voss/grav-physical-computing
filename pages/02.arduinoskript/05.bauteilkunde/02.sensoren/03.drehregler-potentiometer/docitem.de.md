@@ -5,11 +5,10 @@ image_width: 300
 image_height: 400
 featured_image: poti.jpg
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Der serielle Monitor'
         - Variablen
         - Pulsweitenmodulation
-    Zusatzvoraussetzungen:
         - 'Digital vs Analog und Aktor vs Sensor'
         - 'Spannung messen'
     Inhalte:
