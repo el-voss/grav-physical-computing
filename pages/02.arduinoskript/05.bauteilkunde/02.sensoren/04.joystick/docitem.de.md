@@ -5,10 +5,9 @@ image_width: 300
 image_height: 300
 featured_image: joystick.jpg
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Der serielle Monitor'
         - 'Drehregler / Potentiometer'
-    Zusatzvoraussetzungen:
         - 'Das elektrische Potential'
         - 'Digital vs Analog und Aktor vs Sensor'
         - 'Spannung messen'
