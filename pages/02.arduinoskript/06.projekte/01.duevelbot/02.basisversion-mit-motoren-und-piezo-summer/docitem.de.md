@@ -5,7 +5,7 @@ image_width: 300
 image_height: 400
 featured_image: Anleitung17.jpg
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Elektromotoren mit einem Motortreiber steuern'
         - 'Entscheidungen mit mehreren Kriterien'
         - Funktionen
