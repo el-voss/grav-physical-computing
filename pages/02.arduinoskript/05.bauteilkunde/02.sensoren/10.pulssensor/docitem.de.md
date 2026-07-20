@@ -5,10 +5,9 @@ image_width: 300
 image_height: 300
 featured_image: pulssensor.jpg
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Entscheidungen mit mehreren Kriterien'
         - 'Der serielle Monitor'
-    Zusatzvoraussetzungen:
         - 'Spannung messen'
         - 'Digital vs Analog und Aktor vs Sensor'
     Inhalte:
