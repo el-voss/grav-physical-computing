@@ -5,7 +5,7 @@ image_width: 300
 image_height: 300
 featured_image: ir-sensor-led-modul-gross.jpg
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Der serielle Monitor'
         - 'Entscheidungen mit mehreren Kriterien'
         - Variablen
