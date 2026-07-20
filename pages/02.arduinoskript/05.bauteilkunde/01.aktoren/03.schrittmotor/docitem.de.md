@@ -5,9 +5,8 @@ show_pageimage: true
 image_width: 300
 image_height: 300
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Kurze Einführung'
-    Zusatzvoraussetzungen:
         - 'Elektromotoren mit einem Motortreiber steuern'
     Inhalte:
         - Schrittmotor
