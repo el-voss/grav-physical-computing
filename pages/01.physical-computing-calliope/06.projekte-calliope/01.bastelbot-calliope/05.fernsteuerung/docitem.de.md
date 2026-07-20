@@ -4,7 +4,7 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: fernsteuerung-schematisch.png
-media_order: 'fernsteuerung-schematisch.png,fernsteuerung-joystick-werte.png,fernsteuerung-joystick-idee1.png,fernsteuerung-joystick-koordinatentransformation.png,funk-Wertepaar-Befehl.png,empfaenger-programm-vorlage.png,orl-sender-vorlage.png,orl-empfaenger-vorlage.png'
+media_order: 'fernsteuerung-schematisch.png,fernsteuerung-joystick-werte.png,fernsteuerung-joystick-idee1.png,fernsteuerung-joystick-koordinatentransformation.png,funk-Wertepaar-Befehl.png,empfaenger-programm-vorlage.png,orl-sender-vorlage.png,orl-empfaenger-vorlage.png,fernsteuerung-joystick-idee2.png'
 ---
 
 [TOC]
@@ -22,7 +22,7 @@ Mit Hilfe eines Joysticks lässt sich der Roboter intuitiv steuern. Dabei werden
 #### Funktionstest des Senders
 
 1. Recherchiere die Funktionsweise des [Joysticks](/physical-computing-calliope/bauteilkunde/sensoren-calliope/joystick) und lasse seine analogen Werte über die serielle Schnittstelle ausgeben. 
-2. Erkunde, in welche Richtung der Joystick bewegt werden muss, um nur den x-Wert (`vrx`) oder nur den y-Wert (`vry`) zu verändern. 
+2. Erkunde, in welche Richtung der Joystick bewegt werden muss, um nur den x-Wert ($vrx$) oder nur den y-Wert ($vry$) zu verändern. 
 3. Notiere die Werte für die unten abgebildeten Ausschläge. Der Joystick wird dabei so gehalten, dass die Kabel nach rechts zeigen.
 
 ![fernsteuerung-joystick-werte](fernsteuerung-joystick-werte.png?lightbox=1024&resize=500)
@@ -31,9 +31,9 @@ Mit Hilfe eines Joysticks lässt sich der Roboter intuitiv steuern. Dabei werden
 <div markdown="1" class="aufgabe">
 #### Idee 1: Drehachsen entsprechen Motorleistung
 
-Die erste Idee zur Fernsteuerung des Roboters ist die, dass jede der Drehachsen des Joysticks (entsprechend `vrx` und `vry`) die Leistung eines Motors steuert. Im Folgenden bezeichnen wir die Leistung von Motor M0 als `l0` un die Leistung von Motor M1 als `l1`. 
+Die erste Idee zur Fernsteuerung des Roboters ist die, dass jede der Drehachsen des Joysticks (entsprechend $vrx$ und $vry$) die Leistung eines Motors steuert. Im Folgenden bezeichnen wir die Leistung von Motor M0 als $l_0$ und die Leistung von Motor M1 als $l_1$. 
 
-Wenn der Joystick in der Mitte steht, ist die jeweilige Motorleistung 0. Wenn der Joystick in x-Richtung nach links ausgelenkt wird, wird `l0` erhöht, bis sie 100% erreicht. Bei einer Bewegung nach rechts, wird `l0` verringert, bis sie -100% erreicht. Entsprechend für die y-Richtung.
+Wenn der Joystick in der Mitte steht, ist die jeweilige Motorleistung 0. Wenn der Joystick in x-Richtung nach links ausgelenkt wird, wird $l_0$ erhöht, bis sie 100% erreicht. Bei einer Bewegung nach rechts, wird $l_0$ verringert, bis sie -100% erreicht. Entsprechend für die y-Richtung.
 
 ![fernsteuerung-joystick-idee1](fernsteuerung-joystick-idee1.png?lightbox=1024&resize=700&classes=caption "Veranschaulichung der ersten Idee zur Fernsteuerung.")
 
@@ -42,18 +42,18 @@ Wenn der Joystick in der Mitte steht, ist die jeweilige Motorleistung 0. Wenn de
 
 <div class="flex-box">
 <div markdown="1">
-Übersetzung von Potentiometerwert `vrx` in Motorleistung `l0` von Motor M0
+Übersetzung von Potentiometerwert $vrx$ in Motorleistung $l_0$ von Motor M0
 
-| `vrx` | `l0` |
+| $vrx$ | $l_0$ |
 | --- | --- |
 | 0 | |
 | 512 | |
 | 1023 | |
 </div>
 <div markdown="1">
-Übersetzung von Potentiometerwert `vry` in Motorleistung `l1` von Motor M1
+Übersetzung von Potentiometerwert $vry$ in Motorleistung $l_1$ von Motor M1
 
-| `vry` | `l1` |
+| $vry$ | $l_1$ |
 | --- | --- |
 | 0 | |
 | 512 | |
@@ -61,7 +61,7 @@ Wenn der Joystick in der Mitte steht, ist die jeweilige Motorleistung 0. Wenn de
 </div>
 </div>
 
-3. Finde eine Formel zur Berechnung von `l0`aus `vrx` und zur Berechnung von `l1` aus `vry`. Die Abbildung unten visualisiert den Vorgang dieser *Koordinatentransformation*.
+3. Finde eine Formel zur Berechnung von $l_0$ aus $vrx$ und zur Berechnung von $l_1$ aus $vry$. Die Abbildung unten visualisiert den Vorgang dieser *Koordinatentransformation*.
 
 ![fernsteuerung-joystick-koordinatentransformation](fernsteuerung-joystick-koordinatentransformation.png?lightbox=1024&resize=800 "fernsteuerung-joystick-koordinatentransformation")
 
@@ -189,17 +189,19 @@ while True:
 <div markdown="1" class="aufgabe">
 #### Idee 2: Drehachsen für Vorwärts/Rückwärts und Links/Rechts
 
-Die zweite Idee entspricht eher dem, was man intuitiv von einer Joystick-Steuerung erwarten würde: Eine Drehachse des Joysticks (`vry`) steuert, ob und wie stark der Roboter nach vorne bzw. hinten fährt. Die andere Drehachse des Joysticks (`vrx`) steuert, ob und wie stark der Roboter nach links bzw. rechts fährt. Die mathematischen Überlegungen dazu sind deutlich komplizierter und es ist hilfreich, wenn man bereits die erste Idee vorher umgesetzt hat.
+Die zweite Idee entspricht eher dem, was man intuitiv von einer Joystick-Steuerung erwarten würde: Eine Drehachse des Joysticks ($vry$) steuert, ob und wie stark der Roboter nach vorne bzw. hinten fährt. Die andere Drehachse des Joysticks ($vrx$) steuert, ob und wie stark der Roboter nach links bzw. rechts fährt. Die mathematischen Überlegungen dazu sind deutlich komplizierter und es ist hilfreich, wenn man bereits die erste Idee vorher umgesetzt hat.
 
+![fernsteuerung-joystick-idee2](fernsteuerung-joystick-idee2.png?lightbox=1024&resize=700&classes=caption "Veranschaulichung der zweiten Idee zur Fernsteuerung.")
 
-
-1. Ordne den Punkten P1 bis P4 in der oberen Abbildung die folgenden Situationen zu: Geradeaus fahren, Linksdrehung, Rechtsdrehung, Rückwärtsfahren (jeweils mit maximaler Leistung). Notiere für jeden Punkt passende Motorleistungen `l0` und `l1` für Motor M0 und M1.
-2. Zur Berechnung der Motorleistungen anhand der Auslenkungen `vrx` und `vry` des Joysticks lässt sich das folgende Gleichungssystem aufstellen. Begründe die beiden Gleichungen.
+1. Ordne den Punkten P1 bis P4 in der oberen Abbildung die folgenden Situationen zu: Geradeaus fahren, Linksdrehung, Rechtsdrehung, Rückwärtsfahren (jeweils mit maximaler Leistung). Notiere für jeden Punkt passende Motorleistungen $l_0$ und $l_1$ für Motor M0 und M1.
+2. Zur Berechnung der Motorleistungen anhand der Auslenkungen $vrx$ und $vry$ des Joysticks lässt sich das folgende Gleichungssystem aufstellen. Begründe die beiden Gleichungen.
 \[
-\begin{array}{l l}
-2x + 3y = 8 & \\
-4x - y = 6 &
+\left|
+\begin{array}
+l_0 + l_1 &= 2 \cdot \frac{vry - 512}{5,12} \\
+l_0 - l_1 &= \frac{vrx - 512}{5,12}
 \end{array}
+\right|
 \]
 
 </div>
