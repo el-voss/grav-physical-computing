@@ -5,7 +5,7 @@ image_width: 300
 image_height: 300
 featured_image: dht11.jpg
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Der serielle Monitor'
     Inhalte:
         - DHT-11
