@@ -5,11 +5,10 @@ image_width: 300
 image_height: 300
 featured_image: hall-digital-ky-003.jpg
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Digital vs Analog und Aktor vs Sensor'
         - 'Der serielle Monitor'
         - 'Einfache Entscheidungen programmieren'
-    Zusatzvoraussetzungen:
         - Variablen
     Inhalte:
         - Hall-Sensor
