@@ -7,7 +7,6 @@ featured_image: wdh-bis.png
 taxonomy:
     Voraussetzungen:
         - 'Einfache Entscheidungen programmieren'
-    Zusatzvoraussetzungen:
         - Variablen
         - 'Entscheidungen mit mehreren Kriterien'
     Inhalte:
