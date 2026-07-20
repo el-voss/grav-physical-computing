@@ -5,10 +5,10 @@ image_width: 300
 image_height: 400
 featured_image: bauteilsammlung.png
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Verarbeitung von Umwelteingaben'
         - 'Wiederholungen und zufällige Ereignisse'
-        - 'Variablen'
+        - Variablen
     Zusatzvoraussetzungen:
         - Zählschleifen
     Inhalte:
