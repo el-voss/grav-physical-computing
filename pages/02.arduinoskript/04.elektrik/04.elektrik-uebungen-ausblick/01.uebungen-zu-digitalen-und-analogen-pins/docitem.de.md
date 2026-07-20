@@ -4,7 +4,7 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Digitale und analoge Pins'
     Niveau:
         - Basis
