@@ -5,7 +5,7 @@ image_width: 300
 image_height: 400
 featured_image: uri-dreieck.png
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Kurze Einführung'
     Inhalte:
         - Spannung
