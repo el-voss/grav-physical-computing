@@ -5,7 +5,7 @@ image_width: 300
 image_height: 400
 featured_image: motoranschluss-mit-steuerung.png
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Entscheidungen mit mehreren Kriterien'
         - Variablen
         - 'Spannung Stromstärke und Widerstand berechnen'
