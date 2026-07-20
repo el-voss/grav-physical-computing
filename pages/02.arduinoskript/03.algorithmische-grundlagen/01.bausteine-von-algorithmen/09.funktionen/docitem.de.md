@@ -5,12 +5,11 @@ image_width: 300
 image_height: 400
 featured_image: istPositiv.png
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Der serielle Monitor'
         - Datentypen
         - 'Entscheidungen mit mehreren Kriterien'
         - Variablen
-    Zusatzvoraussetzungen:
         - Zählschleifen
     Inhalte:
         - Funktionen
