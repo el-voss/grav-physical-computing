@@ -5,7 +5,7 @@ image_width: 300
 image_height: 400
 featured_image: zustandsdiagramm-led-an-aus.png
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - Datentypen
         - 'Entscheidungen mit mehreren Kriterien'
         - Variablen
