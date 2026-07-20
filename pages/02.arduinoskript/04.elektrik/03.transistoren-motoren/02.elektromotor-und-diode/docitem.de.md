@@ -5,7 +5,7 @@ image_width: 300
 image_height: 400
 featured_image: Schaltplan-Motoranschluss-einfach.png
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Spannung Stromstärke und Widerstand berechnen'
     Inhalte:
         - Motor
