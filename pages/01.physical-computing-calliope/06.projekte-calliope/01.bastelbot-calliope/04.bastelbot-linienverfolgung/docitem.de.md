@@ -20,6 +20,13 @@ taxonomy:
 
 **Ziel:** Der Bastelbot soll um zwei Infrarot-Sensoren erweitert werden, sodass er einer Linie folgen kann, um Parcours zu absolvieren.
 
+<center>
+<video controls width="70%" height="auto" autoplay>
+<source src="/user/pages/videos/calliope/linienverfolgung.mp4" type="video/mp4"></source>
+Ihr Browser kann dieses Video nicht wiedergeben.
+</video>
+</center>
+
 ## Zusätzliches Material
 
 <div markdown="1" style="overflow:auto;">
