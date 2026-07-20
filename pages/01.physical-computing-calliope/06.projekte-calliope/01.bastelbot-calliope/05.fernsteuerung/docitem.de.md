@@ -66,7 +66,7 @@ Wenn der Joystick in der Mitte steht, ist die jeweilige Motorleistung 0. Wenn de
 ![fernsteuerung-joystick-koordinatentransformation](fernsteuerung-joystick-koordinatentransformation.png?lightbox=1024&resize=800 "fernsteuerung-joystick-koordinatentransformation")
 
 4. Entwickle zwei Programme zur Fernsteuerung des Roboters per Joystick:
-**Sender:** Der Sender liest die Werte von Joystick ein und berechnet daraus die Motorleistungen `l0` und `l1`. Dann sendet er diese jeweils an den Empfänger. *Hinweis: Sprecht euch in der Klasse ab, wer welche Funkgruppe nutzt, damit jeder Roboter die richtigen Befehle empfängt!*
+**Sender:** Der Sender liest die Werte vom Joystick ein und berechnet daraus die Motorleistungen `l0` und `l1`. Dann sendet er diese jeweils an den Empfänger. *Hinweis: Sprecht euch in der Klasse ab, wer welche Funkgruppe nutzt, damit jeder Roboter die richtigen Befehle empfängt!*
 **Empfänger:** Der Empfänger liest aus, welche Leistung übermittelt wurde und setzt die entsprechende Variable für die Motorleistung auf den empfangenen Wert. Nutze dazu die unten abgebildete Vorlage.
 
 <!-- Tabs für die Auswahl -->
@@ -182,5 +182,24 @@ while True:
   </div>
 </div>
 </div>
+
+</div>
+
+
+<div markdown="1" class="aufgabe">
+#### Idee 2: Drehachsen für Vorwärts/Rückwärts und Links/Rechts
+
+Die zweite Idee entspricht eher dem, was man intuitiv von einer Joystick-Steuerung erwarten würde: Eine Drehachse des Joysticks (`vry`) steuert, ob und wie stark der Roboter nach vorne bzw. hinten fährt. Die andere Drehachse des Joysticks (`vrx`) steuert, ob und wie stark der Roboter nach links bzw. rechts fährt. Die mathematischen Überlegungen dazu sind deutlich komplizierter und es ist hilfreich, wenn man bereits die erste Idee vorher umgesetzt hat.
+
+
+
+1. Ordne den Punkten P1 bis P4 in der oberen Abbildung die folgenden Situationen zu: Geradeaus fahren, Linksdrehung, Rechtsdrehung, Rückwärtsfahren (jeweils mit maximaler Leistung). Notiere für jeden Punkt passende Motorleistungen `l0` und `l1` für Motor M0 und M1.
+2. Zur Berechnung der Motorleistungen anhand der Auslenkungen `vrx` und `vry` des Joysticks lässt sich das folgende Gleichungssystem aufstellen. Begründe die beiden Gleichungen.
+\[
+\begin{array}{l l}
+2x + 3y = 8 & \\
+4x - y = 6 &
+\end{array}
+\]
 
 </div>
