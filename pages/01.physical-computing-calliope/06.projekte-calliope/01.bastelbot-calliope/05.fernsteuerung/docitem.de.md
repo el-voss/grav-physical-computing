@@ -203,5 +203,6 @@ Die zweite Idee entspricht eher dem, was man intuitiv von einer Joystick-Steueru
 \end{array}
 \right|
 \]
-
+3. Löse das Gleichungssystem nach $l_0$ und $l_1$.
+4. Entwickle zwei Programme zur Fernsteuerung des Roboters per Joystick. Nutze dafür die Hinweise und Vorlagen aus der Aufgabe zu Idee 1. Es ändert sich nur die Berechnung von `l0` und `l1`.
 </div>
