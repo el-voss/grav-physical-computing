@@ -5,12 +5,11 @@ image_width: 300
 image_height: 400
 featured_image: vierquadrantensteller.png
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Motor und Diode'
         - 'Elektromotor mit Transistor steuern'
         - Pulsweitenmodulation
         - 'Digital vs Analog und Aktor vs Sensor'
-    Zusatzvoraussetzungen:
         - Funktionen
     Inhalte:
         - H-Brücke
