@@ -5,9 +5,8 @@ image_width: 300
 image_height: 300
 featured_image: tmp36.jpg
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Der serielle Monitor'
-    Zusatzvoraussetzungen:
         - Variablen
         - 'Digital vs Analog und Aktor vs Sensor'
     Inhalte:
