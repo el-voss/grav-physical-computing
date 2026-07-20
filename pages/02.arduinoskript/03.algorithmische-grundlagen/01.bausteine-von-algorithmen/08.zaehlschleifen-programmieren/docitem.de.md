@@ -5,10 +5,9 @@ image_width: 300
 image_height: 400
 featured_image: for-schleife.png
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Einfache Entscheidungen programmieren'
         - Variablen
-    Zusatzvoraussetzungen:
         - 'Wiederholungen und zufällige Ereignisse'
         - 'Wiederholungen mit Bedingungen steuern'
     Inhalte:
