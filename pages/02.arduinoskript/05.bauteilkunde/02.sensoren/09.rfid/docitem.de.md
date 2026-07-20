@@ -5,7 +5,7 @@ image_width: 300
 image_height: 300
 featured_image: rfid.jpg
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Einfache Entscheidungen programmieren'
         - 'Der serielle Monitor'
         - Datentypen
