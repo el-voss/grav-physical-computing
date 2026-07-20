@@ -198,8 +198,8 @@ Die zweite Idee entspricht eher dem, was man intuitiv von einer Joystick-Steueru
 \[
 \left|
 \begin{array}
- l_0 + l_1 = 2 \cdot \frac{vry - 512}{5,12} \\
- l_0 - l_1 = \frac{vrx - 512}{5,12}
+\, l_0 + l_1 = 2 \cdot \frac{vry - 512}{5,12} \\
+\, l_0 - l_1 = \frac{vrx - 512}{5,12}
 \end{array}
 \right|
 \]
