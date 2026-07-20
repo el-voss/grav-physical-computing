@@ -5,7 +5,7 @@ image_width: 300
 image_height: 400
 featured_image: wdh10mal.png
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Verarbeitung von Umwelteingaben'
     Inhalte:
         - Zufallszahlen
