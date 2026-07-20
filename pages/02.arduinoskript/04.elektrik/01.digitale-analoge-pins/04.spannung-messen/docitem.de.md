@@ -5,7 +5,7 @@ image_width: 300
 image_height: 400
 featured_image: batteriespannung-messen.png
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Der serielle Monitor'
         - 'Entscheidungen mit mehreren Kriterien'
         - 'Spannung Stromstärke und Widerstand berechnen'
