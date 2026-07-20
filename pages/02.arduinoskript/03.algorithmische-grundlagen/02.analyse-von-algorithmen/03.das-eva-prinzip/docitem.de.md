@@ -5,7 +5,7 @@ image_width: 300
 image_height: 400
 featured_image: eva-visualisierung.png
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Einfache Entscheidungen programmieren'
         - 'Der serielle Monitor'
         - 'Wiederholungen und zufällige Ereignisse'
