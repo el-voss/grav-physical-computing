@@ -5,7 +5,7 @@ image_width: 300
 image_height: 400
 featured_image: pwm-info.png
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Kurze Einführung'
         - 'Spannung Stromstärke und Widerstand berechnen'
         - Zählschleifen
