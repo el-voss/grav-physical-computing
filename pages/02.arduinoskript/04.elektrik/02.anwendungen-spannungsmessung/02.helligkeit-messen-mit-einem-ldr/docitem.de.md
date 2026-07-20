@@ -5,7 +5,7 @@ image_width: 300
 image_height: 400
 featured_image: ldr2.jpg
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Spannung Stromstärke und Widerstand berechnen'
         - 'Spannung messen'
         - 'Der serielle Monitor'
