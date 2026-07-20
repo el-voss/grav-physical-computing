@@ -6,7 +6,7 @@ image_height: 400
 media_order: 'bastelbot-mit-ultraschallsensor.png,ultraschallsensor-grove.jpg'
 featured_image: bastelbot-mit-ultraschallsensor.png
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Bau des Fahrgestells'
         - 'Fahren lernen'
     Inhalte:
