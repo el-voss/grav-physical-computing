@@ -5,7 +5,7 @@ show_pageimage: true
 image_width: 300
 image_height: 300
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Kurze Einführung'
     Inhalte:
         - OLED-Display
