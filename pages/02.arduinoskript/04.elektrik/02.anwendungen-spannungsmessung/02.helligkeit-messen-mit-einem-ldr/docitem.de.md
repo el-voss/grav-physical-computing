@@ -10,7 +10,6 @@ taxonomy:
         - 'Spannung messen'
         - 'Der serielle Monitor'
         - 'Digital vs Analog und Aktor vs Sensor'
-    Zusatzvoraussetzungen:
         - Funktionen
         - 'Drehregler verwenden'
     Inhalte:
