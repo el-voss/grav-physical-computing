@@ -22,22 +22,22 @@
     </p>
 
     <ul class="tags">
-        {% if page.taxonomy.Mindestvoraussetzungen %}
+        {% if page.taxonomy.Voraussetzungen %}
         <li>
            <i class="fa fa-check-square"></i>
-           <strong>Mindestvoraussetzungen: </strong>
-            {% for tag in page.taxonomy.Mindestvoraussetzungen %}
+           <strong>Voraussetzungen: </strong>
+            {% for tag in page.taxonomy.Voraussetzungen %}
                 <a href="{{ base_url }}/search/query:{{ tag }}"> {{ tag }} </a>
                 {% if not loop.last %}, {% endif %}
             {% endfor %}
         </li>
         {% endif %}
 
-        {% if page.taxonomy.Zusatzvoraussetzungen %}
+        {% if page.taxonomy.Entwicklungsumgebung %}
         <li>
            <i class="fa fa-star"></i>
-           <strong>Zusatzvoraussetzungen: </strong>
-            {% for tag in page.taxonomy.Zusatzvoraussetzungen %}
+           <strong>Entwicklungsumgebung: </strong>
+            {% for tag in page.taxonomy.Entwicklungsumgebung %}
                 <a href="{{ base_url }}/search/query:{{ tag }}"> {{ tag }} </a>
                 {% if not loop.last %}, {% endif %}
             {% endfor %}
