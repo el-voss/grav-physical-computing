@@ -5,7 +5,7 @@ image_width: 300
 image_height: 400
 featured_image: verkaufsautomat-zustandsdiagramm.png
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Endliche Automaten und Zustandsdiagramme'
     Niveau:
         - Fortgeschritten
