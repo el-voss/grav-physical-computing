@@ -5,12 +5,11 @@ image_width: 300
 image_height: 400
 featured_image: Anleitung22.jpg
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Entscheidungen mit mehreren Kriterien'
         - 'Basisversion mit Motoren und Piezo-Summer'
         - 'Infrarot-Sensor TCRT5000'
         - Variablen
-    Zusatzvoraussetzungen:
         - 'Oled-Display SSD1306'
     Inhalte:
         - Montage
