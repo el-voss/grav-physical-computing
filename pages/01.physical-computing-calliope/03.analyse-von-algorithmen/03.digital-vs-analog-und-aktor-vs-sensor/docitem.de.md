@@ -9,8 +9,6 @@ taxonomy:
         - 'Verarbeitung von Umwelteingaben'
         - 'Wiederholungen und zufällige Ereignisse'
         - Variablen
-    Zusatzvoraussetzungen:
-        - Zählschleifen
     Inhalte:
         - Digital
         - Analog
