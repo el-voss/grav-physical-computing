@@ -5,7 +5,7 @@ image_width: 300
 image_height: 400
 featured_image: DEBUGON.png
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - Variablen
         - 'Der serielle Monitor'
         - Zählschleifen
