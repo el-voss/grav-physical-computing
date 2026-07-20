@@ -5,7 +5,7 @@ image_width: 300
 image_height: 400
 featured_image: Anleitung19.jpg
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - Ultraschallsensor
         - 'Basisversion mit Motoren und Piezo-Summer'
         - 'Wiederholungen mit Bedingungen steuern'
