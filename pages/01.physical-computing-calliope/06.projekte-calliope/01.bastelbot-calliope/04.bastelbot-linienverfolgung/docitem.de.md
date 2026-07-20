@@ -6,7 +6,7 @@ image_height: 400
 media_order: 'bastelbot-kantenverfolgung-geradeaus.png,bastelbot-kantenverfolgung-schwarz.png,bastelbot-kantenverfolgung-weiss.png,bastelbot-linienverfolgung-geradeaus.png,bastelbot-linienverfolgung-links-schwarz.png,bastelbot-mit-infrarotsensoren.png,bastelbot-linienverfolgung-rechts-schwarz.png,calliope-mit-zwei-tcrt5000.png,infrarot-sensoren.jpg,kabel.jpg,steckbrett-klein.jpg'
 featured_image: bastelbot-mit-infrarotsensoren.png
 taxonomy:
-    Mindestvoraussetzungen:
+    Voraussetzungen:
         - 'Bau des Fahrgestells'
         - 'Fahren lernen'
     Inhalte:
