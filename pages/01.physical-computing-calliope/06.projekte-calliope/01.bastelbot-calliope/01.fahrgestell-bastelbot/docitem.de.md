@@ -3,7 +3,7 @@ title: 'Bau des Fahrgestells'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'akku-anschluss.jpg,basisversion-frontal.jpg,basisversion-von-oben.jpg,batterie.jpg,calliopev3.jpg,calliopev3-rueckseite.jpg,fusskugel.jpg,gleichstrommotor.jpg,lochplatte.jpg,m3-kreuzschrauben.jpg,motorhalterung.jpg,motor-in-halterung.jpg,motor-in-halterung2.jpg,pappe-einwellig.jpg,reifen.jpg,schere-stift-geo.jpg,schraubendreher.jpg,bastelbot-anschluss-motoren-akku.png,lochplatte-anordnung-oben.png,lochplatte-anordnung-unten.png,bastelbot-mit-infrarotsensoren.png,kabel.jpg,steckbrett-klein.jpg,calliope-mit-zwei-tcrt5000.png,ultraschallsensor-grove.jpg,infrarot-sensoren.jpg,bastelbot-mit-ultraschallsensor.png,powerbank-und-usb.jpg'
+media_order: 'akku-anschluss.jpg,basisversion-frontal.jpg,basisversion-von-oben.jpg,batterie.jpg,calliopev3.jpg,calliopev3-rueckseite.jpg,fusskugel.jpg,gleichstrommotor.jpg,lochplatte.jpg,m3-kreuzschrauben.jpg,motorhalterung.jpg,motor-in-halterung.jpg,motor-in-halterung2.jpg,pappe-einwellig.jpg,reifen.jpg,schere-stift-geo.jpg,schraubendreher.jpg,bastelbot-anschluss-motoren-akku.png,lochplatte-anordnung-oben.png,lochplatte-anordnung-unten.png,bastelbot-mit-infrarotsensoren.png,kabel.jpg,steckbrett-klein.jpg,calliope-mit-zwei-tcrt5000.png,ultraschallsensor-grove.jpg,infrarot-sensoren.jpg,bastelbot-mit-ultraschallsensor.png,powerbank-und-usb.jpg,bastelbot-anschluss-motoren.png'
 featured_image: basisversion-von-oben.jpg
 published: true
 taxonomy:
@@ -63,25 +63,18 @@ Suche in den bereitgestellten Kästen alle Teile heraus, die du für den Bastelb
     <div markdown="1"> ![lochplatte-anordnung-unten](lochplatte-anordnung-unten.png?lightbox=1024&resize=400  "lochplatte-anordnung-unten")</div>
 </div>
 
-
-
-
 </div>
 
 <div class="aufgabe" markdown="1">
 #### Verkabelung
 
-1. Schließe die Motoren an der Pin-Leiste des Calliope an. Dazu müssen die Kabel des einen Motors mit den Pins M0- und M0+ verbunden werden. Die Kabel des anderen Motors werden mit M1- und M1+ verbunden.
-2. Schließe die Batterie an. **Beachte die Sicherheitshinweise.**
+Schließe die Motoren an der Pin-Leiste des Calliope an. Dazu müssen die Kabel des einen Motors mit den Pins M0- und M0+ verbunden werden. Die Kabel des anderen Motors werden mit M1- und M1+ verbunden.
 
-!! #### Sicherheitshinweise
-!! **Wenn die Batterie falsch angeschlossen wird, wird der Calliope zerstört.** Daher ist es wichtig, bei diesem Schritt sehr genau vorzugehen. Die Batterie wird mit den beiden **Pins GND und VM+** in der Abbildung unten verbunden. 
-!! Wenn der Calliope mit dem USB-Kabel programmiert wird, muss die Batterie wieder abgesteckt werden. Dazu reicht es, das rote Kabel von VM+ herauszuziehen.
-
-![bastelbot-anschluss-motoren-akku](bastelbot-anschluss-motoren-akku.png?lightbox=1024&resize=500&classes=caption "Anschluss von Motor und Akku von vorne gesehen (schematisch). Klicke das Bild an, um es zu vergrößern.") 
+![bastelbot-anschluss-motoren-akku](bastelbot-anschluss-motoren.png?lightbox=1024&resize=500&classes=caption "Anschluss der Motoren.") 
 
 </div>
 
+! Der Bastelbot ist nun bereit für das Kapitel [Fahren lernen](https://mintorials.de/de/physical-computing-calliope/projekte-calliope/bastelbot-calliope/fahren-lernen).
 
 ## Ultraschallsensor zur Hinderniserkennung
 
