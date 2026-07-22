@@ -9,6 +9,10 @@ taxonomy:
     Voraussetzungen:
         - 'Bau des Fahrgestells'
         - 'Fahren lernen'
+    Entwicklungsumgebung:
+        - Makecode
+        - OpenRoberta
+        - Python
     Inhalte:
         - Hinderniserkennung
         - Einparkhilfe
