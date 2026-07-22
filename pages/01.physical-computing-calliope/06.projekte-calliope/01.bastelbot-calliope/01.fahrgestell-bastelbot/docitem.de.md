@@ -41,7 +41,7 @@ Suche in den bereitgestellten Kästen alle Teile heraus, die du für den Bastelb
 | ![raeder](reifen.jpg?lightbox=512&resize=200 "raeder")  | Räder mit Felgen | 2 | passend zum Aufsetzen auf die Motorschäfte |
 | ![m3-kreuzschrauben](m3-kreuzschrauben.jpg?lightbox=1024&resize=200 "m3-kreuzschrauben") | M3 Kreuzschrauben Set | 1 | ggf. mit zweiter Gruppe teilen |
 | ![schraubendreher](schraubendreher.jpg?lightbox=1024&resize=200 "schraubendreher") | Schraubendreher | nach Bedarf | ggf. mit zweiter Gruppe teilen |
-| ![powerbank-und-usb](powerbank-und-usb.jpg?lightbox=1024&resize=200 "powerbank-und-usb") | kleine Powerbank und USB-Kabel | 1 | |
+| ![powerbank-und-usb](powerbank-und-usb.jpg?lightbox=1024&resize=200 "powerbank-und-usb") | kleine Powerbank und USB-Kabel | 1 | Stromversorgung unterwegs (ohne Computer) |
 </div>
 
 ### Aufbau
@@ -97,6 +97,8 @@ Schließe die Motoren an der Pin-Leiste des Calliope an. Dazu müssen die Kabel 
 ![bastelbot-mit-ultraschallsensor](bastelbot-mit-ultraschallsensor.png?lightbox=1024&resize=500&classes=caption "Bringe den Ultraschallsensor vorne am Bastelbot an.")
 </div>
 
+! Der Bastelbot ist nun bereit für das Kapitel [Hindernisse erkennen](https://mintorials.de/de/physical-computing-calliope/projekte-calliope/bastelbot-calliope/bastelbot-hindernisse-erkennen).
+
 ## Infrarot-Sensoren zur Linienverfolgung
 
 ### Zusätzliches Material
@@ -121,6 +123,8 @@ Für die Pins, die das analoge Signal empfangen werden im folgenden Schaltplan P
 Da das digitale Signal aus D0 an den Infrarotsensoren nicht verwendet wird, muss dieser Pin nicht verkabelt werden.
 
 ![calliope-mit-zwei-tcrt5000](calliope-mit-zwei-tcrt5000.png?lightbox=1024&resize=500&classes=caption "Verkabelung von zwei TCRT5000 mit dem Calliope. Wenn man zwei TCRT5000 an den Calliope anschließen will, benötigt man ein kleines Steckbrett, um die beiden VCC- bzw. GND-Kabel zusammenzuführen.")
+
+! Der Bastelbot ist nun bereit für das Kapitel [Linienverfolgung](https://mintorials.de/de/physical-computing-calliope/projekte-calliope/bastelbot-calliope/bastelbot-linienverfolgung).
 
 ## Gehäuse
 
