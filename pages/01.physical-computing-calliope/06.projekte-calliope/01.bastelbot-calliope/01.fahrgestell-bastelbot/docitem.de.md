@@ -20,6 +20,8 @@ Der Bau des Roboters beginnt mit dem Aufbau des Fahrgestells und der Verschaltun
 
 ![basisversion-von-oben](basisversion-von-oben.jpg?lightbox=1024&resize=500&classes=caption "Fertige Basisversion des Bastelbots")
 
+## Bau des Fahrgestells
+
 ### Material
 
 <div class="aufgabe" markdown="1">
@@ -95,4 +97,28 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 
 ![bastelbot-anschluss-motoren-akku](bastelbot-anschluss-motoren-akku.png?lightbox=1024&resize=500&classes=caption "Anschluss von Motor und Akku von vorne gesehen (schematisch). Klicke das Bild an, um es zu vergrößern.") 
 
+</div>
+
+
+## Ultraschallsensor
+
+### Zusätzliches Material
+
+<div markdown="1" style="overflow:auto;">
+| Bild | Bauteil | Anzahl | Hinweise |
+|-------|----------|-----------|---------------------------------|
+| ![ultraschallsensor-grove](ultraschallsensor-grove.jpg?lightbox=1024&resize=200 "ultraschallsensor-grove") | Ultraschallsensor mit Kabel | 1 | unterschiedliche Anschlussarten (Grove, Jacdac, Jumper-Kabel) möglich |
+</div>
+
+Für eine schöne Verkleidung werden ggf. Karton, Schrauben und entsprechende Werkzeuge benötigt.
+
+### Montage und Verbindung
+
+<div markdown="1" class="aufgabe">
+#### Montage und Verbindung
+
+1. Recherchiere die [Funktionsweise und Verkabelung des Ultraschallsensors](/physical-computing-calliope/bauteilkunde/sensoren-calliope/ultraschallsensor).
+2. Bringe den Ultraschallsensor so am Roboter an, dass der Ultraschallsensor nach vorne "guckt", und führe die Verkabelung durch.
+
+![bastelbot-mit-ultraschallsensor](bastelbot-mit-ultraschallsensor.png?lightbox=1024&resize=500&classes=caption "Bringe den Ultraschallsensor vorne am Bastelbot an.")
 </div>
