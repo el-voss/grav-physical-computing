@@ -7,6 +7,10 @@ media_order: 'motorblock.png,funktion-drehung-links.png,funktion-drehung-rechts.
 taxonomy:
     Voraussetzungen:
         - 'Bau des Fahrgestells'
+    Entwicklungsumgebung:
+        - Makecode
+        - OpenRoberta
+        - Python
     Inhalte:
         - Funktionen
         - Getriebemotoren
