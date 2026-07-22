@@ -21,28 +21,6 @@ taxonomy:
 
 **Ziel:** Der Bastelbot soll um einen Ultraschallsensor erweitert werden, sodass er Hindernisse erkennen und umfahren kann.
 
-## Zusätzliches Material
-
-<div markdown="1" style="overflow:auto;">
-| Bild | Bauteil | Anzahl | Hinweise |
-|-------|----------|-----------|---------------------------------|
-| ![ultraschallsensor-grove](ultraschallsensor-grove.jpg?lightbox=1024&resize=200 "ultraschallsensor-grove") | Ultraschallsensor mit Kabel | 1 | unterschiedliche Anschlussarten (Grove, Jacdac, Jumper-Kabel) möglich |
-</div>
-
-Für eine schöne Verkleidung werden ggf. Karton, Schrauben und entsprechende Werkzeuge benötigt.
-
-## Montage und Verbindung
-
-<div markdown="1" class="aufgabe">
-#### Montage und Verbindung
-
-1. Recherchiere die [Funktionsweise und Verkabelung des Ultraschallsensors](/physical-computing-calliope/bauteilkunde/sensoren-calliope/ultraschallsensor).
-2. Bringe den Ultraschallsensor so am Roboter an, dass der Ultraschallsensor nach vorne "guckt", und führe die Verkabelung durch.
-
-![bastelbot-mit-ultraschallsensor](bastelbot-mit-ultraschallsensor.png?lightbox=1024&resize=500&classes=caption "Bringe den Ultraschallsensor vorne am Bastelbot an.")
-</div>
-
-
 ## Programmierung
 
 <div markdown="1" class="aufgabe">

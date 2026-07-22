@@ -2,7 +2,7 @@
 {% set title = page.title %}
 
 <article>
-    {% if image %}
+{#}    {% if image %}
     <a href="{{page.url}}" class="image">
         {% if image.height > image.width * 1.1 %}
             {{ image.rotate(90).cropResize(300,300).loading('lazy').attribute('width', '300').attribute('height','300').html(title,title,'')|raw }}
@@ -11,8 +11,18 @@
         {% endif %}
     </a>
     {% endif %}
+    #}
+    {% if image %}
+    <a href="{{page.url}}" class="image">
+        {% if image.height > image.width * 1.1 %}
+            {{ image.rotate(90).cropZoom(300,300).loading('lazy').attribute('width', '300').attribute('height','300').html(title,title,'')|raw }}
+        {% else %}
+            {{ image.cropZoom(300,300).loading('lazy').attribute('width', '300').attribute('height','300').html(title,title,'')|raw }}
+        {% endif %}
+    </a>
+    {% endif %}
     <a href="{{page.url}}"><h3>{{page.title}}</h3></a>
-
+{#
     <p>
     {% if page.summary != page.content %}
             {{ page.summary|striptags|raw }}
@@ -20,7 +30,7 @@
             {{ page.content|striptags|raw }}
         {% endif %}
     </p>
-
+#}
     <ul class="tags">
         {% if page.taxonomy.Voraussetzungen %}
         <li>
