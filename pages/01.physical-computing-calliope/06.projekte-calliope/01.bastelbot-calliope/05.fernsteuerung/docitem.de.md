@@ -4,7 +4,7 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: fernsteuerung-schematisch.png
-media_order: 'fernsteuerung-schematisch.png,fernsteuerung-joystick-werte.png,fernsteuerung-joystick-koordinatentransformation.png,funk-Wertepaar-Befehl.png,empfaenger-programm-vorlage.png,orl-sender-vorlage.png,orl-empfaenger-vorlage.png,fernsteuerung-joystick-idee2.png,fernsteuerung-joystick-idee1.png'
+media_order: 'fernsteuerung-joystick-werte.png,fernsteuerung-joystick-koordinatentransformation.png,funk-Wertepaar-Befehl.png,empfaenger-programm-vorlage.png,orl-sender-vorlage.png,orl-empfaenger-vorlage.png,fernsteuerung-joystick-idee2.png,fernsteuerung-joystick-idee1.png'
 taxonomy:
     Voraussetzungen:
         - 'Fahren lernen'
