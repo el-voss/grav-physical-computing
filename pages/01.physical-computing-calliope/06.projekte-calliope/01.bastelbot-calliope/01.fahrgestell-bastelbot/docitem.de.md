@@ -41,10 +41,6 @@ Suche in den bereitgestellten Kästen alle Teile heraus, die du für den Bastelb
 | ![raeder](reifen.jpg?lightbox=512&resize=200 "raeder")  | Räder mit Felgen | 2 | passend zum Aufsetzen auf die Motorschäfte |
 |  ![9v-block](batterie.jpg?lightbox=512&resize=200 "9v-block") | 9V-Block | 1 | Auch als USB-Akku verfügbar. |
 | ![clip-mit-offenen-kontakten](akku-anschluss.jpg?lightbox=512&resize=200 "clip-mit-offenen-kontakten")  | Clip zum Anschluss des 9V-Block mit angelöteten Jumper-Kabeln | 1 | |
-| ![m3-kreuzschrauben](m3-kreuzschrauben.jpg?lightbox=1024&resize=200 "m3-kreuzschrauben") | M3 Kreuzschrauben Set | 1 | ggf. mit zweiter Gruppe teilen |
-| ![schraubendreher](schraubendreher.jpg?lightbox=1024&resize=200 "schraubendreher") | Schraubendreher | nach Bedarf | ggf. mit zweiter Gruppe teilen |
-| ![pappe-einwellig](pappe-einwellig.jpg?lightbox=1024&resize=200 "pappe-einwellig") | Pappe | nach Bedarf | einwellig, ca. 3 mm dick |
-| ![schere-stift-geo](schere-stift-geo.jpg?lightbox=1024&resize=200 "schere-stift-geo") | Schere, Bleistift, Geodreieck, Radiergummi | 1 | ggf. mit zweiter Gruppe teilen |
 </div>
 
 ### Aufbau
@@ -137,6 +133,19 @@ Da das digitale Signal aus D0 an den Infrarotsensoren nicht verwendet wird, muss
 ![calliope-mit-zwei-tcrt5000](calliope-mit-zwei-tcrt5000.png?lightbox=1024&resize=500&classes=caption "Verkabelung von zwei TCRT5000 mit dem Calliope. Wenn man zwei TCRT5000 an den Calliope anschließen will, benötigt man ein kleines Steckbrett, um die beiden VCC- bzw. GND-Kabel zusammenzuführen.")
 
 ## Gehäuse
+
+### Zusätzliches Material
+
+<div markdown="1" style="overflow:auto;">
+| Bild | Bauteil | Anzahl | Hinweise |
+|-------|----------|-----------|---------------------------------|
+| ![m3-kreuzschrauben](m3-kreuzschrauben.jpg?lightbox=1024&resize=200 "m3-kreuzschrauben") | M3 Kreuzschrauben Set | 1 | ggf. mit zweiter Gruppe teilen |
+| ![schraubendreher](schraubendreher.jpg?lightbox=1024&resize=200 "schraubendreher") | Schraubendreher | nach Bedarf | ggf. mit zweiter Gruppe teilen |
+| ![pappe-einwellig](pappe-einwellig.jpg?lightbox=1024&resize=200 "pappe-einwellig") | Pappe | nach Bedarf | einwellig, ca. 3 mm dick |
+| ![schere-stift-geo](schere-stift-geo.jpg?lightbox=1024&resize=200 "schere-stift-geo") | Schere, Bleistift, Geodreieck, Radiergummi | 1 | ggf. mit zweiter Gruppe teilen |
+</div>
+
+### Aufbau
 
 <div class="aufgabe" markdown="1">
 #### Bau eines Gehäuses
