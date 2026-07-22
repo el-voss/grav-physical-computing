@@ -4,7 +4,7 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 media_order: 'bastelbot-mit-ultraschallsensor.png,ultraschallsensor-grove.jpg,hinderniserkennung-schematisch.png'
-featured_image: bastelbot-mit-ultraschallsensor.png
+featured_image: hinderniserkennung-schematisch.png
 taxonomy:
     Voraussetzungen:
         - 'Bau des Fahrgestells'
