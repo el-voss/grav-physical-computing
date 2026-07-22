@@ -39,6 +39,8 @@ Suche in den bereitgestellten Kästen alle Teile heraus, die du für den Bastelb
 | ![calliopev3](calliopev3.jpg?lightbox=1024&resize=200 "calliopev3") | Calliope v3 | 1 | erst v3 verfügt über geeigneten Motortreiber |
 | ![getriebemotor-n20](gleichstrommotor.jpg?lightbox=512&resize=200 "getriebemotor-n20")  | N20 Getriebemotoren (100 RPM, 6V) | 2 | mit angelöteten Jumper-Kabeln |
 | ![raeder](reifen.jpg?lightbox=512&resize=200 "raeder")  | Räder mit Felgen | 2 | passend zum Aufsetzen auf die Motorschäfte |
+| ![m3-kreuzschrauben](m3-kreuzschrauben.jpg?lightbox=1024&resize=200 "m3-kreuzschrauben") | M3 Kreuzschrauben Set | 1 | ggf. mit zweiter Gruppe teilen |
+| ![schraubendreher](schraubendreher.jpg?lightbox=1024&resize=200 "schraubendreher") | Schraubendreher | nach Bedarf | ggf. mit zweiter Gruppe teilen |
 |  ![9v-block](batterie.jpg?lightbox=512&resize=200 "9v-block") | 9V-Block | 1 | Auch als USB-Akku verfügbar. |
 | ![clip-mit-offenen-kontakten](akku-anschluss.jpg?lightbox=512&resize=200 "clip-mit-offenen-kontakten")  | Clip zum Anschluss des 9V-Block mit angelöteten Jumper-Kabeln | 1 | |
 </div>
@@ -92,8 +94,6 @@ Suche in den bereitgestellten Kästen alle Teile heraus, die du für den Bastelb
 | ![ultraschallsensor-grove](ultraschallsensor-grove.jpg?lightbox=1024&resize=200 "ultraschallsensor-grove") | Ultraschallsensor mit Kabel | 1 | unterschiedliche Anschlussarten (Grove, Jacdac, Jumper-Kabel) möglich |
 </div>
 
-Für eine schöne Verkleidung werden ggf. Karton, Schrauben und entsprechende Werkzeuge benötigt.
-
 ### Montage und Verbindung
 
 <div markdown="1" class="aufgabe">
@@ -117,8 +117,6 @@ Für eine schöne Verkleidung werden ggf. Karton, Schrauben und entsprechende We
 | ![steckbrett-klein](steckbrett-klein.jpg?lightbox=1024&resize=200 "steckbrett-klein") | Kleines Steckbrett | 1 | auch andere Formen möglich |
 </div>
 
-Für eine schöne Verkleidung werden ggf. Karton, Schrauben und entsprechende Werkzeuge benötigt.
-
 ### Montage und Verbindung
 
 Die Infrarot-Sensoren TCRT5000 werden vorne am Bastelbot angebracht, sodass die beiden Dioden nach unten zum Boden schauen. Die Module können mit einer Schraube auf der Lochplatte befestigt werden.
@@ -139,8 +137,6 @@ Da das digitale Signal aus D0 an den Infrarotsensoren nicht verwendet wird, muss
 <div markdown="1" style="overflow:auto;">
 | Bild | Bauteil | Anzahl | Hinweise |
 |-------|----------|-----------|---------------------------------|
-| ![m3-kreuzschrauben](m3-kreuzschrauben.jpg?lightbox=1024&resize=200 "m3-kreuzschrauben") | M3 Kreuzschrauben Set | 1 | ggf. mit zweiter Gruppe teilen |
-| ![schraubendreher](schraubendreher.jpg?lightbox=1024&resize=200 "schraubendreher") | Schraubendreher | nach Bedarf | ggf. mit zweiter Gruppe teilen |
 | ![pappe-einwellig](pappe-einwellig.jpg?lightbox=1024&resize=200 "pappe-einwellig") | Pappe | nach Bedarf | einwellig, ca. 3 mm dick |
 | ![schere-stift-geo](schere-stift-geo.jpg?lightbox=1024&resize=200 "schere-stift-geo") | Schere, Bleistift, Geodreieck, Radiergummi | 1 | ggf. mit zweiter Gruppe teilen |
 </div>
