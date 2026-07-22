@@ -3,7 +3,7 @@ title: 'Hindernisse erkennen'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'bastelbot-mit-ultraschallsensor.png,ultraschallsensor-grove.jpg'
+media_order: 'bastelbot-mit-ultraschallsensor.png,ultraschallsensor-grove.jpg,hinderniserkennung-schematisch.png'
 featured_image: bastelbot-mit-ultraschallsensor.png
 taxonomy:
     Voraussetzungen:
@@ -20,6 +20,8 @@ taxonomy:
 [TOC]
 
 **Ziel:** Der Bastelbot soll um einen Ultraschallsensor erweitert werden, sodass er Hindernisse erkennen und umfahren kann.
+
+![hinderniserkennung-schematisch](hinderniserkennung-schematisch.png?lightbox=1024&resize=700&classes=caption "Schematische Darstellung der Hindererkennung mit einem Ultraschallsensor.")
 
 ### Programmierung
 
