@@ -7,7 +7,12 @@ featured_image: fernsteuerung-schematisch.png
 media_order: 'fernsteuerung-joystick-werte.png,fernsteuerung-joystick-koordinatentransformation.png,funk-Wertepaar-Befehl.png,empfaenger-programm-vorlage.png,orl-sender-vorlage.png,orl-empfaenger-vorlage.png,fernsteuerung-joystick-idee2.png,fernsteuerung-joystick-idee1.png'
 taxonomy:
     Voraussetzungen:
+        - 'Bau des Fahrgestells'
         - 'Fahren lernen'
+    Entwicklungsumgebung:
+        - Makecode
+        - OpenRoberta
+        - Python
     Inhalte:
         - Joystick
         - Motor
