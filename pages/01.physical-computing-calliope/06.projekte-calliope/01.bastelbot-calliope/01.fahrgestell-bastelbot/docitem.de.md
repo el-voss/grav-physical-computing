@@ -3,7 +3,7 @@ title: 'Bau des Fahrgestells'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'akku-anschluss.jpg,basisversion-frontal.jpg,basisversion-von-oben.jpg,batterie.jpg,calliopev3.jpg,calliopev3-rueckseite.jpg,fusskugel.jpg,gleichstrommotor.jpg,lochplatte.jpg,m3-kreuzschrauben.jpg,motorhalterung.jpg,motor-in-halterung.jpg,motor-in-halterung2.jpg,pappe-einwellig.jpg,reifen.jpg,schere-stift-geo.jpg,schraubendreher.jpg,bastelbot-anschluss-motoren-akku.png,lochplatte-anordnung-oben.png,lochplatte-anordnung-unten.png,bastelbot-mit-infrarotsensoren.png,kabel.jpg,steckbrett-klein.jpg,calliope-mit-zwei-tcrt5000.png,ultraschallsensor-grove.jpg,infrarot-sensoren.jpg,bastelbot-mit-ultraschallsensor.png,powerbank-und-usb.jpg,bastelbot-anschluss-motoren.png'
+media_order: 'akku-anschluss.jpg,basisversion-frontal.jpg,basisversion-von-oben.jpg,batterie.jpg,calliopev3.jpg,calliopev3-rueckseite.jpg,fusskugel.jpg,gleichstrommotor.jpg,lochplatte.jpg,m3-kreuzschrauben.jpg,motorhalterung.jpg,motor-in-halterung.jpg,motor-in-halterung2.jpg,pappe-einwellig.jpg,reifen.jpg,schere-stift-geo.jpg,schraubendreher.jpg,bastelbot-anschluss-motoren-akku.png,lochplatte-anordnung-oben.png,lochplatte-anordnung-unten.png,bastelbot-mit-infrarotsensoren.png,kabel.jpg,steckbrett-klein.jpg,calliope-mit-zwei-tcrt5000.png,ultraschallsensor-grove.jpg,infrarot-sensoren.jpg,bastelbot-mit-ultraschallsensor.png,powerbank-und-usb.jpg,bastelbot-anschluss-motoren.png,bastelbot.png'
 featured_image: basisversion-von-oben.jpg
 published: true
 taxonomy:
@@ -16,9 +16,9 @@ taxonomy:
 
 [TOC]
 
-Der Bau des Roboters beginnt mit dem Aufbau des Fahrgestells und der Verschaltung der Motoren.
+Dieses erste Kapitel behandelt den Aufbau des Bastelbots. Der Aufbau kann am einfachsten komplett bearbeitet werden; es ist aber auch möglich, nach jedem Abschnitt zum entsprechenden Programmierkapitel zu springen. Das zugehörige Programmierkapitel ist jeweils am Ende des Bau-Abschnitts verlinkt.
 
-![basisversion-von-oben](basisversion-von-oben.jpg?lightbox=1024&resize=500&classes=caption "Fertige Basisversion des Bastelbots")
+![bastelbot](bastelbot.png?lightbox=1024&resize=500&classes=caption "Schematische Darstellung eines fertigen Bastelbots.")
 
 ## Bau des Fahrgestells
 
