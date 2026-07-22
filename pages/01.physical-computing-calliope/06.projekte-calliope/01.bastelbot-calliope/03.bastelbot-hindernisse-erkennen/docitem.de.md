@@ -21,7 +21,7 @@ taxonomy:
 
 **Ziel:** Der Bastelbot soll um einen Ultraschallsensor erweitert werden, sodass er Hindernisse erkennen und umfahren kann.
 
-## Programmierung
+### Programmierung
 
 <div markdown="1" class="aufgabe">
 #### Erster Test
