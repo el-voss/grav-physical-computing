@@ -3,7 +3,7 @@ title: 'Bau des Fahrgestells'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'akku-anschluss.jpg,basisversion-frontal.jpg,basisversion-von-oben.jpg,batterie.jpg,calliopev3.jpg,calliopev3-rueckseite.jpg,fusskugel.jpg,gleichstrommotor.jpg,lochplatte.jpg,m3-kreuzschrauben.jpg,motorhalterung.jpg,motor-in-halterung.jpg,motor-in-halterung2.jpg,pappe-einwellig.jpg,reifen.jpg,schere-stift-geo.jpg,schraubendreher.jpg,bastelbot-anschluss-motoren-akku.png,lochplatte-anordnung-oben.png,lochplatte-anordnung-unten.png'
+media_order: 'akku-anschluss.jpg,basisversion-frontal.jpg,basisversion-von-oben.jpg,batterie.jpg,calliopev3.jpg,calliopev3-rueckseite.jpg,fusskugel.jpg,gleichstrommotor.jpg,lochplatte.jpg,m3-kreuzschrauben.jpg,motorhalterung.jpg,motor-in-halterung.jpg,motor-in-halterung2.jpg,pappe-einwellig.jpg,reifen.jpg,schere-stift-geo.jpg,schraubendreher.jpg,bastelbot-anschluss-motoren-akku.png,lochplatte-anordnung-oben.png,lochplatte-anordnung-unten.png,bastelbot-mit-infrarotsensoren.png,kabel.jpg,steckbrett-klein.jpg,calliope-mit-zwei-tcrt5000.png,ultraschallsensor-grove.jpg,infrarot-sensoren.jpg,bastelbot-mit-ultraschallsensor.png,powerbank-und-usb.jpg'
 featured_image: basisversion-von-oben.jpg
 published: true
 taxonomy:
@@ -41,8 +41,7 @@ Suche in den bereitgestellten Kästen alle Teile heraus, die du für den Bastelb
 | ![raeder](reifen.jpg?lightbox=512&resize=200 "raeder")  | Räder mit Felgen | 2 | passend zum Aufsetzen auf die Motorschäfte |
 | ![m3-kreuzschrauben](m3-kreuzschrauben.jpg?lightbox=1024&resize=200 "m3-kreuzschrauben") | M3 Kreuzschrauben Set | 1 | ggf. mit zweiter Gruppe teilen |
 | ![schraubendreher](schraubendreher.jpg?lightbox=1024&resize=200 "schraubendreher") | Schraubendreher | nach Bedarf | ggf. mit zweiter Gruppe teilen |
-|  ![9v-block](batterie.jpg?lightbox=512&resize=200 "9v-block") | 9V-Block | 1 | Auch als USB-Akku verfügbar. |
-| ![clip-mit-offenen-kontakten](akku-anschluss.jpg?lightbox=512&resize=200 "clip-mit-offenen-kontakten")  | Clip zum Anschluss des 9V-Block mit angelöteten Jumper-Kabeln | 1 | |
+| ![powerbank-und-usb](powerbank-und-usb.jpg?lightbox=1024&resize=200 "powerbank-und-usb") | kleine Powerbank und USB-Kabel | |
 </div>
 
 ### Aufbau
