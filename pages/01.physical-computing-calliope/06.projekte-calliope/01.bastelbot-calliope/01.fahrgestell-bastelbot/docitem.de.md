@@ -152,3 +152,5 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 </video>
 </center>
 </div>
+
+! Der Bastelbot ist nun für alle Kapitel bereit und dazu auch noch schick!
