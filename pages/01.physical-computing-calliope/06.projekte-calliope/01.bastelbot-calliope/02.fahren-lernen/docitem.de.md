@@ -21,7 +21,7 @@ featured_image: bastelbot-quadrat-fahren.png
 
 Nachdem der Roboter nun über ein Fahrgestell verfügt und die Motoren verkabelt sind, wird es Zeit, ihm das Fahren beizubringen!
 
-## Programmierung der Motoren
+### Programmierung der Motoren
 
 <!-- Tabs für die Auswahl -->
 <div class="tab-group" data-group="programmierumgebung">
