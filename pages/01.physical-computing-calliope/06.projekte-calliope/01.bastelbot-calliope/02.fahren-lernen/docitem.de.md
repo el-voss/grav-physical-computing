@@ -166,5 +166,18 @@ def fahre(geschwindigkeitLinks, geschwindigkeitRechts): # geschwindigkeit jeweil
 </div>
 </div>
 
+### Detailanalyse des Fahrverhaltens
+
+Wie verlässlich und genau ist das Fahrverhalten des Roboters? Und lässt sich durch eine genaue Analyse eine Funktion erstellen, bei der man dem Roboter sagen kann, wie weit er fahren soll? Darum gehts im Folgenden.
+
+<div markdown="1" class="aufgabe">
+#### Wie genau fährt der Roboter?
+
+1. Falls bisher noch nicht geschehen: Lasse den Roboter mehrmals geradeaus fahren und beobachte, ob der Roboter tatsächlich geradeaus fährt. Beseitige Fehlerquellen so gut es geht: Dreckige Räder, eiernde Räder, ...
+2. Entwickle einen Versuch zur Untersuchung der Genauigkeit des Fahrverhaltens. Führe ihn (mehrmals) durch und stelle die Ergebnisse graphisch dar.
+
+</div>
+
+
 
 </div>

@@ -1,5 +1,10 @@
 {% set image = page.media[page.header.featured_image] ?: page.media.images|first %}
 {% set title = page.title %}
+{% set envLinks = {
+    'Makecode': 'https://makecode.calliope.cc/#editor',
+    'OpenRoberta': 'https://lab.open-roberta.org/',
+    'Python': 'https://python.calliope.cc/'
+} %}
 
 <article>
 {#}    {% if image %}
@@ -48,7 +53,11 @@
            <i class="fa fa-star"></i>
            <strong>Entwicklungsumgebung: </strong>
             {% for tag in page.taxonomy.Entwicklungsumgebung %}
-                <a href="{{ base_url }}/search/query:{{ tag }}"> {{ tag }} </a>
+                {% if envLinks[tag] is defined %}
+                    <a href="{{ envLinks[tag] }}" target="_blank">{{ tag }}</a>
+                {% else %}
+                    <a href="{{ base_url }}/search/query:{{ tag }}">{{ tag }}</a>
+                {% endif %}
                 {% if not loop.last %}, {% endif %}
             {% endfor %}
         </li>
