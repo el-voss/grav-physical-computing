@@ -165,6 +165,8 @@ def fahre(geschwindigkeitLinks, geschwindigkeitRechts): # geschwindigkeit jeweil
   </div>
 </div>
 </div>
+</div>
+
 
 ### Detailanalyse des Fahrverhaltens
 
@@ -178,6 +180,20 @@ Wie verlässlich und genau ist das Fahrverhalten des Roboters? Und lässt sich d
 
 </div>
 
+<div markdown="1" class="aufgabe">
+#### Funktion "fahre_cm(x)"
+
+Es wäre praktisch, dem Roboter genau sagen zu können, wie weit er fahren soll und nicht nur, mit welcher Leistung er fahren soll. Genau das ist das Ziel dieser Aufgabe.
+
+Für diese Aufgabe gilt: **Der Roboter fährt immer mit der Leistung 50%.**
+
+1. Entwickle einen Versuch zur Messung der Zeit, die der Roboter für 20cm, 40cm, 60cm, 80cm, 100cm braucht.
+2. Stelle die Ergebnisse in einem Zeit-Weg-Diagramm dar.
+3. Ermittle die Geschwindigkeit des Roboters in cm pro Sekunde.
+4. Ermittle die Funktion $s(t)$, wobei $s$ die zurückgelegte Strecke in cm und $t$ die benötigte Zeit in Sekunden ist.
+5. Ermittle die Funktion $t(s)$, wobei $s$ die Strecke ist, die der Roboter zurücklegen soll, und $t$ die Zeit in Millisekunden, die die Motoren dafür laufen müssen.
+6. Implementiere eine Funktion `fahre_cm(x)`, wobei `x` die Strecke in cm ist, die der Roboter zurücklegen soll.
 
 
 </div>
+
