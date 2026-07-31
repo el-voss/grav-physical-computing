@@ -197,3 +197,5 @@ Für diese Aufgabe gilt: **Der Roboter fährt immer mit der Leistung 50%.**
 
 </div>
 
+<!-- evtl ergänzen: Aufgabe zu Funktion "fahre_cm( Strecke x, Leistung l)" -->
+
