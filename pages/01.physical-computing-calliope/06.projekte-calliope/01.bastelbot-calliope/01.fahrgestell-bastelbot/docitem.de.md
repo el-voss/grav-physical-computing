@@ -83,8 +83,8 @@ Schließe die Motoren an der Pin-Leiste des Calliope an. Dazu müssen die Kabel 
 <div markdown="1" style="overflow:auto;">
 | Bild | Bauteil | Anzahl | Hinweise |
 |-------|----------|-----------|---------------------------------|
-| ![ultraschallsensor-grove](ultraschallsensor-grove.jpg?lightbox=1024&resize=200 "ultraschallsensor-grove") | Ultraschallsensor mit Kabel | 1 | unterschiedliche Anschlussarten (Grove, Jacdac, Jumper-Kabel) möglich |
-| ![ultraschallhalterung-mit-beschriftung](ultraschallhalterung-mit-beschriftung.png?lightbox=1024&resize=200 "ultraschallhalterung-mit-beschriftung") | Halterung für Ultraschallsensor | 1 | unterschiedliche Halterung je nach Anschlussart notwendig |
+| ![ultraschallsensor-grove](ultraschallsensor-grove.jpg?lightbox=512&resize=200 "ultraschallsensor-grove") | Ultraschallsensor mit Kabel | 1 | unterschiedliche Anschlussarten (Grove, Jacdac, Jumper-Kabel) möglich |
+| ![ultraschallhalterung-mit-beschriftung](ultraschallhalterung-mit-beschriftung.png?lightbox=512&resize=200 "ultraschallhalterung-mit-beschriftung") | Halterung für Ultraschallsensor | 1 | unterschiedliche Halterung je nach Anschlussart notwendig |
 </div>
 
 ### Montage und Verbindung
