@@ -187,13 +187,27 @@ Es wäre praktisch, dem Roboter genau sagen zu können, wie weit er fahren soll 
 
 Für diese Aufgabe gilt: **Der Roboter fährt immer mit der Leistung 50%.**
 
-1. Entwickle einen Versuch zur Messung der Zeit, die der Roboter für 20cm, 40cm, 60cm, 80cm, 100cm braucht.
+1. Entwickle einen Versuch zur Messung der Strecke, die der Roboter innerhalb von 2, 4, 6, 8, 10 Sekunden zurücklegt.
 2. Stelle die Ergebnisse in einem Zeit-Weg-Diagramm dar.
 3. Ermittle die Geschwindigkeit des Roboters in cm pro Sekunde.
 4. Ermittle die Funktion $s(t)$, wobei $s$ die zurückgelegte Strecke in cm und $t$ die benötigte Zeit in Sekunden ist.
 5. Ermittle die Funktion $t(s)$, wobei $s$ die Strecke ist, die der Roboter zurücklegen soll, und $t$ die Zeit in Millisekunden, die die Motoren dafür laufen müssen.
-6. Implementiere eine Funktion `fahre_cm(x)`, wobei `x` die Strecke in cm ist, die der Roboter zurücklegen soll.
+6. Implementiere eine Funktion `fahre_cm_mit_50Prozent(x)`, wobei `x` die Strecke in cm ist, die der Roboter zurücklegen soll.
 
+</div>
+
+<div markdown="1" class="aufgabe">
+#### Leistung und Strecke
+
+Es wäre praktisch, dem Roboter genau sagen zu können, wie weit er fahren soll und nicht nur, mit welcher Leistung er fahren soll. Genau das ist das Ziel dieser Aufgabe.
+
+Für diese Aufgabe gilt: **Der Roboter fährt immer für 5 Sekunden.**
+
+1. Entwickle einen Versuch zur Messung der Strecke, die der Roboter bei einer Leistung von 20%, 40%, 60%, 80%, 100% zurücklegt.
+2. Stelle die Ergebnisse in einem Leistung-Weg-Diagramm dar.
+3. Ermittle die Funktion $s(l)$, wobei $s$ die zurückgelegte Strecke in cm und $l$ die vorgegebene Leistung in Prozent ist.
+4. Ermittle die Funktion $l(s)$, wobei $s$ die Strecke ist, die der Roboter zurücklegen soll, und $l$ die Leistung in Prozent, die der Roboter braucht, um die Strecke innerhalb der 5 Sekunden zu schaffen.
+5. Implementiere eine Funktion `fahre_cm_in_5Sek(x)`, wobei `x` die Strecke in cm ist, die der Roboter zurücklegen soll.
 
 </div>
 
