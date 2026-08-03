@@ -238,7 +238,7 @@ Aber sie ist nicht proportional zur Leistung. Ein linearer Zusammenhang lässt s
 
 $s(l) = 0,5 \cdot l - 5 = 0,5 \cdot (l - \frac{5}{0,5}) = 0,5 \cdot ( l - 10)$.
 
-In diesem Beispiel wäre die Strecke $s$ also proportional zur Größe $(l-10)$.
+In diesem Beispiel wäre die Strecke $s$ also proportional zur Größe $(l-10)$: $s \propto (l-10)$.
 </div>
 </details>
 
