@@ -192,7 +192,7 @@ Für diese Aufgabe gilt: **Der Roboter fährt immer mit der Leistung 50%.**
 3. Ermittle die Geschwindigkeit des Roboters in cm pro Sekunde.
 4. Ermittle die Funktion $s(t)$, wobei $s$ die zurückgelegte Strecke in cm und $t$ die benötigte Zeit in Sekunden ist.
 5. Ermittle die Funktion $t(s)$, wobei $s$ die Strecke ist, die der Roboter zurücklegen soll, und $t$ die Zeit in Millisekunden, die die Motoren dafür laufen müssen.
-6. Implementiere eine Funktion `fahre_cm_mit_50Prozent(x)`, wobei `x` die Strecke in cm ist, die der Roboter zurücklegen soll.
+6. Implementiere eine Funktion `fahre_cm_mit_50Prozent( strecke )`, wobei `strecke` die Strecke in cm ist, die der Roboter zurücklegen soll.
 
 </div>
 
@@ -205,11 +205,39 @@ Für diese Aufgabe gilt: **Der Roboter fährt immer für 5 Sekunden.**
 
 1. Entwickle einen Versuch zur Messung der Strecke, die der Roboter bei einer Leistung von 20%, 40%, 60%, 80%, 100% zurücklegt.
 2. Stelle die Ergebnisse in einem Leistung-Weg-Diagramm dar.
-3. Ermittle die Funktion $s(l)$, wobei $s$ die zurückgelegte Strecke in cm und $l$ die vorgegebene Leistung in Prozent ist.
+3. Ermittle die Funktion $s(l)$, wobei $s$ die zurückgelegte Strecke in cm und $l$ die vorgegebene Leistung in Prozent ist. Deute den Schnittpunkt der erhaltenen Funktion mit der Rechtsachse.
 4. Ermittle die Funktion $l(s)$, wobei $s$ die Strecke ist, die der Roboter zurücklegen soll, und $l$ die Leistung in Prozent, die der Roboter braucht, um die Strecke innerhalb der 5 Sekunden zu schaffen.
-5. Implementiere eine Funktion `fahre_cm_in_5Sek(x)`, wobei `x` die Strecke in cm ist, die der Roboter zurücklegen soll.
+5. Implementiere eine Funktion `fahre_cm_in_5Sek( strecke )`, wobei `strecke` die Strecke in cm ist, die der Roboter zurücklegen soll.
 
 </div>
 
-<!-- evtl ergänzen: Aufgabe zu Funktion "fahre_cm( Strecke x, Leistung l)" -->
+<div markdown="1" class="aufgabe">
+#### Leistung, Zeit und Strecke
+
+Nach den vorherigen zwei Vorbereitungen ist nun das Ziel, beide Untersuchungen zusammen zu fassen und eine Funktion zu implementieren, bei der man gleichzeitig angeben kann, wie weit der Roboter fahren soll und mit welcher Leistung der die Strecke fahren soll.
+
+Für die Zusammenfassung der beiden Untersuchungen wird folgende Voraussetzung genutzt: Wenn die Größe A proportional zur Größe B und proportional zur Größe C ist, dann ist sie auch proportional zum Produkt $B \cdot C$.
+
+$A \propto B$ und $A \propto C$, dann $A \propto B \cdot C$.
+
+Anders formuliert:
+
+Wenn $\frac{A}{B} = konst.$ und $\frac{A}{C} = konst.$ gilt, dann gilt auch $\frac{A}{B \cdot C} = konst.$
+
+Nach den vorherigen Untersuchungen wissen wir: Die Strecke ist proportional zur Zeit ( $s \propto t$).
+
+Aber sie ist nicht proportional zur Leistung. Ein linearer Zusammenhang lässt sich aber wie im folgenden Beispiel umformen:
+
+$s(l) = 0,5 \cdot l - 5 = 0,5 \cdot (l - \frac{5}{0,5}) = 0,5 \cdot ( l - 10)$.
+
+In diesem Beispiel wäre die Strecke $s$ also proportional zur Größe $(l-10)$.
+
+1. Forme deinen funktionalen Zusammenhang aus der Aufgabe "Leistung und Strecke" so um, wie im Beispiel oben gezeigt.
+2. Fasse beide Proportionalitäten entsprechend der oben genannten Voraussetzung zusammen.
+3. Bestimme den gemeinsamen Proportionalitätsfaktor, indem du den Quotienten $\frac{A}{B \cdot C}$ bestimmst.
+4. Forme das Ergebnis nun nach der Zeit $t$ um.
+5. Implementiere die Funktion `fahre_cm_mit_Leistung( strecke, leistung)`, wobei `strecke` die Strecke in cm ist, die der Roboter fahren soll, und `leistung` die Leistung in Prozent ist, mit der der Roboter fahren soll (d.h. für 20% wird `20` eingegeben). *Tipp:* Denke daran, dass die Zeit, die mit der Formel aus Aufgabenteil 4 berechnet wird, die Zeit in Sekunden ist und im Block `pausiere ...` die Zeit in Millisekunden benötigt wird.
+
+</div>
+
 
