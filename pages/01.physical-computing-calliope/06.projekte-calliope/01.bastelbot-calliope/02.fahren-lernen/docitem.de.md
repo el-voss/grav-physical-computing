@@ -216,6 +216,9 @@ Für diese Aufgabe gilt: **Der Roboter fährt immer für 5 Sekunden.**
 
 Nach den vorherigen zwei Vorbereitungen ist nun das Ziel, beide Untersuchungen zusammen zu fassen und eine Funktion zu implementieren, bei der man gleichzeitig angeben kann, wie weit der Roboter fahren soll und mit welcher Leistung der die Strecke fahren soll.
 
+<details class="details">
+<summary class="details__trigger details__title">Vorbemerkung 1: Zusammenfassen von zwei Proportionalitäten</summary>
+<div class="details__content" markdown="1">
 Für die Zusammenfassung der beiden Untersuchungen wird folgende Voraussetzung genutzt: Wenn die Größe A proportional zur Größe B und proportional zur Größe C ist, dann ist sie auch proportional zum Produkt $B \cdot C$.
 
 $A \propto B$ und $A \propto C$, dann $A \propto B \cdot C$.
@@ -223,7 +226,12 @@ $A \propto B$ und $A \propto C$, dann $A \propto B \cdot C$.
 Anders formuliert:
 
 Wenn $\frac{A}{B} = konst.$ und $\frac{A}{C} = konst.$ gilt, dann gilt auch $\frac{A}{B \cdot C} = konst.$
+</div>
+</details>
 
+<details class="details">
+<summary class="details__trigger details__title">Vorbemerkung 2: Anwendung auf die vorliegenden Zusammenhänge</summary>
+<div class="details__content" markdown="1">
 Nach den vorherigen Untersuchungen wissen wir: Die Strecke ist proportional zur Zeit ( $s \propto t$).
 
 Aber sie ist nicht proportional zur Leistung. Ein linearer Zusammenhang lässt sich aber wie im folgenden Beispiel umformen:
@@ -231,9 +239,11 @@ Aber sie ist nicht proportional zur Leistung. Ein linearer Zusammenhang lässt s
 $s(l) = 0,5 \cdot l - 5 = 0,5 \cdot (l - \frac{5}{0,5}) = 0,5 \cdot ( l - 10)$.
 
 In diesem Beispiel wäre die Strecke $s$ also proportional zur Größe $(l-10)$.
+</div>
+</details>
 
-1. Forme deinen funktionalen Zusammenhang aus der Aufgabe "Leistung und Strecke" so um, wie im Beispiel oben gezeigt.
-2. Fasse beide Proportionalitäten entsprechend der oben genannten Voraussetzung zusammen.
+1. Forme deinen funktionalen Zusammenhang aus der Aufgabe "Leistung und Strecke" so um, wie in Vorbemerkung 2 gezeigt.
+2. Fasse beide Proportionalitäten entsprechend der Vorbemerkung 1 zusammen.
 3. Bestimme den gemeinsamen Proportionalitätsfaktor, indem du den Quotienten $\frac{A}{B \cdot C}$ bestimmst.
 4. Forme das Ergebnis nun nach der Zeit $t$ um.
 5. Implementiere die Funktion `fahre_cm_mit_Leistung( strecke, leistung)`, wobei `strecke` die Strecke in cm ist, die der Roboter fahren soll, und `leistung` die Leistung in Prozent ist, mit der der Roboter fahren soll (d.h. für 20% wird `20` eingegeben). *Tipp:* Denke daran, dass die Zeit, die mit der Formel aus Aufgabenteil 4 berechnet wird, die Zeit in Sekunden ist und im Block `pausiere ...` die Zeit in Millisekunden benötigt wird.
