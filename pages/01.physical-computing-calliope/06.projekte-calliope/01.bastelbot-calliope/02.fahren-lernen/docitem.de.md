@@ -199,7 +199,7 @@ Für diese Aufgabe gilt: **Der Roboter fährt immer mit der Leistung 50%.**
 <div markdown="1" class="aufgabe">
 #### Leistung und Strecke
 
-Es wäre praktisch, dem Roboter genau sagen zu können, wie weit er fahren soll und nicht nur, mit welcher Leistung er fahren soll. Genau das ist das Ziel dieser Aufgabe.
+Nun wird es umgedreht: Die Zeit bleibt immer dieselbe, aber der Roboter fährt mit unterschiedlicher Leistung. Ziel ist, auch den Zusammenhang von zurückgelegter Strecke und Leistung genau zu erfassen.
 
 Für diese Aufgabe gilt: **Der Roboter fährt immer für 5 Sekunden.**
 
