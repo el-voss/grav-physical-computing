@@ -181,7 +181,7 @@ Wie verlässlich und genau ist das Fahrverhalten des Roboters? Und lässt sich d
 </div>
 
 <div markdown="1" class="aufgabe">
-#### Funktion "fahre_cm(x)"
+#### Zeit und Strecke
 
 Es wäre praktisch, dem Roboter genau sagen zu können, wie weit er fahren soll und nicht nur, mit welcher Leistung er fahren soll. Genau das ist das Ziel dieser Aufgabe.
 
