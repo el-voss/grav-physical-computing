@@ -221,7 +221,7 @@ Nach den vorherigen zwei Vorbereitungen ist nun das Ziel, beide Untersuchungen z
 <div class="details__content" markdown="1">
 Für die Zusammenfassung der beiden Untersuchungen wird folgende Voraussetzung genutzt: Wenn die Größe A proportional zur Größe B und proportional zur Größe C ist, dann ist sie auch proportional zum Produkt $B \cdot C$.
 
-$A \propto B$ und $A \propto C$, dann $A \propto B \cdot C$.
+Wenn $A \propto B$ und $A \propto C$ gilt, dann gilt auch $A \propto B \cdot C$.
 
 Anders formuliert:
 
