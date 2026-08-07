@@ -1,5 +1,35 @@
 {% extends 'partials/base.html.twig' %}
 
+{% set children = page.children().order('folder', 'asc') %}
+
+{% block content %}
+
+    <header class="main">
+        <h1>{{ page.title|raw }}</h1>
+        {% if page.header.subtitle %}<p>{{ page.header.subtitle|raw }}</p>{% endif %}
+    </header>
+
+    <div id="body-inner">
+        {{ page.content|raw }}
+    </div>
+
+    <div class="chapter-accordion">
+        {% for child in children %}
+            <details class="accordion-item">
+                <summary class="accordion-header">{{ child.title|raw }}</summary>
+                <div class="accordion-content">
+                    {% include 'partials/overview-content.html.twig' with {page: child} %}
+                </div>
+            </details>
+        {% endfor %}
+    </div>
+
+{% endblock %}
+
+
+{#
+{% extends 'partials/base.html.twig' %}
+
 {% set collection = page.collection() %}
 {% set parent = page %}
 {% set title = page.title|raw %}
@@ -35,3 +65,4 @@
     </div>
 
 {% endblock %}
+#}

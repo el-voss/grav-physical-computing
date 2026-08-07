@@ -1,0 +1,28 @@
+{% set collection = page.collection() %}
+
+{# Set page title by taxonomy #}
+{% if uri.param('category') %}
+	{% set listing_title = 'Artikel in der Kategorie: '|t ~ uri.param('category') %}
+{% elseif uri.param('tag') %}
+	{% set listing_title = 'Artikel mit dem Schlagwort: '|t ~ uri.param('tag') %}
+{% elseif uri.param('author') %}
+	{% set listing_title = 'Artikel vom Autor: '|t ~ uri.param('author') %}
+{% elseif uri.param('archives_month') %}
+    {% set listing_title = 'Artikel aus dem Monat: '|t ~ uri.param('archives_month')|replace({'_': ' '}) %}
+{% else %}
+    {% set listing_title = page.header.subtitle|raw %}
+{% endif %}
+
+<header class="main">
+    <h1><a href="{{ page.url }}">{{ page.title|raw }}</a></h1>
+    {% if listing_title %}<p>{{ listing_title|raw }}</p>{% endif %}
+</header>
+
+<div id="body-inner">
+    {{ page.content|raw }}
+</div>
+<div class="posts">
+    {% for child in collection %}
+        {% include 'partials/blog-list-item.html.twig' with {parent: page, page: child} %}
+    {% endfor %}
+</div>

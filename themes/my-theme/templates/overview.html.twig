@@ -1,5 +1,13 @@
 {% extends 'partials/base.html.twig' %}
 
+{% block content %}
+    {% include 'partials/overview-content.html.twig' with {page: page} %}
+{% endblock %}
+
+
+{#
+{% extends 'partials/base.html.twig' %}
+
 {% set collection = page.collection() %}
 {% set parent = page %}
 {% set show_image = header_var('show_pageimage')|defined(true) %}
@@ -8,7 +16,11 @@
 {% set img_height = header_var('image_height')|default(300) %}
 {% set title = page.title|raw %}
 
+#}
+
 {# Set page title by taxonomy #}
+
+{#
 {% if uri.param('category') %}
 	{% set listing_title = 'Artikel in der Kategorie: '|t ~ uri.param('category') %}
 {% elseif uri.param('tag') %}
@@ -38,3 +50,4 @@
     </div>
 
 {% endblock %}
+#}

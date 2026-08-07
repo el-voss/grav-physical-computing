@@ -407,3 +407,29 @@ ul.actions li {
 pre {
   max-width: 100%;
 }
+
+
+
+
+/* Styling der Akkordeons auf der chapter-overview Seite */
+.chapter-accordion .accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+.chapter-accordion .accordion-header {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0.75em 0;
+    list-style: none;
+}
+.chapter-accordion .accordion-header::-webkit-details-marker {
+    display: none;
+}
+.chapter-accordion .accordion-header::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 0.5em;
+    transition: transform 0.15s ease;
+}
+.chapter-accordion details[open] .accordion-header::before {
+    transform: rotate(90deg);
+}
