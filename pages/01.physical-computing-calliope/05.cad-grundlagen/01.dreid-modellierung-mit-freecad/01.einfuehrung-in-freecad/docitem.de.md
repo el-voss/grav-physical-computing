@@ -5,6 +5,15 @@ image_width: 300
 image_height: 400
 media_order: freecad-webseite.png
 featured_image: freecad-webseite.png
+taxonomy:
+    Inhalte:
+        - FreeCAD-Einrichtung
+        - 'Saubere Zeichnungen'
+        - 'Aufpolstern und Vertiefen'
+        - Freiheitsgrade
+    Niveau:
+        - Basis
+        - Fortgeschritten
 ---
 
 Um ein dreidimensionales Objekt am Computer konstruieren zu können, benötigt man ein CAD-Programm. CAD steht für *Computer Aided Design*. Die Auswahl an CAD-Programmen ist groß und reicht von sehr einfachen Programmen wie [TinkerCAD](https://www.tinkercad.com/), die schon Grundschüler bedienen können, bis hin zu komplexen und professionellen Programmen wie SolidWorks, Autodesk Inventor oder Siemens NX. Wir verwenden im Folgenden die freie Open Source Software [FreeCAD](https://www.freecad.org/), die einen großen, aber beherrschbaren Funktionsumfang bietet und im Maker-Bereich weit verbreitet ist. Grundlage der Einführung ist eine [Videoreihe von Florian Stolz auf Youtube](https://www.youtube.com/@Stolz3D).
