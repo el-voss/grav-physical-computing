@@ -23,7 +23,18 @@ Um ein dreidimensionales Objekt am Computer konstruieren zu können, benötigt m
 
 Schaue das folgende Video und vollziehe es parallel mit FreeCAD nach.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z-IXY8jmJWs?si=R_aBrELXsnhsNCdT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="video">
+  <iframe class="video__iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/z-IXY8jmJWs?si=R_aBrELXsnhsNCdT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <form class="video__notice">
+    <p>
+      An dieser Stelle ist ein Video von Youtube eingebettet. Mit deiner Erlaubnis willigst du ein, dass 
+      deine Daten an YouTube in den USA übermittelt werden. Weitere Informationen zur Datenverarbeitung von YouTube findest
+      du in der <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von YouTube</a>.
+    </p>
+    <button>Erlaube Inhalte von YouTube</button>
+  </form>
+</div>
+
 </div>
 
 
@@ -32,5 +43,16 @@ Schaue das folgende Video und vollziehe es parallel mit FreeCAD nach.
 
 Bearbeite das folgende Video. Vollziehe dazu die vorgeführten Schritte selbst in FreeCAD nach und bearbeite die eingebauten Übungen, ohne zuvor die Lösung anzuschauen.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/l30d6S1eOmk?si=QYor1kGAS38nLVYC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="video">
+  <iframe class="video__iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/l30d6S1eOmk?si=QYor1kGAS38nLVYC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <form class="video__notice">
+    <p>
+      An dieser Stelle ist ein Video von Youtube eingebettet. Mit deiner Erlaubnis willigst du ein, dass 
+      deine Daten an YouTube in den USA übermittelt werden. Weitere Informationen zur Datenverarbeitung von YouTube findest
+      du in der <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von YouTube</a>.
+    </p>
+    <button>Erlaube Inhalte von YouTube</button>
+  </form>
+</div>
+
 </div>
