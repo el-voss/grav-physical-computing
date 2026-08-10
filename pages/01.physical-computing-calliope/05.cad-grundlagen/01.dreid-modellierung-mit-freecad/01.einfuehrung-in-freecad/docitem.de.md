@@ -24,7 +24,7 @@ Um ein dreidimensionales Objekt am Computer konstruieren zu können, benötigt m
 Schaue das folgende Video und vollziehe es parallel mit FreeCAD nach.
 
 <div class="video">
-  <iframe class="video__iframe" width="560" height="315" src="https://www.youtube-nocookie.com/embed/z-IXY8jmJWs?si=R_aBrELXsnhsNCdT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe class="video__iframe" width="560" height="315" data-src="https://www.youtube-nocookie.com/embed/z-IXY8jmJWs?si=R_aBrELXsnhsNCdT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <form class="video__notice">
     <p>
       An dieser Stelle ist ein Video von Youtube eingebettet. Mit deiner Erlaubnis willigst du ein, dass 
