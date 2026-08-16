@@ -99,6 +99,18 @@ while True:
 </div>
 
 <div markdown="1" class="aufgabe">
+#### Ein Meter
+
+
+
+1. Markiere mit Klebeband auf dem Boden eine Strecke von genau 1m.
+2. Lasse den Roboter genau 1m weit fahren. Der Roboter soll erst starten, wenn die Taste A gedrückt wurde.
+3. Dokumentiere den Versuch und insbesondere die Kombination von Motorleistung und Zeit, die der Roboter für 1m braucht.
+4. Gib deinem Roboter Persönlichkeit: Lass ihn Töne abspielen und Lichtmuster auf der LED-Matrix anzeigen!
+
+</div>
+
+<div markdown="1" class="aufgabe">
 #### Quadratfahren
 
 ![bastelbot-quadrat-fahren](bastelbot-quadrat-fahren.png?lightbox=500&resize=500 "bastelbot-quadrat-fahren")
@@ -107,5 +119,12 @@ while True:
 2. Lass den Roboter das Quadrat abfahren! Sorge dafür, dass die Fahrt erst startet, wenn du auf Taste A gedrückt hast.
 
 Tipp: Damit sich der Roboter auf der Stelle dreht, lasse einen Motor vorwärts und den anderen rückwärts drehen (eine sogenannte "Hebelsteuerung"). Füge danach eine Pause mit dem Block "pausiere ... ms" ein, die genau so lang ist, dass sich der Roboter um 90° dreht.
+</div>
+
+<div markdown="1" class="aufgabe">
+#### Hindernis umfahren
+
+
+
 </div>
 
