@@ -317,5 +317,25 @@ Zwei mögliche Beispiele von Melodien mit Link zu den Noten:
 
 ## Aufbau des Calliope - Sensoren und Aktoren
 
+<div class="aufgabe" markdown="1">
+#### Aufbau des Calliope
 
+Auf der [Übersichtsseite des Calliope](https://calliope.cc/calliope-mini/uebersicht) wird dargestellt, welche Bauteile auf dem Calliope verbaut sind und wo diese zu finden sind.
 
+Erstelle ein Foto von deinem Calliope und beschrifte dieses Foto mit den Namen der Bauteilen. Markiere die Sensoren grün und die Aktoren orange.
+</div>
+
+<details class="details">
+<summary class="details__trigger details__title">Zusammenfassung: Sensoren und Aktoren</summary>
+<div class="details__content" markdown="1">
+
+<div class="notices green" markdown="1">
+#### Schleifen
+Für die Eingabe von Daten werden Sensoren benötigt; für die Ausgabe hingegen Aktoren:
+- Sensoren (auch Fühler genannt) sind elektrische Bauteile, die eine physikalische Größe aus der Umwelt (Temperatur, Helligkeit, Luftdruck oder auch ein mechanischer Druck mit dem Finger) in eine elektrische Größe (Widerstand, Spannung, elektrisches Potential, Stromstärke) umwandeln. Dadurch werden die physikalischen Größen aus der Umwelt einer elektronischen Verarbeitung zugänglich.
+- Aktoren (auch Aktuatoren genannt) sind elektrische Bauteile, die eine elektrische Größe in eine mechanische (Bewegung, Schallwellen) oder andere Größe (Temperatur, Licht, …) umwandeln. Sie ermöglichen, dass die elektronische Verarbeitung zu Handlungen bzw. Konsequenzen führen kann.
+
+</div>
+
+</div>
+</details>
