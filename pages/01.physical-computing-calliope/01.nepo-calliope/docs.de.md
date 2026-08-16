@@ -154,36 +154,25 @@ Ein Programm besteht aus einer Folge von Anweisungen. Man spricht auch von Algor
   <div class="python content-block" markdown="1">
 
 ```python
-# Imports go at the top
+# das ganze folgende Programm ist der Algorithmus
+
+# am Anfang werden weitere Programmbausteine importiert
 from calliopemini import *
 import neopixel
 import music
 np = neopixel.NeoPixel(pin_RGB, 3)
 
-display.show(3)  # Zahl 3 auf der LED-Marix anzeigen
+# nun folgen mehrere Anweisungen mit Argumenten, die nacheinander ausgeführt werden
+display.show(1)  # Anweisung: das Display soll die Zahl 1 zeigen. Die Zahl 1 ist das Argument
 
-np.fill((255,0,0)) # füllt alle RGB-LED mit der Farbe rot
-np.show()
+np.fill((0,255,0))  # Anweisung: RGB-LEDs mit Farbe grün füllen. Die Farbe grün ist das Argument, das als RGB-Tupel angegeben wird
+np.show()           # Anweisung: Füllung zeigen (ohne Argument)
 
-sleep(1000)  # 1000 ms, also 1 Sek. warten
+sleep(1000)  # Anweisung: warte 1000ms. Das Argument sind die 1000ms
 
-display.show(2)  # Zahl 2 auf der LED-Marix anzeigen
+display.scroll('hi!')  # Anweisung: Text über Display laufen lassen. Das Argument ist 'hi!'
 
-np.fill((255,255,0)) # füllt alle RGB-LED mit der Farbe gelb
-np.show()
-
-sleep(1000)  # 1000 ms, also 1 Sek. warten
-
-display.show(1)  # Zahl 1 auf der LED-Marix anzeigen
-
-np.fill((0,255,0)) # füllt alle RGB-LED mit der Farbe grün
-np.show()
-
-sleep(1000)  # 1000 ms, also 1 Sek. warten
-
-display.scroll('hi!')  # lässt Text über das Display laufen
-
-music.play(['c'])  # spielt die Note C
+music.play(['c'])  # Anweisung: Ton spielen. Das Argument ist das Zeichen 'c' innerhalb einer Liste [], da mehrere Noten hintereinander angegeben werden können, z. B. music.play(['c', 'd', 'e'])
     
 ```
 
