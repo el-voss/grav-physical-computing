@@ -1,15 +1,9 @@
 ---
-title: 'Kurze Einführung zum Calliope und zum Open Roberta Lab'
+title: 'Kurze Einführung zum Calliope'
 published: true
 menu: 'Kurze Einführung'
-media_order: 'calliope-bauteile.png,openroberta-calliope-uebersicht-erklaert.png,calliope-erstes-programm.png,calliope-anweisung-argument.png'
+media_order: 'calliope-bauteile.png,openroberta-calliope-uebersicht-erklaert.png,calliope-erstes-programm.png,calliope-anweisung-argument.png,calliope-erstes-programm-makecode.png'
 ---
-
-<style>
-    body {
-        --abk: 'KE';
-    }
-</style>
 
 Der Calliope mini ist ein Mikrocontroller, der in Deutschland auf Basis des BBC micro:bit entwickelt wurde. Er bringt einige Sensoren und Aktoren mit und eröffnet damit einen einfachen Einstieg in die Welt des *Physical Computing*, der schon Grundschulkinder begeistert. Die Möglichkeiten des Calliope reichen aber so weit, dass man auch in der Oberstufe noch spannende Projekte mit dem Calliope durchführen kann. Dieses Skript soll dir dabei helfen, einen Einstieg in die Welt des Physical Computing mit Hilfe des Calliope zu finden und darüber hinaus grundlegende Konzepte der Informatik kennen zu lernen. Wenn du Spaß daran gefunden hast, wirst du dich vielleicht auch für den Arduino interessieren, der auf den gleichen Grundlagen beruht, aber noch weit mehr Möglichkeiten bietet.
 
@@ -19,6 +13,7 @@ In diesem Kapitel lernst du...
 
 [TOC]
 
+<!--
 ## Der Aufbau des Calliope
 
 Auf dem Calliope sind schon einige Sensoren und Aktoren verbaut, die sich für kreative Projekte nutzen lassen. Die folgende Abbildung aus der Roboterkonfiguration des Open Roberta Lab gibt eine Übersicht.
@@ -38,9 +33,23 @@ Zudem lässt sich an der Pin-Reihe unter dem Wort "Prozessor" ein Elektromotor a
 Wer nun immer noch nicht genug Anschlüsse hat, kann an den zwei Pin-Reihen unter der Motor-Reihe weitere Stecker anlöten und auch diese Pins benutzen. Man sieht also, dass der Calliope sehr, sehr viele Möglichkeiten bietet, um kreativ zu werden!
 
 *Hinweis:* Wer sich für die genauen Bezeichnungen der Bauteile interessiert, wird auf der [Wikipedia-Seite zum Calliope](https://de.wikipedia.org/wiki/Calliope_mini#Hardware) fündig.
+-->
 
-## Der Calliope im Open Roberta Lab
+## Die Entwicklungsumgebung
 
+Der Calliope lässt sich mit verschiedenen Entwicklungsumgebungen oder Editoren programmieren. In diesem Skript werden drei Entwicklungsumgebungen vorgestellt: [Makecode](https://calliope.cc/programmieren/editoren/makecode), [Open Roberta Lab](https://calliope.cc/programmieren/editoren/open-roberta) und [Python Editor](https://calliope.cc/programmieren/editoren/python).
+
+! Die Entwicklungsumgebung für Python lässt sich nur mit dem Calliope v3 nutzen.
+
+<div markdown="1" class="aufgabe"> 
+#### Entwicklungsumgebung öffnen und abspeichern
+
+1. Öffne den Link zu der von euch im Unterricht verwendeten Entwicklungsumgebung. Die Seite stellt eine Übersicht zu den verschiedenen Funktionen der Entwicklungsumgebung bereit. Speichere den Link zu dieser Seite für den späteren Zugriff.
+2. Klicke auf der Übersichtsseite ganz oben auf "Editor starten". Mache dich mit der Entwicklungsumgebung vertraut. (*Sie wird dir auch im Unterricht vorgestellt.*)
+
+</div>
+
+<!--
 Das Open Roberta Lab ist eine Programmierumgebung für verschiedene Roboter-Systeme, die vom Fraunhofer Institut für intelligente Analyse- und Informationssysteme in Bonn entwickelt wird. Nach der Auswahl des eigenen Roboter-Systems, was in diesem Fall der Calliope mini ist, wird eine Reihe von Blöcken zur Verfügung gestellt, mit denen sich der Calliope sehr einfach auf graphische Art und Weise programmieren lässt. Die Blöcke greifen ineinander wie Puzzleteile! Die folgenden Abbildung gibt eine Übersicht über die Funktionen des Open Roberta Lab.
 
 ![Übersicht über die Funktionen des Open Roberta Lab](openroberta-calliope-uebersicht-erklaert.png?lightbox=1024&classes=caption "Übersicht über die Funktionen des Open Roberta Lab.")
@@ -50,19 +59,45 @@ Neben der graphischen Programmierung lässt sich die Wirkung des Programms auch 
 <center>
     <a href="https://lab.open-roberta.org" target="_blank">https://lab.open-roberta.org</a>.
 </center>
+-->
 
 ## Deine ersten Programme
 
 <div markdown="1" class="aufgabe"> 
-####Test der Funktionsweise
+#### Test der Funktionsweise
 
+<!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block" markdown="1">
+![calliope-erstes-programm-makecode](calliope-erstes-programm-makecode.png "Erstes Programm für den Calliope.")
+  </div>
+  <div class="roberta content-block" markdown="1">
 ![calliope-erstes-programm](calliope-erstes-programm.png "Erstes Programm für den Calliope.")
+  </div>
+  <div class="python content-block" markdown="1">
+
+```python
+
+    
+```
+
+  </div>
+</div>
+</div>
+
 
 1. Erstelle dein erstes Programm für den Calliope. Du kannst das oben abgebildete Programm nachbauen oder selbst ein eigenes Programm entwerfen.
-2. Schließe den Calliope am Computer an und klicke auf das Play-Symbol unten rechts, um das Programm auf den Calliope zu übertragen.
+2. Übertrage das Programm auf den Calliope.
 3. Schaue dir an, wie das Programm auf dem Calliope aussieht.
-4. Exportiere das Programm, um es auf deinem Computer zu speichern. Gehe dazu ins Menü oben links und auf *exportiere Programm*. Finde das Programm im Download-Ordner deines Computers und benenne es als `Startprogramm.xml`. Speichere es dann an einem sinnvollen Ort ab.
-*Hinweis:* Du kannst das Programm im gleichen Menü wieder importieren, um es zu einem späteren Zeitpunkt wieder aufzurufen.
+4. Speichere das Programm auf dem Computer an einem sinnvollen Ort.
 
 </div>
 
