@@ -114,7 +114,7 @@ sleep(1000)  # 1000 ms, also 1 Sek. warten
 
 display.scroll('hi!')  # lässt Text über das Display laufen
 
-music.play(['c'])
+music.play(['c'])  # spielt die Note C
     
 ```
 
