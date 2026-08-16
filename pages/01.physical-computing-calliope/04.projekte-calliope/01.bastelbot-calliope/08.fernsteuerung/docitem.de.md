@@ -1,5 +1,5 @@
 ---
-title: Fernsteuerung
+title: 'Fernsteuerung mit Joystick'
 show_pageimage: true
 image_width: 300
 image_height: 400
@@ -15,8 +15,8 @@ taxonomy:
         - Python
     Inhalte:
         - Joystick
-        - Motor
         - Funk
+        - Motor
     Niveau:
         - Fortgeschritten
 ---
