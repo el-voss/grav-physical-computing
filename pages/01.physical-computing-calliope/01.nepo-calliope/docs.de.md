@@ -2,7 +2,7 @@
 title: 'Kurze Einführung zum Calliope'
 published: true
 menu: 'Kurze Einführung'
-media_order: 'calliope-bauteile.png,openroberta-calliope-uebersicht-erklaert.png,calliope-erstes-programm.png,calliope-anweisung-argument.png,calliope-erstes-programm-makecode.png'
+media_order: 'calliope-bauteile.png,openroberta-calliope-uebersicht-erklaert.png,calliope-erstes-programm.png,calliope-anweisung-argument.png,calliope-erstes-programm-makecode.png,mc-algorithmus-anweisung-argument.png,orl-algorithmus-anweisung-argument (1).png'
 ---
 
 Der Calliope mini ist ein Mikrocontroller, der in Deutschland auf Basis des BBC micro:bit entwickelt wurde. Er bringt einige Sensoren und Aktoren mit und eröffnet damit einen einfachen Einstieg in die Welt des *Physical Computing*, der schon Grundschulkinder begeistert. Die Möglichkeiten des Calliope reichen aber so weit, dass man auch in der Oberstufe noch spannende Projekte mit dem Calliope durchführen kann. Dieses Skript soll dir dabei helfen, einen Einstieg in die Welt des Physical Computing mit Hilfe des Calliope zu finden und darüber hinaus grundlegende Konzepte der Informatik kennen zu lernen. Wenn du Spaß daran gefunden hast, wirst du dich vielleicht auch für den Arduino interessieren, der auf den gleichen Grundlagen beruht, aber noch weit mehr Möglichkeiten bietet.
@@ -134,8 +134,62 @@ music.play(['c'])  # spielt die Note C
 !!!!
 !!!! Ein Programm besteht aus einer Folge von Anweisungen. Man spricht auch von Algorithmen: Ein Algorithmus ist eine eindeutige Handlungsvorschrift zur Lösung eines Problems, die aus endlich vielen Anweisungen besteht (s. [Wikipedia](https://de.wikipedia.org/wiki/Algorithmus)).
 !!!!
-!!!! ![calliope-anweisung-argument](calliope-anweisung-argument.png?classes=caption "Anweisungen und Argumente in einem Algorithmus.")
-!!!!
+!!!! <!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block" markdown="1">
+![mc-algorithmus-anweisung-argument](mc-algorithmus-anweisung-argument.png?classes=caption "Anweisungen und Argumente in einem Algorithmus.")
+  </div>
+  <div class="roberta content-block" markdown="1">
+![orl-algorithmus-anweisung-argument (1)](orl-algorithmus-anweisung-argument%20%281%29.png?classes=caption "Anweisungen und Argumente in einem Algorithmus.")
+  </div>
+  <div class="python content-block" markdown="1">
+
+```python
+# Imports go at the top
+from calliopemini import *
+import neopixel
+import music
+np = neopixel.NeoPixel(pin_RGB, 3)
+
+display.show(3)  # Zahl 3 auf der LED-Marix anzeigen
+
+np.fill((255,0,0)) # füllt alle RGB-LED mit der Farbe rot
+np.show()
+
+sleep(1000)  # 1000 ms, also 1 Sek. warten
+
+display.show(2)  # Zahl 2 auf der LED-Marix anzeigen
+
+np.fill((255,255,0)) # füllt alle RGB-LED mit der Farbe gelb
+np.show()
+
+sleep(1000)  # 1000 ms, also 1 Sek. warten
+
+display.show(1)  # Zahl 1 auf der LED-Marix anzeigen
+
+np.fill((0,255,0)) # füllt alle RGB-LED mit der Farbe grün
+np.show()
+
+sleep(1000)  # 1000 ms, also 1 Sek. warten
+
+display.scroll('hi!')  # lässt Text über das Display laufen
+
+music.play(['c'])  # spielt die Note C
+    
+```
+
+  </div>
+</div>
+</div>
+!!!! 
 !!!! Eine Anweisung *kann* ein oder mehrere *Argumente* haben, die zum Beispiel festlegen, welche Farbe oder welcher Text angezeigt werden soll oder wie lange gewartet werden soll. Je nach Anweisung ist das Argument eine Farbe, eine Zahl, ein Text oder Bild.
 
 <div markdown="1" class="aufgabe">
