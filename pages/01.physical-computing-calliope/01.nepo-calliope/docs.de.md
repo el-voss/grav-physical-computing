@@ -2,7 +2,7 @@
 title: 'Kurze Einführung zum Calliope'
 published: true
 menu: 'Kurze Einführung'
-media_order: 'calliope-bauteile.png,openroberta-calliope-uebersicht-erklaert.png,calliope-erstes-programm.png,calliope-anweisung-argument.png,calliope-erstes-programm-makecode.png,mc-algorithmus-anweisung-argument.png,orl-algorithmus-anweisung-argument (1).png'
+media_order: 'calliope-bauteile.png,openroberta-calliope-uebersicht-erklaert.png,calliope-erstes-programm.png,calliope-anweisung-argument.png,calliope-erstes-programm-makecode.png,mc-algorithmus-anweisung-argument.png,orl-algorithmus-anweisung-argument (1).png,mc-start-dauerhaft-anmerkung.png,orl-start-dauerhaft-anmerkung.png'
 ---
 
 Der Calliope mini ist ein Mikrocontroller, der in Deutschland auf Basis des BBC micro:bit entwickelt wurde. Er bringt einige Sensoren und Aktoren mit und eröffnet damit einen einfachen Einstieg in die Welt des *Physical Computing*, der schon Grundschulkinder begeistert. Die Möglichkeiten des Calliope reichen aber so weit, dass man auch in der Oberstufe noch spannende Projekte mit dem Calliope durchführen kann. Dieses Skript soll dir dabei helfen, einen Einstieg in die Welt des Physical Computing mit Hilfe des Calliope zu finden und darüber hinaus grundlegende Konzepte der Informatik kennen zu lernen. Wenn du Spaß daran gefunden hast, wirst du dich vielleicht auch für den Arduino interessieren, der auf den gleichen Grundlagen beruht, aber noch weit mehr Möglichkeiten bietet.
@@ -186,7 +186,94 @@ Eine Anweisung *kann* ein oder mehrere *Argumente* haben, die zum Beispiel festl
 <div markdown="1" class="aufgabe">
 #### Ampel
 
-Programmiere eine einfache Ampel mit der RGB-LED.
+<!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block" markdown="1">
+1. Programmiere eine einfache Ampel mit der RGB-LED.
+2. Verschiebe das Skript vom "Start"-Block in den "dauerhaft"-Block (oder umgekehrt) und beschreibe den Unterschied.
+  </div>
+  <div class="roberta content-block" markdown="1">
+1. Programmiere eine einfache Ampel mit der RGB-LED.
+2. Ergänze um das Skript für die Ampel den Block "wiederhole unendlich oft" (aus der Kategorie "Kontrolle"). Beschreibe den Unterschied zu vorher.
+  </div>
+  <div class="python content-block" markdown="1">
+1. Programmiere eine einfache Ampel mit der RGB-LED.
+2. Ergänze vor dem Skript für die Ampel eine Zeile mit `while True:` und rücke das Skript für die Ampel ein (alles markieren und Taste TAB drücken, vgl. Beispiel unten). Beschreibe den Unterschied zu vorher.
+
+```python
+from calliopemini import *
+import neopixel
+np = neopixel.NeoPixel(pin_RGB, 3)
+
+while True:
+      # folgende eingerückten Anweisungen sind innerhalb der while-Schleife
+      np.fill((255,0,0)) # füllt alle RGB-LED mit der Farbe rot
+      np.show()
+
+# folgende nicht eingerückte Anweisungen sind nicht mehr innerhalb der while-Schleife
+np.fill((255,0,0)) # füllt alle RGB-LED mit der Farbe rot
+np.show()
+```
+
+  </div>
+</div>
+</div>
+
+</div>
+
+<div class="notices green" markdown="1">
+#### Schleifen
+
+Schleifen dienen dazu, Programmcode zu wiederholen. Es gibt unterschiedliche Arten von Schleifen, die wir im folgenden kennenlernen werden. Für den Anfang ist die Endlosschleife am wichtigsten, die den enthaltenen Code dauerhaft wiederholt. Unsere Programme werden sich zum größten Teil in einer Endlosschleife abspielen.
+
+<!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block" markdown="1">
+![mc-start-dauerhaft-anmerkung](mc-start-dauerhaft-anmerkung.png "mc-start-dauerhaft-anmerkung")
+  </div>
+  <div class="roberta content-block" markdown="1">
+![orl-start-dauerhaft-anmerkung](orl-start-dauerhaft-anmerkung.png "orl-start-dauerhaft-anmerkung")
+  </div>
+  <div class="python content-block" markdown="1">
+
+```python
+# die folgenden Befehle werden genau ein Mal beim Start des Programms ausgeführt
+from calliopemini import *
+import neopixel
+np = neopixel.NeoPixel(pin_RGB, 3)
+
+np.fill((255,0,0)) # füllt alle RGB-LED mit der Farbe rot
+np.show()
+
+while True:
+      # folgende eingerückten Anweisungen werden endlos wiederholt
+      np.fill((255,0,0)) # füllt alle RGB-LED mit der Farbe rot
+      np.show()
+
+# folgende nicht eingerückte Anweisungen werden nie ausgeführt, weil die obere Endlosschleife nie verlassen wird
+np.fill((255,0,0)) # füllt alle RGB-LED mit der Farbe rot
+np.show()
+```
+
+  </div>
+</div>
+</div>
 </div>
 
 <div markdown="1" class="aufgabe">
@@ -211,3 +298,7 @@ Zwei mögliche Beispiele von Melodien mit Link zu den Noten:
 </div>
 
 </div>
+
+
+
+
