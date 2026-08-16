@@ -14,6 +14,7 @@ taxonomy:
     Niveau:
         - Fortgeschritten
 media_order: 'funktion-drehung-links.png,funktion-drehung-rechts.png,funktion-fahre.png,funktion-motor-leistung.png,funktion-motor-stop.png,orl-funktion-geradeaus.png,orl-funktion-linksherum.png,orl-funktion-rechtsherum.png,funktion-struktogramm.png'
+featured_image: funktion-struktogramm.png
 ---
 
 [TOC]
