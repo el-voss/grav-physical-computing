@@ -130,6 +130,10 @@ music.play(['c'])  # spielt die Note C
 
 </div>
 
+<details class="details">
+<summary class="details__trigger details__title">Zusammenfassung: Algorithmus, Anweisung und Argument</summary>
+<div class="details__content" markdown="1">
+
 <div class="notices green" markdown="1">
 #### Algorithmus, Anweisung und Argument
 
@@ -183,6 +187,9 @@ music.play(['c'])  # Anweisung: Ton spielen. Das Argument ist das Zeichen 'c' in
 Eine Anweisung *kann* ein oder mehrere *Argumente* haben, die zum Beispiel festlegen, welche Farbe oder welcher Text angezeigt werden soll oder wie lange gewartet werden soll. Je nach Anweisung ist das Argument eine Farbe, eine Zahl, ein Text oder Bild.
 </div>
 
+</div>
+</details>
+
 <div markdown="1" class="aufgabe">
 #### Ampel
 
@@ -228,6 +235,11 @@ np.show()
 </div>
 
 </div>
+
+
+<details class="details">
+<summary class="details__trigger details__title">Zusammenfassung: Schleifen</summary>
+<div class="details__content" markdown="1">
 
 <div class="notices green" markdown="1">
 #### Schleifen
@@ -275,6 +287,9 @@ np.show()
 </div>
 </div>
 </div>
+
+</div>
+</details>
 
 <div markdown="1" class="aufgabe">
 #### Jukebox
