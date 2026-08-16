@@ -1,3 +1,18 @@
+# v3.4.6
+## 08/13/2026
+
+1. [](#bugfix)
+    * Fixed Git Sync's own settings never being recognised when saved from Admin Next, which left the repository password stored unencrypted and skipped remote/committer setup on the initial save [#255](https://github.com/trilbymedia/grav-plugin-git-sync/issues/255).
+    * Fixed saves to config, accounts, themes and other data areas not matching the tracked folder list when they come from Admin Next, so those changes are now committed like their admin-classic equivalents.
+
+# v3.4.5
+## 07/28/2026
+
+1. [](#bugfix)
+    * Fixed `{{pageTitle}}` and `{{pageRoute}}` in the commit message coming out as `NO TITLE FOUND` / `NO ROUTE FOUND` when saving from Admin Next [#254](https://github.com/trilbymedia/grav-plugin-git-sync/issues/254).
+    * Fixed the committer falling back to `GitSync` instead of the logged-in account when "Use Grav User Name" or "Use Grav User Full Name" is selected and the save comes from Admin Next.
+    * Page title and route are now also picked up on delete and media changes, not just page saves.
+
 # v3.4.4
 ## 06/30/2026
 

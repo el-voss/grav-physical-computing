@@ -31,6 +31,7 @@ use Grav\Framework\Flex\Interfaces\FlexObjectInterface;
 use Grav\Framework\Form\Interfaces\FormInterface;
 use Grav\Framework\Psr7\Response;
 use Grav\Framework\Session\SessionInterface;
+use Grav\Plugin\Api\Exceptions\ForbiddenException;
 use Grav\Plugin\Form\Form;
 use Grav\Plugin\Login\Events\PageAuthorizeEvent;
 use Grav\Plugin\Login\Events\UserLoginEvent;
@@ -100,6 +101,10 @@ class LoginPlugin extends Plugin
             'onTwigSiteVariables'       => ['onTwigSiteVariables', -100000],
             'onAdminTwigTemplatePaths'  => ['onAdminUntrustedHostNotice', 0],
             'onApiDashboardNotifications' => ['onApiDashboardNotifications', 0],
+            'onApiUserListColumns'      => ['onApiUserListColumns', 0],
+            'onApiUserListColumnData'   => ['onApiUserListColumnData', 0],
+            'onApiUserListRowActions'   => ['onApiUserListRowActions', 0],
+            'onApiUserListRowAction'    => ['onApiUserListRowAction', 0],
             'onFormProcessed'           => ['onFormProcessed', 0],
             'onUserLoginAuthenticate'   => [['userLoginAuthenticateByMagic', 10004], ['userLoginAuthenticateRateLimit', 10003], ['userLoginAuthenticateByRegistration', 10002], ['userLoginAuthenticateByRememberMe', 10001], ['userLoginAuthenticateByEmail', 10000], ['userLoginAuthenticate', 0]],
             'onUserLoginAuthorize'      => ['userLoginAuthorize', 0],
@@ -483,13 +488,29 @@ class LoginPlugin extends Plugin
         $redirect_route = $this->config->get('plugins.login.user_registration.redirect_after_activation');
         $redirect_code = null;
 
+        // Activation is the second unauthenticated endpoint that compares a
+        // secret token, so it gets the same treatment as password reset:
+        // a counter on failed attempts (GHSA-x239-6jqx-5hjh).
+        $rateLimiter = $this->login->getRateLimiter('token_attempts');
+        $userKey = (string)$username;
+
+        if ($rateLimiter->isRateLimited($userKey)) {
+            $message = $this->grav['language']->translate('PLUGIN_LOGIN.INVALID_REQUEST');
+            $messages->add($message, 'error');
+            $this->grav->redirectLangSafe($redirect_route ?: '/', $redirect_code);
+
+            return;
+        }
+
         if (empty($user->activation_token)) {
             $message = $this->grav['language']->translate('PLUGIN_LOGIN.INVALID_REQUEST');
             $messages->add($message, 'error');
         } else {
             [$good_token, $expire] = explode('::', $user->activation_token, 2);
 
-            if ($good_token === $token) {
+            // Constant-time: a plain === leaks how many leading characters
+            // of the token were right through its early exit.
+            if (hash_equals($good_token, (string)$token)) {
                 if (time() > $expire) {
                     $message = $this->grav['language']->translate('PLUGIN_LOGIN.ACTIVATION_LINK_EXPIRED');
                     $messages->add($message, 'error');
@@ -529,6 +550,8 @@ class LoginPlugin extends Plugin
                     $this->grav->fireEvent('onUserActivated', new Event(['user' => $user]));
                 }
             } else {
+                $rateLimiter->registerRateLimitedAction($userKey);
+
                 $message = $this->grav['language']->translate('PLUGIN_LOGIN.INVALID_REQUEST');
                 $messages->add($message, 'error');
             }
@@ -1044,6 +1067,25 @@ class LoginPlugin extends Plugin
         /** @var UserCollectionInterface $users */
         $users = $this->grav['accounts'];
 
+        // Registration is an unauthenticated endpoint that answers "is this
+        // address already taken?", so it gets a per-IP counter to stop it
+        // being walked through a list of addresses (GHSA-crh8-xm27-j9g9).
+        $registrationLimiter = $this->login->getRateLimiter('registrations');
+        $ipKey = $this->login->getIpKey();
+        $registrationLimiter->registerRateLimitedAction($ipKey, 'ip');
+
+        if ($registrationLimiter->isRateLimited($ipKey, 'ip')) {
+            $this->grav->fireEvent('onFormValidationError', new Event([
+                'form'    => $form,
+                'message' => $language->translate([
+                    'PLUGIN_LOGIN.TOO_MANY_REGISTRATION_ATTEMPTS',
+                    $registrationLimiter->getInterval()
+                ])
+            ]));
+            $event->stopPropagation();
+            return;
+        }
+
         // Check for existing username
         $username = $form_data->get('username');
         $existing_username = $users->find($username, ['username']);
@@ -1063,6 +1105,28 @@ class LoginPlugin extends Plugin
         $email    = $form_data->get('email');
         $existing_email = $users->find($email, ['email']);
         if ($existing_email->exists()) {
+            // When registration finishes over email anyway, answer exactly as
+            // a fresh address would be answered and tell the real owner
+            // instead, so the form stops confirming which addresses have an
+            // account (GHSA-crh8-xm27-j9g9). Without activation email the
+            // account is usable immediately, so a silent non-answer would
+            // leave a legitimate visitor stuck — keep the explicit message
+            // there.
+            if ($this->config->get('plugins.login.user_registration.options.send_activation_email', false)) {
+                $this->login->sendAlreadyRegisteredEmail($existing_email);
+
+                $fullname = $form_data->get('fullname') ?: $form_data->get('username');
+                $messages->add(
+                    $language->translate(['PLUGIN_LOGIN.ACTIVATION_NOTICE_MSG', $fullname]),
+                    'info'
+                );
+
+                $event->stopPropagation();
+                $redirect = $this->config->get('plugins.login.user_registration.redirect_after_registration');
+                $this->grav->redirectLangSafe($redirect ?: $this->grav['uri']->rootUrl(), 302);
+                return;
+            }
+
             $this->grav->fireEvent('onFormValidationError', new Event([
                 'form'    => $form,
                 'message' => $language->translate([
@@ -1674,5 +1738,180 @@ class LoginPlugin extends Plugin
             'reappear_after' => '+7 days',
         ];
         $event['notifications'] = $notifications;
+    }
+
+    /**
+     * [onApiUserListColumns] Declare the "Login" column on the Admin Next Users list.
+     *
+     * Shows a badge on accounts currently locked out by the failed-login rate
+     * limiter, which is otherwise invisible to an administrator — the lockout
+     * lives in the cache, not on the account.
+     *
+     * @param Event $event
+     * @return void
+     */
+    public function onApiUserListColumns(Event $event): void
+    {
+        $columns = $event['columns'] ?? [];
+        $columns[] = [
+            'id' => 'login-lockout',
+            'plugin' => 'login',
+            'label' => $this->grav['language']->translate('PLUGIN_LOGIN.LOCKOUT_COLUMN_LABEL'),
+            'field' => 'login.lockout',
+            'formatter' => 'badge',
+            'sortable' => false,
+            'priority' => 10,
+            'authorize' => 'api.users.read',
+        ];
+        $event['columns'] = $columns;
+    }
+
+    /**
+     * [onApiUserListColumnData] Fill in the lockout badge for the served page of users.
+     *
+     * Resolves the whole locked set in one sweep and then looks each username up,
+     * so the cost is independent of how many users the page lists.
+     *
+     * @param Event $event
+     * @return void
+     */
+    public function onApiUserListColumnData(Event $event): void
+    {
+        $usernames = $event['usernames'] ?? [];
+        if (!is_array($usernames) || !$usernames) {
+            return;
+        }
+
+        $locked = $this->getLoginInstance()->getLockedAccounts();
+        if (!$locked) {
+            return;
+        }
+
+        $language = $this->grav['language'];
+        $data = $event['data'] ?? [];
+        foreach ($usernames as $username) {
+            if (!isset($locked[$username])) {
+                continue;
+            }
+
+            $data[$username]['login.lockout'] = $language->translate([
+                'PLUGIN_LOGIN.LOCKOUT_COLUMN_VALUE',
+                $locked[$username]['attempts'],
+            ]);
+        }
+        $event['data'] = $data;
+    }
+
+    /**
+     * [onApiUserListRowActions] Declare the per-user Unlock button.
+     *
+     * @param Event $event
+     * @return void
+     */
+    public function onApiUserListRowActions(Event $event): void
+    {
+        $actions = $event['actions'] ?? [];
+        $actions[] = [
+            'id' => 'login-unlock',
+            'plugin' => 'login',
+            'label' => $this->grav['language']->translate('PLUGIN_LOGIN.LOCKOUT_UNLOCK_LABEL'),
+            'icon' => 'fa-unlock',
+            'action' => 'unlock',
+            'priority' => 10,
+            'authorize' => 'api.users.write',
+        ];
+        $event['actions'] = $actions;
+    }
+
+    /**
+     * [onApiUserListRowAction] Clear an account's failed-login lockout.
+     *
+     * The API plugin re-checks this action's declared `authorize` against the
+     * caller before dispatching, and resolves the username against a real
+     * account, so by the time we get here the request is already vetted.
+     *
+     * @param Event $event
+     * @return void
+     */
+    public function onApiUserListRowAction(Event $event): void
+    {
+        if (($event['id'] ?? '') !== 'login-unlock') {
+            return;
+        }
+
+        $username = $event['username'] ?? '';
+        if (!is_string($username) || $username === '') {
+            return;
+        }
+
+        // This handler's own half of the row-action contract. Unlocking clears
+        // every rate limit standing against an account, so a caller who is not a
+        // super admin must not do it to one. The API plugin enforces the same
+        // floor before dispatching; this is the belt to its braces, and only ever
+        // runs underneath it, so ForbiddenException is always loaded by the time
+        // we could throw. (GHSA-985r-mpj8-5rqw)
+        $caller = $event['user'] ?? null;
+        $target = $this->grav['accounts']->load($username);
+        $callerIsSuper = $caller instanceof UserInterface
+            && ($caller->authorize('admin.super') === true || $caller->authorize('api.super') === true);
+        if ($target && $target->exists() && !$callerIsSuper && $this->accessGrantsSuper($target)) {
+            throw new ForbiddenException("Only super admins can clear a super admin account's lockout.");
+        }
+
+        $language = $this->grav['language'];
+        $cleared = $this->getLoginInstance()->unlockUser($username);
+
+        $event['result'] = [
+            'status' => 'success',
+            'message' => $cleared
+                ? $language->translate(['PLUGIN_LOGIN.LOCKOUT_UNLOCKED', $username])
+                : $language->translate(['PLUGIN_LOGIN.LOCKOUT_NOT_LOCKED', $username]),
+        ];
+    }
+
+    /**
+     * Does this account's own `access` map confer super-admin authority, under
+     * either flag? A classic `admin.super` account may not carry `api.super`, and
+     * vice versa, so both count.
+     *
+     * Reads the raw access map rather than calling authorize() on purpose: an
+     * account loaded from disk is neither authenticated nor authorized, so
+     * UserObject::authorize() returns false for it whatever its ACL actually
+     * says. This mirrors the API plugin's own accessGrantsSuper().
+     *
+     * @param UserInterface $user
+     * @return bool
+     */
+    protected function accessGrantsSuper(UserInterface $user): bool
+    {
+        $access = $user->get('access');
+        if (!is_array($access)) {
+            return false;
+        }
+
+        foreach (['admin', 'api'] as $scope) {
+            if (!empty($access[$scope]['super']) || !empty($access["{$scope}.super"])) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * The Login service, instantiated on demand.
+     *
+     * The Users list is served by the API plugin, which doesn't necessarily run
+     * the front-end bootstrap that registers `login` in the container.
+     *
+     * @return Login
+     */
+    protected function getLoginInstance(): Login
+    {
+        if (!isset($this->grav['login'])) {
+            $this->grav['login'] = new Login($this->grav);
+        }
+
+        return $this->grav['login'];
     }
 }

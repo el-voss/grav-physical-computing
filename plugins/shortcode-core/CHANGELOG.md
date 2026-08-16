@@ -1,3 +1,16 @@
+# v6.2.5
+## 08/11/2026
+
+1. [](#bugfix)
+    * [security] The `[lorem]` shortcode's `tag` option is now restricted to a plain tag name, closing a hole where a crafted value could attach an event handler to the generated markup and run script in a visitor's or an administrator's browser ([GHSA-hvm8-wx3f-j774](https://github.com/getgrav/grav/security/advisories/GHSA-hvm8-wx3f-j774)).
+    * [security] The `[details]` shortcode's `summary` text is now escaped when written into the page, so markup in a summary is shown as text instead of being rendered.
+
+# v6.2.4
+## 08/06/2026
+
+1. [](#improved)
+    * Custom shortcodes can now pass asset options such as priority and group as a third argument to `addAssets()`, instead of those options being silently ignored [#133](https://github.com/getgrav/grav-plugin-shortcode-core/issues/133)
+
 # v6.2.3
 ## 07/21/2026
 

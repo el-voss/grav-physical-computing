@@ -1,3 +1,16 @@
+# v1.10.55
+## 08/11/2026
+
+1. [](#bugfix)
+    * [security] The page "Save As" action now rejects a language code that is not one of the site's configured languages, closing a path that let an editor write a Markdown file outside the pages folder ([GHSA-h9g9-73c3-23c9](https://github.com/getgrav/grav/security/advisories/GHSA-h9g9-73c3-23c9)).
+
+
+# v1.10.54
+## 08/07/2026
+
+1. [](#bugfix)
+    * Deleting a media file whose name contains a bracket or a similar character now removes its retina copies and metadata, which were previously left behind.
+    * Deleting a media file no longer also removes files belonging to a different item whose name ends with the same text, so deleting `banner.jpg` leaves `my-banner@2x.jpg` alone.
 
 # v1.10.53
 ## 07/21/2026

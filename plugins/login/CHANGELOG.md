@@ -1,3 +1,28 @@
+# v3.9.2
+## 08/07/2026
+
+1. [](#bugfix)
+    * [security] Invitation emails now honour the Site Host setting like the other login emails do, so an invitation link can no longer be pointed at a spoofed host by the address the request arrived on ([GHSA-69vf-mjxw-x79j](https://github.com/getgrav/grav/security/advisories/GHSA-69vf-mjxw-x79j)).
+    * [security] With Require Trusted Host enabled, activation, magic login and invitation emails are now held back as well, where previously only password reset emails were ([GHSA-69vf-mjxw-x79j](https://github.com/getgrav/grav/security/advisories/GHSA-69vf-mjxw-x79j)).
+    * [security] An account that can manage users but is not a super admin can no longer clear a super admin's login lockout from the Users list ([GHSA-985r-mpj8-5rqw](https://github.com/getgrav/grav/security/advisories/GHSA-985r-mpj8-5rqw)).
+    * The Site Host and Require Trusted Host settings now describe every kind of email they affect, rather than naming only password reset and activation.
+
+# v3.9.1
+## 08/05/2026
+
+1. [](#bugfix)
+    * [security] Password reset and account activation links are now checked with a routine that takes the same amount of time whichever characters differ, so the check can no longer hint at how much of a guess was right ([GHSA-x239-6jqx-5hjh](https://github.com/getgrav/grav/security/advisories/GHSA-x239-6jqx-5hjh)).
+    * [security] Repeatedly submitting a wrong password reset or activation link for the same account is now refused after a handful of tries, configurable under the plugin's security settings.
+    * [security] When registration finishes over email, submitting an address that already has an account now gives the same answer as any other address, and a notice goes to the account holder instead, so the form no longer confirms who is registered ([GHSA-crh8-xm27-j9g9](https://github.com/getgrav/grav/security/advisories/GHSA-crh8-xm27-j9g9)).
+    * [security] Registration attempts from one address are now capped over a time window, configurable under the plugin's user registration settings.
+
+# v3.9.0
+## 07/30/2026
+
+1. [](#new)
+    * Added a `bin/plugin login unlock-user` command to clear the temporary lockout applied after too many failed logins, by username, by IP address, or all at once.
+    * The Admin Next users list now shows which accounts are locked out, with a button to clear the lockout.
+
 # v3.8.13
 ## 07/14/2026
 
