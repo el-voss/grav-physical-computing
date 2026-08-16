@@ -3,7 +3,7 @@ title: 'Fahren lernen'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'motorblock.png,funktion-drehung-links.png,funktion-drehung-rechts.png,funktion-motor-leistung.png,funktion-motor-stop.png,bastelbot-quadrat-fahren.png,funktion-fahre.png,orl-funktion-geradeaus.png,orl-funktion-linksherum.png,orl-funktion-rechtsherum.png,orl-motorkonfiguration.png,orl-motoren-steuern.png'
+media_order: 'motorblock.png,funktion-drehung-links.png,funktion-drehung-rechts.png,funktion-motor-leistung.png,funktion-motor-stop.png,bastelbot-quadrat-fahren.png,funktion-fahre.png,orl-funktion-geradeaus.png,orl-funktion-linksherum.png,orl-funktion-rechtsherum.png,orl-motorkonfiguration.png,orl-motoren-steuern.png,genau-1m-fahren.png,hindernis-umfahren-1m.png,hindernis-umfahren-quadrat.png'
 taxonomy:
     Voraussetzungen:
         - 'Bau des Fahrgestells'
@@ -101,7 +101,7 @@ while True:
 <div markdown="1" class="aufgabe">
 #### Ein Meter
 
-
+![genau-1m-fahren](genau-1m-fahren.png?lightbox=500&resize=500 "genau-1m-fahren")
 
 1. Markiere mit Klebeband auf dem Boden eine Strecke von genau 1m.
 2. Lasse den Roboter genau 1m weit fahren. Der Roboter soll erst starten, wenn die Taste A gedrückt wurde.
@@ -124,7 +124,14 @@ Tipp: Damit sich der Roboter auf der Stelle dreht, lasse einen Motor vorwärts u
 <div markdown="1" class="aufgabe">
 #### Hindernis umfahren
 
+Die folgenden Programme sollen mit Hilfe von Schleifen möglichst effizient gestaltet werden.
 
+1. Positioniere in der Mitte der Strecke von 1m ein Hindernis. Programmiere den Roboter so, dass er dieses Hindernis umfährt.
 
+![hindernis-umfahren-1m](hindernis-umfahren-1m.png?lightbox=500&resize=500 "hindernis-umfahren-1m")
+
+2. Positioniere auf jeder Strecke des Quadrats mit Seitenlänge 1m ein Hindernis. Programmiere den Roboter so, dass er alle Hindernisse umfährt.
+
+![hindernis-umfahren-quadrat](hindernis-umfahren-quadrat.png?lightbox=500&resize=500 "hindernis-umfahren-quadrat")
 </div>
 
