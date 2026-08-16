@@ -85,7 +85,36 @@ Neben der graphischen Programmierung lässt sich die Wirkung des Programms auch 
   <div class="python content-block" markdown="1">
 
 ```python
+# Imports go at the top
+from calliopemini import *
+import neopixel
+import music
+np = neopixel.NeoPixel(pin_RGB, 3)
 
+display.show(3)  # Zahl 3 auf der LED-Marix anzeigen
+
+np.fill((255,0,0)) # füllt alle RGB-LED mit der Farbe rot
+np.show()
+
+sleep(1000)  # 1000 ms, also 1 Sek. warten
+
+display.show(2)  # Zahl 2 auf der LED-Marix anzeigen
+
+np.fill((255,255,0)) # füllt alle RGB-LED mit der Farbe gelb
+np.show()
+
+sleep(1000)  # 1000 ms, also 1 Sek. warten
+
+display.show(1)  # Zahl 1 auf der LED-Marix anzeigen
+
+np.fill((0,255,0)) # füllt alle RGB-LED mit der Farbe grün
+np.show()
+
+sleep(1000)  # 1000 ms, also 1 Sek. warten
+
+display.scroll('hi!')  # lässt Text über das Display laufen
+
+music.play(['c'])
     
 ```
 
