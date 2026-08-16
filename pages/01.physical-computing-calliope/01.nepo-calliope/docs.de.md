@@ -330,7 +330,7 @@ Erstelle ein Foto von deinem Calliope und beschrifte dieses Foto mit den Namen d
 <div class="details__content" markdown="1">
 
 <div class="notices green" markdown="1">
-#### Schleifen
+#### Sensoren und Aktoren
 Für die Eingabe von Daten werden Sensoren benötigt; für die Ausgabe hingegen Aktoren:
 - Sensoren (auch Fühler genannt) sind elektrische Bauteile, die eine physikalische Größe aus der Umwelt (Temperatur, Helligkeit, Luftdruck oder auch ein mechanischer Druck mit dem Finger) in eine elektrische Größe (Widerstand, Spannung, elektrisches Potential, Stromstärke) umwandeln. Dadurch werden die physikalischen Größen aus der Umwelt einer elektronischen Verarbeitung zugänglich.
 - Aktoren (auch Aktuatoren genannt) sind elektrische Bauteile, die eine elektrische Größe in eine mechanische (Bewegung, Schallwellen) oder andere Größe (Temperatur, Licht, …) umwandeln. Sie ermöglichen, dass die elektronische Verarbeitung zu Handlungen bzw. Konsequenzen führen kann.
