@@ -10,9 +10,7 @@ taxonomy:
     Voraussetzungen:
         - 'Kurze Einführung'
     Entwicklungsumgebung:
-        - Makecode
         - OpenRoberta
-        - Python
     Inhalte:
         - Fallunterscheidungen
         - Sensor
