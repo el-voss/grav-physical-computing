@@ -7,6 +7,12 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 taxonomy:
+    Voraussetzungen:
+        - 'Kurze Einführung'
+    Entwicklungsumgebung:
+        - Makecode
+        - OpenRoberta
+        - Python
     Inhalte:
         - Fallunterscheidungen
         - Sensor
