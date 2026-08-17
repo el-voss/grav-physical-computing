@@ -1,7 +1,7 @@
 ---
 title: 'Verarbeitung von Umwelteingaben'
 menu: 'Verarbeitung von Umwelteingaben'
-media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,verzweigungen.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png,nachtlicht-flackert.png,knopfprobleme1.png,knopfprobleme2.png,verzweigungsproblem.png'
+media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,verzweigungen.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png,nachtlicht-flackert.png,knopfprobleme1.png,knopfprobleme2.png,verzweigungsproblem.png,struktogramm-verzweigung.png'
 featured_image: bedingung-mit-schwellwert.png
 show_pageimage: true
 image_width: 300
