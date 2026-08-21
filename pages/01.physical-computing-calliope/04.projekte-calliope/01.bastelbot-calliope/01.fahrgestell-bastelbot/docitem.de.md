@@ -94,8 +94,8 @@ Schließe die Motoren an der Pin-Leiste des Calliope an. Dazu müssen die Kabel 
 <div markdown="1" class="aufgabe">
 #### Montage und Verbindung
 
-1. Recherchiere die [Funktionsweise und Verkabelung des Ultraschallsensors](/physical-computing-calliope/bauteilkunde/sensoren-calliope/ultraschallsensor).
-2. Bringe den Ultraschallsensor so am Roboter an, dass der Ultraschallsensor nach vorne "guckt", und führe die Verkabelung durch.
+1. Recherchiere die [Verkabelung des Ultraschallsensors](/physical-computing-calliope/bauteilkunde/sensoren-calliope/ultraschallsensor).
+2. Bringe den Ultraschallsensor so am Roboter an, dass der Ultraschallsensor mittig auf der Lochplatte nach vorne "guckt", und führe die Verkabelung durch.
 
 ![bastelbot-mit-ultraschallsensor](bastelbot-mit-ultraschallsensor.png?lightbox=1024&resize=500&classes=caption "Bringe den Ultraschallsensor vorne am Bastelbot an.")
 </div>
