@@ -226,7 +226,7 @@ Auf dem Display wird "laut" angezeigt, wenn der gemessene Wert für die Lautstä
 
 **Wichtig:** Die folgenden Blöcke sind keine Verzweigungen, sondern sogenannte **Ereignisse**. 
 ![mc-ereignis](mc-ereignis.png?resize=700 "mc-ereignis")
-Sie unterbrechen das eigentlich ablaufende Programm in der Endlosschleife, wenn das angegebene Ereignis eintritt. Diese Unterbrechung sollte immer *möglichst kurz* sein, weil das Programm sonst bei mehreren Ereignissen zu viel hin- und herspringt und man den Überblick verliert. Insbesondere sind (Endlos-)Schleifen innerhalb eines Ereignisses ein *No-Go*.
+Ereignisse unterbrechen das eigentlich ablaufende Programm in der Endlosschleife, wenn das angegebene Ereignis eintritt. Diese Unterbrechung sollte immer *möglichst kurz* sein, weil das Programm sonst bei mehreren Ereignissen zu viel hin- und herspringt und man den Überblick verliert. Insbesondere sind (Endlos-)Schleifen innerhalb eines Ereignisses ein *No-Go*.
   </div>
   <div class="roberta content-block" markdown="1">
 
