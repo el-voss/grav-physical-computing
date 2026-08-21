@@ -29,6 +29,9 @@ Die wichtigsten Bestandteile des Ultraschallsensors sind der “Transducer” (*
 
 Ultraschallsensoren gibt es in verschiedenen Varianten und mit verschiedenen Verbindungsmöglichkeiten.
 
+<details class="details">
+<summary class="details__trigger details__title">Verbindung mit Grove</summary>
+<div class="details__content" markdown="1">
 ## Verbindung mit Grove
 
 <div markdown="1" class="clearfix">
@@ -89,8 +92,15 @@ while True:
 </div>
 </div>
 
+</div>
+</details>
 
 
+
+
+<details class="details">
+<summary class="details__trigger details__title">Verbindung mit Jacdac</summary>
+<div class="details__content" markdown="1">
 ## Verbindung mit Jacdac
 
 !!!! Über den Jacdac-Anschluss können auf einfache Weise Sensoren und Aktoren an den Calliope angeschlossen und angesteuert werden. Es können mehrere Jacdac-Bauteile hintereinander angeschlossen werden. Über den Jacdac-Hub können sie auch parallel angeschlossen werden. Jacdac ermöglicht nicht nur die Kommunikation von Sensor und Calliope, sondern auch per WebUSB mit Makecode. Auf diese Weise wird der aktuelle Sensorwert direkt in Makecode angezeigt.
@@ -137,6 +147,17 @@ Der Block ```<Messwert> Entfernung (m)``` stellt vier mögliche Messwerte in Met
 </div>
 </div>
 
+
+</div>
+</details>
+
+
+
+
+
+<details class="details">
+<summary class="details__trigger details__title">Verbindung mit Jumper-Kabeln</summary>
+<div class="details__content" markdown="1">
 ## Verbindung mit der Pinleiste
 
 !! **Achtung:** Der HC-SR04 funktioniert nur mit dem Calliope, wenn er sich mit 3,3V betreiben lässt! Die meisten Ultraschallsensoren, die man findet, funktionieren allerdings nur mit 5V, daher muss man genau hinschauen.
@@ -230,6 +251,9 @@ while True:
 </div>
 </div>
 
+
+</div>
+</details>
 
 
 ## Anwendung
