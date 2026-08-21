@@ -3,7 +3,7 @@ title: 'Drehregler / Potentiometer'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'poti.jpg,orl-poti-serielle-ausgabe.png,mc-poti-serielle-ausgabe.png,calliope-potentiometer.png,calliope-potentiometer-ersatzschaltskizze.png,poti-schaltsymbol.png,orl-conf-poti-serielle-ausgabe.png,serial-monitor-starten.png,pwm-analog-diagramm.png,mc-poti-serieller-monitor.png,py-poti-serieller-monitor.png,poti2.jpg'
+media_order: 'poti.jpg,orl-poti-serielle-ausgabe.png,mc-poti-serielle-ausgabe.png,calliope-potentiometer.png,calliope-potentiometer-ersatzschaltskizze.png,poti-schaltsymbol.png,orl-conf-poti-serielle-ausgabe.png,serial-monitor-starten.png,pwm-analog-diagramm.png,mc-poti-serieller-monitor.png,py-poti-serieller-monitor.png,poti2.jpg,jacdac-kabel.jpg,jumper-kabel.jpg'
 featured_image: poti2.jpg
 taxonomy:
     Inhalte:
@@ -24,12 +24,22 @@ Ein Drehregler oder Potentiometer ist ein Widerstand, der in zwei Teile aufgetei
 Es gibt auch Versionen, bei denen die Größe der Teilwiderstände nicht durch Drehung, sondern durch Verschiebung festgelegt wird. Man spricht dann von einem Schieberegler.
 </div>
 
+
+<details class="details">
+<summary class="details__trigger details__title" markdown="1">![jacdac-kabel](jacdac-kabel.jpg?resize=100 "jacdac-kabel") Verbindung mit Jacdac</summary>
+<div class="details__content" markdown="1">
 ## Verbindung mit Jacdac
 
 !!!! Über den Jacdac-Anschluss können auf einfache Weise Sensoren und Aktoren an den Calliope angeschlossen und angesteuert werden. Es können mehrere Jacdac-Bauteile hintereinander angeschlossen werden. Über den Jacdac-Hub können sie auch parallel angeschlossen werden. Jacdac ermöglicht nicht nur die Kommunikation von Sensor und Calliope, sondern auch per WebUSB mit Makecode. Auf diese Weise wird der aktuelle Sensorwert direkt in Makecode angezeigt.
 
 **Der Anschluss und die Programmierung ist auf der [Jacdac-Seite von calliope.cc](https://calliope.cc/calliope-mini/erweiterungen/jacdac#schieberegler) schön gezeigt**.
 
+</div>
+</details>
+
+<details class="details">
+<summary class="details__trigger details__title" markdown="1">![jumper-kabel](jumper-kabel.jpg?resize=100 "jumper-kabel") Verbindung mit Jumper-Kabeln</summary>
+<div class="details__content" markdown="1">
 ## Verbindung mit der Pinleiste
 
 ### Schaltung
@@ -112,6 +122,9 @@ Ausgabe des Analogwerts des Potentiometers auf dem seriellen Monitor.
   </div>
 </div>
 </div>
+
+</div>
+</details>
 
 ## Aufgaben
 
