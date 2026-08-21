@@ -3,7 +3,7 @@ title: 'Fahren lernen'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'motorblock.png,funktion-drehung-links.png,funktion-drehung-rechts.png,funktion-motor-leistung.png,funktion-motor-stop.png,bastelbot-quadrat-fahren.png,funktion-fahre.png,orl-funktion-geradeaus.png,orl-funktion-linksherum.png,orl-funktion-rechtsherum.png,orl-motorkonfiguration.png,orl-motoren-steuern.png,genau-1m-fahren.png,hindernis-umfahren-1m.png,hindernis-umfahren-quadrat.png,mc-einfache-verzweigung.png,mc-einfache-zählschleife.png,mc-ereignis.png,mc-sequenz.png,mc-verzweigung-mit-vgl.png'
+media_order: 'motorblock.png,funktion-drehung-links.png,funktion-drehung-rechts.png,funktion-motor-leistung.png,funktion-motor-stop.png,bastelbot-quadrat-fahren.png,funktion-fahre.png,orl-funktion-geradeaus.png,orl-funktion-linksherum.png,orl-funktion-rechtsherum.png,orl-motorkonfiguration.png,orl-motoren-steuern.png,genau-1m-fahren.png,hindernis-umfahren-1m.png,hindernis-umfahren-quadrat.png,mc-einfache-verzweigung.png,mc-einfache-zählschleife.png,mc-ereignis.png,mc-sequenz.png,mc-verzweigung-mit-vgl.png,orl-einfache-zählschleife.png,orl-sequenz.png,orl-verzweigung-mit-vgl.png,orl-verzweigung.png'
 taxonomy:
     Voraussetzungen:
         - 'Bau des Fahrgestells'
@@ -160,7 +160,7 @@ Eine **Sequenz** ist eine Folge von Anweisungen, die nacheinander ausgeführt we
 ![mc-sequenz](mc-sequenz.png?resize=400 "mc-sequenz")
   </div>
   <div class="roberta content-block" markdown="1">
-
+![orl-sequenz](orl-sequenz.png?resize=400 "orl-sequenz")
   </div>
   <div class="python content-block" markdown="1">
 
@@ -192,7 +192,8 @@ Die Schleife lässt "hi!" vier Mal auf der LED-Matrix anzeigen.
 ![mc-einfache-zählschleife](mc-einfache-z%C3%A4hlschleife.png?resize=400 "mc-einfache-zählschleife")
   </div>
   <div class="roberta content-block" markdown="1">
-
+Die Schleife lässt "Hallo" vier Mal auf der LED-Matrix anzeigen.
+![orl-einfache-zählschleife](orl-einfache-z%C3%A4hlschleife.png?resize=400 "orl-einfache-zählschleife")
   </div>
   <div class="python content-block" markdown="1">
 Das folgende Programm zeigt zwei Mal "Emma" an. In einem späteren Abschnitt gehen wir genauer auf die Bedeutung von `i` ein.
@@ -221,7 +222,7 @@ Bei einer **Verzweigung** werden Anweisungen nur unter einer bestimmten Bedingun
 Auf dem Display wird "A" angezeigt, wenn der Knopf A gedrückt wird
 ![mc-einfache-verzweigung](mc-einfache-verzweigung.png?resize=400 "mc-einfache-verzweigung")
 
-Auf dem Display wird "laut" angezeigt, wenn der gemessene Wert für die Lautstärke größer als 125 ist.
+Auf dem Display wird "laut" angezeigt, wenn der gemessene Wert für die Lautstärke größer als 125 ist. Die Wahr-/Falsch-Bedingung ergibt sich aus dem Vergleich des Messwertes mit einem vorgegebenen Wert.
 ![mc-verzweigung-mit-vgl](mc-verzweigung-mit-vgl.png?resize=400 "mc-verzweigung-mit-vgl")
 
 **Wichtig:** Die folgenden Blöcke sind keine Verzweigungen, sondern sogenannte **Ereignisse**. 
@@ -229,7 +230,11 @@ Auf dem Display wird "laut" angezeigt, wenn der gemessene Wert für die Lautstä
 Ereignisse unterbrechen das eigentlich ablaufende Programm in der Endlosschleife, wenn das angegebene Ereignis eintritt. Diese Unterbrechung sollte immer *möglichst kurz* sein, weil das Programm sonst bei mehreren Ereignissen zu viel hin- und herspringt und man den Überblick verliert. Insbesondere sind (Endlos-)Schleifen innerhalb eines Ereignisses ein *No-Go*.
   </div>
   <div class="roberta content-block" markdown="1">
+Auf dem Display wird "A" angezeigt, wenn der Knopf A gedrückt wird
+![orl-verzweigung](orl-verzweigung.png?resize=400 "orl-verzweigung")
 
+Auf dem Display wird "laut" angezeigt, wenn der gemessene Wert für die Lautstärke größer als 50% ist. Die Wahr-/Falsch-Bedingung ergibt sich aus dem Vergleich des Messwertes mit einem vorgegebenen Wert.
+![orl-verzweigung-mit-vgl](orl-verzweigung-mit-vgl.png?resize=400 "orl-verzweigung-mit-vgl")
   </div>
   <div class="python content-block" markdown="1">
 
@@ -239,6 +244,7 @@ if button_a.is_pressed():
      display.show("A")  # der Inhalt der Verzweigung muss eingerückt sein!
 
 # auf dem Display wird "laut" angezeigt, wenn der gemessene Wert für die Lautstärke größer als 125 ist
+# Die Wahr-/Falsch-Bedingung ergibt sich aus dem Vergleich des Messwertes mit einem vorgegebenen Wert.
 if microphone.sound_level() > 125:
         display.show("laut")   # der Inhalt der Verzweigung muss eingerückt sein!
 ```
