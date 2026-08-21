@@ -23,6 +23,9 @@ Der Infrarot-Sensor TCRT5000 sendet Infrarotstrahlen aus und registriert die ref
 
 Auf der Unterseite des Moduls sind zwei Seiten zu erkennen. Die durchsichtige/bläuliche Seite ist eine Infrarot-LED, die Licht im Infrarot-Bereich aussendet, welches für das menschliche Auge unsichtbar ist. Das Infrarot-Licht wird (abhängig von der Art und Farbe der Oberfläche) unterschiedlich gut reflektiert. Das reflektierte Infrarot-Licht trifft dann auf die dunkle Seite des Sensors. Dort befindet sich ein Phototransistor, der die Infrarotstrahlen registriert und daraus einen Strom macht. Der Strom ist umso stärker, je mehr Infrarotstrahlen auf den Phototransistor treffen. Die dunkle Kunstharzschicht dient dazu, das normale Tageslicht herauszufiltern, damit der Sensor nicht schon durch das normale Tageslicht ausgelöst wird, das ebenfalls Infrarotstrahlen enthält.
 
+<details class="details">
+<summary class="details__trigger details__title" markdown="1">![jumper-kabel](jumper-kabel.jpg?resize=100 "jumper-kabel") Verbindung mit Jumper-Kabeln</summary>
+<div class="details__content" markdown="1">
 ## Verbindung mit der Pinleiste
 
 Durch den Stromfluss entsteht eine Spannung, die am Calliope registriert werden kann. Dabei gibt es zwei Möglichkeiten:
@@ -162,6 +165,10 @@ Ausgabe des Analogwerts des TCRT5000 auf dem seriellen Monitor.
   </div>
 </div>
 </div>
+
+</div>
+</details>
+
 
 ## Aufgaben
 
