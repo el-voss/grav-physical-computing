@@ -99,7 +99,7 @@ while True:
 
 
 <details class="details">
-<summary class="details__trigger details__title">![jacdac-kabel](jacdac-kabel.jpg?resize=100 "jacdac-kabel") Verbindung mit Jacdac</summary>
+<summary class="details__trigger details__title" markdown="1">![jacdac-kabel](jacdac-kabel.jpg?resize=100 "jacdac-kabel") Verbindung mit Jacdac</summary>
 <div class="details__content" markdown="1">
 ## Verbindung mit Jacdac
 
@@ -156,7 +156,7 @@ Der Block ```<Messwert> Entfernung (m)``` stellt vier mögliche Messwerte in Met
 
 
 <details class="details">
-<summary class="details__trigger details__title">![jumper-kabel](jumper-kabel.jpg?resize=100 "jumper-kabel") Verbindung mit Jumper-Kabeln</summary>
+<summary class="details__trigger details__title" markdown="1">![jumper-kabel](jumper-kabel.jpg?resize=100 "jumper-kabel") Verbindung mit Jumper-Kabeln</summary>
 <div class="details__content" markdown="1">
 ## Verbindung mit der Pinleiste
 
