@@ -3,7 +3,7 @@ title: 'Tropfen- und Feuchtigkeitssensor'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'feuchtigkeitssensor.jpg,tropfensensor.jpg,calliope-feuchtigkeitssensor.png,calliope-feuchtigkeitssensor-grove.png,makecode-erweiterung-grove.png,mc-grove-feuchtigkeitssensor-auslesen.png,mc-feuchtigkeitssensor-auslesen.png,orl-conf-feuchtigkeitssensor-auslesen.png,orl-conf-feuchtigkeitssensor.png,orl-conf-grove-feuchtigkeitssensor.png,orl-grove-feuchtigkeitssensor-auslesen.png'
+media_order: 'feuchtigkeitssensor.jpg,tropfensensor.jpg,calliope-feuchtigkeitssensor.png,calliope-feuchtigkeitssensor-grove.png,makecode-erweiterung-grove.png,mc-grove-feuchtigkeitssensor-auslesen.png,mc-feuchtigkeitssensor-auslesen.png,orl-conf-feuchtigkeitssensor-auslesen.png,orl-conf-feuchtigkeitssensor.png,orl-conf-grove-feuchtigkeitssensor.png,orl-grove-feuchtigkeitssensor-auslesen.png,grove-kabel.jpg,jumper-kabel.jpg'
 featured_image: feuchtigkeitssensor.jpg
 taxonomy:
     Inhalte:
@@ -31,6 +31,10 @@ Die Feuchtigkeit kann leider nicht als absoluter Wert gemessen werden. Mit Hilfe
 | 300 bis 600 | feucht |
 | größer 600 | sehr feucht |
 
+
+<details class="details">
+<summary class="details__trigger details__title" markdown="1">![grove-kabel](grove-kabel.jpg?resize=100 "grove-kabel") Verbindung mit Grove</summary>
+<div class="details__content" markdown="1">
 ## Verbindung mit Grove
 
 ### Schaltung
@@ -98,6 +102,14 @@ while True:
 </div>
 </div>
 
+</div>
+</details>
+
+
+
+<details class="details">
+<summary class="details__trigger details__title" markdown="1">![jumper-kabel](jumper-kabel.jpg?resize=100 "jumper-kabel") Verbindung mit Jumper-Kabeln</summary>
+<div class="details__content" markdown="1">
 ## Verbindung mit der Pinleiste
 
 ### Schaltung
@@ -160,7 +172,8 @@ while True:
 </div>
 </div>
 
-
+</div>
+</details>
 
 
 ## Aufgaben
