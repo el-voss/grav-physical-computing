@@ -1,5 +1,5 @@
 ---
-title: 'Bau des Fahrgestells'
+title: 'Aufbau des Bastelbots'
 show_pageimage: true
 image_width: 300
 image_height: 400
