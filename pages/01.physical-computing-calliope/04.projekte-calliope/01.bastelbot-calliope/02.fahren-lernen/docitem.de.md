@@ -3,13 +3,13 @@ title: 'Fahren lernen'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'motorblock.png,funktion-drehung-links.png,funktion-drehung-rechts.png,funktion-motor-leistung.png,funktion-motor-stop.png,bastelbot-quadrat-fahren.png,funktion-fahre.png,orl-funktion-geradeaus.png,orl-funktion-linksherum.png,orl-funktion-rechtsherum.png,orl-motorkonfiguration.png,orl-motoren-steuern.png,genau-1m-fahren.png,hindernis-umfahren-1m.png,hindernis-umfahren-quadrat.png'
+media_order: 'motorblock.png,funktion-drehung-links.png,funktion-drehung-rechts.png,funktion-motor-leistung.png,funktion-motor-stop.png,bastelbot-quadrat-fahren.png,funktion-fahre.png,orl-funktion-geradeaus.png,orl-funktion-linksherum.png,orl-funktion-rechtsherum.png,orl-motorkonfiguration.png,orl-motoren-steuern.png,genau-1m-fahren.png,hindernis-umfahren-1m.png,hindernis-umfahren-quadrat.png,mc-einfache-verzweigung.png,mc-einfache-zählschleife.png,mc-ereignis.png,mc-sequenz.png,mc-verzweigung-mit-vgl.png'
 taxonomy:
     Voraussetzungen:
         - 'Bau des Fahrgestells'
     Entwicklungsumgebung:
-        - Makecode
         - OpenRoberta
+        - Makecode
         - Python
     Inhalte:
         - Funktionen
@@ -135,3 +135,118 @@ Die folgenden Programme sollen mit Hilfe von Schleifen möglichst effizient gest
 ![hindernis-umfahren-quadrat](hindernis-umfahren-quadrat.png?lightbox=500&resize=500 "hindernis-umfahren-quadrat")
 </div>
 
+<details class="details">
+<summary class="details__trigger details__title">Zusammenfassung: Algorithmus, Anweisung und Argument</summary>
+<div class="details__content" markdown="1">
+
+<div class="notices green" markdown="1">
+#### Sequenzen, einfache Zählschleifen, Verzweigungen
+
+In diesem Abschnitt hast du verschiedene Programmierstrukturen genutzt, die die Grundlage von fast jedem Programm bilden.
+
+Eine **Sequenz** ist eine Folge von Anweisungen, die nacheinander ausgeführt werden.
+
+<!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block" markdown="1">
+![mc-sequenz](mc-sequenz.png?resize=400 "mc-sequenz")
+  </div>
+  <div class="roberta content-block" markdown="1">
+
+  </div>
+  <div class="python content-block" markdown="1">
+
+```python
+display.show(Image.HEART)
+sleep(1000)
+display.scroll('Hi!')
+
+```
+
+  </div>
+</div>
+</div>
+
+Eine **einfache Zählschleife** wiederholt ihren Inhalt so oft, wie angegeben.
+
+<!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block" markdown="1">
+Die Schleife lässt "hi!" vier Mal auf der LED-Matrix anzeigen.
+![mc-einfache-zählschleife](mc-einfache-z%C3%A4hlschleife.png?resize=400 "mc-einfache-zählschleife")
+  </div>
+  <div class="roberta content-block" markdown="1">
+
+  </div>
+  <div class="python content-block" markdown="1">
+Das folgende Programm zeigt zwei Mal "Emma" an. In einem späteren Abschnitt gehen wir genauer auf die Bedeutung von `i` ein.
+```python
+for i in range(2):  
+    display.scroll('Emma')
+```
+
+  </div>
+</div>
+</div>
+    
+Bei einer **Verzweigung** werden Anweisungen nur unter einer bestimmten Bedingung ausgeführt, die wahr oder falsch sein muss.
+
+<!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block" markdown="1">
+Auf dem Display wird "A" angezeigt, wenn der Knopf A gedrückt wird
+![mc-einfache-verzweigung](mc-einfache-verzweigung.png?resize=400 "mc-einfache-verzweigung")
+
+Auf dem Display wird "laut" angezeigt, wenn der gemessene Wert für die Lautstärke größer als 125 ist.
+![mc-verzweigung-mit-vgl](mc-verzweigung-mit-vgl.png?resize=400 "mc-verzweigung-mit-vgl")
+
+**Wichtig:** Die folgenden Blöcke sind keine Verzweigungen, sondern sogenannte **Ereignisse**. 
+![mc-ereignis](mc-ereignis.png?resize=700 "mc-ereignis")
+Sie unterbrechen das eigentlich ablaufende Programm in der Endlosschleife, wenn das angegebene Ereignis eintritt. Diese Unterbrechung sollte immer *möglichst kurz* sein, weil das Programm sonst bei mehreren Ereignissen zu viel hin- und herspringt und man den Überblick verliert. Insbesondere sind (Endlos-)Schleifen innerhalb eines Ereignisses ein *No-Go*.
+  </div>
+  <div class="roberta content-block" markdown="1">
+
+  </div>
+  <div class="python content-block" markdown="1">
+
+```python
+# auf dem Display wird "A" angezeigt, wenn der Knopf A gedrückt wird.
+if button_a.is_pressed():
+     display.show("A")
+
+# auf dem Display wird "laut" angezeigt, wenn der gemessene Wert für die Lautstärke größer als 125 ist
+if microphone.sound_level() > 125:
+        display.show("laut")
+```
+
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+</details>
