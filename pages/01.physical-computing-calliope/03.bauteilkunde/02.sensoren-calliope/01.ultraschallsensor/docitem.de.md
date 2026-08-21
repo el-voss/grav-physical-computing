@@ -30,7 +30,7 @@ Die wichtigsten Bestandteile des Ultraschallsensors sind der “Transducer” (*
 Ultraschallsensoren gibt es in verschiedenen Varianten und mit verschiedenen Verbindungsmöglichkeiten.
 
 <details class="details">
-<summary class="details__trigger details__title" markdown="1">![grove-kabel](grove-kabel.jpg?resize=80 "grove-kabel") Verbindung mit Grove</summary>
+<summary class="details__trigger details__title" markdown="1">![grove-kabel](grove-kabel.jpg?resize=100 "grove-kabel") Verbindung mit Grove</summary>
 <div class="details__content" markdown="1">
 ## Verbindung mit Grove
 
