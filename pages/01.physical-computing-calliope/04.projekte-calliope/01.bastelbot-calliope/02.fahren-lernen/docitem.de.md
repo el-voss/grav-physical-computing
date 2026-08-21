@@ -198,7 +198,7 @@ Die Schleife lässt "hi!" vier Mal auf der LED-Matrix anzeigen.
 Das folgende Programm zeigt zwei Mal "Emma" an. In einem späteren Abschnitt gehen wir genauer auf die Bedeutung von `i` ein.
 ```python
 for i in range(2):  
-    display.scroll('Emma')
+    display.scroll('Emma')   # der Inhalt der Schleife muss eingerückt sein!
 ```
 
   </div>
@@ -236,11 +236,11 @@ Ereignisse unterbrechen das eigentlich ablaufende Programm in der Endlosschleife
 ```python
 # auf dem Display wird "A" angezeigt, wenn der Knopf A gedrückt wird.
 if button_a.is_pressed():
-     display.show("A")
+     display.show("A")  # der Inhalt der Verzweigung muss eingerückt sein!
 
 # auf dem Display wird "laut" angezeigt, wenn der gemessene Wert für die Lautstärke größer als 125 ist
 if microphone.sound_level() > 125:
-        display.show("laut")
+        display.show("laut")   # der Inhalt der Verzweigung muss eingerückt sein!
 ```
 
   </div>
