@@ -55,3 +55,13 @@
 .details[data-expanded="true"] .details__title::after {
     display: none;
 }
+
+
+.details__title p {
+  margin: 0px;
+}
+
+.details__title img {
+  display: inline !IMPORTANT;
+  margin: 0px 10px 0px 0px !IMPORTANT;
+}
