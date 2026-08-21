@@ -74,6 +74,8 @@ Schließe die Motoren an der Pin-Leiste des Calliope an. Dazu müssen die Kabel 
 
 </div>
 
+!! Du darfst niemals an den Rädern bzw. dem Motorschaft drehen! Durch die Drehung kann ein Stromstoß zum Calliope entstehen, der ihn zerstören könnte!
+
 ! Der Bastelbot ist nun bereit für das Kapitel [Fahren lernen](https://mintorials.de/de/physical-computing-calliope/projekte-calliope/bastelbot-calliope/fahren-lernen).
 
 ## Ultraschallsensor zur Hinderniserkennung
