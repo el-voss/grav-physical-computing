@@ -4,7 +4,7 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 featured_image: pulssensor.jpg
-media_order: 'pulssensor-prinzip1.png,pulssensor-prinzip2.png,pulssensor-prinzip3.png,pulssensor.jpg,schaltskizze-calliope-pulssensor.png,mc-pulssensor-lesen-mit-filter.png,mc-pulssensor-lesen.png,mc-serieller-monitor.png,pulssensor-skala-serieller-monitor.png,ino-serial-monitor-puls.png,ino-serieller-monitor-skala-unguenstig-Anm.png,ino-start-serieller-monitor.png,orl-conf-pulssensor.png,orl-pulssensor-lesen.png,orl-pulssensor-lesen-mit-Filter.png'
+media_order: 'pulssensor-prinzip1.png,pulssensor-prinzip2.png,pulssensor-prinzip3.png,pulssensor.jpg,schaltskizze-calliope-pulssensor.png,mc-pulssensor-lesen-mit-filter.png,mc-pulssensor-lesen.png,mc-serieller-monitor.png,pulssensor-skala-serieller-monitor.png,ino-serial-monitor-puls.png,ino-serieller-monitor-skala-unguenstig-Anm.png,ino-start-serieller-monitor.png,orl-conf-pulssensor.png,orl-pulssensor-lesen.png,orl-pulssensor-lesen-mit-Filter.png,jumper-kabel.jpg'
 ---
 
 [TOC]
@@ -14,6 +14,11 @@ media_order: 'pulssensor-prinzip1.png,pulssensor-prinzip2.png,pulssensor-prinzip
 Aktivitätstracker mit Pulsmessung liegen voll im Trend - aber wie funktioniert so ein Pulssensor eigentlich? Das lässt sich am einfachsten verstehen, wenn man selber einen nachbaut. Weitere Anwendungsmöglichkeiten wären übrigens Lügen-/Angstdetektoren, Schlafanalyse oder ein Alarmsystem für Risikopatienten.
 </div>
 
+
+
+<details class="details">
+<summary class="details__trigger details__title" markdown="1">![jumper-kabel](jumper-kabel.jpg?resize=100 "jumper-kabel") Verbindung mit Jumper-Kabeln</summary>
+<div class="details__content" markdown="1">
 ## Verbindung mit der Pinleiste
 
 ### Schaltung
@@ -167,6 +172,10 @@ Die Werte vom Pulssensor schwanken jedoch je nach Person und Umgebung. Daher kan
   </div>
 </div>
 </div>
+
+</div>
+</details>
+
 
 ## Aufgaben
 
