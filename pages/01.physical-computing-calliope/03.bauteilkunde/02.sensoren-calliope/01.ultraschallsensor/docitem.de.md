@@ -3,7 +3,7 @@ title: Ultraschallsensor
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'ultraschall-sensor-prinzip.png,ultraschallsensor-am-auto.jpg,ultraschallsensor-grove.jpg,ultraschallsensor-jacdac.jpg,makecode-erweiterung-grove.png,makecode-erweiterung-jacdac.png,schaltskizze-ultraschall-grove.png,makecode-grove-ultraschall-test.png,makecode-jacdac-ultraschall-test.png,makecode-pulseIn-ultraschall-test.png,schaltskizze-calliope-hc-sr04.png,orl-ultraschall-grove-konf.png,orl-ultraschall-grove-prog.png,orl-ultraschallsensor-manuell.png,orl-konfiguration-pin.png'
+media_order: 'ultraschall-sensor-prinzip.png,ultraschallsensor-am-auto.jpg,ultraschallsensor-grove.jpg,ultraschallsensor-jacdac.jpg,makecode-erweiterung-grove.png,makecode-erweiterung-jacdac.png,schaltskizze-ultraschall-grove.png,makecode-grove-ultraschall-test.png,makecode-jacdac-ultraschall-test.png,makecode-pulseIn-ultraschall-test.png,schaltskizze-calliope-hc-sr04.png,orl-ultraschall-grove-konf.png,orl-ultraschall-grove-prog.png,orl-ultraschallsensor-manuell.png,orl-konfiguration-pin.png,grove-kabel.jpg,jacdac-kabel.jpg,jumper-kabel.jpg'
 featured_image: ultraschall-sensor-prinzip.png
 published: true
 taxonomy:
@@ -30,7 +30,7 @@ Die wichtigsten Bestandteile des Ultraschallsensors sind der “Transducer” (*
 Ultraschallsensoren gibt es in verschiedenen Varianten und mit verschiedenen Verbindungsmöglichkeiten.
 
 <details class="details">
-<summary class="details__trigger details__title">Verbindung mit Grove</summary>
+<summary class="details__trigger details__title" markdown="1">![grove-kabel](grove-kabel.jpg?resize=15 "grove-kabel") Verbindung mit Grove</summary>
 <div class="details__content" markdown="1">
 ## Verbindung mit Grove
 
