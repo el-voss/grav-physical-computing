@@ -3,7 +3,7 @@ title: 'Temperatur- und Luftfeuchtigkeitssensor DHT-11'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'py-serielle-ausgabe.png,mc-serielle-ausgabe.png,mc-serielle-ausgabe-programm.png,mc-erweiterung-dht11_dht22.png,calliope-dht11-schaltskizze.png,dht11.jpg'
+media_order: 'py-serielle-ausgabe.png,mc-serielle-ausgabe.png,mc-serielle-ausgabe-programm.png,mc-erweiterung-dht11_dht22.png,calliope-dht11-schaltskizze.png,dht11.jpg,jumper-kabel.jpg'
 featured_image: dht11.jpg
 taxonomy:
     Inhalte:
@@ -20,6 +20,10 @@ taxonomy:
 Bei vielen Umweltmessungen interessiert nicht nur die Temperatur, sondern auch die Luftfeuchtigkeit. Der Sensor DHT-11 ist ein einfaches, kleines Bauteil, mit dem sich beides messen lässt.
 </div>
 
+
+<details class="details">
+<summary class="details__trigger details__title" markdown="1">![jumper-kabel](jumper-kabel.jpg?resize=100 "jumper-kabel") Verbindung mit Jumper-Kabeln</summary>
+<div class="details__content" markdown="1">
 ## Verbindung mit der Pinleiste
 
 ### Schaltung
@@ -120,6 +124,9 @@ Die Abbildung unten zeigt die entsprechende Ausgabe auf dem seriellen Monitor.
   </div>
 </div>
 </div>
+
+</div>
+</details>
 
 
 
