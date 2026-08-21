@@ -3,7 +3,7 @@ title: Joystick
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'calliope-joystick.png,joystick.jpg,mc-joystick-seriell-ausgeben.png,orl-conf-joystick.png,orl-joystick-auslesen.png,Schaltplan-Joystick-Ersatz.png,serial-monitor-starten.png,py-serieller-monitor.png,mc-serieller-monitor.png'
+media_order: 'calliope-joystick.png,joystick.jpg,mc-joystick-seriell-ausgeben.png,orl-conf-joystick.png,orl-joystick-auslesen.png,Schaltplan-Joystick-Ersatz.png,serial-monitor-starten.png,py-serieller-monitor.png,mc-serieller-monitor.png,jumper-kabel.jpg'
 featured_image: joystick.jpg
 taxonomy:
     Inhalte:
@@ -24,6 +24,10 @@ Joysticks werden bekanntermaßen für Spielecontroller oder auch zur Steuerung v
 Ein Joystick besteht im Wesentlichen aus zwei Potentiometern, die über einen gemeinsamen Hebel variiert werden können. Wie im Schaltbild zu sehen, teilen sich beide den 5V- und GND-Anschluss; der mittlere Anschluss muss natürlich jeweils einzeln ausgelesen werden. Zusätzlich wird durch Drücken des Joysticks ein angebrachter Taster gedrückt, dessen Status am SW-Pin ausgelesen werden kann (*sw von engl. “switch”*). Da das elektrische Potential am SW-Pin normalerweise schwankt, sollte ein *Pullup*-Widerstand angebracht werden (als externer Widerstand oder als interner Widerstand - im Folgenden wird der interne Pullup-Widerstand durch entsprechende Programmierung aktiviert).
 </div>
 
+
+<details class="details">
+<summary class="details__trigger details__title" markdown="1">![jumper-kabel](jumper-kabel.jpg?resize=100 "jumper-kabel") Verbindung mit Jumper-Kabeln</summary>
+<div class="details__content" markdown="1">
 ## Verbindung mit der Pinleiste
 
 ### Schaltung
@@ -119,6 +123,10 @@ Ausgabe des Analogwerts des Potentiometers auf dem seriellen Monitor.
   </div>
 </div>
 </div>
+
+</div>
+</details>
+
 
 ## Aufgaben
 
