@@ -433,3 +433,15 @@ pre {
 .chapter-accordion details[open] .accordion-header::before {
     transform: rotate(90deg);
 }
+
+
+
+/* Images for detail-sections "Verbindung mit Grove", "Verbindung mit Jacdac", "Verbindung mit Jumper-Kabeln" +/
+summary p {
+  margin: 0px;
+}
+
+summary img {
+  display: inline;
+  margin: 0px 10px 0px 0px;
+}
