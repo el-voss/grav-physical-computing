@@ -240,7 +240,10 @@ Die folgenden Programme funktionieren nicht richtig, obwohl sie auf den ersten B
 <!-- Inhalte für jede Programmierumgebung -->
 <div class="tab-content">
   <div class="makecode content-block" markdown="1">
-
+<div markdown="1" class="flex-box">
+<div markdown="1"></div>
+<div markdown="1"></div>
+</div>
   </div>
   <div class="roberta content-block" markdown="1">
 <div markdown="1" class="flex-box">
@@ -249,10 +252,22 @@ Die folgenden Programme funktionieren nicht richtig, obwohl sie auf den ersten B
 </div>
   </div>
   <div class="python content-block" markdown="1">
+<div markdown="1" class="flex-box">
+<div markdown="1">
 ```python
 
 ```
 Programm A.
+</div>
+<div markdown="1">
+```python
+
+```
+Programm A.
+</div>
+</div>
+
+
 
 </div>
 </div>
