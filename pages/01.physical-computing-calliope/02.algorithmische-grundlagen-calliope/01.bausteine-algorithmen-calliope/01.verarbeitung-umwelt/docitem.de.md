@@ -1,7 +1,7 @@
 ---
 title: 'Verarbeitung von Umwelteingaben'
 menu: 'Verarbeitung von Umwelteingaben'
-media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,verzweigungen.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png,nachtlicht-flackert.png,knopfprobleme1.png,knopfprobleme2.png,verzweigungsproblem.png,struktogramm-verzweigung.png,mc-erste-entscheidung1.png,mc-erste-entscheidung2.png,mc-erste-entscheidung3.png'
+media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,verzweigungen.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png,nachtlicht-flackert.png,knopfprobleme1.png,knopfprobleme2.png,verzweigungsproblem.png,struktogramm-verzweigung.png,mc-erste-entscheidung1.png,mc-erste-entscheidung2.png,mc-erste-entscheidung3.png,mc-bedingung-mit-schwellwert.png,mc-bedingung-taste-A.png,mc-verzweigungen.png'
 featured_image: struktogramm-verzweigung.png
 show_pageimage: true
 image_width: 300
@@ -93,7 +93,29 @@ Programm B.
 <div class="notices green" markdown="1">
 #### Verzweigungen
 
-Mit Verzweigungen kann man den Calliope je nach Situation anders reagieren lassen. Im einfachsten Fall wird eine Anweisung nur ausgeführt, wenn eine zugehörige Bedingung wahr ist (oberste Verzweigung im Bild). Es ist aber auch möglich, dass je nach Wahrheitswert der Bedingung die erste Anweisung oder die zweite Anweisung ausgeführt wird (mittlere Verzweigung im Bild). Dies lässt sich über das Plus noch weiter führen, um weitere Bedingungen und Fälle hinzuzufügen (untere Verzweigung im Bild.
+Mit Verzweigungen kann man den Calliope je nach Situation anders reagieren lassen. Dazu wird die Ausführung der Anweisungen an eine oder mehrere Bedingungen gekoppelt. Diese Bedingung muss entweder "wahr" oder "falsch" ergeben, um eindeutig zu entscheiden, ob die Anweisungen ausgeführt werden sollen oder nicht.
+
+<!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block" markdown="1">
+![mc-verzweigungen](mc-verzweigungen.png?Lightbox=1024&resize=500&classes=caption "Verschiedene Verzweigungen.")
+
+Als Bedingung eignen sich sechseckige Blöcke. Manche Sensoreingaben, wie zum Beispiel das Drücken einer Taste, kann man direkt als Bedingung verwenden (erkennbar an der sechseckigen Form). Bei anderen Sensorblöcken, die z. B. eine Zahl bereitstellen, erhält man die Bedingung erst durch den Vergleich mit einer anderen Zahl, sodass aus dem Vergleich ein Wahrheitswert (war/falsch) entsteht. Die Zahl, die zum Vergleich herangezogen wird, nennt man auch "Schwellwert".
+
+<div markdown="1" class="flex-box">
+<div markdown="1">![mc-bedingung-taste-A](mc-bedingung-taste-A.png?classes=caption "Der Sensorblock <Knopf A ist geklickt?> liefert <wahr> oder <falsch> (sechseckige Form) und kann als Bedingung für Verzweigungen verwendet werden.")</div>
+<div markdown="1">![mc-bedingung-mit-schwellwert](mc-bedingung-mit-schwellwert.png?classes=caption "Der Vergleich der Lautstärke mit einem Schwellwert liefert <wahr> oder <falsch> und kann als Bedingung für Verzweigungen genutzt werden." )</div>
+</div>
+  </div>
+  <div class="roberta content-block" markdown="1">
 
 ![verzweigungen](verzweigungen.png?Lightbox=1024&resize=500&classes=caption "Verschiedene Verzweigungen.")
 
@@ -103,6 +125,19 @@ Als Bedingung eignen sich hellblaue Blöcke. Manche Sensoreingaben, wie zum Beis
 <div markdown="1">![bedingung-taste-A](bedingung-taste-A.png?classes=caption "Der Sensorblock <Taste A gedrueckt?> liefert <wahr> oder <falsch> (hellblaue Nase) und kann als Bedingung für Verzweigungen verwendet werden.")</div>
 <div markdown="1">![bedingung-mit-schwellwert](bedingung-mit-schwellwert.png?classes=caption "Der Vergleich der Lautstärke mit einem Schwellwert liefert <wahr> oder <falsch> und kann als Bedingung für Verzweigungen genutzt werden.")</div>
 </div>
+  </div>
+  <div class="python content-block" markdown="1">
+
+```python
+
+```
+
+
+</div>
+</div>
+
+
+
 
 </div>
 </div>
