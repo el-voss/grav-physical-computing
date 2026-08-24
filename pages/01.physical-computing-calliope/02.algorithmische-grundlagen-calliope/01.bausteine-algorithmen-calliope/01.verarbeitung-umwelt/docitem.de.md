@@ -133,9 +133,48 @@ Als Bedingung eignen sich hellblaue Blöcke. Manche Sensoreingaben, wie zum Beis
   <div class="python content-block" markdown="1">
 
 ```python
+# Imports go at the top
+from calliopemini import *
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    if button_a.is_pressed():      # die Funktion "is_pressed()" liefert einen Wahrheitswert (wahr/falsch)
+        display.scroll('Fall 1')   # wird ausgeführt, falls Knopf A gedrückt wurde
+```
+Programm A: Einfache Verzweigung
+
+```python
+# Imports go at the top
+from calliopemini import *
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    if button_a.is_pressed():      # die Funktion "is_pressed()" liefert einen Wahrheitswert (wahr/falsch)
+        display.scroll('Fall 1')   # wird ausgeführt, falls Knopf A gedrückt wurde
+    else:
+        display.clear()            # wird ausgeführt, falls Kopf A *nicht* gedrückt wurde
 
 ```
+Programm B: Verzweigung mit sonst-Fall
 
+```python
+# Imports go at the top
+from calliopemini import *
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    if button_a.is_pressed():      # die Funktion "is_pressed()" liefert einen Wahrheitswert (wahr/falsch)
+        display.scroll('Fall 1')   # wird ausgeführt, falls Knopf A gedrückt wurde
+    elif (microphone.sound_level() > 125):  # die Funktion "sound_level()" liefert eine Zahl von 0 bis 255
+                                            # erst durch den Vergleich dieser Zahl mit 125 wird daraus ein Wahrheitswert (wahr/falsch)
+        display.scroll('Fall 2')            # wird ausgeführt, falls Knopf A NICHT gedrückt wurde, aber Knopf B gedrückt wurde
+    else:                          
+        display.clear()            # wird ausgeführt, falls Knopf A NICHT gedrückt wurde und Knopf B NICHT gedrückt wurde
+
+```
+Programm C: Verschachtelte Verzweigung
+
+Die Bedingung muss immer wahr oder falsch ergeben. Manche Sensoreingaben, wie zum Beispiel das Drücken einer Taste, kann man über eine Funktion direkt als Bedingung verwenden (z. B. `is_pressed()`). Bei anderen Sensoreingaben, die z. B. eine Zahl bereitstellen (z. B. `sound_level()`), erhält man die Bedingung erst durch den Vergleich mit einer anderen Zahl, sodass aus dem Vergleich ein Wahrheitswert (war/falsch) entsteht. Die Zahl, die zum Vergleich herangezogen wird, nennt man auch "Schwellwert".
 
 </div>
 </div>
