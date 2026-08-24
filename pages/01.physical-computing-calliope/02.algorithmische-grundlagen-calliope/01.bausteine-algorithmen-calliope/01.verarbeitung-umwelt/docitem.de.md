@@ -229,9 +229,32 @@ Die Lärmampel zeigt an, ob die Lautstärke angenehm, noch erträglich oder zu l
 
 Die folgenden Programme funktionieren nicht richtig, obwohl sie auf den ersten Blick richtig aussehen.
 
+<!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block" markdown="1">
+
+  </div>
+  <div class="roberta content-block" markdown="1">
 <div markdown="1" class="flex-box">
 <div markdown="1">![knopfprobleme1](knopfprobleme1.png?Lightbox=1024&resize=500&classes=caption "Die RGB-LED soll im Normalfall rot anzeigen, aber wenn Taste A gedrückt wird, soll sie grün anzeigen.")</div>
 <div markdown="1">![knopfprobleme2](knopfprobleme2.png?Lightbox=1024&resize=500&classes=caption "Die RGB-LED soll zunächst rot anzeigen. Wenn Taste A gedrückt wird, soll sie grün anzeigen. Wenn Taste A noch mal gedrückt wird, soll sie wieder rot anzeigen.")</div>
+</div>
+  </div>
+  <div class="python content-block" markdown="1">
+```python
+
+```
+Programm A.
+
+</div>
 </div>
 
 1. Beschreibe das tatsächliche Verhalten des Calliope. Erkläre, wieso er sich so verhält.
