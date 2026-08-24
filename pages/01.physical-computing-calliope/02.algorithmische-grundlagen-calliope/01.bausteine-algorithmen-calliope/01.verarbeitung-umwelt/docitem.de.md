@@ -357,6 +357,7 @@ while True:
 </code></pre>
 </div>
 </div>
+</div>
 
 </div>
 
@@ -397,6 +398,7 @@ while True:
     else:
         np.clear()
 </code></pre>
+</div>
 </div>
 </div>
 
