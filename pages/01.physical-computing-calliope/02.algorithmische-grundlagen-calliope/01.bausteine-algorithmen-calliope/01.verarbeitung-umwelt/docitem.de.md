@@ -157,7 +157,7 @@ while True:
 ```
 Programm B: Verzweigung mit sonst-Fall
 
-```python
+<pre><code class="language-python">
 # Imports go at the top
 from calliopemini import *
 
@@ -171,7 +171,7 @@ while True:
     else:                          
         display.clear()            # wird ausgeführt, falls Knopf A NICHT gedrückt wurde und Knopf B NICHT gedrückt wurde
 
-```
+</code></pre>
 Programm C: Verschachtelte Verzweigung
 
 Die Bedingung muss immer wahr oder falsch ergeben. Manche Sensoreingaben, wie zum Beispiel das Drücken einer Taste, kann man über eine Funktion direkt als Bedingung verwenden (z. B. `is_pressed()`). Bei anderen Sensoreingaben, die z. B. eine Zahl bereitstellen (z. B. `sound_level()`), erhält man die Bedingung erst durch den Vergleich mit einer anderen Zahl, sodass aus dem Vergleich ein Wahrheitswert (wahr/falsch) entsteht. Die Zahl, die zum Vergleich herangezogen wird, nennt man auch "Schwellwert".
