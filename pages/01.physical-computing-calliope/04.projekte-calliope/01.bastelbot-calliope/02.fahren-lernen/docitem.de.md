@@ -136,7 +136,7 @@ Die folgenden Programme sollen mit Hilfe von Schleifen möglichst effizient gest
 </div>
 
 <details class="details">
-<summary class="details__trigger details__title">Zusammenfassung: Algorithmus, Anweisung und Argument</summary>
+<summary class="details__trigger details__title">Zusammenfassung: Sequenzen, einfache Zählschleifen, Verzweigungen</summary>
 <div class="details__content" markdown="1">
 
 <div class="notices green" markdown="1">
