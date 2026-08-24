@@ -1,7 +1,7 @@
 ---
 title: 'Verarbeitung von Umwelteingaben'
 menu: 'Verarbeitung von Umwelteingaben'
-media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,verzweigungen.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png,nachtlicht-flackert.png,knopfprobleme1.png,knopfprobleme2.png,verzweigungsproblem.png,struktogramm-verzweigung.png,mc-erste-entscheidung1.png,mc-erste-entscheidung2.png,mc-erste-entscheidung3.png,mc-bedingung-mit-schwellwert.png,mc-bedingung-taste-A.png,mc-verzweigungen.png,mc-ereignis.png,mc-knopfprobleme1.png,mc-knopfprobleme2.png'
+media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,verzweigungen.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png,nachtlicht-flackert.png,knopfprobleme1.png,knopfprobleme2.png,verzweigungsproblem.png,struktogramm-verzweigung.png,mc-erste-entscheidung1.png,mc-erste-entscheidung2.png,mc-erste-entscheidung3.png,mc-bedingung-mit-schwellwert.png,mc-bedingung-taste-A.png,mc-verzweigungen.png,mc-ereignis.png,mc-knopfprobleme1.png,mc-knopfprobleme2.png,mc-verzweigungsproblem.png,mc-nachtlicht-flackert.png'
 featured_image: struktogramm-verzweigung.png
 show_pageimage: true
 image_width: 300
@@ -330,7 +330,7 @@ Erkläre, worin das Problem wiklich liegt und wie es sich beheben lässt.
 <!-- Inhalte für jede Programmierumgebung -->
 <div class="tab-content">
   <div class="makecode content-block" markdown="1">
-
+![mc-verzweigungsproblem](mc-verzweigungsproblem.png?Lightbox=1024&resize=500&classes=caption "Programm von Max.")
   </div>
   <div class="roberta content-block" markdown="1">
 ![verzweigungsproblem](verzweigungsproblem.png?Lightbox=1024&resize=500&classes=caption "Programm von Max.")
@@ -377,7 +377,7 @@ Das folgende Programm soll ein Nachtlicht im Flur dazu bringen, im Dunkeln zu le
 <!-- Inhalte für jede Programmierumgebung -->
 <div class="tab-content">
   <div class="makecode content-block" markdown="1">
-
+![mc-nachtlicht-flackert](mc-nachtlicht-flackert.png?Lightbox=1024&resize=500&classes=caption "Programm für ein flackerndes Nachtlicht.")
   </div>
   <div class="roberta content-block" markdown="1">
 ![nachtlicht-flackert](nachtlicht-flackert.png?Lightbox=1024&resize=500&classes=caption "Programm für ein flackerndes Nachtlicht.")
