@@ -1,7 +1,7 @@
 ---
 title: 'Verarbeitung von Umwelteingaben'
 menu: 'Verarbeitung von Umwelteingaben'
-media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,verzweigungen.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png,nachtlicht-flackert.png,knopfprobleme1.png,knopfprobleme2.png,verzweigungsproblem.png,struktogramm-verzweigung.png'
+media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,verzweigungen.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png,nachtlicht-flackert.png,knopfprobleme1.png,knopfprobleme2.png,verzweigungsproblem.png,struktogramm-verzweigung.png,mc-erste-entscheidung1.png,mc-erste-entscheidung2.png,mc-erste-entscheidung3.png'
 featured_image: struktogramm-verzweigung.png
 show_pageimage: true
 image_width: 300
@@ -36,8 +36,9 @@ Beschreibe, was die folgenden Programme bewirken und vergleiche sie. Probiere es
 <div class="tab-content">
   <div class="makecode content-block" markdown="1">
 <div markdown="1" class="flex-box">
-<div markdown="1"> </div>
-<div markdown="1"> </div>
+<div markdown="1"> ![mc-erste-entscheidung1](mc-erste-entscheidung1.png?Lightbox=1024&classes=caption "Programm A." "mc-erste-entscheidung1") </div>
+<div markdown="1"> ![mc-erste-entscheidung2](mc-erste-entscheidung2.png?Lightbox=1024&classes=caption "Programm B." "mc-erste-entscheidung2") </div>
+<div markdown="1"> ![mc-erste-entscheidung3](mc-erste-entscheidung3.png?Lightbox=1024&classes=caption "Programm C." "mc-erste-entscheidung3") </div>
 </div>
   </div>
   <div class="roberta content-block" markdown="1">
