@@ -229,6 +229,9 @@ Die Lärmampel zeigt an, ob die Lautstärke angenehm, noch erträglich oder zu l
 
 Die folgenden Programme funktionieren nicht richtig, obwohl sie auf den ersten Blick richtig aussehen.
 
+1. Beschreibe das tatsächliche Verhalten des Calliope. Erkläre, wieso er sich so verhält.
+2. Mache einen Vorschlag zur Verbesserung des Programms.
+
 <!-- Tabs für die Auswahl -->
 <div class="tab-group" data-group="programmierumgebung">
 <div class="tabs">
@@ -304,12 +307,8 @@ Programm B: Die RGB-LED soll zunächst rot anzeigen. Wenn Taste A gedrückt wird
 </div>
 
 
-
 </div>
 </div>
-
-1. Beschreibe das tatsächliche Verhalten des Calliope. Erkläre, wieso er sich so verhält.
-2. Mache einen Vorschlag zur Verbesserung des Programms.
 
 </div>
 
