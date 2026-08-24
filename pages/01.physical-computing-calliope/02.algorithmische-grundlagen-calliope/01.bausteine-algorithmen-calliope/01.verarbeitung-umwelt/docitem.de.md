@@ -106,7 +106,7 @@ Mit Verzweigungen kann man den Calliope je nach Situation anders reagieren lasse
 <!-- Inhalte für jede Programmierumgebung -->
 <div class="tab-content">
   <div class="makecode content-block" markdown="1">
-![mc-verzweigungen](mc-verzweigungen.png?Lightbox=1024&resize=500&classes=caption "Verschiedene Verzweigungen.")
+![mc-verzweigungen](mc-verzweigungen.png?Lightbox=1024&resize=800&classes=caption "Verschiedene Verzweigungen.")
 
 Als Bedingung eignen sich sechseckige Blöcke. Manche Sensoreingaben, wie zum Beispiel das Drücken einer Taste, kann man direkt als Bedingung verwenden (erkennbar an der sechseckigen Form). Bei anderen Sensorblöcken, die z. B. eine Zahl bereitstellen, erhält man die Bedingung erst durch den Vergleich mit einer anderen Zahl, sodass aus dem Vergleich ein Wahrheitswert (war/falsch) entsteht. Die Zahl, die zum Vergleich herangezogen wird, nennt man auch "Schwellwert".
 
