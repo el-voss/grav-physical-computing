@@ -345,13 +345,13 @@ np = neopixel.NeoPixel(pin_RGB, n)
 
 # Code in a 'while True:' loop repeats forever
 while True:
-    if microphone.sound_level() &lt; 20:
+    if microphone.sound_level() &lt; 50:
         np.fill((0,255,0)) # füllt alle Pixel mit der Farbe grün
         np.show()
-    elif microphone.sound_level() &gt; 20:
+    elif microphone.sound_level() &gt; 50:
         np.fill((255,255,0)) # füllt alle Pixel mit der Farbe gelb
         np.show()
-    elif microphone.sound_level() &gt; 35:
+    elif microphone.sound_level() &gt; 100:
         np.fill((255,0,0)) # füllt alle Pixel mit der Farbe rot
         np.show()
 </code></pre>
@@ -391,7 +391,7 @@ np = neopixel.NeoPixel(pin_RGB, n)
 
 # Code in a 'while True:' loop repeats forever
 while True:
-    if microphone.sound_level() &lt; 30:
+    if microphone.sound_level() &lt; 77:
         np.fill((200,200,0)) # füllt alle Pixel mit der Farbe gelb
         np.show()
     else:
