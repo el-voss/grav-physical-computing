@@ -22,12 +22,68 @@ taxonomy:
 <div markdown="1" class="aufgabe">
 #### Programmvergleich
 
-Beschreibe, was die beiden folgenden Programme bewirken und vergleiche sie. Probiere es ggf. mit deinem Calliope aus.
+Beschreibe, was die folgenden Programme bewirken und vergleiche sie. Probiere es ggf. mit deinem Calliope aus.
 
+<!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block" markdown="1">
+<div markdown="1" class="flex-box">
+<div markdown="1"> </div>
+<div markdown="1"> </div>
+</div>
+  </div>
+  <div class="roberta content-block" markdown="1">
 <div markdown="1" class="flex-box">
 <div markdown="1">![Programm A](erste-entscheidung1.png?Lightbox=1024&classes=caption "Programm A.")</div>
 <div markdown="1"> ![Programm B](erste-entscheidung2.png?Lightbox=1024&classes=caption "Programm B.")</div>
 </div>
+  </div>
+  <div class="python content-block" markdown="1">
+<div markdown="1" class="flex-box">
+<div markdown="1"> 
+```python
+# Imports go at the top
+from calliopemini import *
+
+if button_a.is_pressed():
+    display.show(Image.HEART)
+else:
+    display.clear()    
+```
+Programm A.
+</div>
+<div markdown="1"> 
+```python
+# Imports go at the top
+from calliopemini import *
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    if button_a.is_pressed():
+        display.show(Image.HEART)
+    else:
+        display.clear()
+```
+Programm B.
+</div>
+</div>
+
+
+
+  </div>
+</div>
+</div>
+
+
+
 </div>
 
 <details class="details">
