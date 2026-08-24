@@ -110,13 +110,14 @@ Mit Verzweigungen kann man den Calliope je nach Situation anders reagieren lasse
 
 Als Bedingung eignen sich sechseckige Blöcke. Manche Sensoreingaben, wie zum Beispiel das Drücken einer Taste, kann man direkt als Bedingung verwenden (erkennbar an der sechseckigen Form). Bei anderen Sensorblöcken, die z. B. eine Zahl bereitstellen, erhält man die Bedingung erst durch den Vergleich mit einer anderen Zahl, sodass aus dem Vergleich ein Wahrheitswert (war/falsch) entsteht. Die Zahl, die zum Vergleich herangezogen wird, nennt man auch "Schwellwert".
 
-**Wichtig:** Die folgenden Blöcke sind keine Verzweigungen, sondern sogenannte **Ereignisse**. 
-![mc-ereignis](mc-ereignis.png?resize=700 "mc-ereignis")
-Ereignisse unterbrechen das eigentlich ablaufende Programm in der Endlosschleife, wenn das angegebene Ereignis eintritt. Diese Unterbrechung sollte immer *möglichst kurz* sein, weil das Programm sonst bei mehreren Ereignissen zu viel hin- und herspringt und man den Überblick verliert. Insbesondere sind (Endlos-)Schleifen innerhalb eines Ereignisses ein *No-Go*.
 <div markdown="1" class="flex-box">
 <div markdown="1">![mc-bedingung-taste-A](mc-bedingung-taste-A.png?classes=caption "Der Sensorblock <Knopf A ist geklickt?> liefert <wahr> oder <falsch> (sechseckige Form) und kann als Bedingung für Verzweigungen verwendet werden.")</div>
 <div markdown="1">![mc-bedingung-mit-schwellwert](mc-bedingung-mit-schwellwert.png?classes=caption "Der Vergleich der Lautstärke mit einem Schwellwert liefert <wahr> oder <falsch> und kann als Bedingung für Verzweigungen genutzt werden." )</div>
 </div>
+
+**Wichtig:** Die folgenden Blöcke sind keine Verzweigungen, sondern sogenannte **Ereignisse**. 
+![mc-ereignis](mc-ereignis.png?resize=700 "mc-ereignis")
+Ereignisse unterbrechen das eigentlich ablaufende Programm in der Endlosschleife, wenn das angegebene Ereignis eintritt. Diese Unterbrechung sollte immer *möglichst kurz* sein, weil das Programm sonst bei mehreren Ereignissen zu viel hin- und herspringt und man den Überblick verliert. Insbesondere sind (Endlos-)Schleifen innerhalb eines Ereignisses ein *No-Go*.
   </div>
   <div class="roberta content-block" markdown="1">
 
