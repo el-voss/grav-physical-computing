@@ -9,7 +9,7 @@ taxonomy:
     Niveau:
         - Basis
 featured_image: servo-3v.jpg
-media_order: 'calliope-v3-servo-mit-batteriefach-6v.png,mc-erweiterung-servo.png,mc-360-grad-servo-steuern.png,servo.png,orl-conf-servo.png,servo-3v.jpg,mc-servo-steuern.png,mc-servo-mit-pwm-steuern.png,orl-servo-steuern.png,orl-servo-mit-pwm-steuern.png,orl-conf-aktor.png,power-supply-module-zwei-servos-hinweise.png,calliope-v3-3,3volt-servo.png,steckbrett-mit-power-module-klein.png'
+media_order: 'calliope-v3-servo-mit-batteriefach-6v.png,mc-erweiterung-servo.png,mc-360-grad-servo-steuern.png,servo.png,orl-conf-servo.png,servo-3v.jpg,mc-servo-steuern.png,mc-servo-mit-pwm-steuern.png,orl-servo-steuern.png,orl-servo-mit-pwm-steuern.png,orl-conf-aktor.png,power-supply-module-zwei-servos-hinweise.png,steckbrett-mit-power-module-klein.png,calliope-v3-3,3volt-servo.png,jacdac-kabel.jpg,jumper-kabel.jpg'
 ---
 
 [TOC]
@@ -25,6 +25,10 @@ Es wird zwischen zwei Arten von Servos unterschieden:
 </div>
 Jeder Servo kommt mit drei Anschlüssen: VCC (rotes Kabel, Pluspol) und GND (braunes Kabel, Minuspol) stellen die Stromversorgung sicher, ein drittes Kabel (orange) dient als Signalkabel, um den Winkel bzw. die Geschwindigkeit einzustellen. Das Signal wird per Pulsweitenmodulation übermittelt.
 
+
+<details class="details">
+<summary class="details__trigger details__title" markdown="1">![jacdac-kabel](jacdac-kabel.jpg?resize=100 "jacdac-kabel") Verbindung mit Jacdac</summary>
+<div class="details__content" markdown="1">
 ## Verbindung mit Jacdac
 
 !!!! Über den Jacdac-Anschluss können auf einfache Weise Sensoren und Aktoren an den Calliope angeschlossen und angesteuert werden. Es können mehrere Jacdac-Bauteile hintereinander angeschlossen werden. Über den Jacdac-Hub können sie auch parallel angeschlossen werden. Jacdac ermöglicht nicht nur die Kommunikation von Sensor und Calliope, sondern auch per WebUSB mit Makecode. Auf diese Weise wird der aktuelle Sensorwert direkt in Makecode angezeigt.
@@ -35,13 +39,27 @@ Für die Verbindung mit dem Jacdac-Anschluss gibt es ein Servo-Modul, an dem sic
 
 *Achte darauf, welcher Servo der kontinuierliche Servo (360° Servo) und welcher der Winkelsteller-Servo (180° Servo) ist, um sie richtig anzusteuern.*
 
+</div>
+</details>
 
+
+
+
+
+<details class="details">
+<summary class="details__trigger details__title" markdown="1">![jumper-kabel](jumper-kabel.jpg?resize=100 "jumper-kabel") Verbindung mit Jumper-Kabeln</summary>
+<div class="details__content" markdown="1">
 ## Verbindung mit der Pinleiste
 
 ### Schaltung über die Pin-Leiste
 
 Am einfachsten ist wahrscheinlich die Nutzung des [Servoboards](https://calliope.cc/calliope-mini/erweiterungen/servoboard), über das bis zur vier Servos und zwei Motoren am Calliope angeschlossen werden können. Falls dieses jedoch nicht zur Verfügung steht, werden unten andere Schaltungsarten dargestellt. Die Programmierung erfolgt mit dem Servoboard genauso wie unten dargestellt, jedoch müssen die Signalpins entsprechend angepasst werden.
 
+
+
+<details class="details">
+<summary class="details__trigger details__title" markdown="1">3V-Servo am Calliope</summary>
+<div class="details__content" markdown="1">
 #### 3V-Servo am Calliope
 
 Wenn nur ein Servo angesteuert werden soll und dieser schon ab einer Spannung von 3V funktioniert, lässt sich der Servo direkt an der Pin-Leiste des Calliope anschließen. (Wenn du dir unsicher bist, ob 3V für deinen Servo ausreichen, dann recherchiere im Internet, z. B. mit dem Begriff "Servo *bezeichnung* Datasheet".) Für die folgenden Beispiele wurden die 3V-Servos FT90R und FT90B verwendet.
@@ -49,7 +67,14 @@ Wenn nur ein Servo angesteuert werden soll und dieser schon ab einer Spannung vo
 ![calliope-v3-3,3volt-servo](calliope-v3-3,3volt-servo.png?lightbox=1024&resize=500&classes=caption "Anschluss eines 3V-Servos direkt am Calliope.")
 
 Für das Signalkabel (orange) kommen die Pins P0, P1, P2, P3, C4, C8, C9, C13, C14, C15, C16, C17 in Frage, soweit diese nicht anderweitig schon belegt sind (die Pins P0 bis P3 können über die goldenen Ringpads schon in Benutzung sein).
+</div>
+</details>
 
+
+
+<details class="details">
+<summary class="details__trigger details__title" markdown="1">5V-Servo mit Batteriefach</summary>
+<div class="details__content" markdown="1">
 #### 5V-Servo mit Batteriefach
 
 Auch stärkere Servos wie der verbreitete SG90 können mit dem Calliope gesteuert werden. Die Stromversorgung muss jedoch anders hergestellt werden, weil der Calliope weder genug Spannung noch genug Strom bereitstellen kann. Dazu kann wie im Folgenden dargestellt ein Batteriefach genutzt werden. Mit vier 1,5V Batterien kommt man auf 6V. Im Fall des SG90, der mit 4,8V bis 6V versorgt werden muss, passt das.
@@ -59,8 +84,15 @@ Auch stärkere Servos wie der verbreitete SG90 können mit dem Calliope gesteuer
 Für das Signalkabel (orange) kommen die Pins P0, P1, P2, P3, C4, C8, C9, C13, C14, C15, C16, C17 in Frage, soweit diese nicht anderweitig schon belegt sind (die Pins P0 bis P3 können über die goldenen Ringpads schon in Benutzung sein).
 
 Da es sich bei dem SG90 um einen Winkelsteller-Servo handelt, sind nur die entsprechenden Programmbeispiele für ihn relevant.
+</div>
+</details>
 
 
+
+
+<details class="details">
+<summary class="details__trigger details__title" markdown="1">Anschluss mehrerer Servos mit dem Power Supply Module</summary>
+<div class="details__content" markdown="1">
 #### Anschluss mehrerer Servos mit dem Power Supply Module
 
 !!!! ![Power Supply Module](steckbrett-mit-power-module-klein.png?resize=300&classes=caption,figure-right "Power Supply Module auf Steckbrett mit angeschlossener Batterie.")
@@ -78,10 +110,17 @@ Ergänzende Hinweise:
 - Bei manchen Steckbrettern sind die Plus- und Minusleisten in der Mitte getrennt. Gegebenenfalls muss hier ein Kabel zur Überbrückung eingebaut werden.
 - Der maximale Stromfluss beträgt bei dem Power Supply Module $1\,A$.
 
+</div>
+</details>
+
 
 ### Programmierung über die Pin-Leiste
 
-#### Programmierung mit Servo-Befehlen
+
+<details class="details">
+<summary class="details__trigger details__title" markdown="1">Programmierung mit Servo-Befehlen (einfach)</summary>
+<div class="details__content" markdown="1">
+#### Programmierung mit Servo-Befehlen (einfach)
 
 <!-- Tabs für die Auswahl -->
 <div class="tab-group" data-group="programmierumgebung">
@@ -157,7 +196,17 @@ Testprogramm zum Ansteuern eines kontinuierlichen Servos.
 </div>
 </div>
 
-#### Programmierung mit Pulsweitenmodulation
+
+</div>
+</details>
+<!-- Ende von Programmierung mit Servo-Befehlen (einfach)-->
+
+
+
+<details class="details">
+<summary class="details__trigger details__title" markdown="1">Programmierung mit Pulsweitenmodulation (fortgeschritten)</summary>
+<div class="details__content" markdown="1">
+#### Programmierung mit Pulsweitenmodulation (fortgeschritten)
 
 Die Steuerung der Servos erfolgt über ein PWM-Signal (Pulsweitenmodulation). Dabei gibt die Länge der Signalzeit, in der die Spannung auf 3,3V liegt, an, welcher Winkel bzw. welche Geschwindigkeit eingestellt werden soll. Die Signalzeiten variieren dabei von Servo zu Servo ein bisschen, sind aber im Wesentlichen vergleichbar. Wenn der Winkel mit Hilfe der Erweiterung (siehe oben) nicht ganz korrekt eingestellt wird, liegt das daran, dass die Signalzeiten für den verwendeten Servo nicht genau denen entsprechen, die der Erweiterung zugrunde liegen. Wenn man die Signalzeiten zu einem Analogwert für die Pulsweitenmodulation umrechnet, erhält man die exakten Werte.
 
@@ -233,6 +282,18 @@ while True:
   </div>
 </div>
 </div>
+
+
+</div>
+</details>
+<!-- Ende von Programmierung mit Pulsweitenmodulation (fortgeschritten)-->
+
+</div>
+</details>
+<!-- Ende von Verbindung mit Jumper-Kabeln-->
+
+
+
 
 ## Aufgaben
 
