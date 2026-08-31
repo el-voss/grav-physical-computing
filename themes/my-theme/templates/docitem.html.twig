@@ -15,7 +15,8 @@
 
 {#    {% if show_image and image %}
         <span class="image main" itemprop="image">{{ image.cropZoom(img_width, img_height).loading('lazy').attribute('decoding','async').html(title,title,'image')|raw }}</span>
-    {% endif %} #}
+    {% endif %} 
+#}
 
     <ul class="tags">
         {% if page.taxonomy.Voraussetzungen %}
@@ -62,7 +63,7 @@
         </li>
         {% endif %}
 
-        {#
+{#
         {% if page.taxonomy.category %}
         <span>
             <i class="fas fa-link fa-md"></i>
@@ -73,7 +74,7 @@
             {% endfor %}
         </span>
         {% endif %}
-        #}
+#}
     </ul>
 
     <p>
