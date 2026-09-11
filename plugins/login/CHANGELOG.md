@@ -1,3 +1,18 @@
+# v3.9.4
+## 08/24/2026
+
+1. [](#new)
+    * Added German and French translations for the magic-link login screens, emails and settings. Thanks to @nerdyjan for contributing the German and French wording [#337](https://github.com/getgrav/grav-plugin-login/issues/337)
+1. [](#bugfix)
+    * The German and French "password reset sent" message no longer confirms whether an account exists for the address entered, matching the English wording
+
+# v3.9.3
+## 08/21/2026
+
+1. [](#bugfix)
+    * [security] The two-factor step now limits how many wrong codes may be submitted for an account, with its own counter that a fresh password login does not reset, so a six-digit code can no longer be guessed without limit by someone who already has the password ([GHSA-9j6w-2q6c-q3q8](https://github.com/getgrav/grav-plugin-login/security/advisories/GHSA-9j6w-2q6c-q3q8)).
+    * [security] Administrators who hold super access only through a group are now recognised as super when guarding account actions, so a lower-privileged user manager can no longer act on them ([GHSA-vv8m-jqpm-38x4](https://github.com/getgrav/grav-plugin-login/security/advisories/GHSA-vv8m-jqpm-38x4)).
+
 # v3.9.2
 ## 08/07/2026
 
