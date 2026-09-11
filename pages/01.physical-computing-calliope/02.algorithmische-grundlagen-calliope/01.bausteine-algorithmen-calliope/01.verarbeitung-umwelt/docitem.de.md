@@ -1,7 +1,7 @@
 ---
 title: 'Verarbeitung von Umwelteingaben'
 menu: 'Verarbeitung von Umwelteingaben'
-media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,verzweigungen.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png,nachtlicht-flackert.png,knopfprobleme1.png,knopfprobleme2.png,verzweigungsproblem.png,struktogramm-verzweigung.png,mc-erste-entscheidung1.png,mc-erste-entscheidung2.png,mc-erste-entscheidung3.png,mc-bedingung-mit-schwellwert.png,mc-bedingung-taste-A.png,mc-verzweigungen.png,mc-ereignis.png,mc-knopfprobleme1.png,mc-knopfprobleme2.png,mc-verzweigungsproblem.png,mc-nachtlicht-flackert.png'
+media_order: 'erste-entscheidung1.png,erste-entscheidung2.png,verzweigungen.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png,nachtlicht-flackert.png,knopfprobleme1.png,knopfprobleme2.png,verzweigungsproblem.png,struktogramm-verzweigung.png,mc-erste-entscheidung1.png,mc-erste-entscheidung2.png,mc-erste-entscheidung3.png,mc-bedingung-mit-schwellwert.png,mc-bedingung-taste-A.png,mc-verzweigungen.png,mc-ereignis.png,mc-knopfprobleme1.png,mc-knopfprobleme2.png,mc-verzweigungsproblem.png,mc-nachtlicht-flackert.png,mc-knopfprobleme3.png'
 featured_image: struktogramm-verzweigung.png
 show_pageimage: true
 image_width: 300
@@ -247,6 +247,7 @@ Die folgenden Programme funktionieren nicht richtig, obwohl sie auf den ersten B
   <div class="makecode content-block" markdown="1">
 <div markdown="1" class="flex-box">
 <div markdown="1">![mc-knopfprobleme1](mc-knopfprobleme1.png?Lightbox=1024&resize=500&classes=caption "Die RGB-LED soll im Normalfall rot anzeigen, aber wenn Taste A gedrückt wird, soll sie grün anzeigen.")</div>
+<div markdown="1">![mc-knopfprobleme3](mc-knopfprobleme3.png?Lightbox=1024&resize=500&classes=caption "Die RGB-LED soll zunächst rot anzeigen. Wenn Taste A gedrückt wird, soll sie grün anzeigen. Wenn Taste A noch mal gedrückt wird, soll sie wieder rot anzeigen.")</div>
 <div markdown="1">![mc-knopfprobleme2](mc-knopfprobleme2.png?Lightbox=1024&resize=500&classes=caption "Die RGB-LED soll im Normalfall rot anzeigen, aber wenn Taste A gedrückt wird, soll sie grün anzeigen.")</div>
 </div>
   </div>
