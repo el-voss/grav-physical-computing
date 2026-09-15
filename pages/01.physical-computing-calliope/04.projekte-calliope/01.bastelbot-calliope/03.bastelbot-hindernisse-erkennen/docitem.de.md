@@ -3,15 +3,15 @@ title: 'Hindernisse erkennen'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'bastelbot-mit-ultraschallsensor.png,ultraschallsensor-grove.jpg,hinderniserkennung-schematisch.png'
+media_order: 'hinderniserkennung-schematisch.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png,mc-bedingung-mit-schwellwert.png,mc-bedingung-taste-A.png,mc-verzweigungen.png,verzweigungen.png'
 featured_image: hinderniserkennung-schematisch.png
 taxonomy:
     Voraussetzungen:
         - 'Bau des Fahrgestells'
         - 'Fahren lernen'
     Entwicklungsumgebung:
-        - Makecode
         - OpenRoberta
+        - Makecode
         - Python
     Inhalte:
         - Hinderniserkennung
@@ -53,3 +53,103 @@ Programmiere den Roboter so, dass er schnell fährt, wenn kein Hindernis in Sich
 
 Programmiere den Roboter so, dass er möglichst genau 5cm vor einer Wand stoppt. Er wird bereits vorher immer langsamer und gibt dabei Töne ab. Je näher der Roboter dem Hindernis kommt, desto schneller folgen die Töne aufeinander.
 </div>
+
+
+<details class="details">
+<summary class="details__trigger details__title">Zusammenfassung: Arten von Verzweigungen</summary>
+<div class="details__content" markdown="1">
+<div class="notices green" markdown="1">
+#### Verzweigungen
+
+Mit Verzweigungen kann man den Calliope je nach Situation anders reagieren lassen. Dazu wird die Ausführung der Anweisungen an eine oder mehrere Bedingungen gekoppelt. Diese Bedingung muss entweder "wahr" oder "falsch" ergeben, um eindeutig zu entscheiden, ob die Anweisungen ausgeführt werden sollen oder nicht.
+
+<!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block" markdown="1">
+![mc-verzweigungen](mc-verzweigungen.png?Lightbox=1024&resize=800&classes=caption "Verschiedene Verzweigungen.")
+
+Als Bedingung eignen sich sechseckige Blöcke. Manche Sensoreingaben, wie zum Beispiel das Drücken einer Taste, kann man direkt als Bedingung verwenden (erkennbar an der sechseckigen Form). Bei anderen Sensorblöcken, die z. B. eine Zahl bereitstellen, erhält man die Bedingung erst durch den Vergleich mit einer anderen Zahl, sodass aus dem Vergleich ein Wahrheitswert (wahr/falsch) entsteht. Die Zahl, die zum Vergleich herangezogen wird, nennt man auch "Schwellwert".
+
+<div markdown="1" class="flex-box">
+<div markdown="1">![mc-bedingung-taste-A](mc-bedingung-taste-A.png?classes=caption "Der Sensorblock <Knopf A ist geklickt?> liefert <wahr> oder <falsch> (sechseckige Form) und kann als Bedingung für Verzweigungen verwendet werden.")</div>
+<div markdown="1">![mc-bedingung-mit-schwellwert](mc-bedingung-mit-schwellwert.png?classes=caption "Der Vergleich der Lautstärke mit einem Schwellwert liefert <wahr> oder <falsch> und kann als Bedingung für Verzweigungen genutzt werden." )</div>
+</div>
+
+**Wichtig:** Die folgenden Blöcke sind keine Verzweigungen, sondern sogenannte **Ereignisse**. 
+![mc-ereignis](mc-ereignis.png?resize=700 "mc-ereignis")
+Ereignisse unterbrechen das eigentlich ablaufende Programm in der Endlosschleife, wenn das angegebene Ereignis eintritt. Diese Unterbrechung sollte immer *möglichst kurz* sein, weil das Programm sonst bei mehreren Ereignissen zu viel hin- und herspringt und man den Überblick verliert. Insbesondere sind (Endlos-)Schleifen innerhalb eines Ereignisses ein *No-Go*.
+  </div>
+  <div class="roberta content-block" markdown="1">
+
+![verzweigungen](verzweigungen.png?Lightbox=1024&resize=500&classes=caption "Verschiedene Verzweigungen.")
+
+Als Bedingung eignen sich hellblaue Blöcke. Manche Sensoreingaben, wie zum Beispiel das Drücken einer Taste, kann man auch direkt als Bedingung verwenden (erkennbar an der hellblauen Nase). Bei anderen Sensorblöcken erhält man erst durch den Vergleich mit einer Zahl einen Wahrheitswert (wahr oder falsch). Die Zahl, die zum Vergleich herangezogen wird, nennt man auch *Schwellwert*.
+
+<div markdown="1" class="flex-box">
+<div markdown="1">![bedingung-taste-A](bedingung-taste-A.png?classes=caption "Der Sensorblock <Taste A gedrueckt?> liefert <wahr> oder <falsch> (hellblaue Nase) und kann als Bedingung für Verzweigungen verwendet werden.")</div>
+<div markdown="1">![bedingung-mit-schwellwert](bedingung-mit-schwellwert.png?classes=caption "Der Vergleich der Lautstärke mit einem Schwellwert liefert <wahr> oder <falsch> und kann als Bedingung für Verzweigungen genutzt werden.")</div>
+</div>
+  </div>
+  <div class="python content-block" markdown="1">
+
+```python
+# Imports go at the top
+from calliopemini import *
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    if button_a.is_pressed():      # die Funktion "is_pressed()" liefert einen Wahrheitswert (wahr/falsch)
+        display.scroll('Fall 1')   # wird ausgeführt, falls Knopf A gedrückt wurde
+```
+Programm A: Einfache Verzweigung
+
+```python
+# Imports go at the top
+from calliopemini import *
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    if button_a.is_pressed():      # die Funktion "is_pressed()" liefert einen Wahrheitswert (wahr/falsch)
+        display.scroll('Fall 1')   # wird ausgeführt, falls Knopf A gedrückt wurde
+    else:
+        display.clear()            # wird ausgeführt, falls Kopf A *nicht* gedrückt wurde
+
+```
+Programm B: Verzweigung mit sonst-Fall
+
+<pre><code class="language-python">
+# Imports go at the top
+from calliopemini import *
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    if button_a.is_pressed():      # die Funktion "is_pressed()" liefert einen Wahrheitswert (wahr/falsch)
+        display.scroll('Fall 1')   # wird ausgeführt, falls Knopf A gedrückt wurde
+    elif (microphone.sound_level() &gt; 125):  # die Funktion "sound_level()" liefert eine Zahl von 0 bis 255
+                                            # erst durch den Vergleich dieser Zahl mit 125 wird daraus ein Wahrheitswert (wahr/falsch)
+        display.scroll('Fall 2')            # wird ausgeführt, falls Knopf A NICHT gedrückt wurde, aber Knopf B gedrückt wurde
+    else:                          
+        display.clear()            # wird ausgeführt, falls Knopf A NICHT gedrückt wurde und Knopf B NICHT gedrückt wurde
+
+</code></pre>
+Programm C: Verschachtelte Verzweigung
+
+Die Bedingung muss immer wahr oder falsch ergeben. Manche Sensoreingaben, wie zum Beispiel das Drücken einer Taste, kann man über eine Funktion direkt als Bedingung verwenden (z. B. `is_pressed()`). Bei anderen Sensoreingaben, die z. B. eine Zahl bereitstellen (z. B. `sound_level()`), erhält man die Bedingung erst durch den Vergleich mit einer anderen Zahl, sodass aus dem Vergleich ein Wahrheitswert (wahr/falsch) entsteht. Die Zahl, die zum Vergleich herangezogen wird, nennt man auch "Schwellwert".
+
+</div>
+</div>
+
+
+
+
+</div>
+</div>
+</details>
