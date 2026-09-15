@@ -174,34 +174,34 @@ Mit Hilfe von Schleifen kann man Anweisungen mehrfach ausführen.
 <div class="tab-content">
   <div class="makecode content-block" markdown="1">
 ![mc-einfache-zaehlschleife](mc-einfache-zaehlschleife.png "mc-einfache-zaehlschleife")
-Einfache Zählschleife: Der Calliope zeigt 4 Mal "hi!" an.
+**Einfache Zählschleife:** Der Calliope zeigt 4 Mal "hi!" an.
 
 ![mc-while-schleife](mc-while-schleife.png "mc-while-schleife")
-Kopfgesteuerte Schleife: Die Anweisung wird wiederholt, solange die Bedingung wahr ist. In diesem Fall wird auf dem Display "Bitte lauter reden" angezeigt, solange die Lautstärke kleiner als 200 ist.
+**Kopfgesteuerte Schleife:** Die Anweisung wird wiederholt, solange die Bedingung wahr ist. In diesem Fall wird auf dem Display "Bitte lauter reden" angezeigt, solange die Lautstärke kleiner als 200 ist.
 Wenn die Lautstärke größer gleich 200 ist, hört die Schleife auf und es wird "Danke" angezeigt.
 
 ![mc-warte-bis](mc-warte-bis.png "mc-warte-bis")
-"Warte,bis": Der Calliope macht nichts, bis die Bedingung wahr ist. In diesem Fall wartet der Calliope, bis Taste A gedrückt wurde.
+**"Warte,bis":** Der Calliope macht nichts, bis die Bedingung wahr ist. In diesem Fall wartet der Calliope, bis Taste A gedrückt wurde.
 
 Als Bedingung eignen sich sechseckige Blöcke. Manche Sensoreingaben, wie zum Beispiel das Drücken einer Taste, kann man direkt als Bedingung verwenden (erkennbar an der sechseckigen Form). Bei anderen Sensorblöcken, die z. B. eine Zahl bereitstellen, erhält man die Bedingung erst durch den Vergleich mit einer anderen Zahl, sodass aus dem Vergleich ein Wahrheitswert (wahr/falsch) entsteht. Die Zahl, die zum Vergleich herangezogen wird, nennt man auch "Schwellwert".
   </div>
   <div class="roberta content-block" markdown="1">
 ![orl-einfache-zaehlschleife](orl-einfache-zaehlschleife.png "orl-einfache-zaehlschleife")
-Einfache Zählschleife: Der Calliope zeigt 4 Mal "hi!" an.
+**Einfache Zählschleife:** Der Calliope zeigt 4 Mal "hi!" an.
 
 ![orl-while-schleife](orl-while-schleife.png "orl-while-schleife")
-Kopfgesteuerte Schleife mit "solange": Die Anweisung wird wiederholt, *solange* die Bedingung wahr ist. In diesem Fall wird auf dem Display "Bitte lauter reden" angezeigt, solange die Lautstärke kleiner als 200 ist.
+**Kopfgesteuerte Schleife mit "solange":** Die Anweisung wird wiederholt, *solange* die Bedingung wahr ist. In diesem Fall wird auf dem Display "Bitte lauter reden" angezeigt, solange die Lautstärke kleiner als 200 ist.
 Wenn die Lautstärke größer gleich 200 ist, hört die Schleife auf und es wird "Danke" angezeigt.
 
 ![orl-while-schleife-bis](orl-while-schleife-bis.png "orl-while-schleife-bis")
-Kopfgesteuerte Schleife mit "bis": Die Anweisung wird wiederholt, *bis* die Bedingung wahr ist. In diesem Fall wird auf dem Display "Bitte lauter reden" angezeigt, bis die Lautstärke größer gleich als 200 ist.
+**Kopfgesteuerte Schleife mit "bis":** Die Anweisung wird wiederholt, *bis* die Bedingung wahr ist. In diesem Fall wird auf dem Display "Bitte lauter reden" angezeigt, bis die Lautstärke größer gleich als 200 ist.
 Wenn die Lautstärke größer gleich 200 ist, hört die Schleife auf und es wird "Danke" angezeigt.
 
 Man kann eine "solange"-Schleife in eine "bis-Schleife" umwandeln, indem man die jeweilige Bedingung verneint.
 
 ![orl-warte-bis](orl-warte-bis.png "orl-warte-bis")
 
-"Warte,bis": Der Calliope macht nichts, bis die Bedingung wahr ist. In diesem Fall wartet der Calliope, bis Taste A gedrückt wurde.
+**"Warte,bis":** Der Calliope macht nichts, bis die Bedingung wahr ist. In diesem Fall wartet der Calliope, bis Taste A gedrückt wurde.
 
 Als Bedingung eignen sich hellblaue Blöcke. Manche Sensoreingaben, wie zum Beispiel das Drücken einer Taste, kann man auch direkt als Bedingung verwenden (erkennbar an der hellblauen Nase). Bei anderen Sensorblöcken erhält man erst durch den Vergleich mit einer Zahl einen Wahrheitswert (wahr oder falsch). Die Zahl, die zum Vergleich herangezogen wird, nennt man auch *Schwellwert*.
 
