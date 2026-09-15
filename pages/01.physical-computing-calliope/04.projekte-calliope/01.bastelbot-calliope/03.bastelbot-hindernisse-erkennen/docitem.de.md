@@ -59,7 +59,7 @@ Programmiere den Roboter so, dass er möglichst genau 5cm vor einer Wand stoppt.
 <summary class="details__trigger details__title">Zusammenfassung: Arten von Verzweigungen</summary>
 <div class="details__content" markdown="1">
 <div class="notices green" markdown="1">
-#### Verzweigungen
+#### Arten von Verzweigungen
 
 Mit Verzweigungen kann man den Calliope je nach Situation anders reagieren lassen. Dazu wird die Ausführung der Anweisungen an eine oder mehrere Bedingungen gekoppelt. Diese Bedingung muss entweder "wahr" oder "falsch" ergeben, um eindeutig zu entscheiden, ob die Anweisungen ausgeführt werden sollen oder nicht.
 
