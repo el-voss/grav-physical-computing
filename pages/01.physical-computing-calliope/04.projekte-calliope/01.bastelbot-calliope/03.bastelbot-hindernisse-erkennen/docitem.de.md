@@ -3,7 +3,7 @@ title: 'Hindernisse erkennen'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'hinderniserkennung-schematisch.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png,mc-bedingung-mit-schwellwert.png,mc-bedingung-taste-A.png,mc-verzweigungen.png,verzweigungen.png'
+media_order: 'hinderniserkennung-schematisch.png,bedingung-mit-schwellwert.png,bedingung-taste-A.png,mc-bedingung-mit-schwellwert.png,mc-bedingung-taste-A.png,mc-verzweigungen.png,verzweigungen.png,mc-ereignis.png'
 featured_image: hinderniserkennung-schematisch.png
 taxonomy:
     Voraussetzungen:
