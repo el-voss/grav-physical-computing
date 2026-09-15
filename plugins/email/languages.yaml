@@ -56,7 +56,11 @@ en:
     QUEUE_FLUSH_MSG_LIMIT_APPEND: "Messages"
     QUEUE_FLUSH_TIME_LIMIT: "Flush time limit"
     QUEUE_FLUSH_TIME_LIMIT_APPEND: "Seconds"
-    EMAIL_FORMAT: "Use the `addr` format: `email@address.org` or `name-addr` format: `Your Name <email@address.org>`. Comma separated for multiple addresses"
+    PROVIDERS_SECTION: "Delivery Reports"
+    PROVIDERS_SECTION_DESC: "These settings belong to the provider contract, which is how a plugin for a mail provider tells the rest of the site how that provider reports what happened to a message. They do nothing on their own."
+    SEND_HEADER: "Send id header"
+    SEND_HEADER_HELP: "The header an add-on stamps on a message so the provider can hand it back on a bounce or an open, which is what ties a report to the exact message it came from. Leave it empty and `X-Grav-Send-Id` is used. Change it only if your mail already carries a header of that name, and remember that some providers only echo a header you have registered with them, so a change means setting the webhook up again."
+    EMAIL_FORMAT: "Use the `addr` format: `email@address.org` or `name-addr` format: `Your Name &lt;email@address.org&gt;`. Comma separated for multiple addresses"
 
 da:
   PLUGIN_EMAIL:
@@ -127,7 +131,7 @@ es:
     QUEUE_FLUSH_MSG_LIMIT_APPEND: "Mensajes"
     QUEUE_FLUSH_TIME_LIMIT: "Límite de tiempo de vaciado"
     QUEUE_FLUSH_TIME_LIMIT_APPEND: "Segundos"
-    EMAIL_FORMAT: "Utilice el formato `addr`: `email@direccion.org` o formato `name-addr`: `Su nombre <email@direccion.org>`. Separados por comas para múltiples direcciones"
+    EMAIL_FORMAT: "Utilice el formato `addr`: `email@direccion.org` o formato `name-addr`: `Su nombre &lt;email@direccion.org&gt;`. Separados por comas para múltiples direcciones"
 
 fr:
   PLUGIN_EMAIL:
@@ -187,7 +191,7 @@ fr:
     QUEUE_FLUSH_MSG_LIMIT_APPEND: "Messages"
     QUEUE_FLUSH_TIME_LIMIT: "Délai de Flush"
     QUEUE_FLUSH_TIME_LIMIT_APPEND: "Secondes"
-    EMAIL_FORMAT: "Utilisez le format `addr` : `email@adresse.org` ou le format `name-addr` : `Votre nom <email@adresse.org>`. Séparer par des virgules pour plusieurs adresses."
+    EMAIL_FORMAT: "Utilisez le format `addr` : `email@adresse.org` ou le format `name-addr` : `Votre nom &lt;email@adresse.org&gt;`. Séparer par des virgules pour plusieurs adresses."
 
 
 hr:

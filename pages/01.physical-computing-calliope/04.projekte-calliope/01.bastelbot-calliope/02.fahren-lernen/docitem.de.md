@@ -222,7 +222,7 @@ Bei einer **Verzweigung** werden Anweisungen nur unter einer bestimmten Bedingun
 Auf dem Display wird "A" angezeigt, wenn der Knopf A gedrückt wird
 ![mc-einfache-verzweigung](mc-einfache-verzweigung.png?resize=400 "mc-einfache-verzweigung")
 
-Auf dem Display wird "laut" angezeigt, wenn der gemessene Wert für die Lautstärke größer als 125 ist. Die Wahr-/Falsch-Bedingung ergibt sich aus dem Vergleich des Messwertes mit einem vorgegebenen Wert.
+Auf dem Display wird "laut" angezeigt, wenn der gemessene Wert für die Lautstärke größer als 125 ist. Die Wahr-/Falsch-Bedingung ergibt sich aus dem Vergleich des Messwertes mit einem vorgegebenen *Schwellwert*.
 ![mc-verzweigung-mit-vgl](mc-verzweigung-mit-vgl.png?resize=400 "mc-verzweigung-mit-vgl")
 
 **Wichtig:** Die folgenden Blöcke sind keine Verzweigungen, sondern sogenannte **Ereignisse**. 
@@ -233,7 +233,7 @@ Ereignisse unterbrechen das eigentlich ablaufende Programm in der Endlosschleife
 Auf dem Display wird "A" angezeigt, wenn der Knopf A gedrückt wird
 ![orl-verzweigung](orl-verzweigung.png?resize=400 "orl-verzweigung")
 
-Auf dem Display wird "laut" angezeigt, wenn der gemessene Wert für die Lautstärke größer als 50% ist. Die Wahr-/Falsch-Bedingung ergibt sich aus dem Vergleich des Messwertes mit einem vorgegebenen Wert.
+Auf dem Display wird "laut" angezeigt, wenn der gemessene Wert für die Lautstärke größer als 50% ist. Die Wahr-/Falsch-Bedingung ergibt sich aus dem Vergleich des Messwertes mit einem vorgegebenen *Schwellwert*.
 ![orl-verzweigung-mit-vgl](orl-verzweigung-mit-vgl.png?resize=400 "orl-verzweigung-mit-vgl")
   </div>
   <div class="python content-block" markdown="1">
@@ -243,8 +243,8 @@ Auf dem Display wird "laut" angezeigt, wenn der gemessene Wert für die Lautstä
 if button_a.is_pressed():
      display.show("A")  # der Inhalt der Verzweigung muss eingerückt sein!
 
-# auf dem Display wird "laut" angezeigt, wenn der gemessene Wert für die Lautstärke größer als 125 ist
-# Die Wahr-/Falsch-Bedingung ergibt sich aus dem Vergleich des Messwertes mit einem vorgegebenen Wert.
+# auf dem Display wird "laut" angezeigt, wenn der gemessene Wert für die Lautstärke größer als der Schwellwert 125 ist
+# Die Wahr-/Falsch-Bedingung ergibt sich aus dem Vergleich des Messwertes mit einem vorgegebenen Schwellwert.
 if microphone.sound_level() > 125:
         display.show("laut")   # der Inhalt der Verzweigung muss eingerückt sein!
 ```
