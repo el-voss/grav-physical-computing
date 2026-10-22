@@ -4,6 +4,7 @@ show_pageimage: true
 image_width: 300
 image_height: 400
 media_order: 'pinfunktionen-analog-read-mc.png,pinfunktionen-analog-read-orl-konf.png,pinfunktionen-analog-read-orl.png,pinfunktionen-analog-read.png,pinfunktionen-analog-write-mc.png,pinfunktionen-analog-write-orl-konf.png,pinfunktionen-analog-write-orl.png,pinfunktionen-digital-read-mc.png,pinfunktionen-digital-read-orl.png,pinfunktionen-digital-read.png,pinfunktionen-digital-write-mc.png,pinfunktionen-digital-write-orl-konf.png,pinfunktionen-digital-write.png,pinfunktionen-digital-read-orl-konf.png,pinfunktionen-digital-write-orl.png,sensor-und-aktor-digital-und-analog-übersichtsschema.png'
+featured_image: sensor-und-aktor-digital-und-analog-übersichtsschema.png
 ---
 
 Jeder GPIO-Pin ("General Purpose Input Output") des Calliope kann grundsätzlich zwei Rollen einnehmen: Er kann als **Ausgang** ein angeschlossenes Bauteil (einen Aktor) ansteuern oder als **Eingang** ein angeschlossenes Bauteil (einen Sensor) auslesen. Dabei wird jeweils zwischen einer digitalen Variante mit nur zwei Zuständen (an/aus bzw. 0/1) und einer analogen Variante mit vielen Zwischenwerten (z. B. eine Zahl zwischen 0 und 1023) unterschieden. Insgesamt ergeben sich daraus vier Funktionen, die auf dieser Seite nacheinander vorgestellt werden.
