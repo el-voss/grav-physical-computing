@@ -1,7 +1,7 @@
 ---
 title: 'Algorithmische Grundlagen'
 published: true
-menu: 'Bausteine von Algorithmen'
+menu: 'Algorithmische Grundlagen'
 content:
     items:
         - '@self.children'
