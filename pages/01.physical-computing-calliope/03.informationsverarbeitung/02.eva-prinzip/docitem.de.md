@@ -52,7 +52,7 @@ np = neopixel.NeoPixel(pin_RGB, 3)
 # Code in a 'while True:' loop repeats forever
 while True:
     display.scroll('hi!')
-    if temperature() < 20:
+    if temperature() &lt; 20:
         np.fill((0,0,255))
         np.show()
     else:
