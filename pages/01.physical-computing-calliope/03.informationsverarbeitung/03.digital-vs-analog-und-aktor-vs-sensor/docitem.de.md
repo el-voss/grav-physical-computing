@@ -37,7 +37,7 @@ Versuche, die folgenden Bauteile des Calliope aus eigener Überlegung zu kategor
 - Kompass (Magnetometer)
 - Beschleunigungssensor und Gyroskop
 
-           | Sensor | Aktor |
+ |          | Sensor | Aktor |
  |---------|--------|-------|
  | Digital |        |       |
  | Analog  |        |       |
