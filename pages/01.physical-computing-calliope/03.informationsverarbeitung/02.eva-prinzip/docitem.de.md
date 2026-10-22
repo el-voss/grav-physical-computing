@@ -15,7 +15,7 @@ taxonomy:
     Niveau:
         - Basis
 featured_image: tabelle-dig-ana-sen-akt.png
-media_order: 'calliope-eva-hardware.png,calliope-eva-software.png,eva-visualisierung.png,tabelle-dig-ana-sen-akt.png,analog-digital-wandlung.png'
+media_order: 'calliope-eva-hardware.png,calliope-eva-software.png,eva-visualisierung.png,tabelle-dig-ana-sen-akt.png,analog-digital-wandlung.png,eva-uebung-mc.png,eva-uebung-orl.png'
 ---
 
 <div markdown="1" class="aufgabe">
@@ -36,14 +36,31 @@ media_order: 'calliope-eva-hardware.png,calliope-eva-software.png,eva-visualisie
 <!-- Inhalte für jede Programmierumgebung -->
 <div class="tab-content">
   <div class="makecode content-block" markdown="1">
-![pinfunktionen-digital-write-mc](pinfunktionen-digital-write-mc.png?Lightbox=1024&resize=500&classes=caption "In Makecode kann der Pin über den Block <schreibe digital auf Pin> ein- und ausgeschaltet werden.")
+![eva-uebung-mc](eva-uebung-mc.png?Lightbox=1024&resize=500)
   </div>
   <div class="roberta content-block" markdown="1">
-![pinfunktionen-digital-write-orl](pinfunktionen-digital-write-orl.png?Lightbox=1024&resize=500&classes=caption "Im Open Roberta Lab schaltet der Block <schreibe digital auf Pin> die LED ein und aus.")
+![eva-uebung-orl](eva-uebung-orl.png?Lightbox=1024&resize=500)
   </div>
   <div class="python content-block" markdown="1">
 ```python
+# Imports go at the top
+from calliopemini import *
+import neopixel
+import music
+np = neopixel.NeoPixel(pin_RGB, 3)
 
+# Code in a 'while True:' loop repeats forever
+while True:
+    display.scroll('hi!')
+    if temperature() < 20:
+        np.fill((0,0,255))
+        np.show()
+    else:
+        np.fill((255, 125,0))
+        np.show()
+    music.play(['c'])
+    while not( button_a.is_pressed() ):
+        pass
 ```
   </div>
 </div>
