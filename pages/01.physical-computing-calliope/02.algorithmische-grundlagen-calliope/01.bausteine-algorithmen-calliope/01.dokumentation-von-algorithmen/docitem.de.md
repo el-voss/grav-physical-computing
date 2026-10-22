@@ -6,11 +6,11 @@ image_height: 400
 featured_image: Sequenz.png
 taxonomy:
     Voraussetzungen:
+        - 'Wiederholungen und zufällige Ereignisse'
+        - Variablen
+        - 'Wiederholungen mit Bedingungen steuern'
         - 'Einfache Entscheidungen programmieren'
         - 'Entscheidungen mit mehreren Kriterien'
-        - Variablen
-        - 'Wiederholungen und zufällige Ereignisse'
-        - 'Wiederholungen mit Bedingungen steuern'
         - Zählschleifen
     Inhalte:
         - Struktogramme
