@@ -275,7 +275,7 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 #### Die vier Funktionen eines GPIO-Pins
 
 <!-- Beginn Bild mit Übersicht -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; max-width: 100%; max-height: 100%;">
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#37474f"/>
