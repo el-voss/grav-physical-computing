@@ -10,9 +10,9 @@ taxonomy:
         - 'Wiederholungen und zufällige Ereignisse'
         - Variablen
     Inhalte:
+        - Sensor
         - Digital
         - Analog
-        - Sensor
         - Aktor
     Niveau:
         - Fortgeschritten
