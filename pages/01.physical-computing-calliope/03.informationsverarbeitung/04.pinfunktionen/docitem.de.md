@@ -13,9 +13,9 @@ Für die folgenden Beispiele wird dabei stets der Pin P0 gewählt. Aber auch die
 <div markdown="1" class="aufgabe">
 #### Digitaler Aktor: LED ein- und ausschalten
 
-Im folgenden Schaltplan ist eine LED über einen Vorwiderstand mit dem GPIO-Pin C1 verbunden. Der Pin wird als digitaler Aktor genutzt: Er gibt entweder einen hohen Pegel (die LED leuchtet) oder einen niedrigen Pegel (die LED ist aus) aus.
+Im folgenden Schaltplan ist eine LED über einen Vorwiderstand mit dem GPIO-Pin P0 verbunden. Der Pin wird als digitaler Aktor genutzt: Er gibt entweder die Spannung 3,3V oder die Spannung 0V aus.
 
-![Schaltplan LED](pinfunktionen-digital-write.png?Lightbox=1024&resize=500&classes=caption "Schaltplan: Die LED ist über einen Vorwiderstand mit dem Pin C1 verbunden.")
+![Schaltplan LED](pinfunktionen-digital-write.png?Lightbox=1024&resize=500&classes=caption "Schaltplan: Die LED ist über einen Vorwiderstand mit dem Pin P0 verbunden.")
 
 <!-- Tabs für die Auswahl -->
 <div class="tab-group" data-group="programmierumgebung">
@@ -33,7 +33,7 @@ Im folgenden Schaltplan ist eine LED über einen Vorwiderstand mit dem GPIO-Pin 
   <div class="roberta content-block" markdown="1">
 Zunächst muss der Pin in der Konfiguration als digitaler Ausgang festgelegt werden:
 
-![pinfunktionen-digital-write-orl-konf](pinfunktionen-digital-write-orl-konf.png?Lightbox=1024&resize=500&classes=caption "Konfiguration: Der Pin C1 wird als digitaler Ausgang eingestellt.")
+![pinfunktionen-digital-write-orl-konf](pinfunktionen-digital-write-orl-konf.png?Lightbox=1024&resize=500&classes=caption "Konfiguration: Der Pin P0 wird als digitaler Ausgang eingestellt.")
 
 Anschließend kann der Pin im Programm geschaltet werden:
 
@@ -41,7 +41,15 @@ Anschließend kann der Pin im Programm geschaltet werden:
   </div>
   <div class="python content-block" markdown="1">
 ```python
-# HIER PYTHON EINFÜGEN
+# Imports go at the top
+from calliopemini import *
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    pin0.write_digital(1)  # schalte Spannung 3,3V ein
+    sleep(1000)            # warte 1000 Millisekunden
+    pin0.write_digital(0)  # schalte Spannung aus (-> 0V)
+    sleep(1000)            # warte 1000 Millisekunden
 ```
   </div>
 </div>
@@ -62,9 +70,13 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 <div markdown="1" class="aufgabe">
 #### Analoger Aktor: LED dimmen
 
-Im folgenden Schaltplan ist eine LED über einen Vorwiderstand mit dem GPIO-Pin C1 verbunden. Der Pin wird hier als analoger Aktor genutzt: Statt die LED nur ein- oder auszuschalten, gibt der Pin Zwischenwerte aus, sodass sich die Helligkeit der LED stufenlos regeln lässt.
+Im folgenden Schaltplan ist eine LED über einen Vorwiderstand mit dem GPIO-Pin P0 verbunden. Der Pin wird hier als analoger Aktor genutzt: Dabei wird sehr schnell zwischen 3,3V und 0V hin und her geschaltet. Der angegebene analoge Wert gibt an, wie lang die Phase mit 3,3V sein soll: Je größer die Zahl ist, desto länger ist die Phase mit 3,3V gegenüber 0V. 
 
-![Schaltplan LED dimmen](pinfunktionen-digital-write.png?Lightbox=1024&resize=500&classes=caption "Schaltplan: Die LED ist über einen Vorwiderstand mit dem Pin C1 verbunden.")
+- Der Analogwert 0 bedeutet, dass die ganze Zeit 0V geschaltet wird. 
+- Der Analogwert 512 bedeutet, dass der Pin in der Hälfte der Zeit auf 3,3V und der anderen Hälfte auf 0V ist. 
+- Der Analogwert 1023 bedeutet, dass die ganze Zeit 3,3V geschaltet wird.
+
+![Schaltplan LED dimmen](pinfunktionen-digital-write.png?Lightbox=1024&resize=500&classes=caption "Schaltplan: Die LED ist über einen Vorwiderstand mit dem Pin P0 verbunden.")
 
 <!-- Tabs für die Auswahl -->
 <div class="tab-group" data-group="programmierumgebung">
@@ -82,7 +94,7 @@ Im folgenden Schaltplan ist eine LED über einen Vorwiderstand mit dem GPIO-Pin 
   <div class="roberta content-block" markdown="1">
 Zunächst muss der Pin in der Konfiguration als analoger Ausgang festgelegt werden:
 
-![pinfunktionen-analog-write-orl-konf](pinfunktionen-analog-write-orl-konf.png?Lightbox=1024&resize=500&classes=caption "Konfiguration: Der Pin C1 wird als analoger Ausgang eingestellt.")
+![pinfunktionen-analog-write-orl-konf](pinfunktionen-analog-write-orl-konf.png?Lightbox=1024&resize=500&classes=caption "Konfiguration: Der Pin P1 wird als analoger Ausgang eingestellt.")
 
 Anschließend kann der Pin im Programm mit analogen Werten angesteuert werden:
 
@@ -90,7 +102,21 @@ Anschließend kann der Pin im Programm mit analogen Werten angesteuert werden:
   </div>
   <div class="python content-block" markdown="1">
 ```python
-# HIER PYTHON EINFÜGEN
+# Imports go at the top
+from calliopemini import *
+
+# Code in a 'while True:' loop repeats forever
+while True:
+    pin0.write_analog(1023)  # schalte Spannung 3,3V dauerhaft ein
+    sleep(1000)              # warte 1000 Millisekunden
+    pin0.write_analog(768)   # schalte Spannung zu 3/4 ein
+    sleep(1000)
+    pin0.write_analog(512)   # schalte Spannung zur Hälfte ein
+    sleep(1000)
+    pin0.write_analog(256)   # schalte Spannung zu 1/4 ein
+    sleep(1000)
+    pin0.write_analog(0)     # schalte Spannung aus
+    sleep(1000)
 ```
   </div>
 </div>
@@ -111,9 +137,9 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 <div markdown="1" class="aufgabe">
 #### Digitaler Sensor: Taster auslesen
 
-Im folgenden Schaltplan ist ein Taster mit dem GPIO-Pin C1 verbunden. Der Pin wird als digitaler Sensor genutzt: Er liest nur zwei Zustände ein, nämlich "Taster gedrückt" oder "Taster nicht gedrückt".
+Im folgenden Schaltplan ist ein Taster mit dem GPIO-Pin P0 verbunden. Der Pin wird als digitaler Sensor genutzt.
 
-![Schaltplan Taster](pinfunktionen-digital-read.png?Lightbox=1024&resize=500&classes=caption "Schaltplan: Der Taster ist mit dem Pin C1 verbunden.")
+![Schaltplan Taster](pinfunktionen-digital-read.png?Lightbox=1024&resize=500&classes=caption "Schaltplan: Der Taster ist mit dem Pin P0 verbunden.")
 
 <!-- Tabs für die Auswahl -->
 <div class="tab-group" data-group="programmierumgebung">
@@ -131,7 +157,7 @@ Im folgenden Schaltplan ist ein Taster mit dem GPIO-Pin C1 verbunden. Der Pin wi
   <div class="roberta content-block" markdown="1">
 Zunächst muss der Pin in der Konfiguration als digitaler Eingang festgelegt werden:
 
-![pinfunktionen-digital-read-orl-konf](pinfunktionen-digital-read-orl-konf.png?Lightbox=1024&resize=500&classes=caption "Konfiguration: Der Pin C1 wird als digitaler Eingang eingestellt.")
+![pinfunktionen-digital-read-orl-konf](pinfunktionen-digital-read-orl-konf.png?Lightbox=1024&resize=500&classes=caption "Konfiguration: Der Pin P0 wird als digitaler Eingang eingestellt.")
 
 Anschließend kann der Pin im Programm ausgelesen werden:
 
@@ -139,7 +165,19 @@ Anschließend kann der Pin im Programm ausgelesen werden:
   </div>
   <div class="python content-block" markdown="1">
 ```python
-# HIER PYTHON EINFÜGEN
+# Imports go at the top
+from calliopemini import *
+import neopixel
+
+np = neopixel.NeoPixel(pin_RGB, 3)
+
+while True:
+    if pin0.read_digital() == 1:
+        np.fill((255, 255,0))      # grün
+        np.show()
+    else:
+        np.fill((255, 0, 0))       # rot
+        np.show()
 ```
   </div>
 </div>
@@ -160,9 +198,9 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 <div markdown="1" class="aufgabe">
 #### Analoger Sensor: Potentiometer auslesen
 
-Im folgenden Schaltplan ist ein Potentiometer mit dem GPIO-Pin C1 verbunden. Der Pin wird als analoger Sensor genutzt: Er liest nicht nur zwei Zustände, sondern viele Zwischenwerte ein, die die Stellung des Drehreglers widerspiegeln.
+Im folgenden Schaltplan ist ein Potentiometer mit dem GPIO-Pin P0 verbunden. Der Pin wird als analoger Sensor genutzt: Er liest nicht nur zwei Zustände, sondern viele Zwischenwerte von 0 bis 1023 ein, die die Stellung des Drehreglers widerspiegeln.
 
-![Schaltplan Potentiometer](pinfunktionen-analog-read.png?Lightbox=1024&resize=500&classes=caption "Schaltplan: Das Potentiometer ist mit dem Pin C1 verbunden.")
+![Schaltplan Potentiometer](pinfunktionen-analog-read.png?Lightbox=1024&resize=500&classes=caption "Schaltplan: Das Potentiometer ist mit dem Pin P0 verbunden.")
 
 <!-- Tabs für die Auswahl -->
 <div class="tab-group" data-group="programmierumgebung">
@@ -180,7 +218,7 @@ Im folgenden Schaltplan ist ein Potentiometer mit dem GPIO-Pin C1 verbunden. Der
   <div class="roberta content-block" markdown="1">
 Zunächst muss der Pin in der Konfiguration als analoger Eingang festgelegt werden:
 
-![pinfunktionen-analog-read-orl-konf](pinfunktionen-analog-read-orl-konf.png?Lightbox=1024&resize=500&classes=caption "Konfiguration: Der Pin C1 wird als analoger Eingang eingestellt.")
+![pinfunktionen-analog-read-orl-konf](pinfunktionen-analog-read-orl-konf.png?Lightbox=1024&resize=500&classes=caption "Konfiguration: Der Pin P1 wird als analoger Eingang eingestellt.")
 
 Anschließend kann der Pin im Programm ausgelesen werden:
 
@@ -188,7 +226,18 @@ Anschließend kann der Pin im Programm ausgelesen werden:
   </div>
   <div class="python content-block" markdown="1">
 ```python
-# HIER PYTHON EINFÜGEN
+# Imports go at the top
+from calliopemini import *
+import neopixel
+
+np = neopixel.NeoPixel(pin_RGB, 3)
+
+while True:
+    np.fill((255, 0, 0))       # rot
+    np.show()
+    sleep(pin0.read_analog())  # Leuchtzeit in ms so groß wie der Analogwert von P0
+    np.clear()
+    sleep(500)
 ```
   </div>
 </div>
@@ -214,10 +263,10 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 
 Ein GPIO-Pin des Calliope kann vier verschiedene Rollen einnehmen:
 
-1. **Digitaler Aktor (Ausgang):** Der Pin gibt nur zwei Zustände aus (an/aus bzw. 0/1). Damit lassen sich Bauteile wie LEDs, Relais oder Summer ein- und ausschalten.
-2. **Analoger Aktor (Ausgang):** Der Pin gibt Zwischenwerte aus (z. B. 0 bis 1023). Damit lassen sich Bauteile wie LEDs stufenlos dimmen oder Motoren in ihrer Geschwindigkeit regeln.
-3. **Digitaler Sensor (Eingang):** Der Pin liest nur zwei Zustände ein. Damit lassen sich Bauteile wie Taster oder Schalter abfragen, die entweder gedrückt oder nicht gedrückt sind.
-4. **Analoger Sensor (Eingang):** Der Pin liest Zwischenwerte ein. Damit lassen sich Bauteile wie Potentiometer oder Temperatursensoren auslesen, die kontinuierliche Messwerte liefern.
+1. **Digitaler Aktor (Ausgang):** Der Pin gibt nur zwei Zustände aus (aus/an bzw. 0/1 bzw. 0V/3,3V). Damit lassen sich Bauteile wie LEDs, Relais oder Summer ein- und ausschalten.
+2. **Analoger Aktor (Ausgang):** Der Pin gibt Zwischenwerte aus (0 bis 1023). Damit lassen sich Bauteile wie LEDs stufenlos dimmen oder Motoren in ihrer Geschwindigkeit regeln. Im Hintergrund läuft eine sogenannte *Pulsweitenmodulation*, die den Pin sehr schnell an- und ausschaltet. Das Verhältnis von an/3,3V zu aus/0V wird über den Analogwert eingestellt.
+3. **Digitaler Sensor (Eingang):** Der Pin liest nur zwei Zustände ein. Damit lassen sich z. B. Taster abfragen, die entweder gedrückt oder nicht gedrückt sind.
+4. **Analoger Sensor (Eingang):** Der Pin liest Zwischenwerte ein (0 bis 1023). Damit lassen sich Bauteile wie Potentiometer oder Temperatursensoren auslesen, die kontinuierliche Messwerte liefern.
 
 Die Entscheidung, welche Funktion ein Pin einnimmt, hängt vom angeschlossenen Bauteil ab: Ein Bauteil, das Energie benötigt, um etwas zu tun, ist ein Aktor, und wird an einen Ausgang angeschlossen. Ein Bauteil, das Informationen über die Umgebung liefert, ist ein Sensor und wird an einen Eingang angeschlossen. Reicht dabei die Unterscheidung in zwei Zuständen aus, genügt die digitale Variante; werden Zwischenwerte benötigt, muss die analoge Variante verwendet werden.
 
