@@ -3,7 +3,7 @@ title: 'Pinfunktionen im Überblick'
 show_pageimage: true
 image_width: 300
 image_height: 400
-media_order: 'pinfunktionen-analog-read-mc.png,pinfunktionen-analog-read-orl-konf.png,pinfunktionen-analog-read-orl.png,pinfunktionen-analog-read.png,pinfunktionen-analog-write-mc.png,pinfunktionen-analog-write-orl-konf.png,pinfunktionen-analog-write-orl.png,pinfunktionen-digital-read-mc.png,pinfunktionen-digital-read-orl.png,pinfunktionen-digital-read.png,pinfunktionen-digital-write-mc.png,pinfunktionen-digital-write-orl-konf.png'
+media_order: 'pinfunktionen-analog-read-mc.png,pinfunktionen-analog-read-orl-konf.png,pinfunktionen-analog-read-orl.png,pinfunktionen-analog-read.png,pinfunktionen-analog-write-mc.png,pinfunktionen-analog-write-orl-konf.png,pinfunktionen-analog-write-orl.png,pinfunktionen-digital-read-mc.png,pinfunktionen-digital-read-orl.png,pinfunktionen-digital-read.png,pinfunktionen-digital-write-mc.png,pinfunktionen-digital-write-orl-konf.png,pinfunktionen-digital-write.png,pinfunktionen-digital-read-orl-konf.png,pinfunktionen-digital-write-orl.png,sensor-und-aktor-digital-und-analog-übersichtsschema.png'
 ---
 
 Jeder GPIO-Pin ("General Purpose Input Output") des Calliope kann grundsätzlich zwei Rollen einnehmen: Er kann als **Ausgang** ein angeschlossenes Bauteil (einen Aktor) ansteuern oder als **Eingang** ein angeschlossenes Bauteil (einen Sensor) auslesen. Dabei wird jeweils zwischen einer digitalen Variante mit nur zwei Zuständen (an/aus bzw. 0/1) und einer analogen Variante mit vielen Zwischenwerten (z. B. eine Zahl zwischen 0 und 1023) unterschieden. Insgesamt ergeben sich daraus vier Funktionen, die auf dieser Seite nacheinander vorgestellt werden.
@@ -272,6 +272,117 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 <div class="details__content" markdown="1">
 <div class="notices green" markdown="1">
 #### Die vier Funktionen eines GPIO-Pins
+
+<!-- Beginn Bild mit Übersicht -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#37474f"/>
+    </marker>
+    <marker id="arrowWhite" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffffff"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="1000" fill="#ffffff"/>
+
+  <text x="500" y="66" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="bold" fill="#1a237e">Vier Funktionen am Calliope</text>
+  <text x="500" y="104" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#37474f">Sensoren geben ein – Aktoren geben aus. Signale sind digital (Stufen) oder analog (kontinuierlich).</text>
+
+  <!-- Column headers -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="bold" text-anchor="middle">
+    <rect x="190" y="126" width="380" height="56" rx="10" fill="#1a237e"/>
+    <text x="380" y="164" fill="#ffffff">Digital (Stufen)</text>
+    <rect x="600" y="126" width="380" height="56" rx="10" fill="#00695c"/>
+    <text x="790" y="164" fill="#ffffff">Analog (kontinuierlich)</text>
+  </g>
+
+  <!-- Row labels -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="bold" text-anchor="middle">
+    <rect x="14" y="200" width="150" height="380" rx="10" fill="#283593"/>
+    <text x="89" y="372" fill="#ffffff" transform="rotate(-90 89 390)">Sensor (Eingabe)</text>
+    <rect x="14" y="610" width="150" height="380" rx="10" fill="#ad1457"/>
+    <text x="89" y="782" fill="#ffffff" transform="rotate(-90 89 800)">Aktor (Ausgabe)</text>
+  </g>
+
+  <!-- Quadrant backgrounds -->
+  <rect x="190" y="200" width="380" height="380" rx="12" fill="#e8eaf6"/>
+  <rect x="600" y="200" width="380" height="380" rx="12" fill="#e0f2f1"/>
+  <rect x="190" y="610" width="380" height="380" rx="12" fill="#fce4ec"/>
+  <rect x="600" y="610" width="380" height="380" rx="12" fill="#fff8e1"/>
+
+  <!-- Quadrant titles with direction arrow to/from Calliope -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#1a237e">
+    <rect x="330" y="216" width="120" height="42" rx="8" fill="#5c6bc0"/>
+    <text x="390" y="245" text-anchor="middle" fill="#ffffff">Calliope</text>
+    <line x1="320" y1="237" x2="230" y2="237" stroke="#5c6bc0" stroke-width="5" marker-end="url(#arrow)"/>
+    <text x="380" y="290" text-anchor="middle">Digitaler Sensor</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#00695c">
+    <rect x="740" y="216" width="120" height="42" rx="8" fill="#4db6ac"/>
+    <text x="800" y="245" text-anchor="middle" fill="#ffffff">Calliope</text>
+    <line x1="730" y1="237" x2="640" y2="237" stroke="#4db6ac" stroke-width="5" marker-end="url(#arrow)"/>
+    <text x="790" y="290" text-anchor="middle">Analoger Sensor</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#ad1457">
+    <rect x="330" y="626" width="120" height="42" rx="8" fill="#ec407a"/>
+    <text x="390" y="655" text-anchor="middle" fill="#ffffff">Calliope</text>
+    <line x1="460" y1="647" x2="550" y2="647" stroke="#ec407a" stroke-width="5" marker-end="url(#arrow)"/>
+    <text x="380" y="700" text-anchor="middle">Digitaler Aktor</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#e65100">
+    <rect x="740" y="626" width="120" height="42" rx="8" fill="#ffb300"/>
+    <text x="800" y="655" text-anchor="middle" fill="#ffffff">Calliope</text>
+    <line x1="870" y1="647" x2="960" y2="647" stroke="#ffb300" stroke-width="5" marker-end="url(#arrow)"/>
+    <text x="790" y="700" text-anchor="middle">Analoger Aktor</text>
+  </g>
+
+  <!-- Signal sketches: axes -->
+  <g stroke="#90a4ae" stroke-width="3" fill="none">
+    <path d="M 230 500 L 230 320"/>
+    <path d="M 230 500 L 520 500"/>
+    <path d="M 640 500 L 640 320"/>
+    <path d="M 640 500 L 930 500"/>
+    <path d="M 230 910 L 230 730"/>
+    <path d="M 230 910 L 520 910"/>
+    <path d="M 640 910 L 640 730"/>
+    <path d="M 640 910 L 930 910"/>
+  </g>
+
+  <!-- Digital sensor: step / square signal -->
+  <path d="M 230 490 L 290 490 L 290 350 L 380 350 L 380 490 L 470 490 L 470 350 L 520 350" stroke="#283593" stroke-width="6" fill="none" stroke-linejoin="round"/>
+  <text x="380" y="540" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#37474f" text-anchor="middle">nur zwei Zustände: 1 / 0</text>
+
+  <!-- Analog sensor: continuous curve -->
+  <path d="M 640 420 C 685 320 725 320 770 420 C 815 520 855 520 900 420" stroke="#00695c" stroke-width="6" fill="none"/>
+  <text x="790" y="540" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#37474f" text-anchor="middle">jeder Zwischenwert möglich</text>
+
+  <!-- Digital aktor: LED on/off -->
+  <g>
+    <rect x="300" y="780" width="46" height="46" rx="8" fill="#c62828"/>
+    <rect x="390" y="780" width="46" height="46" rx="8" fill="#eeeeee" stroke="#bdbdbd" stroke-width="2"/>
+    <text x="368" y="886" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#37474f" text-anchor="middle">aus – an – aus – an</text>
+  </g>
+
+  <!-- Analog aktor: fading LED -->
+  <g>
+    <rect x="680" y="780" width="46" height="46" rx="8" fill="#c62828" fill-opacity="0.15"/>
+    <rect x="745" y="780" width="46" height="46" rx="8" fill="#c62828" fill-opacity="0.45"/>
+    <rect x="810" y="780" width="46" height="46" rx="8" fill="#c62828" fill-opacity="0.8"/>
+    <rect x="875" y="780" width="46" height="46" rx="8" fill="#c62828"/>
+    <text x="800" y="886" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#37474f" text-anchor="middle">hell bis dunkel</text>
+  </g>
+
+  <!-- Examples -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#455a64">
+    <text x="380" y="318" text-anchor="middle">z.B. Taste A, Berührungspin</text>
+    <text x="790" y="318" text-anchor="middle">z.B. Licht- und Temperatursensor</text>
+    <text x="380" y="960" text-anchor="middle">z.B. einzelne LED-Punkte an / aus</text>
+    <text x="790" y="960" text-anchor="middle">z.B. Lautsprecher, LED-Helligkeit (PWM)</text>
+  </g>
+</svg>
+
+<!-- Ende Bild mit Übersicht -->
 
 Ein GPIO-Pin des Calliope kann vier verschiedene Rollen einnehmen:
 
