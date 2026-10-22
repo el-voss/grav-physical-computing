@@ -1,5 +1,5 @@
 ---
-title: 'Bausteine von Algorithmen'
+title: 'Algorithmische Grundlagen'
 published: true
 menu: 'Bausteine von Algorithmen'
 content:
