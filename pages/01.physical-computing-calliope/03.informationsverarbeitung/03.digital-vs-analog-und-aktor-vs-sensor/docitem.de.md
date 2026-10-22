@@ -11,11 +11,12 @@ taxonomy:
         - Variablen
     Inhalte:
         - Sensor
+        - Aktor
         - Digital
         - Analog
-        - Aktor
     Niveau:
         - Fortgeschritten
+media_order: 'aktor-analog.png,aktor-digital.png,analog-digital-wandlung.png,sensor-analog.png,sensor-digital.png,sensoren-und-aktoren.png,tabelle-dig-ana-sen-akt.png'
 ---
 
 <div markdown="1" class="aufgabe">
