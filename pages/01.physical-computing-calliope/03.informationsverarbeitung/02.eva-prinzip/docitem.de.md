@@ -13,7 +13,7 @@ taxonomy:
     Niveau:
         - Basis
 featured_image: tabelle-dig-ana-sen-akt.png
-media_order: 'calliope-eva-hardware.png,calliope-eva-software.png,eva-visualisierung.png,tabelle-dig-ana-sen-akt.png'
+media_order: 'calliope-eva-hardware.png,calliope-eva-software.png,eva-visualisierung.png,tabelle-dig-ana-sen-akt.png,analog-digital-wandlung.png'
 ---
 
 <div markdown="1" class="aufgabe">
