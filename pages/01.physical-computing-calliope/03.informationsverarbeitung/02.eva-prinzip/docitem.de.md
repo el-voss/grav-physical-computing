@@ -93,7 +93,7 @@ Mit dem EVA-Prinzip wird die grundlegende Reihenfolge der Verarbeitung von Daten
 <!-- Inhalte für jede Programmierumgebung -->
 <div class="tab-content">
   <div class="makecode content-block" markdown="1">
-![eva-uebung-mc](eva-uebung-mc.png?Lightbox=1024&resize=500&classes=caption "EVA-Prinzip auf Softwareebene.")
+![eva-uebung-mc](eva-software-mc.png?Lightbox=1024&resize=500&classes=caption "EVA-Prinzip auf Softwareebene.")
   </div>
   <div class="roberta content-block" markdown="1">
 ![EVA-Prinzip auf Softwareebene.](calliope-eva-software.png?Lightbox=1024&resize=500&classes=caption "EVA-Prinzip auf Softwareebene.")
