@@ -42,7 +42,7 @@ media_order: 'calliope-eva-hardware.png,calliope-eva-software.png,eva-visualisie
 ![eva-uebung-orl](eva-uebung-orl.png?Lightbox=1024&resize=500)
   </div>
   <div class="python content-block" markdown="1">
-```python
+<pre><code class="language-python">
 # Imports go at the top
 from calliopemini import *
 import neopixel
@@ -61,7 +61,7 @@ while True:
     music.play(['c'])
     while not( button_a.is_pressed() ):
         pass
-```
+</code></pre>
   </div>
 </div>
 </div>
