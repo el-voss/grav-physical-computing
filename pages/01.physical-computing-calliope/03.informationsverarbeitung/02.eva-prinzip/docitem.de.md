@@ -15,7 +15,7 @@ taxonomy:
     Niveau:
         - Basis
 featured_image: tabelle-dig-ana-sen-akt.png
-media_order: 'calliope-eva-hardware.png,calliope-eva-software.png,eva-visualisierung.png,tabelle-dig-ana-sen-akt.png,analog-digital-wandlung.png,eva-uebung-mc.png,eva-uebung-orl.png'
+media_order: 'calliope-eva-hardware.png,calliope-eva-software.png,eva-visualisierung.png,tabelle-dig-ana-sen-akt.png,analog-digital-wandlung.png,eva-uebung-mc.png,eva-uebung-orl.png,eva-software-py.png,eva-software-mc.png'
 ---
 
 <div markdown="1" class="aufgabe">
@@ -69,19 +69,45 @@ while True:
 
 </div>
 
-!!!! #### Das EVA-Prinzip
-!!!! 
-!!!! Informationsverarbeitende Systeme lassen sich nach ihrer Funktion in drei Einheiten zerlegen: Eingabeeinheit, Verarbeitungseinheit, Ausgabeeinheit.
-!!!! 
-!!!! ![Visualisierung des EVA-Prinzips](eva-visualisierung.png)
-!!!! 
-!!!! Mit dem EVA-Prinzip wird die grundlegende Reihenfolge der Verarbeitung von Daten charakterisiert. Dies kann sowohl auf Hardwareebene (Bauteile) als auch auf Softwareebene (Programm) geschehen.
-!!!!
-!!!! <div markdown="1" class="flex-box">
-!!!! <div markdown="1">![EVA-Prinzip auf Hardwareebene.](calliope-eva-hardware.png?Lightbox=1024&resize=500&classes=caption "EVA-Prinzip auf Hardwareebene.")</div>
-!!!! <div markdown="1">![EVA-Prinzip auf Softwareebene.](calliope-eva-software.png?Lightbox=1024&resize=500&classes=caption "EVA-Prinzip auf Softwareebene.")</div>
-!!!! </div>
+<div class="notices green" markdown="1">
+#### Das EVA-Prinzip
 
+Informationsverarbeitende Systeme lassen sich nach ihrer Funktion in drei Einheiten zerlegen: Eingabeeinheit, Verarbeitungseinheit, Ausgabeeinheit.
+
+![Visualisierung des EVA-Prinzips](eva-visualisierung.png)
+
+Mit dem EVA-Prinzip wird die grundlegende Reihenfolge der Verarbeitung von Daten charakterisiert. Dies kann sowohl auf Hardwareebene (Bauteile) als auch auf Softwareebene (Programm) geschehen.
+
+<div markdown="1" class="flex-box">
+<div markdown="1">![EVA-Prinzip auf Hardwareebene.](calliope-eva-hardware.png?Lightbox=1024&resize=500&classes=caption "EVA-Prinzip auf Hardwareebene.")</div>
+<div markdown="1">
+
+<!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block" markdown="1">
+![eva-uebung-mc](eva-uebung-mc.png?Lightbox=1024&resize=500&classes=caption "EVA-Prinzip auf Softwareebene.")
+  </div>
+  <div class="roberta content-block" markdown="1">
+![EVA-Prinzip auf Softwareebene.](calliope-eva-software.png?Lightbox=1024&resize=500&classes=caption "EVA-Prinzip auf Softwareebene.")
+  </div>
+  <div class="python content-block" markdown="1">
+![eva-software-py](eva-software-py.png?Lightbox=1024&resize=500&classes=caption "EVA-Prinzip auf Softwareebene.")
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 
 
 <div markdown="1" class="aufgabe">
