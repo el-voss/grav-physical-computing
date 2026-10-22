@@ -5,11 +5,11 @@ image_width: 300
 image_height: 400
 taxonomy:
     Inhalte:
+        - Sensor
         - Eingabe
         - Ausgabe
         - Verarbeitung
         - Aktor
-        - Sensor
         - Digital
         - Analog
     Niveau:
@@ -24,6 +24,30 @@ media_order: 'calliope-eva-hardware.png,calliope-eva-software.png,eva-visualisie
 1. Lies den Infokasten zum EVA-Prinzip, der unten abgebildet ist.
 2. Hardware: Kategorisiere die Bauteile auf dem Calliope danach, ob sie für die Eingabe, die Verarbeitung oder die Ausgabe zuständig sind.
 3. Software: Kategorisiere die Befehle im folgenden Programm danach, ob sie für die Eingabe, die Verarbeitung oder die Ausgabe zuständig sind.
+
+<!-- Tabs für die Auswahl -->
+<div class="tab-group" data-group="programmierumgebung">
+<div class="tabs">
+  <button class="tab-button" data-umgebung="makecode">Makecode</button>
+  <button class="tab-button" data-umgebung="roberta">Open Roberta Lab</button>
+  <button class="tab-button" data-umgebung="python">Python</button>
+</div>
+
+<!-- Inhalte für jede Programmierumgebung -->
+<div class="tab-content">
+  <div class="makecode content-block" markdown="1">
+![pinfunktionen-digital-write-mc](pinfunktionen-digital-write-mc.png?Lightbox=1024&resize=500&classes=caption "In Makecode kann der Pin über den Block <schreibe digital auf Pin> ein- und ausgeschaltet werden.")
+  </div>
+  <div class="roberta content-block" markdown="1">
+![pinfunktionen-digital-write-orl](pinfunktionen-digital-write-orl.png?Lightbox=1024&resize=500&classes=caption "Im Open Roberta Lab schaltet der Block <schreibe digital auf Pin> die LED ein und aus.")
+  </div>
+  <div class="python content-block" markdown="1">
+```python
+
+```
+  </div>
+</div>
+</div>
 
 
 </div>
