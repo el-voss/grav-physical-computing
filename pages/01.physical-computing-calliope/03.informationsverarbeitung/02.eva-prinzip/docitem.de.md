@@ -17,11 +17,13 @@ media_order: 'calliope-eva-hardware.png,calliope-eva-software.png,eva-visualisie
 ---
 
 <div markdown="1" class="aufgabe">
-#### EVA-Prinzip und Bauteile
+#### Kategorisierung nach dem EVA-Prinzip
 
-Zur Beschreibung von informationsverarbeitenden Systemen wird das EVA-Prinzip genutzt: Eingabe - Verarbeitung - Ausgabe (siehe unten). Kategorisiere die Bauteile auf dem Calliope danach, ob sie für die Eingabe oder für die Ausgabe zuständig sind.
+1. Lies den Infokasten zum EVA-Prinzip, der unten abgebildet ist.
+2. Hardware: Kategorisiere die Bauteile auf dem Calliope danach, ob sie für die Eingabe, die Verarbeitung oder die Ausgabe zuständig sind.
+3. Software: Kategorisiere die Befehle im folgenden Programm danach, ob sie für die Eingabe, die Verarbeitung oder die Ausgabe zuständig sind.
 
-Welche weiteren Gemeinsamkeiten und Unterschiede weisen die Bauteile auf?
+
 </div>
 
 !!!! #### Das EVA-Prinzip
@@ -36,6 +38,7 @@ Welche weiteren Gemeinsamkeiten und Unterschiede weisen die Bauteile auf?
 !!!! <div markdown="1">![EVA-Prinzip auf Hardwareebene.](calliope-eva-hardware.png?Lightbox=1024&resize=500&classes=caption "EVA-Prinzip auf Hardwareebene.")</div>
 !!!! <div markdown="1">![EVA-Prinzip auf Softwareebene.](calliope-eva-software.png?Lightbox=1024&resize=500&classes=caption "EVA-Prinzip auf Softwareebene.")</div>
 !!!! </div>
+
 
 
 <div markdown="1" class="aufgabe">
