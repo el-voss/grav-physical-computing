@@ -1,5 +1,5 @@
 ---
-title: 'Dokumentation mit Struktogrammenn'
+title: 'Dokumentation mit Struktogrammen'
 show_pageimage: true
 image_width: 300
 image_height: 400
