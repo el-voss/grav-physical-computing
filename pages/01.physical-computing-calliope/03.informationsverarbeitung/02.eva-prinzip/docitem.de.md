@@ -5,10 +5,10 @@ image_width: 300
 image_height: 400
 taxonomy:
     Inhalte:
+        - Sensor
         - Eingabe
         - Ausgabe
         - Verarbeitung
-        - Sensor
         - Aktor
     Niveau:
         - Basis
