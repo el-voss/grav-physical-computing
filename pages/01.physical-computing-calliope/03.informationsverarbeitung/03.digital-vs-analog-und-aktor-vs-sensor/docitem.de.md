@@ -8,7 +8,6 @@ taxonomy:
     Voraussetzungen:
         - 'Verarbeitung von Umwelteingaben'
         - 'Wiederholungen und zufällige Ereignisse'
-        - Variablen
     Inhalte:
         - Sensor
         - Aktor
