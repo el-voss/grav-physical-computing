@@ -65,7 +65,7 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 <div markdown="1" class="aufgabe">
 #### LED als digitaler Aktor
 
-1. Beschreibe, was in dem Video zu beobachten ist.
+1. Beschreibe, was in dem Video zu beobachten ist, und erkläre dies anhand des Programms.
 2. Begründe, warum der GPIO-Pin in diesem Fall als digitaler Aktor genutzt wurde.
 
 </div>
@@ -135,7 +135,7 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 <div markdown="1" class="aufgabe">
 #### Analoger Aktor: LED dimmen
 
-1. Beschreibe, was in dem Video zu beobachten ist.
+1. Beschreibe, was in dem Video zu beobachten ist, und erkläre dies anhand des Programms.
 2. Begründe, warum der GPIO-Pin in diesem Fall als analoger Aktor genutzt wurde.
 
 </div>
@@ -199,7 +199,7 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 <div markdown="1" class="aufgabe">
 #### Digitaler Sensor: Taster auslesen
 
-1. Beschreibe, was in dem Video zu beobachten ist.
+1. Beschreibe, was in dem Video zu beobachten ist, und erkläre dies anhand des Programms.
 2. Begründe, warum der GPIO-Pin in diesem Fall als digitaler Sensor genutzt wurde.
 
 </div>
@@ -262,7 +262,7 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 <div markdown="1" class="aufgabe">
 #### Analoger Sensor: Potentiometer auslesen
 
-1. Beschreibe, was in dem Video zu beobachten ist.
+1. Beschreibe, was in dem Video zu beobachten ist, und erkläre dies anhand des Programms.
 2. Begründe, warum der GPIO-Pin in diesem Fall als analoger Sensor genutzt wurde.
 
 </div>
