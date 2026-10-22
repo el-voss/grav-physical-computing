@@ -3,10 +3,10 @@ title: 'Informationsverarbeitung und Schnittstellen'
 content:
     items:
         - '@self.children'
-    limit: 5
+    limit: 10
     order:
         by: folder
-        dir: desc
+        dir: asc
     pagination: true
     url_taxonomy_filters: true
 ---
