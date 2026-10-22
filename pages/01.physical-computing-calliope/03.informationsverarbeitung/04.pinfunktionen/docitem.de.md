@@ -10,8 +10,8 @@ Jeder GPIO-Pin ("General Purpose Input Output") des Calliope kann grundsätzlich
 
 Für die folgenden Beispiele wird dabei stets der Pin P0 gewählt. Aber auch die weiteren Pins verfügen in der Regel über die gleichen Funktionen. Zu beachten ist, dass einige Pins doppelt genutzt werden und daher vielleicht schon an anderer Stelle belegt sind. Eine Übersicht über alle Pins und deren Funktionen findet sich in der [Dokumentation zu den Pins des Calliope v3](https://docs.calliope.cc/tech/hardware/pins/?target="_blank").
 
-<div markdown="1" class="aufgabe">
-#### Digitaler Aktor: LED ein- und ausschalten
+
+## Digitaler Aktor: LED ein- und ausschalten
 
 Im folgenden Schaltplan ist eine LED über einen Vorwiderstand mit dem GPIO-Pin P0 verbunden. Der Pin wird als digitaler Aktor genutzt: Er gibt entweder die Spannung 3,3V oder die Spannung 0V aus.
 
@@ -62,13 +62,15 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 </video>
 </center>
 
+<div markdown="1" class="aufgabe">
+#### LED als digitaler Aktor
+
 1. Beschreibe, was in dem Video zu beobachten ist.
 2. Begründe, warum der GPIO-Pin in diesem Fall als digitaler Aktor genutzt wurde.
 
 </div>
 
-<div markdown="1" class="aufgabe">
-#### Analoger Aktor: LED dimmen
+## Analoger Aktor: LED dimmen
 
 Im folgenden Schaltplan ist eine LED über einen Vorwiderstand mit dem GPIO-Pin P0 verbunden. Der Pin wird hier als analoger Aktor genutzt: Dabei wird sehr schnell zwischen 3,3V und 0V hin und her geschaltet. Der angegebene analoge Wert gibt an, wie lang die Phase mit 3,3V sein soll: Je größer die Zahl ist, desto länger ist die Phase mit 3,3V gegenüber 0V. 
 
@@ -129,13 +131,16 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 </video>
 </center>
 
+
+<div markdown="1" class="aufgabe">
+#### Analoger Aktor: LED dimmen
+
 1. Beschreibe, was in dem Video zu beobachten ist.
 2. Begründe, warum der GPIO-Pin in diesem Fall als analoger Aktor genutzt wurde.
 
 </div>
 
-<div markdown="1" class="aufgabe">
-#### Digitaler Sensor: Taster auslesen
+## Digitaler Sensor: Taster auslesen
 
 Im folgenden Schaltplan ist ein Taster mit dem GPIO-Pin P0 verbunden. Der Pin wird als digitaler Sensor genutzt.
 
@@ -190,13 +195,16 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 </video>
 </center>
 
+
+<div markdown="1" class="aufgabe">
+#### Digitaler Sensor: Taster auslesen
+
 1. Beschreibe, was in dem Video zu beobachten ist.
 2. Begründe, warum der GPIO-Pin in diesem Fall als digitaler Sensor genutzt wurde.
 
 </div>
 
-<div markdown="1" class="aufgabe">
-#### Analoger Sensor: Potentiometer auslesen
+## Analoger Sensor: Potentiometer auslesen
 
 Im folgenden Schaltplan ist ein Potentiometer mit dem GPIO-Pin P0 verbunden. Der Pin wird als analoger Sensor genutzt: Er liest nicht nur zwei Zustände, sondern viele Zwischenwerte von 0 bis 1023 ein, die die Stellung des Drehreglers widerspiegeln.
 
@@ -249,6 +257,10 @@ while True:
 Ihr Browser kann dieses Video nicht wiedergeben.
 </video>
 </center>
+
+
+<div markdown="1" class="aufgabe">
+#### Analoger Sensor: Potentiometer auslesen
 
 1. Beschreibe, was in dem Video zu beobachten ist.
 2. Begründe, warum der GPIO-Pin in diesem Fall als analoger Sensor genutzt wurde.
