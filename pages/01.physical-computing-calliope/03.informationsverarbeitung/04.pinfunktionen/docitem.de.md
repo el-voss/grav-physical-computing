@@ -57,7 +57,7 @@ while True:
 
 <center>
 <video controls="1" width="70%" height="auto" playsinline>
-<source src="/user/pages/images/pinfunktionen-digital-write-video.mp4" type="video/mp4"></source>
+<source src="/user/pages/videos/calliope/pinfunktionen-digital-write-video.mp4" type="video/mp4"></source>
 Ihr Browser kann dieses Video nicht wiedergeben.
 </video>
 </center>
@@ -126,7 +126,7 @@ while True:
 
 <center>
 <video controls="1" width="70%" height="auto" playsinline>
-<source src="/user/pages/images/pinfunktionen-analog-write-video.mp4" type="video/mp4"></source>
+<source src="/user/pages/videos/calliope/pinfunktionen-analog-write-video.mp4" type="video/mp4"></source>
 Ihr Browser kann dieses Video nicht wiedergeben.
 </video>
 </center>
@@ -190,7 +190,7 @@ while True:
 
 <center>
 <video controls="1" width="70%" height="auto" playsinline>
-<source src="/user/pages/images/pinfunktionen-digital-read-video.mp4" type="video/mp4"></source>
+<source src="/user/pages/videos/calliope/pinfunktionen-digital-read-video.mp4" type="video/mp4"></source>
 Ihr Browser kann dieses Video nicht wiedergeben.
 </video>
 </center>
@@ -253,7 +253,7 @@ while True:
 
 <center>
 <video controls="1" width="70%" height="auto" playsinline>
-<source src="/user/pages/images/pinfunktionen-analog-read-video.mp4" type="video/mp4"></source>
+<source src="/user/pages/videos/calliope/pinfunktionen-analog-read-video.mp4" type="video/mp4"></source>
 Ihr Browser kann dieses Video nicht wiedergeben.
 </video>
 </center>
