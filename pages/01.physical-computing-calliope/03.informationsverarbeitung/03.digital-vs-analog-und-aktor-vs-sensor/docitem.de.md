@@ -3,7 +3,7 @@ title: 'Digital vs. Analog und Aktor vs. Sensor'
 show_pageimage: true
 image_width: 300
 image_height: 400
-featured_image: bauteilsammlung.png
+featured_image: tabelle-dig-ana-sen-akt.png
 taxonomy:
     Voraussetzungen:
         - 'Verarbeitung von Umwelteingaben'
@@ -16,7 +16,7 @@ taxonomy:
         - Analog
     Niveau:
         - Fortgeschritten
-media_order: 'aktor-analog.png,aktor-digital.png,analog-digital-wandlung.png,sensor-analog.png,sensor-digital.png,sensoren-und-aktoren.png,tabelle-dig-ana-sen-akt.png'
+media_order: 'analog-digital-wandlung.png,tabelle-dig-ana-sen-akt.png'
 ---
 
 <div markdown="1" class="aufgabe">
@@ -32,7 +32,7 @@ Elektronische Bauteile und die von ihnen verarbeiteten Signale lassen sich jewei
 </div>
 
 !!!! #### Sensoren und Aktoren mit digitalen und analogen Signalen
-!!!! ![Digitale und analoge Aktoren und Sensoren in Nepo.](sensoren-und-aktoren.png?resize=800&classes=caption "Digitale und analoge Aktoren und Sensoren in Nepo.")
+!!!!
 !!!! Für die Eingabe von Daten werden *Sensoren* benötigt; für die Ausgabe hingegen *Aktoren*:
 !!!! 
 !!!! -   **Sensoren** (auch Fühler genannt) sind elektrische Bauteile, die eine physikalische Größe aus der Umwelt (Temperatur, Helligkeit, Luftdruck oder auch ein mechanischer Druck mit dem Finger) in eine elektrische Größe (Widerstand, Spannung, elektrisches Potential, Stromstärke) umwandeln. Dadurch werden die physikalischen Größen aus der Umwelt einer elektronischen Verarbeitung zugänglich.
