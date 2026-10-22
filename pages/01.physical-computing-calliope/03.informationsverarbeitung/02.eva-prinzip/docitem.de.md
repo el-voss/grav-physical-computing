@@ -5,11 +5,13 @@ image_width: 300
 image_height: 400
 taxonomy:
     Inhalte:
-        - Sensor
         - Eingabe
         - Ausgabe
         - Verarbeitung
         - Aktor
+        - Sensor
+        - Digital
+        - Analog
     Niveau:
         - Basis
 featured_image: tabelle-dig-ana-sen-akt.png
