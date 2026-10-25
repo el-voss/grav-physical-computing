@@ -85,8 +85,8 @@ Mit Variablen sind drei Grundoperationen verbunden:
 In einer Variable wird immer ein Wert eines bestimmten Datentyps gespeichert. Die drei wichtigsten Datentypen sind:
 
 - **Zahlen (integer):** Ganze Zahlen wie 0, 10 oder -3.
-- **Text (string):** Eine Zeichenkette wie "Los!", die z. B. mit `display.show("Los!")` angezeigt werden kann.
-- **Wahrheitswerte (boolean):** Genau zwei mögliche Werte, nämlich wahr und falsch. Wahrheitswerte entstehen z. B. beim Vergleich zweier Zahlen (`zaehler > 0`) und werden als Bedingung für Verzweigungen und Schleifen verwendet.
+- **Text (string):** Eine Zeichenkette wie "Los!".
+- **Wahrheitswerte (boolean):** Genau zwei mögliche Werte, nämlich wahr und falsch. Wahrheitswerte entstehen z. B. beim Vergleich zweier Zahlen (wie: zaehler > 0) und werden als Bedingung für Verzweigungen und Schleifen verwendet.
 
 <!-- Tabs für die Auswahl -->
 <div class="tab-group" data-group="programmierumgebung">
