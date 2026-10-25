@@ -23,6 +23,23 @@ taxonomy:
 Ultraschallsensoren ermöglichen die berührungslose Messung eines Abstands zwischen dem Sensor und dem nächstgelegenen Gegenstand. Dies macht sie zu einer interessanten Ausrüstung für Staubsaugerroboter, die nicht gegen die Wand fahren sollen, oder Einparkhilfen im Auto, die dem Fahrer anzeigen sollen, wie viel Platz er noch hat.
 </div>
 
+<div class="video">
+  <iframe
+    class="video__iframe"
+    data-src="https://www.youtube-nocookie.com/embed/05md39bfcK8"
+    frameborder="0"
+    allowfullscreen="allowfullscreen"
+  ></iframe>
+  <form class="video__notice">
+    <p>
+      An dieser Stelle ist ein Video von Youtube eingebettet. Mit deiner Erlaubnis willigst du ein, dass 
+      deine Daten an YouTube in den USA übermittelt werden. Weitere Informationen zur Datenverarbeitung von YouTube findest
+      du in der <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von YouTube</a>.
+    </p>
+    <button>Erlaube Inhalte von YouTube</button>
+  </form>
+</div>
+
 Die wichtigsten Bestandteile des Ultraschallsensors sind der “Transducer” (**T**) und der “Receiver” (**R**). Der Transducer ist praktisch ein Lautsprecher, der für uns nicht hörbare Schallwellen (Ultraschallwellen) aussendet. Der Receiver entspricht einem Mikrofon für Schallwellen. Die Schallwellen werden also vom Transducer ausgesendet, an einem Hindernis reflektiert und vom Receiver empfangen.
 
 ![Funktionsprinzip eines Ultraschallsensors.](ultraschall-sensor-prinzip.png?classes=caption "Funktionsprinzip eines Ultraschallsensors.")
