@@ -12,6 +12,7 @@ taxonomy:
         - Variablen
     Niveau:
         - Fortgeschritten
+media_order: 'countdown-orl.png,countdown-mc.png,variablen-mc.png,variablen-orl.png'
 ---
 
 !! Diese Seite ist noch nicht final!
@@ -58,7 +59,7 @@ while zaehler > 0:
     display.show(zaehler)      
     sleep(1000)                    
     zaehler = zaehler - 1       # Änderung wird von rechts nach links ausgeführt
-display.show("Los!")            
+display.scroll("Los!")            
 ```
   </div>
 </div>
@@ -102,24 +103,27 @@ In einer Variable wird immer ein Wert eines bestimmten Datentyps gespeichert. Di
   <div class="makecode content-block" markdown="1">
 ![variablen-mc](variablen-mc.png?Lightbox=1024&resize=700&classes=caption "Festlegen und Verändern einer Variable in Makecode.")
 
-In Makecode legst du über die Kategorie „Variablen" eine neue Variable mit einem Namen an, z. B. `zaehler`. Der Block „setze" speichert einen Wert in der Variable, der Block „verändere" erhöht oder verringert den gespeicherten Wert. Die ovale Variable kannst du überall dort einsetzen, wo eine Zahl erwartet wird, z. B. in der LED-Matrix, in Warte-Blöcken oder in Motor-Blöcken.
+In Makecode legst du über die Kategorie „Variablen" eine neue Variable mit einem Namen an, z. B. `zaehler`. Der Block „setze" speichert einen Wert in der Variable, der Block „ändere" erhöht oder verringert den gespeicherten Wert. Die ovale Variable kannst du überall dort einsetzen, wo eine Zahl erwartet wird, z. B. in der LED-Matrix, in Warte-Blöcken oder in Motor-Blöcken.
+
+Um in einer Variable einen Text abzuspeichern, musst du unter Fortgeschritten -> Text den Block für Text (zwei Anführungsstriche) in die setzen-Block der Variable ziehen.
   </div>
   <div class="roberta content-block" markdown="1">
 ![variablen-orl](variablen-orl.png?Lightbox=1024&resize=700&classes=caption "Festlegen und Verändern einer Variable in Open Roberta Lab.")
 
-In Open Roberta Lab legst du über die Kategorie „Variablen" eine neue Variable mit einem Namen an, z. B. `zaehler`. Der Block „setze Variable auf" speichert einen Wert, der Block „addiere" erhöht den gespeicherten Wert. Mit „subtrahiere" verringert du ihn. Die Variable kannst du überall dort einsetzen, wo eine Zahl erwartet wird, z. B. in der LED-Matrix, in Warte-Blöcken oder in Motor-Blöcken.
+In Open Roberta Lab legst du über die Kategorie „Variablen" eine neue Variable mit einem Namen an, z. B. `zaehler`. Der Block „schreibe <Variable>" speichert einen Wert in der Variable. Die Variable kannst du überall dort einsetzen, wo der Datentyp passt (dargestellt über die Farbe der "Nase").
   </div>
   <div class="python content-block" markdown="1">
 
 ```python
 from calliopemini import *
 
-zaehler = 10              # Zahl (integer)
-name = "Los!"             # Text (string)
+zaehler = 10                        # Zahl (integer)
+name = "Los!"                      # Text (string)
 
-while zaehler > 0:        # Vergleich liefert einen Wahrheitswert (boolean)
+while zaehler > 0:                  # Vergleich liefert einen Wahrheitswert (boolean)
     display.show(zaehler)
-    zaehler = zaehler - 1 # oder kürzer: zaehler -= 1
+    sleep(1000)
+    zaehler = zaehler - 1          # oder kürzer: zaehler -= 1
 display.scroll(name)
 ```
 
