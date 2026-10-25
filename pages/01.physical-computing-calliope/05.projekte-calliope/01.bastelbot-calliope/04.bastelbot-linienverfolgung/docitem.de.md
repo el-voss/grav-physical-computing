@@ -24,6 +24,26 @@ taxonomy:
 
 [TOC]
 
+**Einstieg:** Das folgende Video zeigt, wie Roboter in der Gärtnerei Emsflower in Emsbüren Blumen transportieren. Der Aspekt der Linienverfolgung soll im Folgenden nachgebaut werden.
+
+<div class="video">
+  <iframe
+    class="video__iframe"
+    data-src="https://www.youtube-nocookie.com/embed/dFl_HOK-hM8?si=0nZrp1xOfFCAUoRb&amp;start=778"
+    frameborder="0"
+    allowfullscreen="allowfullscreen"
+  ></iframe>
+  <form class="video__notice">
+    <p>
+      An dieser Stelle ist ein Video von Youtube eingebettet. Mit deiner Erlaubnis willigst du ein, dass 
+      deine Daten an YouTube in den USA übermittelt werden. Weitere Informationen zur Datenverarbeitung von YouTube findest
+      du in der <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von YouTube</a>.
+    </p>
+    <button>Erlaube Inhalte von YouTube</button>
+  </form>
+</div>
+
+
 **Ziel:** Der Bastelbot soll um zwei Infrarot-Sensoren erweitert werden, sodass er einer Linie folgen kann, um Parcours zu absolvieren.
 
 <center>
