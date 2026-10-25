@@ -78,7 +78,7 @@ Mit Variablen sind drei Grundoperationen verbunden:
 2. **Lesen:** Der aktuelle Wert wird verwendet, z. B. für eine Anzeige.
 3. **Verändern:** Der gespeicherte Wert wird ersetzt oder geändert, z. B. um 1 verkleinert.
 
-**Achtung Verwechslungsgefahr:** Das Gleichheitszeichen `=` hat in Python die Bedeutung einer Zuweisung. Der Wert rechts das Gleichheitszeichens wird der Variable links zugewiesen. Es ist keine mathematische Gleichung. In Makecode und Open Roberta Lab heißen die Blöcke deshalb „setze" und „verändere".
+**Achtung Verwechslungsgefahr:** Das Gleichheitszeichen `=` hat in Python die Bedeutung einer Zuweisung. Der Wert rechts das Gleichheitszeichens wird der Variable links zugewiesen. Es ist keine mathematische Gleichung.
 
 #### Datentypen
 
