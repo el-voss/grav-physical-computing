@@ -9,6 +9,8 @@ taxonomy:
     Voraussetzungen:
         - 'Bau des Fahrgestells'
         - 'Fahren lernen'
+        - EVA-Prinzip
+        - Pinfunktionen
     Entwicklungsumgebung:
         - OpenRoberta
         - Makecode
