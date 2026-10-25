@@ -10,8 +10,8 @@ taxonomy:
         - 'Bau des Fahrgestells'
         - 'Fahren lernen'
     Entwicklungsumgebung:
-        - Makecode
         - OpenRoberta
+        - Makecode
         - Python
     Inhalte:
         - Kantenverfolgung
@@ -30,6 +30,8 @@ taxonomy:
 Ihr Browser kann dieses Video nicht wiedergeben.
 </video>
 </center>
+
+! Um die Infrarotsensoren zur Linienverfolgung nutzen zu können, musst du vorher verstehen, was mit digitalen und analogen Sensoren gemeint ist. Bearbeite dazu zunächst die Grundlagen [EVA-Prinzip](https://mintorials.de/de/physical-computing-calliope/informationsverarbeitung/eva-prinzip?target="_blank") und [Pinfunktionen im Überblick](https://mintorials.de/de/physical-computing-calliope/informationsverarbeitung/pinfunktionen?target="_blank").
 
 ### Programmierung
 
