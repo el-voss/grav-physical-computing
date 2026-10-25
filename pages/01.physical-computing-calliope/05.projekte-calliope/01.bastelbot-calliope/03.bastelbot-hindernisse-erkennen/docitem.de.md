@@ -25,6 +25,23 @@ taxonomy:
 
 **Ziel:** Der Bastelbot soll um einen Ultraschallsensor erweitert werden, sodass er Hindernisse erkennen und umfahren kann.
 
+<div class="video">
+  <iframe
+    class="video__iframe"
+    data-src="https://www.youtube.com/embed/05md39bfcK8?si=O2Y3-GxXukbUUZbn"
+    frameborder="0"
+    allowfullscreen="allowfullscreen"
+  ></iframe>
+  <form class="video__notice">
+    <p>
+      An dieser Stelle ist ein Video von Youtube eingebettet. Mit deiner Erlaubnis willigst du ein, dass 
+      deine Daten an YouTube in den USA übermittelt werden. Weitere Informationen zur Datenverarbeitung von YouTube findest
+      du in der <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung von YouTube</a>.
+    </p>
+    <button>Erlaube Inhalte von YouTube</button>
+  </form>
+</div>
+
 ![hinderniserkennung-schematisch](hinderniserkennung-schematisch.png?lightbox=1024&resize=700&classes=caption "Schematische Darstellung der Hindererkennung mit einem Ultraschallsensor.")
 
 ### Programmierung
