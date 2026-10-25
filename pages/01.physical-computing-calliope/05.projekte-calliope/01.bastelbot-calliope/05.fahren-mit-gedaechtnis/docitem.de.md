@@ -24,15 +24,13 @@ taxonomy:
 
 Beim Start einer Rakete läuft vorher ein Countdown. Genau das soll der Bastelbot nachbilden: Nach dem Start zeigt er auf der LED-Matrix eine Zahl an, zählt in Sekundenschritten herunter und fährt erst beim Erreichen der 0 los.
 
-Das folgende Programm ist bereits fertig programmiert. Beschreibe in eigenen Worten, was in jeder Zeile passiert und was der Roboter dabei tut.
-
 <div markdown="1" class="aufgabe">
 #### Countdown verstehen
 
-1. Beschreibe das unten abgebildete Programm Zeile für Zeile. Verwende dabei die Begriffe „Festlegen", „Anzeigen", „Warten", „Verändern" und „Wiederholen".
+1. Beschreibe, wie der Countdown im unten abgebildeten Programm umgesetzt wird.
 2. Erkläre, warum die Zahl erst nach der Pause verändert wird und nicht vorher.
-3. Ändere das Programm so ab, dass der Countdown nicht von 10 bis 0, sondern von 20 bis 0 zählt.
-4. Ändere das Programm so ab, dass der Countdown in Zweierschritten herunterzählt (20, 18, 16, ...).
+3. Beschreibe, wie das Programm geändert werden muss, damit der Countdown nicht von 10 bis 0, sondern von 20 bis 0 zählt.
+4. Beschreibe, wie das Programm geändert werden muss, damit der Countdown in Zweierschritten herunterzählt (20, 18, 16, ...).
 
 <!-- Tabs für die Auswahl -->
 <div class="tab-group" data-group="programmierumgebung">
@@ -55,12 +53,12 @@ Das folgende Programm ist bereits fertig programmiert. Beschreibe in eigenen Wor
 ```python
 from calliopemini import *
 
-zaehler = 10                  # die Variable "zaehler" wird festgelegt (Initialisierung)
-while zaehler > 0:             # Wiederholung, solange der Wert größer als 0 ist
-    display.show(zaehler)      # der aktuelle Wert wird angezeigt
-    sleep(1000)               # eine Sekunde warten
-    zaehler = zaehler - 1     # der Wert wird um 1 verkleinert
-display.show("Los!")           # der Countdown ist abgelaufen
+zaehler = 10                        # Initialisierung
+while zaehler > 0:                
+    display.show(zaehler)      
+    sleep(1000)                    
+    zaehler = zaehler - 1       # Änderung wird von rechts nach links ausgeführt
+display.show("Los!")            
 ```
   </div>
 </div>
@@ -73,25 +71,23 @@ display.show("Los!")           # der Countdown ist abgelaufen
 <div class="notices green" markdown="1">
 #### Variablen
 
-Eine Variable ist ein benannter Speicherplatz im Gedächtnis des Calliope. Man kann sich eine Variable wie eine Schublade mit einer Beschriftung vorstellen: In der Schublade liegt genau ein Wert, und die Beschriftung sorgt dafür, dass man den Wert jederzeit wiederfindet. Der Wert kann jederzeit gelesen, ersetzt und verändert werden.
+Eine Variable ist ein benannter Speicherplatz im Gedächtnis des Calliope. Man kann sich eine Variable wie eine Schublade mit einer Beschriftung vorstellen: In der Schublade liegt genau ein Wert, und die Beschriftung sorgt dafür, dass man den Wert jederzeit wiederfindet. Der Wert kann jederzeit *gelesen*, *ersetzt* und *verändert* werden.
 
 Mit Variablen sind drei Grundoperationen verbunden:
 
-1. **Festlegen (Initialisieren):** Die Variable wird angelegt und erhält einen Startwert, z. B. `zaehler = 10`.
-2. **Lesen:** Der aktuelle Wert wird verwendet, z. B. für eine Anzeige, einen Vergleich oder als Parameter für einen Motor-Block.
-3. **Verändern:** Der gespeicherte Wert wird ersetzt, z. B. um 1 verkleinert: `zaehler = zaehler - 1`.
+1. **Festlegen (Initialisieren):** Die Variable wird angelegt und erhält einen Startwert.
+2. **Lesen:** Der aktuelle Wert wird verwendet, z. B. für eine Anzeige.
+3. **Verändern:** Der gespeicherte Wert wird ersetzt oder geändert, z. B. um 1 verkleinert.
 
-Wichtig dabei: Bei der Operation `zaehler = zaehler - 1` wird zuerst der alte Wert gelesen, dann um 1 verkleinert und erst anschließend wieder abgespeichert. Der Calliope führt diese Schritte immer von rechts nach links aus.
-
-**Achtung Verwechslungsgefahr:** Das Gleichheitszeichen `=` bedeutet in Python und in den Block-Umgebungen „speichere den Wert rechts in die Variable links". Es ist keine mathematische Gleichung. In Makecode und Open Roberta Lab heißen die Blöcke deshalb „setze" und „verändere".
+**Achtung Verwechslungsgefahr:** Das Gleichheitszeichen `=` hat in Python die Bedeutung einer Zuweisung. Der Wert rechts das Gleichheitszeichens wird der Variable links zugewiesen. Es ist keine mathematische Gleichung. In Makecode und Open Roberta Lab heißen die Blöcke deshalb „setze" und „verändere".
 
 #### Datentypen
 
 In einer Variable wird immer ein Wert eines bestimmten Datentyps gespeichert. Die drei wichtigsten Datentypen sind:
 
-- **Zahlen (integer):** ganze Zahlen wie 0, 10 oder -3. Mit Zahlen kann man rechnen, z. B. `zaehler = zaehler - 1`.
-- **Text (string):** eine Zeichenkette wie "Los!", die z. B. mit `display.show("Los!")` angezeigt werden kann. Mit Text kann man nicht rechnen.
-- **Wahrheitswerte (boolean):** genau zwei mögliche Werte, nämlich wahr und falsch. Wahrheitswerte entstehen z. B. beim Vergleich zweier Zahlen (`zaehler > 0`) und werden als Bedingung für Verzweigungen und Schleifen verwendet.
+- **Zahlen (integer):** Ganze Zahlen wie 0, 10 oder -3.
+- **Text (string):** Eine Zeichenkette wie "Los!", die z. B. mit `display.show("Los!")` angezeigt werden kann.
+- **Wahrheitswerte (boolean):** Genau zwei mögliche Werte, nämlich wahr und falsch. Wahrheitswerte entstehen z. B. beim Vergleich zweier Zahlen (`zaehler > 0`) und werden als Bedingung für Verzweigungen und Schleifen verwendet.
 
 <!-- Tabs für die Auswahl -->
 <div class="tab-group" data-group="programmierumgebung">
@@ -143,7 +139,7 @@ In Python legst du eine Variable an, indem du einfach einen Wert zuweist. Einen 
 Der Roboter soll eine quadratische Spirale fahren: Er fährt zunächst 1 Sekunde geradeaus und dreht sich dann um 90 Grad. Danach fährt er 2 Sekunden geradeaus, dreht sich wieder um 90 Grad, fährt 3 Sekunden geradeaus und so weiter. Die Seitenlänge wächst also mit jeder Seite um 1 Sekunde.
 
 1. Überlege dir, welche Werte sich beim Fahren verändern und welche Werte gleich bleiben. Welche Variable benötigt dein Programm?
-2. Programmiere den Roboter so, dass er die Spirale fährt. Nutze eine Variable für die Fahrdauer, die nach jeder Seite vergrößert wird.
+2. Programmiere den Roboter so, dass er die Spirale fährt.
 3. Erweitere das Programm so, dass die Spirale nach 10 Seiten endet und der Roboter stehen bleibt.
 
 ![spirale-schematisch](spirale-schematisch.png?lightbox=1024&resize=500&classes=caption "Schematische Darstellung der quadratischen Spirale, die der Roboter fahren soll.")
@@ -154,9 +150,8 @@ Der Roboter soll eine quadratische Spirale fahren: Er fährt zunächst 1 Sekunde
 
 Vor dem Roboter liegt eine unbekannte Anzahl schwarzer Linien übereinander wie ein Zebrastreifen, getrennt durch weiße Zwischenräume. Der Roboter soll mit einem Infrarot-Sensor darüber fahren und am Ende die Anzahl der schwarzen Linien anzeigen.
 
-1. Überlege dir, wie der Roboter erkennt, dass er eine neue schwarze Linie erreicht hat. Orientiere dich an den Analogwerten, die du auf der Seite „Linienverfolgung" ermittelt hast.
-2. Überlege dir, warum es nicht ausreicht, einfach jede schwarze Messung zu zählen. Denke daran, dass der Sensor viele Messwerte pro Sekunde liefert, während der Roboter über eine Linie fährt.
-3. Programmiere den Roboter so, dass er über den Zebrastreifen fährt und am Ende die Anzahl der schwarzen Linien auf der LED-Matrix anzeigt.
+1. Begründe, warum es nicht ausreicht, einfach jede schwarze Messung zu zählen. Denke daran, dass der Sensor viele Messwerte pro Sekunde liefert.
+2. Programmiere den Roboter so, dass er über den Zebrastreifen fährt und am Ende die Anzahl der schwarzen Linien auf der LED-Matrix anzeigt.
 
 ![zebrastreifen-schematisch](zebrastreifen-schematisch.png?lightbox=1024&resize=500&classes=caption "Schematische Darstellung des Zebrastreifens mit einer unbekannten Anzahl schwarzer Linien.")
 </div>
@@ -190,7 +185,7 @@ from calliopemini import *
 zaehler = 10
 while zaehler > 0:
     display.show(zaehler)
-    zaehler = 10          # Fehler: Die Variable wird immer wieder auf den Startwert gesetzt
+    zaehler = 10       
     sleep(1000)
 ```
   </div>
@@ -203,7 +198,9 @@ while zaehler > 0:
 
 Der Roboter soll eine freie Fahrt machen und dabei wie ein Kilometerzähler mitzählen, wie viele Sekunden er bereits gefahren ist. Der Streckenzähler wird jede Sekunde um 1 erhöht. Der Roboter hält an, wenn er ein Hindernis erkennt, und zeigt am Ende die gefahrene Zeit in Sekunden auf der LED-Matrix an.
 
-1. Programmiere den Roboter so, dass er geradeaus fährt und die gefahrene Zeit in einer Variable speichert.
+1. Programmiere den Roboter so, dass er geradeaus fährt und die gefahrene Zeit in einer Variable speichert. Nutze die integrierte Stoppuhr des Calliope.
 2. Lasse den Roboter beim Erkennen eines Hindernisses stoppen und die gespeicherte Zeit anzeigen.
 3. Variiere die Aufgabe: Der Roboter soll die gefahrene Zeit erst nach dem Drücken von Taste A anzeigen.
 </div>
+
+
