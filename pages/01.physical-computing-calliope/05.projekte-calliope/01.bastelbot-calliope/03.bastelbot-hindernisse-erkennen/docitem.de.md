@@ -32,7 +32,7 @@ taxonomy:
 <div markdown="1" class="aufgabe">
 #### Erster Test
 
-1. Recherchiere die [Funktionsweise und Programmierung des Ultraschallsensors](/physical-computing-calliope/bauteilkunde/sensoren-calliope/ultraschallsensor).
+1. Recherchiere die [Funktionsweise und Programmierung des Ultraschallsensors](/physical-computing-calliope/bauteilkunde/sensoren-calliope/ultraschallsensor?target="_blank").
 2. Programmiere den Roboter so, dass er geradeaus fährt und möglichst genau 20cm vor einem Hindernis stoppt.
 </div>
 
