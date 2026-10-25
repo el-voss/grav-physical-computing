@@ -12,10 +12,8 @@ taxonomy:
         - Variablen
     Niveau:
         - Fortgeschritten
-media_order: 'countdown-orl.png,countdown-mc.png,variablen-mc.png,variablen-orl.png'
+media_order: 'countdown-orl.png,countdown-mc.png,variablen-mc.png,variablen-orl.png,debugging-countdown-mc.png,debugging-countdown-orl.png,spirale-schematisch.png,zebrastreifen-schematisch.png'
 ---
-
-!! Diese Seite ist noch nicht final!
 
 [TOC]
 
@@ -189,8 +187,9 @@ from calliopemini import *
 zaehler = 10
 while zaehler > 0:
     display.show(zaehler)
-    zaehler = 10       
+    zaehler = -1       
     sleep(1000)
+display.scroll("Los!")
 ```
   </div>
 </div>
