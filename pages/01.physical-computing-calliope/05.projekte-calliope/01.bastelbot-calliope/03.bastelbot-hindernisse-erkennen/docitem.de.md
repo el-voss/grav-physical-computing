@@ -28,7 +28,7 @@ taxonomy:
 <div class="video">
   <iframe
     class="video__iframe"
-    data-src="https://www.youtube.com/embed/05md39bfcK8?si=O2Y3-GxXukbUUZbn"
+    data-src="https://www.youtube.com/embed/05md39bfcK8"
     frameborder="0"
     allowfullscreen="allowfullscreen"
   ></iframe>
