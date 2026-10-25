@@ -51,7 +51,9 @@ Programmiere den Roboter so, dass er schnell fährt, wenn kein Hindernis in Sich
 <div markdown="1" class="aufgabe">
 #### Einparken
 
-Programmiere den Roboter so, dass er möglichst genau 5cm vor einer Wand stoppt. Er wird bereits vorher immer langsamer und gibt dabei Töne ab. Je näher der Roboter dem Hindernis kommt, desto schneller folgen die Töne aufeinander.
+Programmiere den Roboter so, dass er möglichst genau 5cm vor einer Wand stoppt. Er wird bereits vorher kontinuierlich langsamer und gibt dabei Töne ab. Je näher der Roboter dem Hindernis kommt, desto schneller folgen die Töne aufeinander.
+
+*Für Schnelle:* Visualisiere den abnehmenden Abstand zusätzlich über die LED-Matrix des Calliope.
 </div>
 
 
