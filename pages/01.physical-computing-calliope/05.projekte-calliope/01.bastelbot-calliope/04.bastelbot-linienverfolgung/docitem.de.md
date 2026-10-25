@@ -38,7 +38,7 @@ Ihr Browser kann dieses Video nicht wiedergeben.
 <div markdown="1" class="aufgabe">
 #### Funktionstest
 
-Recherchiere die Funktionsweise der [Infrarot-Sensoren TCRT5000](/physical-computing-calliope/bauteilkunde/sensoren-calliope/infrarot-sensor-tcrt5000) und lasse ihre **analogen** Werte über die serielle Schnittstelle in Makecode ausgeben, während du den Sensor über weiße und schwarze Flächen hälst.
+Recherchiere die Funktionsweise der [Infrarot-Sensoren TCRT5000](/physical-computing-calliope/bauteilkunde/sensoren-calliope/infrarot-sensor-tcrt5000?target="_blank") und lasse ihre **analogen** Werte über die serielle Schnittstelle in Makecode ausgeben, während du den Sensor über weiße und schwarze Flächen hälst.
 
 </div>
 
