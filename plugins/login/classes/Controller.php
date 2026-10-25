@@ -837,6 +837,86 @@ class Controller
     }
 
     /**
+     * Mail the confirmation link for a waiting email change again, with a fresh
+     * token so the link's day starts over.
+     *
+     * @return bool
+     */
+    public function taskResendEmailChange()
+    {
+        /** @var UserInterface $user */
+        $user = $this->grav['user'];
+        $language = $this->grav['language'];
+        $messages = $this->grav['messages'];
+
+        $this->setRedirect($this->login->getRoute('profile') ?: '/');
+
+        if (!$user->exists() || $user->authorized !== true) {
+            $messages->add($language->translate('PLUGIN_LOGIN.ACCESS_DENIED'), 'error');
+
+            return false;
+        }
+
+        $this->login->refreshEmailFields($user);
+
+        $pending = (string)$user->get('email_pending', '');
+        if ($pending === '') {
+            $messages->add($language->translate('PLUGIN_LOGIN.EMAIL_CHANGE_NOTHING_WAITING'), 'info');
+
+            return false;
+        }
+
+        $limiter = $this->login->getRateLimiter('email_changes');
+        if ($limiter->hasReachedLimit($user->username)) {
+            $messages->add($language->translate(['PLUGIN_LOGIN.EMAIL_CHANGE_TOO_MANY', $limiter->getInterval()]), 'error');
+
+            return false;
+        }
+
+        $limiter->registerRateLimitedAction($user->username);
+        $this->login->requestEmailChange($user, $pending);
+        $messages->add($language->translate(['PLUGIN_LOGIN.EMAIL_CHANGE_SENT', htmlspecialchars($pending, ENT_QUOTES, 'UTF-8')]), 'info');
+
+        return true;
+    }
+
+    /**
+     * Drop a waiting email change. The account keeps its current address.
+     *
+     * @return bool
+     */
+    public function taskCancelEmailChange()
+    {
+        /** @var UserInterface $user */
+        $user = $this->grav['user'];
+        $language = $this->grav['language'];
+        $messages = $this->grav['messages'];
+
+        $this->setRedirect($this->login->getRoute('profile') ?: '/');
+
+        if (!$user->exists() || $user->authorized !== true) {
+            $messages->add($language->translate('PLUGIN_LOGIN.ACCESS_DENIED'), 'error');
+
+            return false;
+        }
+
+        $this->login->refreshEmailFields($user);
+
+        if ((string)$user->get('email_pending', '') === '') {
+            $messages->add($language->translate('PLUGIN_LOGIN.EMAIL_CHANGE_NOTHING_WAITING'), 'info');
+
+            return false;
+        }
+
+        $this->login->clearEmailChange($user);
+        $user->save();
+
+        $messages->add($language->translate(['PLUGIN_LOGIN.EMAIL_CHANGE_CANCELLED', htmlspecialchars((string)$user->get('email', ''), ENT_QUOTES, 'UTF-8')]), 'info');
+
+        return true;
+    }
+
+    /**
      * @return bool
      */
     public function taskInvite()
@@ -852,6 +932,17 @@ class Controller
             $this->grav->fireEvent('onFormValidationError', new Event([
                 'form' => $form,
                 'message' => $t->translate("PLUGIN_LOGIN.INVALID_FORM"),
+            ]));
+            return false;
+        }
+
+        // An invitation decides what access a new account gets, so only a signed-in
+        // user who manages accounts may send one. The form itself is not enough:
+        // anyone who can load the page can submit it.
+        if (!$this->login->isAuthenticated(['admin.super', 'api.super', 'admin.users', 'api.users.write'])) {
+            $this->grav->fireEvent('onFormValidationError', new Event([
+                'form' => $form,
+                'message' => $t->translate('PLUGIN_LOGIN.ACCESS_DENIED'),
             ]));
             return false;
         }
@@ -876,6 +967,10 @@ class Controller
 
         /** @var UserInterface $user */
         $user = $this->grav['user'];
+        // Only a super user may invite someone into super access or into groups.
+        if ($user->authorize('admin.super') !== true && $user->authorize('api.super') !== true) {
+            $invite['account'] = static::stripSuperGrants((array)($invite['account'] ?? []));
+        }
         $issuer = $user->email;
         $invitations = Invitations::getInstance();
         $list = [];
@@ -903,6 +998,36 @@ class Controller
         }
 
         return true;
+    }
+
+    /**
+     * Remove super access and group membership from an invitation's account settings.
+     * Groups go too, because a group can carry any permission.
+     *
+     * @param array $account
+     * @return array
+     */
+    public static function stripSuperGrants(array $account): array
+    {
+        unset($account['groups']);
+
+        $access = $account['access'] ?? null;
+        if (!is_array($access)) {
+            unset($account['access']);
+
+            return $account;
+        }
+
+        foreach (['admin', 'api'] as $scope) {
+            // A scalar parent grant (`admin: true`) covers `super` as well.
+            if (isset($access[$scope]) && !is_array($access[$scope])) {
+                unset($access[$scope]);
+            }
+            unset($access[$scope]['super'], $access["{$scope}.super"]);
+        }
+        $account['access'] = $access;
+
+        return $account;
     }
 
     /**

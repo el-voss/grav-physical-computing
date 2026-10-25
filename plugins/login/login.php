@@ -68,6 +68,10 @@ class LoginPlugin extends Plugin
 
     protected $temp_redirect;
     protected $temp_messages;
+    /** @var string|null The page to return to after login, kept until a waiting session starts (system.session.lazy). */
+    protected $lazy_redirect;
+    /** @var UserInterface|null The guest user, kept until a waiting session starts (system.session.lazy). */
+    protected $lazy_user;
 
     /**
      * @return array
@@ -88,6 +92,8 @@ class LoginPlugin extends Plugin
             'onTask.login.logout'       => ['loginController', 0],
             'onTask.login.reset'        => ['loginController', 0],
             'onTask.login.regenerate2FASecret' => ['loginController', 0],
+            'onTask.login.resendEmailChange' => ['loginController', 0],
+            'onTask.login.cancelEmailChange' => ['loginController', 0],
             'onPageTask.login.invite'    => ['loginController', 0],
             'onPagesInitialized'        => ['storeReferrerPage', 0],
             'onDisplayErrorPage.401'    => ['onDisplayErrorPage401', -1],
@@ -111,6 +117,7 @@ class LoginPlugin extends Plugin
             'onUserLoginFailure'        => ['userLoginGuest', 0],
             'onUserLoginGuest'          => ['userLoginGuest', 0],
             'onUserLogin'               => [['userLoginResetRateLimit', 1000], ['userLogin', 10]],
+            'onUserLoginAuthorized'     => ['userLoginAuthorized', 0],
             'onUserLogout'              => ['userLogout', 0],
         ];
     }
@@ -170,6 +177,19 @@ class LoginPlugin extends Plugin
             $session->messages = $this->temp_messages;
             unset($this->temp_messages);
         }
+        // What this request would have stored while the session was still waiting to start.
+        if (isset($this->lazy_user)) {
+            if (empty($session->user)) {
+                $session->user = $this->lazy_user;
+            }
+            unset($this->lazy_user);
+        }
+        if (isset($this->lazy_redirect)) {
+            if (empty($session->redirect_after_login)) {
+                $session->redirect_after_login = $this->lazy_redirect;
+            }
+            unset($this->lazy_redirect);
+        }
 
         $user = $session->user ?? null;
         if ($user && $user->exists() && ($this->config()['session_user_sync'] ?? false)) {
@@ -208,6 +228,17 @@ class LoginPlugin extends Plugin
                 $messages->add($this->grav['language']->translate('PLUGIN_LOGIN.USER_ACCOUNT_DISABLED'), 'error');
             }
         }
+
+        // Whatever session_user_sync says, the session's copy of the account must
+        // not carry stale email fields into a later save. A change confirmed in
+        // another browser only reached the stored account, and saving the old copy
+        // (a profile save, a 2FA secret, another plugin) would put the old address
+        // and the used confirmation token back. Only these fields are touched, so
+        // the sign-in and 2FA state stay as they are.
+        $user = $session->user ?? null;
+        if ($user && $user->exists()) {
+            $this->getLoginInstance()->refreshEmailFields($user);
+        }
     }
 
     /**
@@ -222,15 +253,32 @@ class LoginPlugin extends Plugin
         }
 
         // Define current user service.
-        $this->grav['user'] = static function (Grav $c) {
+        $plugin = $this;
+        $this->grav['user'] = static function (Grav $c) use ($plugin) {
             $session = $c['session'];
 
             if (empty($session->user)) {
                 // Try remember me login.
-                $session->user = $c['login']->login(
+                $user = $c['login']->login(
                     ['username' => ''],
-                    ['remember_me' => true, 'remember_me_login' => true, 'failureEvent' => 'onUserLoginGuest']
+                    [
+                        'remember_me' => true,
+                        'remember_me_login' => true,
+                        'twofa' => $c['config']->get('plugins.login.twofa_enabled', false),
+                        'failureEvent' => 'onUserLoginGuest'
+                    ]
                 );
+
+                // A guest has nothing worth keeping, and storing one would start a session
+                // that is waiting for its first write (system.session.lazy). The same guest is
+                // stored if the session starts later in this request.
+                if (!$user->authenticated && self::isSessionWaiting($session)) {
+                    $plugin->lazy_user = $user;
+
+                    return $user;
+                }
+
+                $session->user = $user;
             }
 
             return $session->user;
@@ -297,6 +345,10 @@ class LoginPlugin extends Plugin
             $this->enable([
                 'onPagesInitialized' => ['handleUserActivation', 0],
             ]);
+        } elseif ($path === $this->login->getRoute('confirm_email')) {
+            $this->enable([
+                'onPagesInitialized' => ['handleEmailChangeConfirmation', 0],
+            ]);
         } elseif ($path === $this->login->getRoute('profile')) {
             $this->enable([
                 'onPagesInitialized' => ['addProfilePage', 0],
@@ -348,6 +400,7 @@ class LoginPlugin extends Plugin
             $this->login->getRoute('login') ?: '/login',
             $this->login->getRoute('register', true) ?: '/register',
             $this->login->getRoute('activate') ?: '/activate_user',
+            $this->login->getRoute('confirm_email') ?: '/confirm_email',
             $this->login->getRoute('forgot') ?: '/forgot_password',
             $this->login->getRoute('reset') ?: '/reset_password',
             $this->login->getRoute('magic') ?: '/magic_login',
@@ -383,7 +436,87 @@ class LoginPlugin extends Plugin
             $redirect = $this->grav['session']->redirect_after_login;
         }
 
+        // A session waiting for its first write (system.session.lazy): keep the page in memory
+        // and store it only if the session starts, so an ordinary page view sets no cookie.
+        if (self::isSessionWaiting($this->grav['session'])) {
+            if (!$redirect && !$this->login->getRoute('after_login') && in_array($current_route, $invalid_redirect_routes, true)) {
+                // Nothing was stored on the way here, so on the login page the page to go back
+                // to is the one the visitor came from.
+                $redirect = $this->referrerRedirect($invalid_redirect_routes);
+            }
+            $this->lazy_redirect = $redirect ?: null;
+
+            return;
+        }
+
         $this->grav['session']->redirect_after_login = $redirect;
+    }
+
+    /**
+     * The page named by the Referer header, when it is a page of this site that a visitor
+     * may be sent back to after login.
+     *
+     * @param string[] $invalid_redirect_routes
+     * @return string|null
+     */
+    protected function referrerRedirect(array $invalid_redirect_routes): ?string
+    {
+        $referrer = $_SERVER['HTTP_REFERER'] ?? '';
+        if (!is_string($referrer) || $referrer === '') {
+            return null;
+        }
+
+        /** @var Uri $uri */
+        $uri = $this->grav['uri'];
+        // The route relative to this site, without a language prefix. A referrer from another
+        // site gives the current route, which is one of the invalid routes.
+        // Not parse_url(): it rejects a path with a Grav param in it (`/blog/page:2`).
+        $path = explode('#', explode('?', (string)$uri->referrer(null, null, true), 2)[0], 2)[0];
+
+        $sep = (string)$this->config->get('system.param_sep', ':');
+        $route = '';
+        $params = '';
+        foreach (explode('/', $path) as $part) {
+            if ($part === '') {
+                continue;
+            }
+            if ($sep !== '' && str_contains($part, $sep)) {
+                $key = rawurldecode(explode($sep, $part, 2)[0]);
+                if (!in_array($key, ['task', 'nonce', 'login-nonce', 'logout-nonce'], true)) {
+                    $params .= '/' . $part;
+                }
+            } elseif ($params === '') {
+                $route .= '/' . rawurldecode($part);
+            }
+        }
+        $route = $route ?: '/';
+
+        if (in_array($route, $invalid_redirect_routes, true)) {
+            return null;
+        }
+
+        /** @var Pages $pages */
+        $pages = $this->grav['pages'];
+        $page = $pages->find($route);
+        if (!$page || !$page->routable() || ($page->header()->login_redirect_here ?? true) !== true) {
+            return null;
+        }
+
+        $redirect = $page->route();
+
+        return in_array($redirect, $invalid_redirect_routes, true) ? null : $redirect . $params;
+    }
+
+    /**
+     * True while the session waits for its first write to start (system.session.lazy,
+     * Grav 2.2+). Always false on older cores and with lazy sessions off.
+     *
+     * @param mixed $session
+     * @return bool
+     */
+    protected static function isSessionWaiting($session): bool
+    {
+        return is_object($session) && method_exists($session, 'isPending') && $session->isPending();
     }
 
     /**
@@ -446,6 +579,9 @@ class LoginPlugin extends Plugin
      */
     public function addProfilePage(): void
     {
+        // An email change confirmed in another browser only reached the stored
+        // account, so show the profile from that.
+        $this->login->refreshEmailFields($this->grav['user']);
         $this->login->addPage('profile');
         $this->storeReferrerPage();
     }
@@ -523,7 +659,21 @@ class LoginPlugin extends Plugin
                     }
 
                     $messages->add($message, 'info');
-                    unset($user->activation_token);
+
+                    // Opening the link proves the address it was mailed to, the
+                    // same as confirming an email change does. If the account's
+                    // address changed after the link went out (an administrator
+                    // edited it), or the token has no address on record because
+                    // it was issued before that was kept, the account is still
+                    // activated but the current address is left unproven.
+                    $mailedTo = trim((string)$user->get('activation_email', ''));
+                    $currentEmail = trim((string)$user->get('email', ''));
+                    $addressProven = $mailedTo !== '' && mb_strtolower($mailedTo) === mb_strtolower($currentEmail);
+
+                    unset($user->activation_token, $user->activation_email);
+                    if ($addressProven) {
+                        $this->login->markEmailVerified($user);
+                    }
                     $user->save();
 
                     if ($this->config->get('plugins.login.user_registration.options.send_welcome_email', false)) {
@@ -558,6 +708,117 @@ class LoginPlugin extends Plugin
         }
 
         $this->grav->redirectLangSafe($redirect_route ?: '/', $redirect_code);
+    }
+
+    /**
+     * Handle the link that confirms a changed email address.
+     *
+     * Works whether or not the visitor is signed in, since the token is the
+     * proof. Only here does the account's `email` change.
+     */
+    public function handleEmailChangeConfirmation(): void
+    {
+        /** @var Uri $uri */
+        $uri = $this->grav['uri'];
+
+        /** @var Message $messages */
+        $messages = $this->grav['messages'];
+
+        $language = $this->grav['language'];
+
+        /** @var UserCollectionInterface $users */
+        $users = $this->grav['accounts'];
+
+        $username = (string)$uri->param('username');
+        $token = (string)$uri->param('token');
+
+        /** @var UserInterface $current */
+        $current = $this->grav['user'];
+        $signedInAsOwner = $username !== '' && $current->exists() && $current->authorized === true && $current->username === $username;
+        $redirect_route = $signedInAsOwner ? $this->login->getRoute('profile') : $this->login->getRoute('login');
+        $redirect_route = $redirect_route ?: '/';
+
+        // Same throttle as activation: an unauthenticated endpoint that
+        // compares a secret token (GHSA-x239-6jqx-5hjh).
+        $rateLimiter = $this->login->getRateLimiter('token_attempts');
+        if ($username === '' || $rateLimiter->isRateLimited($username)) {
+            $messages->add($language->translate('PLUGIN_LOGIN.INVALID_REQUEST'), 'error');
+            $this->grav->redirectLangSafe($redirect_route);
+
+            return;
+        }
+
+        $user = $users->load($username);
+        if (is_callable([$user, 'refresh'])) {
+            $user->refresh(true);
+        }
+
+        $stored = (string)$user->get('email_change_token', '');
+        $newEmail = (string)$user->get('email_pending', '');
+
+        if (!$user->exists() || $newEmail === '' || !str_contains($stored, '::')) {
+            // Already used, cancelled or never there.
+            $messages->add($language->translate('PLUGIN_LOGIN.EMAIL_CHANGE_LINK_INVALID'), 'error');
+            $this->grav->redirectLangSafe($redirect_route);
+
+            return;
+        }
+
+        [$good_token, $expire] = explode('::', $stored, 2);
+
+        if (!hash_equals($good_token, $token)) {
+            // An older link replaced by a newer request lands here too.
+            $rateLimiter->registerRateLimitedAction($username);
+            $messages->add($language->translate('PLUGIN_LOGIN.EMAIL_CHANGE_LINK_INVALID'), 'error');
+            $this->grav->redirectLangSafe($redirect_route);
+
+            return;
+        }
+
+        if (time() > (int)$expire) {
+            // Keep the waiting change so the profile can send a fresh link.
+            $messages->add($language->translate('PLUGIN_LOGIN.EMAIL_CHANGE_LINK_EXPIRED'), 'error');
+            $this->grav->redirectLangSafe($redirect_route);
+
+            return;
+        }
+
+        // Someone may have taken the address since the link was sent.
+        if ($this->login->emailBelongsToAnother($user, $newEmail)) {
+            $this->login->clearEmailChange($user);
+            $user->save();
+            $messages->add($language->translate(['PLUGIN_LOGIN.EMAIL_NOT_AVAILABLE', htmlspecialchars($newEmail, ENT_QUOTES, 'UTF-8')]), 'error');
+            $this->grav->redirectLangSafe($redirect_route);
+
+            return;
+        }
+
+        $oldEmail = (string)$user->get('email', '');
+
+        $user->email = $newEmail;
+        $this->login->clearEmailChange($user);
+        $this->login->markEmailVerified($user);
+        $user->save();
+
+        // The session keeps its own copy of the account; bring it up to date
+        // so the profile page shows the new address straight away.
+        if ($current->exists() && $current !== $user && $current->username === $username) {
+            $current->email = $newEmail;
+            $this->login->clearEmailChange($current);
+            $current->email_verified = $user->get('email_verified');
+            $current->email_verified_at = $user->get('email_verified_at');
+        }
+
+        $this->login->sendEmailChangedNotice($user, $oldEmail);
+
+        $this->grav->fireEvent('onUserEmailChanged', new Event([
+            'user' => $user,
+            'old_email' => $oldEmail,
+            'new_email' => $newEmail,
+        ]));
+
+        $messages->add($language->translate(['PLUGIN_LOGIN.EMAIL_CHANGE_CONFIRMED', htmlspecialchars($newEmail, ENT_QUOTES, 'UTF-8')]), 'info');
+        $this->grav->redirectLangSafe($redirect_route);
     }
 
     /**
@@ -707,6 +968,18 @@ class LoginPlugin extends Plugin
                 // too — `twofa_cancel` was previously unguarded, letting it run
                 // (and act on a client `_redirect`) without a nonce.
                 if (!isset($post['login-form-nonce']) || !Utils::verifyNonce($post['login-form-nonce'], 'login-form')) {
+                    $this->grav['messages']->add($this->grav['language']->translate('PLUGIN_LOGIN.ACCESS_DENIED'), 'info');
+                    return;
+                }
+                break;
+
+            case 'resendEmailChange':
+            case 'cancelEmailChange':
+                // Both change the account, so they take a POST with the
+                // `login-form` nonce the profile form's email_change field sends.
+                if (($_SERVER['REQUEST_METHOD'] ?? 'GET') !== 'POST'
+                    || !isset($post['login-form-nonce'])
+                    || !Utils::verifyNonce($post['login-form-nonce'], 'login-form')) {
                     $this->grav['messages']->add($this->grav['language']->translate('PLUGIN_LOGIN.ACCESS_DENIED'), 'info');
                     return;
                 }
@@ -1007,6 +1280,11 @@ class LoginPlugin extends Plugin
         $authenticated = $user->authenticated && $user->authorized;
         $login_route = $this->login->getRoute('login');
         if (!$authenticated && $this->redirect_to_login && $login_route) {
+            // The visitor is off to log in, so a session waiting for its first write
+            // (system.session.lazy) starts here to remember which page to come back to.
+            if (isset($this->lazy_redirect)) {
+                $this->grav['session']->redirect_after_login = $this->lazy_redirect;
+            }
             $this->grav->redirectLangSafe($login_route, 302);
         }
 
@@ -1187,6 +1465,19 @@ class LoginPlugin extends Plugin
             return;
         }
 
+        // The HTML5 email field accepts addresses such as "test@test" that
+        // fail the server-side check in Login::register(), which would
+        // otherwise end up as a 500 error.
+        $email = $form_data->get('email');
+        if (!is_string($email) || !filter_var(trim($email), FILTER_VALIDATE_EMAIL)) {
+            $this->grav->fireEvent('onFormValidationError', new Event([
+                'form'    => $form,
+                'message' => $language->translate('PLUGIN_LOGIN.EMAIL_VALIDATION_MESSAGE')
+            ]));
+            $event->stopPropagation();
+            return;
+        }
+
         // Check for existing username
         $username = $form_data->get('username');
         $existing_username = $users->find($username, ['username']);
@@ -1203,7 +1494,6 @@ class LoginPlugin extends Plugin
         }
 
         // Check for existing email
-        $email    = $form_data->get('email');
         $existing_email = $users->find($email, ['email']);
         if ($existing_email->exists()) {
             // When registration finishes over email anyway, answer exactly as
@@ -1385,10 +1675,23 @@ class LoginPlugin extends Plugin
         $user     = $this->grav['user'];
         $language = $this->grav['language'];
 
-        $form->validate();
-
         /** @var Data $form_data */
         $form_data = $form->getData();
+        // The form has already filtered empty strings to null. Keep those clear
+        // operations when validation filters the data a second time.
+        $form_data->setMissingValuesAsNull(true);
+        if (!$form->validate()) {
+            // Match the returns below: without firing the event and stopping
+            // propagation, Form::process() carries on to the `message` action and
+            // reports the profile as updated when nothing was saved.
+            $this->grav->fireEvent('onFormValidationError', new Event([
+                'form'     => $form,
+                'message'  => $form->getError() ?: $language->translate('PLUGIN_LOGIN.PROFILE_NOT_UPDATED'),
+                'messages' => $form->getErrors()
+            ]));
+            $event->stopPropagation();
+            return false;
+        }
 
         // Don't save if user doesn't exist
         if (!$user->exists()) {
@@ -1399,6 +1702,22 @@ class LoginPlugin extends Plugin
             $event->stopPropagation();
             return false;
         }
+
+        // A user who has supplied the correct password but has not completed
+        // the second-factor challenge exists in the session, but is not yet
+        // authorized to change account data.
+        if ($user->authorized !== true) {
+            $this->grav->fireEvent('onFormValidationError', new Event([
+                'form'    => $form,
+                'message' => $language->translate('PLUGIN_LOGIN.PROFILE_NOT_UPDATED')
+            ]));
+            $event->stopPropagation();
+            return false;
+        }
+
+        // Pick up an email change confirmed in another browser, so this save
+        // doesn't write the old address back.
+        $this->login->refreshEmailFields($user);
 
         // Stop overloading of username
         $username = $form->data('username');
@@ -1417,10 +1736,18 @@ class LoginPlugin extends Plugin
         /** @var UserCollectionInterface $users */
         $users = $this->grav['accounts'];
 
+        $verifyEmailChange = (bool)$this->config->get('plugins.login.profile.verify_email_change', true);
+
         // Check for existing email
         $email = $form->getData('email');
         $existing_email = $users->find($email, ['email']);
-        if ($user->username !== $existing_email->username && $existing_email->exists()) {
+        // With email changes confirmed and registration finishing over email,
+        // registration doesn't say whether an address is taken
+        // (GHSA-crh8-xm27-j9g9), so neither does this form: the change shows
+        // as waiting and no link goes out.
+        $hideTakenEmail = $verifyEmailChange
+            && $this->config->get('plugins.login.user_registration.options.send_activation_email', false);
+        if (!$hideTakenEmail && $user->username !== $existing_email->username && $existing_email->exists()) {
             $this->grav->fireEvent('onFormValidationError', new Event([
                 'form'    => $form,
                 'message' => $language->translate([
@@ -1441,6 +1768,8 @@ class LoginPlugin extends Plugin
         // persist straight to the account and grant super-admin (GHSA-h33v-82r9-v8pm).
         $privilegeFields = ['groups', 'access'];
 
+        $formValues = $form_data->toArray();
+        $missing = new \stdClass();
         $data = [];
         foreach ($fields as $field) {
             if (in_array($field, $privilegeFields, true)) {
@@ -1454,9 +1783,57 @@ class LoginPlugin extends Plugin
                 continue;
             }
 
-            $data_field = $form_data->get($field);
-            if (!isset($data[$field]) && isset($data_field)) {
-                $data[$field] = $form_data->get($field);
+            // Preserve dot-path lookup while distinguishing a cleared value from an absent field.
+            $data_field = $formValues;
+            foreach (explode('.', $field) as $segment) {
+                if (is_object($data_field) && isset($data_field->{$segment})) {
+                    $data_field = $data_field->{$segment};
+                } elseif (is_array($data_field) && array_key_exists($segment, $data_field)) {
+                    $data_field = $data_field[$segment];
+                } else {
+                    $data_field = $missing;
+                    break;
+                }
+            }
+            if (!array_key_exists($field, $data) && $data_field !== $missing) {
+                $data[$field] = $data_field;
+            }
+        }
+
+        // A new address is only kept as pending until the link mailed to it is
+        // opened (handleEmailChangeConfirmation). The account keeps its old,
+        // proven address in the meantime.
+        $pendingEmail = null;
+        if (array_key_exists('email', $data) && is_string($data['email'])) {
+            $newEmail = trim($data['email']);
+            $oldEmail = trim((string)$user->get('email', ''));
+            $changed = $newEmail !== '' && mb_strtolower($newEmail) !== mb_strtolower($oldEmail);
+
+            if ($changed && $verifyEmailChange) {
+                if (!filter_var($newEmail, FILTER_VALIDATE_EMAIL)) {
+                    $this->grav->fireEvent('onFormValidationError', new Event([
+                        'form'    => $form,
+                        'message' => $language->translate('PLUGIN_LOGIN.EMAIL_VALIDATION_MESSAGE')
+                    ]));
+                    $event->stopPropagation();
+                    return false;
+                }
+
+                $limiter = $this->login->getRateLimiter('email_changes');
+                if ($limiter->hasReachedLimit($user->username)) {
+                    $this->grav->fireEvent('onFormValidationError', new Event([
+                        'form'    => $form,
+                        'message' => $language->translate(['PLUGIN_LOGIN.EMAIL_CHANGE_TOO_MANY', $limiter->getInterval()])
+                    ]));
+                    $event->stopPropagation();
+                    return false;
+                }
+
+                unset($data['email']);
+                $pendingEmail = $newEmail;
+            } elseif ($changed) {
+                // Saved straight away, so any waiting change is out of date.
+                $this->login->clearEmailChange($user);
             }
         }
 
@@ -1468,6 +1845,15 @@ class LoginPlugin extends Plugin
             if ($user instanceof FlexObjectInterface) {
                 $flash->clearFiles();
                 $flash->save();
+            }
+
+            if ($pendingEmail !== null) {
+                $this->login->getRateLimiter('email_changes')->registerRateLimitedAction($user->username);
+                $this->login->requestEmailChange($user, $pendingEmail);
+                $this->grav['messages']->add(
+                    $language->translate(['PLUGIN_LOGIN.EMAIL_CHANGE_SENT', htmlspecialchars($pendingEmail, ENT_QUOTES, 'UTF-8')]),
+                    'info'
+                );
             }
         } catch (\Exception $e) {
             $form->setMessage($e->getMessage(), 'error');
@@ -1515,12 +1901,12 @@ class LoginPlugin extends Plugin
         $credentials = $event->getCredentials();
         $username = $credentials['username'];
 
-        // Check rate limit for both IP and user, but allow each IP a single try even if user is already rate limited.
+        // Refuse while either the IP or the username has used up its attempts.
         if ($interval = $this->login->checkLoginRateLimit($username)) {
             /** @var Language $t */
             $t = $this->grav['language'];
 
-            $event->setMessage($t->translate(['PLUGIN_LOGIN.TOO_MANY_LOGIN_ATTEMPTS', $interval]), 'error');
+            $event->setMessage($t->translate(['PLUGIN_LOGIN.TOO_MANY_LOGIN_ATTEMPTS_RETRY', $interval]), 'error');
             $event->setRedirect($this->login->getRoute('login') ?? '/');
             $event->setStatus(UserLoginEvent::AUTHENTICATION_CANCELLED);
             $event->stopPropagation();
@@ -1699,6 +2085,14 @@ class LoginPlugin extends Plugin
         $user = $users->load('');
 
         $event->setUser($user);
+
+        // A session waiting for its first write (system.session.lazy) holds nothing to
+        // clear, and a guest is not worth starting one for.
+        if (self::isSessionWaiting($this->grav['session'])) {
+            return;
+        }
+
+        unset($this->grav['session']->remember_me_pending);
         $this->grav['session']->user = $user;
     }
 
@@ -1732,8 +2126,29 @@ class LoginPlugin extends Plugin
             // If the user wants to be remembered, create Rememberme cookie.
             $username = $user->get('username');
             if ($event->getCredential('rememberme')) {
-                $login->rememberMe()->createCookie($username);
+                if ($event->isDelayed()) {
+                    // Defer issuance until the second factor succeeds.
+                    $session->remember_me_pending = $username;
+                } else {
+                    $login->rememberMe()->createCookie($username);
+                }
             }
+        }
+    }
+
+    /**
+     * Complete a deferred remember-me request after the second factor succeeds.
+     */
+    public function userLoginAuthorized(UserLoginEvent $event): void
+    {
+        /** @var SessionInterface $session */
+        $session = $this->grav['session'];
+        $pending = $session->remember_me_pending ?? null;
+        unset($session->remember_me_pending);
+
+        $username = (string)$event->getUser()->get('username');
+        if (is_string($pending) && $pending !== '' && hash_equals($pending, $username)) {
+            $this->grav['login']->rememberMe()->createCookie($username);
         }
     }
 

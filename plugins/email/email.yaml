@@ -3,6 +3,7 @@ from:
 to:
 mailer:
   engine: sendmail
+  marketing_engine: ''
   smtp:
     server: localhost
     port: 25
@@ -12,6 +13,7 @@ mailer:
   sendmail:
     bin: '/usr/sbin/sendmail -bs'
 content_type: text/html
+error_message: ''
 debug: false
 providers:
   send_header: ''

@@ -1,3 +1,73 @@
+# v3.10.1
+## 10/16/2026
+
+1. [](#bugfix)
+    * Activation, password reset, email change, magic login and invitation links now include the sub-directory on multisite installs that use one, when `site_host` is not set [#241](https://github.com/getgrav/grav-plugin-login/issues/241)
+
+# v3.10.0
+## 10/14/2026
+
+1. [](#new)
+    * Changing your email on the profile page now sends a confirmation link to the new address, and the account only switches over once the link is opened. Until then the profile shows the waiting change, with buttons to send the link again or cancel it, and the old address gets a notice once the change goes through. On by default, with a new `profile.verify_email_change` setting to turn it off
+    * Accounts now record the confirmed address in `email_verified` and `email_verified_at` when an email change or account activation link is opened (an activation link only counts for the address it was mailed to, so one that is opened after an administrator changed the email activates the account but leaves the new address unconfirmed), and `$grav['login']->isEmailVerified($user)` tells a plugin whether the current address is the confirmed one
+    * New `onUserEmailChanged` event, fired with the account and the old and new address once an email change is confirmed
+    * A signed-in browser keeps its own copy of the account, so a change confirmed in another browser used to be written back (the old address and the used link) by the next save from the old copy, such as regenerating the 2FA secret. The email fields of the session's copy are now refreshed from the stored account when a request starts, with either account storage
+2. [](#bugfix)
+    * The links in the account activation email and in the already registered notice (which points to the password reset page) are now full web addresses, so they work from the mail client, instead of a path like `/activate_user/...` unless `site_host` was set
+
+# v3.9.14
+## 10/13/2026
+
+1. [](#bugfix)
+    * Registering with an email address that the browser accepts but the server rejects, such as `test@test`, now shows the "Must be a valid email address" message instead of a 500 error. Thanks @wakqasahmed [#345](https://github.com/getgrav/grav-plugin-login/pull/345) [#302](https://github.com/getgrav/grav-plugin-login/issues/302)
+    * The Spanish translation covers the newer settings, login link and lockout strings. Thanks @pmoreno-rodriguez [#346](https://github.com/getgrav/grav-plugin-login/pull/346)
+
+# v3.9.13
+## 10/06/2026
+
+1. [](#bugfix)
+    * An invitation form can now only be sent by a signed-in user who manages accounts, and only a super user can invite someone into super access or into groups
+
+# v3.9.12
+## 09/28/2026
+
+1. [](#bugfix)
+    * Retrying a login while locked out no longer extends the lockout, and the error now says how many minutes are actually left. Thanks @wakqasahmed [#343](https://github.com/getgrav/grav-plugin-login/pull/343) [#335](https://github.com/getgrav/grav-plugin-login/issues/335)
+
+# v3.9.11
+## 09/23/2026
+
+1. [](#improved)
+    * With Grav 2.2's lazy sessions turned on, visitors who are only reading pages no longer get a session cookie from the login plugin, so a proxy or CDN can cache those pages.
+    * With lazy sessions turned on, a visitor who opens the login page is still sent back to the page they came from once they have logged in.
+
+# v3.9.10
+## 09/22/2026
+
+1. [](#new)
+    * The German translation now covers the rest of the plugin's messages. Thanks @Tanzzwerg [#342](https://github.com/getgrav/grav-plugin-login/pull/342)
+
+1. [](#improved)
+    * The fields on the registration, profile, forgot-password and magic-link pages carry an id, so clicking a field's label puts the cursor in it and screen readers announce the two together. Thanks @Tanzzwerg [#342](https://github.com/getgrav/grav-plugin-login/pull/342)
+
+1. [](#bugfix)
+    * The two-factor setup on the profile page works on themes that write their scripts into the page head. The jQuery library it needs was registered too late to reach those pages, so the button that generates a new secret did nothing. Thanks @onetrev [grav-plugin-form#656](https://github.com/getgrav/grav-plugin-form/issues/656)
+
+# v3.9.9
+## 09/17/2026
+
+1. [](#bugfix)
+    * **[security] Someone who has entered a correct password but not yet answered the two-factor prompt can no longer change the account's profile.** The profile form only checked that a user was in the session, not that they had finished logging in, so the second factor could be sidestepped by editing the account it protects. Thanks to @redwolf1919
+    * **[security] "Remember me" no longer skips the two-factor prompt.** The cookie was written as soon as the password was accepted, and returning with it logged you straight in. It is now written only after the second factor succeeds, and restoring a session from it asks for the code again. Devices remembered before this release will ask for a code on their next visit. Thanks to @redwolf1919
+    * **[security] The password reset page is now always the one this plugin ships.** A reset link carries a credential in its URL, and a page authored in the site's own content could be placed on that route and read it. Any custom body on the reset page is no longer rendered. Thanks to @redwolf1919
+
+# v3.9.8
+## 09/13/2026
+
+1. [](#bugfix)
+    * Clearing an optional field on the frontend profile form now actually clears it, instead of silently keeping the previous value. Thanks @sridharkalaibala [#340](https://github.com/getgrav/grav-plugin-login/pull/340)
+    * A profile form that fails validation now says so, rather than reporting the profile as updated while discarding the changes
+
 # v3.9.7
 ## 09/09/2026
 

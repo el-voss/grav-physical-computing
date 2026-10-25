@@ -48,6 +48,8 @@ interface Provider
 }
 ```
 
+One more method is optional and is not on the interface: `testRecipient()`, below.
+
 `engines()` is a list because a provider that has offered its transport under more than one name over the years should answer for all of them. `key()` is separate from the engine because it is what a route and a config block are addressed by, and only one of those can exist per provider however many engines there are.
 
 ### `capabilities()`
@@ -64,6 +66,8 @@ new Capabilities(
 ```
 
 A store sets `List-Unsubscribe`, an API transport turns the message into a JSON body and drops every header it does not recognise, the mail goes out looking perfectly fine, and a year later Gmail is filing it as spam because a bulk sender with no unsubscribe button is what a spammer looks like. Nothing on any screen would say so. Answering `unsubscribeHeaders: false` honestly is what lets a screen say so.
+
+`transactionalOnly` is optional too. Set it when the provider's terms allow transactional mail (receipts, password resets, notifications) and not newsletters or other bulk mail, as Cloudflare Email Service's do. A newsletter add-on reads it and refuses to send a campaign through your transport. It arrived in Email 5.3.3, and a named argument an older `Capabilities` does not know is a fatal error, so pass it only after `property_exists(Capabilities::class, 'transactionalOnly')`.
 
 `signsWebhooks` is optional and almost always left out: a screen works out whether you sign from `verificationKeys()`, and only a provider that signs with a published certificate and asks the merchant for no key, like SES, needs to say `signsWebhooks: true` itself. `echoNote` is where you say what a merchant has to do for `echoesHeaders` to be true — register the header in a dashboard, or press your setup button — in plain words, because "configure header passthrough" is not instructions.
 
@@ -84,7 +88,7 @@ interface DeliveryReports
 
 Three rules, and they are not style preferences — each one is a real failure that has happened:
 
-**Verify before parse.** `verify()` runs first, over the raw bytes, before anything has decoded the body. A signature checked after the payload was parsed is a signature protecting nothing; by then a stranger has had your parser walk their JSON. And an HMAC over a body that was decoded and re-encoded on the way will not match however right the key is, so read `$request->body` and nothing else.
+**Authenticate before acting; over raw bytes wherever the scheme signs raw bytes.** `verify()` runs first, before anything is stored, logged as an event or acted on. Where the provider's signature covers the body, check it over `$request->body` before anything has decoded it: a signature checked after the payload was parsed is a signature protecting nothing, since by then a stranger has had your parser walk their JSON, and an HMAC over a body that was decoded and re-encoded on the way will not match however right the key is. Where the signature sits inside the payload (SNS's JSON envelope, Mailgun's form fields), decode only what the check needs, check it, and stop there.
 
 **Never throw from `parse()`.** Truncated JSON, an XML error page from somebody's proxy, an empty body, a documented field that turned out to be a list — all of them are `Payload::unreadable('what went wrong')`. The caller logs the first few hundred bytes and answers 200 anyway, because every one of these providers treats a 4xx as a reason to retry for days and some treat it as a reason to drop the event outright. `parse()` runs on a public address anybody can post to.
 
@@ -173,9 +177,181 @@ The selector itself is deliberately not here. Selectors are per domain and per a
 
 `lookup` is the way out of that when your API will say. It is handed a domain and answers `['selectors' => [...], 'return_paths' => [...]]`, either key absent meaning "could not say". It must never throw and it must have a short timeout: a provider's API being slow is an unanswered question, not a broken settings screen. Callers cache the answer.
 
+### `testRecipient()`, optional
+
+An address your provider documents for testing: one its API accepts, that is delivered to nobody, and that it reports back as delivered through the same webhook as real mail. A store sends its "is the webhook working?" test there, so the test reaches no real inbox and still produces the event it is waiting for. Without one, the store sends the test to its own From address instead.
+
+```php
+/**
+ * Resend's own test address: accepted, delivered to nobody, reported as delivered.
+ * https://resend.com/docs/dashboard/emails/send-test-emails
+ */
+public function testRecipient(): ?string
+{
+    return 'delivered@resend.dev';
+}
+```
+
+It is a method on your provider class, not on the `Provider` interface, and it is optional both ways round. A new method on the interface would be a fatal error in every transport plugin not updated in the same release, so it is not there: a consumer asks `method_exists($provider, 'testRecipient')` and treats anything other than one valid address as no answer. That means a driver that has it still loads beside an Email plugin from before it existed (the method is just a method), and a driver from before it existed simply has no test address.
+
+The rules:
+
+- **Only an address the provider's own documentation names**, and only one it says produces a delivery event. Do not invent one, and do not answer an address that bounces or is suppressed on purpose: the test is waiting for a delivery. Put the link to the page in the docblock.
+- **A constant, with no I/O.** It is read every time a settings screen is drawn, like `capabilities()`.
+- **Null when there is none.** Most providers have none, or have only bounce and complaint addresses, and null is the honest answer.
+
+Today: Resend answers `delivered@resend.dev` and Amazon SES answers `success@simulator.amazonses.com` (the mailbox simulator). Postmark, Mailgun, SendGrid, MailerSend and SMTP2GO document no address that is delivered and reported as delivered, so they have none.
+
 ### A transport with no delivery API
 
 Do nothing. Do not register a provider that answers null from everything; that is worse than registering none, because a store then draws a card for a provider that can say nothing about anything. Leave `onEmailProviders` unimplemented and the store will say the transport cannot report deliveries, which is true and is the more useful sentence.
+
+## Receiving mail
+
+Inbound mail is a second, optional capability, asked for with `Email::supportsFeature('inbound')` (true on PHP 8.1 and later, like the rest of the contract). Everything lives under `Grav\Plugin\Email\Providers\Inbound\`, plus the IMAP client under `Grav\Plugin\Email\Inbound\Imap\`. None of it is used until something calls it, so a site that never receives mail behaves exactly as before.
+
+It is not a new method on `Provider`. Every transport plugin implements `Provider` today, and a new method there would be a fatal error in every one that wasn't updated in the same release. Inbound is a separate interface your provider class may also implement.
+
+### What a provider plugin writes
+
+Implement `InboundCapable` on the provider class you already register on `onEmailProviders`, and return a receiver:
+
+```php
+use Grav\Plugin\Email\Providers\Inbound\InboundCapable;
+use Grav\Plugin\Email\Providers\Inbound\InboundReceiver;
+
+final class PostmarkProvider implements Provider, InboundCapable
+{
+    // … the Provider methods you already have …
+
+    public function inbound(): InboundReceiver
+    {
+        return new PostmarkInbound();
+    }
+}
+```
+
+There is no second event and no second registry: the gateway finds the receiver on the provider it already knows. `inbound()` is called whenever a consumer lists receivers, so keep it cheap, with no I/O.
+
+```php
+interface InboundReceiver
+{
+    public function key(): string;                 // 'postmark' — lowercase, a route segment
+    public function label(): string;               // 'Postmark' — a brand name, never translated
+    public function verificationKeys(): array;     // config keys verify() reads, e.g. ['inbound_username', 'inbound_password']
+    public function maxBytes(): int;               // the largest body you accept, in bytes
+    public function verify(InboundRequest $request, array $config): Verdict;
+    public function parse(InboundRequest $request, array $config): InboundPayload;
+    public function fetch(InboundReference $ref, array $config): InboundMessage;
+    public function instructions(string $webhookUrl): string;
+}
+```
+
+The rules are the delivery-report rules with two additions:
+
+- **Authenticate before acting.** `verify()` runs before `parse()`, and nothing is stored or acted on for a refused request. Where the scheme signs raw bytes, check `$request->body` before decoding anything. Where the signature sits inside the payload, decode only what the check needs.
+- **`parse()` never throws and does no network I/O.** It runs on a public address anybody can post to. Anything it can't read is `InboundPayload::unreadable('what was wrong')`; the consumer logs it and answers 200.
+- **`fetch()` runs in the consumer's worker.** A provider that sends only metadata (Resend's `email.received`, a Mailgun `store()` notification) answers an `InboundReference` from `parse()`. The consumer stores that, answers 200 at once, and calls `fetch()` later from its own job worker to download the message. `fetch()` may throw; the worker retries.
+- **Size.** The gateway refuses a body over `maxBytes()`, or over the consumer's own `max_bytes` when that is smaller, with 413 before `verify()` runs. Answer the provider's real limit (SendGrid's 30 MB, SNS's 150 KB inline content), not a guess.
+- **Unsigned providers.** A provider that signs nothing answers `Verdict::unsigned()` after whatever check it does offer (basic auth credentials in the URL, say). A consumer accepts that only behind a URL secret of at least 32 random characters, and labels the receiver "authenticated by secret URL" wherever a person sees it.
+- **`verificationKeys()`** name keys in your own plugin's config, beside the sending credentials, exactly as for delivery reports. The consumer passes those values in `$config`.
+
+`InboundRequest` is `WebhookRequest` plus what multipart posts need. `$body` is the raw bytes, or `''` for `multipart/form-data`, where PHP never fills `php://input`; the form fields are then in `$parsedBody` (read one with `field('name')`) and the files in `$files`, a list of `InboundUpload{field, filename, type, size, tmpPath}`. Headers are lower-cased; `header()`, `hasHeader()`, `contentType()` and `json()` work as on `WebhookRequest`.
+
+Build messages with `InboundMessage::fromMime($raw, $this->key(), $overrides)` whenever you have the raw MIME, and lay what the provider knows over it: `['envelopeTo' => [...], 'envelopeFrom' => '', 'providerId' => '…', 'auth' => ['spf' => 'pass', …], 'spamScore' => 1.2, 'providerStrippedText' => '…']`. When the provider gives only fields, construct `InboundMessage` with named arguments and `InboundAttachment`s built from its attachment list (`content` for base64 fields, `path` for uploaded files).
+
+### What a message looks like
+
+`InboundMessage` holds UTF-8 strings throughout:
+
+| Property | What it is |
+|---|---|
+| `raw` | the full RFC 5322 bytes, when the receiver had them |
+| `messageId`, `inReplyTo`, `references` | ids without angle brackets, lower-cased; `inReplyTo` is the first id only |
+| `from`, `to`, `cc`, `replyTo` | `Address{email, name}` values; `Address::detail()` answers the `+detail` of a plus address |
+| `envelopeTo`, `envelopeFrom` | the SMTP envelope where known; `envelopeFrom === ''` is the null sender (a bounce) |
+| `subject`, `date` | decoded subject; Unix time or null |
+| `text`, `html` | the body parts, either may be null; `format=flowed` text is already joined |
+| `providerStrippedText` | the provider's own quote-stripped text, advisory only |
+| `headers` | every header in order as `[name, value]`, unfolded but not decoded; `header($name)` answers the first value, `headerAll($name)` all of them |
+| `attachments` | `InboundAttachment{filename, contentType, size, contentId, inline, content, path}`; `bytes()` reads either |
+| `auth` | `['spf' => …, 'dkim' => …, 'dmarc' => …]` from the topmost `Authentication-Results`, or from the receiver; a missing key means unknown |
+| `spamScore`, `receiver`, `providerId`, `contentType` | `contentType` is the top-level MIME type; `isReport()` is true for `multipart/report` |
+
+From raw MIME alone, the topmost `Return-Path` gives `envelopeFrom` and the topmost `X-Original-To` or `Delivered-To` gives `envelopeTo`, which is what an IMAP mailbox has to go on. A receiver that knows the real envelope overrides both.
+
+`MimeParser` is written in this plugin rather than bundled. Every maintained MIME library for PHP brings packages Grav core also ships at its own version (`guzzlehttp/psr7`, `pimple/pimple`, `psr/container`) or a dependency-injection container, and Grav loads every plugin's autoloader into one process. It covers what received mail needs: RFC 2047 encoded words, folded headers, nested multiparts, quoted-printable and base64, charsets through mbstring and iconv (ISO-8859-1 read as Windows-1252, as mail clients do), RFC 2231 filenames, inline `cid:` parts, `message/rfc822` kept whole as an attachment, and `multipart/report`. `parse()` never throws.
+
+### Built-in receivers
+
+Two receivers ship with this plugin and need no transport plugin: `cloudflare`, for a Cloudflare Email Routing Worker, and `generic`, for anything else that can sign a raw message. Both take the raw message as the body with an HMAC-SHA256 signature over it (`X-Grav-Signature: t={unix},v1={hex}`, 300-second tolerance), and read the envelope from `X-Grav-Envelope-To` and `X-Grav-Envelope-From`. Their config is the consumer's: `secret` (required, at least 32 characters), `tolerance` (seconds, default 300) and `max_bytes`. `docs/inbound-cloudflare.md` has the Worker source, the setup steps, and a shell and a PHP sender. The keys `cloudflare` and `generic` are reserved; a provider receiver that claims one is left out.
+
+### IMAP
+
+For a mailbox with no webhook at all (Gmail with an app password, most hosting mailboxes), `Grav\Plugin\Email\Inbound\Imap\ImapMailbox` is a small pure-PHP IMAP client over `stream_socket_client`. It does not use ext/imap, which left PHP core in 8.4.
+
+```php
+use Grav\Plugin\Email\Inbound\Imap\ImapConfig;
+use Grav\Plugin\Email\Inbound\Imap\ImapException;
+use Grav\Plugin\Email\Inbound\Imap\ImapMailbox;
+
+try {
+    $mailbox = ImapMailbox::connect(ImapConfig::fromArray([
+        'host' => 'imap.gmail.com', 'port' => 993, 'encryption' => 'ssl',
+        'username' => 'support@example.com', 'password' => $appPassword, 'mailbox' => 'INBOX',
+    ]));
+} catch (ImapException $e) {
+    // $e->kind is 'auth' (fix the settings), 'network' (try later) or 'protocol'
+}
+
+if ($mailbox->uidValidity() !== $storedUidValidity) {
+    $lastUid = 0;   // the server renumbered; rely on your own dedupe
+}
+foreach ($mailbox->fetchNew($lastUid, 50, $maxBytes) as $item) {   // ImapItem{uid, raw, size}
+    if (!$item->isTooLarge()) {
+        $message = InboundMessage::fromMime($item->raw, 'imap');
+        // store it
+    }
+    $mailbox->markProcessed($item->uid, 'Processed');   // \Seen, then moved when a folder is given
+    $lastUid = $item->uid;
+}
+$mailbox->close();
+```
+
+`encryption` is `ssl` (TLS from the first byte, port 993), `starttls` (port 143, upgraded before login; it never falls back to plain text) or `none` (a local test server only). Certificates are verified unless `verify_peer` is false. `fetchNew()` downloads with `BODY.PEEK[]`, so nothing is marked read until `markProcessed()`. With a last UID of 0 it asks for unseen mail only; after that, every UID above the last one. A message over `$maxBytes` is not downloaded and comes back with a null `raw`. `markProcessed()` uses `UID MOVE` where the server has it, and `UID COPY` + `\Deleted` + `UID EXPUNGE` (or `EXPUNGE` without UIDPLUS) where it doesn't, creating the folder when the server says `TRYCREATE`. Only `LOGIN` is supported today; `ImapConfig::AUTH_XOAUTH2` is reserved for `AUTHENTICATE XOAUTH2`.
+
+### Calling it from a consumer
+
+A consumer (a helpdesk, a forum, a store) calls one thing, `InboundGateway`:
+
+```php
+use Grav\Plugin\Email\Providers\Inbound\InboundGateway;
+use Grav\Plugin\Email\Providers\Inbound\InboundRequest;
+
+$email = Grav::instance()['Email'] ?? null;
+if ($email === null || !method_exists($email, 'supportsFeature') || !$email::supportsFeature('inbound')) {
+    return; // this copy of the Email plugin can't receive mail
+}
+
+$gateway = new InboundGateway($email);
+$result = $gateway->receive($receiverKey, InboundRequest::fromGlobals(), $config);
+
+http_response_code($result->status);   // 404 unknown receiver, 413 too large, 401 refused, 200 accepted
+if ($result->accepted()) {
+    foreach ($result->messages() as $message) { /* store, then process later */ }
+    foreach ($result->references() as $ref) { /* store, fetch() later in the worker */ }
+    if ($result->payload->confirmUrl !== null) { /* fetch it to confirm an SNS subscription */ }
+    if ($result->payload->unreadable) { /* log $result->payload->note */ }
+}
+```
+
+`receive()` resolves the receiver, checks the size, verifies, and parses, in that order, stopping at the first that fails. `$config` is the receiver's verification config (for a provider receiver, usually that provider plugin's own config) plus `max_bytes` if you have a limit of your own. `receivers()` lists every receiver on the site for a settings screen, and `receiver($key)` finds one. The refusal reason in `$result->verdict->reason` is for your log, never for the response body.
+
+Match the URL secret in your own route before calling the gateway, compare it with `hash_equals`, and answer 404 with no body on a mismatch. Answer 200 once the message is stored and do the processing afterwards: providers retry on anything else, some for days. Answer 5xx only when you couldn't store the message, so the provider keeps it.
+
+### Testing a receiver
+
+The same way as delivery reports: the provider's documented sample payloads saved as fixtures, parsed and checked field by field, and every signature computed in the test and then broken. `InboundRequest` is built directly in a test with named arguments (`new InboundRequest(headers: [...], body: $raw)`), so none of this needs Grav or a running site.
 
 ## The send id header
 
@@ -223,3 +399,19 @@ Against the provider's own documented sample payloads, saved as fixtures, parsed
 For signatures, compute them in the test rather than pasting one, then break them: change a byte of the body, replace the signature, replay an old timestamp, point a certificate URL at a host that merely ends with the provider's domain. Every one of those is a real attack and every one is three lines of test.
 
 `WebhookRequest` is built directly in a test — a method, a path, a headers array, a body string — so none of this needs Grav, a route, or a running site.
+
+## Newsletter mail through its own engine
+
+A site can send its own mail (order confirmations, password resets, form notifications) through one provider and its newsletters through another. The Email plugin's `mailer.engine` is the site's engine and `mailer.marketing_engine` the newsletters'; when the second is empty, newsletters use the first.
+
+A newsletter add-on marks what it sends:
+
+```php
+$message = $grav['Email']->message($subject, $html, 'text/html')->to($address);
+if (method_exists($message, 'marketing')) {
+    $message->marketing();   // Email 5.3.3 and later
+}
+$grav['Email']->send($message);
+```
+
+and asks `Email::marketingEngine()` (or `Email::marketingEngineIn($mailerConfig)`) which engine that is, for its own health checks and provider screens. A transport plugin needs to do nothing: its engine is asked for by name either way.
