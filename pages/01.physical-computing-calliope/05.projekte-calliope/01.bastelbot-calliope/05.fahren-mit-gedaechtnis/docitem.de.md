@@ -49,7 +49,7 @@ Beim Start einer Rakete läuft vorher ein Countdown. Genau das soll der Bastelbo
   </div>
   <div class="python content-block" markdown="1">
 
-```python
+<pre><code class="language-python">
 from calliopemini import *
 
 zaehler = 10                        # Initialisierung
@@ -58,7 +58,7 @@ while zaehler > 0:
     sleep(1000)                    
     zaehler = zaehler - 1       # Änderung wird von rechts nach links ausgeführt
 display.scroll("Los!")            
-```
+</code></pre>
   </div>
 </div>
 </div>
@@ -112,7 +112,7 @@ In Open Roberta Lab legst du über die Kategorie „Variablen" eine neue Variabl
   </div>
   <div class="python content-block" markdown="1">
 
-```python
+<pre><code class="language-python">
 from calliopemini import *
 
 zaehler = 10                        # Zahl (integer)
@@ -123,7 +123,7 @@ while zaehler > 0:                  # Vergleich liefert einen Wahrheitswert (boo
     sleep(1000)
     zaehler = zaehler - 1          # oder kürzer: zaehler -= 1
 display.scroll(name)
-```
+</code></pre>
 
 In Python legst du eine Variable an, indem du einfach einen Wert zuweist. Einen Datentyp musst du dabei nicht angeben; Python erkennt den Typ automatisch anhand des Wertes (10 → Zahl, "Los!" → Text). Der Wert wird mit `=` gespeichert. Mit `type(zaehler)` kannst du den Datentyp einer Variable abfragen.
   </div>
@@ -181,7 +181,7 @@ Das folgende Programm soll einen Countdown von 10 bis 0 anzeigen. Leider veränd
   </div>
   <div class="python content-block" markdown="1">
 
-```python
+<pre><code class="language-python">
 from calliopemini import *
 
 zaehler = 10
@@ -190,7 +190,7 @@ while zaehler > 0:
     zaehler = -1       
     sleep(1000)
 display.scroll("Los!")
-```
+</code></pre>
   </div>
 </div>
 </div>
