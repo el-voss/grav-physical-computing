@@ -12,10 +12,11 @@ taxonomy:
         - Makecode
         - Python
     Inhalte:
-        - Funktionen
         - Getriebemotoren
-        - 'Funktionen zum Fahren'
         - Hebelsteuerung
+        - Sequenz
+        - Verzweigung
+        - Schleife
     Niveau:
         - Basis
 featured_image: bastelbot-quadrat-fahren.png
