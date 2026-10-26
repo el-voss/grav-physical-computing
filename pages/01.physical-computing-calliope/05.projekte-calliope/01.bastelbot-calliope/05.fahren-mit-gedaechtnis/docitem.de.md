@@ -13,6 +13,7 @@ taxonomy:
     Niveau:
         - Fortgeschritten
 media_order: 'countdown-orl.png,countdown-mc.png,variablen-mc.png,variablen-orl.png,debugging-countdown-mc.png,debugging-countdown-orl.png,spirale-schematisch.png,zebrastreifen-schematisch.png'
+featured_image: zebrastreifen-schematisch.png
 ---
 
 [TOC]
