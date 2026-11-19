@@ -22,9 +22,11 @@ use Grav\Framework\Form\FormFlashFile;
 use Grav\Framework\Form\Interfaces\FormInterface;
 use Grav\Framework\Form\Traits\FormTrait;
 use Grav\Framework\Route\Route;
+use Grav\Plugin\Form\Captcha\CaptchaManager;
 use RocketTheme\Toolbox\ArrayTraits\NestedArrayAccessWithGetters;
 use RocketTheme\Toolbox\Event\Event;
 use RocketTheme\Toolbox\ResourceLocator\UniformResourceLocator;
+use LengthException;
 use RuntimeException;
 use stdClass;
 use function is_array;
@@ -240,12 +242,16 @@ class Form implements FormInterface, ArrayAccess
                 if ($file) {
                     $imagePath = $original->getTmpFile();
                     $thumbPath = $file->getTmpFile();
+                    // Filenames may contain '#' or '?' which would otherwise be
+                    // treated as URL fragment/query delimiters by the browser.
+                    $imageRel = str_replace(['#', '?'], ['%23', '%3F'], Folder::getRelativePath($imagePath));
+                    $thumbRel = str_replace(['#', '?'], ['%23', '%3F'], Folder::getRelativePath($thumbPath));
                     $list[$basename] = [
                         'name' => $file->getClientFilename(),
                         'type' => $file->getClientMediaType(),
                         'size' => $file->getSize(),
-                        'image_url' => $url->rootUrl() . '/' . Folder::getRelativePath($imagePath) . '?' . filemtime($imagePath),
-                        'thumb_url' => $url->rootUrl() . '/' . Folder::getRelativePath($thumbPath) . '?' . filemtime($thumbPath),
+                        'image_url' => $url->rootUrl() . '/' . $imageRel . '?' . filemtime($imagePath),
+                        'thumb_url' => $url->rootUrl() . '/' . $thumbRel . '?' . filemtime($thumbPath),
                         'cropData' => $original->getMetaData()['crop'] ?? []
                     ];
                 }
@@ -462,7 +468,12 @@ class Form implements FormInterface, ArrayAccess
     public function value($name = null, $fallback = false)
     {
         if (!$name) {
-            return $this->data;
+            // Return the values as a plain array rather than the Data object.
+            // Twig resolves `form.value.<field>` as native array access, which
+            // the content sandbox does not gate — a Data object would trip the
+            // sandbox on the sub-key (regression #4207) and, more broadly, this
+            // is the safer "get all values" contract to hand a template.
+            return $this->data ? $this->data->toArray() : [];
         }
 
         if (isset($this->data[$name])) {
@@ -563,7 +574,8 @@ class Form implements FormInterface, ArrayAccess
         /** @var Config $config */
         $config = $grav['config'];
 
-        $settings = $this->getBlueprint()->schema()->getProperty($name);
+        $schemaSettings = $this->getBlueprint()->schema()->getProperty($name);
+        $isDeclared = is_array($schemaSettings) && ($schemaSettings['type'] ?? null) === 'file';
         $settings = (object) array_merge(
             ['destination' => $config->get('plugins.form.files.destination', 'self@'),
                 'avoid_overwriting' => $config->get('plugins.form.files.avoid_overwriting', false),
@@ -572,15 +584,30 @@ class Form implements FormInterface, ArrayAccess
                 'limit' => $config->get('plugins.form.files.limit', 10),
                 'filesize' => static::getMaxFilesize(),
             ],
-            (array) $settings,
+            (array) $schemaSettings,
             ['name' => $name]
         );
+        $defaultSettings = (array) $settings;
+
         // Allow plugins to adapt settings for a given post name
         // Useful if schema retrieval is not an option, e.g. dynamically created forms
         $grav->fireEvent('onFormUploadSettings', new Event(['settings' => &$settings, 'post' => $post]));
 
+        // Only accept an upload for a file field the form declares, or one a plugin changed the settings for.
+        if (!$isDeclared && (array) $settings == $defaultSettings) {
+            return [
+                'status'  => 'error',
+                'message' => sprintf($language->translate('PLUGIN_FORM.FILEUPLOAD_UNABLE_TO_UPLOAD', null),
+                    Utils::basename((string) ($post['filename'] ?? $name)), 'Unknown upload field')
+            ];
+        }
+
         $upload = json_decode(json_encode($this->normalizeFiles($_FILES['data'], $settings->name)), true);
-        $filename = $post['filename'] ?? $upload['file']['name'];
+        // Strip any path component from the POST-supplied filename. The admin
+        // controllers already do this; the public form path historically did
+        // not, which let an attacker collide the upload with files outside
+        // the intended destination.
+        $filename = Utils::basename((string) ($post['filename'] ?? $upload['file']['name']));
         $field = $upload['field'];
 
         // Handle errors and breaks without proceeding further
@@ -602,6 +629,21 @@ class Form implements FormInterface, ArrayAccess
                 'status'  => 'error',
                 'message' => sprintf($language->translate('PLUGIN_FORM.FILEUPLOAD_UNABLE_TO_UPLOAD', null),
                     $filename, 'Bad filename')
+            ];
+        }
+
+        // Hard-block page-content extensions regardless of the configurable
+        // dangerous-extensions list. With destination: self@ (the default),
+        // an upload lands in the page directory, and a permissive accept
+        // policy would otherwise let an unauthenticated user overwrite the
+        // page's own .md/.yaml — turning a file upload into arbitrary
+        // page-content takeover (GHSA-w4rc-p66m-x6qq).
+        $extension = strtolower((string) pathinfo($filename, PATHINFO_EXTENSION));
+        if (in_array($extension, ['md', 'yaml', 'yml', 'json', 'twig', 'ini'], true)) {
+            return [
+                'status'  => 'error',
+                'message' => sprintf($language->translate('PLUGIN_FORM.FILEUPLOAD_UNABLE_TO_UPLOAD', null),
+                    $filename, 'File type not allowed')
             ];
         }
 
@@ -631,7 +673,7 @@ class Form implements FormInterface, ArrayAccess
                 break;
             }
 
-            $isMime = strstr($type, '/');
+            $isMime = strstr((string) $type, '/');
             $find   = str_replace(['.', '*', '+'], ['\.', '.*', '\+'], $type);
 
             if ($isMime) {
@@ -699,9 +741,46 @@ class Form implements FormInterface, ArrayAccess
         $upload['file']['name'] = $filename;
         $upload['file']['path'] = $path;
 
-        // Special Sanitization for SVG
-        if (method_exists('Grav\Common\Security', 'sanitizeSVG') && Utils::contains($mime, 'svg', false)) {
-            Security::sanitizeSVG($upload['file']['tmp_name']);
+        $tmp_name = $upload['file']['tmp_name'];
+
+        // A file under an extension Grav can't type is one the web server may send
+        // with no Content-Type at all (Apache, Caddy), and the browser then sniffs
+        // markup in it as HTML or XML and runs its script in the site's origin.
+        if ($mime === 'application/octet-stream' && !static::isSvgUpload($filename, $mime, $tmp_name)
+            && static::startsWithMarkup($tmp_name)) {
+            return [
+                'status'  => 'error',
+                'message' => sprintf($language->translate('PLUGIN_FORM.FILEUPLOAD_UNABLE_TO_UPLOAD', null),
+                    $filename, 'File type not allowed')
+            ];
+        }
+
+        // Special Sanitization for SVG, decided from every extension of the name and
+        // not just the last: Apache serves `drawing.svg.foo` as image/svg+xml.
+        if (method_exists('Grav\Common\Security', 'sanitizeSVG') && static::isSvgUpload($filename, $mime, $tmp_name)) {
+            $sanitized = false;
+            try {
+                Security::sanitizeSVG($tmp_name);
+                $sanitized = true;
+            } catch (\Throwable $e) {
+                // The sanitizer failed. Core quarantines the file in most cases, but never rely on that.
+            }
+
+            // The sanitizer writes back whatever its parser kept, which is
+            // nothing for a file that isn't SVG markup. Refuse the upload
+            // rather than save an empty file or a file that was not sanitized.
+            clearstatcache(true, $tmp_name);
+            if (!$sanitized || !is_file($tmp_name) || filesize($tmp_name) === 0) {
+                if (is_file($tmp_name)) {
+                    @unlink($tmp_name);
+                }
+
+                // json_response
+                return [
+                    'status' => 'error',
+                    'message' => sprintf($language->translate('PLUGIN_FORM.INVALID_SVG', null, true), $filename)
+                ];
+            }
         }
 
         // We need to store the file into flash object or it will not be available upon save later on.
@@ -726,7 +805,18 @@ class Form implements FormInterface, ArrayAccess
             ];
         }
 
-        $flash->save();
+        try {
+            $flash->save();
+        } catch (RuntimeException $e) {
+            // The form state is over the size or depth limit of the flash storage.
+            $flash->removeFile($filename, $field);
+
+            // json_response
+            return [
+                'status' => 'error',
+                'message' => $language->translate('PLUGIN_FORM.FORM_STATE_TOO_LARGE', null, true)
+            ];
+        }
 
         // json_response
         $json_response = [
@@ -914,32 +1004,15 @@ class Form implements FormInterface, ArrayAccess
             $this->data->validate();
             $this->data->filter();
 
-            // Add special handling for file/filepond fields
-            foreach ($this->fields as $field) {
-                // Don't restrict to just type=file, but also other file based as long as they have filesize && accept
-                if (isset($field['filesize']) && isset($field['accept']) &&
-                    isset($field['validate']['required']) &&
-                    $field['validate']['required']) {
-
-                    // Get field name
-                    $fieldName = $field['name'];
+            // Required upload fields: the files live in the form flash, not in the
+            // posted data, so check them there. Fields inside steps, columns,
+            // fieldsets and tabs count too.
+            foreach ($this->requiredUploadFields($this->fields) as $field) {
+                $flashObject = $this->getFlash();
+                if (!$flashObject->exists() || empty($flashObject->getFilesByField($field['name']))) {
                     $fieldLabel = $field['label'] ?? $field['name'];
-
-                    // Check if files exist in the session for this field
-                    $flashObject = $this->getFlash();
-                    if ($flashObject->exists()) {
-                        $filesInField = $flashObject->getFilesByField($fieldName);
-
-                        // If no files found, add validation error
-                        if (empty($filesInField)) {
-                            $this->setError("$fieldLabel " . $grav['language']->translate("PLUGIN_FORM.FIELD_REQUIRED"));
-                            throw new ValidationException();
-                        }
-                    } else {
-                        // No flash object with files found
-                        $this->setError("$fieldLabel " . $grav['language']->translate("PLUGIN_FORM.FIELD_REQUIRED"));
-                        throw new ValidationException();
-                    }
+                    $this->setError("$fieldLabel " . $grav['language']->translate("PLUGIN_FORM.FIELD_REQUIRED"));
+                    throw new ValidationException();
                 }
             }
 
@@ -965,10 +1038,24 @@ class Form implements FormInterface, ArrayAccess
         }
 
         if (is_array($process)) {
+            // A captcha field only puts the captcha on the page; the `captcha` process
+            // action is what checks it. A form that has the field but leaves the action
+            // out would let every submission through, so check it anyway, first.
+            if (!CaptchaManager::hasProcessAction($process) && CaptchaManager::findCaptchaField($this) !== null) {
+                $grav['log']->warning("Form '{$this->name}' has a captcha field but no `captcha: true` process action; checking the captcha anyway. Add it as the first process action.");
+                $process = ['captcha' => true] + $process;
+            }
+
             foreach ($process as $action => $data) {
                 if (is_numeric($action)) {
-                    $action = key($data);
-                    $data = $data[$action];
+                    // `- captcha` (a bare action name) is the same as `- captcha: true`
+                    if (is_string($data)) {
+                        $action = $data;
+                        $data = true;
+                    } else {
+                        $action = key($data);
+                        $data = $data[$action];
+                    }
                 }
 
                 // do not execute action, if deactivated
@@ -1071,6 +1158,35 @@ class Form implements FormInterface, ArrayAccess
         }
 
         $flash->clearFiles();
+    }
+
+    /**
+     * The upload fields marked required, including ones nested in other fields.
+     * A field counts as an upload when it's a `file` or `filepond` field, or when
+     * it sets both `filesize` and `accept`, as custom upload fields do.
+     *
+     * @param array $fields
+     * @return array
+     */
+    protected function requiredUploadFields(array $fields): array
+    {
+        $found = [];
+        foreach ($fields as $key => $field) {
+            if (!is_array($field)) {
+                continue;
+            }
+            $isUpload = in_array($field['type'] ?? null, ['file', 'filepond'], true)
+                || (isset($field['filesize']) && isset($field['accept']));
+            if ($isUpload && !empty($field['validate']['required'])) {
+                $field['name'] = $field['name'] ?? $key;
+                $found[] = $field;
+            }
+            if (isset($field['fields']) && is_array($field['fields'])) {
+                array_push($found, ...$this->requiredUploadFields($field['fields']));
+            }
+        }
+
+        return $found;
     }
 
     /**
@@ -1228,6 +1344,55 @@ class Form implements FormInterface, ArrayAccess
     }
 
     /**
+     * Is this upload an SVG, by any extension of its name or by its last extension's type?
+     *
+     * @param string $filename Name the file is stored under
+     * @param string $mime Type of the last extension
+     * @param string $file Path to the uploaded file
+     * @return bool
+     */
+    protected static function isSvgUpload(string $filename, string $mime, string $file): bool
+    {
+        if (Utils::contains($mime, 'svg', false)) {
+            return true;
+        }
+        if (method_exists(Security::class, 'isSvgFile')) {
+            return Security::isSvgFile($filename, $file);
+        }
+
+        // Grav 1.7 core has no Security::isSvgFile(); this is the same rule.
+        $extensions = array_map('mb_strtolower', array_slice(explode('.', Utils::basename($filename)), 1));
+        if (!in_array('svg', $extensions, true)) {
+            return false;
+        }
+        $head = ltrim(static::readHead($file), "\xEF\xBB\xBF\xFE\xFF\0 \t\r\n");
+
+        return $head === '' || $head[0] === '<';
+    }
+
+    /**
+     * Does the file start with markup (`<`), once a byte order mark and whitespace are skipped?
+     *
+     * @param string $file
+     * @return bool
+     */
+    protected static function startsWithMarkup(string $file): bool
+    {
+        $head = ltrim(static::readHead($file), "\xEF\xBB\xBF\xFE\xFF\0 \t\r\n\f");
+
+        return $head !== '' && $head[0] === '<';
+    }
+
+    /**
+     * @param string $file
+     * @return string
+     */
+    private static function readHead(string $file): string
+    {
+        return is_file($file) ? (string)file_get_contents($file, false, null, 0, 1024) : '';
+    }
+
+    /**
      * Get the configured max file size in bytes
      *
      * @param bool $mbytes return size in MB
@@ -1281,7 +1446,15 @@ class Form implements FormInterface, ArrayAccess
 
         $this->values = new Data($post);
 
-        $json_response = $callable($post);
+        try {
+            $json_response = $callable($post);
+        } catch (LengthException $e) {
+            http_response_code(400);
+            $json_response = [
+                'status' => 'error',
+                'message' => $grav['language']->translate('PLUGIN_FORM.FORM_STATE_TOO_LARGE', null, true)
+            ];
+        }
 
         // Return JSON
         header('Content-Type: application/json');
@@ -1300,7 +1473,23 @@ class Form implements FormInterface, ArrayAccess
     {
         $flash = $this->getFlash();
         $flash->removeFile($filename, $field);
-        $flash->save();
+        $this->saveFlash($flash);
+    }
+
+    /**
+     * Save the flash object. Form state over the size or depth limit of the flash storage is refused with a
+     * LengthException, which sendJsonResponse() answers as a Bad Request.
+     *
+     * @param FormFlash $flash
+     * @return void
+     */
+    protected function saveFlash(FormFlash $flash): void
+    {
+        try {
+            $flash->save();
+        } catch (RuntimeException $e) {
+            throw new LengthException('Form state is too large or nested too deep', 400, $e);
+        }
     }
 
     /**
@@ -1324,7 +1513,7 @@ class Form implements FormInterface, ArrayAccess
         $this->data->merge($data);
 
         $flash->setData($this->data->toArray());
-        $flash->save();
+        $this->saveFlash($flash);
     }
 
     /**

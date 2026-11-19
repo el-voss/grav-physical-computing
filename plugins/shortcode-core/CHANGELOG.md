@@ -1,3 +1,21 @@
+# v6.2.9
+## 11/18/2026
+
+1. [](#improved)
+    * The default parser is now called `stack`, matching the upstream rename of HybridParser to StackParser in thunderer/shortcode. Configs that still say `hybrid` (or `tars`) get the same parser, and the plugin uses StackParser once the library provides it
+
+# v6.2.8
+## 11/04/2026
+
+1. [](#improved)
+    * The notice shortcode accepts `[notice type="warning"]`, which is what Editor Pro writes, alongside the short `[notice=warning]` form, and the editor now offers the four notice types that have styles, with `info` as the default
+
+# v6.2.7
+## 10/29/2026
+
+1. [](#new)
+    * The `span`, `div`, `h1` to `h6`, `figure`, `mark` and `details` shortcodes keep a `lang` attribute, so a passage in another language is announced correctly by screen readers [#134](https://github.com/getgrav/grav-plugin-shortcode-core/issues/134)
+
 # v6.2.6
 ## 09/09/2026
 

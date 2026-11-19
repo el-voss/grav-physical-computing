@@ -28,7 +28,7 @@ Beim Start einer Rakete läuft vorher ein Countdown. Genau das soll der Bastelbo
 #### Countdown verstehen
 
 1. Beschreibe, wie der Countdown im unten abgebildeten Programm umgesetzt wird.
-2. Erkläre, warum die Zahl erst nach der Pause verändert wird und nicht vorher.
+2. Erkläre, warum die Zahl erst nach dem Befehl "Zeige Zahl" verändert wird und nicht vorher.
 3. Beschreibe, wie das Programm geändert werden muss, damit der Countdown nicht von 10 bis 0, sondern von 20 bis 0 zählt.
 4. Beschreibe, wie das Programm geändert werden muss, damit der Countdown in Zweierschritten herunterzählt (20, 18, 16, ...).
 

@@ -18,16 +18,34 @@ files:
     - image/*
 recaptcha:
     version: 2-checkbox
+    score_threshold: 0.5
     theme: light
     site_key:
     secret_key:
+cap:
+  mode: invisible             # options: invisible | checkbox
+  storage: files              # options: files | grav-cache | filesystem
+  challenge_count: 50         # number of sub-challenges per captcha
+  challenge_size: 32          # salt size (hex chars)
+  challenge_difficulty: 4     # target prefix length (hex chars)
+  expires_ms: 600000          # challenge TTL in milliseconds
+  adaptive: true              # repeat submissions from one IP make its challenges harder
+  adaptive_free: 10           # submissions per IP per window at the normal cost
+  adaptive_window: 600        # window length in seconds
+  adaptive_max_level: 8       # each level past the free allowance doubles the work; 8 = 256x
+  min_time: 3                 # seconds a form must be on the page before it can be sent; 0 turns it off
+  instrumentation: true       # a browser check runs with every challenge (needs PHP 8.1 and cap-php 1.1)
+  block_automated_browsers: true  # refuse headless and automated browsers the check detects
+  behavior: off               # off | report | block: score mouse and keyboard behavior (experimental)
+  block_agents: off           # off | identified | all: refuse AI agents (needs behavior on)
+
 turnstile:
   theme: light                # options: [light | dark]
   site_key:
   secret_key:
 
 basic_captcha:
-  type: math           # Options: dotcount, position, math, characters
+  type: characters         # Options: characters, math, dotcount, position
   debug: false             # Enable debug logging for troubleshooting
 
   # Image settings
@@ -53,3 +71,10 @@ basic_captcha:
     min: 1                 # Minimum number value
     max: 12                # Maximum number value
     operators: ['+','-','*']  # Available operators
+
+  # Dot counting settings (used for the 'dotcount' type)
+  dots:
+    rows: 2                # Grid rows available for dots
+    cols: 4                # Grid columns available for dots
+    min: 2                 # Fewest dots to count
+    max: 5                 # Most dots to count (capped at rows * cols - 1)

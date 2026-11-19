@@ -1,3 +1,9 @@
+# v1.6.4
+## 11/03/2026
+
+1. [](#new)
+    * Spanish translation ([#39](https://github.com/getgrav/grav-plugin-breadcrumbs/pull/39)). Thanks @pmoreno-rodriguez
+
 # v1.6.3
 ## 05/01/2026
 

@@ -1,7 +1,7 @@
 name: Form
 slug: form
 type: plugin
-version: 8.2.1
+version: 9.2.2
 description: Enables forms handling and processing
 icon: check-square
 author:
@@ -12,9 +12,11 @@ keywords: plugin, form
 homepage: https://github.com/getgrav/grav-plugin-form
 bugs: https://github.com/getgrav/grav-plugin-form/issues
 license: MIT
+compatibility:
+  grav: ['1.7', '2.0']
 
 dependencies:
-  - { name: grav, version: ">=1.7.49" }
+  - { name: grav, version: ">=1.7.51" }
 
 form:
   validation: strict
@@ -36,7 +38,7 @@ form:
       fields:
         debug:
           type: toggle
-          label: Debug
+          label: PLUGIN_FORM.DEBUG
           highlight: 1
           default: 0
           options:
@@ -201,6 +203,17 @@ form:
             2-checkbox: PLUGIN_FORM.RECAPTCHA_VERSION_V2_CHECKBOX
             2-invisible: PLUGIN_FORM.RECAPTCHA_VERSION_V2_INVISIBLE
             3: PLUGIN_FORM.RECAPTCHA_VERSION_V3_LATEST
+        recaptcha.score_threshold:
+          type: number
+          label: PLUGIN_FORM.RECAPTCHA_SCORE_THRESHOLD
+          help: PLUGIN_FORM.RECAPTCHA_SCORE_THRESHOLD_HELP
+          default: 0.5
+          size: small
+          validate:
+            type: number
+            min: 0
+            max: 1
+            step: 0.01
         recaptcha.theme:
           type: select
           label: PLUGIN_FORM.RECAPTCHA_THEME
@@ -227,21 +240,172 @@ form:
       fields:
         turnstile.theme:
           type: select
-          label: PLUGIN_FORM.RECAPTCHA_THEME
+          label: PLUGIN_FORM.TURNSTILE_THEME
           default: light
           options:
-            light: PLUGIN_FORM.RECAPTCHA_THEME_LIGHT
-            dark: PLUGIN_FORM.RECAPTCHA_THEME_DARK
+            light: PLUGIN_FORM.TURNSTILE_THEME_LIGHT
+            dark: PLUGIN_FORM.TURNSTILE_THEME_DARK
         turnstile.site_key:
           type: text
-          label: PLUGIN_FORM.RECAPTCHA_SITE_KEY
-          help: PLUGIN_FORM.RECAPTCHA_SITE_KEY_HELP
+          label: PLUGIN_FORM.TURNSTILE_SITE_KEY
+          help: PLUGIN_FORM.TURNSTILE_SITE_KEY_HELP
           default: ""
         turnstile.secret_key:
           type: text
-          label: PLUGIN_FORM.RECAPTCHA_SECRET_KEY
-          help: PLUGIN_FORM.RECAPTCHA_SECRET_KEY_HELP
+          label: PLUGIN_FORM.TURNSTILE_SECRET_KEY
+          help: PLUGIN_FORM.TURNSTILE_SECRET_KEY_HELP
           default: ""
+
+    cap_captcha:
+      type: section
+      title: Cap (Proof-of-Work) Captcha
+
+      fields:
+        cap.mode:
+          type: select
+          label: PLUGIN_FORM.CAP_DEFAULT_MODE
+          help: PLUGIN_FORM.CAP_DEFAULT_MODE_HELP
+          default: invisible
+          options:
+            invisible: PLUGIN_FORM.CAP_MODE_INVISIBLE_OPTION
+            checkbox: PLUGIN_FORM.CAP_MODE_CHECKBOX_OPTION
+        cap.storage:
+          type: select
+          label: PLUGIN_FORM.CAP_TOKEN_STORAGE_BACKEND
+          help: PLUGIN_FORM.CAP_TOKEN_STORAGE_BACKEND_HELP
+          default: files
+          options:
+            files: PLUGIN_FORM.CAP_STORAGE_FILES_OPTION
+            grav-cache: PLUGIN_FORM.CAP_STORAGE_GRAV_CACHE_OPTION
+            filesystem: PLUGIN_FORM.CAP_STORAGE_FILESYSTEM_OPTION
+        cap.challenge_count:
+          type: number
+          label: PLUGIN_FORM.CAP_CHALLENGE_COUNT
+          help: PLUGIN_FORM.CAP_CHALLENGE_COUNT_HELP
+          default: 50
+          size: small
+          validate:
+            min: 1
+            max: 200
+            type: number
+        cap.challenge_size:
+          type: number
+          label: PLUGIN_FORM.CAP_SALT_SIZE
+          help: PLUGIN_FORM.CAP_SALT_SIZE_HELP
+          default: 32
+          size: small
+          validate:
+            min: 8
+            max: 64
+            type: number
+        cap.challenge_difficulty:
+          type: number
+          label: PLUGIN_FORM.CAP_DIFFICULTY
+          help: PLUGIN_FORM.CAP_DIFFICULTY_HELP
+          default: 4
+          size: small
+          validate:
+            min: 1
+            max: 8
+            type: number
+        cap.expires_ms:
+          type: number
+          label: PLUGIN_FORM.CAP_CHALLENGE_TTL_MS
+          help: PLUGIN_FORM.CAP_CHALLENGE_TTL_MS_HELP
+          default: 600000
+          size: small
+          validate:
+            min: 30000
+            type: number
+        cap.adaptive:
+          type: toggle
+          label: PLUGIN_FORM.CAP_ADAPTIVE
+          help: PLUGIN_FORM.CAP_ADAPTIVE_HELP
+          highlight: 1
+          default: 1
+          options:
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
+          validate:
+            type: bool
+        cap.adaptive_free:
+          type: number
+          label: PLUGIN_FORM.CAP_ADAPTIVE_FREE
+          help: PLUGIN_FORM.CAP_ADAPTIVE_FREE_HELP
+          default: 10
+          size: small
+          validate:
+            min: 1
+            type: number
+        cap.adaptive_window:
+          type: number
+          label: PLUGIN_FORM.CAP_ADAPTIVE_WINDOW
+          help: PLUGIN_FORM.CAP_ADAPTIVE_WINDOW_HELP
+          default: 600
+          size: small
+          validate:
+            min: 60
+            type: number
+        cap.adaptive_max_level:
+          type: number
+          label: PLUGIN_FORM.CAP_ADAPTIVE_MAX_LEVEL
+          help: PLUGIN_FORM.CAP_ADAPTIVE_MAX_LEVEL_HELP
+          default: 8
+          size: small
+          validate:
+            min: 0
+            max: 16
+            type: number
+        cap.min_time:
+          type: number
+          label: PLUGIN_FORM.CAP_MIN_TIME
+          help: PLUGIN_FORM.CAP_MIN_TIME_HELP
+          default: 3
+          size: small
+          validate:
+            min: 0
+            max: 60
+            type: number
+        cap.instrumentation:
+          type: toggle
+          label: PLUGIN_FORM.CAP_INSTRUMENTATION
+          help: PLUGIN_FORM.CAP_INSTRUMENTATION_HELP
+          highlight: 1
+          default: 1
+          options:
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
+          validate:
+            type: bool
+        cap.block_automated_browsers:
+          type: toggle
+          label: PLUGIN_FORM.CAP_BLOCK_AUTOMATED_BROWSERS
+          help: PLUGIN_FORM.CAP_BLOCK_AUTOMATED_BROWSERS_HELP
+          highlight: 1
+          default: 1
+          options:
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
+          validate:
+            type: bool
+        cap.behavior:
+          type: select
+          label: PLUGIN_FORM.CAP_BEHAVIOR
+          help: PLUGIN_FORM.CAP_BEHAVIOR_HELP
+          default: 'off'
+          options:
+            'off': PLUGIN_FORM.CAP_BEHAVIOR_OFF
+            report: PLUGIN_FORM.CAP_BEHAVIOR_REPORT
+            block: PLUGIN_FORM.CAP_BEHAVIOR_BLOCK
+        cap.block_agents:
+          type: select
+          label: PLUGIN_FORM.CAP_BLOCK_AGENTS
+          help: PLUGIN_FORM.CAP_BLOCK_AGENTS_HELP
+          default: 'off'
+          options:
+            'off': PLUGIN_FORM.CAP_BLOCK_AGENTS_OFF
+            identified: PLUGIN_FORM.CAP_BLOCK_AGENTS_IDENTIFIED
+            all: PLUGIN_FORM.CAP_BLOCK_AGENTS_ALL
 
     basic_captcha:
       type: section
@@ -322,8 +486,8 @@ form:
           default: "characters"
           size: medium
           options:
-            characters: Random Characters
-            math: Math Puzzle
+            characters: PLUGIN_FORM.BASIC_CAPTCHA_TYPE_CHARACTERS_OPTION
+            math: PLUGIN_FORM.BASIC_CAPTCHA_TYPE_MATH_OPTION
           fields:
             characters:
               type: element
@@ -361,13 +525,13 @@ form:
                   selectize:
                     options:
                       - value: "+"
-                        text: "+ Addition"
+                        text: PLUGIN_FORM.BASIC_CAPTCHA_OPERATOR_ADDITION
                       - value: "-"
-                        text: "- Subtraction"
+                        text: PLUGIN_FORM.BASIC_CAPTCHA_OPERATOR_SUBTRACTION
                       - value: "*"
-                        text: "x Multiplication"
+                        text: PLUGIN_FORM.BASIC_CAPTCHA_OPERATOR_MULTIPLICATION
                       - value: "/"
-                        text: "/ Division"
+                        text: PLUGIN_FORM.BASIC_CAPTCHA_OPERATOR_DIVISION
                   label: PLUGIN_FORM.BASIC_CAPTCHA_MATH_OPERATORS
                   validate:
                     type: commalist
